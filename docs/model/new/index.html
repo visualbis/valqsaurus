@@ -1,0 +1,542 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>New · ValQ</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="The Model tab has two panels in which the left panel represents the"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="New · ValQ"/><meta property="og:type" content="website"/><meta property="og:url" content="https://visualbis.github.io/valqsaurus/"/><meta property="og:description" content="The Model tab has two panels in which the left panel represents the"/><meta property="og:image" content="https://visualbis.github.io/valqsaurus/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://visualbis.github.io/valqsaurus/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/valqsaurus/img/cropped-valq-icon-1-192x192.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/valqsaurus/js/scrollSpy.js"></script><link rel="stylesheet" href="/valqsaurus/css/main.css"/><script src="/valqsaurus/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/valqsaurus/"><img class="logo" src="/valqsaurus/img/valq-logo-light.png" alt="ValQ"/><h2 class="headerTitleWithLogo">ValQ</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/valqsaurus/docs/general/getting-started" target="_self">Docs</a></li><li class=""><a href="/valqsaurus/help" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Model Tab</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">ValQ</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/general/getting-started">General features of ValQ Custom Visual</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">General</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/general/understanding-variances">Understanding Variances</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/general/understanding-node-widget">Understanding the Node Widget Information</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/general/conducting-what-if">Conducting what-if analysis</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/general/more-info-value-driver">Getting more information about a value driver</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/general/saving-opening-scenarios">Saving and Opening Scenarios</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/general/valq-in-powerbi">ValQ in Power BI</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Model Tab</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/valqsaurus/docs/model/new">New</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/model/node">Node</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/model/data-series">Data Series</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/model/settings">Settings</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/model/general">General</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Plan Tab</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/planning/overview">Understanding the features</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/planning/budget-allocation">Budgeting &amp; allocation scenarios</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Other features</h4><ul><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/planning/others/adding-note">Adding a note</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/planning/others/view-history">View History</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Simulate Tab</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/simulation/simulation">Simulate Tab</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Analyze Tab</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/analysis/variance-analysis">Variance Analysis</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Storage and Collaboration</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/storage/storage-collaboration">Storage and Collaboration</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Known Issues and Limitations</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/faq/known-issues">Known Issues and Limitations</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">New</h1></header><article><div><span><p>The Model tab has two panels in which the left panel represents the
+Advanced Editor and the right panel denotes the canvas which represents
+the Value Driver Tree visuals (see Figure below).</p>
+<p><img src="/doc-images/catg.png" alt="Left Panel and Right Canvas"></p>
+<p>The Model tab has five different Tab options (see Figure below).</p>
+<p><img src="/doc-images/tabs.png" alt="Tab option for the Model tab"></p>
+<p>The Tab options for the Model tab has been listed below:</p>
+<ol>
+<li>New Tab – To configure the design for the Value Driver Tree using
+the options such as Sample Demo Tree, Create a Simple Dynamic Tree,
+Import an Advanced Tree and Create a New value driver tree from the
+scratch.</li>
+<li>Node Tab – To configure the settings of Nodes and Child Nodes for
+the Value Driver Tree</li>
+<li>Data Series Tab – To configure the data settings such as Data Series
+Manager, Time Aggregation Labels and Data Sorting.</li>
+<li>Settings Tab – To configure the settings parameters such as
+Navigational Panel, Nodes, Canvas, Number Formatting, Conditional
+Formatting and Color Theme.</li>
+<li>General Tab – To configure the General settings such as License
+Registration, Export and Writeback functions.</li>
+</ol>
+<p>In the next sections, you will be able to understand on how to design a
+value driver tree using these five different Tab categories in detail.</p>
+<p>As an initial step, follow the below steps to configure the design for
+the value driver tree in Power BI.</p>
+<ol>
+<li>Navigate to the “Visualizations Panel” and “Fields” Panel in Power
+BI (see Figure below).</li>
+</ol>
+<p><img src="/doc-images/11.1.png" alt="Power BI with Visualizations and Fields Panel"></p>
+<ol start="2">
+<li>In the Visualizations Panel, select the valQ Custom Visual and
+extend the screen to its full view as shown in the Figure below.</li>
+</ol>
+<p><img src="/doc-images/eleven.png" alt="valQ Screen - Measures to be assigned"></p>
+<ol start="3">
+<li>To create a value driver tree (valQ) in Power BI, it is mandatory to
+assign a Data Source to the value driver tree. For our example, a
+data source (sample data shown below) has been assigned to the value
+driver tree.</li>
+</ol>
+<p><img src="/doc-images/11.2.png" alt="Sample Data"></p>
+<ol start="4">
+<li>Now at least one Measure Value has to be assigned to the property
+“Values” in Visualizations panel. In our example, we have assigned
+the Measure Value “∑ Actual” to the property “Values” by clicking
+the check box option against the Measure Value “∑ Actual” (see
+Figure below).</li>
+</ol>
+<p><img src="/doc-images/11.3.png" alt="Assigning the Measure Value"></p>
+<h2><a class="anchor" aria-hidden="true" id="new-tab"></a><a href="#new-tab" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>New Tab</h2>
+<p>The Value Driver Tree can be created in Power BI using the below listed
+options by clicking the New Tab in the left panel (see Figure below)</p>
+<ul>
+<li>Open a Sample Model</li>
+<li>Create a Simple Model</li>
+<li>Create an Advanced Model</li>
+<li>Import an Advanced Model</li>
+</ul>
+<p><img src="/doc-images/12.1.png" alt="New Tab"></p>
+<h2><a class="anchor" aria-hidden="true" id="open-a-sample-model"></a><a href="#open-a-sample-model" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Open a Sample Model</h2>
+<p>Click the “New” Tab in the left panel. Now navigate to the Open a Sample
+Model option. You will be able to explore a Demo Tree. By clicking the
+Open a Sample Model option, you will be able to view the Loading sample
+screen as shown below and also you can search for the specific sample to
+get loaded (see Figure below).</p>
+<p><img src="/doc-images/12.2a.png" alt="Loading screen"></p>
+<p>For our example, the sample “Mining Industry” has been selected.</p>
+<p><img src="/doc-images/12.2.png" alt="Selection of sample model"></p>
+<p>Based on the selection, you will be able to view the valQ screen as
+shown below. As part of the latest Release, each Node in the Advance
+Editor panel will be having an Icon which represents the Node Type.</p>
+<p><img src="/doc-images/12.3.png" alt="valQ screen with Nodes settings"></p>
+<p>The Nodes hierarchy will be displayed in the Advance Editor option as
+shown in the above Figure. Here you will be able to add number of child
+nodes from the parent node “Net Profit”. By clicking the Parent Node,
+you will be able to add number of child nodes as shown below. Also you
+will be able to expand, collapse and delete the entire Nodes Hierarchy
+using the options “Expand”, “Collapse” and “Delete” (see Figure above).</p>
+<p>As part of the New Release, the &quot;Lock&quot; and &quot;Unlock&quot; options have been
+included in the Advance Editor for the Node Tab (see Figure below). By
+clicking the lock option, you will not be able to edit the configuration
+done for the Node (see Figure below).</p>
+<p><img src="/doc-images/lck1.png" alt="Lock option in Node Tab"></p>
+<p>By clicking the Unlock option, you will be able to edit the
+configuration done for the Node (see Figure below).</p>
+<p><img src="/doc-images/lck2.png" alt="Unlock option in Node Tab"></p>
+<p>By providing the Node Name in the Search option on the right canvas, you
+will be able to search for the particular Node when there are more
+number of nodes appearing on the right canvas.</p>
+<p><img src="/doc-images/12.4.png" alt="Node Search option in right canvas"></p>
+<p>For our example, the Node name is given as “Operating Hours” and based
+on the search you will be able to view the Node as shown in the Figure
+below.</p>
+<p><img src="/doc-images/12.5.png" alt="Display of the Searched Node"></p>
+<p><img src="/doc-images/12.6.png" alt="Nodes Structure with Add option"></p>
+<p>In the above Figure, you can observe that by clicking the “+” button, a
+Node “Copy of Net Profit” has been added. Similarly you can edit the
+Parent Node details by clicking the Edit button as shown below. For our
+example, the Edit button has been clicked.</p>
+<p><img src="/doc-images/12.7.png" alt="Nodes Structure with Edit option"></p>
+<p>By clicking the Edit option you will be able to view the Edit Settings
+for the Node. The Edit Settings are categorized as follows:</p>
+<ol>
+<li>General</li>
+<li>Configuration</li>
+<li>Display</li>
+<li>Simulation</li>
+<li>Business Definition</li>
+<li>Conditional Formatting</li>
+<li>Secondary KPI</li>
+</ol>
+<h4><a class="anchor" aria-hidden="true" id="general"></a><a href="#general" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>General</h4>
+<p>In General settings you will be able to configure the Node details such
+as Unique ID, Title and the Title Prefix when outside the Tree with the
+values as shown in the below Figure. The Title Prefix can be set at Node
+Level and during simulation it is useful to identify at which node the
+parameter value changes. The additional properties of the Node Tab has
+been listed in Section 13.2.</p>
+<p><img src="/doc-images/12.8.png" alt="Edit Node – General Settings"></p>
+<p>Based on the above configuration, you will be able to view the valQ
+screen as shown below.</p>
+<p><img src="/doc-images/12.9.png" alt="valQ screen with General settings"></p>
+<p>From the above Figure, you can observe that the Unique ID for the Parent
+Node is “TOP” and the Title of the Parent Node is “Net Profit”.</p>
+<p>In our other example as shown below, we have configured the Title Prefix
+for two different Nodes (see Figures below).</p>
+<p><img src="/doc-images/12.10.png" alt="Node with Prefix value as Spouse 1"></p>
+<p><img src="/doc-images/12.11.png" alt="Node with Prefix value as Spouse 2"></p>
+<p>Based on the above set of configurations, you will be able to view the
+valQ screens as shown below.</p>
+<p><img src="/doc-images/12.12.png" alt="valQ screen with Spouse 1 Prefix"></p>
+<p><img src="/doc-images/12.13.png" alt="valQ screen with Spouse 2 Prefix"></p>
+<p>From the above two Figures you can observe that the “Gross Salary” is
+the common Title for two different Nodes. In order to differentiate
+them, we have provided the value for “Title Prefix when outside the
+Tree” as Spouse1 for one Node and Spouse 2 for the other Node. After
+simulation, you can see which Node’s value has been changed.</p>
+<h4><a class="anchor" aria-hidden="true" id="configuration"></a><a href="#configuration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configuration</h4>
+<p>In Configuration Settings, you will be able to configure the Node
+details such as Calculation Method, Time Aggregation, Desired Trend and
+Value Range with the values as shown in the below Figure.</p>
+<p><img src="/doc-images/12.14.png" alt="Edit Node – Configuration Settings"></p>
+<p>Based on the above Configuration settings, you will be able to view the
+valQ screen as shown in the below Figure.</p>
+<p><img src="/doc-images/12.15.png" alt="valQ with Configuration settings"></p>
+<p>From the above Figure you can observe that in the Navigation Panel, the
+value that is displayed in the Constraints section will lie in the range
+from minimum 10 to maximum 100 for a specific month based on the
+configuration done for the Value Range. In our example, the calculation
+method is selected as 'Subtract Children (a-b-c)' meaning that from the
+first child node the other child nodes will get subtracted and its
+result will be displayed in the Parent Node. The Time Aggregation is set
+to Sum of Periods where we have considered 12 months as period. As the
+result of simulation, each Node will display the values based on the Sum
+of Periods. Also the “Desired Trend” has been set to the Increase
+option. When simulated, the desired Trend for the Revenue will be
+increasing and the value for the Total Cost will be decreasing.</p>
+<p>For the Calculation Method being selected as 'Data Source', you can
+follow the steps as explained in the following link :
+<a href="https://valq.com/blogs/3-methods-of-mapping-valq-nodes-to-data/">https://valq.com/blogs/3-methods-of-mapping-valq-nodes-to-data/</a></p>
+<p>For other options of calculation method, you can refer the link:
+<a href="https://valq.com/blogs/assigning-values-to-nodes-in-valq/">https://valq.com/blogs/assigning-values-to-nodes-in-valq/</a></p>
+<p>On selecting 'Formula' and clicking on the formula field, you will be
+able to see a dropdown of the formulas that are supported. For a list of
+formulas that are available in valQ, you can refer to the link
+<code>Functions</code></p>
+<p><strong>Template Nodes</strong></p>
+<p>Also you can create a Template Node for the already existing Node. It is
+very specific that the Template Nodes should not map the Parent Node.
+You need to select the particular Node and copy a Node under the
+selected Node for creating the Template Node.</p>
+<p>In the below Figure as an example, you can observe that a copy of
+Revenue Node has been created by the right click copy and paste actions.
+Now the copied Revenue Node version is labelled as “Revenue 2” in
+General Property of the Edit Node Window (see Figure below).</p>
+<p><img src="/doc-images/13.3.png" alt="Edit Node: Copy of Revenue Node labelled as Revenue
+2"></p>
+<p>Now navigate to the Configuration property of the Edit Node Window. Set
+the Calculation Method to the option Template based on the node. Also
+set the Node to use as Template to the option 1:Revenue (see Figure
+below).</p>
+<p><img src="/doc-images/13.4.png" alt="Edit Node: Calculation Method selected as Template based on other node
+and Revenue Node to be used as Template"></p>
+<p>Based on the above configuration, you will be able to view the Templated
+Node Revenue 2 having all its Nodes similar to the Revenue Node as per
+our example.</p>
+<p><img src="/doc-images/13.5.png" alt="Templated Node"></p>
+<h4><a class="anchor" aria-hidden="true" id="display"></a><a href="#display" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Display</h4>
+<p>In the Display Settings, you will be able to configure the Node Display
+settings such as Node Display, Scale, Value Decimal Places, Value
+Prefix, Value Suffix and Details on Click with the values as shown in
+the below Figure.</p>
+<p><img src="/doc-images/12.16.png" alt="Edit Node – Display Settings"></p>
+<p>Based on the above Display settings, you will be able to view the valQ
+screen as shown in the below Figure.</p>
+<p><img src="/doc-images/12.17.png" alt="valQ with Display settings"></p>
+<p>From the above Figure, you can observe that the Node Display is set to
+“Show” option. The Scale has been set to the User Selected option and
+now you can edit the Scaling options in the Value Display under Settings
+Tab. When the Scale is set to other options you will not be able to edit
+the Scaling options in the Value Display. You can also view the Nodes
+with the values configured with Value Decimal Places as “0”, Value
+Prefix as “$” and Value Suffix as “r”.</p>
+<p>Since the Details on Click option is enabled in the Display settings,
+you can observe the Pop up screen being displayed after clicking the
+Node “Net Profit” (see Figure below). If the Details on Click option is
+disabled in the Display settings, then you will not be able to view the
+Pop up screen.</p>
+<p><img src="/doc-images/12.18.png" alt="Pop up screen"></p>
+<p><strong>Composite Node Display</strong></p>
+<p>A Node in a tree can now be added with a maximum of two composite nodes
+which can be taken from any nodes. For our example, the below Figure
+shows the Tree structure with several nodes.</p>
+<p><img src="/doc-images/cnd1.png" alt="Tree with several nodes"></p>
+<p>For our example, two child nodes from the Node “Total Cost” needs to be
+included as composite nodes to the Node “Revenue”. For adding the
+composite nodes, go to the configuration settings window of the Node
+“Revenue” by clicking the Edit and Configure Node option (see Figure
+below).</p>
+<p><img src="/doc-images/cnd2.png" alt="Adding Composite Nodes"></p>
+<p>In the Edit Node panel, go to the Display settings and add the Nodes
+“10:Production Cost” and “36: Realisation Cost” as Composite Nodes to
+the Node Revenue (see Figure above). Now the Tree structure will get
+configured based on the above settings (see Figure below).</p>
+<p><img src="/doc-images/cnd3.png" alt="Tree with composite nodes"></p>
+<p>You can observe that the Nodes “10:Production Cost” and “36: Realisation
+Cost” have been added as the composite nodes to the node “Revenue”. Also
+when a simulation is done in the actual Nodes (10:Production Cost” and
+“36: Realisation Cost), the similar simulation will get reflected in
+the composite nodes and it is vice versa (see Figure below).</p>
+<p><img src="/doc-images/cnd4.png" alt="Composite Node with simulated values"></p>
+<p>The composite nodes will have no effect in the Table view structure of
+the Tree. In the Quick Editor screen, you can view the composite node
+ids in a separate column by enabling the composite node option from the
+“selected columns” drop down menu (see Figure below).</p>
+<p><img src="/doc-images/cnd5.png" alt="Quick Editor with composite node id display"></p>
+<h4><a class="anchor" aria-hidden="true" id="simulation"></a><a href="#simulation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Simulation</h4>
+<p>In the Simulation Settings, you will be able to configure Simulation
+details such as selection of Default Simulation Method and assigning the
+Node for the Linked Simulation (see Figure below). You have the option
+to enable/disable the Simulation function for the Node (see Figure
+below).</p>
+<p><img src="/doc-images/12.19.png" alt="valQ with Simulation Settings"></p>
+<p>In this Simulation Settings, you have selected the Default Method as
+“Constant&quot; for the Simulation and you have selected the Node for the
+Linked Simulation as “First Node” (see Figure above). Based on the above
+settings you will be able to view the valQ page as shown in the Figure
+below. The other options for the Default Simulation Method are Change
+Percentage, Manual and Growth Percentage.</p>
+<p><img src="/doc-images/12.20.png" alt="valQ screen with Constant value selection"></p>
+<p>From the above Figure, you will be able to view the pop window as shown
+in the above screen by clicking the Arrow icon in the Net Profit Node as
+shown in the Figure below.</p>
+<p><img src="/doc-images/12.21.png" alt="Net Profit Node"></p>
+<p>Now click the Edit option in the pop window as shown in the Figure
+below.</p>
+<p><img src="/doc-images/12.22.png" alt="Edit option"></p>
+<p>By clicking the Edit option, you will be able to view and edit the input
+values for the Simulation Period (see Figure below).</p>
+<p><img src="/doc-images/12.23.png" alt="Edit Inputs for Simulation Periods"></p>
+<p>For our example, the value for March month has been edited and as a
+result it gets reflected for all the Nodes.</p>
+<h4><a class="anchor" aria-hidden="true" id="business-definition"></a><a href="#business-definition" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Business Definition</h4>
+<p>Using this option, you will be able to configure the Business Definition
+details such as Description, Header, Footer and Technical Notes with the
+values as shown in the below Figure.</p>
+<p><img src="/doc-images/12.24.png" alt="valQ with Business Definition Settings"></p>
+<p>Based on the above settings, you will be able to view the Business
+Definitions details in the Pop up screen as shown below.</p>
+<p><img src="/doc-images/12.25.png" alt="Pop up screen with Business Definitions"></p>
+<h4><a class="anchor" aria-hidden="true" id="conditional-formatting"></a><a href="#conditional-formatting" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Conditional Formatting</h4>
+<p>Using the Conditional Formatting option, you will be able to apply the
+Alert Thresholds and Rules at the specific Node Level (see Figure
+below). For our example, the Node &quot;Revenue&quot; has been selected.</p>
+<p><img src="/doc-images/cfn1.png" alt="Conditional Formatting Settings for Node"></p>
+<p>In the Conditional Formatting settings for the Node &quot;Revenue&quot;, you have
+3 different options as highlighted in the above Figure.</p>
+<p>When the option &quot;Global or Inherited Rule&quot; is selected, then the
+Conditional Formatting Rules configured as Global Level in the Settings
+Tab will be applied here.</p>
+<p>Now set the option as &quot;Custom Rule: Overwrites default or any inherited
+rules&quot; as shown in the below Figure.</p>
+<p><img src="/doc-images/cfn2.png" alt="Conditional Formatting Settings for Node - Custom Rule option with
+Percentage selection"></p>
+<p>The Custom Rule option can be configured based on variance percentage
+values and the values applied at period level (see Figure above).</p>
+<p>For our first example, set the option for the Custom Rule as
+&quot;Percentage&quot; and also enable the property &quot;Apply to Descendants&quot;. Set
+the Threshold values as shown in the above Figure. After simulation, you
+can find that the Variance percentage value for the Node &quot;Revenue&quot; falls
+in the Threshold range (4%)* which is between -10% to -1% and based on
+that condition, the status bar for the Node Revenue is yellow color (see
+Figure below).</p>
+<p><img src="/doc-images/cfn3.png" alt="Custom Rule option with Percentage value selection for the Node
+&quot;Revenue&quot;"></p>
+<p>Also you can observe that the Descendant Node &quot;Copper Price&quot; has been
+updated with the same Threshold settings based on our configuration. The
+Variance percentage value for the Descendant Node &quot;Copper Price&quot; falls
+in the Threshold range (8%)* which is Above 1% and based on that
+condition, the status bar for the Descendant Node &quot;Copper Price&quot; is
+green color (see Figure below).</p>
+<p><img src="/doc-images/cfn4.png" alt="Custom Rule option with Percentage value selection for the Descendant
+Node &quot;Copper Price&quot;"></p>
+<p>For our second example, set the option for the Custom Rule as &quot;Value
+(applied at Period Level) - see Figure below.</p>
+<p><img src="/doc-images/cfn5.png" alt="Custom Rule option with value selection for the Node
+&quot;Revenue&quot;"></p>
+<p>Set the Threshold values as shown in the above Figure. After simulation,
+you can find that the Metric value for the Node &quot;Revenue&quot; falls in the
+Threshold range (522.3)* which is Above 1 and based on that condition,
+the status bar for the Node Revenue is green color (see Figure below).</p>
+<p><img src="/doc-images/cfn6.png" alt="Custom Rule option with Value selection for the Node
+&quot;Revenue&quot;"></p>
+<p><strong>Note:</strong> &quot;*&quot; denotes that the Metric values get calculated based on
+the Period Level. For example when it is a Year, it will take the value
+of 12 being multiplied with the range value that we provide.</p>
+<p>Now set the option to &quot;Hidden: No Rule will be applied to this Node&quot;.
+You can observe that no range values can be provided for the Conditional
+Formatting and since there will be no status color for that Node being
+simulated.</p>
+<h4><a class="anchor" aria-hidden="true" id="secondary-kpis"></a><a href="#secondary-kpis" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Secondary KPIs</h4>
+<p>Secondary KPIs helps user to aggregate and visualize additional or
+alternate KPI values in the node widget. Specifically, in a model with
+two data series, these are the set of secondary metrics captured under
+the primary value of the node</p>
+<p><img src="/doc-images/SecKPI.1.png" alt=""></p>
+<p>As a default, there are three secondary values displayed for a dual
+series data in the following order i. Full Period Variance between
+baseline and comparison metric (in % and absolute values) ii. Baseline
+metric value for the first period in the series iii. Variance for the
+first period between baseline and comparison metric (in % and absolute
+values)</p>
+<p><img src="/doc-images/SecKPI.2.png" alt=""></p>
+<p>Secondary KPI option lets users to customize these secondary values or
+metric according to their preference</p>
+<p>Users can achieve this using: I. Secondary KPI option based on Formulas
+II. Secondary KPI option based on Template</p>
+<ol>
+<li>Secondary KPI option based on Formulas</li>
+</ol>
+<p>In the below model screenshot, the user can display the data value from
+Operating Profit %’ and ‘Operating Expense Ratio’ as Secondary KPI
+values to the TOP node ‘Operating profit’.</p>
+<p><img src="/doc-images/SecKPIF.1.png" alt=""></p>
+<p>Under the 'Operating Profit' node setting's 'Secondary KPI' ribbon, user
+needs to select the 'Formula' button and fill-in the label name and the
+custom formula for his additional Secondary KPIs</p>
+<p><img src="/doc-images/SecKPIF.2.png" alt=""></p>
+<p><img src="/doc-images/SecKPIF.3.png" alt=""></p>
+<p>Upon completing, the user can see ‘Operating Profit %’ and ‘Ops Expense
+Ratio’ values displayed as Secondary KPI values to ‘Operating profit’</p>
+<p><img src="/doc-images/SecKPIF.4.png" alt=""></p>
+<ol start="2">
+<li>Secondary KPI option based on Template</li>
+</ol>
+<p>In the model, user can display ‘Contribution’ of each of the child nodes
+Water, Beverages, and Others to their parent node Gross Profit. User
+should define ‘Contribution’ as a Formula in one of the nodes and call
+them out for ‘Contribution’ calculation using the Template option at the
+other nodes.</p>
+<p><img src="/doc-images/SecKPIT.1.png" alt=""></p>
+<p>In this example, user can define the formula in 'Water' node under the
+node setting's Secondary KPI by selecting 'Formula' button and defining
+the 'Custom Formula' Upon completion, 'Contribution %' is displayed as a
+Secondary value of the node widget.</p>
+<p><img src="/doc-images/SecKPIT.2.png" alt=""></p>
+<p>To borrow this formula on other nodes, user can fo into the Secondary
+KPI setting of the 'Beverages' node, select the 'Template' button, and
+choose to display the same formula as the 'Water' node. User can
+instantly see the corresponding 'Contribution %' at the 'Beverage' node.</p>
+<p><img src="/doc-images/SecKPIT.3.png" alt=""></p>
+<p>Similarly, following the same steps for the 'Other' node helps the user
+to instantly visualize ‘Contribution %’ for the all the child nodes to
+Gross Profit</p>
+<p><img src="/doc-images/SecKPIT.4.png" alt=""></p>
+<h2><a class="anchor" aria-hidden="true" id="create-a-simple-model"></a><a href="#create-a-simple-model" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a Simple Model</h2>
+<p>Using this option, it is very simple for the beginners to create a tree
+automatically based on their own data source. By clicking the Create a
+Simple Model option, you will be able to view the valQ screen as shown
+in the below Figure.</p>
+<p><img src="/doc-images/12.26.png" alt="Simple Dynamic Tree created with one single
+Measure"></p>
+<p>By default, the Measure “Actual” has been selected as a Mandatory
+criteria for getting the Tree widget. Now you can select the other
+Measures and Dimensions based on your choice as indicated in the Figure
+below.</p>
+<p><img src="/doc-images/12.27.png" alt="Simple Dynamic Tree created with Measures and
+Dimensions"></p>
+<p>From the above Figure, you can observe that the other Measure “Forecast”
+is assigned to “Value” and the Dimensions namely Account and Product has
+been assigned to the “tab” and the Period_MON is assigned to “Time
+period”. Now based the assigned data source, the Tree is being
+configured. Hence now you can create a tree directly from your data. For
+step by step instructions on how to get started to build a Dynamic
+Model, please follow this link:
+<a href="https://valq.com/wp-content/uploads/valq-for-microsoft-power-bi-beginners-tutorial.pdf">https://ValQ.com/wp-content/uploads/ValQ-for-microsoft-power-bi-beginners-tutorial.pdf</a>.</p>
+<p><strong>Note</strong>: For Dynamic Model, you will be able to view the Root Node and
+first three Nodes in the next level hierarchy under the Sub Models
+section of the Navigation Panel (see Figure below).</p>
+<p><img src="/doc-images/dsm.png" alt="Sub Models Section showing the Root Node and first three Nodes in the
+next level hierarchy"></p>
+<h4><a class="anchor" aria-hidden="true" id="read-only-dynamic-tree-in-editor"></a><a href="#read-only-dynamic-tree-in-editor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Read only Dynamic Tree in Editor</h4>
+<p>When Dynamic Model is selected, you will be able to only view the value
+driver tree with Parent and Children Nodes and you cannot undergo any
+configuration part on it. But you can generate a copy of the Parent Node
+and proceed with configuration part based on your choice (see Figure
+below).</p>
+<p><img src="/doc-images/12.28.png" alt="Read Only Dynamic Tree"></p>
+<h4><a class="anchor" aria-hidden="true" id="dynamic-scaling-on-dynamic-tree"></a><a href="#dynamic-scaling-on-dynamic-tree" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dynamic Scaling on Dynamic Tree</h4>
+<p>Based on your data source, the value driver tree will get generated and
+the Number Scaling for all the Nodes will be updated appropriately based
+on the data source (see Figure below). For our example, the Number
+Scaling is “0.0b”.</p>
+<p><img src="/doc-images/12.29.png" alt="Dynamic Scaling on Dynamic Tree"></p>
+<p>As part of the New Release, you have the option to convert the Dynamic
+Model to an Advanced Model (see Figure below).</p>
+<p><img src="/doc-images/conv1.png" alt="Option for converting Dynamic Model to an Advanced
+Model"></p>
+<p>When the option is clicked, now you will be prompted for the Message
+window as shown below.</p>
+<p><img src="/doc-images/conv1a.png" alt="Confirmation Message"></p>
+<p>After clicking Yes, you will be able to edit the configuration for all
+the level of Nodes similar to the Advance Model (see Figure below).</p>
+<p><img src="/doc-images/conv2.png" alt="Dynamic Model converted to an Advanced Model"></p>
+<h2><a class="anchor" aria-hidden="true" id="create-an-advanced-model"></a><a href="#create-an-advanced-model" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create an Advanced Model</h2>
+<p>This option is used to create a Tree in valQ manually Node by Node based
+on your choice. By clicking the Create New from Scratch option, you will
+be able to view the valQ screen as shown in the below Figure.</p>
+<p><img src="/doc-images/12.38.png" alt="Create New from Scratch"></p>
+<p>For our example we have created a Parent Node and two child Nodes (see
+Figure below).</p>
+<p><img src="/doc-images/12.39.png" alt="Tree with one Parent Node and two Child Nodes"></p>
+<p>Now with the help of <code>Section: Open a Sample Model &lt;OSM&gt;</code>, you will be
+able to configure the General, Configuration, Display, Simulation,
+Business Definition and Conditional Formatting settings for the Tree
+(Please refer <code>Section: Open a Sample Model &lt;OSM&gt;</code> for more details).</p>
+<h2><a class="anchor" aria-hidden="true" id="import-an-advanced-model"></a><a href="#import-an-advanced-model" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Import an Advanced Model</h2>
+<p>Using the “Import an Advanced Model” option, you will be able to import
+data through two different options as shown below.</p>
+<p><img src="/doc-images/12.30.png" alt="valQ – Import from Excel"></p>
+<h3><a class="anchor" aria-hidden="true" id="import-from-excel"></a><a href="#import-from-excel" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Import from Excel</h3>
+<p>Using the option “Import from Excel”, you will be able to paste the JSON
+File Data Format text into the Text Editor as shown in the below Figure.</p>
+<p><img src="/doc-images/12.31.png" alt="Configuration Data from Excel Format"></p>
+<p>Now based on the above configuration, you will be able to view the Tree
+formed with Nodes in the valQ screen.</p>
+<p><img src="/doc-images/12.32.png" alt="valQ screen derived from Excel Data"></p>
+<p>As part of the New Release, you will be able to retain the existing
+Navigation Panel configuration and apply the same for the next Tree
+configuration. For our example, the Figure below shows the Navigation
+panel for the first Tree configuration.</p>
+<p><img src="/doc-images/12.33.png" alt="Navigation Panel for the first tree configuration"></p>
+<p>Now navigate to the Import an Advanced Model option in New Tab and paste
+the JSON File Data Format text for the second tree into the Text Editor
+as shown in the below Figure.</p>
+<p><img src="/doc-images/12.34.png" alt="Import a Tree"></p>
+<p>Now select the option “I am reimporting the current model – retain my
+settings” so that you will able to view the second tree configuration
+being applied with the Navigation Panel settings already configured for
+the first tree (see Figure below).</p>
+<p><img src="/doc-images/12.35.png" alt="Navigation Panel for the second tree configuration"></p>
+<h3><a class="anchor" aria-hidden="true" id="import-from-an-export-file"></a><a href="#import-from-an-export-file" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Import from an Export File</h3>
+<p>Using this option “Import from an Export File”, you will be able to
+paste the Export file data format from an already exported tree data as
+shown in the below Figure. This Export File will be generated by
+navigating to the Settings Tab and by clicking the Export button.</p>
+<p><img src="/doc-images/12.36.png" alt="Configuration Data from Export File Data Format"></p>
+<p>Now based on the above configuration, you will be able to view the Tree
+formed with Nodes in the valQ screen.</p>
+<p><img src="/doc-images/12.37.png" alt="valQ screen derived from Export File Data Format"></p>
+<h2><a class="anchor" aria-hidden="true" id="additional-properties-of-new-tab"></a><a href="#additional-properties-of-new-tab" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Additional Properties of New Tab</h2>
+<table>
+<thead>
+<tr><th><strong>Property</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>Open a Sample Model</td><td>Using this model, you can load the required model from the sample valQ Models. The sample Models are Mining Industry, P&amp;L for Small and Medium-Size Business, Personal Finance and Simple Sales Projections.</td></tr>
+<tr><td>Create a Simple Model</td><td>Using this Model, you can build a Dynamic valQ Model (For details, please refer: <span class="title-ref"><a href="https://ValQ.com/wp-content/uplo">https://ValQ.com/wp-content/uplo</a> ads/ValQ-for-microsoft-power-bi-b eginners-tutorial.pdf &lt;https://va lq.com/wp-content/uploads/valq-fo r-microsoft-power-bi-beginners-tu torial.pdf&gt;</span>__ )</td></tr>
+<tr><td>Create an Advanced Model</td><td>Using this Model, you can import a Tree by selecting the data from an Excel file or by selecting the data from an Export File.</td></tr>
+<tr><td>Import an Advanced Model</td><td>This Model can be used for creating a Tree with Nodes right from the beginning.</td></tr>
+</tbody>
+</table>
+<p><em>Additional Properties of New Tab</em></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/valqsaurus/docs/general/valq-in-powerbi"><span class="arrow-prev">← </span><span class="function-name-prevnext">ValQ in Power BI</span></a><a class="docs-next button" href="/valqsaurus/docs/model/node"><span>Node</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#new-tab">New Tab</a></li><li><a href="#open-a-sample-model">Open a Sample Model</a></li><li><a href="#create-a-simple-model">Create a Simple Model</a></li><li><a href="#create-an-advanced-model">Create an Advanced Model</a></li><li><a href="#import-an-advanced-model">Import an Advanced Model</a><ul class="toc-headings"><li><a href="#import-from-excel">Import from Excel</a></li><li><a href="#import-from-an-export-file">Import from an Export File</a></li></ul></li><li><a href="#additional-properties-of-new-tab">Additional Properties of New Tab</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/valqsaurus/" class="nav-home"><img src="/valqsaurus/img/valq-logo-light.png" alt="ValQ" width="66" height="58"/></a><div><h5>Docs</h5><a href="/valqsaurus/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/valqsaurus/docs/en/doc2.html">Guides (or other categories)</a><a href="/valqsaurus/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/valqsaurus/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/valqsaurus/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 Visual BI</section></footer></div></body></html>

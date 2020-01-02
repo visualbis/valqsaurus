@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Conducting what-if analysis · ValQ</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="One of the main aspects of the valQ Custom Visual is to be able to"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Conducting what-if analysis · ValQ"/><meta property="og:type" content="website"/><meta property="og:url" content="https://visualbis.github.io/valqsaurus/"/><meta property="og:description" content="One of the main aspects of the valQ Custom Visual is to be able to"/><meta property="og:image" content="https://visualbis.github.io/valqsaurus/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://visualbis.github.io/valqsaurus/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/valqsaurus/img/cropped-valq-icon-1-192x192.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/valqsaurus/js/scrollSpy.js"></script><link rel="stylesheet" href="/valqsaurus/css/main.css"/><script src="/valqsaurus/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/valqsaurus/"><img class="logo" src="/valqsaurus/img/valq-logo-light.png" alt="ValQ"/><h2 class="headerTitleWithLogo">ValQ</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/valqsaurus/docs/general/getting-started" target="_self">Docs</a></li><li class=""><a href="/valqsaurus/help" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>General</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">ValQ</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/general/getting-started">General features of ValQ Custom Visual</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">General</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/general/understanding-variances">Understanding Variances</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/general/understanding-node-widget">Understanding the Node Widget Information</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/valqsaurus/docs/general/conducting-what-if">Conducting what-if analysis</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/general/more-info-value-driver">Getting more information about a value driver</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/general/saving-opening-scenarios">Saving and Opening Scenarios</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/general/valq-in-powerbi">ValQ in Power BI</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Model Tab</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/model/new">New</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/model/node">Node</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/model/data-series">Data Series</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/model/settings">Settings</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/model/general">General</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Plan Tab</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/planning/overview">Understanding the features</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/planning/budget-allocation">Budgeting &amp; allocation scenarios</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Other features</h4><ul><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/planning/others/adding-note">Adding a note</a></li><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/planning/others/view-history">View History</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Simulate Tab</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/simulation/simulation">Simulate Tab</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Analyze Tab</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/analysis/variance-analysis">Variance Analysis</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Storage and Collaboration</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/storage/storage-collaboration">Storage and Collaboration</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Known Issues and Limitations</h3><ul class=""><li class="navListItem"><a class="navItem" href="/valqsaurus/docs/faq/known-issues">Known Issues and Limitations</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Conducting what-if analysis</h1></header><article><div><span><p>One of the main aspects of the valQ Custom Visual is to be able to
+simulate the impacts changes to key drivers such as prices have on the
+full year forecast. As we can’t change the past, such a simulated change
+should only be applied to future period. The valQ Custom Visual have
+this capability. When performing what-if analysis, the period that a
+simulation should be applied from is selected in the Side Panel (current
+period is default):</p>
+<p><img src="/doc-images/7.1.png" alt="What-if-Analysis"></p>
+<p>Assuming that we calculate fuel cost based on litre per month and price
+as $/l and we are at the end of period 9, the simulated cost should be
+calculated first at the monthly level with the % change applied to
+period 9 and onwards. Once the individual months are calculated, they
+can then be aggregated based on the rule of the node (sum for diesel
+cost, weighted average for diesel price):</p>
+<p><img src="/doc-images/formula.png" alt=""></p>
+<p>When hovering over a node, the bottom half of the node becomes a slider.
+Drag the slider left to vary the node by a negatively, drag right for
+positive. As you drag, the values for the selected node is dynamically
+recalculated and displayed. When releasing, the tree will immediately
+recalculate all dependent nodes and show the result.</p>
+<p><img src="/doc-images/7.2.png" alt="Simulation"></p>
+<p>A simulation change is either a pct. Change, a fixed future price or a
+pct. Growth depending on the simulation model defined for the value
+driver.</p>
+<p>The default method for the driver can be seen on the simulation tooltip.
+You can also change the selected model by selecting at the bottom of the
+tooltip.</p>
+<p><img src="/doc-images/7.3.png" alt="Simulation Tooltip"></p>
+<p>Understanding that a change is applied to the selected periods only is
+particularly important to understand when displaying the Full Year value
+and the node is using a weighted average. The displayed value is the
+weighted average value for the full year, not the value for future
+periods.</p>
+<p>A simplified example will help understanding this critical concept.
+Let’s assume that the diesel price is $1.014 for all periods and the
+monthly fuel consumption is constant as well at 1m litres and we have
+selected period 9 as we want to apply the simulation to the remaining
+periods of the year.</p>
+<p>We now drag the slider for the fuel price to the right and the node will
+show the new weighted average value. Let’s say we drag it to the right
+so the full year weighted average is $1.030. As the first 8 periods were
+$1.014, the weighted average of $1.030 means that the simulated price
+change is equivalent of a future fuel price of $1.20. To better
+understand the individual future period simulations when looking a Full
+Year aggregated number, it is useful to pay attention to the Month Data
+also shown on the node. The real world is a little more complex as the
+price is not necessarily the same every month and the fuel consumed is
+unlikely to be constant as well. Below is an example of such a
+simulation based on a real data set:</p>
+<p><img src="/doc-images/7.4.png" alt="Simulation"></p>
+<p>The weighted average price was 1.014. We now simulated a 2% increase in
+the prices selected and future periods which equates to a new weighted
+average price of 1.030. If you look at the month Value, you can see for
+the selected month, this equates to the higher price of 1.195.</p>
+<p>Multiple variations can be applied in parallel as they are expressed as
+pct. The top left % indicate the cumulative impact on this particular
+node of all simulation that impacts it.</p>
+<p>Any node with a variation will have the blue pen icon in the top middle
+showing the percentage the node has been varied with. For quick what-if
+analysis at any level and a dynamic work process from the general to the
+specific, you can apply a simulation on any level.</p>
+<p>Certain nodes may have been locked from changes in the model. This is
+generally when there is a specific reason not to vary this node directly
+for consistency purposes. A locked node will not have the grey pen icon
+<img src="/doc-images/media/image46.png" alt="..image::/doc-images/image48">or a slider when
+hovering.</p>
+<p>Certain nodes may be displayed multiple times in the tree. An example is
+Material Moved as it affects Mining and Mill Throughput. In these
+scenarios, one node is linked to the other. If you simulate a change in
+a linked node, the node it is pointing to is instead changed so it
+applies both to the selected node and anywhere else where the driver is
+used. If a node is a linked node, it has the Linked node text in the
+bottom right corner:</p>
+<p><img src="/doc-images/7.5.png" alt="Simulation"></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/valqsaurus/docs/general/understanding-node-widget"><span class="arrow-prev">← </span><span>Understanding the Node Widget Information</span></a><a class="docs-next button" href="/valqsaurus/docs/general/more-info-value-driver"><span>Getting more information about a value driver</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/valqsaurus/" class="nav-home"><img src="/valqsaurus/img/valq-logo-light.png" alt="ValQ" width="66" height="58"/></a><div><h5>Docs</h5><a href="/valqsaurus/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/valqsaurus/docs/en/doc2.html">Guides (or other categories)</a><a href="/valqsaurus/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/valqsaurus/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/valqsaurus/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 Visual BI</section></footer></div></body></html>
