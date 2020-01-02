@@ -12,7 +12,7 @@ Formatting and Color Theme.
 In the Settings Tab, you can enable/disable the Navigation Panel as
 shown in the below Figure.
 
-![Enable /Disable Navigation Panel](/doc-images/edn.png)
+![Enable /Disable Navigation Panel](assets/edn.png)
 
 In the Navigation Panel settings, you will be able to configure the
 entire settings for the Navigation Panel. The following properties can
@@ -22,14 +22,14 @@ be configured for the Navigation Panel.
     Scenarios using the Eye icon and also set the Label for the Scenario
     using the Edit icon in the Navigation Panel (see Figure below).
 
-![Scenarios](/doc-images/nav1.png)
+![Scenarios](assets/nav1.png)
 
 You will be also able to download the xml files of the Scenarios from
 the Scenario Window in the Navigation Panel by clicking the Download
 option (see Figure below). In our example, the data for the Scenario 2
 has been downloaded.
 
-![xml download of the Scenario 2 data](/doc-images/16.4.png)
+![xml download of the Scenario 2 data](assets/16.4.png)
 
 2.  Sub Models - You can enable/disable the Visibility option for the
     Sub Models using the Eye icon and set the Label for the Sub Models
@@ -38,7 +38,7 @@ has been downloaded.
     property for filtering the list based on the selected sub tree (see
     Figure below).
 
-![Scenarios](/doc-images/nav2.png)
+![Scenarios](assets/nav2.png)
 
 3.  Simulation Period - You can enable/disable the Visibility option for
     the Simulation Period using the Eye icon and also set the Label for
@@ -48,7 +48,7 @@ has been downloaded.
     the current month, then you can select the "Start to current Month"
     option (see Figure below).
 
-![Simulation Period](/doc-images/nav3.png)
+![Simulation Period](assets/nav3.png)
 
 4.  Value Display - You can enable/disable the Visibility option for the
     Value Display using the Eye icon and set the Label for the Value
@@ -56,7 +56,7 @@ has been downloaded.
     Scaling options and Default Scaling options for the Value Display in
     the Navigation Panel (see Figure below).
 
-![Value Display](/doc-images/nav4.png)
+![Value Display](assets/nav4.png)
 
 5.  Key Inputs - You can enable/disable the Visibility option for the
     Key Inputs using the Eye icon and set the Label for the Key Inputs
@@ -64,14 +64,14 @@ has been downloaded.
     to be displayed as List by selecting the required Nodes in the
     Navigation Panel (see Figure below).
 
-![Key Inputs](/doc-images/nav5.png)
+![Key Inputs](assets/nav5.png)
 
 6.  KPIs - You can enable/disable the Visibility option for the KPIs
     using the Eye icon, set the Label for the KPIs using the Edit icon
     and further select the KPIs to be displayed as List by selecting the
     required Nodes in the Navigation Panel (see Figure below).
 
-![KPIs](/doc-images/nav6.png)
+![KPIs](assets/nav6.png)
 
 7.  Constraints - You can enable/disable the Visibility option for the
     Constraints using the Eye icon, set the Label for the Constraints
@@ -80,18 +80,18 @@ has been downloaded.
     Panel. You can also enable/disable the property for sorting the
     constraints based on utilization (see Figure below).
 
-![Constraints](/doc-images/nav7.png)
+![Constraints](assets/nav7.png)
 
 Based on the above settings, you will be able to view the valQ screen
 with "Exit Design Mode" button (see Figure below).
 
-![Exit Design Mode](/doc-images/nav8.png)
+![Exit Design Mode](assets/nav8.png)
 
 By clicking the Exit Design Mode button in the right canvas, you will be
 able to view the valQ screen with Navigation Panel based on the above
 set of configurations, (see Figure below).
 
-![valQ screen with Navigation Panel](/doc-images/nav9.png)
+![valQ screen with Navigation Panel](assets/nav9.png)
 
 ## Nodes
 
@@ -107,13 +107,13 @@ Figure below).
     your field has a key-text format (e.g., ‘CA:Canada’), and your
     Node’s ID corresponds to a key (e.g.,‘CA’).
 
-![Data Mapping Format](/doc-images/nm1.png)
+![Data Mapping Format](assets/nm1.png)
 
 For our example, we would explore the settings for Map based on ID-Text
 Pair. The data source which is assigned for the Node Mapping is shown
 below:
 
-![Excel Data Source with Node Mapping](/doc-images/14.11.png)
+![Excel Data Source with Node Mapping](assets/14.11.png)
 
 From the above Figure, you will be able to view the Node ID as 6 and tab
 as 6:SparklingWater\_GrossSales.
@@ -121,7 +121,7 @@ as 6:SparklingWater\_GrossSales.
 Based on the above configuration, you will be able to view the valQ
 screen as shown below.
 
-![valQ screen with Node Mapping](/doc-images/14.12.png)
+![valQ screen with Node Mapping](assets/14.12.png)
 
 From the above Figure, you will be able to observe that the key-text
 format here is 6:SparklingWater\_GrossSales.
@@ -130,13 +130,13 @@ You will be also able to configure the Default Node Style with three
 different options namely Standard, Full and Minimal as shown in the
 below Figure.
 
-![Default Node Style](/doc-images/nm3.png)
+![Default Node Style](assets/nm3.png)
 
 You will be able to enable/disable the Node Elements like Variance,
 Trend Spark Line, Secondary Value/Variance and Descendant Node Count
 (see Figure below).
 
-![Node Settings](/doc-images/nm4.png)
+![Node Settings](assets/nm4.png)
 
 By enabling the option "Data Source Exception", you can use the Data
 provided in "Manual" Calculation Method when the Data Source Method
@@ -146,7 +146,7 @@ For our example, the Waterfall Chart Type is selected as "Horizontal".
 Based on the above settings you will be able to view the valQ screen as
 shown below.
 
-![valQ screen with Node Settings](/doc-images/nm5.png)
+![valQ screen with Node Settings](assets/nm5.png)
 
 From the above Figure, you can observe that the Node Styles is set to
 “Standard” Type and the Node Elements like Variance, Trend Spark Line,
@@ -157,20 +157,20 @@ By clicking the Node, you will observe that the Waterfall chart type in
 the Pop up screen is rendered as Horizontal Chart Type based on our
 settings (see Figure below).
 
-![Pop up screen showing Horizontal Chart Type](/doc-images/nm6.png)
+![Pop up screen showing Horizontal Chart Type](assets/nm6.png)
 
 As part of the New Release, when the Node Style is selected as
 "Standard", you can view the Node Elements Variance, Trend Spark Line
 and Secondary Value/Variance being selected by default (see Figure
 below).
 
-![Node Elements for Standard Node Style](/doc-images/va1.png)
+![Node Elements for Standard Node Style](assets/va1.png)
 
 When the Node Style is being selected as "Minimal", then you will be
 able to view only the Node element Variance being selected by default
 (see Figure below).
 
-![Node Element for Minimal Node Style](/doc-images/va2.png)
+![Node Element for Minimal Node Style](assets/va2.png)
 
 When the Node Style is being selected as "Full", then you will be able
 to view all the Node elements without any default selection.
@@ -184,7 +184,7 @@ and the Node Elements: Variance, Contribution Percentage, Performance
 Variance Percentage, Trend Spark Line and Secondary Value/Variance have
 been selected (see Figure below).
 
-![Node Style and Node Element Selection](/doc-images/va3.png)
+![Node Style and Node Element Selection](assets/va3.png)
 
 For our example, the property Sort Based On is set to the option
 "Contribution Percentage" and the property Sort Order has been set to
@@ -195,14 +195,14 @@ the Contribution Percentage values in Ascending order (see Figure
 below).
 
 ![Node showing Contribution Percentage values in Ascending
-order](/doc-images/va4.png)
+order](assets/va4.png)
 
 Similarly, you will be also able to view the Performance Variance
 Percentage values in the Ascending Order based on the configuration (see
 Figure below).
 
 ![Node showing Performance Variance Percentage values in Ascending
-order](/doc-images/va5.png)
+order](assets/va5.png)
 
 ## Canvas
 
@@ -213,17 +213,17 @@ properties:
     based on your choice. For our example, the property has been set to
     the option Table (see Figure below).
 
-![Canvas with Default Visual settings](/doc-images/cv1.png)
+![Canvas with Default Visual settings](assets/cv1.png)
 
 Based on the above settings, you will be able to view the valQ screen
 with the Table appearance (see Figure below).
 
-![Canvas with default Table Visual](/doc-images/cv2.png)
+![Canvas with default Table Visual](assets/cv2.png)
 
 2.  For our example, set the property "Start the model with the
     following KPI" to the option "9:Total Cost" (see Figure below).
 
-![Canvas Settings](/doc-images/cv3.png)
+![Canvas Settings](assets/cv3.png)
 
 3.  Set the property " Expand hierarchy upto the following number of
     levels by default" to the value 2 (see Figure above).
@@ -239,7 +239,7 @@ with the Table appearance (see Figure below).
 Based on the above configuration, you will be able to view the valQ
 screen as shown below.
 
-![valQ screen with Canvas Settings](/doc-images/cv4.png)
+![valQ screen with Canvas Settings](assets/cv4.png)
 
 From the above Figure, you can observe that the first node starts with
 Total Cost. By default the Hierarchy of the Nodes are maintained upto 2
@@ -256,7 +256,7 @@ following properties:
 1.  In the area Scale Suffix, set the property Thousands to "k" (see
     Figure below).
 
-![Number Formatting Settings](/doc-images/nf1.png)
+![Number Formatting Settings](assets/nf1.png)
 
 2.  Set the property Millions to "m" (see Figure above).
 3.  Set the property Billions to "b".
@@ -270,7 +270,7 @@ following properties:
 Based on the above configuration, you will be able to view the valQ
 screen as shown below.
 
-![valQ screen with Number Formatting Settings](/doc-images/nf2.png)
+![valQ screen with Number Formatting Settings](assets/nf2.png)
 
 From the above Figure, you can observe that the zero value is displayed
 as "0" based on our configuration. The negative value has been
@@ -287,7 +287,7 @@ properties for the Conditional Formatting.
 1.  You can enable/disable the property Enable Conditional Formatting as
     shown in the below.
 
-![Conditional Formatting Settings](/doc-images/cf1.png)
+![Conditional Formatting Settings](assets/cf1.png)
 
 2.  In the area Format based on, select the option Variance as shown in
     the above Figure. Now configure the Formatting Threshold values as
@@ -295,7 +295,7 @@ properties for the Conditional Formatting.
     will be able to view the Tree as shown below.
 
 ![Conditional Formatting - Format based on Variance
-Percentage](/doc-images/cf2.png)
+Percentage](assets/cf2.png)
 
 3.  After simulation, you can observe that the variance percentage value
     for the Node "Income" falls in the Threshold range 22% which is
@@ -306,13 +306,13 @@ Percentage](/doc-images/cf2.png)
     status bar for the Node is red color.
 4.  Now select the option Simulation as shown in the below Figure.
 
-![Conditional Formatting Settings](/doc-images/cf3.png)
+![Conditional Formatting Settings](assets/cf3.png)
 
 5.  Based on the above settings, you will be able to view the Tree as
     shown below.
 
 ![Conditional Formatting - Format based on Simulation
-Percentage](/doc-images/cf4.png)
+Percentage](assets/cf4.png)
 
 6.  After simulation, you can observe that the simulation percentage
     value for the Node "Income" falls in the Threshold range 29% which
@@ -333,7 +333,7 @@ properties:
     your choice (see Figure below). For our example, the Light Theme has
     been selected.
 
-![Color Theme Settings](/doc-images/clr1.png)
+![Color Theme Settings](assets/clr1.png)
 
 2.  Set the property "Choose Navigational Panel Theme" to the option
     Dark.
@@ -346,24 +346,24 @@ properties:
     along with different colors selected for both the canvas as well as
     the tree widget based on the configured settings.
 
-![valQ screen with Color Theme Settings](/doc-images/clr2.png)
+![valQ screen with Color Theme Settings](assets/clr2.png)
 
 Also you can observe that the Navigation Panel will be shown in Dark
 Theme based on the configuration.
 
-![Navigation Panel with Dark Theme](/doc-images/clr3.png)
+![Navigation Panel with Dark Theme](assets/clr3.png)
 
 For our example, you have configured the Highlighted color for the Node
 as Red Color (see Figure below).
 
-![Highlighted Color Settings for Node](/doc-images/hc1.png)
+![Highlighted Color Settings for Node](assets/hc1.png)
 
 Based on the above configuration, you can observe that when you click
 and Node in the Navigation panel, the Node in the right pane will be
 highlighted based on the color selection. For our example, the Node is
 being highlighted in Red color.
 
-![Node Highlighted color appearing in Red color](/doc-images/hc2.png)
+![Node Highlighted color appearing in Red color](assets/hc2.png)
 
 ## Additional Properties of Settings Tab
 

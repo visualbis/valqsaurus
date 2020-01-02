@@ -4,7 +4,7 @@ title: Getting more information about a value driver
 ---
 If you click on a node Widget, a Pop up screen is displayed with
 additional information on the selected node.
-![Information on Value Driver](/doc-images/8.1.png)
+![Information on Value Driver](assets/8.1.png)
 
 For some nodes, the designer may have added a description beyond the
 title. If so, this will be displayed below the title.
@@ -43,7 +43,7 @@ the X Axis. The values representing the loss status will be in Red color
 and the values representing the gain status will be in Green color as
 shown in the below Figure.
 
-![Pop up screen Display](/doc-images/12.25a.png)
+![Pop up screen Display](assets/12.25a.png)
 
 For more details on Pop up screen, you can refer the link:
 <https://valq.com/blogs/video-valq-pop-up-screen-nodes>

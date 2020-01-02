@@ -13,7 +13,7 @@ You will be able to enter the Subscription License Key in the License
 Key Text Box to unlock the Additional Features of the valQ (see Figure
 below).
 
-![License Registration](/doc-images/lcs.png)
+![License Registration](assets/lcs.png)
 
 ## Export
 
@@ -21,7 +21,7 @@ In the Export settings, you will be able to configure the export
 functionality. There is also an option to include the navigation
 settings panel in the Export File (see Figure below).
 
-![Export option](/doc-images/epf.png)
+![Export option](assets/epf.png)
 
 The saved file can be exported and this exported file can be used in the
 “Import from Excel” option in “Import an Advanced Model” tab (`Refer
@@ -32,7 +32,7 @@ Section: Import from an Export File <IEF>`).
 You will be able to export the Scenarios configured in the valQ through
 an URL by entering the Writeback URL in the Text Box (see Figure below).
 
-![Export Scenarios via Writeback URL](/doc-images/wrb.png)
+![Export Scenarios via Writeback URL](assets/wrb.png)
 
 The different simulations of planning results can be written back to the
 underlying systems using the URL exposed as part of the valQ. Using the
