@@ -1,0 +1,34 @@
+---
+id: understanding-variances
+title: Understanding Variances
+---
+
+The starting point for a simulation is a selection of two versions
+-**Primary Version** and a **Comparison Version** and a year. For
+instance a forecast vs current budget.
+
+Once we start simulating, changes are applied to the primary version. We
+call this changing version the Simulation.
+
+To understand the improvements we achieve, we also keep track of the
+original values from the primary version without simulation changes. We
+therefore have 3 data series in the model that we calculate and compare:
+
+1.  Simulation (The Primary Version including applied variations)
+2.  Original (The Primary Version without variations)
+3.  Target (The Comparison Version)
+
+Based on the above, we calculate the following variances:
+
+  - Simulated Variance (Simulation vs Target)
+
+Q: If we changed these things, would we hit target?
+
+  - Simulation Impact (Simulation vs Original)
+
+Q: How much would we improve if we made these changes?
+
+  - Original Variance (Original vs. Target)
+
+Q: What was our variance if we did nothing?
+

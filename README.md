@@ -1,2 +1,2 @@
 # valqsaurus
-valqsaurus
+ValQ Documentation

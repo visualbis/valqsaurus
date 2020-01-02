@@ -1,0 +1,50 @@
+---
+id: more-info-value-driver
+title: Getting more information about a value driver
+---
+If you click on a node Widget, a Pop up screen is displayed with
+additional information on the selected node.
+![Information on Value Driver](/doc-images/8.1.png)
+
+For some nodes, the designer may have added a description beyond the
+title. If so, this will be displayed below the title.
+
+If a node is calculated, a simplified version of the formula is
+displayed. This is the technical formula that is used to calculate
+individual period values. To calculate the real values, all simulation
+variations that affects the node are applied to selected and future
+periods and the aggregation rules for the node is applied (sum or
+weighted average).
+
+The trend chart compares the simulated value to the comparison version
+as well as showing the original value as the dotted line on the bar if
+simulation variations are active. If you hover over the bar, you will
+the see the details for the period.
+
+The table on the top right shows the period and full year values and the
+variance calculations as per the definition previously in this document.
+
+The valQ Custom Visual also analyses all the active simulations to see
+if any impacts this particular node. If so, it then analyses how much
+each of the active simulation changes contributes to the overall impact
+on this node and generates a waterfall diagram with the break down which
+is displayed in the bottom right panel.
+
+In some scenarios, you may vary multiple factors impacting the same node
+in a compound nature. I.e. you vary both sales volume and sales price
+and want to know the impact on revenue. As the sum of both changes is
+more than the impact of each individually, the waterfall chart breaks
+down each of the individual impacts and a compound impact bar.
+
+As part of the latest Release, you will be able to view the Value
+Display Tooltip by hovering the mouse over the Trend Chart Area in the
+Pop up screen (see Figure below). Also you can view the data labels for
+the X Axis. The values representing the loss status will be in Red color
+and the values representing the gain status will be in Green color as
+shown in the below Figure.
+
+![Pop up screen Display](/doc-images/12.25a.png)
+
+For more details on Pop up screen, you can refer the link:
+<https://valq.com/blogs/video-valq-pop-up-screen-nodes>
+
