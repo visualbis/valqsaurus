@@ -88,7 +88,7 @@ right of a widget.
 Value Driver Trees are in reality networks. The same driver may impact
 multiple aspects of the Tree. The component therefore contains a concept
 of linked nodes. Such nodes have a link
-![..image::\assets/image4](assets/media/image4.png) icon that you can click
+![Icon](assets/media/image4.png) icon that you can click
 which will jump to where the linked node is defined and highlight the
 node:
 
@@ -97,7 +97,7 @@ node:
 ![Linked Nodes](assets/4.4.png)
 
 To collapse all nodes, click on the collapse icon on the bottom left of
-the canvas ![..image::\assets/image7](assets/media/image7.png)
+the canvas ![Collapse](assets/media/image7.png)
 
 ## Zoom and Pan
 
@@ -112,7 +112,7 @@ To pan, click and hold the left bottom of the mouse and drag the tree
 around.
 
 You can also use the zoom button to zoom if your device doesn’t support
-other options ![..image::\assets/image8](assets/media/image7.png)
+other options ![Zoom](assets/media/image7.png)
 
 ## Expand/Collapse of Tree View
 
@@ -153,7 +153,7 @@ interval selected. By default, the simulation period is the selected
 period and the future. This is an important concept as when we simulate,
 we generally don’t want to apply a change to the past as we can’t change
 it. It is possible to also set the ‘to’ period in a simulation, just
-click ![..image::\assets/image11](assets/media/image10.png) and highlight the
+click ![image11](assets/media/image10.png) and highlight the
 month you want as the end period of a simulation. This is however a
 special scenario.
 
@@ -173,7 +173,7 @@ Note: Simulation of future periods will not impact the YTD data.
 
 **Sim. Period** – to simulate a specific period, for example a 3 month
 rolling forecast from September to November, click the first month
-September then click ![..image::\assets/image15](assets/media/image10.png)and
+September then click ![image15](assets/media/image10.png)and
 click the last month November for simulation. You can then choose to
 only show the values aggregated for the selected simulation periods
 
@@ -222,15 +222,15 @@ There are 2 options to simulate:
     simulation will be showed on the right hand side. A window will open
     displaying the changes. The pencil icon will display the change in
     percentage that has been made:
-    ![..image::\assets/image19](assets/media/image17.png), and a legend with
+    ![image19](assets/media/image17.png), and a legend with
     percentage showing if the adjust has made the scenario better or
-    worse ![..image::\assets/image20](assets/media/image18.png).
+    worse ![image20](assets/media/image18.png).
 
 ![Data Simulation](assets/4.13.png)
 
   - Click on the arrow icon of the node
-    ![..image::\assets/image22](assets/media/image20.png) then click ‘Edit Key
-    Input’ ![..image::\assets/image23](assets/media/image21.png) and manually
+    ![image22](assets/media/image20.png) then click ‘Edit Key
+    Input’ ![image23](assets/media/image21.png) and manually
     edit the changes in simulation per period. Click X to close manual
     input table.
 
@@ -255,7 +255,7 @@ The edit icon will indicate the months that have been edited.
 ![Simulation Periods](assets/4.16.png)
 
 Click reset icon to return to the original data
-![..image::\assets/image27](assets/media/image25.png).
+![image27](assets/media/image25.png).
 
 As part of the New Release, you can simulate the Node having "0" as the
 value. When the slider is moved to the right end, it will show positive
@@ -274,7 +274,7 @@ Key Inputs is available on the left side panel to directly simulate key
 cost drivers without going into the node details.
 
 Click the ‘Edit Key Input’ icon
-![..image::\assets/image28](assets/media/image26.png) and manually edit the
+![image28](assets/media/image26.png) and manually edit the
 changes in simulation per periods.
 
 ![Key Inputs](assets/4.17.png)
@@ -296,9 +296,9 @@ Click X to close manual input table.
 
 All simulations are highlighted in the upper right corner.
 
-![..image::\assets/image32](assets/media/image30.png)
+![image32](assets/media/image30.png)
 
-Click ![..image::\assets/image33](assets/media/image31.png) to return to the
+Click ![image33](assets/media/image31.png) to return to the
 original selected version without any simulation.
 
 When more number of simulations are done, you will be able to view the

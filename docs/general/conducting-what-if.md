@@ -82,7 +82,7 @@ specific, you can apply a simulation on any level.
 Certain nodes may have been locked from changes in the model. This is
 generally when there is a specific reason not to vary this node directly
 for consistency purposes. A locked node will not have the grey pen icon
-![..image::\assets/image48](assets/media/image46.png)or a slider when
+![image48](assets/media/image46.png)or a slider when
 hovering.
 
 Certain nodes may be displayed multiple times in the tree. An example is
