@@ -35,6 +35,6 @@ module.exports = {
     Simulate: ["simulation/simulation"],
     "Analyze Tab": ["analysis/variance-analysis"],
     "Storage and Collaboration": ["storage/storage-collaboration"],
-    "Resources": ["faq/known-issues","faq/formula-list","faq/definitions"]
+    "Resources": ["faq/formula-list","faq/definitions","faq/known-issues"]
   }
 };
