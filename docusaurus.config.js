@@ -2,10 +2,10 @@ module.exports = {
   title: 'ValQ',
   tagline: 'Modern Digital Planning',
   url: 'https://valq.com',
-  baseUrl: '/',
+  baseUrl: '/valqsaurus',
   favicon: 'img/cropped-valq-icon-1-192x192.png',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'visualbis', // Usually your GitHub org/user name.
+  projectName: 'valqsaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'ValQ',
@@ -66,6 +66,11 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Visual BI`,
     },
+    algolia: {
+      apiKey: 'api-key',
+      indexName: 'index-name',
+      algoliaOptions: {}, // Optional, if provided by Algolia
+    }
   },
   presets: [
     [
