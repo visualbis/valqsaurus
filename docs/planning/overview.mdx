@@ -2,6 +2,7 @@
 id: overview
 title: Understanding the features
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
 
 With the Plan Tab, it is possible to create new plans based on existing
 data (e.g. prior period actuals or existing budget) or from scratch
@@ -12,7 +13,7 @@ a new series the user is required to click on the 'Lock' button. This
 ensures that the node hierarchy is fixed and no structural changes are
 possible unless unlocked again.
 
-![Locking the model](/doc-images//PL_1.png)
+<img alt="Locking the model" src={useBaseUrl('/doc-images//PL_1.png')} />
 
 Once locked, the new series can be renamed and the base series can be
 chosen. The new series can be created based on 'Budget', 'Forecast' or
@@ -20,7 +21,7 @@ from scratch by selecting 'Empty Series' option. In the figure below,
 the series has been named 'Jan Forecast' and 'Budget' has been selected
 as the series to start with.
 
-![Creating a new series](/doc-images//PL_2.png)
+<img alt="Creating a new series" src={useBaseUrl('/doc-images//PL_2.png')} />
 
 On clicking 'Submit', the 'Input Editor' screen opens.
 
@@ -28,18 +29,18 @@ The name of the series gets highlighted as shown in the figure below.
 The footer highlights the base series from which the particular series
 has been created.
 
-![Input Editor screen](/doc-images//PL_3.png)
+<img alt="Input Editor screen" src={useBaseUrl('/doc-images//PL_3.png')} />
 
 The newly created series can be set as the primary or the comparison
 series by clicking on the settings icon. The series can also be renamed
 or deleted by choosing the appropriate option.
 
-![Context Menu](/doc-images//PL_4.png)
+<img alt="Context Menu" src={useBaseUrl('/doc-images//PL_4.png')} />
 
 In the 'Action Menu’, options to allocate values, add notes, refresh
 datasource and view history are present.
 
-![Action Menu](/doc-images//PL_5.png)
+<img alt="Action Menu" src={useBaseUrl('/doc-images//PL_5.png')} />
 
 1.  'Weight' and 'Equals' options can be used to allocate a node's
     a. 'Total' value across all periods
@@ -59,7 +60,7 @@ There is a 'Search' option which is particularly useful when using large
 models. On entering a node name or node ID, only the corresponding node
 and its child nodes get displayed.
 
-![Search option for filtering nodes](/doc-images//PL_6.png)
+<img alt="Search option for filtering nodes" src={useBaseUrl('/doc-images//PL_6.png')} />
 
 The model along with the overall and period values get displayed in a
 table form. In case, the empty series has been chosen as the series to
@@ -72,5 +73,5 @@ number format and scaling that were configured while modelling are
 retained. The 'Number Bar' will have the absolute value irrespective of
 the format and scaling.
 
-![Table view](/doc-images//PL_8.png)
+<img alt="Table view" src={useBaseUrl('/doc-images//PL_8.png')} />
 
