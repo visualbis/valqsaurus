@@ -8,7 +8,7 @@
 
 <title data-react-helmet="true">Conducting what-if analysis</title>
 
-<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" property="og:title" content="ValQ · Modern Digital Planning"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="description" content="One of the main aspects of the valQ Custom Visual is to be able to"><meta data-react-helmet="true" property="og:description" content="One of the main aspects of the valQ Custom Visual is to be able to"><meta data-react-helmet="true" property="og:url" content="https://valq.com/valqsaurus/docs/general/conducting-what-if">
+<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" property="og:title" content="ValQ · Modern Digital Planning"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="description" content="import useBaseUrl from &#x27;@docusaurus/useBaseUrl&#x27;; // Add to the top of the file below the front matter."><meta data-react-helmet="true" property="og:description" content="import useBaseUrl from &#x27;@docusaurus/useBaseUrl&#x27;; // Add to the top of the file below the front matter."><meta data-react-helmet="true" property="og:url" content="https://valq.com/valqsaurus/docs/general/conducting-what-if">
 
 <link data-react-helmet="true" rel="shortcut icon" href="/valqsaurus/img/cropped-valq-icon-1-192x192.png">
 
@@ -25,20 +25,20 @@ full year forecast. As we can’t change the past, such a simulated change
 should only be applied to future period. The valQ Custom Visual have
 this capability. When performing what-if analysis, the period that a
 simulation should be applied from is selected in the Side Panel (current
-period is default):</p><p><img src="/doc-images/7.1.png" alt="What-if-Analysis"></p><p>Assuming that we calculate fuel cost based on litre per month and price
+period is default):</p><img alt="What-if-Analysis" src="/valqsaurus/doc-images/7.1.png"><p>Assuming that we calculate fuel cost based on litre per month and price
 as $/l and we are at the end of period 9, the simulated cost should be
 calculated first at the monthly level with the % change applied to
 period 9 and onwards. Once the individual months are calculated, they
 can then be aggregated based on the rule of the node (sum for diesel
-cost, weighted average for diesel price):</p><p><img src="/doc-images/formula.png"></p><p>When hovering over a node, the bottom half of the node becomes a slider.
+cost, weighted average for diesel price):</p><img alt="" src="/valqsaurus/doc-images/formula.png"><p>When hovering over a node, the bottom half of the node becomes a slider.
 Drag the slider left to vary the node by a negatively, drag right for
 positive. As you drag, the values for the selected node is dynamically
 recalculated and displayed. When releasing, the tree will immediately
-recalculate all dependent nodes and show the result.</p><p><img src="/doc-images/7.2.png" alt="Simulation"></p><p>A simulation change is either a pct. Change, a fixed future price or a
+recalculate all dependent nodes and show the result.</p><img alt="Simulation" src="/valqsaurus/doc-images/7.2.png"><p>A simulation change is either a pct. Change, a fixed future price or a
 pct. Growth depending on the simulation model defined for the value
 driver.</p><p>The default method for the driver can be seen on the simulation tooltip.
 You can also change the selected model by selecting at the bottom of the
-tooltip.</p><p><img src="/doc-images/7.3.png" alt="Simulation Tooltip"></p><p>Understanding that a change is applied to the selected periods only is
+tooltip.</p><img alt="Simulation Tooltip" src="/valqsaurus/doc-images/7.3.png"><p>Understanding that a change is applied to the selected periods only is
 particularly important to understand when displaying the Full Year value
 and the node is using a weighted average. The displayed value is the
 weighted average value for the full year, not the value for future
@@ -56,7 +56,7 @@ Year aggregated number, it is useful to pay attention to the Month Data
 also shown on the node. The real world is a little more complex as the
 price is not necessarily the same every month and the fuel consumed is
 unlikely to be constant as well. Below is an example of such a
-simulation based on a real data set:</p><p><img src="/doc-images/7.4.png" alt="Simulation"></p><p>The weighted average price was 1.014. We now simulated a 2% increase in
+simulation based on a real data set:</p><img alt="Simulation" src="/valqsaurus/doc-images/7.4.png"><p>The weighted average price was 1.014. We now simulated a 2% increase in
 the prices selected and future periods which equates to a new weighted
 average price of 1.030. If you look at the month Value, you can see for
 the selected month, this equates to the higher price of 1.195.</p><p>Multiple variations can be applied in parallel as they are expressed as
@@ -66,34 +66,32 @@ showing the percentage the node has been varied with. For quick what-if
 analysis at any level and a dynamic work process from the general to the
 specific, you can apply a simulation on any level.</p><p>Certain nodes may have been locked from changes in the model. This is
 generally when there is a specific reason not to vary this node directly
-for consistency purposes. A locked node will not have the grey pen icon
-<img src="/doc-images/media/image46.png" alt="..image::\/doc-images/image48">or a slider when
-hovering.</p><p>Certain nodes may be displayed multiple times in the tree. An example is
+for consistency purposes. A locked node will not have the grey pen icon</p><img alt="..image::\/doc-images/image48" src="/valqsaurus/doc-images/media/image46.png">or a slider when hovering.<p>Certain nodes may be displayed multiple times in the tree. An example is
 Material Moved as it affects Mining and Mill Throughput. In these
 scenarios, one node is linked to the other. If you simulate a change in
 a linked node, the node it is pointing to is instead changed so it
 applies both to the selected node and anywhere else where the driver is
 used. If a node is a linked node, it has the Linked node text in the
-bottom right corner:</p><p><img src="/doc-images/7.5.png" alt="Simulation"></p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/valqsaurus/docs/general/understanding-node-widget"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Understanding the Node Widget Information</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/valqsaurus/docs/general/more-info-value-driver"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Getting more information about a value driver »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/valqsaurus/docs/doc1">Style Guide</a></li><li class="footer__item"><a class="footer__link-item" href="/valqsaurus/docs/doc2">Second Doc</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/questions/tagged/docusaurus">Stack Overflow</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://discordapp.com/invite/docusaurus">Discord</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Social</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/valqsaurus/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus">Twitter</a></li></ul></div></div><div class="text--center">Copyright © 2020 Visual BI</div></div></footer>
+bottom right corner:</p><img alt="Simulation" src="/valqsaurus/doc-images/7.5.png"></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/valqsaurus/docs/general/understanding-node-widget"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Understanding the Node Widget Information</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/valqsaurus/docs/general/more-info-value-driver"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Getting more information about a value driver »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/valqsaurus/docs/doc1">Style Guide</a></li><li class="footer__item"><a class="footer__link-item" href="/valqsaurus/docs/doc2">Second Doc</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/questions/tagged/docusaurus">Stack Overflow</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://discordapp.com/invite/docusaurus">Discord</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Social</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/valqsaurus/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus">Twitter</a></li></ul></div></div><div class="text--center">Copyright © 2020 Visual BI</div></div></footer>
 </div>
 
-<script src="/valqsaurus/styles.664191bb.js"></script>
+<script src="/valqsaurus/styles.577a02be.js"></script>
 
-<script src="/valqsaurus/runtime~main.53615e85.js"></script>
+<script src="/valqsaurus/runtime~main.ab5351f1.js"></script>
 
-<script src="/valqsaurus/main.10381ac2.js"></script>
+<script src="/valqsaurus/main.8c54c35c.js"></script>
 
-<script src="/valqsaurus/1.699c4f02.js"></script>
+<script src="/valqsaurus/1.67a916a6.js"></script>
 
-<script src="/valqsaurus/2.b5bd32da.js"></script>
+<script src="/valqsaurus/2.8c166b69.js"></script>
 
-<script src="/valqsaurus/1be78505.111cf4b8.js"></script>
+<script src="/valqsaurus/1be78505.14b1acad.js"></script>
 
-<script src="/valqsaurus/b5a0c90a.931c5283.js"></script>
+<script src="/valqsaurus/b5a0c90a.0187da76.js"></script>
 
-<script src="/valqsaurus/17896441.d30133fc.js"></script>
+<script src="/valqsaurus/17896441.6e33ebcc.js"></script>
 
-<script src="/valqsaurus/6fcd0022.b24949ff.js"></script>
+<script src="/valqsaurus/0a420e6b.38a433ce.js"></script>
 
 
 </body>

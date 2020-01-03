@@ -8,7 +8,7 @@
 
 <title data-react-helmet="true">General features of ValQ Custom Visual</title>
 
-<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" property="og:title" content="ValQ · Modern Digital Planning"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="description" content="## Instructions for valQ Custom Visual"><meta data-react-helmet="true" property="og:description" content="## Instructions for valQ Custom Visual"><meta data-react-helmet="true" property="og:url" content="https://valq.com/valqsaurus/docs/general/getting-started">
+<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" property="og:title" content="ValQ · Modern Digital Planning"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="description" content="import useBaseUrl from &#x27;@docusaurus/useBaseUrl&#x27;; // Add to the top of the file below the front matter."><meta data-react-helmet="true" property="og:description" content="import useBaseUrl from &#x27;@docusaurus/useBaseUrl&#x27;; // Add to the top of the file below the front matter."><meta data-react-helmet="true" property="og:url" content="https://valq.com/valqsaurus/docs/general/getting-started">
 
 <link data-react-helmet="true" rel="shortcut icon" href="/valqsaurus/img/cropped-valq-icon-1-192x192.png">
 
@@ -26,13 +26,13 @@ a demo as an example. It is however important to understand that your
 specific implementation may differ.</p><p>Once your designer has implemented and configured the valQ Custom
 Visual, it will be accessed the same way you access your current Power
 BI Apps.</p><p>When you open a valQ Custom Visual, it will open in a similar manner at
-the screenshot below:</p><p><img src="/doc-images/4.1.png" alt="valQ Screen"></p><p>The left panel is the navigation panel and on the canvas you will find
+the screenshot below:</p><img alt="valQ Screen" src="/valqsaurus/doc-images/4.1.png"><p>The left panel is the navigation panel and on the canvas you will find
 the value driver tree. By default, the tree is open on collapsed mode at
 a level defined by the designer. This is typically completely collapsed.</p><p>As part of the New Release, you will be able to hide the Navigation
 Panel in the Runtime by clicking the Collapse button as shown in the
-below Figure.</p><p><img src="/doc-images/navp.png" alt="Hiding Navigation Panel in Runtime"></p><p>As part of the New Release, you can also switch over from Table View
+below Figure.</p><img alt="Hiding Navigation Panel in Runtime" src="/valqsaurus/doc-images/navp.png"><p>As part of the New Release, you can also switch over from Table View
 Mode to Tree View Mode and vice versa using the button as shown in the
-below Figure.</p><p><img src="/doc-images/tbt.png" alt="Table/Tree View Mode"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="input-data"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#input-data" title="Direct link to heading">#</a>Input Data</h2><p>The valQ Custom Visual works with two input data series – the primary
+below Figure.</p><img alt="Table/Tree View Mode" src="/valqsaurus/doc-images/tbt.png"><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="input-data"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#input-data" title="Direct link to heading">#</a>Input Data</h2><p>The valQ Custom Visual works with two input data series – the primary
 and the comparison data series. A common way of using this is to compare
 Forecast vs Budget, Budget vs Last Year Actuals etc. The data series is
 at a certain time grain. This would typically be 1 year by 12 months or
@@ -45,23 +45,20 @@ currently selected Value Display aggregation on the Navigation Panel. In
 the screenshot above, Full Year is selected. The primary value displayed
 on the Widgets is therefore in this instance the Full Year aggregated
 data.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="tree-drill-down"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#tree-drill-down" title="Direct link to heading">#</a>Tree Drill Down</h2><p>Nodes that has children will have an expand ‘&gt;’ button to the right of
-the Widget as highlighted below:</p><p><img src="/doc-images/4.2.png" alt="Nodes with children"></p><p>You can drill down the tree by clicking the expand button.</p><p>The tree will focus on the branches that are being expanded. You can
+the Widget as highlighted below:</p><img alt="Nodes with children" src="/valqsaurus/doc-images/4.2.png"><p>You can drill down the tree by clicking the expand button.</p><p>The tree will focus on the branches that are being expanded. You can
 collapse any specific node by clicking the ‘\&lt;’ collapse button on the
 right of a widget.</p><p>Value Driver Trees are in reality networks. The same driver may impact
 multiple aspects of the Tree. The component therefore contains a concept
-of linked nodes. Such nodes have a link
-<img src="/doc-images/media/image4.png" alt="..image::\/doc-images/image4"> icon that you can click
-which will jump to where the linked node is defined and highlight the
-node:</p><p><img src="/doc-images/4.3.png" alt="Link"></p><p><img src="/doc-images/4.4.png" alt="Linked Nodes"></p><p>To collapse all nodes, click on the collapse icon on the bottom left of
-the canvas <img src="/doc-images/media/image7.png" alt="..image::\/doc-images/image7"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="zoom-and-pan"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#zoom-and-pan" title="Direct link to heading">#</a>Zoom and Pan</h2><p>Value Driver Trees can be large. You can zoom and pan the canvas view.
+of linked nodes. Such nodes have a link</p><img alt="..image::\/doc-images/image4" src="/valqsaurus/doc-images/media/image4.png"> icon that you can click which will jump to where the linked node is defined and highlight the node:<img alt="Link" src="/valqsaurus/doc-images/4.3.png"><img alt="Linked Nodes" src="/valqsaurus/doc-images/4.4.png"><p>To collapse all nodes, click on the collapse icon on the bottom left of
+the canvas <img alt="..image::\/doc-images/image7" src="/valqsaurus/doc-images/media/image7.png"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="zoom-and-pan"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#zoom-and-pan" title="Direct link to heading">#</a>Zoom and Pan</h2><p>Value Driver Trees can be large. You can zoom and pan the canvas view.
 If you are using an iPad or iPhone, you can zoom by pinching and pan by
 dragging the same way you would navigate a map.</p><p>If you are using a mouse with a scroll wheel, you can point your curser
 anywhere in the canvas and scroll the wheel to zoom in and out.</p><p>To pan, click and hold the left bottom of the mouse and drag the tree
 around.</p><p>You can also use the zoom button to zoom if your device doesn’t support
-other options <img src="/doc-images/media/image7.png" alt="..image::\/doc-images/image8"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="expandcollapse-of-tree-view"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#expandcollapse-of-tree-view" title="Direct link to heading">#</a>Expand/Collapse of Tree View</h2><p>As part of the New Release, you will be able to expand/collapse the Node
+other options <img alt="..image::\/doc-images/image8" src="/valqsaurus/doc-images/media/image7.png"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="expandcollapse-of-tree-view"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#expandcollapse-of-tree-view" title="Direct link to heading">#</a>Expand/Collapse of Tree View</h2><p>As part of the New Release, you will be able to expand/collapse the Node
 Hierarchy at the required level using the Go To Level button (see Figure
-below).</p><p><img src="/doc-images/exl.png" alt="Expand/collapse one level"></p><p>For our example, the Node Hierarchy level has been selected as third
-level.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="value-display-and-simulation-period"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#value-display-and-simulation-period" title="Direct link to heading">#</a>Value Display and Simulation Period</h2><p><img src="/doc-images/4.5.png" alt="Value Display"></p><p>With the ‘Value Display’ functionality you can choose the time
+below).</p><img alt="Expand/collapse one level" src="/valqsaurus/doc-images/exl.png"><p>For our example, the Node Hierarchy level has been selected as third
+level.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="value-display-and-simulation-period"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#value-display-and-simulation-period" title="Direct link to heading">#</a>Value Display and Simulation Period</h2><img alt="Value Display" src="/valqsaurus/doc-images/4.5.png"><p>With the ‘Value Display’ functionality you can choose the time
 aggregation you want to display as the primary value. The designer can
 link certain nodes to a user selected scaling. You can select the scale
 you wish to display by selecting this under the Value Display section.
@@ -71,147 +68,137 @@ driver tree typically contains both amounts, prices, rates and physical
 volumes.</p><p>In addition to the primary display value, the designer can also choose a
 secondary value to be displayed. I.e. if you are showing Full Year as
 primary, in the below example, it has been configured to visualize the
-Month data as secondary:</p><p><img src="/doc-images/4.6.png" alt="Value Display"></p><p>The time aggregation and display relates to the Simulation Period
+Month data as secondary:</p><img alt="Value Display" src="/valqsaurus/doc-images/4.6.png"><p>The time aggregation and display relates to the Simulation Period
 selected.</p><p>When <strong>Month</strong> is selected, it shows the first month of the simulation
 interval selected. By default, the simulation period is the selected
 period and the future. This is an important concept as when we simulate,
 we generally don’t want to apply a change to the past as we can’t change
 it. It is possible to also set the ‘to’ period in a simulation, just
-click <img src="/doc-images/media/image10.png" alt="..image::\/doc-images/image11"> and highlight the
+click <img alt="..image::\/doc-images/image11" src="/valqsaurus/doc-images/media/image10.png"> and highlight the
 month you want as the end period of a simulation. This is however a
-special scenario.</p><p><img src="/doc-images/4.7.png" alt="Simulation Period"></p><p><strong>YTD</strong> – the selected period -1 is the year to date data (eg. selected
+special scenario.</p><img alt="Simulation Period" src="/valqsaurus/doc-images/4.7.png"><p><strong>YTD</strong> – the selected period -1 is the year to date data (eg. selected
 simulation period is September to December, the YTD data will be from
-Jan to August).</p><p>Note: Simulation of future periods will not impact the YTD data.</p><p><img src="/doc-images/4.8.png" alt="Value Display and Simulation Period"></p><p><strong>Full Year</strong> – Shows the full year cumulated data</p><p><img src="/doc-images/4.9.png" alt="Value Display and Simulation Period"></p><p><strong>Sim. Period</strong> – to simulate a specific period, for example a 3 month
+Jan to August).</p><p>Note: Simulation of future periods will not impact the YTD data.</p><img alt="Value Display and Simulation Period" src="/valqsaurus/doc-images/4.8.png"><p><strong>Full Year</strong> – Shows the full year cumulated data</p><img alt="Value Display and Simulation Period" src="/valqsaurus/doc-images/4.9.png"><p><strong>Sim. Period</strong> – to simulate a specific period, for example a 3 month
 rolling forecast from September to November, click the first month
-September then click <img src="/doc-images/media/image10.png" alt="..image::\/doc-images/image15">and
+September then click <img alt="..image::\/doc-images/image15" src="/valqsaurus/doc-images/media/image10.png">and
 click the last month November for simulation. You can then choose to
-only show the values aggregated for the selected simulation periods</p><p><img src="/doc-images/4.10.png" alt="Value Display and Simulation Period"></p><p>As part of the New Release, you will be able to view the Tooltip for all
+only show the values aggregated for the selected simulation periods</p><img alt="Value Display and Simulation Period" src="/valqsaurus/doc-images/4.10.png"><p>As part of the New Release, you will be able to view the Tooltip for all
 the Value Displays. For our example, the Tooltip for the Month Value
-Display is shown in the below Figure.</p><p><img src="/doc-images/vd1.png" alt="Tooltip for Month Value Display"></p><p>Similarly you can view the Tooltip for other Value Displays.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="sub-models---filters"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#sub-models---filters" title="Direct link to heading">#</a>Sub Models - Filters</h2><p>If your Value Driver Tree is large, the designer may have defined
+Display is shown in the below Figure.</p><img alt="Tooltip for Month Value Display" src="/valqsaurus/doc-images/vd1.png"><p>Similarly you can view the Tooltip for other Value Displays.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="sub-models---filters"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#sub-models---filters" title="Direct link to heading">#</a>Sub Models - Filters</h2><p>If your Value Driver Tree is large, the designer may have defined
 specific sub views. These would be listed under the Sub Models Section
 of the Navigation Panel. When clicking on one of these views, the tree
 will be filtered and the specific node will be made the top node.
 Calculation dependencies are still respected but this significantly
 improves the navigation as it focuses the tree on a specific area.</p><p>In this example, the options defined are:</p><ul><li>Open all company level: Net Profit</li><li>Open per department: Mining, Processing or the operational tree for
-Mill Throughput</li></ul><p><img src="/doc-images/4.11.png" alt="Sub Models – Filters"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="kpis"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#kpis" title="Direct link to heading">#</a>KPIs</h2><p>The Navigation Panel can be configured to list a set of KPI’s from the
+Mill Throughput</li></ul><img alt="Sub Models – Filters" src="/valqsaurus/doc-images/4.11.png"><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="kpis"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#kpis" title="Direct link to heading">#</a>KPIs</h2><p>The Navigation Panel can be configured to list a set of KPI’s from the
 value driver tree. You are able to navigate to each of them for a fast
 view on the simulation impact on a given KPI. Click on the KPI to
-navigate to the node.</p><p><img src="/doc-images/4.12.png" alt="KPIs"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="data-simulation"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#data-simulation" title="Direct link to heading">#</a>Data Simulation</h2><p>There are 2 options to simulate:</p><ul><li>Hover over a desired node to simulate, slide the scaling button to
+navigate to the node.</p><img alt="KPIs" src="/valqsaurus/doc-images/4.12.png"><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="data-simulation"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#data-simulation" title="Direct link to heading">#</a>Data Simulation</h2><p>There are 2 options to simulate:</p><ul><li>Hover over a desired node to simulate, slide the scaling button to
 right for positive impact or left for negative impact. The
 simulation will be showed on the right hand side. A window will open
 displaying the changes. The pencil icon will display the change in
-percentage that has been made:
-<img src="/doc-images/media/image17.png" alt="..image::\/doc-images/image19">, and a legend with
-percentage showing if the adjust has made the scenario better or
-worse <img src="/doc-images/media/image18.png" alt="..image::\/doc-images/image20">.</li></ul><p><img src="/doc-images/4.13.png" alt="Data Simulation"></p><ul><li>Click on the arrow icon of the node
-<img src="/doc-images/media/image20.png" alt="..image::\/doc-images/image22"> then click ‘Edit Key
-Input’ <img src="/doc-images/media/image21.png" alt="..image::\/doc-images/image23"> and manually
-edit the changes in simulation per period. Click X to close manual
-input table.</li></ul><p>Notes</p><ul><li>You can update the periods highlighted in YELLOW based on the
-selected simulation period.</li></ul><p><img src="/doc-images/4.14.png" alt="Simulation Periods"></p><p>The edit icon will indicate the months that have been edited.</p><p><img src="/doc-images/4.15.png" alt="Simulation Periods"></p><ul><li>You can update the ‘Variation’ column which will overwrite the
+percentage that has been made:<img alt="..image::\/doc-images/image19" src="/valqsaurus/doc-images/media/image17.png">, and a legend with percentage showing if the adjust has made the scenario better or worse <img alt="..image::\/doc-images/image20" src="/valqsaurus/doc-images/media/image18.png">.</li></ul><img alt="Data Simulation" src="/valqsaurus/doc-images/4.13.png"><ul><li>Click on the arrow icon of the node<img alt="..image::\/doc-images/image22" src="/valqsaurus/doc-images/media/image20.png"> then click ‘Edit Key Input’ <img alt="..image::\/doc-images/image23" src="/valqsaurus/doc-images/media/image21.png"> and manually edit the changes in simulation per period. Click X to close manual input table.</li></ul><p>Notes</p><ul><li>You can update the periods highlighted in YELLOW based on the
+selected simulation period.</li></ul><img alt="Simulation Periods" src="/valqsaurus/doc-images/4.14.png"><p>The edit icon will indicate the months that have been edited.</p><img alt="Simulation Periods" src="/valqsaurus/doc-images/4.15.png"><ul><li>You can update the ‘Variation’ column which will overwrite the
 numbers in the selected simulation periods. Any manual updates in
 period will not be overwritten by the ‘Variation’ column. In the
 example below, in blue are the months which were manually edited and
 in orange are highlighted the variation and in this case the month
-to which the variation was applied.</li></ul><p><img src="/doc-images/4.16.png" alt="Simulation Periods"></p><p>Click reset icon to return to the original data
-<img src="/doc-images/media/image25.png" alt="..image::\/doc-images/image27">.</p><p>As part of the New Release, you can simulate the Node having &quot;0&quot; as the
+to which the variation was applied.</li></ul><img alt="Simulation Periods" src="/valqsaurus/doc-images/4.16.png"><p>Click reset icon to return to the original data</p><img alt="..image::\/doc-images/image27" src="/valqsaurus/doc-images/media/image25.png">.<p>As part of the New Release, you can simulate the Node having &quot;0&quot; as the
 value. When the slider is moved to the right end, it will show positive
 values and when the slider is moved to the left end, it will show
 negative values. The property of the Simulation remains the same for the
-Change Percentage, Manual, Growth Percentage and Constant options.</p><p><img src="/doc-images/zero1.png" alt="Simulated Node having &quot;0&quot; as values"></p><p>From the above Figure, you can observe that the Growth Percentage has
+Change Percentage, Manual, Growth Percentage and Constant options.</p><img alt="Simulated Node having &quot;0&quot; as values" src="/valqsaurus/doc-images/zero1.png"><p>From the above Figure, you can observe that the Growth Percentage has
 been selected as an option.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="key-inputs"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#key-inputs" title="Direct link to heading">#</a>Key Inputs</h2><p>Key Inputs is available on the left side panel to directly simulate key
-cost drivers without going into the node details.</p><p>Click the ‘Edit Key Input’ icon
-<img src="/doc-images/media/image26.png" alt="..image::\/doc-images/image28"> and manually edit the
-changes in simulation per periods.</p><p><img src="/doc-images/4.17.png" alt="Key Inputs"></p><p>Notes:</p><ul><li>Can update the periods highlighted in YELLOW based on the selected
+cost drivers without going into the node details.</p><p>Click the ‘Edit Key Input’ icon</p><img alt="..image::\/doc-images/image28" src="/valqsaurus/doc-images/media/image26.png"> and manually edit the changes in simulation per periods.<img alt="Key Inputs" src="/valqsaurus/doc-images/4.17.png"><p>Notes:</p><ul><li>Can update the periods highlighted in YELLOW based on the selected
 simulation period. All the changes in the Key Assumptions are
-highlighted in the left side panel side.</li></ul><p><img src="/doc-images/4.18.png" alt="Simulation Periods"></p><p>Click X to close manual input table.</p><ul><li>Click a Key Assumption or Key Performance Indicator and it will
-highlight the source nodes to further check the details.</li></ul><p><img src="/doc-images/4.19.png" alt="Key Inputs"></p><p>All simulations are highlighted in the upper right corner.</p><p><img src="/doc-images/media/image30.png" alt="..image::\/doc-images/image32"></p><p>Click <img src="/doc-images/media/image31.png" alt="..image::\/doc-images/image33"> to return to the
+highlighted in the left side panel side.</li></ul><img alt="Simulation Periods" src="/valqsaurus/doc-images/4.18.png"><p>Click X to close manual input table.</p><ul><li>Click a Key Assumption or Key Performance Indicator and it will
+highlight the source nodes to further check the details.</li></ul><img alt="Key Inputs" src="/valqsaurus/doc-images/4.19.png"><p>All simulations are highlighted in the upper right corner.</p><img alt="..image::\/doc-images/image32" src="/valqsaurus/doc-images/media/image30.png"><p>Click <img alt="..image::\/doc-images/image33" src="/valqsaurus/doc-images/media/image31.png"> to return to the
 original selected version without any simulation.</p><p>When more number of simulations are done, you will be able to view the
 More button in the upper right corner. By clicking the More button, you
 will be able to see the remaining simulations as shown in the below
-Figure.</p><p><img src="/doc-images/more.png" alt="Simulations - More option button"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="scenarios-functionality"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#scenarios-functionality" title="Direct link to heading">#</a>Scenarios Functionality</h2><p>You can create multiple scenarios in parallel, compare them as well as
+Figure.</p><img alt="Simulations - More option button" src="/valqsaurus/doc-images/more.png"><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="scenarios-functionality"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#scenarios-functionality" title="Direct link to heading">#</a>Scenarios Functionality</h2><p>You can create multiple scenarios in parallel, compare them as well as
 sharing the collection with others.</p><p>This is how you do it.</p><ul><li>Create a Scenario 1 by clicking the “+” button in the Navigation
-Panel (see Figure below).</li></ul><p><img src="/doc-images/sf1.png" alt="Create Scenario"></p><ul><li>You can view the Context Drop Down Menu as shown in the below
-Figure.</li></ul><p><img src="/doc-images/sf2.png" alt="Context Drop Down Menu"></p><ul><li>After clicking the Context Drop Down Menu, you will be able to view
+Panel (see Figure below).</li></ul><img alt="Create Scenario" src="/valqsaurus/doc-images/sf1.png"><ul><li>You can view the Context Drop Down Menu as shown in the below
+Figure.</li></ul><img alt="Context Drop Down Menu" src="/valqsaurus/doc-images/sf2.png"><ul><li>After clicking the Context Drop Down Menu, you will be able to view
 the Menu items such as Copy Scenario, Edit and Delete Functions (see
-Figure below).</li></ul><p><img src="/doc-images/sf3.png" alt="Context Drop Down Menu Items"></p><ul><li>When you click the “Copy Scenario” Menu Item, you will be able to
+Figure below).</li></ul><img alt="Context Drop Down Menu Items" src="/valqsaurus/doc-images/sf3.png"><ul><li>When you click the “Copy Scenario” Menu Item, you will be able to
 create the Scenario 2 with the same configuration as done for
-Scenario 1.</li></ul><p><img src="/doc-images/sf4.png" alt="Scenario 1"></p><p>The above Figure shows the settings for Scenario 1. When you click the
+Scenario 1.</li></ul><img alt="Scenario 1" src="/valqsaurus/doc-images/sf4.png"><p>The above Figure shows the settings for Scenario 1. When you click the
 “Copy Scenario” Menu Item, you will be able to view the Scenario 2
 being created with the same set of configuration done for Scenario 1
-(see Figure below).</p><p><img src="/doc-images/sf5.png" alt="Scenario 2"></p><p>The copied scenario is the replicate of the last scenario (e.g. Scenario
+(see Figure below).</p><img alt="Scenario 2" src="/valqsaurus/doc-images/sf5.png"><p>The copied scenario is the replicate of the last scenario (e.g. Scenario
 2 will have the same data from the copied Scenario 1.</p><ul><li>By clicking the “Edit” Menu Item, you will be able to edit the
-Scenario (see Figure below).</li></ul><p><img src="/doc-images/sf6.png" alt="Scenario 1 Edit"></p><p>From the above Figure, you can observe that you will be able to edit the
+Scenario (see Figure below).</li></ul><img alt="Scenario 1 Edit" src="/valqsaurus/doc-images/sf6.png"><p>From the above Figure, you can observe that you will be able to edit the
 labels for the Title and Description for the selected Scenario.</p><ul><li>By clicking the “Delete” Menu Item, you will be able to delete the
 entire Scenario.</li><li>Click ‘Create a new Scenario and make it the active scenario’ icon
-as shown below</li></ul><p><img src="/doc-images/sfi1.png" alt="Create a new Scenario and make it the active scenario
-icon"></p><p>This will create a new Scenario and will highlight the created Scenario
+as shown below</li></ul><img alt="Create a new Scenario and make it the active scenario
+icon" src="/valqsaurus/doc-images/sfi1.png"><p>This will create a new Scenario and will highlight the created Scenario
 as the active scenario.</p><ul><li>Click ‘Compare Scenario’ icon to generate a report comparison format
-with the key Assumptions and KPI’s (see Figure below).</li></ul><p><img src="/doc-images/sfi2.png" alt="Compare Scenario icon"></p><ul><li>Comparison report compares all scenarios that have been created in
+with the key Assumptions and KPI’s (see Figure below).</li></ul><img alt="Compare Scenario icon" src="/valqsaurus/doc-images/sfi2.png"><ul><li>Comparison report compares all scenarios that have been created in
 the active collection. It also shows the Simulated Data Scenario
 (Baseline: Full Year), Comparison Version (Full Year) and Simulated
 Data Scenario Year to Date (Baseline: YTD).</li><li>From the below Figure, the GREEN fonts denotes the most favorable
 results and the RED fonts denotes the least favorable result in the
-scenario comparison report.</li></ul><p><img src="/doc-images/sf7.png" alt="Full Year Scenario Comparison"></p><p><img src="/doc-images/sf8.png" alt="Full Year Scenario Comparison"></p><p>As part of the New Release, you will be able to download the excel file
+scenario comparison report.</li></ul><img alt="Full Year Scenario Comparison" src="/valqsaurus/doc-images/sf7.png"><img alt="Full Year Scenario Comparison" src="/valqsaurus/doc-images/sf8.png"><p>As part of the New Release, you will be able to download the excel file
 of the compared scenarios based on your choice by clicking the &quot;Download
-to Excel&quot; option in the Scenario Comparison screen as shown below.</p><p><img src="/doc-images/scom1.png" alt="Download option in Scenario Comparison screen"></p><p>You can select the Scenario and download the excel file as shown in the
-below Figure.</p><p><img src="/doc-images/scom2.png" alt="Scenario selection"></p><ul><li>You have the option to make additional simulation in the new
+to Excel&quot; option in the Scenario Comparison screen as shown below.</p><img alt="Download option in Scenario Comparison screen" src="/valqsaurus/doc-images/scom1.png"><p>You can select the Scenario and download the excel file as shown in the
+below Figure.</p><img alt="Scenario selection" src="/valqsaurus/doc-images/scom2.png"><ul><li>You have the option to make additional simulation in the new
 scenario or click the icon appearing in the top most right pane to
 return to the original selected version without any simulation and
-then make a new simulation (see Figure below).</li></ul><p><img src="/doc-images/sfi3.png" alt="Reset All icon"></p><ul><li>Click the Download icon located in the Scenarios Section to extract
-the report in xml format (see Figure below).</li></ul><p><img src="/doc-images/sfi4.png" alt="Download icon"></p><ul><li>Click the icon for write back functionality (see Figure below). By
+then make a new simulation (see Figure below).</li></ul><img alt="Reset All icon" src="/valqsaurus/doc-images/sfi3.png"><ul><li>Click the Download icon located in the Scenarios Section to extract
+the report in xml format (see Figure below).</li></ul><img alt="Download icon" src="/valqsaurus/doc-images/sfi4.png"><ul><li>Click the icon for write back functionality (see Figure below). By
 clicking this option you will be able to write back/post valQ data
-to a configured URL in the server.</li></ul><p><img src="/doc-images/sfi5.png" alt="Write back icon"></p><p>By clicking the Configure URL to write back the current scenario option,
+to a configured URL in the server.</li></ul><img alt="Write back icon" src="/valqsaurus/doc-images/sfi5.png"><p>By clicking the Configure URL to write back the current scenario option,
 you will be able to select any one among the two different options to
 write back the current scenario to the configured URL in the server (see
-Figure below).</p><p><img src="/doc-images/wb1.png" alt="Write back options"></p><ul><li>The created Scenarios can be reordered based on our choice by a
+Figure below).</p><img alt="Write back options" src="/valqsaurus/doc-images/wb1.png"><ul><li>The created Scenarios can be reordered based on our choice by a
 simple drag and drop options. For our example, you have reordered
-the Scenarios as shown in the below Figure.</li></ul><p><img src="/doc-images/sf9.png" alt="Reordered Scenarios"></p><p>Based on the reordered scenarios, you will be able to view the
+the Scenarios as shown in the below Figure.</li></ul><img alt="Reordered Scenarios" src="/valqsaurus/doc-images/sf9.png"><p>Based on the reordered scenarios, you will be able to view the
 Comparison Report with the similar reordered hierarchy as shown in the
-below Figure.</p><p><img src="/doc-images/sf10.png" alt="Comparison Report with reordered Scenarios"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="constraints"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#constraints" title="Direct link to heading">#</a>Constraints</h2><p>Constraints are also available in the left side panel that identifies
+below Figure.</p><img alt="Comparison Report with reordered Scenarios" src="/valqsaurus/doc-images/sf10.png"><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="constraints"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#constraints" title="Direct link to heading">#</a>Constraints</h2><p>Constraints are also available in the left side panel that identifies
 the metrics that are overcapacity (highlighted in RED fonts) or still
 have opportunities for further improvements (WHITE fonts).</p><p>Notes:</p><ul><li>RED fonts means over capacity as compared to the maximum limit.
 (e.g. Production Rate 1.680 tonnes per hour is over capacity as
 compared to the maximum limit of 1.600 tonnes per hour).</li><li>WHITE fonts means still have opportunities for improvement as
-compared to the maximum limit.</li></ul><p><img src="/doc-images/4.23.png" alt="Constraints"></p><p><img src="/doc-images/4.24.png" alt="Constraints"></p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="visualization"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#visualization" title="Direct link to heading">#</a>Visualization</h2><p>Visualization is available in the left side Navigation panel which helps
+compared to the maximum limit.</li></ul><img alt="Constraints" src="/valqsaurus/doc-images/4.23.png"><img alt="Constraints" src="/valqsaurus/doc-images/4.24.png"><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="visualization"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#visualization" title="Direct link to heading">#</a>Visualization</h2><p>Visualization is available in the left side Navigation panel which helps
 the users view the Tree in the Table or Tree format based on their
 choice. By using the View Mode, the user can select three different view
 modes namely Full, Standard and Minimal to view the Tree or Table
 Format.</p><p>The below Figure represents the Tree View Format with the View Mode
 being selected as &quot;Full&quot;. Here you can observe that the Nodes will be
-displayed in Full mode.</p><p><img src="/doc-images/4.25.png" alt="Visualization - Display as Tree and View Mode selected as
-Full"></p><p>The below Figure represents the Table View Format with the View Mode
+displayed in Full mode.</p><img alt="Visualization - Display as Tree and View Mode selected as
+Full" src="/valqsaurus/doc-images/4.25.png"><p>The below Figure represents the Table View Format with the View Mode
 being selected as &quot;Standard&quot;. Here you can observe that the Table view
 will show the Primary value, Comparison value, Variance and Variance %
-values for the Full Year.</p><p><img src="/doc-images/4.26.png" alt="Visualization - Display as Table and View Mode selected as
-Standard"></p><p>When the View Mode is selected as &quot;Full&quot;, then you will be able to view
+values for the Full Year.</p><img alt="Visualization - Display as Table and View Mode selected as
+Standard" src="/valqsaurus/doc-images/4.26.png"><p>When the View Mode is selected as &quot;Full&quot;, then you will be able to view
 the Table with Primary value, Comparison value, Variance and Variance %
 values for the Full Year and also the same set of values for the Month.</p><p>When the View Mode is selected as &quot;Minimal&quot;, then you will be able to
 view only the Primary value and Comparison value for the Full Year.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="contextual-help-information"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#contextual-help-information" title="Direct link to heading">#</a>Contextual Help Information</h2><p>As part of the New Release, the Contextual Help Information feature has
 been included in the Advance Editor window by which the user can be
 directed to the specific help page. For our example, navigate to the
 Settings Tab and click the Navigation Panel. You can view the Contextual
-Help Information icon (see Figure below).</p><p><img src="/doc-images/con1.png" alt="Icon for Contextual Help Information"></p><p>By clicking the Contextual Help Information icon, you will be redirected
+Help Information icon (see Figure below).</p><img alt="Icon for Contextual Help Information" src="/valqsaurus/doc-images/con1.png"><p>By clicking the Contextual Help Information icon, you will be redirected
 to the Help Information page for the Navigation Panel.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/valqsaurus/docs/general/understanding-variances"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Understanding Variances »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#instructions-for-valq-custom-visual" class="contents__link">Instructions for valQ Custom Visual</a></li><li><a href="#input-data" class="contents__link">Input Data</a></li><li><a href="#tree-drill-down" class="contents__link">Tree Drill Down</a></li><li><a href="#zoom-and-pan" class="contents__link">Zoom and Pan</a></li><li><a href="#expandcollapse-of-tree-view" class="contents__link">Expand/Collapse of Tree View</a></li><li><a href="#value-display-and-simulation-period" class="contents__link">Value Display and Simulation Period</a></li><li><a href="#sub-models---filters" class="contents__link">Sub Models - Filters</a></li><li><a href="#kpis" class="contents__link">KPIs</a></li><li><a href="#data-simulation" class="contents__link">Data Simulation</a></li><li><a href="#key-inputs" class="contents__link">Key Inputs</a></li><li><a href="#scenarios-functionality" class="contents__link">Scenarios Functionality</a></li><li><a href="#constraints" class="contents__link">Constraints</a></li><li><a href="#visualization" class="contents__link">Visualization</a></li><li><a href="#contextual-help-information" class="contents__link">Contextual Help Information</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/valqsaurus/docs/doc1">Style Guide</a></li><li class="footer__item"><a class="footer__link-item" href="/valqsaurus/docs/doc2">Second Doc</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/questions/tagged/docusaurus">Stack Overflow</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://discordapp.com/invite/docusaurus">Discord</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Social</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/valqsaurus/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus">Twitter</a></li></ul></div></div><div class="text--center">Copyright © 2020 Visual BI</div></div></footer>
 </div>
 
-<script src="/valqsaurus/styles.664191bb.js"></script>
+<script src="/valqsaurus/styles.577a02be.js"></script>
 
-<script src="/valqsaurus/runtime~main.53615e85.js"></script>
+<script src="/valqsaurus/runtime~main.ab5351f1.js"></script>
 
-<script src="/valqsaurus/main.10381ac2.js"></script>
+<script src="/valqsaurus/main.8c54c35c.js"></script>
 
-<script src="/valqsaurus/1.699c4f02.js"></script>
+<script src="/valqsaurus/1.67a916a6.js"></script>
 
-<script src="/valqsaurus/2.b5bd32da.js"></script>
+<script src="/valqsaurus/2.8c166b69.js"></script>
 
-<script src="/valqsaurus/1be78505.111cf4b8.js"></script>
+<script src="/valqsaurus/1be78505.14b1acad.js"></script>
 
-<script src="/valqsaurus/b5a0c90a.931c5283.js"></script>
+<script src="/valqsaurus/b5a0c90a.0187da76.js"></script>
 
-<script src="/valqsaurus/17896441.d30133fc.js"></script>
+<script src="/valqsaurus/17896441.6e33ebcc.js"></script>
 
-<script src="/valqsaurus/2af1b032.67274d52.js"></script>
+<script src="/valqsaurus/fa53769b.b3dfa84c.js"></script>
 
 
 </body>
