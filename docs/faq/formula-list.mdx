@@ -1,0 +1,97 @@
+---
+id: formula-list
+title: List of Formulas and Functions
+---
+import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
+
+ValQ supports many traditional user-friendly functions that allows you
+to create complex models. You may recognize many of these from your
+experience with Microsoft Excel.
+
+
+## LOGICAL FUNCTIONS
+
+| **NAME** | **SYNTAX**                                                                                     | **DESCRIPTION**                                                                                                                                                                 |
+| -------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| IF       | If( logical_test, value_if_true, value_if_false )                                         | Checks whether a condition is met, and returns one value if TRUE, and another value if FALSE                                                                                    |
+| SWITCH   | SWITCH ( expression, value1, result1, value2, result2, ... value_n, result_n [, default] ) | Evaluates an expression against a list of values and returns the result corresponding to the first matching value. If there is no match, an optional default value is returned. |
+| AND      | AND( logical_test1, [logical_test2], ... )                                                 | Checks whether all the arguments are TRUE, and returns TRUE if all arguments are TRUE                                                                                           |
+| OR       | OR( logical_test1, [logical_test2], ... )                                                  | Checks whether any of the arguments are TRUE, and returns TRUE or FALSE. Returns FALSE only if all arguments are FALSE                                                          |
+| NOT      | NOT( logical_test )                                                                           | Changes FALSE to TRUE, or TRUE to FALSE                                                                                                                                         |
+| XOR      | XOR( logical_test1, [logical_test2], ... )                                                 | Returns a logical 'Exclusive Or' of all arguments                                                                                                                               |
+
+## MATH FUNCTIONS
+
+| **NAME**         | **SYNTAX**                              | **DESCRIPTION**                                                                                                               |
+| ---------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| SUM              | Sum(value1,[value2]....)              | Add all numbers in the arguments, which can be numbers or node references                                                     |
+| AVERAGE          | Average(value1,[value2]....)          | Returns the average (arithmetic mean) of its arguments, which can be numbers or node references                               |
+| AVERAGEEXZERO    | AverageExZero(value1,[value2]....)    | Returns the average (arithmetic mean) of its arguments excluding zeros, which can be numbers or node references               |
+| AVERAGEEXNEG     | AverageExNeg(value1,[value2]....)     | Returns the average (arithmetic mean) of its arguments excluding negatives, which can be numbers or node references           |
+| AVERAGEEXZERONEG | AverageExZeroNeg(value1,[value2]....) | Returns the average (arithmetic mean) of its arguments excluding zeros and negatives, which can be numbers or node references |
+| COUNT            | Count(value1,[value2]....)            | Counts the number of items in a range                                                                                         |
+| ABS              | ABS(value)                              | Returns the absolute value of a number, a number without its sign                                                             |
+| MIN              | Min(value1,[value2]....)              | Returns the smallest number in a set of values. Node references also accepted as arguments                                    |
+| MAX              | Max(value1,[value2]....)              | Returns the largest number in a set of values. Node references also accepted as arguments                                     |
+| POWER            | POW(value,power)                        | Returns the result of a number raised to a power                                                                              |
+| SQRT             | SQRT(value)                             | Returns the square root of a number                                                                                           |
+| EXP              | EXP(value)                              | Returns e raised to the power of a given number                                                                               |
+| LOG              | LOG(value,base)                         | Returns the logarithm of a number to the base you specify                                                                     |
+
+## FINANCE FUNCTIONS
+
+| **NAME** | **SYNTAX**                                                  | **DESCRIPTION**                                                                                                                                        |
+| -------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| IRR      | IRR (Values, [Guess])                                     | Returns the internal rate of return for a series of cash flows. Node references also accepted as arguments                                             |
+| NPV      | NPV (Rate, value1, [value2], ...)                         | Returns the net present value of an investment based on a discount rate and a series of future payments (negative values) and income (positive values) |
+| PMT      | PMT(Rate, Nper, PV, [FV], [Type])                       | Calculates the payment for a loan based on constant payments and a constant interest rate                                                              |
+| IPMT     | IPMT (Rate, Per, Nper, PV, [FV], [Type])                | Returns the interest payment for a given period for an investment,based on periodic, constant payments and a constant interest rate                    |
+| FV       | FV (Rate, Nper, [Pmt], PV, [Type])                      | Returns the future value of an investment based on periodic, constant payments and a constant interest rate                                            |
+| PV       | PV(Rate, Nper, [Pmt], FV, [Type])                       | Returns the present value of an investment                                                                                                             |
+| CUMIPMT  | CUMIPMT (Rate, Nper, PV, start_period, end_period, Type)  | Returns the cumulative interest paid between two periods                                                                                               |
+| CMPRINC  | CUMPRINC (Rate, Nper, PV, start_period, end_period, Type) | Returns the cumulative principal paid on a loan between two periods                                                                                    |
+| RATE     | RATE(Nper, PMT, PV, [FV], [Type], [Guess])            | Returns the interest rate per period of a loan or an investment.                                                                                       |
+
+## RANGE FUNCTIONS
+
+| **NAME**     | **SYNTAX**                      | **DESCRIPTION**   |
+| ------------ | ------------------------------- | ----------------- |
+| Range        | .Range(start_index,end_index) |                   |
+| LastNPeriods | .LastNPeriods(n)                |                   |
+| Get          | .Get(period_index)             |                   |
+| ForEach      | ForEach(Array,Iterator)         | Iterator function |
+
+## STATIC IDENTIFIERS AND OTHER FORMATS
+
+| **CONSTANTS**                                | **EXPLANATION**                                       |
+| -------------------------------------------- | ----------------------------------------------------- |
+| THIS                                         | Current Node                                          |
+| ME                                           | Current Node                                          |
+| CURRENT_SERIES                              | Current series label                                  |
+| CURRENT_SERIES_ID                          | Current series id                                     |
+| CURRENT_PERIOD_INDEX                       | Current period index                                  |
+| <NODE\>.PARENT                              | Parent Node                                           |
+| <NODE\>.CHILDREN                            | Node children                                         |
+| <NODE\>.act                                 | Simulated Series of the node                          |
+| <NODE\>.tgt                                 | Comparison Series of the node                         |
+| <NODE\>.base                                | Baseline Series of the node                           |
+| <NODE\>.ALL_PERIODS                        | Returns all Period values                             |
+| <NODE\>.SIM_PERIODS                        | Returns simulation period values                      |
+| <NODE\>.act.ALL_PERIODS                    | Returns all period values of Simulated Series,        |
+| <NODE\>.tgt.ALL_PERIODS                    | Returns all period values of Comparison Series        |
+| <NODE\>.base.ALL_PERIODS                   | Returns all period values of Baseline Series          |
+| <NODE\>.act.SIM_PERIODS                    | Returns simulation period values of Simulated Series  |
+| <NODE\>.tgt.SIM_PERIODS                    | Returns simulation period values of Comparison Series |
+| <NODE\>.base.SIM_PERIODS                   | Returns simulation period values of Baseline Series   |
+| <NODE\>.Range(start_index,end_index)      | Returns selected range values                         |
+| <NODE\>.act.Range(start_index,end_index)  | Returns selected range values of Simulated Series     |
+| <NODE\>.base.Range(start_index,end_index) | Returns selected range values of Comparison Series    |
+| <NODE\>.tgt.Range(start_index,end_index)  | Returns selected range values of Baseline Series      |
+| <NODE\>.Get(period_index)                  | Returns selected period value                         |
+| <NODE\>.act.Get(period_index)              | Returns selected period value of Simulated Series     |
+| <NODE\>.base.Get(period_index)             | Returns selected period value of Comparison Series    |
+| <NODE\>.tgt.Get(period_index)              | Returns selected period value of Baseline Series      |
+| <NODE\>.LastNPeriods(n)                     | Returns selected range values                         |
+| <NODE\>.act.LastNPeriods(n)                 | Returns selected range values of Simulated Series     |
+| <NODE\>.base.LastNPeriods(n)                | Returns selected range values of Comparison Series    |
+| <NODE\>.tgt.LastNPeriods(n)                 | Returns selected range values of Baseline Series      |
