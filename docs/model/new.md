@@ -1,6 +1,7 @@
 ---
 id: new
-title: New
+title: Creating a new ValQ Model
+sidebar_label: Creating a new ValQ Model
 ---
 The Model tab has two panels in which the left panel represents the
 Advanced Editor and the right panel denotes the canvas which represents

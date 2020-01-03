@@ -7,8 +7,8 @@
 
 module.exports = {
   sideBar: {
-    "ValQ": ["general/getting-started"],
-    "General": [
+    Quickstart: [
+      "general/getting-started",
       "general/understanding-variances",
       "general/understanding-node-widget",
       "general/conducting-what-if",
@@ -27,14 +27,14 @@ module.exports = {
       "planning/overview",
       "planning/budget-allocation",
       {
-        "type": "category",
-        "label": "Other features",
-        "items": ["planning/others/adding-note", "planning/others/view-history"]
+        type: "category",
+        label: "Other features",
+        items: ["planning/others/adding-note", "planning/others/view-history"]
       }
     ],
-    "Simulate Tab": ["simulation/simulation"],
+    Simulate: ["simulation/simulation"],
     "Analyze Tab": ["analysis/variance-analysis"],
     "Storage and Collaboration": ["storage/storage-collaboration"],
-    "Known Issues and Limitations": ["faq/known-issues"]
-  },
+    "Resources": ["faq/known-issues"]
+  }
 };

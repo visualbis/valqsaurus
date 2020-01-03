@@ -14,8 +14,7 @@ module.exports = {
         src: 'img/valq-logo-light.png',
       },
       links: [
-        {to: 'docs/general/getting-started', label: 'Docs', position: 'left'},
-        {to: 'blog', label: 'Blog', position: 'left'}
+        {to: 'docs/general/getting-started', label: 'Docs', position: 'right'}
       ],
     },
     footer: {
@@ -65,7 +64,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Visual BI`,
     },
   },
   presets: [
