@@ -11,14 +11,14 @@ below).
 2.  Time Aggregation Labels
 3.  Data Sorting
 
-![Data Series Tab](assets/dma.png)
+![Data Series Tab](/doc-images/dma.png)
 
 ## Data Series Manager
 
 Using the option "Data Series Manager", you will be able to configure
 the Periods and Data Series for the Tree (see Figure below).
 
-![Data Series Tab – Data Series Manager](assets/dm1.png)
+![Data Series Tab – Data Series Manager](/doc-images/dm1.png)
 
 For our example, we have the data source having periods from Jan to Dec,
 Budget and Forecast values. The Budget values will be the Comparison
@@ -38,17 +38,17 @@ below steps for configuring the values in the Data Series Manager.
 6.  When you click the Baseline label, you will be able view the
     Baseline values as Forecast values as shown below.
 
-![Baseline Values](assets/dm2.png)
+![Baseline Values](/doc-images/dm2.png)
 
 7.  When you click the Comparison label, you will be able view the
     Comparison values as the Budget values as shown below
 
-![Comparison Values](assets/dm3.png)
+![Comparison Values](/doc-images/dm3.png)
 
 Based on the above set of configuration steps, you will be able to view
 the valQ screen as shown below.
 
-![valQ screen configured with Periods and Data Series](assets/dm4.png)
+![valQ screen configured with Periods and Data Series](/doc-images/dm4.png)
 
 You can observe from the above Figure that after simulating the Node
 Sale Allowances, you will be able to view the Baseline data in
@@ -60,12 +60,12 @@ Using the option “Time Aggregation Labels”, you will be able to
 configure the Active Period, Till Prior Period, All Periods and
 Simulation Period settings (see Figure below).
 
-![Data Label – Time Aggregation Labels](assets/14.7.png)
+![Data Label – Time Aggregation Labels](/doc-images/14.7.png)
 
 Based on the above configuration, you will be able to view the valQ
 screen as shown below.
 
-![valQ screen with time aggregation labels](assets/14.8.png)
+![valQ screen with time aggregation labels](/doc-images/14.8.png)
 
 From the above Figure, you will be able to view the Time Aggregation
 Labels as highlighted in the valQ screen.
@@ -77,78 +77,9 @@ your Data Source. You will be able to select the Sort fields, sort the
 data with Ascending or Descending Order and select the Start With field
 with the required Month (see Figure below).
 
-![Data Sorting Settings](assets/14.13.png)
+![Data Sorting Settings](/doc-images/14.13.png)
 
 ## Additional Properties of Data Series Tab
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Area</th>
-<th>Property</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Data Series Manager</td>
-<td>Periods</td>
-<td>Period(s) per data series: It indicates the number of values in the series. As an example, the series with Jan, Feb and Mar can be entered as 3 periods.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>Period Label(s): The Labels can be given as Jan, Feb, Mar (being separated by commas.</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Data Series</td>
-<td>By enabling this property, you will be able to include the Comparison Data Series.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>The Preview shows all the available Data Series (both Baseline and Comparison) and the Additional Series.</td>
-</tr>
-<tr class="odd">
-<td>Time Aggregation Labels</td>
-<td></td>
-<td>These labels are used in the navigation panel, nodes and popup screens.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Active period</td>
-<td>This property sets only one period of interest. A Label and a three letter abbreviation can be provided for this property.</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Till Prior Period</td>
-<td>This property sets Total value from beginning to a specific period. A Label and a three letter abbreviation can be provided for this property.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>All periods</td>
-<td>This property sets Total value of all periods in the series. A Label and a three letter abbreviation can be provided for this property.</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Simulation Period</td>
-<td>This property sets a specific set of continuous periods. A Label and a three letter abbreviation can be provided for this property.</td>
-</tr>
-<tr class="even">
-<td>Data Sorting</td>
-<td></td>
-<td><p>The data can be sorted using the below filters:</p>
-<p>1. Choose Sort Field(s) from the data source</p>
-<p>2. Sort By: Ascending/Descending</p>
-<p>3. Start with entry from the data source</p></td>
-</tr>
-</tbody>
-</table>
 
 *Additional Properties of Data Series Tab*

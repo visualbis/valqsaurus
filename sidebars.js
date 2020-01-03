@@ -1,5 +1,12 @@
-{
-  "docs": {
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+module.exports = {
+  sideBar: {
     "ValQ": ["general/getting-started"],
     "General": [
       "general/understanding-variances",
@@ -20,14 +27,14 @@
       "planning/overview",
       "planning/budget-allocation",
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "Other features",
-        "ids": ["planning/others/adding-note", "planning/others/view-history"]
+        "items": ["planning/others/adding-note", "planning/others/view-history"]
       }
     ],
     "Simulate Tab": ["simulation/simulation"],
     "Analyze Tab": ["analysis/variance-analysis"],
     "Storage and Collaboration": ["storage/storage-collaboration"],
     "Known Issues and Limitations": ["faq/known-issues"]
-  }
-}
+  },
+};

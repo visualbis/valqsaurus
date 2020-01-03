@@ -10,7 +10,7 @@ this capability. When performing what-if analysis, the period that a
 simulation should be applied from is selected in the Side Panel (current
 period is default):
 
-![What-if-Analysis](assets/7.1.png)
+![What-if-Analysis](/doc-images/7.1.png)
 
 Assuming that we calculate fuel cost based on litre per month and price
 as $/l and we are at the end of period 9, the simulated cost should be
@@ -19,7 +19,7 @@ period 9 and onwards. Once the individual months are calculated, they
 can then be aggregated based on the rule of the node (sum for diesel
 cost, weighted average for diesel price):
 
-![](assets/formula.png)
+![](/doc-images/formula.png)
 
 When hovering over a node, the bottom half of the node becomes a slider.
 Drag the slider left to vary the node by a negatively, drag right for
@@ -27,7 +27,7 @@ positive. As you drag, the values for the selected node is dynamically
 recalculated and displayed. When releasing, the tree will immediately
 recalculate all dependent nodes and show the result.
 
-![Simulation](assets/7.2.png)
+![Simulation](/doc-images/7.2.png)
 
 A simulation change is either a pct. Change, a fixed future price or a
 pct. Growth depending on the simulation model defined for the value
@@ -37,7 +37,7 @@ The default method for the driver can be seen on the simulation tooltip.
 You can also change the selected model by selecting at the bottom of the
 tooltip.
 
-![Simulation Tooltip](assets/7.3.png)
+![Simulation Tooltip](/doc-images/7.3.png)
 
 Understanding that a change is applied to the selected periods only is
 particularly important to understand when displaying the Full Year value
@@ -63,7 +63,7 @@ price is not necessarily the same every month and the fuel consumed is
 unlikely to be constant as well. Below is an example of such a
 simulation based on a real data set:
 
-![Simulation](assets/7.4.png)
+![Simulation](/doc-images/7.4.png)
 
 The weighted average price was 1.014. We now simulated a 2% increase in
 the prices selected and future periods which equates to a new weighted
@@ -82,7 +82,7 @@ specific, you can apply a simulation on any level.
 Certain nodes may have been locked from changes in the model. This is
 generally when there is a specific reason not to vary this node directly
 for consistency purposes. A locked node will not have the grey pen icon
-![image48](assets/media/image46.png)or a slider when
+![..image::\/doc-images/image48](/doc-images/media/image46.png)or a slider when
 hovering.
 
 Certain nodes may be displayed multiple times in the tree. An example is
@@ -93,4 +93,4 @@ applies both to the selected node and anywhere else where the driver is
 used. If a node is a linked node, it has the Linked node text in the
 bottom right corner:
 
-![Simulation](assets/7.5.png)
+![Simulation](/doc-images/7.5.png)
