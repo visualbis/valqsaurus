@@ -11,8 +11,10 @@
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.40",
     "@docusaurus/preset-classic": "^2.0.0-alpha.40",
+    "cheerio": "^1.0.0-rc.3",
     "classnames": "^2.2.6",
     "jsdom": "^15.2.1",
+    "lunr": "^2.3.8",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
@@ -27,5 +29,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "fs-extra": "^8.1.0"
   }
 }
