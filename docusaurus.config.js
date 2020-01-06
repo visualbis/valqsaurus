@@ -26,6 +26,10 @@ module.exports = {
             {
               label: "Documentation",
               to: "docs/general/getting-started"
+            },
+            {
+              label: "Functions",
+              to: "docs/references/formulas/if"
             }
           ]
         },
