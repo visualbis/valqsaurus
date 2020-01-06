@@ -8,11 +8,9 @@
 import React, { useRef, useCallback } from "react";
 import classnames from "classnames";
 import { useHistory } from "@docusaurus/router";
-import "./algolia.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import DocSearch from "./lunrSearch/lib/DocSearch";
-import searchData from "./seaarch-data";
 
+let loaded = false;
 const Search = props => {
     const initialized = useRef(false);
     const searchBarRef = useRef(null);
@@ -21,8 +19,8 @@ const Search = props => {
     const { baseUrl } = siteConfig;
     const initAlgolia = () => {
         if (!initialized.current) {
-            new DocSearch({
-                searchData,
+            new docsearch.DocSearch({
+                searchData: window.searchData,
                 inputSelector: "#search_input_react",
                 // Override algolia's default selection event, allowing us to do client-side
                 // navigation and avoiding a full page refresh.
@@ -44,7 +42,18 @@ const Search = props => {
     };
 
     const loadAlgolia = () => {
-        initAlgolia();
+        if (!loaded) {
+            Promise.all([
+                import("./seaarch-data"),
+                import("./algolia.css")
+            ]).then(([{ default: searchData }]) => {
+                loaded = true;
+                window.searchData = searchData;
+                initAlgolia();
+            });
+        } else {
+            initAlgolia();
+        }
     };
 
     const toggleSearchIconClick = useCallback(
