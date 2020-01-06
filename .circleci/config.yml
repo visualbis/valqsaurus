@@ -2,10 +2,10 @@
 # and uncomment the filters: *filter-only-master down below too
 #
 aliases:
- - &filter-only-master
-   branches:
-     only:
-       - master
+  - &filter-only-master
+    branches:
+      only:
+        - master
 
 version: 2
 jobs:
@@ -17,16 +17,24 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Yarn Install
+          command: yarn install
+      - run:
+          name: Build Search JSON
+          command: |
+            yarn build
+            yarn build:search
+      - run:
           name: Deploying to GitHub Pages
           command: |
             git config --global user.email "praveenn-vbi@users.noreply.github.com"
             git config --global user.name "praveenn-vbi"
             echo "machine github.com login praveenn-vbi password $GITHUB_TOKEN" > ~/.netrc
-            yarn install && GIT_USER=praveenn-vbi yarn deploy
+            GIT_USER=praveenn-vbi yarn deploy
 
 workflows:
   version: 2
   build_and_deploy:
     jobs:
       - deploy-website:
-         filters: *filter-only-master
+          filters: *filter-only-master

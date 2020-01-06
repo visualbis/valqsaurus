@@ -65,7 +65,6 @@ const buildSearchData = filePath => {
     baseUrl = baseUrl.join("/");
     const pageTitleElement = article.find("h1");
     if (!pageTitleElement.length) {
-        console.log(filePath);
         return;
     }
     const pageTitle = article.find("h1").text();
@@ -101,7 +100,9 @@ const buildSearchData = filePath => {
 
 const init = () => {
     searchDirectory(BUILD_PATH, ".html", buildSearchData);
-    fs.writeJSON("./search-data.json", SEARCH_DATA, { spaces: 2 });
+    fs.writeFile("./src/theme/SearchBar/search-data.js", `
+    export default ${JSON.stringify(SEARCH_DATA, null, 2)}
+    `);
 };
 
 init();
