@@ -65,7 +65,6 @@ const buildSearchData = filePath => {
     baseUrl = baseUrl.join("/");
     const pageTitleElement = article.find("h1");
     if (!pageTitleElement.length) {
-        console.log(filePath);
         return;
     }
     const pageTitle = article.find("h1").text();

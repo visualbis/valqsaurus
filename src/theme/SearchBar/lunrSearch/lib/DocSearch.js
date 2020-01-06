@@ -184,9 +184,7 @@ class DocSearch {
                 // eslint-disable-next-line no-param-reassign
                 query = queryHook(query) || query;
             }
-            console.log("HERE");
             this.client.search(query).then(hits => {
-                console.log(hits, "res");
                 if (
                     this.queryDataCallback &&
                     typeof this.queryDataCallback == "function"
