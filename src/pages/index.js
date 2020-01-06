@@ -8,35 +8,50 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>Modeling</>,
+    imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-modeling.png',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Model your business by capturing 1000+ business variables across various functions in ValQ.
       </>
     ),
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>Visualization</>,
+    imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-visualization.png',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Visualize your business model instantly by connecting your Key Drivers to Key Performance Indicators.
       </>
     ),
   },
   {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: <>Simulation</>,
+    imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-simulation.png',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Perform what-if analysis, run on-the-fly simulations and compare multiple business scenarios with ValQ.
       </>
     ),
   },
+  {
+    title: <>Planning</>,
+    imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-planning.png',
+    description: (
+      <>
+        Plan, budget and forecast your business operations efficiently and optimize your goals.
+      </>
+    ),
+  },
+  {
+    title: <>Advanced Analysis</>,
+    imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-advanced-analytics.png',
+    description: (
+      <>
+        Run in-depth and nimble Variance Analysis with minimal clicks.
+      </>
+    ),
+  }
 ];
 
 function Feature({imageUrl, title, description}) {
