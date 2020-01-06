@@ -17,6 +17,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Yarn Install
+          command: yarn install
+      - run:
           name: Build Search JSON
           command: |
             yarn build
@@ -27,7 +30,7 @@ jobs:
             git config --global user.email "praveenn-vbi@users.noreply.github.com"
             git config --global user.name "praveenn-vbi"
             echo "machine github.com login praveenn-vbi password $GITHUB_TOKEN" > ~/.netrc
-            yarn install && GIT_USER=praveenn-vbi yarn deploy
+            GIT_USER=praveenn-vbi yarn deploy
 
 workflows:
   version: 2
