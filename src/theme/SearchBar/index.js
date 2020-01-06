@@ -43,7 +43,7 @@ const Search = props => {
     const loadAlgolia = () => {
         if (!loaded) {
             Promise.all([
-                import("./seaarch-data"),
+                import("./search-data"),
                 import('./lunrSearch/lib/DocSearch'),
                 import("./algolia.css"),
             ]).then(([{ default: searchData }, { default: DocSearch }]) => {
