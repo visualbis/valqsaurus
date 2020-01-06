@@ -1,49 +1,107 @@
 const jsdom = require("jsdom");
-const fs = require('fs');
+const fs = require("fs-extra");
+const path = require("path");
+const cheerio = require("cheerio");
 const { JSDOM } = jsdom;
+const BUILD_PATH = "./build/";
+const SEARCH_DATA = [];
 
-
-const nextUntil = function (elem, selector) {
-
-	// Setup siblings array
-	var siblings = [];
-
-	// Get the next sibling element
-	elem = elem.nextElementSibling;
-
-	// As long as a sibling exists
-	while (elem) {
-
-        // If we've reached our match, bail
-		if (elem.matches(selector)) break;
-
-		// Otherwise, push it to the siblings array
-		siblings.push(elem);
-
-		// Get the next sibling element
-		elem = elem.nextElementSibling;
-
-	}
-
-	return siblings;
-
+const getContent = element => {
+  return element
+    .text()
+    .replace(/\s\s+/g, " ")
+    .replace(/(\r\n|\n|\r)/gm, " ")
+    .trim();
 };
 
-const HtmlFile = fs.readFileSync('./build/docs/general/getting-started/index.html');
-const dom = new JSDOM(HtmlFile);
-const article = dom.window.document.querySelector("article"); 
-const markdown = article.querySelector(".markdown");
-const sections = Array.from(markdown.getElementsByTagName("h2"));
-let i =0;
-while(true){
-    if(i >=sections.length){
-        break;
+const getSectionContent = function(section) {
+  let content = "";
+  section = section.next();
+  while (section.length) {
+    if (section.is("h2")) break;
+    content += getContent(section) + " ";
+    section = section.next();
+  }
+  return content;
+};
+
+const searchDirectory = (startPath, extension, callback) => {
+  if (!fs.existsSync(startPath)) {
+    return;
+  }
+
+  const files = fs.readdirSync(startPath);
+  files.forEach(file => {
+    const filePath = path.join(startPath, file);
+    const stats = fs.lstatSync(filePath);
+    if (stats.isDirectory()) {
+      searchDirectory(filePath, extension, callback);
+    } else if (path.extname(filePath) === extension) {
+      callback(filePath);
     }
-    const sib = nextUntil(sections[i],"h2");
-    console.log("Heading : " + sections[i].textContent);
-    sib.forEach(s =>{
-        console.log(s.textContent);
+  });
+};
+
+// Build search data for a html
+const buildSearchData = filePath => {
+  const htmlFile = fs.readFileSync(filePath);
+  //   const dom = new JSDOM(htmlFile);
+  const $ = cheerio.load(htmlFile);
+
+  const article = $("article");
+  if (!article.length) {
+    return;
+  }
+  const markdown = article.find(".markdown");
+  if (!markdown.length) {
+    return;
+  }
+
+  let baseUrl = filePath.split(path.sep);
+  // remove build folder path from url
+  baseUrl.splice(0, 1);
+  // remove index.html from the path
+  baseUrl.pop();
+  baseUrl = baseUrl.join("/");
+  const pageTitleElement = article.find("h1");
+  if (!pageTitleElement.length) {
+    console.log(filePath);
+    return;
+  }
+  const pageTitle = article.find("h1").text();
+  const sectionHeaders = markdown.find("h2");
+
+  SEARCH_DATA.push({
+    title: pageTitle,
+    type: 0,
+    sectionRef: "#",
+    url: baseUrl,
+    // If there is no sections then push the complete content under page title
+    content: sectionHeaders.length === 0 ? getContent(markdown) : ""
+  });
+
+  sectionHeaders.map((i, sectionHeader) => {
+    sectionHeader = $(sectionHeader);
+    const title = sectionHeader.text().slice(1);
+    const sectionRef = sectionHeader
+      .children()
+      .first()
+      .attr("id");
+    const url = `${baseUrl}#${sectionRef}`;
+    const content = getSectionContent(sectionHeader);
+    SEARCH_DATA.push({
+      title,
+      type: 1,
+      pageTitle,
+      url,
+      content
     });
-    console.log("------------------------------------------");
-    i++;
-}
+  });
+};
+
+const init = () => {
+  searchDirectory(BUILD_PATH, ".html", buildSearchData);
+  fs.writeJSON("./search-data.json", SEARCH_DATA, { spaces: 2 });
+};
+
+init();
