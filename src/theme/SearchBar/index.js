@@ -18,7 +18,7 @@ const Search = props => {
     const { baseUrl } = siteConfig;
     const initAlgolia = () => {
         if (!initialized.current) {
-            new docsearch.DocSearch({
+            new window.DocSearch({
                 searchData: window.searchData,
                 inputSelector: "#search_input_react",
                 // Override algolia's default selection event, allowing us to do client-side
@@ -44,11 +44,12 @@ const Search = props => {
         if (!loaded) {
             Promise.all([
                 import("./seaarch-data"),
+                import('./lunrSearch/lib/DocSearch'),
                 import("./algolia.css"),
-                import('./lunrSearch/docsearch')
-            ]).then(([{ default: searchData }]) => {
+            ]).then(([{ default: searchData }, { default: DocSearch }]) => {
                 loaded = true;
                 window.searchData = searchData;
+                window.DocSearch = DocSearch;
                 initAlgolia();
             });
         } else {
