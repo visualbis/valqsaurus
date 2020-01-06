@@ -9,7 +9,6 @@ import React, { useRef, useCallback } from "react";
 import classnames from "classnames";
 import { useHistory } from "@docusaurus/router";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-
 let loaded = false;
 const Search = props => {
     const initialized = useRef(false);
@@ -45,7 +44,8 @@ const Search = props => {
         if (!loaded) {
             Promise.all([
                 import("./seaarch-data"),
-                import("./algolia.css")
+                import("./algolia.css"),
+                import('./lunrSearch/docsearch')
             ]).then(([{ default: searchData }]) => {
                 loaded = true;
                 window.searchData = searchData;
