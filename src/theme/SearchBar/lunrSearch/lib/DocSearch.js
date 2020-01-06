@@ -21,7 +21,7 @@ const usage = `Usage:
   [ appId ],
   [ autocompleteOptions.{hint,debug} ]
 })`;
-class DocSearch {
+export class DocSearch {
     constructor({
         searchData,
         inputSelector,
@@ -339,4 +339,3 @@ class DocSearch {
     }
 }
 
-export default DocSearch;
