@@ -1,4 +1,5 @@
-[
+
+    export default [
   {
     "title": "Variance Analysis",
     "type": 0,
@@ -21,35 +22,35 @@
     "content": ""
   },
   {
-    "title": "LOGICAL FUNCTIONS",
+    "title": "Logical Functions",
     "type": 1,
     "pageTitle": "List of Formulas and Functions",
     "url": "docs/faq/formula-list#logical-functions",
     "content": " NAME SYNTAX DESCRIPTION IF If( logical_test, value_if_true, value_if_false ) Checks whether a condition is met, and returns one value if TRUE, and another value if FALSE SWITCH SWITCH ( expression, value1, result1, value2, result2, ... value_n, result_n [, default] ) Evaluates an expression against a list of values and returns the result corresponding to the first matching value. If there is no match, an optional default value is returned. AND AND( logical_test1, [logical_test2], ... ) Checks whether all the arguments are TRUE, and returns TRUE if all arguments are TRUE OR OR( logical_test1, [logical_test2], ... ) Checks whether any of the arguments are TRUE, and returns TRUE or FALSE. Returns FALSE only if all arguments are FALSE NOT NOT( logical_test ) Changes FALSE to TRUE, or TRUE to FALSE XOR XOR( logical_test1, [logical_test2], ... ) Returns a logical &apos;Exclusive Or&apos; of all arguments  "
   },
   {
-    "title": "MATH FUNCTIONS",
+    "title": "Math Functions",
     "type": 1,
     "pageTitle": "List of Formulas and Functions",
     "url": "docs/faq/formula-list#math-functions",
     "content": " NAME SYNTAX DESCRIPTION SUM Sum(value1,[value2]....) Add all numbers in the arguments, which can be numbers or node references AVERAGE Average(value1,[value2]....) Returns the average (arithmetic mean) of its arguments, which can be numbers or node references AVERAGEEXZERO AverageExZero(value1,[value2]....) Returns the average (arithmetic mean) of its arguments excluding zeros, which can be numbers or node references AVERAGEEXNEG AverageExNeg(value1,[value2]....) Returns the average (arithmetic mean) of its arguments excluding negatives, which can be numbers or node references AVERAGEEXZERONEG AverageExZeroNeg(value1,[value2]....) Returns the average (arithmetic mean) of its arguments excluding zeros and negatives, which can be numbers or node references COUNT Count(value1,[value2]....) Counts the number of items in a range ABS ABS(value) Returns the absolute value of a number, a number without its sign MIN Min(value1,[value2]....) Returns the smallest number in a set of values. Node references also accepted as arguments MAX Max(value1,[value2]....) Returns the largest number in a set of values. Node references also accepted as arguments POWER POW(value,power) Returns the result of a number raised to a power SQRT SQRT(value) Returns the square root of a number EXP EXP(value) Returns e raised to the power of a given number LOG LOG(value,base) Returns the logarithm of a number to the base you specify  "
   },
   {
-    "title": "FINANCE FUNCTIONS",
+    "title": "Finance Functions",
     "type": 1,
     "pageTitle": "List of Formulas and Functions",
     "url": "docs/faq/formula-list#finance-functions",
     "content": " NAME SYNTAX DESCRIPTION IRR IRR (Values, [Guess]) Returns the internal rate of return for a series of cash flows. Node references also accepted as arguments NPV NPV (Rate, value1, [value2], ...) Returns the net present value of an investment based on a discount rate and a series of future payments (negative values) and income (positive values) PMT PMT(Rate, Nper, PV, [FV], [Type]) Calculates the payment for a loan based on constant payments and a constant interest rate IPMT IPMT (Rate, Per, Nper, PV, [FV], [Type]) Returns the interest payment for a given period for an investment,based on periodic, constant payments and a constant interest rate FV FV (Rate, Nper, [Pmt], PV, [Type]) Returns the future value of an investment based on periodic, constant payments and a constant interest rate PV PV(Rate, Nper, [Pmt], FV, [Type]) Returns the present value of an investment CUMIPMT CUMIPMT (Rate, Nper, PV, start_period, end_period, Type) Returns the cumulative interest paid between two periods CMPRINC CUMPRINC (Rate, Nper, PV, start_period, end_period, Type) Returns the cumulative principal paid on a loan between two periods RATE RATE(Nper, PMT, PV, [FV], [Type], [Guess]) Returns the interest rate per period of a loan or an investment.  "
   },
   {
-    "title": "RANGE FUNCTIONS",
+    "title": "Range Functions",
     "type": 1,
     "pageTitle": "List of Formulas and Functions",
     "url": "docs/faq/formula-list#range-functions",
     "content": " NAME SYNTAX DESCRIPTION Range .Range(start_index,end_index) LastNPeriods .LastNPeriods(n) Get .Get(period_index) ForEach ForEach(Array,Iterator) Iterator function  "
   },
   {
-    "title": "STATIC IDENTIFIERS AND OTHER FORMATS",
+    "title": "Static Identifiers And Other Formats",
     "type": 1,
     "pageTitle": "List of Formulas and Functions",
     "url": "docs/faq/formula-list#static-identifiers-and-other-formats",
@@ -483,3 +484,4 @@
     "content": "The storage feature allows user to access, store, audit, collaborate, synchronize, and run further analysis on the baseline, comparison, and the simulated data series across the entire model scenarios. Users require a dedicated ValQ workspace access authenticated by their Office 365 credentials.After successful login, user can see additional options such as Sync, Comments, and History LogIn the screenshot model, lets assume the user deletes a node 'Ryan Smith'Lets also assume the user simulates on another node 'Chris Morris'User can comment on the changes made by clicking the 'Comments' icon on top of the node. The comment along with the username and time log is saved and displayed.User can synchronize and store the changes to the workspace by clicking the 'Sync' icon, naming the model, and clicking 'Upload'.The 'History Log' has captured the model and scenario level changes made by the user in a chronological order. This icon helps in auditing the changes in the ValQ model.The comments can also be tracked under the model level 'Comments' icon. Comments window displays all user comments at Scenario-Node level.ValQ has also been made collaborative - Users who are a part of the same workspace can also collaborate on the same ValQ model. Assuming a second user accessing the same model simulates on the existing scenario, creates additional scenario, adds a new node, and comments on the changes done. To store these changes, the user also synchronizes them to the workapce.Once the first user logs in, all the changes made by the second user are synced up and displayed at the ValQ canvas.The changes at a Model/Scenario level are captured at the History Log. The comments in chronological order between users are displayed at a Node-Scenario levelLastly, users can also export their export all the data values fed and generated from ValQ - namely, basline, comparison, and scenario data. Under the 'Sync' window, users can export their ValQ data by clicking 'Export model as a web data source', making the data series and scenario selection, and clicking 'Download CSV' (through Power BI Service) or copy-pasting the URLs into Excel (through Power BI Desktop)In Excel, the copied URLs are fed into the 'From Web' - 'Advanced' window to generate the exported data.Users can also run further simulations to their scenarios and instantly synchronize the new data by refreshing the data query within 'Queries & Connections' in Excel."
   }
 ]
+    
