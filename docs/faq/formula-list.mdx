@@ -11,87 +11,595 @@ experience with Microsoft Excel.
 
 ## Logical Functions
 
-| **NAME**                                | **SYNTAX**                                                                                 | **DESCRIPTION**                                                                                                                                                                 |
-| --------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [IF](../references/formulas/if)         | If( logical_test, value_if_true, value_if_false )                                          | Checks whether a condition is met, and returns one value if TRUE, and another value if FALSE                                                                                    |
-| [SWITCH](../references/formulas/switch) | SWITCH ( expression, value1, result1, value2, result2, ... value_n, result_n [, default] ) | Evaluates an expression against a list of values and returns the result corresponding to the first matching value. If there is no match, an optional default value is returned. |
-| [AND](../references/formulas/and)       | AND( logical_test1, [logical_test2], ... )                                                 | Checks whether all the arguments are TRUE, and returns TRUE if all arguments are TRUE                                                                                           |
-| [OR](../references/formulas/or)         | OR( logical_test1, [logical_test2], ... )                                                  | Checks whether any of the arguments are TRUE, and returns TRUE or FALSE. Returns FALSE only if all arguments are FALSE                                                          |
-| [NOT](../references/formulas/not)       | NOT( logical_test )                                                                        | Changes FALSE to TRUE, or TRUE to FALSE                                                                                                                                         |
-| [XOR](../references/formulas/xor)       | XOR( logical_test1, [logical_test2], ... )                                                 | Returns a logical 'Exclusive Or' of all arguments                                                                                                                               |
+<table>
+  <thead>
+    <tr>
+      <th>
+        <strong>NAME</strong>
+      </th>
+      <th>
+        <strong>SYNTAX</strong>
+      </th>
+      <th>
+        <strong>DESCRIPTION</strong>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/if')}>IF</a>
+      </td>
+      <td>If( logical_test, value_if_true, value_if_false )</td>
+      <td>
+        Checks whether a condition is met, and returns one value if TRUE, and
+        another value if FALSE
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/switch')}>SWITCH</a>
+      </td>
+      <td>
+        SWITCH ( expression, value1, result1, value2, result2, ... value_n,
+        result_n [, default] )
+      </td>
+      <td>
+        Evaluates an expression against a list of values and returns the result
+        corresponding to the first matching value. If there is no match, an
+        optional default value is returned.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/and')}>AND</a>
+      </td>
+      <td>AND( logical_test1, [logical_test2], ... )</td>
+      <td>
+        Checks whether all the arguments are TRUE, and returns TRUE if all
+        arguments are TRUE
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/or')}>OR</a>
+      </td>
+      <td>OR( logical_test1, [logical_test2], ... )</td>
+      <td>
+        Checks whether any of the arguments are TRUE, and returns TRUE or FALSE.
+        Returns FALSE only if all arguments are FALSE
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/not')}>NOT</a>
+      </td>
+      <td>NOT( logical_test )</td>
+      <td>Changes FALSE to TRUE, or TRUE to FALSE</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/xor')}>XOR</a>
+      </td>
+      <td>XOR( logical_test1, [logical_test2], ... )</td>
+      <td>Returns a logical &#39;Exclusive Or&#39; of all arguments</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Math Functions
 
-| **NAME**                                                    | **SYNTAX**                            | **DESCRIPTION**                                                                                                               |
-| ----------------------------------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| [SUM](../references/formulas/sum)                           | Sum(value1,[value2]....)              | Add all numbers in the arguments, which can be numbers or node references                                                     |
-| [AVERAGE](../references/formulas/average)                   | Average(value1,[value2]....)          | Returns the average (arithmetic mean) of its arguments, which can be numbers or node references                               |
-| [AVERAGEEXZERO](../references/formulas/averageexzero)       | AverageExZero(value1,[value2]....)    | Returns the average (arithmetic mean) of its arguments excluding zeros, which can be numbers or node references               |
-| [AVERAGEEXNEG](../references/formulas/averageexneg)         | AverageExNeg(value1,[value2]....)     | Returns the average (arithmetic mean) of its arguments excluding negatives, which can be numbers or node references           |
-| [AVERAGEEXZERONEG](../references/formulas/averageexzeroneg) | AverageExZeroNeg(value1,[value2]....) | Returns the average (arithmetic mean) of its arguments excluding zeros and negatives, which can be numbers or node references |
-| [COUNT](../references/formulas/count)                       | Count(value1,[value2]....)            | Counts the number of items in a range                                                                                         |
-| [ABS](../references/formulas/abs)                           | ABS(value)                            | Returns the absolute value of a number, a number without its sign                                                             |
-| [MIN](../references/formulas/min)                           | Min(value1,[value2]....)              | Returns the smallest number in a set of values. Node references also accepted as arguments                                    |
-| [MAX](../references/formulas/max)                           | Max(value1,[value2]....)              | Returns the largest number in a set of values. Node references also accepted as arguments                                     |
-| [POWER](../references/formulas/power)                       | POW(value,power)                      | Returns the result of a number raised to a power                                                                              |
-| [SQRT](../references/formulas/sqrt)                         | SQRT(value)                           | Returns the square root of a number                                                                                           |
-| [EXP](../references/formulas/exp)                           | EXP(value)                            | Returns e raised to the power of a given number                                                                               |
-| [LOG](../references/formulas/log)                           | LOG(value,base)                       | Returns the logarithm of a number to the base you specify                                                                     |
+<table>
+  <thead>
+    <tr>
+      <th>
+        <strong>NAME</strong>
+      </th>
+      <th>
+        <strong>SYNTAX</strong>
+      </th>
+      <th>
+        <strong>DESCRIPTION</strong>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/sum')}>SUM</a>
+      </td>
+      <td>Sum(value1,[value2]....)</td>
+      <td>
+        Add all numbers in the arguments, which can be numbers or node
+        references
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/average')}>AVERAGE</a>
+      </td>
+      <td>Average(value1,[value2]....)</td>
+      <td>
+        Returns the average (arithmetic mean) of its arguments, which can be
+        numbers or node references
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/averageexzero')}>AVERAGEEXZERO</a>
+      </td>
+      <td>AverageExZero(value1,[value2]....)</td>
+      <td>
+        Returns the average (arithmetic mean) of its arguments excluding zeros,
+        which can be numbers or node references
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/averageexneg')}>AVERAGEEXNEG</a>
+      </td>
+      <td>AverageExNeg(value1,[value2]....)</td>
+      <td>
+        Returns the average (arithmetic mean) of its arguments excluding
+        negatives, which can be numbers or node references
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/averageexzeroneg')}>AVERAGEEXZERONEG</a>
+      </td>
+      <td>AverageExZeroNeg(value1,[value2]....)</td>
+      <td>
+        Returns the average (arithmetic mean) of its arguments excluding zeros
+        and negatives, which can be numbers or node references
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/count')}>COUNT</a>
+      </td>
+      <td>Count(value1,[value2]....)</td>
+      <td>Counts the number of items in a range</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/abs')}>ABS</a>
+      </td>
+      <td>ABS(value)</td>
+      <td>Returns the absolute value of a number, a number without its sign</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/min')}>MIN</a>
+      </td>
+      <td>Min(value1,[value2]....)</td>
+      <td>
+        Returns the smallest number in a set of values. Node references also
+        accepted as arguments
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/max')}>MAX</a>
+      </td>
+      <td>Max(value1,[value2]....)</td>
+      <td>
+        Returns the largest number in a set of values. Node references also
+        accepted as arguments
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/power')}>POWER</a>
+      </td>
+      <td>POW(value,power)</td>
+      <td>Returns the result of a number raised to a power</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/sqrt')}>SQRT</a>
+      </td>
+      <td>SQRT(value)</td>
+      <td>Returns the square root of a number</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/exp')}>EXP</a>
+      </td>
+      <td>EXP(value)</td>
+      <td>Returns e raised to the power of a given number</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/log')}>LOG</a>
+      </td>
+      <td>LOG(value,base)</td>
+      <td>Returns the logarithm of a number to the base you specify</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Finance Functions
 
-| **NAME**                                  | **SYNTAX**                                                | **DESCRIPTION**                                                                                                                                        |
-| ----------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [IRR](../references/formulas/irr)         | IRR (Values, [Guess])                                     | Returns the internal rate of return for a series of cash flows. Node references also accepted as arguments                                             |
-| [NPV](../references/formulas/npv)         | NPV (Rate, value1, [value2], ...)                         | Returns the net present value of an investment based on a discount rate and a series of future payments (negative values) and income (positive values) |
-| [PMT](../references/formulas/pmt)         | PMT(Rate, Nper, PV, [FV], [Type])                         | Calculates the payment for a loan based on constant payments and a constant interest rate                                                              |
-| [IPMT](../references/formulas/ipmt)       | IPMT (Rate, Per, Nper, PV, [FV], [Type])                  | Returns the interest payment for a given period for an investment,based on periodic, constant payments and a constant interest rate                    |
-| [FV](../references/formulas/fv)           | FV (Rate, Nper, [Pmt], PV, [Type])                        | Returns the future value of an investment based on periodic, constant payments and a constant interest rate                                            |
-| [PV](../references/formulas/pv)           | PV(Rate, Nper, [Pmt], FV, [Type])                         | Returns the present value of an investment                                                                                                             |
-| [CUMIPMT](../references/formulas/cumipmt) | CUMIPMT (Rate, Nper, PV, start_period, end_period, Type)  | Returns the cumulative interest paid between two periods                                                                                               |
-| [CMPRINC](../references/formulas/cmprinc) | CUMPRINC (Rate, Nper, PV, start_period, end_period, Type) | Returns the cumulative principal paid on a loan between two periods                                                                                    |
-| [RATE](../references/formulas/rate)       | RATE(Nper, PMT, PV, [FV], [Type], [Guess])                | Returns the interest rate per period of a loan or an investment.                                                                                       |
-
-## Range Functions
-
-| **NAME**                                            | **SYNTAX**                    | **DESCRIPTION**   |
-| --------------------------------------------------- | ----------------------------- | ----------------- |
-| [Range](../references/formulas/range)               | .Range(start_index,end_index) |                   |
-| [LastNPeriods](../references/formulas/lastnperiods) | .LastNPeriods(n)              |                   |
-| [Get](../references/formulas/get)                   | .Get(period_index)            |                   |
-| [ForEach](../references/formulas/foreach)           | ForEach(Array,Iterator)       | Iterator function |
+<table>
+  <thead>
+    <tr>
+      <th>
+        <strong>NAME</strong>
+      </th>
+      <th>
+        <strong>SYNTAX</strong>
+      </th>
+      <th>
+        <strong>DESCRIPTION</strong>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/irr')}>IRR</a>
+      </td>
+      <td>IRR (Values, [Guess])</td>
+      <td>
+        Returns the internal rate of return for a series of cash flows. Node
+        references also accepted as arguments
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/npv')}>NPV</a>
+      </td>
+      <td>NPV (Rate, value1, [value2], ...)</td>
+      <td>
+        Returns the net present value of an investment based on a discount rate
+        and a series of future payments (negative values) and income (positive
+        values)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/pmt')}>PMT</a>
+      </td>
+      <td>PMT(Rate, Nper, PV, [FV], [Type])</td>
+      <td>
+        Calculates the payment for a loan based on constant payments and a
+        constant interest rate
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/ipmt')}>IPMT</a>
+      </td>
+      <td>IPMT (Rate, Per, Nper, PV, [FV], [Type])</td>
+      <td>
+        Returns the interest payment for a given period for an investment,based
+        on periodic, constant payments and a constant interest rate
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/fv')}>FV</a>
+      </td>
+      <td>FV (Rate, Nper, [Pmt], PV, [Type])</td>
+      <td>
+        Returns the future value of an investment based on periodic, constant
+        payments and a constant interest rate
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/pv')}>PV</a>
+      </td>
+      <td>PV(Rate, Nper, [Pmt], FV, [Type])</td>
+      <td>Returns the present value of an investment</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/cumipmt')}>CUMIPMT</a>
+      </td>
+      <td>CUMIPMT (Rate, Nper, PV, start_period, end_period, Type)</td>
+      <td>Returns the cumulative interest paid between two periods</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/cmprinc')}>CMPRINC</a>
+      </td>
+      <td>CUMPRINC (Rate, Nper, PV, start_period, end_period, Type)</td>
+      <td>
+        Returns the cumulative principal paid on a loan between two periods
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/rate')}>RATE</a>
+      </td>
+      <td>RATE(Nper, PMT, PV, [FV], [Type], [Guess])</td>
+      <td>Returns the interest rate per period of a loan or an investment.</td>
+    </tr>
+  </tbody>
+</table> ## Range Functions
+<table>
+  <thead>
+    <tr>
+      <th>
+        <strong>NAME</strong>
+      </th>
+      <th>
+        <strong>SYNTAX</strong>
+      </th>
+      <th>
+        <strong>DESCRIPTION</strong>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/range')}>Range</a>
+      </td>
+      <td>.Range(start_index,end_index)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/lastnperiods')}>LastNPeriods</a>
+      </td>
+      <td>.LastNPeriods(n)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/get')}>Get</a>
+      </td>
+      <td>.Get(period_index)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/foreach')}>ForEach</a>
+      </td>
+      <td>ForEach(Array,Iterator)</td>
+      <td>Iterator function</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Static Identifiers And Other Formats
 
-| **CONSTANTS**                                                                       | **EXPLANATION**                                       |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| [THIS](../references/formulas/this)                                                 | Current Node                                          |
-| [ME](../references/formulas/me)                                                     | Current Node                                          |
-| [CURRENT_SERIES](../references/formulas/current_series)                             | Current series label                                  |
-| [CURRENT_SERIES_ID ](../references/formulas/current_series_id)                      | Current series id                                     |
-| [CURRENT_PERIOD_INDEX](../references/formulas/current_series)                       | Current period index                                  |
-| [<NODE\>.PARENT](../references/formulas/node-properties)                            | Parent Node                                           |
-| [<NODE\>.CHILDREN](../references/formulas/node-properties)                          | Node children                                         |
-| [<NODE\>.act](../references/formulas/node-properties)                               | Simulated Series of the node                          |
-| [<NODE\>.tgt ](../references/formulas/node-properties)                              | Comparison Series of the node                         |
-| [<NODE\>.base ](../references/formulas/node-properties)                             | Baseline Series of the node                           |
-| [<NODE\>.ALL_PERIODS](../references/formulas/node-properties)                       | Returns all Period values                             |
-| [<NODE\>.SIM_PERIODS](../references/formulas/node-properties)                       | Returns simulation period values                      |
-| [<NODE\>.act.ALL_PERIODS](../references/formulas/node-properties)                   | Returns all period values of Simulated Series,        |
-| [<NODE\>.tgt.ALL_PERIODS ](../references/formulas/node-properties)                  | Returns all period values of Comparison Series        |
-| [<NODE\>.base.ALL_PERIODS](../references/formulas/node-properties)                  | Returns all period values of Baseline Series          |
-| [<NODE\>.act.SIM_PERIODS ](../references/formulas/node-properties)                  | Returns simulation period values of Simulated Series  |
-| [<NODE\>.tgt.SIM_PERIODS ](../references/formulas/node-properties)                  | Returns simulation period values of Comparison Series |
-| [<NODE\>.base.SIM_PERIODS](../references/formulas/node-properties)                  | Returns simulation period values of Baseline Series   |
-| [<NODE\>.Range(start_index,end_index)](../references/formulas/node-properties)      | Returns selected range values                         |
-| [<NODE\>.act.Range(start_index,end_index)](../references/formulas/node-properties)  | Returns selected range values of Simulated Series     |
-| [<NODE\>.base.Range(start_index,end_index)](../references/formulas/node-properties) | Returns selected range values of Comparison Series    |
-| [<NODE\>.tgt.Range(start_index,end_index)](../references/formulas/node-properties)  | Returns selected range values of Baseline Series      |
-| [<NODE\>.Get(period_index) ](../references/formulas/node-properties)                | Returns selected period value                         |
-| [<NODE\>.act.Get(period_index)](../references/formulas/node-properties)             | Returns selected period value of Simulated Series     |
-| [<NODE\>.base.Get(period_index) ](../references/formulas/node-properties)           | Returns selected period value of Comparison Series    |
-| [<NODE\>.tgt.Get(period_index)](../references/formulas/node-properties)             | Returns selected period value of Baseline Series      |
-| [<NODE\>.LastNPeriods(n) ](../references/formulas/node-properties)                  | Returns selected range values                         |
-| [<NODE\>.act.LastNPeriods(n) ](../references/formulas/node-properties)              | Returns selected range values of Simulated Series     |
-| [<NODE\>.base.LastNPeriods(n) ](../references/formulas/node-properties)             | Returns selected range values of Comparison Series    |
-| [<NODE\>.tgt.LastNPeriods(n) ](../references/formulas/node-properties)              | Returns selected range values of Baseline Series      |
+<table>
+  <thead>
+    <tr>
+      <th>
+        <strong>CONSTANTS</strong>
+      </th>
+      <th>
+        <strong>EXPLANATION</strong>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/this')}>THIS</a>
+      </td>
+      <td>Current Node</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/me')}>ME</a>
+      </td>
+      <td>Current Node</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/current_series')}>CURRENT_SERIES</a>
+      </td>
+      <td>Current series label</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/current_series_id')}>
+          CURRENT_SERIES_ID{" "}
+        </a>
+      </td>
+      <td>Current series id</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/current_series')}>CURRENT_PERIOD_INDEX</a>
+      </td>
+      <td>Current period index</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>[NODE].PARENT</a>
+      </td>
+      <td>Parent Node</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>[NODE].CHILDREN</a>
+      </td>
+      <td>Node children</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>[NODE].act</a>
+      </td>
+      <td>Simulated Series of the node</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>[NODE].tgt </a>
+      </td>
+      <td>Comparison Series of the node</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>[NODE].base </a>
+      </td>
+      <td>Baseline Series of the node</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].ALL_PERIODS
+        </a>
+      </td>
+      <td>Returns all Period values</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].SIM_PERIODS
+        </a>
+      </td>
+      <td>Returns simulation period values</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].act.ALL_PERIODS
+        </a>
+      </td>
+      <td>Returns all period values of Simulated Series,</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].tgt.ALL_PERIODS{" "}
+        </a>
+      </td>
+      <td>Returns all period values of Comparison Series</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].base.ALL_PERIODS
+        </a>
+      </td>
+      <td>Returns all period values of Baseline Series</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].act.SIM_PERIODS{" "}
+        </a>
+      </td>
+      <td>Returns simulation period values of Simulated Series</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].tgt.SIM_PERIODS{" "}
+        </a>
+      </td>
+      <td>Returns simulation period values of Comparison Series</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].base.SIM_PERIODS
+        </a>
+      </td>
+      <td>Returns simulation period values of Baseline Series</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].Range(start_index,end_index)
+        </a>
+      </td>
+      <td>Returns selected range values</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].act.Range(start_index,end_index)
+        </a>
+      </td>
+      <td>Returns selected range values of Simulated Series</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].base.Range(start_index,end_index)
+        </a>
+      </td>
+      <td>Returns selected range values of Comparison Series</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].tgt.Range(start_index,end_index)
+        </a>
+      </td>
+      <td>Returns selected range values of Baseline Series</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].Get(period_index){" "}
+        </a>
+      </td>
+      <td>Returns selected period value</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].act.Get(period_index)
+        </a>
+      </td>
+      <td>Returns selected period value of Simulated Series</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].base.Get(period_index){" "}
+        </a>
+      </td>
+      <td>Returns selected period value of Comparison Series</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].tgt.Get(period_index)
+        </a>
+      </td>
+      <td>Returns selected period value of Baseline Series</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].LastNPeriods(n){" "}
+        </a>
+      </td>
+      <td>Returns selected range values</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].act.LastNPeriods(n){" "}
+        </a>
+      </td>
+      <td>Returns selected range values of Simulated Series</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].base.LastNPeriods(n){" "}
+        </a>
+      </td>
+      <td>Returns selected range values of Comparison Series</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].tgt.LastNPeriods(n){" "}
+        </a>
+      </td>
+      <td>Returns selected range values of Baseline Series</td>
+    </tr>
+  </tbody>
+</table>
