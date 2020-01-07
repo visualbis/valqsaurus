@@ -4,6 +4,7 @@ const path = require("path");
 const cheerio = require("cheerio");
 const BUILD_PATH = "./build/";
 const SEARCH_DATA = [];
+const sectionHeaderElements = ['h2', 'h3'];
 
 const getContent = element => {
     const text = element.is("table") || element.find('table').length !== 0 ?
@@ -18,7 +19,7 @@ const getSectionContent = function (section) {
     let content = "";
     section = section.next();
     while (section.length) {
-        if (section.is("h2")) break;
+        if (sectionHeaderElements.some(s => section.is(s))) break;
         content += getContent(section) + " ";
         section = section.next();
     }
@@ -68,7 +69,10 @@ const buildSearchData = filePath => {
         return;
     }
     const pageTitle = article.find("h1").text();
-    const sectionHeaders = markdown.find("h2");
+    const sectionHeaders = sectionHeaderElements.reduce((acc, selector) => {
+        acc = acc.concat(Array.from(markdown.find(selector)));
+        return acc;
+    }, [])
 
     SEARCH_DATA.push({
         title: pageTitle,
@@ -79,7 +83,7 @@ const buildSearchData = filePath => {
         content: sectionHeaders.length === 0 ? getContent(markdown) : ""
     });
 
-    sectionHeaders.map((i, sectionHeader) => {
+    sectionHeaders.forEach((sectionHeader) => {
         sectionHeader = $(sectionHeader);
         const title = sectionHeader.text().slice(1);
         const sectionRef = sectionHeader
