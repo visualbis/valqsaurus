@@ -13,11 +13,8 @@
         "@docusaurus/core": "^2.0.0-alpha.40",
         "@docusaurus/preset-classic": "^2.0.0-alpha.40",
         "autocomplete.js": "^0.37.0",
-        "babel-preset-env": "^1.7.0",
-        "babel-preset-stage-3": "^6.24.1",
         "classnames": "^2.2.6",
         "hogan": "^1.0.2",
-        "jsdom": "^15.2.1",
         "lunr": "^2.3.8",
         "react": "^16.8.4",
         "react-dom": "^16.8.4"
