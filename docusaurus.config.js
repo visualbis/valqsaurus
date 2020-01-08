@@ -39,6 +39,10 @@ module.exports = {
             {
               label: "ValQ Community",
               href: "https://community.valq.com/"
+            },
+            {
+              label: "Status",
+              href: "http://status.valq.com/"
             }
           ]
         },
