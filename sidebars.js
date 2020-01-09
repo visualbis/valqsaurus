@@ -14,6 +14,7 @@ module.exports = {
       "general/conducting-what-if",
       "general/more-info-value-driver",
       "general/saving-opening-scenarios",
+      "general/workspace-in-valq",
       "general/valq-in-powerbi"
     ],
     "Model Tab": [
