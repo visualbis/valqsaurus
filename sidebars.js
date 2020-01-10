@@ -36,7 +36,16 @@ module.exports = {
     Simulate: ["simulation/simulation"],
     "Analyze Tab": ["analysis/variance-analysis"],
     "Storage and Collaboration": ["storage/storage-collaboration"],
-    Resources: ["faq/formula-list", "faq/definitions", "faq/known-issues"]
+    Resources: [
+        "faq/formula-list", 
+        "faq/definitions", 
+        "faq/known-issues", 
+        {
+            type: "category",
+            label: "Videos",
+            items:["faq/videos-overview", "faq/videos-how-to", "faq/videos-demo", "faq/videos-income-statement", "faq/videos-demand-planning", "faq/videos-testimonial", "faq/videos-others"]
+        }
+    ]
   },
   functionSideBar: {
     "Logical Functions": [

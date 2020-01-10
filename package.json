@@ -12,6 +12,7 @@
     "dependencies": {
         "@docusaurus/core": "^2.0.0-alpha.40",
         "@docusaurus/preset-classic": "^2.0.0-alpha.40",
+        "@u-wave/react-vimeo": "^0.8.1",
         "autocomplete.js": "^0.37.0",
         "classnames": "^2.2.6",
         "hogan": "^1.0.2",
