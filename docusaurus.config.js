@@ -2,7 +2,7 @@ module.exports = {
   title: "ValQ",
   tagline: "Modern Digital Planning",
   url: "https://valq.com",
-  baseUrl: "/valqsaurus/",
+  baseUrl: "/",
   favicon: "img/cropped-valq-icon-1-192x192.png",
   organizationName: "visualbis", // Usually your GitHub org/user name.
   projectName: "valqsaurus", // Usually your repo name.
