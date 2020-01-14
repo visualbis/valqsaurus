@@ -43,7 +43,7 @@ module.exports = {
         {
             type: "category",
             label: "Videos",
-            items:["faq/videos-overview", "faq/videos-how-to", "faq/videos-demo", "faq/videos-income-statement", "faq/videos-demand-planning", "faq/videos-testimonial", "faq/videos-others"]
+            items:["faq/videos-overview", "faq/videos-how-to", "faq/videos-demo", "faq/videos-income-statement", "faq/videos-demand-planning", "faq/videos-others"]
         }
     ]
   },
