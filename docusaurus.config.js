@@ -34,7 +34,7 @@ module.exports = {
           ]
         },
         {
-          title: "Community",
+          title: "More",
           items: [
             {
               label: "ValQ Community",
