@@ -9,6 +9,7 @@ import styles from './styles.module.css';
 const features = [
   {
     title: <>Modeling</>,
+    link: "/docs/model/new",
     imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-modeling.png',
     description: (
       <>
@@ -18,6 +19,7 @@ const features = [
   },
   {
     title: <>Visualization</>,
+    link: "/docs/general/getting-started",
     imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-visualization.png',
     description: (
       <>
@@ -27,6 +29,7 @@ const features = [
   },
   {
     title: <>Simulation</>,
+    link: "/docs/simulation/simulation",
     imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-simulation.png',
     description: (
       <>
@@ -36,6 +39,7 @@ const features = [
   },
   {
     title: <>Planning</>,
+    link: "/docs/planning/overview",
     imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-planning.png',
     description: (
       <>
@@ -45,6 +49,7 @@ const features = [
   },
   {
     title: <>Advanced Analysis</>,
+    link: "/docs/analysis/variance-analysis",
     imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-advanced-analytics.png',
     description: (
       <>
@@ -54,18 +59,21 @@ const features = [
   }
 ];
 
-function Feature({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl);
+function Feature({imageUrl, title, description, link}) {
+    const imgUrl = useBaseUrl(imageUrl);
+    const linkUrl = useBaseUrl(link);
+  
   return (
-    <div className={classnames('col col--4', styles.feature)}>
+    <Link className={classnames('col col--4', styles.feature)} to = {linkUrl} >
       {imgUrl && (
         <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+        <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
       <h3>{title}</h3>
       <p>{description}</p>
-    </div>
+    </Link>
+    
   );
 }
 
