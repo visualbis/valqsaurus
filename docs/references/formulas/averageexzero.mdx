@@ -2,3 +2,30 @@
 id: averageexzero
 title: AVERAGEEXZERO
 ---
+The AVERAGEEXZERO function returns the average (arithmetic mean) of its arguments excluding zeros, which can be numbers or node references.
+
+## Syntax
+AVERAGEEXZERO (value1,[value2]....)
+
+## Arguments
+value1 – The first node or number to be averaged. This is a required argument.
+
+value2, …  – The additional nodes or numbers to be averaged. These are optional arguments.
+
+## Example
+Consider sales of a particular product across different regions East, South, Central and West to be as follows. 
+Assume if sales for a particular period is zero, the product was withdrawn from the market and hence that region need not be considered when calculating average sales.  
+The average sales is also shown in the table. 
+
+| Region        | Jan | Feb | Mar   | Apr    | May    | Jun | Jul | Aug | Sep    | Oct | Nov   | Dec |
+|---------------|-----|-----|-------|--------|--------|-----|-----|-----|--------|-----|-------|-----|
+| East          | 100 | 100 | 125   | 150    | 100    | 100 | 120 | 125 | 0      | 0   | 0     | 0   |
+| South         | 0   | 0   | 150   | 200    | 200    | 175 | 175 | 150 | 150    | 125 | 125   | 175 |
+| Central       | 100 | 100 | 125   | 150    | 100    | 0   | 0   | 0   | 150    | 200 | 200   | 175 |
+| West          | 0   | 0   | 150   | 125    | 125    | 175 | 200 | 175 | 175    | 125 | 0     | 0   |
+| Average Sales | 100 | 100 | 137.5 | 156.25 | 131.25 | 150 | 165 | 150 | 156.33 | 150 | 162.5 | 175 |
+
+The average sales should be defined as AVERAGEEXZERO (East, South, Central, West).
+
+## Excel Equivalent
+[AVERAGE](https://support.office.com/en-us/article/AVERAGE-function-047BAC88-D466-426C-A32B-8F33EB960CF6)

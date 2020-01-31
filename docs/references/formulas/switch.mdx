@@ -3,4 +3,31 @@ id: switch
 title: SWITCH
 ---
 
-Evaluates an expression against a list of values and returns the result corresponding to the first matching value. If there is no match, an optional default value is returned.
+A SWITCH statement evaluates an expression against a list of values and returns the result corresponding to the first matching value. If there is no match, an optional default value is returned.
+
+## Syntax
+SWITCH ( expression, value1, result1, value2, result2, ... value_n, result_n, [default] )
+
+## Arguments
+expression – The statement to be evaluated
+
+value1, value2, … value_n – The value that is to be compared against the expression
+
+result1, result2, … result_n – The value that is to be returned if the expression matches with any of the values in the argument list
+
+default – The default value that is to be returned if the expression does not match with any of the values in the argument list
+
+## Example
+Consider a scenario in which the node Discount Rate is to be calculated based on the current month. Months Jan, Aug, Nov and Dec should have 15% as the discount rate whereas the remaining months should have 10%.
+
+| Month         | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Discount Rate | 15% | 10% | 10% | 10% | 10% | 10% | 10% | 15% | 10% | 10% | 15% | 15% |
+
+This can be achieved by using the SWITCH function in the following manner.
+
+SWITCH(CURRENT_PERIOD_INDEX,1,15,2,10,3,10,4,10,5,10,6,10,7,10,8,15,9,10,10,10,11,15,12,15)
+
+## Excel Equivalent
+[SWITCH](https://support.office.com/en-us/article/SWITCH-function-47ab33c0-28ce-4530-8a45-d532ec4aa25e)
+

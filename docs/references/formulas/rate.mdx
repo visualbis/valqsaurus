@@ -2,3 +2,28 @@
 id: rate
 title: RATE
 ---
+The RATE function returns the interest rate per period of a loan or an investment.
+
+## Syntax
+RATE (Nper, PMT, PV, [FV], [Type], [Guess])
+
+## Arguments
+Nper – The total number of periods.
+
+PMT – The payment made each period.
+
+PV – The present value - the total amount that a series of future payments is worth now. 
+
+FV – The future value or a cash balance you want to attain after the last payment is made. This is an optional argument.
+
+Type – Indicates when the payments are made. Type is zero if payments are made at the end of the period and non-zero if payments are made at the start of the period. 
+Guess – Estimate of what the rate will be. This is an optional argument.
+
+## Example
+Consider a series of $2000 payments made at the end of each year for 6 years. The objective is to calculate the interest rate where the present value is $10,000.  
+
+To calculate the present value, the formula should be RATE (Number of Periods, PMT, Present Value,0).
+The interest rate is calculated to be 5.47%.
+
+## Excel Equivalent
+RATE

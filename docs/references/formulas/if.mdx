@@ -3,4 +3,29 @@ id: if
 title: IF
 ---
 
-Checks whether a condition is met, and returns one value if TRUE, and another value if FALSE
+An IF statement returns a value depending on whether the condition that is being evaluated is TRUE or FALSE. 
+
+## Syntax
+IF( logical_test, value_if_true, value_if_false )
+
+## Arguments
+logical_test – The condition to be evaluated
+
+value_if_true – The value that is to be returned if the condition is met
+
+value_if_false – The value that is to be returned if the condition is not met
+
+## Example
+Consider the Demand and Inventory nodes to follow the trend as shown below. The node [Demand - Inventory] is to be calculated as Demand - Inventory, if the value is positive, else it should be zero.
+
+| Parameter          | Week 1 | Week 2 |Week 3  |Week 4  |
+|--------------------|--------|--------|--------|--------|
+| Demand             | 110    | 95     | 75     | 78     |
+| Inventory          | 85     | 70     | 100    | 80     |
+| Demand - Inventory | 25     | 25     | 0      | 0      |
+
+
+To achieve this, the formula should be IF(Demand - Inventory > 0, Demand - Inventory, 0).
+## Excel Equivalent
+[IF](https://support.office.com/en-gb/article/if-function-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2)
+
