@@ -33,3 +33,11 @@
   height: 200px;
   width: 200px;
 }
+
+.features a {
+    color: #1C1E21;
+}
+
+.features a:hover {
+    text-decoration: none;
+}
