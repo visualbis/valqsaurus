@@ -4,6 +4,7 @@ module.exports = {
   url: "https://valq.com",
   baseUrl: "/",
   favicon: "img/cropped-valq-icon-1-192x192.png",
+  ogImage:"img/whats-new-in-valq.jpg",
   organizationName: "visualbis", // Usually your GitHub org/user name.
   projectName: "valqsaurus", // Usually your repo name.
   themeConfig: {
