@@ -5,10 +5,10 @@ title: Storage and Collaboration
 
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
 
-You can use this enhancement on the product to upload, save & store,
+This houses a group of capabilities for you to upload, save & store,
 audit, comment, and collaborate on your model. You can also export
 and/or run further analysis on the baseline, comparison, and the
-simulated data series available across the entire model.
+simulated data series of the ValQ model.
 
 ## Uploading the ValQ Model
 
@@ -17,9 +17,11 @@ button and your profile icon at the bezel.
 
 <img alt="" src={useBaseUrl('/doc-images//SC5.1.png')} />
 <img alt="" src={useBaseUrl('/doc-images//SC5.2.png')} />
-In the screenshot model, lets assume you delete a node 'Ryan Smith'
+In the screenshot model, lets assume you delete a node `Ryan Smith`
+
 <img alt="" src={useBaseUrl('/doc-images//SC5.3.png')} />
-Lets also assume you simulate on the node 'Chris Morris'
+Lets also assume you simulate on the node `Chris Morris`
+
 <img alt="" src={useBaseUrl('/doc-images//SC5.4.png')} />
 You can save these changes at the workspace by clicking 'Upload' near
 your profile icon, naming your model, and clicking 'upload' at the popup
@@ -30,7 +32,9 @@ such as Save, Comments, and additional options having Exporting, History
 log, & Settings.
 <img alt="" src={useBaseUrl("/doc-images//SC5.6.png")} />
 
-## Commenting
+<img alt="" src={useBaseUrl('/doc-images//SC5.6.png')} />
+
+## Commenting at a Node level
 
 You can comment on the changes you have made by clicking the 'Comment'
 icon on top of the node. After posting, your comment is saved alongside
@@ -38,6 +42,7 @@ your username and time log.
 
 <img alt="" src={useBaseUrl('/doc-images//SC5.7.png')} />
 <img alt="" src={useBaseUrl('/doc-images//SC5.8.png')} />
+
 Alternatively, you can check the comment log for the entire model by
 clicking 'Comments' icon at the bezel. Comments are displayed at a
 Scenario-Node level.
@@ -53,15 +58,14 @@ feature helps with auditing the ValQ model.
 
 ## Collaboration
 
-After saving, you can collaborate on your model changes with other users
-under the same workspace. Assuming a 'Member' from the workspace
-simulates on the existing scenario, creates a new scenario, deletes
+Collaboration helps to share your model changes, simulations, and comments to all the users under the same workspace. 
+You have to Save your model before collaborating with other users.
+Assuming a wokspace 'Member' simulates on the existing scenario, creates a new scenario, deletes
 another node, comments on the changes made, and saves the model.
 
-Once you log back in, all the changes in the ValQ model made by the
-member are available for viewing.
+<img alt="" src={useBaseUrl('/doc-images//SC5.11.png')} />
 
-<img alt="" src={useBaseUrl("/doc-images//SC5.11.png")} />
+Collaboration in ValQ lets you view the member's changes, simulations, and comments.
 
 The changes at a Model/Scenario level are captured at the History Log.
 The comments between the users are displayed at a Node-Scenario level
@@ -71,7 +75,7 @@ under the 'Comments' icon.
 
 ## Export
 
-Lastly, you can also export all the data values (baseline, comparison,
+You can export all the data values & series (baseline, comparison,
 and scenario data) fed and generated at ValQ. You can export by clicking
 the 'Export as datasource' option at the additional options dropdown.
 
@@ -91,9 +95,10 @@ window to generate the exported data.
 
 <img alt="" src={useBaseUrl("/doc-images//SC.10.png")} />
 
-## Live Syncing export with the ValQ model
 
-Users can also run further simulations to their scenarios and instantly synchronize the new data at
+## Live Syncing Simulations with the Export file
+
+You can run further simulations to the scenarios and instantly synchronize the new scenario data with
 the export file by refreshing the data query within 'Queries &
 Connections'.
 
