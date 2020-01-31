@@ -34,6 +34,10 @@
   width: 200px;
 }
 
+.features a {
+    color: var(--ifm-font-base-color);
+}
+
 .features a:hover {
     text-decoration: none;
 }
