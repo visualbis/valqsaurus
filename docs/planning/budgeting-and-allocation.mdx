@@ -4,7 +4,7 @@ title: Budgeting & allocation scenarios
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
 
-## Scenario 1: To increase Total Revenue by 10% and allocate the increase to Sales Revenue with no changes to Other Revenue
+## Scenario 1: To allocate parent node’s changes to some of the immediate child nodes
 
 1.  For our example, expand the Total Revenue. Now select the node
     'Other Revenue' and lock the node (see Figure below).
@@ -47,7 +47,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file b
     <img alt="Increased 'Total Revenue' without impacting 'Other
     Revenue'" src={useBaseUrl('/doc-images//pl15.png')} />
 
-## Scenario 2: To increase 'Cost of Sales' by 10% from April onwards
+## Scenario 2: To allocate a node’s increase/decrease in aggregate value to some of the periods
 
 1.  For our example, select the Node 'Cost of Sales' for April month
     a. (see Figure below).
@@ -68,7 +68,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file b
 
     <img alt="Constant cell values from Apr to Dec" src={useBaseUrl('/doc-images//pl19.png')} />
 
-## Scenario 3: To increase 'Other Costs' based on a monthly trend of 2%
+## Scenario 3: To increase the period values of a node based on a monthly trend
 
 1.  For our example, select the Node 'Other Costs' for Jan month (see
     a. Figure below).
@@ -91,7 +91,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file b
 
     <img alt="Increased monthly trend" src={useBaseUrl('/doc-images//pl25.png')} />
 
-## Scenario 4: To redistribute 'Support Costs' based on 'Cost of Sales'
+## Scenario 4: To perform driver-based allocation
 
 1.  For our example, select the Node 'Support Costs' in Total column
     (see Figure below).
@@ -114,7 +114,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file b
 
     <img alt="Redistributed values" src={useBaseUrl('/doc-images//pl29.png')} />
 
-## Scenario 5: To increase 'Rent' by 5% for Q1 and 10% from Q2 Onwards
+## Scenario 5: To increase the period values of a node according to a combination of trends
 
 1.  Select the Node 'Rent' and lock the entire Row.
 2.  Release the lock for the cells from Jan to Mar.
