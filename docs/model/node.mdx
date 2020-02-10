@@ -3,6 +3,7 @@ id: node
 title: Node
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
+import Link from '@docusaurus/Link';
 
 Each node represents a metric, and can contain the following:
 
@@ -118,8 +119,8 @@ For other options of calculation method, you can refer the link: <a href="https:
 
 On selecting 'Formula' and clicking on the formula field, you will be
 able to see a dropdown of the formulas that are supported. For a list of
-formulas that are available in valQ, you can refer to the link
-`Functions`
+formulas that are available in valQ, you can refer to the link <Link to={useBaseUrl('/docs/faq/formula-list')}> Functions </Link>
+
 
 #### Template Nodes
 
@@ -343,10 +344,11 @@ the primary value of the node
 <img alt="" src={useBaseUrl('/doc-images/SecKPI.1.png')} />
 
 As a default, there are three secondary values displayed for a dual
-series data in the following order i. Full Period Variance between
-baseline and comparison metric (in % and absolute values) ii. Baseline
-metric value for the first period in the series iii. Variance for the
-first period between baseline and comparison metric (in % and absolute
+series data in the following order 
+
+1. Full Period Variance between baseline and comparison metric (in % and absolute values) 
+2. Baseline metric value for the first period in the series 
+3. Variance for the first period between baseline and comparison metric (in % and absolute
 values)
 
 <img alt="" src={useBaseUrl('/doc-images/SecKPI.2.png')} />
