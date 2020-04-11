@@ -64,6 +64,9 @@ module.exports = {
       algoliaOptions: {} // Optional, if provided by Algolia
     }
   },
+   plugins: [
+    'docusurus-lunr-search'
+  ],
   presets: [
     [
       "@docusaurus/preset-classic",
