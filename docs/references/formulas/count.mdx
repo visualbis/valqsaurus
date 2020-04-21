@@ -2,3 +2,23 @@
 id: count
 title: COUNT
 ---
+The `COUNT` function counts the number of items in a range.
+
+## Syntax
+```javascript
+COUNT (value1,[value2]....)
+```
+## Arguments
+`value1` – The first node or number to be counted. This is a required argument.
+
+`value2, …`  – The additional nodes or numbers to be counted. These are optional arguments.
+
+## Example
+Consider a scenario where you want to calculate the number of periods in which simulations are performed. That is if simulation period is between July and September, the result should be 3.
+
+Count is calculated as 
+```javascript
+COUNT (NODE_ID.SIM_PERIODS).
+```
+## Excel Equivalent
+[COUNT](https://support.office.com/en-us/article/COUNT-function-A59CD7FC-B623-4D93-87A4-D23BF411294C)

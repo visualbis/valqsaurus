@@ -70,7 +70,6 @@ const templates = {
   `,
   footer: `
     <div class="${footerPrefix}">
-      ValQ
     </div>
   `,
   empty: `

@@ -2,3 +2,32 @@
 id: ipmt
 title: IPMT
 ---
+The `IPMT` function returns the interest payment for a given period for an investment, based on periodic, constant payments and a constant interest rate.
+
+## Syntax
+```javascript
+IPMT (Rate, Per, Nper, PV, [FV], [Type])
+```
+## Arguments
+`Rate` – The interest rate per period. 
+
+`Per` – The period for which you want to find the interest and must be in the range 1 to Nper.
+
+`Nper` – The total number of periods.
+
+`PV`  –  The present value or initial investment. Cash outflows are considered as negative and cash inflows as positive.
+
+`FV` – The future or residual value. This is an optional argument and if omitted, it is considered to be zero.
+
+`Type` – Indicates when the payments are made. Type is zero if payments are made at the end of the period and non-zero if payments are made at the start of the period. This is an optional argument and when omitted, it is considered to be zero.
+## Example
+Consider a $10,000 loan at an annual rate of 10% that is to be paid off in 3 years. All payments are made at the beginning of the month.
+
+To calculate the interest payment for a specified period, say 8, the formula should be 
+```javascript
+IPMT (Rate/12, Period, Number of Years*12, Loan Amount, 0, 1).
+```
+`IPMT` is calculated to be $68.45.
+
+## Excel Equivalent
+[IPMT](https://support.office.com/en-us/article/IPMT-function-5CCE0AD6-8402-4A41-8D29-61A0B054CB6F)

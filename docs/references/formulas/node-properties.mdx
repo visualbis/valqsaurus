@@ -2,3 +2,208 @@
 id: node-properties
 title: NODE PROPERTIES
 ---
+
+## [NODE].PARENT
+
+`[NODE].PARENT` refers to the parent node of the NODE.
+
+### Example
+If the node Sales has child nodes, East, West, South and Central, the node Sales can be referred to as East.PARENT, West.PARENT, South.PARENT or Central.PARENT.
+
+
+## [NODE].CHILDREN
+`[NODE].CHILDREN` refers to the children nodes of the NODE.
+
+### Example
+If the node Sales has child nodes, East, West, South and Central, the child nodes of Sales can be referred to using Sales.CHILDREN.
+
+
+## [NODE].ACT 
+`[NODE].ACT` refers to the Simulated Series of the node.
+
+### Example
+If a node N2 is defined as N1.ACT, the node N2 will be assigned the simulated series value of N1.
+
+## [NODE].TGT 
+`[NODE].TGT` refers to the Comparison Series of the node.
+
+### Example
+If a node N2 is defined as N1.TGT, the node N2 will be assigned the comparison series value of N1.
+
+## [NODE].BASE 
+`[NODE].BASE` refers to the Baseline Series of the node.
+
+### Example
+If a node N2 is defined as N1.BASE, the node N2 will be assigned the baseline series value of N1.
+
+Consider a node with the following data.
+
+| Period Node N1 | Baseline Series | Comparison Series | Simulated Series |
+|----------------|-----------------|-------------------|------------------|
+| Week1          | 20              | 15                | 25               |
+| Week2          | 20              | 15                | 25               |
+| Week3          | 20              | 15                | 25               |
+| Week4          | 20              | 15                | 25               |
+
+The results of the calculations are shown below.
+
+| Period Node N2 | N1.ACT | N1.TGT | N1.BASE |
+|----------------|--------|--------|---------|
+| Week1          | 25     | 15     | 20      |
+| Week2          | 25     | 15     | 20      |
+| Week3          | 25     | 15     | 20      |
+| Week4          | 25     | 15     | 20      |
+
+## [NODE].ALL_PERIODS
+`[NODE].ALL_PERIODS` refers to all period values.
+
+## [NODE].SIM_PERIODS
+`[NODE].SIM_PERIODS` refers to simulated period values.
+
+### Example
+The periods in a model are defined from Jan to Dec and the active simulation period is from Jun to Dec. Node N1 has the following values:
+
+| Period | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|--------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Values | 10  | 15  | 20  | 10  | 15  | 25  | 30  | 15  | 20  | 25  | 35  | 30  |
+
+`[NODE].ALL_PERIODS` returns [10,15,20,10,15,25,30,15,20,25,35,30].
+
+`[NODE].SIM_PERIODS` returns [25,30,15,20,25,35,30].
+
+## [NODE].ACT.ALL_PERIODS
+`[NODE].act.ALL_PERIODS` returns all period values of the simulated series.
+
+## [NODE].TGT.ALL_PERIODS
+`[NODE].tgt.ALL_PERIODS` returns all period values of the comparison series.
+
+## [NODE].BASE.ALL_PERIODS
+`[NODE].base.ALL_PERIODS` returns all period values of the baseline series.
+
+### Example
+The periods in a model are defined from Jan to Dec and the active simulation period is from Jun to Dec. Node N1 has the following values:
+
+| Period     | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Baseline   | 10  | 15  | 20  | 10  | 15  | 25  | 30  | 15  | 20  | 25  | 35  | 30  |
+| Comparison | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  |
+| Simulated  | 10  | 15  | 20  | 10  | 15  | 30  | 36  | 18  | 24  | 30  | 42  | 36  |
+
+`[NODE].ACT.ALL_PERIODS` returns [10,15,20,10,15,30,36,18,24,30,42,36].
+
+`[NODE].TGT.ALL_PERIODS` returns [15,15,15,15,15,15,15,15,15,15,15,15].
+
+`[NODE].BASE.ALL_PERIODS` returns [10,15,20,10,15,25,30,15,20,25,35,30].
+
+## [NODE].ACT.SIM_PERIODS
+`[NODE].act.SIM_PERIODS` returns simulated period values of the simulated series.
+
+## [NODE].TGT.SIM_PERIODS
+`[NODE].tgt.SIM_PERIODS` returns simulated period values of the comparison series.
+
+## [NODE].BASE.SIM_PERIODS
+`[NODE].base.SIM_PERIODS` returns simulated period values of the baseline series.
+
+### Example
+The periods in a model are defined from Jan to Dec and the active simulation period is from Jun to Dec. Node N1 has the following values:
+
+| Period     | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Baseline   | 10  | 15  | 20  | 10  | 15  | 25  | 30  | 15  | 20  | 25  | 35  | 30  |
+| Comparison | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  |
+| Simulated  | 10  | 15  | 20  | 10  | 15  | 30  | 36  | 18  | 24  | 30  | 42  | 36  |
+
+`[NODE].ACT.SIM_PERIODS` returns [30,36,18,24,30,42,36].
+
+`[NODE].TGT.SIM_PERIODS` returns [15,15,15,15,15,15,15].
+
+`[NODE].BASE.SIM_PERIODS` returns [25,30,15,20,25,35,30].
+
+## [NODE].RANGE(START_INDEX,END_INDEX)
+`[NODE].RANGE(start_index,end_index)` returns selected range values of the node.
+
+## [NODE].ACT.RANGE(START_INDEX,END_INDEX)
+`[NODE].ACT.RANGE(start_index,end_index)` returns selected range values of Simulated Series.
+
+## [NODE].BASE.RANGE(START_INDEX,END_INDEX)
+`[NODE].BASE.RANGE(start_index,end_index)` returns selected range values of Comparison Series.
+
+## [NODE].TGT.RANGE(START_INDEX,END_INDEX)
+`[NODE].TGT.RANGE(start_index,end_index)` returns selected range values of Baseline Series.
+
+### Example
+The periods in a model are defined from Jan to Dec. Node N1 has the following values:
+
+| Period     | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Baseline   | 10  | 15  | 20  | 10  | 15  | 25  | 30  | 15  | 20  | 25  | 35  | 30  |
+| Comparison | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  |
+| Simulated  | 10  | 15  | 20  | 10  | 15  | 30  | 36  | 18  | 24  | 30  | 42  | 36  |
+
+`[NODE].RANGE(2,4)` returns a node with baseline as [15,20,10] and comparison as [15,15,15].
+
+`[NODE].ACT.RANGE(9,12)` returns a node with baseline and comparison as [24,30,42,26].
+
+`[NODE].TGT.RANGE(2,4)` returns a node with baseline and comparison as [15,15,15].
+
+`[NODE].BASE.RANGE(9,12)` returns [20,25,35,30].
+
+## [NODE].GET(PERIOD_INDEX)
+`[NODE].GET(period_index)` returns the selected period value of the node.
+
+## [NODE].ACT.GET(PERIOD_INDEX)
+`[NODE].ACT.GET(period_index)` returns the selected period value of the Simulated Series.
+
+## [NODE].BASE.GET(PERIOD_INDEX)
+`[NODE].BASE.GET(period_index)` returns the selected period value of the Comparison Series.
+
+## [NODE].TGT.GET(PERIOD_INDEX)
+`[NODE].TGT.GET(period_index)` returns the selected period value of the Baseline Series.
+
+### Example
+The periods in a model are defined from Jan to Dec. Node N1 has the following values:
+
+| Period     | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Baseline   | 10  | 15  | 20  | 10  | 15  | 25  | 30  | 15  | 20  | 25  | 35  | 30  |
+| Comparison | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  |
+| Simulated  | 10  | 15  | 20  | 10  | 15  | 30  | 36  | 18  | 24  | 30  | 42  | 36  |
+
+`[NODE].GET(2)` returns the value 15.
+
+`[NODE].ACT.GET(9)` returns the value 24.
+
+`[NODE].TGT.GET(9)` returns the value 15.
+
+`[NODE].BASE.GET(9)` returns the value 20.
+
+## [NODE].LastNPeriods(n)
+`[NODE].LastNPeriods(n)` returns selected range values of the node.
+
+## [NODE].ACT.LASTNPERIODS(N)
+`[NODE].ACT.LastNPeriods(n)` returns selected range values of the Simulated Series.
+
+## [NODE].BASE.LASTNPERIODS(N)
+`[NODE].BASE.LastNPeriods(n)` returns selected range values of the Comparison Series.
+
+## [NODE].TGT.LASTNPERIODS(N) 
+`[NODE].TGT.LastNPeriods(n)` returns selected range values of the Baseline Series.
+
+### Example
+The periods in a model are defined from Jan to Dec. Node N1 has the following values:
+
+| Period     | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Baseline   | 10  | 15  | 20  | 10  | 15  | 25  | 30  | 15  | 20  | 25  | 35  | 30  |
+| Comparison | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  | 15  |
+| Simulated  | 10  | 15  | 20  | 10  | 15  | 30  | 36  | 18  | 24  | 30  | 42  | 36  |
+
+`[NODE].LastNPeriods(2)` returns the values [35,30].
+
+`[NODE].ACT.LastNPeriods(2)` returns the values [42,36].
+
+`[NODE].TGT.LastNPeriods(2)` returns the values [15,15].
+
+`[NODE].BASE.LastNPeriods(2)` returns the values [35,30].
+
+

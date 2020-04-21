@@ -2,3 +2,22 @@
 id: current_series
 title: CURRENT_SERIES
 ---
+## Syntax
+```javascript
+CURRENT_SERIES == 'series'? value1:value2
+```
+## Arguments
+
+`series` - Refers to the series ie, act, base or tgt. 
+
+`value1` – The value that should be assigned to the series mentioned in the argument list. If series is mentioned as base, value1 is assigned as baseline series.
+
+`value2` – The value that should be assigned to the series other than the one mentioned in the argument list. If series is mentioned as base, value1 is assigned as comparison series.
+
+## Example
+Consider a scenario where you want to assign 100 as the monthly baseline value and 85 as the monthly comparison value.
+
+This can be achieved by using the formula 
+```javascript
+CURRENT_SERIES == 'base'? 100:85
+```

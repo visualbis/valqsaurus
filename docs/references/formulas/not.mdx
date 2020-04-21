@@ -2,3 +2,22 @@
 id: not
 title: NOT
 ---
+A `NOT` statement returns a TRUE value if the argument is FALSE and a FALSE value if the argument is TRUE. 
+
+## Syntax
+```javascript
+NOT ( logical_test )
+```
+## Arguments
+logical_test – The condition to be evaluated. 
+
+## Example
+Consider a scenario in which an employee is eligible for Sales Bonus if Total Sales is greater than Sales Goal. Sales Bonus is calculated as Bonus% * Total Sales.
+
+To achieve this, the formula should be 
+```javascript
+IF (NOT (Total Sales - Sales Goal), 0 , Bonus% * Total Sales)
+```
+
+## Excel Equivalent
+[NOT](https://support.office.com/en-gb/article/not-function-9cfc6011-a054-40c7-a140-cd4ba2d87d77)

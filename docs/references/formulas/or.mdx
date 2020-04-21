@@ -2,3 +2,24 @@
 id: or
 title: OR
 ---
+An `OR` statement returns a TRUE value if ATLEAST one of the arguments is TRUE. 
+
+## Syntax
+```javascript
+OR ( logical_test1, [logical_test2], ... )
+```
+## Arguments
+`logical_test1` – The first condition to be evaluated. This is a required argument.
+
+`logical_test2, …`  – The additional conditions to be evaluated. These are optional arguments.
+
+## Example
+Consider a scenario in which if the number of licenses is greater than 500 or the usage period is greater than 24 months, then the price should be $20 else $25.
+
+To achieve this, the formula should be 
+```javascript
+IF(OR(Num_of_Licenses>500,Duration<24),20,25)
+```
+
+## Excel Equivalent
+[OR](https://support.office.com/en-gb/article/or-function-7d17ad14-8700-4281-b308-00b131e22af0)
