@@ -2,27 +2,31 @@
 id: pmt
 title: PMT
 ---
-The PMT function calculates the payment for a loan based on constant payments and a constant interest rate.
+The `PMT` function calculates the payment for a loan based on constant payments and a constant interest rate.
 
 ## Syntax
+```javascript
 PMT (Rate, Nper, PV, [FV], [Type])
-
+```
 ## Arguments
-Rate – The interest rate per period. 
+`Rate` – The interest rate per period. 
 
-Nper – The total number of periods.
+`Nper` – The total number of periods.
 
-PV  –  The present value or initial investment. Cash outflows are considered as negative and cash inflows as positive.
+`PV`  –  The present value or initial investment. Cash outflows are considered as negative and cash inflows as positive.
 
-FV – The future or residual value. This is an optional argument and if omitted, it is considered to be zero.
+`FV` – The future or residual value. This is an optional argument and if omitted, it is considered to be zero.
 
-Type – Indicates when the payments are made. Type is zero if payments are made at the end of the period and non-zero if payments are made at the start of the period. This is an optional argument and when omitted, it is considered to be zero.
+`Type` – Indicates when the payments are made. Type is zero if payments are made at the end of the period and non-zero if payments are made at the start of the period. This is an optional argument and when omitted, it is considered to be zero.
 
 ## Example
 Consider a $10,000 loan at an annual rate of 10% that is to be paid off in 3 years. All payments are made at the beginning of the month.
 
-To calculate the monthly payments that are to be made, the formula should be PMT (Rate/12, Number of Years*12, Loan Amount, 0, 1).
-PMT is calculated to be $320.01.
+To calculate the monthly payments that are to be made, the formula should be 
+```javascript
+PMT (Rate/12, Number of Years*12, Loan Amount, 0, 1)
+```
+`PMT` is calculated to be $320.01.
 
 ## Excel Equivalent
 [PMT](https://support.office.com/en-us/article/PMT-function-0214DA64-9A63-4996-BC20-214433FA6441)

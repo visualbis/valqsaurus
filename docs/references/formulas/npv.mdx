@@ -2,17 +2,18 @@
 id: npv
 title: NPV
 ---
-The NPV function returns the net present value of an investment based on a discount rate and a series of future payments (negative values) and income (positive values).
+The `NPV` function returns the net present value of an investment based on a discount rate and a series of future payments (negative values) and income (positive values).
 
 ## Syntax
+```javascript
 NPV (Rate, value1, [value2], ...)
-
+```
 ## Arguments
-Rate – The rate of discount.
+`Rate` – The rate of discount.
 
-value1 – The node that contains the order of cash flows for which you want to calculate the net present value.
+`value1` – The node that contains the order of cash flows for which you want to calculate the net present value.
 
-value2,…  – The additional nodes that contains the order of cash flows for which you want to calculate the net present value. This is an optional argument.
+`value2,…`  – The additional nodes that contains the order of cash flows for which you want to calculate the net present value. This is an optional argument.
 
 ## Example
 Consider a project with an initial investment of $10,000 and cash inflows of $4,000 for the subsequent four years. Discount rate is 12%. The objective is to evaluate the project by calculating NPV. 
@@ -22,7 +23,10 @@ Consider a project with an initial investment of $10,000 and cash inflows of $4,
 | Initial Investment | -10,000 |       |       |       |       |
 | Cash Inflows       |         | 4,000 | 4,000 | 4,000 | 4,000 |
 
-To achieve this, the formula should be NPV ([Discount Rate,Cash Inflows.ALL_PERIODS]) + Initial Investment.
+To achieve this, the formula should be 
+```javascript
+NPV ([Discount Rate,Cash Inflows.ALL_PERIODS]) + Initial Investment
+```
 NPV is calculated to be $847.68. 
 
 ## Excel Equivalent

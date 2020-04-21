@@ -2,13 +2,14 @@
 id: max
 title: MAX
 ---
-The MAX function returns the largest number in a set of values. Node references also accepted as arguments. 
+The `MAX` function returns the largest number in a set of values. Node references also accepted as arguments. 
 
 ## Syntax
+```javascript
 MAX (value1,[value2]....)
-
+```
 ## Arguments
-value1,value2 … – The nodes or numbers of which you want the largest of. 
+`value1,value2 …` – The nodes or numbers of which you want the largest of. 
 
 ## Example
 Consider a node which has the demand for a particular product for 12 months. 
@@ -17,7 +18,10 @@ Consider a node which has the demand for a particular product for 12 months.
 |--------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | Demand | 180 | 200 | 238 | 174 | 286 | 319 | 265 | 136 | 220 | 260 | 300 | 315 |
 
-To calculate the maximum demand, the formula should be MAX (Demand.ALL_PERIODS).
+To calculate the maximum demand, the formula should be 
+```javascript
+MAX (Demand.ALL_PERIODS).
+```
 The maximum demand is calculated to be 319. 
 
 ## Excel Equivalent

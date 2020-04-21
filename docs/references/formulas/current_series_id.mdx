@@ -4,18 +4,21 @@ title: CURRENT_SERIES_ID
 ---
 
 ## Syntax
+```javascript
 CURRENT_SERIES_ID == 'series'? value1:value2
-
+```
 ## Arguments
 
-series - Refers to the series label ie, Forecast, Budget etc.
+`series` - Refers to the series label ie, Forecast, Budget etc.
 
-value1 – The value that should be assigned to the series mentioned in the argument list. If series is mentioned as Forecast, value1 is assigned as the series Forecast.
+`value1` – The value that should be assigned to the series mentioned in the argument list. If series is mentioned as Forecast, value1 is assigned as the series Forecast.
 
-value2 – The value that should be assigned to the series other than the one mentioned in the argument list. If series is mentioned as Forecast, value1 is assigned as the series Comparison.
+`value2` – The value that should be assigned to the series other than the one mentioned in the argument list. If series is mentioned as Forecast, value1 is assigned as the series Comparison.
 
 ## Example
 Consider a scenario where you want to assign 100 as the monthly Forecast value and 85 as the monthly Budget value.
 
-This can be achieved by using the formula CURRENT_SERIES_ID == 'Forecast'? 100:85.
-
+This can be achieved by using the formula 
+```javascript
+CURRENT_SERIES_ID == 'Forecast'? 100:85.
+```

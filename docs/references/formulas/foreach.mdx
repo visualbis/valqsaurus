@@ -2,15 +2,16 @@
 id: foreach
 title: FOREACH
 ---
-The FOREACH function executes the specified statement in a loop.
+The `FOREACH` function executes the specified statement in a loop.
 
 ## Syntax
+```javascript
 ForEach (Array,Iterator)
-
+```
 ## Arguments
-Array  – The node for which the iterator statement is executed for all the periods.
+`Array`  – The node for which the iterator statement is executed for all the periods.
 
-Iterator – The statement that is to be executed.
+`Iterator` – The statement that is to be executed.
 
 ## Example
 Consider a scenario where you want to calculate the contribution of a particular region, say South to the Total sales.
@@ -22,6 +23,9 @@ Consider a scenario where you want to calculate the contribution of a particular
 | South  | 250               |
 | Total  | 750               |
 
-To achieve this, the formula should be (Sum(THIS)/Sum(ForEach(THIS.PARENT.CHILDREN, Sum(THIS) ) ) )) * 100.
+To achieve this, the formula should be 
+```javascript
+(Sum(THIS)/Sum(ForEach(THIS.PARENT.CHILDREN, THIS) ) )) * 100
+```
 The contribution of South to Total Sales is calculated to be 33.33%.
 

@@ -20,11 +20,6 @@ jobs:
           name: Yarn Install
           command: yarn install
       - run:
-          name: Build Search JSON
-          command: |
-            yarn build
-            yarn build:search
-      - run:
           name: Deploying to GitHub Pages
           command: |
             git config --global user.email "praveenn-vbi@users.noreply.github.com"

@@ -2,26 +2,30 @@
 id: fv
 title: FV
 ---
-The FV function returns the future value of an investment based on periodic, constant payments and a constant interest rate.
+The `FV` function returns the future value of an investment based on periodic, constant payments and a constant interest rate.
 
 ## Syntax
+```javascript
 FV (Rate, Nper, [Pmt], PV, [Type])
-
+```
 ## Arguments
-Rate – The interest rate per period. 
+`Rate` – The interest rate per period. 
 
-Nper – The total number of periods.
+`Nper` – The total number of periods.
 
-Pmt – Equal payments paid out each period during the course of the investment term. This is an optional argument.
+`Pmt` – Equal payments paid out each period during the course of the investment term. This is an optional argument.
 
-PV  –  The present value or initial investment. Cash outflows are considered as negative and cash inflows as positive.
+`PV`  –  The present value or initial investment. Cash outflows are considered as negative and cash inflows as positive.
 
-Type – Indicates when the payments are made. Type is zero if payments are made at the end of the period and non-zero if payments are made at the start of the period. This is an optional argument and when omitted, it is considered to be zero.
+`Type` – Indicates when the payments are made. Type is zero if payments are made at the end of the period and non-zero if payments are made at the start of the period. This is an optional argument and when omitted, it is considered to be zero.
 
 ## Example
 Consider a series of $2000 payments made at the end of each year for 6 years. The objective is to calculate the future value at the end of 6 years where the interest rate is 5%.  
 
-To calculate the future value, the formula should be FV (Interest Rate, Number of Periods, PMT,0,0).
+To calculate the future value, the formula should be 
+```javascript
+FV (Interest Rate, Number of Periods, PMT,0,0)
+```
 The future value is calculated to be $13,603.83.
 
 ## Excel Equivalent

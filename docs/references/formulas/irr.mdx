@@ -2,17 +2,18 @@
 id: irr
 title: IRR
 ---
-The IRR function returns the internal rate of return for a series of cash flows. Node references also accepted as arguments.
+The `IRR` function returns the internal rate of return for a series of cash flows. Node references also accepted as arguments.
 
 ## Syntax
+```javascript
 IRR (value1,[value2],…, [Guess])
-
+```
 ## Arguments
-value1 – The node that contains the order of cash flows for which you want to calculate the internal rate of return.
+`value1` – The node that contains the order of cash flows for which you want to calculate the internal rate of return.
 
-value2,…  – The additional nodes that contains the order of cash flows for which you want to calculate the internal rate of return. This is an optional argument.
+`value2,…`  – The additional nodes that contains the order of cash flows for which you want to calculate the internal rate of return. This is an optional argument.
 
-Guess – A value that you guess is close to the actual IRR value. This is an optional argument.
+`Guess` – A value that you guess is close to the actual IRR value. This is an optional argument.
 
 ## Example
 Consider a project with an initial investment of $10,000 and cash inflows of $4,000 for the subsequent four years. The objective is to evaluate the project by calculating IRR. 
@@ -22,8 +23,11 @@ Consider a project with an initial investment of $10,000 and cash inflows of $4,
 | Initial Investment | -10,000 |       |       |       |       |
 | Cash Inflows       |         | 4,000 | 4,000 | 4,000 | 4,000 |
 
-To achieve this, the formula should be IRR ([Initial Investment,Cash Inflows.ALL_PERIODS]).
-IRR is calculated to be 14.76%
+To achieve this, the formula should be
+```javascript
+IRR ([Initial Investment,Cash Inflows.ALL_PERIODS])
+```
+`IRR` is calculated to be 14.76%
 
 ## Excel Equivalent
 [IRR](https://support.office.com/en-us/article/IRR-function-64925EAA-9988-495B-B290-3AD0C163C1BC)

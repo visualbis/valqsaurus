@@ -2,17 +2,21 @@
 id: range
 title: RANGE
 ---
-The RANGE function refers to the values of a node between the specified start and end periods.
+The `RANGE` function refers to the values of a node between the specified start and end periods.
 
 ## Syntax
-.Range (start_index,end_index)
-
+```javascript
+Range (start_index,end_index)
+```
 ## Arguments
-start_index – The starting periods’ index.
+`start_index` – The starting periods’ index.
 
-end_index – The ending periods’ index.
+`end_index` – The ending periods’ index.
 
 ## Example
 Consider a scenario where the salesperson gets a bonus of 20% if the total sales for the first quarter is greater than the target.
 
-To achieve this, the formula should be IF (Total Sales.Range(1,3)>Target, Total Sales*0.2,0).
+To achieve this, the formula should be 
+```javascript
+IF (Total Sales.Range(1,3)>Target, Total Sales*0.2,0).
+```

@@ -2,15 +2,19 @@
 id: get
 title: GET
 ---
-The GET function returns the value of the node corresponding to the period index that is specified.
+The `GET` function returns the value of the node corresponding to the period index that is specified.
 
 ## Syntax
-.Get (period_index)
-
+```javascript
+Get (period_index)
+```
 ## Arguments
-period_index – An integer that is less than the number of periods defined in the model .
+`period_index` – An integer that is less than the number of periods defined in the model .
 
 ## Example
 Consider a scenario where you want to refer to last period value of the node Discount. 
 
-To achieve this, the formula should be Discount.Get(12)
+To achieve this, the formula should be 
+```javascript
+Discount.Get(12)
+```
