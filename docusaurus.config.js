@@ -2,7 +2,7 @@ module.exports = {
   title: "ValQ",
   tagline: "Modern Digital Planning",
   url: "https://valq.com",
-  baseUrl: "/valqsaurus/",
+  baseUrl: "/",
   favicon: "img/cropped-valq-icon-1-192x192.png",
   organizationName: "visualbis", // Usually your GitHub org/user name.
   projectName: "valqsaurus", // Usually your repo name.
@@ -34,7 +34,7 @@ module.exports = {
           ]
         },
         {
-          title: "Community",
+          title: "More",
           items: [
             {
               label: "ValQ Community",
@@ -62,7 +62,9 @@ module.exports = {
       apiKey: "api-key",
       indexName: "index-name",
       algoliaOptions: {} // Optional, if provided by Algolia
-    }
+    },
+    ogImage: "img/whats-new-in-valq.jpg",
+    twitterImage: "img/whats-new-in-valq.jpg"
   },
    plugins: [
     'docusurus-lunr-search'
