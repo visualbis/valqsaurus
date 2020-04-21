@@ -2,15 +2,16 @@
 id: average
 title: AVERAGE
 ---
-The AVERAGE function returns the average (arithmetic mean) of its arguments, which can be numbers or node references.
+The `AVERAGE` function returns the average (arithmetic mean) of its arguments, which can be numbers or node references.
 
 ## Syntax
+```javascript
 AVERAGE (value1,[value2]....)
-
+```
 ## Arguments
-value1 – The first node or number to be averaged. This is a required argument.
+`value1` – The first node or number to be averaged. This is a required argument.
 
-value2, …  – The additional nodes or numbers to be averaged. These are optional arguments.
+`value2, …`  – The additional nodes or numbers to be averaged. These are optional arguments.
 
 ## Example
 Consider sales of a particular product across different regions East, South, Central and West to be as follows. 
@@ -24,7 +25,9 @@ The average sales is to be calculated.
 | West          | 0   | 0   | 150   | 125    | 125    | 175   | 200    | 175   | 175    | 125   | 0     | 0    |
 | Average Sales | 50  | 50  | 137.5 | 156.25 | 131.25 | 112.5 | 123.75 | 112.5 | 118.75 | 112.5 | 81.25 | 87.5 |
 
-The average sales should be defined as AVERAGE (East, South, Central, West).
-
+The average sales should be defined as 
+```javascript
+AVERAGE (East, South, Central, West).
+```
 ## Excel Equivalent
 [AVERAGE](https://support.office.com/en-us/article/AVERAGE-function-047BAC88-D466-426C-A32B-8F33EB960CF6)

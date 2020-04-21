@@ -3,13 +3,14 @@ id: min
 title: MIN
 ---
 
-The MIN function returns the smallest number in a set of values. Node references also accepted as arguments. 
+The `MIN` function returns the smallest number in a set of values. Node references also accepted as arguments. 
 
 ## Syntax
+```javascript
 MIN (value1,[value2]....)
-
+```
 ## Arguments
-value1,value2 … – The nodes or numbers of which you want the smallest of. 
+```value1,value2 …`` – The nodes or numbers of which you want the smallest of. 
 
 ## Example
 Consider a node which has the demand for a particular product for 12 months. 
@@ -18,7 +19,10 @@ Consider a node which has the demand for a particular product for 12 months.
 |--------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | Demand | 180 | 200 | 238 | 174 | 286 | 319 | 265 | 136 | 220 | 260 | 300 | 315 |
 
-To calculate the minimum demand, the formula should be MIN (Demand.ALL_PERIODS).
+To calculate the minimum demand, the formula should be 
+```javascript
+MIN (Demand.ALL_PERIODS)
+``
 The minimum demand is calculated to be 136. 
 
 ## Excel Equivalent

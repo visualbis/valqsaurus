@@ -1,0 +1,26 @@
+---
+id: current_period_index
+title: CURRENT_PERIOD_INDEX
+---
+
+## Syntax
+
+```javascript
+CURRENT_PERIOD_INDEX < 5 ? value1 : value2;
+```
+
+`CURRENT_PERIOD_INDEX` points to the current period of the node for which vaule is getting calculatd.
+
+## Example
+
+Assume we have modelled a profit and loss statement using ValQ and we want to show the YoY growth in profits. This can be achieved by the following formula
+
+```javascript
+(THIS.GET(CURRENT_PERIOD_INDEX)/THIS.GET(CURRENT_PERIOD_INDEX-1))\*100
+```
+
+Let’s consider another example. To assign values to a node based on the period index, say for the 1st period the value is N1*2, 2nd period N1*3, 3rd period N1\*4, the formula will be
+
+```javascript
+SWITCH(CURRENT_PERIOD_INDEX, 1, N1 * 2, 2, N1 * 3, 3, N1N1\ * 4);
+```

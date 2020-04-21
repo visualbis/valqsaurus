@@ -3,20 +3,23 @@ id: xor
 title: XOR
 ---
 
-A XOR statement returns a logical 'Exclusive Or' of all arguments.
+A `XOR` statement returns a logical 'Exclusive Or' of all arguments.
 
 ## Syntax
+```javascript
 XOR ( logical_test1, [logical_test2], ... )
-
+```
 ## Arguments
-logical_test1 – The first condition to be evaluated. This is a required argument.
+`logical_test1` – The first condition to be evaluated. This is a required argument.
 
-logical_test2, …  – The additional conditions to be evaluated. These are optional arguments.
+`logical_test2, …` – The additional conditions to be evaluated. These are optional arguments.
 
 ## Example
 Consider an investment scenario of investing in either stocks or property, but not both.
 
-To achieve this, the formula should be IF (XOR (stocks, property), invested, not invested).
-
+To achieve this, the formula should be
+```javascript
+ IF (XOR (stocks, property), invested, not invested).
+```
 ## Excel Equivalent
 [XOR](https://support.office.com/en-us/article/XOR-function-1548D4C2-5E47-4F77-9A92-0533BBA14F37)

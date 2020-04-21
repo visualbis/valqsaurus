@@ -100,7 +100,12 @@ module.exports = {
             "references/formulas/me",
             "references/formulas/current_series",
             "references/formulas/current_series_id",
+            "references/formulas/current_period_index",
+            "references/formulas/sim_from_to_index",
             "references/formulas/node-properties"
+        ],
+        "Additional Series": [
+            "references/formulas/additional_series",
         ]
     }
 };

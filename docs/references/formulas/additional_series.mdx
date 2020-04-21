@@ -1,0 +1,24 @@
+---
+id: additional_series
+title: DSSERIES
+---
+
+## Syntax
+
+`DSSERIES[seriesid]` - will reperesnt the respective sereis data
+
+## Example
+
+Conisider there is data in following structure 
+
+| Parameter          | Series 1 | Series 2 |Series 3  |Series 4  |
+|--------------------|--------|--------|--------|--------|
+| US                 | 110    | 95     | 75     | 78     |
+| India              | 85     | 70     | 100    | 80     |
+| Germany            | 25     | 25     | 0      | 0      |
+
+Here you can acces the Series 3 value of India using following formula
+```javascript
+SUM(DSSERIES3.India)
+```
+
