@@ -7,6 +7,10 @@
 
 module.exports = {
     sideBar: {
+        Introduction: [
+            "intro/introduction",
+            "intro/import"
+        ],
         Quickstart: [
             "general/getting-started",
             "general/understanding-variances",
