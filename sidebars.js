@@ -9,7 +9,8 @@ module.exports = {
     sideBar: {
         Introduction: [
             "intro/introduction",
-            "intro/import"
+            "intro/import",
+            "intro/model"
         ],
         Quickstart: [
             "general/getting-started",

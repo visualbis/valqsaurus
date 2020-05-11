@@ -1,0 +1,117 @@
+---
+id: model
+title: Building your first visualization using ValQ
+sidebar_label: Build with ValQ
+---
+import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
+import Link from '@docusaurus/Link';
+import { Vimeo } from '../../src/components/Vimeo';
+
+Learn how to create your first visualization in less than 5 minutes. Try it out now with the below resource(s):
+<Vimeo
+    video="https://player.vimeo.com/video/330327639"
+    responsive={true}
+    width={640}
+    height={480}
+/>
+
+## Step-by-Step Guide
+
+Let us learn to create our first visualization using ValQ in this exercise. The workflow to build it using Excel data is as follows:
+
+  1. Import data from Excel
+  2. Build the visual
+
+## 1. Import data from Excel
+  
+1. a) We are going to get hands-on experience using the excel file - **Sales Performance Data**. The preview of the dataset can be seen as below.
+    
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/1.png')}
+    width={500}
+    height={400}
+/>
+
+1. b) To get data into Power BI: Open Power BI, select **File** and select **Get Data**. Now choose **Excel** to import the sales data.
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/2.png')}
+    width={535}
+    height={375}
+/>
+
+1. c) Go to the file location and select the file to be imported.
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/3.png')} />
+
+1. d) Now check the **Sales Data(Columnar)** checkbox to view the preview of the dataset and then select **Load**.
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/4.png')} />
+
+1. e) Once the data gets loaded, you can see the dataset on the right side of the screen under the **Fields** pane.
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/5.png')}
+    width={430}
+    height={395}
+/>
+
+**Note**: We need ValQ within Power BI to proceed from here. In case you don't have ValQ installed, get it from <a href="https://docs.valq.com/docs/intro/import" target="_blank">here</a>.
+
+1. f) Click on the ValQ icon under the **Visualizations** pane to see the tile on the canvas. In order to activate ValQ, drag the fields from the **Fields** pane to **Visualizations** pane as shown in the below image.
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/6.png')}
+    width={290}
+    height={470}
+/>
+
+Under **Value** section, the sales budget is assigned below the sales forecast as we want the forecast to be benchmarked against the budget. Further,
+the order of **category** section fields is imperative for the structure of the visualization.
+
+1. g) In the case of Time Period field drag it to the **Time Period** section and select **X** next to Day. Now, we can compare sales
+   forecast with budget on yearly, quarterly and monthly basis. 
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/7.png')}
+    width={290}
+    height={470}
+/>
+
+1. h) Adjust the size of the tile in the canvas to see the screen as below and click on the close button of the popups to proceed to building the visual.
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/8.png')} />
+
+## 2. Build the visual
+
+2. a) Click on the **Create a simple model** option on left side of the canvas to begin to build the visualization. 
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/9.png')} />
+
+2. b) ValQ has created a simple dynamic model based on the dataset. Parent nodes in simple dynamic models are always configured to be the sum of child nodes. You must convert to an advanced model in order to change this behavior.
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/10.png')}
+    width={430}
+    height={420}
+/>
+
+2. c) The levels are based on the ordering of the fields in the **Category** section. Therefore, the levels of our model in descending order are Overall Result, Region, Category, Sales Rep.
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/11.png')} />
+
+2. d) Click on **Go to Level** and select 4 to expand the visual to level 4.
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/12.png')} />
+
+2. e) Notice the Levels are as we’ve mentioned previously. We see East (Region), Consumer (Category), Chris Morris (Sales Rep). 
+The first visualization using ValQ has been successfully built as seen in the image below.
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/13.png')} />
+
+2. f) Now, let's change the structure of the visual by moving the Category above Region in the **Category** section to see the impact.
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/14.png')} />
+
+2. g) Select **Go to level** 3.
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/15.png')} />
+
+2. h) As expected Category and Region have swapped levels in the visual.
+
+<img alt="ValQ get" src={useBaseUrl('/doc-images/model/16.png')} />
+
