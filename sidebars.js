@@ -10,7 +10,8 @@ module.exports = {
         Introduction: [
             "intro/introduction",
             "intro/import",
-            "intro/model"
+            "intro/model",
+            "intro/workflow"
         ],
         Quickstart: [
             "general/getting-started",
