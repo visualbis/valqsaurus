@@ -40,7 +40,9 @@ module.exports = {
             }
         ],
         Simulate: ["simulation/simulation"],
-        "Analyze Tab": ["analysis/variance-analysis"],
+        "Analyze Tab": [
+            "analysis/Analyze tab"
+        ],
         "Storage and Collaboration": ["storage/storage-collaboration"],
         Resources: [
             "faq/formula-list",

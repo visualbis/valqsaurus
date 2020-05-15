@@ -1,0 +1,87 @@
+---
+id: Analyze tab
+title: Analyze Tab
+sidebar_label: Analyze Tab
+---
+import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
+import Link from '@docusaurus/Link';
+
+<div style={{textAlign: 'justify'}}>
+The Analyze tab allows the user to run advanced analyses on the data. Currently, you can perform  Variance Analysis on ValQ.
+Several other features such as Sensitivity Analysis and Time Series Analysis are to be released in the upcoming versions.
+<br /> <br />
+
+On clicking the **Analyze** tab, you will be able to view the Variance Analysis option.
+</div>
+<div style={{textAlign: 'center'}}>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/build/analyze1.png')} />
+</div>
+<br />
+<div style={{textAlign: 'justify'}}>
+
+By default, you will see the below screen upon clicking on Variance Analysis.
+</div>
+<div style={{textAlign: 'center'}}>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/build/analyze2.png')} />
+</div>
+<br />
+<div style={{textAlign: 'justify'}}>
+
+**Variance Analysis** helps compare the values and displays variance between Base Series and Compared Series for the
+selected period across all nodes in the model.
+
+Set the **Base Series** and **Compared Series** from the model that you want to compare here. 
+</div>
+<div style={{textAlign: 'center'}}>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/build/analyze3.png')} />
+</div>
+<br />
+<div style={{textAlign: 'justify'}}>
+
+Under the Analyze tab, the period(s) across which the comparison is to be made can be customized by clicking on the drop-down in the **Period** field.
+</div>
+<div style={{textAlign: 'center'}}>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/build/analyze4.png')} />
+</div>
+<br />
+<div style={{textAlign: 'justify'}}>
+
+You can select the **Base period** from the drop-down for the Base Series and calculate it's variance with the Compared Series.
+Here, you have two options
+
+  1. Choose **Compare with same period** to run Variance Analysis of Base Series and Compared series for the same period (Base period).
+  2. Choose **Compare to different period** to run Variance Analysis of Base Series with values from base period and Compared series
+    with values from another period.
+
+</div>
+<div style={{textAlign: 'center'}}>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/build/analyze6.png')} />
+</div>
+<br />
+<div style={{textAlign: 'justify'}}>
+
+You can also apply **Filter** to the Variance Analysis 'By Parent' and/or 'By Variance' and choose criteria of your choice from the drop-down to see the results.
+</div>
+<div style={{textAlign: 'center'}}>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/build/analyze5.png')} />
+</div>
+<br />
+<div style={{textAlign: 'justify'}}>
+
+On the right side of the canvas, click on the checkbox **show absolute variance** to see the change in value and **show % variance**
+to see the percentage change between Base Series and Compared Series. The variance of nodes having positive change is in green and
+negative change is in red.
+
+</div>
+<div style={{textAlign: 'center'}}>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/build/analyze7.png')} />
+</div>
+<br />
+<div style={{textAlign: 'justify'}}>
+
+The results can also be downloaded as an Excel file. Note that the option to download as an Excel file is available only on Power BI Service.
+
+</div>
+<div style={{textAlign: 'center'}}>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/build/analyze8.png')} />
+</div>
