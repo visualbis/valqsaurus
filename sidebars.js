@@ -23,14 +23,16 @@ module.exports = {
             "general/workspace-in-valq",
             "general/valq-in-powerbi"
         ],
-        "Model Tab": [
+        "Model": [
+            "model/Model Tab",
             "model/new",
             "model/node",
             "model/data-series",
             "model/settings",
             "model/general"
         ],
-        "Plan Tab": [
+        "Plan": [
+            "planning/Plan Tab",
             "planning/overview",
             "planning/budget-allocation",
             {
@@ -40,7 +42,9 @@ module.exports = {
             }
         ],
         Simulate: ["simulation/simulation"],
-        "Analyze Tab": ["analysis/variance-analysis"],
+        "Analyze": [
+            "analysis/variance analysis"
+        ],
         "Storage and Collaboration": ["storage/storage-collaboration"],
         Resources: [
             "faq/formula-list",
