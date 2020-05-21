@@ -24,7 +24,7 @@ module.exports = {
             "general/valq-in-powerbi"
         ],
         "Model": [
-            "model/Model Tab",
+            "model/model_tab",
             "model/new",
             "model/node",
             "model/data-series",
@@ -32,7 +32,8 @@ module.exports = {
             "model/general"
         ],
         "Plan": [
-            "planning/Plan Tab",
+            "planning/plan_tab",
+            "planning/plan_features",
             "planning/overview",
             "planning/budget-allocation",
             {
@@ -43,7 +44,7 @@ module.exports = {
         ],
         Simulate: ["simulation/simulation"],
         "Analyze": [
-            "analysis/variance analysis"
+            "analysis/variance_analysis"
         ],
         "Storage and Collaboration": ["storage/storage-collaboration"],
         Resources: [
