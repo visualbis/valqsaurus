@@ -22,8 +22,7 @@ jobs:
 
       - run:
           name: "Set Org Name"
-          command: |
-            echo 'export orgName="${CIRCLE_PROJECT_USERNAME}"' >> $BASH_EN
+          command: echo 'export orgName=${CIRCLE_PROJECT_USERNAME}' >> $BASH_EN
 
       - run:
           name: Deploying to GitHub Pages
