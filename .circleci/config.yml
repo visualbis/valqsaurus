@@ -23,7 +23,7 @@ jobs:
       - run:
           name: "Set cname"
           command: |
-            if [ "${CIRCLE_PROJECT_USERNAME}" !== "visualbis" ]; then
+            if [ "${CIRCLE_PROJECT_USERNAME}" != "visualbis" ]; then
                 node set-cname.js
             fi
       - run:
