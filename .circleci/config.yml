@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:10-browsers
+      - image: circleci/node:10.6.0
 
     steps:
       - checkout
@@ -14,7 +14,11 @@ jobs:
 
       - run:
           name: "Set Org Name"
-          command: echo 'export orgName=${CIRCLE_PROJECT_USERNAME}' >> $BASH_EN
+          command: echo 'export orgName=${CIRCLE_PROJECT_USERNAME}' > $BASH_EN
+
+      - run:
+          name: "simple echo"
+          command: echo $orgName
 
       - run:
           name: Yarn Install
