@@ -10,7 +10,7 @@ jobs:
 
       - run:
           name: "simple echo"
-          command: echo ${CIRCLE_PROJECT_USERNAME}
+          command: node sample.js
 
       - run:
           name: "Set Org Name"
