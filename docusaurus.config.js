@@ -2,7 +2,7 @@ module.exports = {
     title: "ValQ",
     tagline: "Modern Digital Planning",
     url: "https://valq.com",
-    baseUrl: process.env.CIRCLE_PROJECT_USERNAME === "visualbis" ? "/" : "/valqsaurus/",
+    baseUrl: "/",
     favicon: "img/cropped-valq-icon-1-192x192.png",
     organizationName: process.env.CIRCLE_PROJECT_USERNAME || "visualbis", // Usually your GitHub org/user name.
     projectName: "valqsaurus", // Usually your repo name.
