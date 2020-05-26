@@ -1,31 +1,53 @@
 ---
 id: workflow
-title: Understanding the ValQ Workflow
-sidebar_label: Understanding the ValQ Workflow
+title: The ValQ Workflow
+sidebar_label: The ValQ Workflow
 ---
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
 
 <div style={{textAlign: 'justify'}}>
 
-ValQ primarily consists of **four** major activities namely **Model**, **Plan**, **Simulate** and **Analyze** as tab options. In this section,
-you will be introduced to these features and in the later sections we'll learn about each of it's functionality in detail.
+The ValQ workflow consists of four steps - Model, Plan, Simulate and Analyze – all of which are shown in a tab at the top. 
 </div>
 <div style={{textAlign: 'center'}}>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/workflow/workflow1.png')} />
-</div>
+</div> <br />
+At a very high level, these are used for the following: <br /> <br />
+
+|   	| TAB  	| PURPOSE  	| ACCESSIBLE TO*  	|
+|---	|---	|---	|---	|
+|  1 	|  <Link to={useBaseUrl('docs/model/model_tab')}> Model </Link> 	| Configure KPIs and define their relationships, build and publish ValQ models   	| Creator only  	|
+|  2 	|  <Link to={useBaseUrl('docs/planning/plan_tab')}> Plan </Link> 	| Perform budgeting, allocations, time-series forecasting  	| Creator & Consumer  	|
+|  3 	|  <Link to={useBaseUrl('docs/simulation/simulation')}> Simulate </Link> 	| Perform simulations & scenario comparisons; Build basic models directly from data  	| Creator & Consumer   	| 
+|  4 	|  <Link to={useBaseUrl('docs/analysis/variance_analysis')}> Analyze </Link> 	| Perform in-depth variance analysis   	| Creator & Consumer   	|
+
 <br />
-<br />
+
+**Creator**: One who builds or designs models – this can be an analyst or planner (or anyone in the organization who is comfortable with Excel)
+
+**Consumer**: One who consumes ValQ models built by Creator – this can be executives, decision makers, and even other analysts and planners in the organization. 
+
+> **i Note** <br /> 
+    A Creator can also build models for self-consumption.
+
+> **i Note** <br /> 
+    There is no specific sequence to be followed in the above workflow. <br /> For example, not everyone may need to utilize
+    Plan & Analyze tabs, ValQ models can also be built on-the-fly directly from the Simulate tab without having to utilize any Model tab capabilities.
+  
+What follows is a preview of these workflow items, and we would explore them in-depth later.
+
 <div style={{textAlign: 'justify'}}>
 
-**Model Tab** : The model tab helps the designer bring data model to life and build complex visuals without writing single
-line of code. This tab is available only during edit mode and not read mode, hence it cannot be accessed by runtime users.
+## Model Tab
+
+The <Link to={useBaseUrl('docs/model/model_tab')}> Model </Link> tab helps the designer bring data model to life and build complex visuals without writing a single line of code. This tab is available only during edit mode (in Power BI) and not in the reading view – and can be thus accessible only by Creators and not Consumers.
 </div>
 <div style={{textAlign: 'center'}}>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/workflow/workflow2.png')}/>
 </div> <br />
 
-The panes on the right side namely **Fields pane, Visualizations pane and Filters pane** assist in designing the visual.
+While modeling, the user can leverage the Fields, Visualizations & Filters pane in Power BI to connect to a data and configure the visual.
 <div style={{textAlign: 'center'}}>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/workflow/workflow3.png')}
     width={410}
@@ -33,33 +55,32 @@ The panes on the right side namely **Fields pane, Visualizations pane and Filter
 />
 </div> <br />
 
-**Plan Tab**: The plan tab is used to create new plans and budgets for business cycles,
-perform top-down and bottom-up analyses, apply different allocation methods, conduct Time Series Forecasting, etc.
-This tab is available for both design and runtime users.
+## Plan Tab
+
+The <Link to={useBaseUrl('docs/planning/plan_tab')}> Plan </Link> tab is used to create new plans and budgets for business cycles, perform top-down and bottom-up analyses, apply different allocation methods, perform time series forecasting, and more.
 <div style={{textAlign: 'center'}}>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/workflow/workflow4.png')}
     width={700}
     height={400}
 />
-</div>
-<br />
-<br />
+</div> <br />
 
-**Simulate Tab**: The simulate tab view is the default page upon opening the ValQ visual as seen in the image below. Under the simulate tab,
-you can create multiple Scenarios, perform Simulations, take a look at the KPIs and it's impact amongst others. This tab is available for both design 
-and runtime users.
+## Simulate Tab
+
+In the <Link to={useBaseUrl('docs/simulation/simulation')}> Simulate </Link> tab, you would be able to visualize the KPIs and their relationships arranged in a tree-like fashion. From this tab, you can run simulations, create scenarios and compare scenarios.
 <div style={{textAlign: 'center'}}>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/workflow/workflow5.png')}
     width={700}
     height={400}
 />
-</div>
-<br />
-<br />
+</div> <br />
 
-**Analyze Tab**: The Analyze tab allows the user to run advanced analyses such as Variance Analysis and also download the same as an Excel file.
-This tab is available for both design and runtime users.
+> **i Note** <br />
+Consumers would typically see the Simulate tab first while opening ValQ.
+
+## Analyze Tab 
+
+The <Link to={useBaseUrl('docs/analysis/variance_analysis')}> Analyze </Link> tab allows the user to run advanced analyses such as variance analysis. While consuming from Power BI server or service, you would be able to also download the results of such analyses in a spreadsheet.
 <div style={{textAlign: 'center'}}>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/workflow/workflow7.png')}/>
 </div>
-In the upcoming sections, you will be able to understand the above listed activities in detail.
