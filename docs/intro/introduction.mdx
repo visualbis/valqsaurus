@@ -5,6 +5,8 @@ sidebar_label: Introduction to ValQ
 ---
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 ## What's ValQ?
 <div style={{textAlign: 'justify'}}>
@@ -23,9 +25,11 @@ help decision-makers and executives simulate various scenarios on-the-fly and an
 arrive at actionable decisions. ValQ supports use cases such as what-if simulations, scenario comparisons, planning, forecasting, variance analysis, value driver analysis and more.
 </div> <br />
 <div style={{textAlign: 'center'}}>
-  <img alt="ValQ uses" src={useBaseUrl('/doc-images/intro/2.png')} 
+  <Zoom>
+    <img alt="ValQ uses" src={useBaseUrl('/doc-images/intro/2.png')} 
     width={500}
     height={410}/>
+  </Zoom>
 </div>
 
 ## Who can use ValQ ?

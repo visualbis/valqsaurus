@@ -19,6 +19,13 @@ jobs:
       - run:
           name: Yarn Install
           command: yarn install
+
+      - run:
+          name: "Set cname"
+          command: |
+            if [ "${CIRCLE_PROJECT_USERNAME}" != "visualbis" ]; then
+                node set-cname.js
+            fi
       - run:
           name: Deploying to GitHub Pages
           command: |
