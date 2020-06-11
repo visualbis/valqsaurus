@@ -5,21 +5,25 @@ sidebar_label: The ValQ Workflow
 ---
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 <div style={{textAlign: 'justify'}}>
 
 The ValQ workflow consists of four steps - Model, Plan, Simulate and Analyze – all of which are shown in a tab at the top. 
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/workflow/workflow1.png')} />
+  </Zoom>
 </div> <br />
 At a very high level, these are used for the following: <br /> <br />
 
 |   	| TAB  	| PURPOSE  	| ACCESSIBLE TO*  	|
 |---	|---	|---	|---	|
-|  1 	|  <Link to={useBaseUrl('docs/model/model_tab')}> Model </Link> 	| Configure KPIs and define their relationships, build and publish ValQ models   	| Creator only  	|
-|  2 	|  <Link to={useBaseUrl('docs/planning/plan_tab')}> Plan </Link> 	| Perform budgeting, allocations, time-series forecasting  	| Creator & Consumer  	|
-|  3 	|  <Link to={useBaseUrl('docs/simulation/simulation')}> Simulate </Link> 	| Perform simulations & scenario comparisons; Build basic models directly from data  	| Creator & Consumer   	| 
+|  1 	|  <Link to={useBaseUrl('docs/model/model_tab')}> Model </Link> 	| Build advanced models and leverage models by using formulae and functions   	| Creator only  	|
+|  2 	|  <Link to={useBaseUrl('docs/planning/plan_tab')}> Plan </Link> 	| Levergae intelligent planning grid to perform budgeting, allocations and time-series forecasting  	| Creator & Consumer  	|
+|  3 	|  <Link to={useBaseUrl('docs/simulation/simulation')}> Simulate </Link> 	| Perform simulations & scenario comparisons; Build models directly from data  	| Creator & Consumer   	| 
 |  4 	|  <Link to={useBaseUrl('docs/analysis/variance_analysis')}> Analyze </Link> 	| Perform in-depth variance analysis   	| Creator & Consumer   	|
 
 <br />
@@ -44,43 +48,53 @@ What follows is a preview of these workflow items, and we would explore them in-
 The <Link to={useBaseUrl('docs/model/model_tab')}> Model </Link> tab helps the designer bring data model to life and build complex visuals without writing a single line of code. This tab is available only during edit mode (in Power BI) and not in the reading view – and can be thus accessible only by Creators and not Consumers.
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/workflow/workflow2.png')}/>
+  </Zoom>
 </div> <br />
 
 While modeling, the user can leverage the Fields, Visualizations & Filters pane in Power BI to connect to a data and configure the visual.
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/workflow/workflow3.png')}
     width={410}
     height={425}
 />
+  </Zoom>
 </div> <br />
 
 ## Plan Tab
 
 The <Link to={useBaseUrl('docs/planning/plan_tab')}> Plan </Link> tab is used to create new plans and budgets for business cycles, perform top-down and bottom-up analyses, apply different allocation methods, perform time series forecasting, and more.
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/workflow/workflow4.png')}
     width={700}
     height={400}
 />
+  </Zoom>
 </div> <br />
 
 ## Simulate Tab
 
 In the <Link to={useBaseUrl('docs/simulation/simulation')}> Simulate </Link> tab, you would be able to visualize the KPIs and their relationships arranged in a tree-like fashion. From this tab, you can run simulations, create scenarios and compare scenarios.
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/workflow/workflow5.png')}
     width={700}
     height={400}
 />
+  </Zoom>
 </div> <br />
 
-> **i Note** <br />
+> ** Note** <br />
 Consumers would typically see the Simulate tab first while opening ValQ.
 
 ## Analyze Tab 
 
 The <Link to={useBaseUrl('docs/analysis/variance_analysis')}> Analyze </Link> tab allows the user to run advanced analyses such as variance analysis. While consuming from Power BI server or service, you would be able to also download the results of such analyses in a spreadsheet.
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/workflow/workflow7.png')}/>
+  </Zoom>
 </div>

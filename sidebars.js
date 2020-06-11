@@ -11,19 +11,10 @@ module.exports = {
             "intro/introduction",
             "intro/import",
             "intro/model",
+            "intro/node",
             "intro/workflow"
         ],
-        Quickstart: [
-            "general/getting-started",
-            "general/understanding-variances",
-            "general/understanding-node-widget",
-            "general/conducting-what-if",
-            "general/more-info-value-driver",
-            "general/saving-opening-scenarios",
-            "general/workspace-in-valq",
-            "general/valq-in-powerbi"
-        ],
-        "Model": [
+        Model: [
             "model/model_tab",
             "model/new",
             "model/node",

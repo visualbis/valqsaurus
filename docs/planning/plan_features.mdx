@@ -5,17 +5,21 @@ sidebar_label: Plan Features
 ---
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 <div style={{textAlign: 'justify'}}>
 Let's take a look at the features of the Plan tab in this section. 
 <br /> <br /> 
 
-### 1. Plan Table
+### 1. View current plan taable
 You can see the name of the plan you are currently working on as highlighted in the figure below. The footer highlights the
 series on which the plan has been created. 
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan5.png')} />
+  </Zoom>
 </div> <br />
 <div style={{textAlign: 'justify'}}>
 
@@ -23,7 +27,9 @@ series on which the plan has been created.
 Click on the '+ New Series' to add another series to the Plan tab.
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan18.png')} />
+  </Zoom>
 </div> <br />
 <div style={{textAlign: 'justify'}}>
 
@@ -31,17 +37,21 @@ Click on the '+ New Series' to add another series to the Plan tab.
 You can take a look at a particular node and it's children by entering the node name or ID  using the search bar. 
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan6.png')} />
+  </Zoom>
 </div> <br />
 <div style={{textAlign: 'justify'}}>
 
-### 4. Get Insight on a Value
+### 4. Get insight on a Value
 On clicking any cell with value, the number format and scaling that were configured while modelling are retained. 
 You can see the absolute value on the 'Number Bar' and the Calculation
 Method and Time Aggregation on the footer as highlighted in the below image. 
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan17.png')} />
+  </Zoom>
 </div>
 
 <div style={{textAlign: 'justify'}}> <br />
@@ -55,17 +65,21 @@ In the 'Action Menu’, you will find various options such as <br />
 Weight distributes a node's total value based on the period values of a node choosen by the user.
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan7.png')} />
+  </Zoom>
 </div>
 
 <div style={{textAlign: 'justify'}}> <br />
 
-### 5.b) Equal
+### 5.b) Equals
 
 Equal distributes a node's total value equally over the period.
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan8.png')} />
+  </Zoom>
 </div>
 
 <div style={{textAlign: 'justify'}}> <br />
@@ -75,7 +89,9 @@ Equal distributes a node's total value equally over the period.
 Trend applies the change based on a node's period value to the rest of the year.
 </div> 
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan9.png')} />
+  </Zoom>
 </div>
 
 <div style={{textAlign: 'justify'}}> <br />
@@ -85,7 +101,9 @@ Trend applies the change based on a node's period value to the rest of the year.
 Copy-to is used to copy a node's period value and apply the same to the rest of the year.
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan10.png')} />
+  </Zoom>
 </div>
 
 <div style={{textAlign: 'justify'}}> <br />
@@ -95,7 +113,9 @@ Copy-to is used to copy a node's period value and apply the same to the rest of 
 Auto Forecast enables the user to apply Time Series Forecasting methods to the plan. Click here to know more about it. 
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan11.png')} />
+  </Zoom>
 </div>
 
 <div style={{textAlign: 'justify'}}> <br />
@@ -106,7 +126,9 @@ Child nodes are allocated either by 'Weight' or 'Equal' under this
 option and 'Copy-to' is used to copy a node's value to its sibling nodes.
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan12.png')} />
+  </Zoom>
 </div>
 
 <div style={{textAlign: 'justify'}}> <br />
@@ -115,17 +137,21 @@ option and 'Copy-to' is used to copy a node's value to its sibling nodes.
 Hold and Release can be used to lock or unlock certain cells as needed. 
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan13.png')} />
+  </Zoom>
 </div>
 
 <div style={{textAlign: 'justify'}}> <br />
 
-### 5.h) Note
+### 5.h) Add a comment
 
 Note helps the user to add, modify or delete notes. 
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan14.png')} />
+  </Zoom>
 </div>
 
 <div style={{textAlign: 'justify'}}> <br />
@@ -135,18 +161,22 @@ Note helps the user to add, modify or delete notes.
 On clicking Refresh Datasource, the newly created series gets updated if there are any changes to the input data.
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan15.png')} />
+  </Zoom>
 </div>
 
 <div style={{textAlign: 'justify'}}> <br />
 
-### 5.j) View History
+### 5.j) View Allocation History
 
-View History is used to view the changes performed and also roll back changes when needed.
+View Allocation History is used to view the changes performed and also roll back changes when needed.
 'Reset all' would delete all the allocation adjustments made to the series. 'Restore to this
 step' traces back to the selected step.
 </div> 
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan16.png')} />
+  </Zoom>
 </div>
 
