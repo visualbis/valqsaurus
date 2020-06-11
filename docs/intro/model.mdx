@@ -6,6 +6,8 @@ sidebar_label: Using ValQ - An Example
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
 import { Vimeo } from '../../src/components/Vimeo';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 Learn how to create your first visualization using ValQ in less than 5 minutes. Try it out now with the below resource(s):
 <Vimeo
@@ -28,43 +30,53 @@ sales rep.
 Download the dataset and try <a href={useBaseUrl('/assets/Sales_Performance_Data.xlsx')}> here </a>.
 
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ get" src={useBaseUrl('/doc-images/build/1.png')}
     width={490}
     height={395}
 />  
+  </Zoom>
 </div> <br />
 
 1. b) To import this data into Power BI, go to **File** and select **Get Data**. Now choose **Excel** to import the sales data.
 <br />
 
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ get" src={useBaseUrl('/doc-images/build/2.png')}
     width={535}
     height={330}
 />
+  </Zoom>
 </div> <br />
 
 1. c) Go to the file location and select the file to be imported. Click Open.
 <br />
 
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ get" src={useBaseUrl('/doc-images/build/3.png')} />
+  </Zoom>
 </div> <br />
 
 1. d) Select the **Sales Data(Columnar)** checkbox to preview the dataset and click **Load**.
 <br />
 
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ get" src={useBaseUrl('/doc-images/build/4.png')} />
+  </Zoom>
 </div> <br />
 
 1. e) You will now see the dataset under the **Fields** pane on the right.
 <br />
 
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ get" src={useBaseUrl('/doc-images/build/5.png')}
     width={430}
     height={385}/>
+      </Zoom>
 </div> <br />
 
 1. f) Click on the ValQ icon under the **Visualizations** pane. If you don’t see this option, you will have to first download and install <Link to={useBaseUrl('docs/intro/import')}> ValQ </Link>.
@@ -72,14 +84,18 @@ Now resize the ValQ visual in the canvas to full screen.
 <br />
 
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ get" src={useBaseUrl('/doc-images/build/6.png')}/>
+  </Zoom>
 </div> <br />
 
 1. g) Assign **Sales Forecast** from the **Fields** pane to the visual to activate ValQ. You will now see the following. Close the popup window.
 <br />
 
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ get" src={useBaseUrl('/doc-images/build/8.png')} />
+  </Zoom>
 </div>
 
 ## 2. Assign your data fields to ValQ <br /> 
@@ -88,37 +104,47 @@ Now resize the ValQ visual in the canvas to full screen.
 <br />
 
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ get" src={useBaseUrl('/doc-images/build/9.png')} />
+  </Zoom>
 </div> <br />
 
 2. b) You will only see Sales Forecast now. We need to start assigning additional fields now.
 <br />
 
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ get" src={useBaseUrl('/doc-images/build/10.png')}/>
+  </Zoom>
 </div> <br />
 
 2. c) Map additional fields to the visual as shown below.
 <br />
 
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ get" src={useBaseUrl('/doc-images/build/7.png')} 
     width={290}
     height={465}/>
+      </Zoom>
 </div> <br />
 
 2. d) Note how ValQ has instantly built the visualization directly from the data.
 <br />
 
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ get" src={useBaseUrl('/doc-images/build/11.png')} />
+  </Zoom>
 </div> <br />
 
 2. e) Click on the ‘**>**’ icon at the right of East node to reveal its children. You can expand/collapse any node like this.
 <br />
 
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ get" src={useBaseUrl('/doc-images/build/13.png')} />
+  </Zoom>
 </div>
 
 You have built your first visualization using ValQ. Take some time to explore this further.

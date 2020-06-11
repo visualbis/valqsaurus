@@ -5,87 +5,183 @@ sidebar_label: Analyze Tab
 ---
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
-
-The Analyze tab allows you to run advanced analyses on the data. 
 <div style={{textAlign: 'justify'}}> 
+The Analyze tab allows you to run advanced analyses on the data. 
 Currently, you can perform variance analysis from this tab. 
 Expect to see additional items in the future such as sensitivity analysis, attribution analysis and more. </div>
 
 ## Variance Analysis
 
+<br />
 Variance Analysis helps analyze variances against a benchmark for specific periods for all the KPIs in the model.<br />
-This pane consists of the following options:
 
-|   	| Click on any option to know more  	|
-|---	|---	|
-| 1  	| [Find Analyze Tab](#1-find-analyze-tab)  	|
-| 2  	| [Base vs Compared Series](#2-base-vs-compared-series)  	|
-| 3  	| [Base vs Compared Period](#3-base-vs-compared-period)  	|
-| 4  	| [Choose Time Period of Analysis](#4-choose-time-period-of-analysis)  	|
-| 5  	| [Apply Filter](#5-apply-filter)  	|
-| 6  	| [Show Absolute & % Variance](#6-show-absolute---variance)  	|
-| 7  	| [Download as Excel](#7-download-as-excel)  	|
-| 8  	| [Variance Analysis Table](#8-variance-analysis-table)  	|
+By default, you will see the below screen upon clicking on Variance Analysis underthe Analyze tab.
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze1.1.png')} /> 
+  </Zoom>
+<br /> <br />
 
-### 1. Find Analyze Tab
+The Analyze tab consists of two panels:
 
-On clicking the **Analyze** tab, you will be able to view the Variance Analysis option.
-<div style={{textAlign: 'center'}}>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze1.png')} />
-</div>
+On top of the page you will find a panel containing the features that help to configure the analysis report as per your needs.
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze1.2.png')} />
+  </Zoom>
+<br /> <br />
 
-### 2. Base vs Compared Series
+The other panel shows the Variance Analysis report prepared based on the model that you have built and it's configuration.
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze1.3.png')} />
+  </Zoom>
+<br /> <br />
+Now let's take a look at the features of Variance Analysis. 
+
+## Features of Variance Analysis
 
 <div style={{textAlign: 'justify'}}>
 
-**Variance Analysis** helps compare the values and displays variance between Base Series and Compared Series for the
-selected period across all nodes in the model.
+|   	| Click on any option to know more  	|
+|---	|---	|
+| 1  	| [Set Base Series and Compared Series](#1-set-base-series-and-compared-series)  	|
+| 2  	| [Set Scenario as Base Series](#2--set-scenario-as-base-series) |
+| 3  	| [Choose time frame to perform analysis](#3-choose-time-frame-to-perform-analysis) |
+| 4  	| [Set Base period and Compared period to calculate variances](#4-set-base-period-and-compared-period-to-calculate-variances ) 	|
+| 5  	| [Show Absolute & % Variance](#5-show-absolute---variance) |
+| 6  	| [Show Hidden Nodes](#6-show-hidden-nodes)	|
+| 7  	| [Show/ Hide Unit column](#7-show-hide-unit-column)  	|
+| 8  	| [Apply Filter to report](#8-apply-filter-to-report)  	|
+| 9  	| [Search for a node](#9-search-for-a-node)  	|
+| 10  	| [Hide the features panel](#10-hide-the-features-panel)  	|
+</div>
 
-Set the **Base Series** and **Compared Series** from the model that you want to compare here. 
+### 1. Set Base Series and Compared Series
+
+<div style={{textAlign: 'justify'}}>
+
+**Variance Analysis** helps compare the values of Base Series with that of the Compared Series for each of the node in the model and 
+calculate variances for the nodes.
+
+You can set the **Base Series** and **Compared Series** from the model that you want to compare here. 
 </div>
 <div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze3.png')} />
+  </Zoom>
 </div>
 
-### 3. Base vs Compared Period
+### 2.  Set Scenario as Base Series
+
+<div style={{textAlign: 'justify'}}>
+In the Analyze tab, you can implement the scenario that you have created in the Simulate tab as Base Series and compare it with Compared
+Series to perform Variance Analysis. This can be done by simply choosing the scenario that you want from the drop down and clicking on Apply scenario option. <br /> <br />
+</div>
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze2.png')} />
+  </Zoom>
+</div>
+
+### 3. Choose time frame to perform analysis
+
+<div style={{textAlign: 'justify'}}>
+
+The Period dropdown allows you to specify time frame for which you would like to run the analysis. Here, you can select multiple 
+time frames like Full year, Quarter, Year-to-date, etc.
+</div>
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze4.png')} />
+  </Zoom>
+</div> 
+
+### 4. Set Base period and Compared period to calculate variances
 
 <br />
 <div style={{textAlign: 'center'}}>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze6.1.png')} />
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze7.png')} />
+  </Zoom>
 </div>
 
 There are few properties in this section
 
 <div style={{textAlign: 'justify'}}>
 
-**Base Period**: By default, this will show the first period in the ‘Simulation Period’ from the ‘Simulate’ tab. This is the period that will show up whenever you would like to analyze variance for the ‘current period’.
+**Base Period**: By default, this will show the first period in the ‘Simulation Period’ from the ‘Simulate’ tab. 
+This is the period that will show up whenever you would like to analyze variance for the ‘current period’.
 
-**Comparison Period**: By default, you can analyze performance vs. the benchmark for the same period. E.g., July Forecast vs. July Actuals.
-
+**Comparison Period**: By default, you can analyze performance vs. the benchmark for the same period. <br />
+E.g., You can change the period to July Budget vs. July Forecast by just clicking on the drop down and choosing Jul.
 </div>
 
 <div style={{textAlign: 'center'}}>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze6.2.png')} />
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze8.png')} />
+  </Zoom>
 </div>
 
-However, if you would like to compare July Forecast vs. Jan Actuals, select ‘Compare to different period’ 
+However, if you would like to compare July Budget vs. Jan Forecast, select ‘Custom' option on the drop down and set the Base period and
+Compared period as below. 
 
 <div style={{textAlign: 'center'}}>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze6.3.png')} />
-</div>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze9.1.png')} />
+  </Zoom>
+</div> 
 
-### 4. Choose Time Period of Analysis
+With 'Compare Time Range' option, you can add another custom time frame in addition to the time frames already selected in (2). Let's add
+to the report Jan-Apr analysis as below.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze9.2.png')} />
+  </Zoom>
+</div> 
+
+### 5. Show Absolute & % Variance
 
 <div style={{textAlign: 'justify'}}>
 
-The Period dropdown allows you to specify periods for which you would like to run the comparison.
+In this section you may choose which variances are important to you for analysis. Selecting these options adds them to the table.
+The positive variance items are shown in green and the negative ones in red.
 </div>
 <div style={{textAlign: 'center'}}>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze4.png')} />
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze10.png')} />
+  </Zoom>
 </div>
 
-### 5. Apply Filter
+### 6. Show Hidden Nodes
+
+<div style={{textAlign: 'justify'}}>
+
+Here, you have the option to display the nodes that were hidden while building the model under the Model tab. 
+</div>
+
+> ** Note** <br /> Upon enabling show hidden node, the node stays hidden on the other tabs.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze11.png')} />
+  </Zoom>
+</div>
+
+### 7. Show/ Hide Unit column
+
+<div style={{textAlign: 'justify'}}>
+
+The unit column is seen by default on the Analyze tab. To hid the column, click on show unit to disable the feature.
+</div>
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze12.png')} />
+  </Zoom>
+</div>
+
+### 8. Apply Filter to report
 
 <div style={{textAlign: 'justify'}}>
 
@@ -93,39 +189,52 @@ Use the Filter option to analyze critical influencers.  Two filters are availabl
 
 **Filter by Parent**: This allows you to analyze variance for a specific branch within the model. For example, you may be interested in analyzing variance for a particular location or product.
 
-**Filter by Variance**: This allows you to identify top ‘n’ analysis for categories showing the most variance.
+**Filter by Variance**: This allows you to identify top ‘n’ analysis for categories showing the most variances for particular period choosen from the drop down.
+
+> **Note** <br /> You have the option to select whether you want to display only positive variances or only negative variances or both.
+
 </div>
 <div style={{textAlign: 'center'}}>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze5.png')} />
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze13.1.png')} />
+  </Zoom>
 </div>
 
-### 6. Show Absolute & % Variance
+<br />
+<div style={{textAlign: 'justify'}}>
+
+In the below image, filter By Variance has been applied to filter top 10 positive variances of the periodic report. The Value Bar displays 
+the filter that has been applied. To remove the filter simply click on the 'x' next to the filter. 
+
+</div>
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze13.2.png')} />
+  </Zoom>
+</div>
+
+### 9. Search for a node
 
 <div style={{textAlign: 'justify'}}>
 
-In this section you may choose which variances are important to you for analysis. Selecting these options adds them to the table.
+You can search for a particular node by using the search bar as highlighted below. This feature can be used to identify a node when a model 
+has large number of nodes. 
+
 </div>
-<div style={{textAlign: 'center'}}>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze7.png')} />
-</div>
-
-
-### 7. Download as Excel
-
-<div style={{textAlign: 'justify'}}>
-Clicking on this button allows you to download the results of variance analysis into a spreadsheet.
-</div> <br />
 
 <div style={{textAlign: 'center'}}>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze8.png')} />
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze14.png')} />
+  </Zoom>
 </div>
 
-### 8. Variance Analysis Table
+### 10. Hide the features panel
 
-<div style={{textAlign: 'justify'}}>
+Click on '^' to hid the features panel of the Analyze tab. The screen will be seen as below after the panel is hidden.
 
-The table displays the output of the variance analysis based on all the parameters chosen above. The positive variance items are shown in green and the negative ones in red.
-</div>
 <div style={{textAlign: 'center'}}>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze2.png')} />
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze15.png')} />
+  </Zoom>
 </div>
