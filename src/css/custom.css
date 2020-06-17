@@ -22,3 +22,21 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+blockquote{
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-color: rgb(29, 191, 231);
+}
+ 
+html[data-theme="dark"] blockquote{
+    background-color:rgb(19, 18, 18);
+    color: rgb(255, 255, 255);
+    border-color: rgb(29, 191, 231);
+}
+ 
+.table-center table{
+    margin: auto;
+    width: auto;
+    display: table;
+}

@@ -11,7 +11,6 @@ module.exports = {
             "intro/introduction",
             "intro/import",
             "intro/model",
-            "intro/node",
             "intro/workflow"
         ],
         Model: [
@@ -25,13 +24,7 @@ module.exports = {
         "Plan": [
             "planning/plan_tab",
             "planning/plan_features",
-            "planning/overview",
             "planning/budget-allocation",
-            {
-                type: "category",
-                label: "Other features",
-                items: ["planning/others/adding-note", "planning/others/view-history"]
-            }
         ],
         Simulate: ["simulation/simulation"],
         "Analyze": [
