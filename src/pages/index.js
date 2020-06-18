@@ -8,6 +8,16 @@ import styles from './styles.module.css';
 
 const features = [
     {
+        title: <>Introduction</>,
+        link: "/docs/intro/introduction",
+        imageurl: "https://cdn.valq.com/wp-content/uploads/what-if-simulations.png",
+        description: (
+            <>
+                Visualize, Simulate, Plan, Analyze your business like never before
+            </>
+        ),
+    },
+    {
         title: <>Modeling</>,
         link: "/docs/model/new",
         imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-modeling.png',
@@ -48,9 +58,19 @@ const features = [
         ),
     },
     {
+        title: <>Time Sereis Forecasting</>,
+        link: "/docs/planning/overview",
+        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-advanced-analytics.png',
+        description: (
+            <>
+                Perform Time Series Forecasting to make forecast and prediction.
+            </>
+        ),
+    },
+    {
         title: <>Advanced Analysis</>,
         link: "/docs/analysis/variance-analysis",
-        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-advanced-analytics.png',
+        imageUrl: "https://cdn.valq.com/wp-content/uploads/variance-analysis.png",
         description: (
             <>
                 Run in-depth and nimble Variance Analysis with minimal clicks.
