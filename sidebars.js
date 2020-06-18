@@ -9,8 +9,10 @@ module.exports = {
     sideBar: {
         Introduction: [
             "intro/introduction",
+            "intro/versions",
             "intro/import",
             "intro/model",
+            "intro/node",
             "intro/workflow"
         ],
         Model: [
@@ -25,6 +27,7 @@ module.exports = {
             "planning/plan_tab",
             "planning/plan_features",
             "planning/budget-allocation",
+            "planning/time_series",
         ],
         Simulate: ["simulation/simulation"],
         "Analyze": [
