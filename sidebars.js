@@ -31,6 +31,7 @@ module.exports = {
         ],
         Simulate: ["simulation/simulation"],
         "Analyze": [
+            "analysis/general",
             "analysis/variance_analysis"
         ],
         "Storage and Collaboration": ["storage/storage-collaboration"],

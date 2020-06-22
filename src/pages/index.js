@@ -10,7 +10,7 @@ const features = [
     {
         title: <>Introduction</>,
         link: "/docs/intro/introduction",
-        imageurl: "https://cdn.valq.com/wp-content/uploads/what-if-simulations.png",
+        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-visualization.png',
         description: (
             <>
                 Visualize, Simulate, Plan, Analyze your business like never before
@@ -19,7 +19,7 @@ const features = [
     },
     {
         title: <>Modeling</>,
-        link: "/docs/model/new",
+        link: "/docs/model/model_tab",
         imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-modeling.png',
         description: (
             <>
@@ -28,12 +28,22 @@ const features = [
         ),
     },
     {
-        title: <>Visualization</>,
-        link: "/docs/general/getting-started",
-        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-visualization.png',
+        title: <>Planning</>,
+        link: "/docs/planning/plan_tab",
+        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-planning.png',
         description: (
             <>
-                Visualize your business model instantly by connecting your Key Drivers to Key Performance Indicators.
+                Plan, budget and forecast your business operations efficiently and optimize your goals.
+            </>
+        ),
+    },
+    {
+        title: <>Time Sereis Forecasting</>,
+        link: "/docs/planning/time_series",
+        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-advanced-analytics.png',
+        description: (
+            <>
+                Perform Time Series Forecasting to make forecast and prediction.
             </>
         ),
     },
@@ -48,28 +58,8 @@ const features = [
         ),
     },
     {
-        title: <>Planning</>,
-        link: "/docs/planning/overview",
-        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-planning.png',
-        description: (
-            <>
-                Plan, budget and forecast your business operations efficiently and optimize your goals.
-            </>
-        ),
-    },
-    {
-        title: <>Time Sereis Forecasting</>,
-        link: "/docs/planning/overview",
-        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-advanced-analytics.png',
-        description: (
-            <>
-                Perform Time Series Forecasting to make forecast and prediction.
-            </>
-        ),
-    },
-    {
         title: <>Advanced Analysis</>,
-        link: "/docs/analysis/variance-analysis",
+        link: "/docs/analysis/variance_analysis",
         imageUrl: "https://cdn.valq.com/wp-content/uploads/variance-analysis.png",
         description: (
             <>
