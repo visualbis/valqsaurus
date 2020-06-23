@@ -1,139 +1,114 @@
 ---
 id: new
-title: Creating a new ValQ Model
-sidebar_label: Creating a new ValQ Model
+title: New
+sidebar_label: New
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
-The Model tab has two panels in which the left panel represents the
-Advanced Editor and the right panel denotes the canvas which represents
-the Value Driver Tree visuals (see Figure below).
 
-<img alt="Left Panel and Right Canvas" src={useBaseUrl('/doc-images/catg.png')} />
+<div style={{textAlign: 'justify'}}>
+The ValQ model can be created in Power BI using any of the below listed
+options by clicking on **New**  in the left panel (see Figure below)
+</ div> <br />
 
-The Model tab has five different Tab options (see Figure below).
-
-<img alt="Tab option for the Model tab" src={useBaseUrl('/doc-images/tabs.png')} />
-
-The Tab options for the Model tab has been listed below:
-
-1.  New Tab – To configure the design for the Value Driver Tree using
-    the options such as Sample Demo Tree, Create a Simple Dynamic Tree,
-    Import an Advanced Tree and Create a New value driver tree from the
-    scratch.
-2.  Node Tab – To configure the settings of Nodes and Child Nodes for
-    the Value Driver Tree
-3.  Data Series Tab – To configure the data settings such as Data Series
-    Manager, Time Aggregation Labels and Data Sorting.
-4.  Settings Tab – To configure the settings parameters such as
-    Navigational Panel, Nodes, Canvas, Number Formatting, Conditional
-    Formatting and Color Theme.
-5.  General Tab – To configure the General settings such as License
-    Registration, Export and Writeback functions.
-
-In the next sections, you will be able to understand on how to design a
-value driver tree using these five different Tab categories in detail.
-
-As an initial step, follow the below steps to configure the design for
-the value driver tree in Power BI.
-
-1.  Navigate to the “Visualizations Panel” and “Fields” Panel in Power
-    BI (see Figure below).
-
-<img alt="Power BI with Visualizations and Fields Panel" src={useBaseUrl('/doc-images/11.1.png')} />
-
-2.  In the Visualizations Panel, select the valQ Custom Visual and
-    extend the screen to its full view as shown in the Figure below.
-
-<img alt="valQ Screen - Measures to be assigned" src={useBaseUrl('/doc-images/eleven.png')} />
-
-3.  To create a value driver tree (valQ) in Power BI, it is mandatory to
-    assign a Data Source to the value driver tree. For our example, a
-    data source (sample data shown below) has been assigned to the value
-    driver tree.
-
-<img alt="Sample Data" src={useBaseUrl('/doc-images/11.2.png')} />
-
-4.  Now at least one Measure Value has to be assigned to the property
-    “Values” in Visualizations panel. In our example, we have assigned
-    the Measure Value “∑ Actual” to the property “Values” by clicking
-    the check box option against the Measure Value “∑ Actual” (see
-    Figure below).
-
-<img alt="Assigning the Measure Value" src={useBaseUrl('/doc-images/11.3.png')} />
-
-## New Tab
-
-The Value Driver Tree can be created in Power BI using the below listed
-options by clicking the New Tab in the left panel (see Figure below)
-
-  - Open a Sample Model
-  - Create a Simple Model
-  - Create an Advanced Model
-  - Import an Advanced Model
-
-<img alt="New Tab" src={useBaseUrl('/doc-images/12.1.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new1.png')}
+    width={270}
+    height={580} />
+  </Zoom>
+</div>
 
 ## Open a Sample Model
 
-Click the “New” Tab in the left panel. Now navigate to the Open a Sample
-Model option. You will be able to explore a Demo Tree. By clicking the
-Open a Sample Model option, you will be able to view the Loading sample
-screen as shown below and also you can search for the specific sample to
-get loaded (see Figure below).
+<div style={{textAlign: 'justify'}}>
+By clicking the Open a Sample Model option, you will be able to view the list of
+available samples.
+</ div> <br />
 
-<img alt="Loading screen" src={useBaseUrl('/doc-images/12.2a.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new2.png')} />
+  </Zoom>
+</ div> <br />
 
 For our example, the sample “Mining Industry” has been selected.
 
-<img alt="Selection of sample model" src={useBaseUrl('/doc-images/12.2.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new3.png')} />
+  </Zoom>
+</ div> <br />
 
+<div style={{textAlign: 'justify'}}>
 Based on the selection, you will be able to view the valQ screen as
-shown below. As part of the latest Release, each Node in the Advance
-Editor panel will be having an Icon which represents the Node Type.
+seen below.
+</ div> <br />
 
-<img alt="valQ screen with Nodes settings" src={useBaseUrl('/doc-images/12.3.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new4.png')} />
+  </Zoom>
+</ div> <br />    
 
-The Nodes hierarchy will be displayed in the Advance Editor option as
-shown in the above Figure. Here you will be able to add number of child
-nodes from the parent node “Net Profit”. By clicking the Parent Node,
+<div style={{textAlign: 'justify'}}>
+The Nodes levels will be displayed in the Advance Editor option as
+shown in the above Figure. Here you will be able to add child
+nodes to the parent node “Net Profit”. By clicking the Parent Node,
 you will be able to add number of child nodes as shown below. Also you
 will be able to expand, collapse and delete the entire Nodes Hierarchy
 using the options “Expand”, “Collapse” and “Delete” (see Figure above).
+</ div> <br />
 
+<div style={{textAlign: 'justify'}}>
 As part of the New Release, the "Lock" and "Unlock" options have been
 included in the Advance Editor for the Node Tab (see Figure below). By
 clicking the lock option, you will not be able to edit the configuration
 done for the Node (see Figure below).
+</ div> <br />
 
+  <Zoom>
 <img alt="Lock option in Node Tab" src={useBaseUrl('/doc-images/lck1.png')} />
+  </Zoom>
 
 By clicking the Unlock option, you will be able to edit the
 configuration done for the Node (see Figure below).
 
+  <Zoom>
 <img alt="Unlock option in Node Tab" src={useBaseUrl('/doc-images/lck2.png')} />
+  </Zoom>
 
 By providing the Node Name in the Search option on the right canvas, you
 will be able to search for the particular Node when there are more
 number of nodes appearing on the right canvas.
 
+  <Zoom>
 <img alt="Node Search option in right canvas" src={useBaseUrl('/doc-images/12.4.png')} />
+  </Zoom>
 
 For our example, the Node name is given as “Operating Hours” and based
 on the search you will be able to view the Node as shown in the Figure
 below.
 
+  <Zoom>
 <img alt="Display of the Searched Node" src={useBaseUrl('/doc-images/12.5.png')} />
+  </Zoom>
 
+  <Zoom>
 <img alt="Nodes Structure with Add option" src={useBaseUrl('/doc-images/12.6.png')} />
+  </Zoom>
 
 In the above Figure, you can observe that by clicking the “+” button, a
 Node “Copy of Net Profit” has been added. Similarly you can edit the
 Parent Node details by clicking the Edit button as shown below. For our
 example, the Edit button has been clicked.
 
+  <Zoom>
 <img alt="Nodes Structure with Edit option" src={useBaseUrl('/doc-images/12.7.png')} />
+  </Zoom>
 
 
 ## Create a Simple Model
@@ -143,16 +118,20 @@ automatically based on their own data source. By clicking the Create a
 Simple Model option, you will be able to view the valQ screen as shown
 in the below Figure.
 
+  <Zoom>
 <img alt="Simple Dynamic Tree created with one single
 Measure" src={useBaseUrl('/doc-images/12.26.png')} />
+  </Zoom>
 
 By default, the Measure “Actual” has been selected as a Mandatory
 criteria for getting the Tree widget. Now you can select the other
 Measures and Dimensions based on your choice as indicated in the Figure
 below.
 
+  <Zoom>
 <img alt="Simple Dynamic Tree created with Measures and
 Dimensions" src={useBaseUrl('/doc-images/12.27.png')} />
+  </Zoom>
 
 From the above Figure, you can observe that the other Measure “Forecast”
 is assigned to “Value” and the Dimensions namely Account and Product has
@@ -167,8 +146,10 @@ Model, please follow this link:
 first three Nodes in the next level hierarchy under the Sub Models
 section of the Navigation Panel (see Figure below).
 
+  <Zoom>
 <img alt="Sub Models Section showing the Root Node and first three Nodes in the
 next level hierarchy" src={useBaseUrl('/doc-images/dsm.png')} />
+  </Zoom>
 
 #### Read only Dynamic Tree in Editor
 
@@ -178,7 +159,9 @@ configuration part on it. But you can generate a copy of the Parent Node
 and proceed with configuration part based on your choice (see Figure
 below).
 
+  <Zoom>
 <img alt="Read Only Dynamic Tree" src={useBaseUrl('/doc-images/12.28.png')} />
+  </Zoom>
 
 #### Dynamic Scaling on Dynamic Tree
 
@@ -187,23 +170,31 @@ the Number Scaling for all the Nodes will be updated appropriately based
 on the data source (see Figure below). For our example, the Number
 Scaling is “0.0b”.
 
+  <Zoom>
 <img alt="Dynamic Scaling on Dynamic Tree" src={useBaseUrl('/doc-images/12.29.png')} />
+  </Zoom>
 
 As part of the New Release, you have the option to convert the Dynamic
 Model to an Advanced Model (see Figure below).
 
+  <Zoom>
 <img alt="Option for converting Dynamic Model to an Advanced
 Model" src={useBaseUrl('/doc-images/conv1.png')} />
+  </Zoom>
 
 When the option is clicked, now you will be prompted for the Message
 window as shown below.
 
+  <Zoom>
 <img alt="Confirmation Message" src={useBaseUrl('/doc-images/conv1a.png')} />
+  </Zoom>
 
 After clicking Yes, you will be able to edit the configuration for all
 the level of Nodes similar to the Advance Model (see Figure below).
 
+  <Zoom>
 <img alt="Dynamic Model converted to an Advanced Model" src={useBaseUrl('/doc-images/conv2.png')} />
+  </Zoom>
 
 ## Create an Advanced Model
 
@@ -211,12 +202,16 @@ This option is used to create a Tree in valQ manually Node by Node based
 on your choice. By clicking the Create New from Scratch option, you will
 be able to view the valQ screen as shown in the below Figure.
 
+  <Zoom>
 <img alt="Create New from Scratch" src={useBaseUrl('/doc-images/12.38.png')} />
+  </Zoom>
 
 For our example we have created a Parent Node and two child Nodes (see
 Figure below).
 
+  <Zoom>
 <img alt="Tree with one Parent Node and two Child Nodes" src={useBaseUrl('/doc-images/12.39.png')} />
+  </Zoom>
 
 Now with the help of `Section: Open a Sample Model <OSM>`, you will be
 able to configure the General, Configuration, Display, Simulation,
@@ -228,39 +223,51 @@ Business Definition and Conditional Formatting settings for the Tree
 Using the “Import an Advanced Model” option, you will be able to import
 data through two different options as shown below.
 
+  <Zoom>
 <img alt="valQ – Import from Excel" src={useBaseUrl('/doc-images/12.30.png')} />
+  </Zoom>
 
 ### Import from Excel
 
 Using the option “Import from Excel”, you will be able to paste the JSON
 File Data Format text into the Text Editor as shown in the below Figure.
 
+  <Zoom>
 <img alt="Configuration Data from Excel Format" src={useBaseUrl('/doc-images/12.31.png')} />
+  </Zoom>
 
 Now based on the above configuration, you will be able to view the Tree
 formed with Nodes in the valQ screen.
 
+  <Zoom>
 <img alt="valQ screen derived from Excel Data" src={useBaseUrl('/doc-images/12.32.png')} />
+  </Zoom>
 
 As part of the New Release, you will be able to retain the existing
 Navigation Panel configuration and apply the same for the next Tree
 configuration. For our example, the Figure below shows the Navigation
 panel for the first Tree configuration.
 
+  <Zoom>
 <img alt="Navigation Panel for the first tree configuration" src={useBaseUrl('/doc-images/12.33.png')} />
+  </Zoom>
 
 Now navigate to the Import an Advanced Model option in New Tab and paste
 the JSON File Data Format text for the second tree into the Text Editor
 as shown in the below Figure.
 
+  <Zoom>
 <img alt="Import a Tree" src={useBaseUrl('/doc-images/12.34.png')} />
+  </Zoom>
 
 Now select the option “I am reimporting the current model – retain my
 settings” so that you will able to view the second tree configuration
 being applied with the Navigation Panel settings already configured for
 the first tree (see Figure below).
 
+  <Zoom>
 <img alt="Navigation Panel for the second tree configuration" src={useBaseUrl('/doc-images/12.35.png')} />
+  </Zoom>
 
 ### Import from an Export File
 
@@ -269,12 +276,16 @@ paste the Export file data format from an already exported tree data as
 shown in the below Figure. This Export File will be generated by
 navigating to the Settings Tab and by clicking the Export button.
 
+<Zoom>
 <img alt="Configuration Data from Export File Data Format" src={useBaseUrl('/doc-images/12.36.png')} />
+</Zoom>
 
 Now based on the above configuration, you will be able to view the Tree
 formed with Nodes in the valQ screen.
 
+<Zoom>
 <img alt="valQ screen derived from Export File Data Format" src={useBaseUrl('/doc-images/12.37.png')} />
+</Zoom>
 
 ## Additional Properties of New Tab
 

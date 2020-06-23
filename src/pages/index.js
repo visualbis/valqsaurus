@@ -38,12 +38,12 @@ const features = [
         ),
     },
     {
-        title: <>Time Sereis Forecasting</>,
+        title: <>Time Series Forecasting</>,
         link: "/docs/planning/time_series",
         imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-advanced-analytics.png',
         description: (
             <>
-                Perform Time Series Forecasting to make forecast and prediction.
+                Perform Time Series Forecasting to make forecast and predict future outcomes.
             </>
         ),
     },
