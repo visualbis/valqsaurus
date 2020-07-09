@@ -2,3 +2,55 @@
 id: time_series
 title: Time Series Forecasting
 ---
+
+import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+<div style={{textAlign: 'justify'}}>
+ValQ has in-built Time Series Forecasting capabilities that allows you to make forecast based on past data
+collected over a period of time. To access this powerful feature, all you have to do is click 
+on "Auto Forecast" button as shown below.
+</ div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan11.png')} />
+  </Zoom>
+</div>
+
+### Forecast options
+
+Clicking on Auto Forecast will give you the options to configure time series forecasting that make predictions
+desgined to suit your needs.       
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/tsf1.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}} className="table-center">
+
+|   | Options             | Description                                     |                                                                                                                                                                                                                                                                   
+|---|-------------------|-------------------------------------------------|
+| 1 | Target Node       | Node for which forecast is done                     |
+| 2 | Target Period     | Period for which forecast is done                    |
+| 3 | Forecast Basis    | Criteria based on which forecast is performed  |
+| 4 | Past Data Series & Weights | Choose the past data series here and it's weights are given in descending order|
+| 5 | Source Periods    | Choose the duration of past data considered for forecast  |
+| 6 | Add Growth        | Growth component can be added here on absolute or percentage terms  |
+
+</div> <br />
+
+### Advanced options
+
+Advanced options let's you choose the Forecasting Method, Distribution Method after configuring the 
+Target and Forecast Basis options.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/tsf2.png')} />
+  </Zoom>
+</div> <br />

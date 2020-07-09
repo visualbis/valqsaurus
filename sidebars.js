@@ -28,10 +28,13 @@ module.exports = {
             "planning/plan_features",
             "planning/modify",
             "planning/budget-allocation",
-            "planning/time_series",
+            "planning/time_series"
         ],
-        Simulate: ["simulation/simulation"],
-        "Analyze": [
+        Simulate: [
+            "simulation/simulation",
+            "simulation/sim_features"
+        ],
+        Analyze: [
             "analysis/general",
             "analysis/variance_analysis"
         ],
