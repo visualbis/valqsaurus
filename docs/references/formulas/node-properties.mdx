@@ -215,6 +215,20 @@ The periods in a model are defined from Jan to Dec. Node N1 has the following va
 ## [NODE].SEL 
 `[NODE].SEL` returns the simulation period aggregated value of node.
 
+### Example
+The periods in a model are defined from Jan to Dec and the active simulation period is from Jun to Dec. 
+Node N1 has the following values:
+
+| Period | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|--------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Values | 10  | 15  | 20  | 10  | 15  | 25  | 30  | 15  | 20  | 25  | 35  | 30  |
+
+`[NODE].TOATL` returns the value 250 .
+
+`[NODE].PTD` returns the value 70.
+
+`[NODE].SEL` returns the value 180.
+
 ## [NODE].ID 
 `[NODE].ID` returns node id.
 
