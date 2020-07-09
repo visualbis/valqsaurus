@@ -206,4 +206,27 @@ The periods in a model are defined from Jan to Dec. Node N1 has the following va
 
 `[NODE].BASE.LastNPeriods(2)` returns the values [35,30].
 
+## [NODE].TOTAL 
+`[NODE].TOTAL` returns the all period aggregated value of node.
+
+## [NODE].PTD
+`[NODE].PTD` returns the period to date aggregated value of node.
+
+## [NODE].SEL 
+`[NODE].SEL` returns the simulation period aggregated value of node.
+
+## [NODE].ID 
+`[NODE].ID` returns node id.
+
+## [NODE].VISIBLE_CHILDREN 
+`[NODE].VISIBLE_CHILDREN` returns all visible children of node.
+
+## [NODE].HIDDEN_CHILDREN 
+`[NODE].HIDDEN_CHILDREN` returns all hidden children of node.
+
+## CURRENT_NODE_VALUE 
+`CURRENT_NODE_VALUE` returns the Current node previous period values.
+
+### Example
+IF ( CURRENT_PERIOD_VALUE ==0, 1000, CURRENT_NODE_VALUE.GET(CURRENT_PERIOD_VALUE-1) * 1.1)
 

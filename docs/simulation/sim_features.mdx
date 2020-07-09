@@ -1,0 +1,248 @@
+---
+id: sim_features
+title: Simulate Features
+sidebar_label: Simulate Features
+---
+import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+<div style={{textAlign: 'justify'}}>
+Simualting a node helps in performing what-if analysis and it can be instantly done on ValQ with the help of 
+the simulate slider present on each node. Below image is an example of what the simulation slider looks like.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim15.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+The simulation can be removed by clicking on the 'bin' icon. The arrow icon gives detail about simulation effect on the period nodes.
+The below image shows the period distribution of the simualted value.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim16.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+There are two more icons on top of the node, the left side one takes you to the plan tab with that node and its child nodes.
+The other icon as highlighted below opens up the comments section to add any comments for the selected node. 
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim17.png')} />
+  </Zoom>
+</div> <br />
+
+In this section we'll take a look at the Simulate tab and it's features. 
+
+## 1. Scenarios
+
+<div style={{textAlign: 'justify'}}>
+Scenarios are particularly useful when you want to perform what-if analysis to the model and you can save each instance as an 
+individual scenario. This way you have multiple scenarios to analyze and conduct scenario analysis. 
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim4.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+The scenario with the yellow tag is the active scenario. To collapse the sceanrio property click on '^' option 
+and to add a new scenario, click on '+'. Clicking on three dots gives you options to Copy Scenario, Edit and 
+Delete. 
+<br /> <br />
+
+Copy Scenario - Creates a duplicate of the scenario that you have copied <br />
+Edit - Change the title of the scenario and add description which is optional <br />
+Delete - Deletes a scenario <br />
+
+The URL icon is availablet to help you compare multiple scenarios, observe the
+summary of the Scenarios and to take a look at the KPIs (see below Figure). With Manage Scenrios option 
+you can add or remove scenarios for comparison and you also have the option to download the 
+scenario comparison as an excel file.  
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim5.png')} />
+  </Zoom>
+</div> <br />
+
+## 2. Sub Models
+
+<div style={{textAlign: 'justify'}}>
+Sub Models are part of the model and a node is added as a sub model to acccess it quickly. This property is useful 
+when there are large number of nodes and you want to get to the important nodes on click of a button. You can go to <Link to={useBaseUrl('docs/model/settings#12-sub-models')}> settings </Link> to add or remove sub models on ValQ.
+Click on '^' option to collapse this property.
+</div> <br />
+
+In the below example, sub model - 'Overall Result' displays the enitre model as it's the top node.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim6.png')} />
+  </Zoom>
+</div> <br />
+
+Here, the sub model - 'Midwest' displays only the particular node and it's children.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim7.png')} />
+  </Zoom>
+</div> <br />
+
+## 3. Simulation Period
+
+<div style={{textAlign: 'justify'}}>
+ValQ model updats the simulated values based on the periods selected in the Simulation Period. You can select just one period or
+choose a range of period with '[to]' icon, ValQ applies simulation and fetches simulated values only to those selected periods.
+To change the period labels, go to <Link to={useBaseUrl('docs/model/settings#13-simulation-period')}> settings </Link>. Click on '^' option to collapse this property.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim8.png')} />
+  </Zoom>
+</div> <br />
+
+In the below example, simulation periods have been selected as Jan and Feb. You can observe that the simulation is applied
+only to these two periods.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim9.png')} />
+  </Zoom>
+</div> <br />
+
+## 4. Value display
+
+<div style={{textAlign: 'justify'}}>
+Value Display makes available options of aggregation like month, year to date, full year and simulated periods and scaling options.
+You can go to settings to change <Link to={useBaseUrl('docs/model/data-series#2-time-aggregation-labels')}> time aggregation labels </Link> and
+<Link to={useBaseUrl('docs/model/settings#14-value-display')}> scaling options </Link>  to your preference. Value Display is set to full year and
+scaling at 0.0m by default. Click on '^' option to collapse this property.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim10.png')} />
+  </Zoom>
+</div> <br />
+
+## 5. Key Inputs
+
+<div style={{textAlign: 'justify'}}>
+Any important node that you consider as Key Input can be added as a Key Input to view it quickly instead of searching for it
+in the model. The Key Input is displayed along with it's value and variance percentage when simulated. You can go to <Link to={useBaseUrl('docs/model/settings#15-key-inputs')}> settings </Link> 
+to add/remove Key Inputs. Click on '^' option to collapse this property.
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+In the below example, we have added two Key Inputs and the node 'Chris Morris' gets highlighted 
+on selecting the key Input 'Chris Morris'. 
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim11.png')} />
+  </Zoom>
+</div> <br />
+
+## 6. KPIs
+
+<div style={{textAlign: 'justify'}}>
+Any important node that you consider as Key Performance Indicator can be added as a KPI to view it quickly instead of searching for it
+in the model. The KPI is displayed along with it's value and variance percentage when simulated. You can go to <Link to={useBaseUrl('docs/model/settings#16-kpis')}> settings </Link> 
+to add/remove KPIs. Click on '^' option to collapse this property.
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+In the below example, the node 'Midwest' gets highlighted on selecting the KPI 'Midwest'. 
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim12.png')} />
+  </Zoom>
+</div> <br />
+
+## 7. Constraints
+
+<div style={{textAlign: 'justify'}}>
+Any constraint added to the model is displayed here along with the Value Range. Click on '^' option to collapse this property.
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+In the following example,  we can see the steps to add a Constraint to the model.
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+A. The Value Range for 'East' Node has been set as Min = 1 Million and Max = 10 Million.  Notice that
+the Time Aggregation has been set as Sum of Periods and the number of periods for this node is 12. Therefore, the
+Value Range is taken as Min = 12 Million and Max = 24 Million.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/node19.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+B. After the Value Range has been set to 'East' node, the same node is added to Constraint under the Navigation Panel.
+To add Constraint, Model -> Settings -> Navigaton Panel -> Constraints and choose constraints from the drop down to be listed.
+ </div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/node20.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+C. The Constraint for 'East' node has been added with the Minimum and Maximum values as seen below. Notice that the node
+value is outisde the Value Range and the node value is displayed in red color. The value gets displayed in white colour if it lies within
+the range.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/node21.png')} />
+  </Zoom>
+</div> <br />
+
+## 8. Visualization
+
+<div style={{textAlign: 'justify'}}>
+You can change the view of the model with the visualization options. By default Visualization is set to Tree display and
+Standard view mode. 
+</div> <br />
+
+**Tree View**
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/Simulation/sim13.png')} />
+  </Zoom>
+</div> <br />
+
+To view the model as table, you can click on any of the highlighted options as seen below.
+
+**Table View**
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/Simulation/sim14.png')} />
+  </Zoom>
+</div> <br />
