@@ -88,6 +88,9 @@ function Home() {
                 <div className="container">
                     <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
+                    Currently updating, Kindly bear with us
+                    <br />
+                    <br />
                     <div className={styles.buttons}>
                         <Link
                             className={classnames(
