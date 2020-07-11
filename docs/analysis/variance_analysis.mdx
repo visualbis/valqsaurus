@@ -20,7 +20,7 @@ import "react-medium-image-zoom/dist/styles.css";
 |---	|---	|
 | 1  	| [Set Base Series and Compared Series](#1-set-base-series-and-compared-series)  	|
 | 2  	| [Set a Scenario as Base Series](#2--set-a-scenario-as-base-series) |
-| 3  	| [Choose time frame to perform analysis](#3-choose-time-frame-to-perform-analysis) |
+| 3  	| [Choose a time frame to perform analysis](#3-choose-a-time-frame-to-perform-analysis) |
 | 4  	| [Set Base period and Compared period to calculate variances](#4-set-base-period-and-compared-period-to-calculate-variances ) 	|
 | 5  	| [Show Absolute & % Variance](#5-show-absolute---variance) |
 | 6  	| [Show Hidden Nodes](#6-show-hidden-nodes)	|
@@ -34,7 +34,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 <div style={{textAlign: 'justify'}}>
 
-**Variance Analysis** helps compare the values of Base Series with that of the Compared Series for each of the node in the model and 
+**Variance Analysis** helps compare the values of Base Series with that of the Compared Series for each of the nodes in the model and 
 calculate variances for the nodes.
 
 You can set the **Base Series** and **Compared Series** from the model that you want to compare here. 
@@ -49,7 +49,7 @@ You can set the **Base Series** and **Compared Series** from the model that you 
 
 <div style={{textAlign: 'justify'}}>
 In the Analyze tab, you can implement the scenario that you have created in the Simulate tab as Base Series and compare it with Compared
-Series to perform Variance Analysis. This can be done by simply choosing the scenario that you want from the drop down and clicking on Apply scenario option. <br /> <br />
+Series to perform Variance Analysis. This can be done by simply choosing the scenario that you want from the drop-down and clicking on the Apply scenario option. <br /> <br />
 </div>
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -57,11 +57,11 @@ Series to perform Variance Analysis. This can be done by simply choosing the sce
   </Zoom>
 </div>
 
-## 3. Choose time frame to perform analysis
+## 3. Choose a time frame to perform analysis
 
 <div style={{textAlign: 'justify'}}>
 
-The Period dropdown allows you to specify time frame for which you would like to run the analysis. Here, you can select multiple 
+The Period drop-down allows you to specify a time frame for which you would like to run the analysis. Here, you can select multiple 
 time frames like Full year, Quarter, Year-to-date, etc.
 </div>
 <div style={{textAlign: 'center'}}>
@@ -87,7 +87,7 @@ There are few properties in this section
 This is the period that will show up whenever you would like to analyze variance for the ‘current period’.
 
 **Comparison Period**: By default, you can analyze performance vs. the benchmark for the same period. <br />
-E.g., You can change the period to July Budget vs. July Forecast by just clicking on the drop down and choosing Jul.
+E.g., You can change the period to July Budget vs. July Forecast by just clicking on the drop-down and choosing Jul.
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -96,7 +96,7 @@ E.g., You can change the period to July Budget vs. July Forecast by just clickin
   </Zoom>
 </div>
 
-However, if you would like to compare July Budget vs. Jan Forecast, select ‘Custom' option on the drop down and set the Base period and
+However, if you would like to compare July Budget vs. Jan Forecast, select the ‘Custom' option on the drop-down and set the Base period and
 Compared period as below. 
 
 <div style={{textAlign: 'center'}}>
@@ -105,7 +105,7 @@ Compared period as below.
   </Zoom>
 </div> 
 
-With 'Compare Time Range' option, you can add another custom time frame in addition to the time frames already selected in (2). Let's add
+With the 'Compare Time Range' option, you can add another custom time frame in addition to the time frames already selected in (2). Let's add
 to the report Jan-Apr analysis as below.
 
 <div style={{textAlign: 'center'}}>
@@ -118,7 +118,7 @@ to the report Jan-Apr analysis as below.
 
 <div style={{textAlign: 'justify'}}>
 
-In this section you may choose which variances are important to you for analysis. Selecting these options adds them to the table.
+In this section, you may choose which variances are important to you for analysis. Selecting these options adds them to the table.
 The positive variance items are shown in green and the negative ones in red.
 </div>
 <div style={{textAlign: 'center'}}>
@@ -131,7 +131,7 @@ The positive variance items are shown in green and the negative ones in red.
 
 <div style={{textAlign: 'justify'}}>
 You have an option to display the nodes that were hidden while building the model under the Model tab.
-Here, East is the hidden node and on selecting Show hidden node option, it gets displayed.
+Here, East is the hidden node and on selecting the Show hidden node option, it gets displayed.
 However, notice that the Overall Result doesn't get affected. 
 </div> <br />
 
@@ -147,7 +147,7 @@ However, notice that the Overall Result doesn't get affected.
 
 <div style={{textAlign: 'justify'}}>
 
-The unit column is seen by default on the Analyze tab. To hid the column, click on show unit to disable the feature.
+The unit column is seen by default on the Analyze tab. To hide the column, click on the show unit to disable the feature.
 </div>
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -163,7 +163,7 @@ Use the Filter option to analyze critical influencers.  Two filters are availabl
 
 **Filter by Parent**: This allows you to analyze variance for a specific branch within the model. For example, you may be interested in analyzing variance for a particular location or product.
 
-**Filter by Variance**: This allows you to identify top ‘n’ analysis for categories showing the most variances for particular period choosen from the drop down.
+**Filter by Variance**: This allows you to identify top ‘n’ analysis for categories showing the most variances for a particular period chosen from the drop-down.
 
 > **Note** <br /> You have the option to select whether you want to display only positive variances or only negative variances or both.
 
@@ -177,7 +177,7 @@ Use the Filter option to analyze critical influencers.  Two filters are availabl
 <br />
 <div style={{textAlign: 'justify'}}>
 
-In the below image, filter By Variance has been applied to filter top 10 positive variances of the periodic report. The Value Bar displays 
+In the below image, filter By Variance has been applied to filter the top 10 positive variances of the periodic report. The Value Bar displays 
 the filter that has been applied. To remove the filter simply click on the 'x' next to the filter. 
 
 </div>
@@ -193,7 +193,7 @@ the filter that has been applied. To remove the filter simply click on the 'x' n
 <div style={{textAlign: 'justify'}}>
 
 You can search for a particular node by using the search bar as highlighted below. This feature can be used to identify a node when a model 
-has large number of nodes. 
+has a large number of nodes. 
 
 </div>
 
@@ -205,7 +205,7 @@ has large number of nodes.
 
 ## 10. Hide the features panel
 
-Click on '^' to hid the features panel of the Analyze tab. The screen will be seen as below after the panel is hidden.
+Click on '^' to hide the features panel of the Analyze tab. The screen will be seen as below after the panel is hidden.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
