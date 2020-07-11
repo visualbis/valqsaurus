@@ -23,7 +23,7 @@ const features = [
         imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-modeling.png',
         description: (
             <>
-                Model your business by capturing 1000+ business variables across various functions in ValQ.
+                Model your business by capturing 1000+ business variables across various functions in ValQ
             </>
         ),
     },
@@ -33,7 +33,7 @@ const features = [
         imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-planning.png',
         description: (
             <>
-                Plan, budget and forecast your business operations efficiently and optimize your goals.
+                Plan, budget and forecast your business operations efficiently and optimize your goals
             </>
         ),
     },
@@ -43,7 +43,7 @@ const features = [
         imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-advanced-analytics.png',
         description: (
             <>
-                Perform Time Series Forecasting to make forecast and predict future outcomes.
+                Perform Time Series Forecasting to make forecast and predict future outcomes
             </>
         ),
     },
@@ -53,7 +53,7 @@ const features = [
         imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-simulation.png',
         description: (
             <>
-                Perform what-if analysis, run on-the-fly simulations and compare multiple business scenarios with ValQ.
+                Perform what-if analysis, run on-the-fly simulations and compare multiple business scenarios with ValQ
             </>
         ),
     },
@@ -63,7 +63,7 @@ const features = [
         imageUrl: "https://cdn.valq.com/wp-content/uploads/variance-analysis.png",
         description: (
             <>
-                Run in-depth and nimble Variance Analysis with minimal clicks.
+                Run in-depth and nimble Variance Analysis with minimal clicks
             </>
         ),
     }
