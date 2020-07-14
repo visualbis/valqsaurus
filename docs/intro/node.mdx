@@ -9,8 +9,8 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 <div style={{textAlign: 'justify'}}>
-With ValQ, you can build a model of your business process and view it in the form of a tree as well as table. Toggle between the below icons 
-present on top left corner of the canvas to change the view.  
+With ValQ, you can build a model of your business process and view it in the form of a tree as well as a table. Toggle between the below icons 
+present on the top left corner of the canvas to change the view.  
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -22,8 +22,8 @@ present on top left corner of the canvas to change the view.
 ## Tree View
 
 <div style={{textAlign: 'justify'}}>
-The tree structure is presented in horizontal format as a visual.  Just like a tree,
-ValQ model has a stem on top called top node and the top node then branches out to others nodes. 
+The tree structure is presented in a  horizontal format as a visual.  Just like a tree,
+ValQ model has a stem on Top called Top node and the Top node then branches out to other nodes. 
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -34,8 +34,9 @@ ValQ model has a stem on top called top node and the top node then branches out 
 <br />
 
 <div style={{textAlign: 'justify'}}>
-The model is segmented into levels starting from level 1 with top node, here it's 'Overall Result'. The nodes share a parent-child relationship at each level
-for example, 'East' node is the parent node while 'Consumer' node is a child node, 'Consumer' node is the parent node while 'Chris Morris' node is a child node. </div> <br />
+The model is segmented into levels starting from level 1 with Top node, here it's 'Overall Result'. The nodes share a parent-child relationship at each level.
+For example, the 'East' node is the Parent node while 'Consumer' node is a Child node, 'Consumer' node is the Parent node while 'Chris Morris' node is a Child node. 
+</div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -53,7 +54,7 @@ Click on '>' to expand and '<' collapse levels.
 </div>
 <br />
 
-You can also use the 'Go to level ^' option present on bottom of the canvas to navigate between levels of the tree.
+You can also use the 'Go to level ^' option present on the bottom of the canvas to navigate between levels of the tree.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -83,16 +84,16 @@ Each node represents a value driver, KPI or category and it's several performanc
 |4| Baseline Value  	| Node value of the baseline series |
 |5| Variance for all periods  	| Full year variance of the node |
 |6| Variance for current period  	| Current month (usually first period in the series) month variance of the node |
-|7| Absolute Variance  | Variance shown in absolute value |
-|8| Percentage Variance  	| Variance shown in percentage |
+|7| Absolute Variance  | Variance showed in absolute value |
+|8| Percentage Variance  	| Variance showed in percentage |
 
 </div> <br />
 
 > **Note** <br />
-Variance is calculated as difference between Baseline series and Comparison series
+Variance is calculated as the difference between the Baseline series and Comparison series
 
 Baseline series is the primary series and Comparison series is the benchmark against which the Baseline is compared.
-Here Sales Budget is the Baseline series and Sales Forecast is the Comparison series. 
+Here the Sales Budget is the Baseline series and Sales Forecast is the Comparison series. 
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -102,7 +103,7 @@ Here Sales Budget is the Baseline series and Sales Forecast is the Comparison se
 
 ## Table View
 
-The same information can be viewed in tabular form as see in the image below. The Table view is generally used to plan and analye the data.  <br />
+The same information can be viewed in tabular form as see in the image below. The Table view is generally used to plan and analyze the data.  <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -110,4 +111,4 @@ The same information can be viewed in tabular form as see in the image below. Th
   </Zoom>    
 </div> <br />
 
-To learn more about Nodes, <Link to={useBaseUrl('docs/model/node')}> see </Link> under Model section.
+To learn more about Nodes, <Link to={useBaseUrl('docs/model/node')}> see </Link> under the Model section.
