@@ -10,10 +10,9 @@ import "react-medium-image-zoom/dist/styles.css";
 <div style={{textAlign: 'justify'}}>
 In this section, you will learn everything related to nodes on ValQ. In case you
 are new to node, it is recommended to visit <Link to={useBaseUrl('docs/intro/node')}> Understanding Nodes in ValQ </Link> and then come back here to learn more about nodes. 
-<br /> <br />
+</div> <br />
 
-Click on this icon<img alt="New Tab" src={useBaseUrl('/doc-images/model/node icon.png')} width={64} height={32} /> to access the Node option on ValQ.
-</div>
+Click on this icon <img alt="New Tab" src={useBaseUrl('/doc-images/model/node icon.png')} width={64} height={32} /> on ValQ to access the Node options.
 
 ## Convert to Advanced Model
 
@@ -55,28 +54,7 @@ The below image shows our example after it has been converted to an advanced mod
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node4.png')} />
   </Zoom>
-</div> <br />
-
-## Search for a node
-
-By providing the node name in the Search option on the right canvas, you
-will be able to search for the particular node when there is more
-number of nodes appearing on the right canvas.
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="New Tab" src={useBaseUrl('/doc-images/model/node4.1.png')} />
-  </Zoom>
-</ div> <br />
-
-For our example, the node name is given as “Consumer” and based
-on the search you will be able to view the node as highlighted.
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="Display of the Searched Node" src={useBaseUrl('/doc-images/model/node4.2.png')} />
-  </Zoom>
-</ div> <br />
+</div> 
 
 ## Node Editor
 
@@ -168,7 +146,7 @@ the common title for two different nodes. To differentiate
 them, we have provided the value for “Title Prefix when outside the
 Tree” as East for one node and Midwest for the other node. After the
 simulation, you can see which node’s value has been changed.
-</div> <br />
+</div>
 
 ## 2. Configuration
 
@@ -367,7 +345,7 @@ been activated to see the effect on the model.
 <div style={{textAlign: 'justify'}}>
 A. The Value Range for 'East' Node has been set as Min = 1 Million and Max = 10 Million.  Notice that
 the Time Aggregation has been set as Sum of Periods and the number of periods for this node is 12. Therefore, the
-Value Range is taken as Min = 12 Million and Max = 24 Million.
+Value Range is taken as Min = 12 Million and Max = 120 Million.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -437,7 +415,7 @@ on the magic wand available next to the top node. The entire ValQ model is now a
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node66.png')} />
   </Zoom>
-</div> <br />
+</div>
 
 ## 3. Display
 
@@ -459,7 +437,7 @@ First, let's look at Display
 
 **Node Display**: Here, you can decide on how you would like to display the node in the model canvas. There are 
 three ways to choose from and below is an example of 'East' node showing the different options: 
-</div> <br />
+</div>
 
 Show - Display the node as a normal node (default) <br />
 
@@ -469,21 +447,27 @@ Show - Display the node as a normal node (default) <br />
   </Zoom>
 </ div> <br />
 
-Derived - Display the node as being derived from the parent node <br />
+Derived - Display the node as being derived from the parent node. In the below example, the Node Display of the highlighted nodes
+is set as Derived. <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="New Tab" src={useBaseUrl('/doc-images/model/node-derived.png')} />
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/node-derived.png')}/>
   </Zoom>
 </ div> <br />
 
-Hidden - Hide the node from the canvas
+Hidden - Hide the node from the canvas. In the below example, node 'East' is hidden from canvas.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node-hide.png')} />
   </Zoom>
 </ div> <br /> 
+
+<div style={{textAlign: 'justify'}}>
+In the above examples, note that Node Display changes only the display on canvas.
+Regardless of the Node Display settings, the nodes are available for configuration on the Navigation Panel.
+</div> <br />
 
 <div style={{textAlign: 'justify'}}>
 
@@ -495,7 +479,7 @@ Node details of the 'East' node look like the below image.
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node29.png')} />
   </Zoom>
-</ div> <br />
+</ div>
 
 ### 3.1 Value options
 
@@ -535,12 +519,12 @@ In the below example, '$' is added as Value Prefix and 'n' is added as Value Suf
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node35.png')} />
   </Zoom>
-</ div> <br />
+</ div>
 
 ### 3.2 Composite Nodes
 
 <div style={{textAlign: 'justify'}}>
-Composite Nodes options help you to add up to 2 other nodes that are important to an existing node.
+Composite Nodes options help you to group up to 2 other nodes that are important to an existing node.
 This option is particularly useful when there are a large number of nodes in the model and you want to take a quick look at some
 other node that is an important metric.   
 </ div> <br />
@@ -578,7 +562,7 @@ ids in a separate column by enabling the composite node option from the
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node37.png')} />
   </Zoom>
-</ div> <br />
+</ div>
 
 ## 4. Simulation
 
@@ -631,7 +615,7 @@ values for the Simulation Periods (see Figure below).
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node42.png')} />
   </Zoom>
-</ div> <br />
+</ div>
 
 ## 5. Business Definition
 
@@ -654,7 +638,7 @@ Definitions details in the PopUp screen as shown below.
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node44.png')} />
   </Zoom>
-</ div> <br />
+</ div>
 
 ## 6. Conditional Formatting
 
@@ -877,7 +861,7 @@ Gross Profit
   <Zoom>
 <img alt="" src={useBaseUrl('/doc-images/SecKPIT.4.png')} />
   </Zoom>
-</ div> <br />
+</ div>
 
 ## Quick Editor in Node Tab
 
@@ -1024,7 +1008,7 @@ The below Figure shows the Grid view after changing the order.
   </Zoom>
 </ div> 
 
-## Summary Properties of Node Tab
+## Summary - Node Tab
 
 | Area                     | Property                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |--------------------------|-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

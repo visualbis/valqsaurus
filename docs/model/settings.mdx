@@ -275,27 +275,81 @@ Trend Spark Line, Secondary Value/Variance and Descendant Node Count
   <Zoom>
     <img alt="ValQ users" src={useBaseUrl('/doc-images/model/s30.png')} />
   </Zoom>    
+</div> <br />
+
+Now, let's take a look at the Node Elements with examples 
+
+<div style={{textAlign: 'justify'}}>
+
+**Variance:** Variance calculates the absolute and percentage Variance on the node as Secondary KPI. In the below example, we have
+selected only one Node Element - Variance and the result is highlighted on the canvas. Here, Variance is calculated for Full Year because
+the Value Display setting on the Simulate tab is set as Full Year by default.   
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/model/s30.1.png')} />
+  </Zoom>    
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+
+**Trend Spark Line:** Trend Spark Line adds a trend line to the node showing the trend of the Comparison series period values. 
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/model/s30.2.png')} />
+  </Zoom>    
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+
+**Secondary Value/Variance:** You can add more variances to the node as Secondary KPI with Secondary Value/Variance option enabled
+under Node Elements. Note that as highlighted in the below image, the Variance option and the Secondary Value/Variance option have
+to be enabled to see the results. The Secondary KPIs, by default, are full year variance of the node, value of first period of the node's Baseline series
+and variance for first period of the node. You can click <Link to={useBaseUrl('docs/model/node#7-secondary-kpis')}> here</Link> to change the Secondary KPIs.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/model/s30.3.png')} />
+  </Zoom>    
+</div> <br />
+
+**Descendant Node Count:** Descendant Node Count option displays the number of descendant nodes for each of the collapsed nodes. 
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/model/s30.4.png')} />
+  </Zoom>    
+</div> <br />
+
+Below Figure shows the result of enabling all the Node Elements on ValQ 
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/model/s30.5.png')} />
+  </Zoom>    
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+From the above Figure, you can observe that the Node Elements like Variance, Trend Spark Line,
+Secondary Value/Variance and Descendant Node Count are displayed in the
+node based on the configuration.
 </div>
 
 ### 2.4 Data Source Exception
 
 <div style={{textAlign: 'justify'}}>
-By enabling the option "Data Source Exception", you can use the Data
-provided in the "Manual" Calculation Method when the Data Source Method
+By enabling the option "Data Source Exception", you allow ValQ to use the Data
+entered in the "Manual" Calculation Method when the Data Source Method
 returns no value for the node.
 </div> <br />
-
+ 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-    <img alt="ValQ users" src={useBaseUrl('/doc-images/nm5.png')} />
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/model/s30.6.png')} />
   </Zoom>    
-</div>
-
-<div style={{textAlign: 'justify'}}>
-From the above Figure, you can observe that the Node Styles is set to
-“Standard” Type and the Node Elements like Variance, Trend Spark Line,
-Secondary Value/Variance and Descendant Node Count is displayed in the
-node based on the configuration.
 </div>
 
 ## 3. Canvas
@@ -467,13 +521,13 @@ properties for the Conditional Formatting.
 
 <div style={{textAlign: 'justify'}}>
 3.  After the simulation, you can observe that the variance percentage value
-    for the node 'Midwest' falls in the Threshold range 12% which is
+    for the node 'Midwest' is 12% which is
     above 0% and based on that condition, the status bar for the node is
-    green color (see Figure above). Similarly, the variance percentage
-    value for the node 'Consumer' and 'Industrials' falls in the Threshold
-    range (6%)\* and (64%)\* which is between -10% to 0% and the latter 
-    below -10% and based on that condition, the
-    status bar for the node is yellow and red color respectively. <br />
+    green (see Figure above). Similarly, the variance percentage
+    value for the node 'Consumer' and 'Industrials' are (6%)\* and (64%)\* respectively,
+    which is between -10% to 0% and the latter 
+    below -10%. Based on the condition set in 5.1, the
+    status bar for the node are yellow and red respectively. <br />
 Note: \* indicates the negative values.
 </div> <br />
 
@@ -551,7 +605,7 @@ applied to PopUp screen and scenario comparison screens.
   </Zoom>    
 </div> <br />
 
-## Summary Properties of Settings Tab
+## Summary - Settings Tab
 
 The Navigation Panel in the valQ screen will be configured based on the properties listed below.
 
