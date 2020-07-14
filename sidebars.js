@@ -26,7 +26,6 @@ module.exports = {
         "Plan": [
             "planning/plan_tab",
             "planning/plan_features",
-            "planning/modify",
             "planning/budget-allocation",
             "planning/time_series"
         ],
