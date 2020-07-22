@@ -24,10 +24,12 @@ module.exports = {
             "model/general"
         ],
         "Plan": [
-            "planning/plan_tab",
+            "planning/plan_overview",
+            "planning/access",
             "planning/plan_features",
-            "planning/budget-allocation",
-            "planning/time_series"
+            "planning/time_series",
+            "planning/budget-allocation"
+
         ],
         Simulate: [
             "simulation/simulation",

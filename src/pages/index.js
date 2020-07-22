@@ -29,7 +29,7 @@ const features = [
     },
     {
         title: <>Planning</>,
-        link: "/docs/planning/plan_tab",
+        link: "/docs/planning/plan_overview",
         imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-planning.png',
         description: (
             <>
