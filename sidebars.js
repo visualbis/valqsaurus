@@ -28,7 +28,8 @@ module.exports = {
             "planning/access",
             "planning/plan_features",
             "planning/time_series",
-            "planning/budget-allocation"
+            "planning/business_cases",
+            "planning/update"
 
         ],
         Simulate: [
