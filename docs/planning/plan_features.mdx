@@ -26,7 +26,7 @@ The other panel shows the plan canvas based on the configuration
   </Zoom>
 </div> <br />
 
-Now let's take a look at the features of the Plan tab
+Now let's take a look at the contents of the Plan tab
 
 ## 1. View Current Series
 
@@ -72,6 +72,24 @@ In the 'Action Menu’, you will find various options to configure the Plan tab
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan19.png')} />
   </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}} className="table-center">
+
+|   | Options         | Description                                     |                                                                                                                                                                                                                                                                   
+|---|-------------------|-------------------------------------------------|
+| 1 | [Weight](#31-weight)     | Allocate node values with weights from another node                     |
+| 2 | [Equals](#32-equals)     | Allocate node values equally                    |
+| 3 | [Trend](#33-trend)      | Apply trend to node period values  |
+| 4 | [Copy-to](#34-copy-to)    | Copy a period value to all other periods of the node |
+| 5 | [Auto Forecast](#35-auto-forecast)     | Perform time series forecasting  |
+| 6 | [Allocate Children](#36-allocate-children) | Allocate values to a node's children   |
+| 7 | [Hold and Release](#37-hold-and-release)  | Hold and Release cells on Plan tab |
+| 8 | [Note](#38-note)        | Add comments to a cell |
+| 9 | [Refresh Datasource](#39-refresh-datasource) | Refresh the source data on Plan tab |
+| 10| [View Allocation History](#310-view-allocation-history) | View all the changes made to Plan tab  |
+| 11| [Show Hidden Nodes](#311-show-hidden-nodes) | Display the hidden nodes of the model |  
+
 </div>
 
 ### 3.1 Weight
@@ -82,10 +100,6 @@ Weight distributes a node's new total value among the periods based on the serie
 You have two ways to distribute a node's total value - Overwrite Values or Append to Values. 
 </div> <br />
 
-**Total Value:** The node's value under the Total column
-
-**Period Value:** The node values under the period (month) columns
-
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan7.png')} />
@@ -94,7 +108,7 @@ You have two ways to distribute a node's total value - Overwrite Values or Appen
 
 Let's understand Spread by Weights with Overwrite Values and Append to Values using illustrations:
 
-**Example 1: Spread by Weights with Overwrite Values**
+### Example 1: Spread by Weights with Overwrite Values
 
 <div style={{textAlign: 'justify'}}>
 In the below example, the name of the series is 'New Series 2', 'Overall Result' is the parent node and 'East' and 'Midwest' are child nodes.
@@ -116,10 +130,10 @@ Here 'East' node's total is changed from 260 to 600 and the weight is applied ba
 
 <div style={{textAlign: 'justify'}}>
 As you can observe from the above Figure, the new total of 600 is distributed as period values based on the spread of the 'Midwest' node.
-The existing values of the 'East' node have been overwritten by the new values. The parent node 'Overall Result' also gets changed as the result of this action. 
-</div> <br />
+The new values of the 'East' node take the place of the existing values. The parent node 'Overall Result' also gets changed as the result of this action. 
+</div> 
 
-**Example 2: Spread by Weights with Append to Values**
+### Example 2: Spread by Weights with Append to Values
 
 <div style={{textAlign: 'justify'}}>
 In the below example, the name of the series is 'New Series 2', 'Overall Result' is the parent node and 'East' and 'Midwest' are child nodes.
@@ -156,9 +170,9 @@ Equal distributes a node's new total value equally over the periods. With the Ch
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan8.png')} />
   </Zoom>
-</div> <br />
+</div>
 
-**Example 3: Equal with Overwrite Values**
+### Example 3: Equal with Overwrite Values
 
 Here, the total value of the 'East' node is changed from 260 to 600 and Change action is selected as Overwrite Values.
 
@@ -170,9 +184,12 @@ Here, the total value of the 'East' node is changed from 260 to 600 and Change a
  </Zoom>
 </div> <br />
 
-As you can observe, the new total value of 600 is distributed equally to all the period values. The existing values of the 'East' have been overwritten by the new values.
+<div style={{textAlign: 'justify'}}>
+As you can observe, the new total value of 600 is distributed equally to all the period values. 
+The new values of the 'East' take the place of the existing values.
+</div>
 
-**Example 4: Equal with Append to Values**
+### Example 4: Equal with Append to Values
 
 Here, the total value of the 'East' node is changed from 260 to 600 and Change action is selected as Append to Values.
 
@@ -200,12 +217,12 @@ With the Change action option, the user can choose to Overwrite Values or Append
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan9.png')} />
   </Zoom>
-</div> <br />
+</div>
 
-**Example 5: Increase Trend By Percentage with Overwrite Values**
+### Example 5: Increase Trend By Percentage with Overwrite Values
 
 <div style={{textAlign: 'justify'}}>
-In the below example, the Jan period value of the 'East' node is changed from 10 to 50. The Trend is selected as an increase by 2% and Change action
+In the below example, the Jan period value of the 'East' node is changed from 10 to 50. The Trend is selected as an increase of 2% and Change action
 is selected as Overwrite Values.
 </div> <br />
 
@@ -219,10 +236,10 @@ is selected as Overwrite Values.
 
 <div style={{textAlign: 'justify'}}>
 As you can observe, the Jan value of the 'East' node is 50 and the remaining period values are incremented by 2% of 50. 
-The existing values of the node 'East' have been overwritten by the new values.
-</div> <br />
+The new values of the 'East' take the place of the existing values.
+</div>
 
-**Example 6: Increase Trend By Value with Append to Values**
+### Example 6: Increase Trend By Value with Append to Values
 
 <div style={{textAlign: 'justify'}}>
 In the below example, the Jan period value of the 'East' node is kept as 10. The Trend is selected as an increase by value of 12 and 
@@ -255,6 +272,22 @@ The change gets updated to the parent node as well and is highlighted in yellow 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan10.png')} />
+  </Zoom>
+</div>
+
+### Example 7: Copy-to
+
+<div style={{textAlign: 'justify'}}>
+In the below example, the Jan period value of the 'East' node has been copied to all the other period values of the node 
+'East' using the option Copy-to. The new values of the 'East' take the place of the existing values and then ValQ re-calculates the total
+as a sum of its period values.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan10.1.png')}
+    width={675}
+    height={240}/>
   </Zoom>
 </div>
 
@@ -358,7 +391,7 @@ to start with, only the structure and relationships are displayed and not the va
   </Zoom>
 </div> <br />
 
-## 6. View the Node Configuration
+## 5. View the Node Configuration
 
 <div style={{textAlign: 'justify'}}>
 On clicking any cell with value, the number format and scaling that were configured while modeling is retained. 
