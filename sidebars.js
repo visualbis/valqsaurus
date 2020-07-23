@@ -75,7 +75,7 @@ module.exports = {
                       
         {
             type: "category",
-            label: "plan",
+            label: "Plan",
             items: ["how_to_videos/plan/plan"]
         
         },
