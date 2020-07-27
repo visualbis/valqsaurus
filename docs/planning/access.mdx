@@ -13,8 +13,10 @@ Click on the Plan icon as highlighted in the image below to open the Plan tab. W
 ValQ allows you to Lock your model before creating a new plan. Locking your model ensures the following:
 </div> <br />
 
- - The structure of your model, the nodes and configuration on it are fixed 
- - The changes made to the plan are not disrupted while planning  
+ - The structure of your model, the nodes and their configuration are fixed and won’t undergo further changes 
+ (at least until the Plan activities are complete)
+ - The reason is that any changes to the underlying model, their relationships, formulae, etc. may make any work-in-progress Plan
+  activities inaccurate & irrelevant  
 
 <div style={{textAlign: 'justify'}}>
 In this regard, ValQ gives you a warning message saying 'Any changes made in the model will re-calculate all the allocations in each series
@@ -27,18 +29,24 @@ and archive the previous steps'. Therefore, we recommend you to completely build
   </Zoom>
 </div> <br />
 
-The following are the steps to access plan on ValQ:
+The following are the steps to access Plan on ValQ:
 
  1. Click on the Lock button once you are ready to plan 
  2. Enter the name of the series under Series Name text box
- 3. Choose the series to start with from the drop-down list
+ 3. Choose the series to start with from the drop-down list <br /> (there are two ways by which you can start here – see the options explained below)
  4. Select the period for which you want to plan from the Periods option  
 
 ### Plan using existing series
 
 <div style={{textAlign: 'justify'}}>
-In the below example, after locking the model, we have named the series as New Series 1 (default name), selected Baseline as the series to start planning for Periods
-Jan-Dec.
+Let’s take an example where we would like to create 2021 Budget based on 2020 Actuals (or most recent forecast). 
+In this case, we would select 2020 Actuals from the dropdown and name the new series as 2021 Budget. 
+We’ll be able to adjust the baseline for 2021 once the new series is created.
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+You also have the option to customize the period range – especially if you are creating a new rolling forecast for the next ‘n’ months. 
+(In this case we have left it for all months from Jan to Dec as it is the budget for the year 2021)
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -46,12 +54,9 @@ Jan-Dec.
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan2.png')} />
   </Zoom>
 </div> <br />
-
-> **Note** <br />
-Plan tab cannot access Scenarios from Simulate tab as a series to plan on ValQ
  
 <div style={{textAlign: 'justify'}}>
-The below Figure shows the result on the Plan screen. You can use the slider to view the rest of the periods. 
+The below Figure shows the result on the Plan screen. You can use the slider to view the rest of the periods.
 </div> <br />
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -62,20 +67,15 @@ The below Figure shows the result on the Plan screen. You can use the slider to 
 ### Plan from scratch
 
 <div style={{textAlign: 'justify'}}>
-You can plan from scratch by selecting the 'Empty Series' option from Choose series to start with drop-down. However, the Periods option is disabled
-when choosing the Empty Series option. ValQ takes the number of periods and period labels from the Data Series Manager setting available under
-the Model tab. Empty Series brings in only the structure of the model built using the Model tab and not the node values.
+Let’s assume you would like to create a zero based budget for the year 2021. 
+For this scenario, you will select the 'Empty Series' option from the drop-down instead. 
+However, the Periods option is disabled when choosing the Empty Series option.
 </div> <br />
 
-Here's an example using the Empty Series option
+The end result is a blank template on which we can start keying in our new plan.
+
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/plan3.1.png')} />
   </Zoom>
-</div> <br />
-
-> **Note**
-<div style={{textAlign: 'justify'}}>
-In case you want to make changes to your model while planning, you can unlock your model at any time.
-Click <Link to={useBaseUrl('docs/planning/update')}>here</Link> to learn to unlock your model.
 </div>
