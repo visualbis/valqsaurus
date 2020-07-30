@@ -1,0 +1,21 @@
+---
+id: current_node_value
+title: CURRENT_NODE_VALUE
+---
+
+The CURRENT_NODE_VALUES funtion returns the current node's previous period value.
+
+## Syntax
+
+CURRENT_NODE_VALUES.get(index)
+
+## Arguments
+
+index - a reference to the period index commonly achieved by CURRENT_PERIOD_INDEX 
+
+## Example
+Consider a scenario where you want to assign 100 as the first month value and you want the 
+subsequent periods to have a month-on-month growth of 10%
+
+This can be achieved by using the formula 
+IF ( CURRENT_PERIOD_INDEX == 1, 1000, CURRENT_NODE_VALUES.GET(CURRENT_PERIOD_INDEX-1) * 1.1)

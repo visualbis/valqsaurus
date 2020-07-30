@@ -17,6 +17,15 @@ If the node Sales has child nodes, East, West, South and Central, the node Sales
 ### Example
 If the node Sales has child nodes, East, West, South and Central, the child nodes of Sales can be referred to using Sales.CHILDREN.
 
+## [NODE].VISIBLE_CHILDREN
+[NODE].VISIBLE_CHILDREN refers to the children nodes of the NODE that are not hidden.
+
+## [NODE].HIDDEN_CHILDREN
+[NODE].HIDDEN_CHILDREN refers to the children nodes of the NODE that are hidden.
+
+
+## [NODE].ID
+[NODE].ID returns the node ID.
 
 ## [NODE].ACT 
 `[NODE].ACT` refers to the Simulated Series of the node.
@@ -118,6 +127,28 @@ The periods in a model are defined from Jan to Dec and the active simulation per
 `[NODE].TGT.SIM_PERIODS` returns [15,15,15,15,15,15,15].
 
 `[NODE].BASE.SIM_PERIODS` returns [25,30,15,20,25,35,30].
+
+## [NODE].TOTAL
+[NODE].TOTAL returns the all period aggregated value of the node.
+
+## [NODE].PTD
+[NODE].PTD returns the period till date aggregated value of the node.
+
+## [NODE].SEL
+[NODE].SEL returns the simulation period aggregated value of the node.
+
+### Example
+The periods in a model are defined from Jan to Dec and the active simulation period is from Jun to Dec. Node N1 has the following values:
+
+| Period | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|--------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Values | 10  | 15  | 20  | 10  | 15  | 25  | 30  | 15  | 20  | 25  | 35  | 30  |
+
+[NODE].TOTAL returns 250.
+
+[NODE].PTD returns 70.
+
+[NODE].SEL returns 180.
 
 ## [NODE].RANGE(START_INDEX,END_INDEX)
 `[NODE].RANGE(start_index,end_index)` returns selected range values of the node.

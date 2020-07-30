@@ -1,0 +1,17 @@
+---
+id: getcurrentrange
+title: GETCURRENTRANGE
+---
+
+The GETCURRENTRANGE funtion returns a range of value based on active period and period selection.
+
+## Syntax
+
+DS.(SERIES).GETCURRENTRANGE()
+
+## Example
+Consider a scenario where you want the sum of baseline sales to change based on the selections in the 
+Navigation Panel -(Simulation Period and Value Display).
+
+This can be achieved by using the formula 
+SUM(DS.Baseline.GETCURRENTRANGE())
