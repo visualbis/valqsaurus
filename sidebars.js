@@ -89,8 +89,7 @@ module.exports = {
                 "how_to_videos/simulate/simulation_period",
                 "how_to_videos/simulate/display-scaling",
                 "how_to_videos/simulate/kpi",
-                "how_to_videos/simulate/constraints",
-                "how_to_videos/simulate/visualization"
+                "how_to_videos/simulate/constraints"
         ]
         },
         {
