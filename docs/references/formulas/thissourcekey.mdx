@@ -1,0 +1,22 @@
+---
+id: thissourcekey
+title: THIS_SOURCE_KEY
+---
+The THIS_SOURCE_KEY function is used in the secondary KPIs when the node is data source node. 
+Based on the source key, the function returns the value of the row from the data series. 
+
+## Syntax
+
+DS.(SERIES).THIS_SOURCE_KEY
+
+## Example
+Consider a scenario where you have a node called 'East_Industrials'. The baseline and comparison series 
+are sales actuals and budget and the third series Salespersons is the number of salespersons associated. You want to
+display the number of salespersons as a secondary KPI.
+
+This can be achieved by using SUM(DS.Salespersons.THIS_SOURCE_KEY).
+
+This function matches the source key 'East_Industrials' in the series Salespersons and displays the  
+corresponding value.
+
+

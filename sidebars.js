@@ -34,12 +34,16 @@ module.exports = {
         ],
         Simulate: [
             "simulation/simulation",
-            "simulation/sim_features"
+            "simulation/sim_features",
+            "simulation/tableview"
+
         ],
         Analyze: [
             "analysis/general",
-            "analysis/variance_analysis"
+            "analysis/variance_analysis",
+            "analysis/attribution-analysis"
         ],
+
         "Storage and Collaboration": ["storage/storage-collaboration"],
 
         Resources: [
@@ -59,6 +63,7 @@ module.exports = {
                 ]
             }
         ],
+
         "How To Videos": ["how_to_videos/get-started",           
         {             
             type: "category",
@@ -101,6 +106,7 @@ module.exports = {
         },
         
     ],
+
     },
     functionSideBar: {
         "Logical Functions": [
@@ -109,7 +115,8 @@ module.exports = {
             "references/formulas/switch",
             "references/formulas/or",
             "references/formulas/not",
-            "references/formulas/xor"
+            "references/formulas/xor",
+            "references/formulas/isnan"
         ],
         "Math Functions": [
             "references/formulas/sum",
@@ -141,19 +148,32 @@ module.exports = {
             "references/formulas/range",
             "references/formulas/lastnperiods",
             "references/formulas/get",
-            "references/formulas/foreach"
+            "references/formulas/foreach",
+            "references/formulas/getrowvalue",
+            "references/formulas/getcurrentrange",
+            "references/formulas/findbyid",
+            "references/formulas/findbytitle",
+            "references/formulas/thisid",
+            "references/formulas/thissourcekey",
+
         ],
         "Static Identifiers": [
             "references/formulas/this",
             "references/formulas/me",
             "references/formulas/current_series",
             "references/formulas/current_series_id",
+
             "references/formulas/current_period_index",
             "references/formulas/sim_from_to_index",
             "references/formulas/node-properties"
         ],
         "Additional Series": [
             "references/formulas/additional_series",
+
+            "references/formulas/current_node_value",
+            "references/formulas/node-properties"
+
+
         ]
     }
 };
