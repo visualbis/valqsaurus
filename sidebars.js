@@ -81,7 +81,7 @@ module.exports = {
         {
             type: "category",
             label: "Plan",
-            items: ["how_to_videos/plan/plan"]
+            items: ["how_to_videos/plan/data-series"]
         
         },
         {
