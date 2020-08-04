@@ -63,47 +63,50 @@ module.exports = {
                 ]
             }
         ],
-        "How To Videos": ["how_to_videos/get-started",
-            {
-                type: "category",
-                label: "Model",
-                items: [
-                    "how_to_videos/model/modelling-basics",
-                    "how_to_videos/model/nodes",
-                    "how_to_videos/model/nodes-config",
-                    "how_to_videos/model/settings",
-                    "how_to_videos/model/general",
-                    "how_to_videos/model/data-series"
-                ]
-            },
 
-            {
-                type: "category",
-                label: "Plan",
-                items: ["how_to_videos/plan/plan"]
+        "How To Videos": ["how_to_videos/get-started",           
+        {             
+            type: "category",
+            label: "Model",
+            items: [
+                "how_to_videos/model/modelling-basics",
+                "how_to_videos/model/nodes", 
+                "how_to_videos/model/nodes-config",
+                "how_to_videos/model/settings",
+                "how_to_videos/model/general",
+                "how_to_videos/model/data-series"
+            ]
+        },
+                      
+        {
+            type: "category",
+            label: "Plan",
+            items: ["how_to_videos/plan/plan"]
+        
+        },
+        {
+            type: "category",
+            label: "Simulate",
+            items: [
+                "how_to_videos/simulate/intro",
+                "how_to_videos/simulate/scenario-planning",
+                "how_to_videos/simulate/sub-models",
+                "how_to_videos/simulate/simulation_period",
+                "how_to_videos/simulate/display-scaling",
+                "how_to_videos/simulate/kpi",
+                "how_to_videos/simulate/constraints",
+                "how_to_videos/simulate/visualization"
+        ]
+        },
+        {
+            type: "category",
+            label: "Analyze",
+            items: ["how_to_videos/analyze/intro"]
+            
+        },
+        
+    ],
 
-            },
-            {
-                type: "category",
-                label: "Simulate",
-                items: [
-                    "how_to_videos/simulate/intro",
-                    "how_to_videos/simulate/scenario-planning",
-                    "how_to_videos/simulate/sub-models",
-                    "how_to_videos/simulate/simulation_period",
-                    "how_to_videos/simulate/display-scaling",
-                    "how_to_videos/simulate/kpi",
-                    "how_to_videos/simulate/constraints"
-                ]
-            },
-            {
-                type: "category",
-                label: "Analyze",
-                items: ["how_to_videos/analyze/intro"]
-
-            },
-
-        ],
     },
     functionSideBar: {
         "Logical Functions": [
