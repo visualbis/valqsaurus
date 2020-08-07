@@ -9,7 +9,7 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css"; 
 
 <div style={{textAlign: 'justify'}}>
-Variance Analysis helps analyze variances against a benchmark for specific periods for all the KPIs in the model.
+Variance Analysis calculates variances against a benchmark for specific periods for all the KPIs in the model.
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
@@ -251,59 +251,32 @@ Power BI Service.
 ## 8. Show Hidden Nodes
 
 <div style={{textAlign: 'justify'}}>
-You have an option to display the nodes that were hidden while building the model under the Model tab.
-Here, East is the hidden node and on selecting the Show hidden node option, it gets displayed.
-However, notice that the Overall Result doesn't get affected. 
+Enable Show hidden nodes option to display the nodes that were hidden while building the model under the Model tab. 
 </div> <br />
 
+Here, the node 'East' and its children are hidden.  
+
 <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze12.png')} />
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/node hidden.png')} />
   </Zoom>
 </div> <br />
 
-> ** Note** <br /> Upon enabling show hidden node, the node stays hidden on the other tabs.
-
-## 7. 
-
-## 8. Apply Filter to report
-
-<div style={{textAlign: 'justify'}}>
-
-Use the Filter option to analyze critical influencers.  Two filters are available:
-
-**Filter by Parent**: This allows you to analyze variance for a specific branch within the model. For example, you may be interested in analyzing variance for a particular location or product.
-
-**Filter by Variance**: This allows you to identify top ‘n’ analysis for categories showing the most variances for a particular period chosen from the drop-down.
-
-> **Note** <br /> You have the option to select whether you want to display only positive variances or only negative variances or both.
-
-</div>
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze13.1.png')} />
-  </Zoom>
-</div>
-
-<br />
-<div style={{textAlign: 'justify'}}>
-
-In the below image, filter By Variance has been applied to filter the top 10 positive variances of the periodic report. The Value Bar displays 
-the filter that has been applied. To remove the filter simply click on the 'x' next to the filter. 
-
-</div>
+Check the Show hidden node option to display the 'East' node and its children. Note that the Overall Result remains same.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze13.2.png')} />
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/node shown.png')} />
   </Zoom>
-</div>
+</div> <br />
 
-## 9. Search for a node
+> ** Note** <br /> On enabling Show hidden nodes option, the nodes stays hidden on the other tabs.
+
+## 8. Search for a node
 
 <div style={{textAlign: 'justify'}}>
 
-You can search for a particular node by using the search bar as highlighted below. This feature can be used to identify a node when a model 
+Search for a particular node by its title as highlighted below. This feature can be used to identify a node when a model 
 has a large number of nodes. 
 
 </div>
@@ -314,12 +287,64 @@ has a large number of nodes.
   </Zoom>
 </div>
 
-## 10. Hide the features panel
+## 9. Apply Filter to report
 
-Click on '^' to hide the features panel of the Analyze tab. The screen will be seen as below after the panel is hidden.
+<div style={{textAlign: 'justify'}}>
+
+Use the Filter option to analyze critical influencers.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze15.png')} />
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/filter.png')} />
+  </Zoom>
+</div>
+
+There are two types of filters:
+
+**Filter by Parent**: This allows you to analyze variance for a specific branch within the model. For example, you may be interested in analyzing variance for a particular location or product.
+
+**Filter by Variance**: This allows you to identify top ‘n’ analysis for categories showing the most variances for a particular period chosen from the drop-down.
+</div>
+
+> **Note** <br /> You have the option to select whether you want to display only positive variances or only negative variances or both.
+
+In this example, filter By Variance has been applied to filter the top 5 variances for Full Year. 
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze12.1.png')} width={300} height={395} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+The below image shows the Variance Anaysis for top 5 variances for the full year. Observe the results to see both positive and negative variances.
+The Value Bar displays the filter that has been applied.  
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze12.2.png')} />
+  </Zoom>
+</div>
+
+To remove the filter simply click on the 'x' next to the filter.
+
+Here's the same filter with only negative variances. The report below shows the bottom 5 performers.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze12.3.png')} />
+  </Zoom>
+</div>
+
+## 10. Hide the features panel
+
+<div style={{textAlign: 'justify'}}>
+Click on '^' to hide the features panel of the Variance Analysis screen. Hide the panel to take a clear look at the report and use it as presentation mode.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze13.png')} />
   </Zoom>
 </div>
