@@ -8,9 +8,11 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
+## Node Features
+
 <div style={{textAlign: 'justify'}}>
 Simulating a node helps in performing what-if analysis and it can be instantly done on ValQ with the help of 
-the simulate slider present on each node. The below image is an example of what the simulation slider looks like.
+the simulate slider present on each node. The below image is an example of what the simulation slider looks like on a node.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -39,11 +41,43 @@ The other icon as highlighted below opens up the comments section to add any com
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim17.png')} />
   </Zoom>
-</div>
+</div> <br />
 
 ## Simulate Tab Features
 
-In this section, we'll take a look at the Simulate tab and its features. 
+Now let's take a look at the Simulate tab and its features. 
+
+<div style={{textAlign: 'justify'}}>
+Here's the Simulate tab on ValQ
+</div> <br />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim1.png')} />
+  </Zoom>
+</div>
+<br />
+<div style={{textAlign: 'justify'}}>
+The Simulate tab consists of two panels:  
+<br /> <br />
+
+The panel on left side is called **Navigation Panel** where you can create multiple Scenarios, perform Simulations, view
+the Key Inputs and KPIs, etc.
+</div>
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim2.png')} />
+  </Zoom>
+</div>
+<div style={{textAlign: 'justify'}}> <br />
+
+The right side panel denotes the **Canvas** which represents the visual with different Nodes where the simulation
+can be done at each Node Level (see Figure below).
+</div>
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim3.png')} />
+  </Zoom>
+</div>
 
 ## 1. Scenarios
 
@@ -282,7 +316,32 @@ Click on the table icon as highlighted in the below Figure to get the Table View
   </Zoom>
 </div>
 
-## 2. Search for a node
+## 2. Edit and Reset all
+
+Simulated nodes along with the percentage change are displayed on top of the canvas. 
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/Simulation/sim22.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+The bin icon on each of the simulation result can be used to remove that particular simulation. 
+To remove all the simulations performed on the model, click the Reset all option.  
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+Click on the Edit option to manually change the period values.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/Simulation/sim23.png')} />
+  </Zoom>
+</div>
+
+## 3. Search for a node
 
 <div style={{textAlign: 'justify'}}>
 By providing the node name in the Search option on the right canvas, you
@@ -305,7 +364,7 @@ on the search you will be able to view the node as highlighted.
   </Zoom>
 </ div>
 
-## 3. Zoom Slider
+## 4. Zoom Slider
 
 <div style={{textAlign: 'justify'}}>
 The slider on the canvas is available to zoom in/out on the canvas. You can move the slider to zoom the model canvas.
@@ -318,7 +377,7 @@ ValQ also supports scroll on the mouse as you hover over the canvas and pinch & 
   </Zoom>
 </div>
 
-## 4. Go To Level
+## 5. Go To Level
 
 Go to level option is available to help you to navigate through the ValQ model and get to the required level quickly. 
 
