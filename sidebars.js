@@ -16,7 +16,7 @@ module.exports = {
             "intro/workflow"
         ],
         Model: [
-            "model/model_tab",
+            "model/model_overview",
             "model/new",
             "model/node",
             "model/data-series",
@@ -33,11 +33,11 @@ module.exports = {
 
         ],
         Simulate: [
-            "simulation/simulation",
+            "simulation/simulate_overview",
             "simulation/sim_features"
         ],
         Analyze: [
-            "analysis/general",
+            "analysis/analyze_overview",
             "analysis/variance_analysis"
         ],
         "Storage and Collaboration": ["storage/storage-collaboration"],

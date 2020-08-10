@@ -19,7 +19,7 @@ const features = [
     },
     {
         title: <>Modeling</>,
-        link: "/docs/model/model_tab",
+        link: "/docs/model/model_overview",
         imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-modeling.png',
         description: (
             <>
@@ -49,7 +49,7 @@ const features = [
     },
     {
         title: <>Simulation</>,
-        link: "/docs/simulation/simulation",
+        link: "/docs/simulation/simulate_overview",
         imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-simulation.png',
         description: (
             <>
@@ -59,7 +59,7 @@ const features = [
     },
     {
         title: <>Advanced Analysis</>,
-        link: "/docs/analysis/variance_analysis",
+        link: "/docs/analysis/analyze_overview",
         imageUrl: "https://cdn.valq.com/wp-content/uploads/variance-analysis.png",
         description: (
             <>
