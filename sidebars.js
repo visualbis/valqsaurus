@@ -23,7 +23,7 @@ module.exports = {
             "model/settings",
             "model/general"
         ],
-        "Plan": [
+        Plan: [
             "planning/plan_overview",
             "planning/access",
             "planning/plan_features",
@@ -40,7 +40,9 @@ module.exports = {
             "analysis/analyze_overview",
             "analysis/variance_analysis"
         ],
-        "Storage and Collaboration": ["storage/storage-collaboration"],
+        "Storage and Collaboration": [
+            "storage/storage-collaboration"
+        ],
         Resources: [
             "faq/formula-list",
             "faq/definitions",
