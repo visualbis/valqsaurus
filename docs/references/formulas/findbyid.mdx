@@ -1,0 +1,23 @@
+---
+id: findbyid
+title: findByID
+---
+
+The findByID funtion can be used for tagging or grouping nodes by node ID. 
+
+## Syntax
+
+findByID("ID match string")
+
+## Arguments
+
+ID match string - ID to match the node
+
+## Example
+Consider a scenario where you want to add all the nodes with Sales in their node ID.
+
+If the nodes start with Sales, sum can be achieved by using the formula 
+SUM(THIS.DESCENDANTS.findByID("^NSales"))   
+
+If the nodes end with Sales, sum can be achieved by using the formula 
+SUM(THIS.DESCENDANTS.findByID("NSales$")) 

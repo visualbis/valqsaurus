@@ -1,0 +1,23 @@
+---
+id: findbytitle
+title: findByTitle
+---
+
+The findByTitle funtion can be used for tagging or grouping nodes by node title. 
+
+## Syntax
+
+findByID("Title match string")
+
+## Arguments
+
+Title match string - Title to match the node
+
+## Example
+Consider a scenario where you want to add all the nodes with Sales in their node title.
+
+If the nodes start with Sales, sum can be achieved by using the formula 
+SUM(THIS.DESCENDANTS.findByTitle("^NSales"))   
+
+If the nodes end with Sales, sum can be achieved by using the formula 
+SUM(THIS.DESCENDANTS.findByTitle("NSales$")) 
