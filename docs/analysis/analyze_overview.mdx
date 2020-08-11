@@ -1,7 +1,7 @@
 ---
-id: general
-title: Analyze Tab
-sidebar_label: Analyze Tab
+id: analyze_overview
+title: Analyze Overview
+sidebar_label: Analyze Overview
 ---
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
@@ -10,7 +10,8 @@ import "react-medium-image-zoom/dist/styles.css";
 
 <div style={{textAlign: 'justify'}}> 
 The Analyze tab allows you to run advanced analyses on the data. 
-Currently, you can perform Variance Analysis and Attribution Analysis from this tab. 
+Currently, you can perform <Link to={useBaseUrl('docs/analysis/variance_analysis')}>Variance Analysis</Link> and
+<Link to={useBaseUrl('docs/analysis/attribution-analysis')}> Attribution Analysis</Link> from this tab. 
 Expect to see additional items in the future such as sensitivity analysis and more. 
 </div> <br />
 

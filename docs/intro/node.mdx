@@ -42,8 +42,7 @@ For example, the 'East' node is the Parent node while 'Consumer' node is a Child
   <Zoom>
     <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node2.png')} />
   </Zoom>    
-</div>
-<br />
+</div> <br />
 
 Click on '>' to expand and '<' collapse levels.
 
@@ -51,8 +50,7 @@ Click on '>' to expand and '<' collapse levels.
   <Zoom>
     <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node6.png')} />
   </Zoom>    
-</div>
-<br />
+</div> <br />
 
 You can also use the 'Go to level ^' option present on the bottom of the canvas to navigate between levels of the tree.
 
@@ -61,7 +59,24 @@ You can also use the 'Go to level ^' option present on the bottom of the canvas 
     <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node9.png')} />
   </Zoom>    
 </div>
-<br />
+
+## Table View
+
+<div style={{textAlign: 'justify'}}>
+The same information can be viewed in tabular form as see in the image below. The Table view is generally used to plan and analyze the data.
+Click on the table icon as highlighted below to get the tabular view.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node10.png')} />
+  </Zoom>
+</div> <br />
+
+For more information on Table View, click <Link to={useBaseUrl('docs/simulation/tableview')}>here</Link>
+
+
+## Node Components
 
 Now let's take a look at what makes up a node.
 
@@ -80,7 +95,7 @@ Each node represents a value driver, KPI or category and it's several performanc
 |---    |---	|---	|
 |1| Node name  	| Name of the value driver or KPI	|
 |2| Conditional Formatting  	| Color band indicating the variance 	|
-|3| Value Trend 	| A sparkline line graph showing the trend |
+|3| Value Trend 	| A sparkline graph showing the trend |
 |4| Baseline Value  	| Node value of the baseline series |
 |5| Variance for all periods  	| Full year variance of the node |
 |6| Variance for current period  	| Current month (usually first period in the series) month variance of the node |
@@ -101,14 +116,7 @@ Here the Sales Budget is the Baseline series and Sales Forecast is the Compariso
   </Zoom>    
 </div>
 
-## Table View
+## Related Pages
 
-The same information can be viewed in tabular form as see in the image below. The Table view is generally used to plan and analyze the data.  <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node10.png')} />
-  </Zoom>    
-</div> <br />
-
-To learn more about Nodes, <Link to={useBaseUrl('docs/model/node')}> see </Link> under the Model section.
+<Link to={useBaseUrl('docs/model/node#node-editor')}> Configure nodes </Link> under Model <br />
+<Link to={useBaseUrl('docs/simulation/sim_features#node-features')}> Simulate features </Link> on node 

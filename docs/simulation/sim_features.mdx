@@ -8,22 +8,204 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
+<div style={{textAlign: 'justify'}}>
+Simulating a node helps in performing what-if analysis and it can be done instantly on ValQ with the help of 
+the simulate slider present on each node. As simulation is done on a node, let's first understand the simulate features on a node. 
+The basic components of a node has been explained in the
+introduction section - <Link to={useBaseUrl('docs/intro/node')}> Understanding Nodes in ValQ</Link>.
+</div> 
+
 ## Node Features
 
+### 1. Simulation Slider
+
 <div style={{textAlign: 'justify'}}>
-Simulating a node helps in performing what-if analysis and it can be instantly done on ValQ with the help of 
-the simulate slider present on each node. The below image is an example of what the simulation slider looks like on a node.
+Move the slider on the node to perform simulation. Based on the Desired Trend setting under <Link to={useBaseUrl('docs/model/node#2-configuration')}> Configuration</Link>,
+the simulation shows better or worse results.
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+On an increasing Desired Trend, slide to right to get the best case and slide to left for worse case.
+Below is an example of worse case on increasing Desired Trend indicated by red band.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim15.png')} />
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode1.png')} />
   </Zoom>
-</div> <br />
+</ div> <br />
 
 <div style={{textAlign: 'justify'}}>
-The simulation can be removed by clicking on the 'bin' icon. The arrow icon gives detail about the simulation effect on the period nodes.
-The below image shows the period distribution of the simulated value.
+On the other hand, on a decreasing Desired Trend, slide to left for better results and slide to right for worse.
+Below is an example of better case on decreasing Desired Trend indicated by green band.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode2.png')} />
+  </Zoom>
+</ div> <br />
+
+### 2.Simulation Details
+
+<div style={{textAlign: 'justify'}}>
+Let us observe the impact of simulation on a node and changes in the node details with the following example.
+</ div> <br />
+
+**'East' node before simulation**
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/sim24.png')} />
+  </Zoom>
+</ div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/node29.2.png')} />
+  </Zoom>
+</ div> <br />
+
+**'East' node after simulation**
+
+<div style={{textAlign: 'justify'}}>
+The percentage on top left corner denotes the overall change of primary value for better or worse.
+The secondary KPI values are the simulated values and the variances are calculated as difference between the simulated baseline series
+and comparison series. The dotted trend line is the original baseline and the trend line in blue is the simulated baseline. 
+</ div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/sim15.png')} />
+  </Zoom>
+</ div> <br />
+
+Click on the pencil icon on the node to access the node details screen. 
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/sim25.png')} />
+  </Zoom>
+</ div>
+
+### Node details components
+
+#### 1. Simulation Impact and Variances
+
+<div style={{textAlign: 'justify'}}>
+The node details pop-up provides a detailed analysis of simulation impact for the first period and full year. The results are calculated
+difference between simulated baseline series and comparison series in addition to the analysis between original baseline series and comparison series.
+</ div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode4.png')} />
+  </Zoom>
+</ div> <br />
+
+#### 2. Line and Column Chart
+
+<div style={{textAlign: 'justify'}}>
+A line and column chart shows the period values of the node for the full year. The column chart represent the simulated baseline values and the
+dotted lines indicate the original baseline value. The blue trend line shows the comparison values. Click the icon highlighted in the below 
+image to view the chart on fullscreen mode.
+</ div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode5.png')} />
+  </Zoom>
+</ div> <br />
+
+Hover over the chart to get the period details on tooltip. Below is an example for June   
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode8.png')} />
+  </Zoom>
+</ div> <br />
+
+<div style={{textAlign: 'justify'}}>
+The three horizontal lines icon as highlighted below has options to view the Trend of Children and Trend of Calculation Components.
+Trend of Children shows the chart for each of the child nodes and Trend of Calculation Components shows the chart for the nodes referred in the
+formula.
+</ div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode6.png')} />
+  </Zoom>
+</ div> <br />
+
+Here's a look at the Trend of Children
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode7.png')} />
+  </Zoom>
+</ div> <br />
+
+#### 3. Waterfall Chart
+
+<div style={{textAlign: 'justify'}}>
+A waterfall chart is also a part of the node details page. The chart has three horizontal lines icon option to show the
+Simulation Impact and Variance Breakdown. The waterfall icon highlighted below can be used to flip the chart.
+</ div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode10.png')} />
+  </Zoom>
+</ div> <br />
+
+The following is an example using 'East' node with baseline as 2020 Actuals and comparison as 2020 Forecast
+
+#### Simulation Impact
+
+The below image shows the horizontal waterfall chart of simulation impact on the node 'East' for full year. The change is the difference
+between original baseline and simulated baseline.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode11.png')} />
+  </Zoom>
+</ div> <br />
+
+#### Variance Breakdown
+
+The below image shows the vertical waterfall chart of variance breakdown on the node 'East' for full year. The change is the difference
+between comparison and simulated baseline.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode12.png')} />
+  </Zoom>
+</ div> <br />
+
+> ** Note** <br /> Calculation components and children remain same when no *other* nodes from the model are referred during node configuration
+
+### 3. Remove Simulation
+
+The simulation can be removed by clicking on the 'bin' icon on the node or on the canvas as highlighted below. 
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode3.png')} />
+  </Zoom>
+</ div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode13.png')} />
+  </Zoom>
+</ div> <br />
+
+### 4. Edit Simuation
+
+<div style={{textAlign: 'justify'}}>
+The arrow icon provides details about the simulation effect and the simulation method by way of a tooltip .
+The below image shows the period distribution, full year and year to date simulated months values of the original baseline and
+simulated baseline. The simulation method of the node can also be changed on the tooltip.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -32,30 +214,60 @@ The below image shows the period distribution of the simulated value.
   </Zoom>
 </div> <br />
 
+The edit icon on the tooltip can be used to edit the simulated period values of the node manually.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode14.png')} />
+  </Zoom>
+</ div>
+
+### 5. Go to Plan
+
 <div style={{textAlign: 'justify'}}>
-There are two more icons on top of the node, the left side one takes you to the plan tab with that node and its child nodes.
-The other icon as highlighted below opens up the comments section to add any comments for the selected node. 
+The plan icon takes you to the recent access plan and displays that particular node and its children
+</div> <br />
+
+Below is an example with 'East' node
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode15.png')} />
+  </Zoom>
+</ div>
+
+2020 Budget is the recently accessed plan and click on the icon highlighted in the above image to display the plan screen as below  
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulation/snode16.png')} />
+  </Zoom>
+</ div> 
+
+### 6. Add Comments
+
+<div style={{textAlign: 'justify'}}>
+Click on the comment icon to open the Comments section. Comments can be added to the model at node granularity.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim17.png')} />
   </Zoom>
-</div> <br />
+</div>
 
 ## Simulate Tab Features
 
 Now let's take a look at the Simulate tab and its features. 
 
-<div style={{textAlign: 'justify'}}>
 Here's the Simulate tab on ValQ
-</div> <br />
+
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim1.png')} />
   </Zoom>
-</div>
-<br />
+</div> <br />
+
 <div style={{textAlign: 'justify'}}>
 The Simulate tab consists of two panels:  
 <br /> <br />
@@ -63,23 +275,27 @@ The Simulate tab consists of two panels:
 The panel on left side is called **Navigation Panel** where you can create multiple Scenarios, perform Simulations, view
 the Key Inputs and KPIs, etc.
 </div>
+
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim2.png')} />
   </Zoom>
-</div>
-<div style={{textAlign: 'justify'}}> <br />
+</div> <br />
 
-The right side panel denotes the **Canvas** which represents the visual with different Nodes where the simulation
+<div style={{textAlign: 'justify'}}>
+The right side panel denotes the **Canvas** which represents the model visual where the simulation
 can be done at each Node Level (see Figure below).
-</div>
+</div> <br />
+
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/Simulation/sim3.png')} />
   </Zoom>
 </div>
 
-## 1. Scenarios
+## Navigation Panel
+
+### 1. Scenarios
 
 <div style={{textAlign: 'justify'}}>
 Scenarios are particularly useful when you want to perform what-if analysis to the model and you can save each instance as an 
@@ -114,7 +330,7 @@ scenario comparison as an excel file while using ValQ on Power BI Service.
   </Zoom>
 </div>
 
-## 2. Sub Models
+### 2. Sub Models
 
 <div style={{textAlign: 'justify'}}>
 Sub Models are part of the model and a node is added as a sub model to access it quickly. This property is useful 
@@ -138,7 +354,7 @@ Here, the sub model - 'Midwest' displays only the particular node and its childr
   </Zoom>
 </div>
 
-## 3. Simulation Period
+### 3. Simulation Period
 
 <div style={{textAlign: 'justify'}}>
 ValQ model updates the simulated values based on the periods selected in the Simulation Period. You can select just one period or
@@ -152,8 +368,10 @@ To change the period labels, go to <Link to={useBaseUrl('docs/model/settings#13-
   </Zoom>
 </div> <br />
 
+<div style={{textAlign: 'justify'}}>
 In the below example, simulation periods have been selected as Jan and Feb. You can observe that the simulation is applied
 only to these two periods.
+</div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -161,7 +379,7 @@ only to these two periods.
   </Zoom>
 </div>
 
-## 4. Value display
+### 4. Value display
 
 <div style={{textAlign: 'justify'}}>
 Value Display makes available options of aggregation like a month, year to date, a full year and simulated periods and scaling options.
@@ -176,7 +394,7 @@ scaling at 0.0m by default. Click on the '^' option to collapse this property.
   </Zoom>
 </div>
 
-## 5. Key Inputs
+### 5. Key Inputs
 
 <div style={{textAlign: 'justify'}}>
 Any important node that you consider as a Key Input can be added as a Key Input to view it quickly instead of searching for it
@@ -195,7 +413,7 @@ on selecting the key Input 'Chris Morris'.
   </Zoom>
 </div>
 
-## 6. KPIs
+### 6. KPIs
 
 <div style={{textAlign: 'justify'}}>
 Any important node that you consider as a Key Performance Indicator can be added as a KPI to view it quickly instead of searching for it
@@ -213,7 +431,7 @@ In the below example, the node 'Midwest' gets highlighted on selecting the KPI '
   </Zoom>
 </div>
 
-## 7. Constraints
+### 7. Constraints
 
 <div style={{textAlign: 'justify'}}>
 Any constraint added to the model is displayed here along with the Value Range. Click on the '^' option to collapse this property.
@@ -267,7 +485,7 @@ sorted based on utilisation on the Navigation Panel.
   </Zoom>
 </div>
 
-## 8. Visualization
+### 8. Visualization
 
 <div style={{textAlign: 'justify'}}>
 You can change the view of the model with the visualization options. By default, Visualization is set to Tree display and
@@ -294,13 +512,32 @@ To view the model as a table, you can click on any of the highlighted options as
 
 ## Canvas Features
 
-## 1. Switch View
+### 1. Hide Navigation Panel
 
 <div style={{textAlign: 'justify'}}>
-At any time, you can switch between Tree View and Table View on the ValQ canvas.
+The below highlighted icon helps to hide the Navigation Panel from the Simulate tab screen. Hide the panel to take a clear look at the 
+model and you can use it as presentation mode.
 </div> <br />
 
-Click on the tree icon as highlighted in the below Figure to get the Tree View.
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/Simulation/snode17.png')} />
+  </Zoom>
+</div> <br />
+
+Here's Simulate tab screen with hidden Navigation panel
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/Simulation/snode18.png')} />
+  </Zoom>
+</div>
+
+### 2. Switch View
+
+At any time, you can switch between Tree View and Table View on the ValQ canvas
+
+Click on the tree icon as highlighted in the below Figure to get the Tree View
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -308,17 +545,19 @@ Click on the tree icon as highlighted in the below Figure to get the Tree View.
   </Zoom>
 </div> <br />
 
-Click on the table icon as highlighted in the below Figure to get the Table View.
+Click on the table icon as highlighted in the below Figure to get the Table View
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/Simulation/sim19.png')} />
   </Zoom>
-</div>
+</div> <br />
 
-## 2. Edit and Reset all
+For more information on Table View, click <Link to={useBaseUrl('docs/simulation/tableview')}>here</Link>
 
-Simulated nodes along with the percentage change are displayed on top of the canvas. 
+### 3. Edit and Reset all
+
+Simulated nodes along with the percentage change are displayed on top of the canvas
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -331,9 +570,7 @@ The bin icon on each of the simulation result can be used to remove that particu
 To remove all the simulations performed on the model, click the Reset all option.  
 </div> <br />
 
-<div style={{textAlign: 'justify'}}>
-Click on the Edit option to manually change the period values.
-</div> <br />
+Click on the Edit option to manually change the period values
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -341,13 +578,9 @@ Click on the Edit option to manually change the period values.
   </Zoom>
 </div>
 
-## 3. Search for a node
+### 4. Search for a node
 
-<div style={{textAlign: 'justify'}}>
-By providing the node name in the Search option on the right canvas, you
-will be able to search for the particular node when there is more
-number of nodes appearing on the right canvas.
-</ div> <br />
+Search for a node by typing the node title on the search bar located at the bottom of the canvas
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -355,8 +588,10 @@ number of nodes appearing on the right canvas.
   </Zoom>
 </ div> <br />
 
+<div style={{textAlign: 'justify'}}>
 For our example, the node name is given as “Consumer” and based
 on the search you will be able to view the node as highlighted.
+</ div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -364,11 +599,11 @@ on the search you will be able to view the node as highlighted.
   </Zoom>
 </ div>
 
-## 4. Zoom Slider
+### 5. Zoom Slider
 
 <div style={{textAlign: 'justify'}}>
-The slider on the canvas is available to zoom in/out on the canvas. You can move the slider to zoom the model canvas.
-ValQ also supports scroll on the mouse as you hover over the canvas and pinch & zoom gestures in touch-enabled devices.  
+The slider on the canvas is available to zoom in/out on the canvas.
+ValQ also supports scroll on the mouse as you hover over the canvas and pinch & zoom gestures on touch-enabled devices.  
 </ div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -377,7 +612,7 @@ ValQ also supports scroll on the mouse as you hover over the canvas and pinch & 
   </Zoom>
 </div>
 
-## 5. Go To Level
+### 6. Go To Level
 
 Go to level option is available to help you to navigate through the ValQ model and get to the required level quickly. 
 
