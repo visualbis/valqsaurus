@@ -32,7 +32,7 @@ Here's the Table View on full screen mode after collapsing the Navigation Panel
 
 ## Features of Table View
 
-### 1. Search option
+### 1. Search Nodes
 
 Type the node you want to search and select the same from the dropdown.
 
@@ -50,63 +50,7 @@ The selected node and its descendants will be displayed.
   </Zoom>
 </div>
 
-### 2. Summarized View
-
-By default, the table is shown in the summarized mode.
-
-<div style={{textAlign: 'center'}}>
-<Zoom>
-<img alt="Table View" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-5.png')} />
-  </Zoom>
-</div>
-
-- When there are no simulations, aggregated baseline and comparison series will be displayed.
-
-<div style={{textAlign: 'center'}}>
-<Zoom>
-<img alt="Summarized View" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-9.png')} />
-  </Zoom>
-</div> <br />
-
-- When there are simulations, original and simulated baseline, comparison values and simulation impact will be displayed.
-
-<div style={{textAlign: 'center'}}>
-<Zoom>
-<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-10.png')} />
-  </Zoom>
-</div>
-
-### 3. Period View
-
-<div style={{textAlign: 'center'}}>
-<Zoom>
-<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-12.png')} />
-  </Zoom>
-</div> <br />
-
-On selecting the period view from the settings, you'll be able to view the table by periods.
-
-<div style={{textAlign: 'center'}}>
-<Zoom>
-<img alt="Period View" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-4.png')} />
-  </Zoom>
-</div>
-
-### 4. Customize Columns
-
-<div style={{textAlign: 'justify'}}>
-By clicking on settings, you can see the following screen.
-On the left, you can search for columns, select or unselect them based on whether you want it to be displayed.
-On the right, you can reorder columns by drag and drop.
-</div> <br />
-
-<div style={{textAlign: 'center'}}>
-<Zoom>
-<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-11.png')} width={450} height={300} />
-  </Zoom>
-</div>
-
-### 5. Perform simulation
+### 2. Perform Simulation
 
 <div style={{textAlign: 'justify'}}>
 Hover over the trend line on a node to perform simulation. The simulation results for each node with percentage change are available
@@ -131,7 +75,7 @@ Click on Edit icon to manually change the values.
 Use the bin icon to remove a simulation and remove all the simulation at once, click on Reset all option.
 </div>
 
-### 6. Navigation Panel
+### 3. Navigation Panel
 
 <div style={{textAlign: 'justify'}}>
 Below is the Table View with the Navigation Panel. 
@@ -144,7 +88,7 @@ The <Link to={useBaseUrl('docs/simulation/sim_features#navigation-panel')}> Navi
   </Zoom>
 </div>
 
-### 6. Node Details
+### 4. Node Details
 
 Click on any node title to view its node details.
 
@@ -160,7 +104,7 @@ Click on any node title to view its node details.
   </Zoom>
 </div>
 
-### 8. Go to Plan
+### 5. Go to Plan
 
 <div style={{textAlign: 'justify'}}>
 The plan icon takes you to the recent access plan and displays that particular node, its siblings and children. This feature is same 
@@ -179,7 +123,7 @@ The plan icon takes you to the recent access plan and displays that particular n
   </Zoom>
 </div> 
 
-### 9. Add Comments
+### 6. Add Comments
 
 <div style={{textAlign: 'justify'}}>
 Click on the comment icon to open the Comments section. Comments can be added/edited/deleted to the model at node granularity.
@@ -192,5 +136,60 @@ This feature is same  <Link to={useBaseUrl('docs/simulation/sim_features#6-add-c
   </Zoom>
 </div>
 
+### 7. Summarized View
+
+By default, the table is shown in the summarized mode.
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Table View" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-5.png')} />
+  </Zoom>
+</div> <br />
+
+- Before performing simulations - aggregated baseline and comparison series will be displayed.
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Summarized View" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-9.png')} />
+  </Zoom>
+</div> <br />
+
+- After performing simulations - original and simulated baseline, comparison values and simulation impact will be displayed.
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-10.png')} />
+  </Zoom>
+</div>
+
+### 8. Period View
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-12.png')} />
+  </Zoom>
+</div> <br />
+
+On selecting the period view from the settings, you'll be able to view the table by periods.
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Period View" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-4.png')} />
+  </Zoom>
+</div>
+
+### 9. Customize Columns
+
+<div style={{textAlign: 'justify'}}>
+By clicking on settings, you can see the following screen.
+On the left, you can search for columns, select or unselect them based on whether you want it to be displayed.
+On the right, you can reorder columns by drag and drop.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-11.png')} width={450} height={300} />
+  </Zoom>
+</div>
 
 
