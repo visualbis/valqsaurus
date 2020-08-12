@@ -260,23 +260,12 @@ Click on the comment icon to open the Comments section. Comments can be added/ed
 
 ## Simulate Tab Features
 
-Now let's take a look at the Simulate tab and its features. 
-
-Here's the Simulate tab on ValQ
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/simulate_tab/sim1.png')} />
-  </Zoom>
-</div> <br />
+Now let's take a look at the Simulate tab and its features. The Simulate tab consists of two panels: 
 
 <div style={{textAlign: 'justify'}}>
-The Simulate tab consists of two panels:  
-<br /> <br />
-
 The panel on left side is called <Link to={useBaseUrl('docs/simulation/sim_features#navigation-panel')}>Navigation Panel</Link> where you can create multiple Scenarios, perform Simulations, view
 the Key Inputs and KPIs, etc.
-</div>
+</div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -332,7 +321,9 @@ scenario comparison as an excel file while using ValQ on Power BI Service.
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/simulate_tab/sim5.png')} />
   </Zoom>
-</div>
+</div> <br />   
+
+>**Note** <br /> Scenarios are not stored as Data Series on ValQ. Click <Link to={useBaseUrl('docs/planning/plan_overview#1base-data-series-vs-scenario-data')}>here</Link> to know more on this.
 
 ### 2. Sub Models
 
@@ -442,15 +433,16 @@ In the below example, the node 'Midwest' gets highlighted on selecting the KPI '
 ### 7. Constraints
 
 <div style={{textAlign: 'justify'}}>
-Any constraint added to the model is displayed here along with the Value Range. Click on the '^' option to collapse this property.
+Constraint is added to a node to evaluate its performance after simulation against a threshold.
+Any constraint added to the model is displayed under the Navigation Panel along with its Value Range. 
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-In the following example,  we can see the steps to add a Constraint to the model.
+In the following example,  we shall go through the steps to add a Constraint to a node.
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-A. The Value Range for 'East' Node has been set as Min = 1 Million and Max = 10 Million.  Notice that
+A. The Value Range for 'East' Node has been set as Min = 1 Million and Max = 10 Million. Notice that
 the Time Aggregation has been set as Sum of Periods and the number of periods for this node is 12. Therefore, the
 Value Range is taken as Min = 12 Million and Max = 120 Million.
 </div> <br />
@@ -473,8 +465,8 @@ To add Constraint, Model -> Settings -> Navigation Panel -> Constraints and choo
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-C. The Constraint for 'East' node has been added with the Minimum and Maximum values as seen below. Notice that the node
-value is outside the Value Range and the node value is displayed in red color. The value gets displayed in white if it lies within
+C. The Constraint for 'East' node has been added with the Minimum and Maximum values displayed as seen below. Notice that the node
+value is outside the Value Range and the node value is displayed in red color. The value is displayed in white if it lies within
 the range.
 </div> <br />
 
@@ -484,8 +476,8 @@ the range.
   </Zoom>
 </div> <br />
 
-In the below example, we have added three constraints - East, West and Midwest and you can see that the constraints are
-sorted based on utilisation on the Navigation Panel.  
+In the below screen, we have added three constraints - East, West and Midwest. You can see the constraints are
+sorted based on its utilisation under the Navigation Panel.  
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
