@@ -3,62 +3,194 @@ id: tableview
 title: Table View
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css"; 
 
-## 1. Accessing Table View
+
+## Access Table View
 
 There are two ways to switch to the Table View in the Simulate screen:
 
-1. By clicking on the Switch View icon next to the simulation bar at the top 
+1. By clicking on the table icon at the top on the Simulate tab canvas. 
 
-2. By clicking on the Table option in the Visualization section in the Navigation Panel. 
+2. By clicking on the Table option in the Visualization section under the Navigation Panel. 
 
-<img alt="Accessing Table View" src={useBaseUrl('/doc-images//tvv-1.png')} />
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Accessing Table View" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-1.png')} />
+  </Zoom>
+</div> <br />
 
-On collapsing the Navigation Panel, you will see the following screen. There is a Search option 
-on the left, Settings on the top right and the Table occupies the 
-rest of the screen.
+Here's the Table View on full screen mode after collapsing the Navigation Panel
 
-<img alt="Table View" src={useBaseUrl('/doc-images//tvv-5.png')} />
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Accessing Table View" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-2.png')} />
+  </Zoom>
+</div>
 
-## 2. Search option
+## Features of Table View
 
-You can type the node you want to search and select the same from the dropdown.
+### 1. Search option
 
-<img alt="Search" src={useBaseUrl('/doc-images//tvv-6.png')} />
+Type the node you want to search and select the same from the dropdown.
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Search" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-6.png')} />
+  </Zoom>
+</div> <br />
 
 The selected node and its descendants will be displayed.
 
-<img alt="Search" src={useBaseUrl('/doc-images//tvv-7.png')} />
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Search" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-7.png')} />
+  </Zoom>
+</div>
 
-## 3. Summarized View
+### 2. Summarized View
 
-By default, the table is shown in the summarized mode. 
+By default, the table is shown in the summarized mode.
 
-- When there are no simulations, aggregated baseline 
-and comparison series will be displayed.
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Table View" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-5.png')} />
+  </Zoom>
+</div>
 
-<img alt="Summarized View" src={useBaseUrl('/doc-images//tvv-9.png')} />
+- When there are no simulations, aggregated baseline and comparison series will be displayed.
 
-- When there are simulations, original and simulated baseline, comparison values and 
-simulation impact will be displayed.
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Summarized View" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-9.png')} />
+  </Zoom>
+</div> <br />
 
-<img alt="Settings" src={useBaseUrl('/doc-images//tvv-10.png')} />
+- When there are simulations, original and simulated baseline, comparison values and simulation impact will be displayed.
 
-## 4. Period View
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-10.png')} />
+  </Zoom>
+</div>
+
+### 3. Period View
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-12.png')} />
+  </Zoom>
+</div> <br />
 
 On selecting the period view from the settings, you'll be able to view the table by periods.
 
-<img alt="Period View" src={useBaseUrl('/doc-images//tvv-4.png')} />
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Period View" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-4.png')} />
+  </Zoom>
+</div>
 
-## 5. Customize Columns
+### 4. Customize Columns
 
+<div style={{textAlign: 'justify'}}>
 By clicking on settings, you can see the following screen.
+On the left, you can search for columns, select or unselect them based on whether you want it to be displayed.
+On the right, you can reorder columns by drag and drop.
+</div> <br />
 
-<img alt="Settings" src={useBaseUrl('/doc-images//tvv-11.png')} width = "50%" height = "50%" />
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-11.png')} width={450} height={300} />
+  </Zoom>
+</div>
 
-In the left, you can search for columns, select or unselect them based on whether you want it to be displayed.
+### 5. Perform simulation
 
-In the right, you can reorder columns by dragging and dropping the fields.
+<div style={{textAlign: 'justify'}}>
+Hover over the trend line on a node to perform simulation. The simulation results for each node with percentage change are available
+on top of the canvas.  
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-19.png')} />
+  </Zoom>
+</div> <br />
+
+Click on Edit icon to manually change the values.
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-20.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+Use the bin icon to remove a simulation and remove all the simulation at once, click on Reset all option.
+</div>
+
+### 6. Navigation Panel
+
+<div style={{textAlign: 'justify'}}>
+Below is the Table View with the Navigation Panel. 
+The <Link to={useBaseUrl('docs/simulation/sim_features#navigation-panel')}> Navigation Panel </Link>features for the Tree View applies here.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-18.png')} />
+  </Zoom>
+</div>
+
+### 6. Node Details
+
+Click on any node title to view its node details.
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-16.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-17.png')} />
+  </Zoom>
+</div>
+
+### 8. Go to Plan
+
+<div style={{textAlign: 'justify'}}>
+The plan icon takes you to the recent access plan and displays that particular node, its siblings and children. This feature is same 
+ <Link to={useBaseUrl('docs/simulation/sim_features#5-go-to-plan')}> Go to Plan </Link>with Tree View.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-14.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-15.png')} width ={600} height={460} />
+  </Zoom>
+</div> 
+
+### 9. Add Comments
+
+<div style={{textAlign: 'justify'}}>
+Click on the comment icon to open the Comments section. Comments can be added/edited/deleted to the model at node granularity.
+This feature is same  <Link to={useBaseUrl('docs/simulation/sim_features#6-add-comments')}> Add Commets </Link>with Tree View.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+<Zoom>
+<img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-13.png')} />
+  </Zoom>
+</div>
 
 
 
