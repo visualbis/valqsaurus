@@ -35,7 +35,7 @@ Here's the Variance Analysis screen
   </Zoom>
 </ div> <br />
 
-Now let's take a look at the contents of Variance Analysis and learn how to build a Variance Analysis report
+Now let's take a look at the contents of Variance Analysis and learn how to build a Variance Analysis report.
 
 ## Features of Variance Analysis
 
@@ -65,21 +65,22 @@ The other panel shows the Variance Analysis report prepared based on the model t
 
 |   	| Click on any option to know more  	|
 |---	|---	|
-| 1  	| [Choose Base Series](#1-choose-base-series)  	|
-| 2  	| [Choose Scenario as Base Series](#2--choose-scenario-as-base-series) |
-| 3  	| [Choose a time frame to perform analysis](#3-choose-a-time-frame-to-perform-analysis) |
-| 4  	| [Set Base period and Compared period to calculate variances](#4-set-base-period-and-compared-period-to-calculate-variances ) 	|
-| 5  	| [Show Absolute & % Variance](#5-show-absolute---variance) |
-| 6  	| [Show Hidden Nodes](#6-show-hidden-nodes)	|
-| 7  	| [Show/ Hide Unit column](#7-show-hide-unit-column)  	|
-| 8  	| [Apply Filter to report](#8-apply-filter-to-report)  	|
+| 1  	| [Set Base Series](#1-set-base-series)  	|
+| 2  	| [Choose Compared Series](#2--choose-compared-series) |
+| 3  	| [Set period for variance analysis at period level](#3-select-period-for-variance-analysis-at-period-level) |
+| 4  	| [Choose Time Range for variance analysis](#4-choose-time-range-for-variance-analysis) 	|
+| 5  	| [Absolute Variance and % Variance](#5-absolute-variance-and--variance) |
+| 6  	| [Show/Hide Unit column](#6-show-hide-unit-column)	|
+| 7  	| [Download as Excel](#7-download-as-excel)  	|
+| 8     | [Show Hidden Nodes](#8-show-hidden-nodes)     |
 | 9  	| [Search for a node](#9-search-for-a-node)  	|
-| 10  	| [Hide the features panel](#10-hide-the-features-panel)  	|
+| 10  	| [Apply Filter to report](#8-apply-filter-to-report)  	|
+| 11  	| [Hide the features panel](#10-hide-the-features-panel)  	|
 </div> <br />
 
 ## 1. Set Base Series
 
-Base Series can be selected either from the available Data Series or Scenarios created under the Simulate tab 
+Base Series can be selected either from the available Data Series or Scenarios created under the Simulate tab.
 
 Here, a Data Series - '2020 Actuals' is set as Base Series 
 
@@ -93,7 +94,7 @@ Here, a Data Series - '2020 Actuals' is set as Base Series
 Instead, a Scenario that you have created in the Simulate tab can be set as Base Series.
 </div> <br />
 
- Here, a Scenario - 'Scenario 1' is set as Base Series.
+ Here, a Scenario - 'Scenario 1' is set as Base Series
 
 
 <div style={{textAlign: 'center'}}>
@@ -106,7 +107,7 @@ Instead, a Scenario that you have created in the Simulate tab can be set as Base
 
 One or more Data Series can be choosen as Comaprison Series as shown below. 
 
-Here, Data Series - '2020 Actuals' and '2020 Forecast' are choosen as Compared Series.
+Here, Data Series - '2020 Actuals' and '2020 Forecast' are choosen as Compared Series
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -116,7 +117,7 @@ Here, Data Series - '2020 Actuals' and '2020 Forecast' are choosen as Compared S
 
 ## 3. Select period for Variance Analysis at period level
 
-The period for which you would like to perform Variance Analysis can be set as described below. 
+The period for which you would like to perform Variance Analysis can be set as described below
 
 ### Same Period for Base Series and Compared Series
 
@@ -196,7 +197,7 @@ Check the box to add the Custom selection to the report.
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-The Custom time range - Jan-Apr has been set as shown in the above image. The canvas displays the Variance Analysis for the Custom time range as below.
+The Custom time range - Jan-Apr has been set as shown in the above image. The canvas displays the Variance Analysis for the Custom time range as below
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -227,7 +228,7 @@ ValQ adds the variances to all the nodes on the model and for the selected time 
 <div style={{textAlign: 'justify'}}>
 
 The unit column is seen by default on Variance Anaylsis as below. To hide the column, uncheck unit to disable the feature.
-</div> <br />
+</div>
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -237,16 +238,15 @@ The unit column is seen by default on Variance Anaylsis as below. To hide the co
 
 ## 7. Download as Excel
 
-<div style={{textAlign: 'justify'}}>
-Download as Excel is used to download the Variance Analysis report as an excel file to your system. This feature is available only on
-Power BI Service.
-</ div> <br />
+Download as Excel is used to download the Variance Analysis report as an excel file to your system. 
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/analyze/analyze11.png')} />
   </Zoom>
-</div>
+</div> <br />
+
+>**Note** <br /> Download as Excel feature is available *only* on Power BI Service.
 
 ## 8. Show Hidden Nodes
 
@@ -254,7 +254,7 @@ Power BI Service.
 Enable Show hidden nodes option to display the nodes that were hidden while building the model under the Model tab. 
 </div> <br />
 
-Here, the node 'East' and its children are hidden.  
+Here, the node 'East' and its children are hidden
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -272,7 +272,7 @@ Check the Show hidden node option to display the 'East' node and its children. N
 
 > ** Note** <br /> On enabling Show hidden nodes option, the nodes stays hidden on the other tabs.
 
-## 8. Search for a node
+## 9. Search for a node
 
 <div style={{textAlign: 'justify'}}>
 
@@ -287,7 +287,7 @@ has a large number of nodes.
   </Zoom>
 </div>
 
-## 9. Apply Filter to report
+## 10. Apply Filter to report
 
 <div style={{textAlign: 'justify'}}>
 
@@ -327,7 +327,7 @@ The Value Bar displays the filter that has been applied.
   </Zoom>
 </div>
 
-To remove the filter simply click on the 'x' next to the filter.
+To remove the filter simply click on the 'X' next to the filter.
 
 Here's the same filter with only negative variances. The report below shows the bottom 5 performers.
 
@@ -337,10 +337,11 @@ Here's the same filter with only negative variances. The report below shows the 
   </Zoom>
 </div>
 
-## 10. Hide the features panel
+## 11. Hide the features panel
 
 <div style={{textAlign: 'justify'}}>
-Click on '^' to hide the features panel of the Variance Analysis screen. Hide the panel to take a clear look at the report and use it as presentation mode.
+Click on '^' to hide the features panel on the Variance Analysis screen. Hide the panel to take a clear look at the report and
+you can use this view as presentation mode.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
