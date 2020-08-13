@@ -8,8 +8,9 @@ import "react-medium-image-zoom/dist/styles.css";
 
 ## Scenario 1: Top-down and Bottom-up Allocation
 
-Plan before allocation:
+Perform allocation changes to all the connected nodes (parent and children) of East
 
+Plan before allocation:
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba1.png')} />
@@ -24,7 +25,7 @@ Plan before allocation:
   </Zoom>
 </div> <br />
 
-2.  Enter'+10%' at the end of the value on the Value bar and select on Equals option.
+2.  Enter '+10%' at the end of the value on the Value bar and select on Equals option.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -51,7 +52,9 @@ The cells which were impacted as a result of the allocation operation turns yell
   </Zoom>
 </div> <br />
 
-## Scenario 2: Driver-based allocation
+## Scenario 2: Driver-based Planning
+
+Labour re-distributed based on weights from Total Hours Worked
 
 Labour node before allocation:
 
@@ -82,7 +85,7 @@ Labour node before allocation:
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-3.  The Spread by Weights pop-up opens as shown below. Now select Material as Choose Node.
+3.  The Spread by Weights pop-up opens as shown below. Now select Total Hours Worked as Choose Node.
 Then choose Change action as Overwrite Values option and click Apply.
 </div> <br />
 
@@ -102,7 +105,9 @@ Then choose Change action as Overwrite Values option and click Apply.
   </Zoom>
 </div> <br />
 
-## Scenario 3: Spread the total value to part of a year
+## Scenario 3: Spread the node's total value to part of a year
+
+Target change for John Smith updated from september till december
 
 John Smith node before making changes:
 
@@ -149,7 +154,9 @@ Then select Total, Sep-Dec period values and click on Release option.
   </Zoom>
 </div> <br />
 
-## Scenario 4: Update a node's period values to a constant figure
+## Scenario 4: Change the node's period values to a constant figure
+
+Get the same period value for Material from April
 
 Plan before changes:
 
@@ -180,7 +187,7 @@ Plan before changes:
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-3. Select the “Copy To” icon to copy the value from April across the periods till December.
+3. Select the Copy-to icon to copy the value from April across the periods till December.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -199,7 +206,9 @@ Plan before changes:
   </Zoom>
 </div> <br />
 
-## Scenario 5: Increase a node's period values based on a monthly trend
+## Scenario 5: Update the node's period values based on a monthly trend
+
+Overwrite Goods by 2% increase using Trend
 
 Goods node before applying Trend:
 
@@ -246,7 +255,9 @@ Now choose Change action as Overwrite Values option and click Apply.
   </Zoom>
 </div> <br />
 
-## Scenario 6: Change the period values of a node based on a combination of trends <br />
+## Scenario 6: Update the node's period values based on a combination of trends <br />
+
+Update Rent by 5% increase for Jan, 10% increase for April and return the same for intermediate periods
 
 <div style={{textAlign: 'justify'}}>
 1.  Select the Rent node and click on the Hold option.
@@ -267,7 +278,7 @@ Now choose Change action as Overwrite Values option and click Apply.
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-4. Copy it across the cells using Copt-To option.
+4. Copy it across the cells using Copt-to option.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -291,7 +302,7 @@ Now choose Change action as Overwrite Values option and click Apply.
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-7.  Copy it across the cells using Copt-To option. The screen looks similar to the Figure as shown below.
+7.  Copy it across the cells using Copy-to option. The screen looks similar to the Figure as shown below.
  The cells which were impacted turns yellow.
 </div> <br />
 
