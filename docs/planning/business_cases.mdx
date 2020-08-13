@@ -6,11 +6,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file b
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-## Scenario 1: To allocate the parent node’s changes to some of the immediate child nodes
+## Scenario 1: Top-down and Bottom-up Allocation
 
-<div style={{textAlign: 'justify'}}>
-1.  For our example, expand East node. Now select the node 'Industrials' and lock the node (see Figure below).
-</ div> <br />
+Plan before allocation:
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -18,11 +16,7 @@ import "react-medium-image-zoom/dist/styles.css";
   </Zoom>
 </div> <br />
 
-<div style={{textAlign: 'justify'}}>
-2.  Now select the Total Cell for node 'East' as shown in the below Figure. You can update the 
-number by double-clicking the cell and entering the number directly in the value bar. Or you 
-can enter the number in the popup.
-</div> <br />
+1.  Click the total cell of East node to display the total value on the Value bar.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -30,10 +24,7 @@ can enter the number in the popup.
   </Zoom>
 </div> <br />
 
-<div style={{textAlign: 'justify'}}>
-3.  Now double click the total cell and type '+10%' at the end of the
-number and click on 'Weight' as shown in the below Figure.
-</div> <br />
+2.  Enter'+10%' at the end of the value on the Value bar and select on Equals option.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -41,7 +32,7 @@ number and click on 'Weight' as shown in the below Figure.
   </Zoom>
 </div> <br />
 
-4.  You will be able to view the 'Spread by Weights' screen.
+3.  You will see the below pop-up. Choose Change action as Append to Values and select Apply.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -50,10 +41,8 @@ number and click on 'Weight' as shown in the below Figure.
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-5.  As a result of Scenario 1, you will be able to view the
-Input Editor screen updated with the configured values (see Figure
-below). The cells which were impacted because of the allocation
-operations turns yellow.
+4.  Below is the plan screen after allocation. 
+The cells which were impacted as a result of the allocation operation turns yellow.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -62,106 +51,28 @@ operations turns yellow.
   </Zoom>
 </div> <br />
 
-## Scenario 2: To allocate a node’s increase/decrease in aggregate value to some of the periods
+## Scenario 2: Driver-based allocation
 
-<div style={{textAlign: 'justify'}}>
-1. For our example, select the Node 'Cost of Sales' for April month (see Figure below).
-</div> <br />
+Labour node before allocation:
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images//pl16.png')} />
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba14.png')} />
   </Zoom>
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-2. Increase the cell value by 10% and click Enter (see Figure below).
+1. Select the Labour node in the Total column.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images//pl17.png')} />
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba15.png')} />
   </Zoom>
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-3. Now click the “Copy To” icon to copy the value from April across the periods till December (see Figure below)
-</div> <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images//pl18.png')} />
-  </Zoom>
-</div> <br />
-
-<div style={{textAlign: 'justify'}}>
-4. After clicking on the Copy to icon option, the Input Editor screen looks similar to the Figure shown below.
-</div> <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images//pl19.png')} />
-  </Zoom>
-</div> <br />
-
-## Scenario 3: To increase the period values of a node based on a monthly trend
-
-<div style={{textAlign: 'justify'}}>
-1.  For our example, select the Node 'Other Costs' for Jan month (see Figure below).
-</div> <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images//pl22.png')} />
-  </Zoom>
-</div> <br />
-
-<div style={{textAlign: 'justify'}}>
-2.  Now click the 'Trend' icon (see Figure below)
-</div> <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images//pl23.png')} />
-  </Zoom>
-</div> <br />
-
-<div style={{textAlign: 'justify'}}>
-3.  Now the Trend pop up opens. For our example, select the 'By Percentage' option
-and enter value 2 in the Increase Trend section. Now select the Overwrite Values 
-option and click 'Apply' (see Figure below).
-</div> <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images//pl24.png')} />
-  </Zoom>
-</div> <br />
-
-<div style={{textAlign: 'justify'}}>
-4.  Based on the above configuration, you will be able to view the Input Editor screen as shown below.
-</div> <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images//pl25.png')} />
-  </Zoom>
-</div> <br />
-
-## Scenario 4: To perform driver-based allocation
-
-<div style={{textAlign: 'justify'}}>
-1.  For our example, select the Node 'Support Costs' in the Total column (see Figure below).
-</div> <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images//pl26.png')} />
-  </Zoom>
-</div> <br />
-
-<div style={{textAlign: 'justify'}}>
-2.  Now click the 'Weight' icon (see Figure below)
+2.  Select the Weight icon.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -171,39 +82,182 @@ option and click 'Apply' (see Figure below).
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-3.  The Spread by Weight pop up opens. For our example, select the Node as 'Cost of Sales'.
-Select the 'Overwrite Values' option and click 'Apply' (see Figure below).
+3.  The Spread by Weights pop-up opens as shown below. Now select Material as Choose Node.
+Then choose Change action as Overwrite Values option and click Apply.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images//pl28.png')} />
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba16.png')} />
   </Zoom>
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-4.  As a result of Scenario 4, you will be able to view the Input Editor screen loaded with
-the redistributed values (see Figure below).
+4.  Here's Labour node after making Driver-based allocation. The cells which were impacted turns yellow.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images//pl29.png')} />
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba17.png')} />
   </Zoom>
 </div> <br />
 
-## Scenario 5: To increase the period values of a node according to a combination of trends <br />
+## Scenario 3: Spread the total value to part of a year
 
-<div style={{textAlign: 'justify'}}>
-1.  Select the Node 'Rent' and lock the entire Row. <br />
+John Smith node before making changes:
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba18.png')} />
+  </Zoom>
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-2.  Release the lock for the cells from Jan to Mar. <br />
+1. Select the John Smith node and click on Hold option. The entire node is now locked. 
+Then select Total, Sep-Dec period values and click on Release option. 
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba19.png')} />
+  </Zoom>
+</div> <br />
+
+2. Select the total value for John Smith and click on Weight option.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba20.png')} />
+  </Zoom>
+</div> <br />
+
+3. Enter the new value for John Smith and choose Overwrite Values option.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba21.png')} />
+  </Zoom>
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-3.  Now select the cell 'Jan'. Increase the value by 5% (see Figure below). <br />
+4. Select the John Smith node and click on Release option. The updated node is now unlocked. The cells which were impacted turns yellow.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba22.png')} />
+  </Zoom>
+</div> <br />
+
+## Scenario 4: Update a node's period values to a constant figure
+
+Plan before changes:
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba6.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+1. Select the April month cell for the Material node.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba7.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+2. Increase the cell value by 50,000 by entering '+50000' to the period value.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba8.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+3. Select the “Copy To” icon to copy the value from April across the periods till December.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images//pl18.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+4. The result is seen as the screen below. The cells which were impacted turns yellow.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba9.png')} />
+  </Zoom>
+</div> <br />
+
+## Scenario 5: Increase a node's period values based on a monthly trend
+
+Goods node before applying Trend:
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba13.png')} />
+  </Zoom>
+</div> <br />
+
+1.  Select the Goods node for Jan month.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba10.png')} />
+  </Zoom>
+</div> <br />
+
+2.  Click the Trend icon.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images//pl23.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+3.  The Trend pop-up is seen as below. Choose the By Percentage option and enter the value 2 in the Increase Trend box. 
+Now choose Change action as Overwrite Values option and click Apply.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba11.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+4.  Goods node after applying Trend is seen as below. The cells which were impacted turns yellow.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/ba12.png')} />
+  </Zoom>
+</div> <br />
+
+## Scenario 6: Change the period values of a node based on a combination of trends <br />
+
+<div style={{textAlign: 'justify'}}>
+1.  Select the Rent node and click on the Hold option.
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+2.  Release the lock for the cells Jan to Mar of Rent node.
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+3.  Now select the cell 'Jan'. Increase the value by 5%.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -213,7 +267,7 @@ the redistributed values (see Figure below).
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-4.  Now copy it across the cells. The Input Editor looks similar to the Figure as shown below.
+4. Copy it across the cells using Copt-To option.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -223,11 +277,11 @@ the redistributed values (see Figure below).
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-5.  Now release the lock for the complete Row of the Node Rent.
+5.  Now release the lock for Rent node.
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-6.  Select the cell 'Apr'. Increase the value by 10% (see Figure below).
+6.  Select the cell 'Apr'. Increase the value by 10%.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -237,7 +291,8 @@ the redistributed values (see Figure below).
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-7.  Now copy it across the cells. The Input Editor looks similar to the Figure as shown below.
+7.  Copy it across the cells using Copt-To option. The screen looks similar to the Figure as shown below.
+ The cells which were impacted turns yellow.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
