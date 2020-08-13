@@ -79,7 +79,8 @@ module.exports = {
             {
                 type: "category",
                 label: "Plan",
-                items: ["how_to_videos/plan/data-series"]
+                items: ["how_to_videos/plan/data-series",
+            "how_to_videos/plan/planning-toolbar"]
 
             },
             {
