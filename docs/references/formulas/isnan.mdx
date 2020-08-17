@@ -1,0 +1,26 @@
+---
+id: isnan
+title: ISNAN
+---
+The ISNAN function returns a default value if the value in the node is an error.
+
+## Syntax
+ISNAN (value1,value2)
+
+## Arguments
+value1 – The node that is to be checked for error values
+
+value2 – The value which is to replace the error values
+
+
+## Example
+Consider the following nodes: Cost per unit has divide by zero error values and it has to be updated to 0.
+
+| Period        | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Total Cost    | 100 | 150 | 200 | 100 | 300 | 250 | 300 | 0   | 225 | 300 | 0   | 300 |
+| No of units   | 10  | 15  | 10  | 10  | 15  | 25  | 15  | 0   | 15  | 15  | 0   | 15  |
+| Cost per unit | 10  | 10  | 20  | 10  | 20  | 10  | 20  | #   | 15  | 20  | #   | 20  |
+
+This can be achieved by using the formula
+ISNAN(Cost per unit,0)

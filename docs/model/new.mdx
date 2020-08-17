@@ -1,288 +1,220 @@
 ---
 id: new
-title: Creating a new ValQ Model
-sidebar_label: Creating a new ValQ Model
+title: New
+sidebar_label: New
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
-The Model tab has two panels in which the left panel represents the
-Advanced Editor and the right panel denotes the canvas which represents
-the Value Driver Tree visuals (see Figure below).
 
-<img alt="Left Panel and Right Canvas" src={useBaseUrl('/doc-images/catg.png')} />
+<div style={{textAlign: 'justify'}}>
+The ValQ model can be created in Power BI using any of the below-listed options by clicking on<img alt="New Tab" src={useBaseUrl('/doc-images/model/new icon.png')} width={58} height={35} /> the Model tab.
+</ div> <br />
 
-The Model tab has five different Tab options (see Figure below).
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new1.png')} />
+  </Zoom>
+</div> <br />
 
-<img alt="Tab option for the Model tab" src={useBaseUrl('/doc-images/tabs.png')} />
+<div style={{textAlign: 'justify'}} className="table-center">
 
-The Tab options for the Model tab has been listed below:
+|   | Model                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|---|----------------------------------|---------------------------------------------------------------------------------------|
+| 1 | [Open a Sample Model](#1-open-a-sample-model)           | To view a sample ValQ model  |
+| 2 | [Create a Simple Model](#2-create-a-simple-model)       | ValQ builds a simple model for you from the data you import  |
+| 3 | [Create an Advanced Model](#3-create-an-advanced-model) | You get to build a ValQ model from scratch from the data you import  |
+| 4 | [Import an Advanced Model](#4-import-an-advanced-model) | Advanced users can import an already built existing model  |
 
-1.  New Tab – To configure the design for the Value Driver Tree using
-    the options such as Sample Demo Tree, Create a Simple Dynamic Tree,
-    Import an Advanced Tree and Create a New value driver tree from the
-    scratch.
-2.  Node Tab – To configure the settings of Nodes and Child Nodes for
-    the Value Driver Tree
-3.  Data Series Tab – To configure the data settings such as Data Series
-    Manager, Time Aggregation Labels and Data Sorting.
-4.  Settings Tab – To configure the settings parameters such as
-    Navigational Panel, Nodes, Canvas, Number Formatting, Conditional
-    Formatting and Color Theme.
-5.  General Tab – To configure the General settings such as License
-    Registration, Export and Writeback functions.
+</div> <br />
 
-In the next sections, you will be able to understand on how to design a
-value driver tree using these five different Tab categories in detail.
+Before starting to build a ValQ model, the first time users can click on this icon to learn more about ValQ and watch tutorials.
 
-As an initial step, follow the below steps to configure the design for
-the value driver tree in Power BI.
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new21.png')}/>
+  </Zoom>
+</div>
 
-1.  Navigate to the “Visualizations Panel” and “Fields” Panel in Power
-    BI (see Figure below).
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new22.png')}/>
+  </Zoom>
+</div>
 
-<img alt="Power BI with Visualizations and Fields Panel" src={useBaseUrl('/doc-images/11.1.png')} />
+## 1. Open a Sample Model
 
-2.  In the Visualizations Panel, select the valQ Custom Visual and
-    extend the screen to its full view as shown in the Figure below.
+<div style={{textAlign: 'justify'}}>
+By clicking the Open a Sample Model option, you will be able to view the list of
+available samples.
+</ div> <br />
 
-<img alt="valQ Screen - Measures to be assigned" src={useBaseUrl('/doc-images/eleven.png')} />
-
-3.  To create a value driver tree (valQ) in Power BI, it is mandatory to
-    assign a Data Source to the value driver tree. For our example, a
-    data source (sample data shown below) has been assigned to the value
-    driver tree.
-
-<img alt="Sample Data" src={useBaseUrl('/doc-images/11.2.png')} />
-
-4.  Now at least one Measure Value has to be assigned to the property
-    “Values” in Visualizations panel. In our example, we have assigned
-    the Measure Value “∑ Actual” to the property “Values” by clicking
-    the check box option against the Measure Value “∑ Actual” (see
-    Figure below).
-
-<img alt="Assigning the Measure Value" src={useBaseUrl('/doc-images/11.3.png')} />
-
-## New Tab
-
-The Value Driver Tree can be created in Power BI using the below listed
-options by clicking the New Tab in the left panel (see Figure below)
-
-  - Open a Sample Model
-  - Create a Simple Model
-  - Create an Advanced Model
-  - Import an Advanced Model
-
-<img alt="New Tab" src={useBaseUrl('/doc-images/12.1.png')} />
-
-## Open a Sample Model
-
-Click the “New” Tab in the left panel. Now navigate to the Open a Sample
-Model option. You will be able to explore a Demo Tree. By clicking the
-Open a Sample Model option, you will be able to view the Loading sample
-screen as shown below and also you can search for the specific sample to
-get loaded (see Figure below).
-
-<img alt="Loading screen" src={useBaseUrl('/doc-images/12.2a.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new2.png')} />
+  </Zoom>
+</ div> <br />
 
 For our example, the sample “Mining Industry” has been selected.
 
-<img alt="Selection of sample model" src={useBaseUrl('/doc-images/12.2.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new3.png')} />
+  </Zoom>
+</ div> <br />
 
-Based on the selection, you will be able to view the valQ screen as
-shown below. As part of the latest Release, each Node in the Advance
-Editor panel will be having an Icon which represents the Node Type.
-
-<img alt="valQ screen with Nodes settings" src={useBaseUrl('/doc-images/12.3.png')} />
-
-The Nodes hierarchy will be displayed in the Advance Editor option as
-shown in the above Figure. Here you will be able to add number of child
-nodes from the parent node “Net Profit”. By clicking the Parent Node,
-you will be able to add number of child nodes as shown below. Also you
-will be able to expand, collapse and delete the entire Nodes Hierarchy
-using the options “Expand”, “Collapse” and “Delete” (see Figure above).
-
-As part of the New Release, the "Lock" and "Unlock" options have been
-included in the Advance Editor for the Node Tab (see Figure below). By
-clicking the lock option, you will not be able to edit the configuration
-done for the Node (see Figure below).
-
-<img alt="Lock option in Node Tab" src={useBaseUrl('/doc-images/lck1.png')} />
-
-By clicking the Unlock option, you will be able to edit the
-configuration done for the Node (see Figure below).
-
-<img alt="Unlock option in Node Tab" src={useBaseUrl('/doc-images/lck2.png')} />
-
-By providing the Node Name in the Search option on the right canvas, you
-will be able to search for the particular Node when there are more
-number of nodes appearing on the right canvas.
-
-<img alt="Node Search option in right canvas" src={useBaseUrl('/doc-images/12.4.png')} />
-
-For our example, the Node name is given as “Operating Hours” and based
-on the search you will be able to view the Node as shown in the Figure
-below.
-
-<img alt="Display of the Searched Node" src={useBaseUrl('/doc-images/12.5.png')} />
-
-<img alt="Nodes Structure with Add option" src={useBaseUrl('/doc-images/12.6.png')} />
-
-In the above Figure, you can observe that by clicking the “+” button, a
-Node “Copy of Net Profit” has been added. Similarly you can edit the
-Parent Node details by clicking the Edit button as shown below. For our
-example, the Edit button has been clicked.
-
-<img alt="Nodes Structure with Edit option" src={useBaseUrl('/doc-images/12.7.png')} />
+The Sample Mining Industry Model has been successfully imported.
 
 
-## Create a Simple Model
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new4.png')} />
+  </Zoom>
+</ div>
 
-Using this option, it is very simple for the beginners to create a tree
-automatically based on their own data source. By clicking the Create a
-Simple Model option, you will be able to view the valQ screen as shown
-in the below Figure.
+## 2. Create a Simple Model
 
-<img alt="Simple Dynamic Tree created with one single
-Measure" src={useBaseUrl('/doc-images/12.26.png')} />
 
-By default, the Measure “Actual” has been selected as a Mandatory
-criteria for getting the Tree widget. Now you can select the other
-Measures and Dimensions based on your choice as indicated in the Figure
-below.
+To build a Simple Model first, you need to import data into Power BI. This step is followed by creating a
+simple model on ValQ.
 
-<img alt="Simple Dynamic Tree created with Measures and
-Dimensions" src={useBaseUrl('/doc-images/12.27.png')} />
+The steps have been already covered under <Link to={useBaseUrl('docs/intro/model')}>Using ValQ - An Example</Link> section. 
+Or you can refer <a href="https://valq.com/wp-content/uploads/valq-for-microsoft-power-bi-beginners-tutorial.pdf" target="_blank">this</a> pdf for step by step instructions on how to get started to build a Simple Model. <br />
 
-From the above Figure, you can observe that the other Measure “Forecast”
-is assigned to “Value” and the Dimensions namely Account and Product has
-been assigned to the “tab” and the Period\_MON is assigned to “Time
-period”. Now based the assigned data source, the Tree is being
-configured. Hence now you can create a tree directly from your data. For
-step by step instructions on how to get started to build a Dynamic
-Model, please follow this link:
-[https://ValQ.com/wp-content/uploads/valq-for-microsoft-power-bi-beginners-tutorial.pdf](https://ValQ.com/wp-content/uploads/valq-for-microsoft-power-bi-beginners-tutorial.pdf).
 
-**Note**: For Dynamic Model, you will be able to view the Root Node and
-first three Nodes in the next level hierarchy under the Sub Models
-section of the Navigation Panel (see Figure below).
+A Simple model looks like this.
 
-<img alt="Sub Models Section showing the Root Node and first three Nodes in the
-next level hierarchy" src={useBaseUrl('/doc-images/dsm.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new10.png')} />
+  </Zoom>
+</ div>
 
-#### Read only Dynamic Tree in Editor
+#### Edit a Simple Model
 
-When Dynamic Model is selected, you will be able to only view the value
-driver tree with Parent and Children Nodes and you cannot undergo any
-configuration part on it. But you can generate a copy of the Parent Node
-and proceed with configuration part based on your choice (see Figure
+<div style={{textAlign: 'justify'}}>
+When a node is selected, you will be able to only view the model with Parent
+and Children nodes and you cannot perform any
+configuration on it. But you can generate a copy of the Parent node
+and proceed with Configuration based on your choice (see Figure
 below).
+</ div> <br />
 
-<img alt="Read Only Dynamic Tree" src={useBaseUrl('/doc-images/12.28.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new11.png')} />
+  </Zoom>
+</ div>
 
-#### Dynamic Scaling on Dynamic Tree
+#### Dynamic Scaling
 
-Based on your data source, the value driver tree will get generated and
-the Number Scaling for all the Nodes will be updated appropriately based
+<div style={{textAlign: 'justify'}}>
+Based on your data source, the model will get created and
+the Value Display (scaling) for all the nodes will be updated appropriately based
 on the data source (see Figure below). For our example, the Number
-Scaling is “0.0b”.
+Scaling is “0m”.
+</ div> <br />
 
-<img alt="Dynamic Scaling on Dynamic Tree" src={useBaseUrl('/doc-images/12.29.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new12.png')} />
+  </Zoom>
+</ div>
 
-As part of the New Release, you have the option to convert the Dynamic
+#### Sum of periods
+
+The time aggregation of the Parent node is always set to Sum of Periods of Child nodes on a Simple Model.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new17.png')} />
+  </Zoom>
+</ div>
+
+#### Convert to Advanced Model
+
+<div style={{textAlign: 'justify'}}>
+On creating a Simple Model, you have an option to convert the Dynamic
 Model to an Advanced Model (see Figure below).
+</ div> <br />
 
-<img alt="Option for converting Dynamic Model to an Advanced
-Model" src={useBaseUrl('/doc-images/conv1.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new13.png')} />
+  </Zoom>
+</ div> <br />
 
-When the option is clicked, now you will be prompted for the Message
+<div style={{textAlign: 'justify'}}>
+When you click the magic wand icon, you will be prompted for the Message
 window as shown below.
+</ div> <br />
 
-<img alt="Confirmation Message" src={useBaseUrl('/doc-images/conv1a.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new14.png')} />
+  </Zoom>
+</ div> <br />
 
+<div style={{textAlign: 'justify'}}>
 After clicking Yes, you will be able to edit the configuration for all
-the level of Nodes similar to the Advance Model (see Figure below).
+the levels of Nodes similar to the Advance Model (see Figure below).
+</ div> <br />
 
-<img alt="Dynamic Model converted to an Advanced Model" src={useBaseUrl('/doc-images/conv2.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new15.png')} />
+  </Zoom>
+</ div> <br />
 
-## Create an Advanced Model
+## 3. Create an Advanced Model
 
-This option is used to create a Tree in valQ manually Node by Node based
-on your choice. By clicking the Create New from Scratch option, you will
-be able to view the valQ screen as shown in the below Figure.
+<div style={{textAlign: 'justify'}}>
+This option is used to create a model in ValQ from scratch manually.
+By clicking the Create  an Advanced Model option, you will
+be able to view the ValQ screen as shown in the below Figure.
+</ div> <br />
 
-<img alt="Create New from Scratch" src={useBaseUrl('/doc-images/12.38.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new18.png')} />
+  </Zoom>
+</ div> <br />
 
-For our example we have created a Parent Node and two child Nodes (see
-Figure below).
+<div style={{textAlign: 'justify'}}>
+For our example, the Parent node and two Child nodes have been added by clicking the “+” button.
+The node levels are displayed in the Advanced Editor option as
+shown in the below Figure.
+</ div> <br />
 
-<img alt="Tree with one Parent Node and two Child Nodes" src={useBaseUrl('/doc-images/12.39.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new19.png')} />
+  </Zoom>
+</ div> <br />
 
-Now with the help of `Section: Open a Sample Model <OSM>`, you will be
-able to configure the General, Configuration, Display, Simulation,
-Business Definition and Conditional Formatting settings for the Tree
-(Please refer <Link to={useBaseUrl('/docs/general/getting-started')}> `Section: Open a Sample Model <OSM>` </Link>  for more details).
+Now you can go ahead and configure the model as per your needs using the Model tab options.
 
-## Import an Advanced Model
+## 4. Import an Advanced Model
 
-Using the “Import an Advanced Model” option, you will be able to import
-data through two different options as shown below.
+#### Import from an Export File
 
-<img alt="valQ – Import from Excel" src={useBaseUrl('/doc-images/12.30.png')} />
-
-### Import from Excel
-
-Using the option “Import from Excel”, you will be able to paste the JSON
-File Data Format text into the Text Editor as shown in the below Figure.
-
-<img alt="Configuration Data from Excel Format" src={useBaseUrl('/doc-images/12.31.png')} />
-
-Now based on the above configuration, you will be able to view the Tree
-formed with Nodes in the valQ screen.
-
-<img alt="valQ screen derived from Excel Data" src={useBaseUrl('/doc-images/12.32.png')} />
-
-As part of the New Release, you will be able to retain the existing
-Navigation Panel configuration and apply the same for the next Tree
-configuration. For our example, the Figure below shows the Navigation
-panel for the first Tree configuration.
-
-<img alt="Navigation Panel for the first tree configuration" src={useBaseUrl('/doc-images/12.33.png')} />
-
-Now navigate to the Import an Advanced Model option in New Tab and paste
-the JSON File Data Format text for the second tree into the Text Editor
-as shown in the below Figure.
-
-<img alt="Import a Tree" src={useBaseUrl('/doc-images/12.34.png')} />
-
-Now select the option “I am reimporting the current model – retain my
-settings” so that you will able to view the second tree configuration
-being applied with the Navigation Panel settings already configured for
-the first tree (see Figure below).
-
-<img alt="Navigation Panel for the second tree configuration" src={useBaseUrl('/doc-images/12.35.png')} />
-
-### Import from an Export File
-
+<div style={{textAlign: 'justify'}}>
 Using this option “Import from an Export File”, you will be able to
 paste the Export file data format from an already exported tree data as
 shown in the below Figure. This Export File will be generated by
-navigating to the Settings Tab and by clicking the Export button.
+navigating to the Settings tab and by clicking the Export button like <Link to={useBaseUrl('docs/model/general')}> this</Link>.
+</div> <br /> 
 
+<div style={{textAlign: 'center'}}>
+<Zoom>
 <img alt="Configuration Data from Export File Data Format" src={useBaseUrl('/doc-images/12.36.png')} />
+</Zoom>
+</ div> <br />
 
-Now based on the above configuration, you will be able to view the Tree
-formed with Nodes in the valQ screen.
+Now based on the above configuration, you will be able to view the model in the ValQ screen.
 
+<Zoom>
 <img alt="valQ screen derived from Export File Data Format" src={useBaseUrl('/doc-images/12.37.png')} />
-
-## Additional Properties of New Tab
-
-| **Property**             | **Description**                                                                                                                                                                                                                                                                                              |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Open a Sample Model      | Using this model, you can load the required model from the sample valQ Models. The sample Models are Mining Industry, P\&L for Small and Medium-Size Business, Personal Finance and Simple Sales Projections.                                                                                                |
-| Create a Simple Model    | Using this Model, you can build a Dynamic valQ Model (For details, please refer: [https://ValQ.com/wp-content/uploads/valq-for-microsoft-power-bi-beginners-tutorial.pdf](https://ValQ.com/wp-content/uploads/valq-for-microsoft-power-bi-beginners-tutorial.pdf)) |
-| Create an Advanced Model | Using this Model, you can import a Tree by selecting the data from an Excel file or by selecting the data from an Export File.                                                                                                                                                                               |
-| Import an Advanced Model | This Model can be used for creating a Tree with Nodes right from the beginning.                                                                                                                                                                                                                              |
-
-*Additional Properties of New Tab*
+</Zoom>

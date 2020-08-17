@@ -1,0 +1,122 @@
+---
+id: node
+title: Understanding Nodes in ValQ
+sidebar_label: Understanding Nodes in ValQ
+---
+import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+<div style={{textAlign: 'justify'}}>
+With ValQ, you can build a model of your business process and view it in the form of a tree as well as a table. Toggle between the below icons 
+present on the top left corner of the canvas to change the view.  
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node8.png')} />
+  </Zoom>    
+</div>
+
+## Tree View
+
+<div style={{textAlign: 'justify'}}>
+The tree structure is presented in a  horizontal format as a visual.  Just like a tree,
+ValQ model has a stem on Top called Top node and the Top node then branches out to other nodes. 
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node7.png')} />
+  </Zoom>    
+</div>
+<br />
+
+<div style={{textAlign: 'justify'}}>
+The model is segmented into levels starting from level 1 with Top node, here it's 'Overall Result'. The nodes share a parent-child relationship at each level.
+For example, the 'East' node is the Parent node while 'Consumer' node is a Child node, 'Consumer' node is the Parent node while 'Chris Morris' node is a Child node. 
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node2.png')} />
+  </Zoom>    
+</div> <br />
+
+Click on '>' to expand and '<' collapse levels.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node6.png')} />
+  </Zoom>    
+</div> <br />
+
+You can also use the 'Go to level ^' option present on the bottom of the canvas to navigate between levels of the tree.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node9.png')} />
+  </Zoom>    
+</div>
+
+## Table View
+
+<div style={{textAlign: 'justify'}}>
+The same information can be viewed in tabular form as see in the image below. The Table view is generally used to plan and analyze the data.
+Click on the table icon as highlighted below to get the tabular view.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node10.png')} />
+  </Zoom>
+</div> <br />
+
+For more information on Table View, click <Link to={useBaseUrl('docs/simulation/tableview')}>here</Link>
+
+
+## Node Components
+
+Now let's take a look at what makes up a node.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node4.png')} />
+  </Zoom>    
+</div>
+<br />
+
+Each node represents a value driver, KPI or category and it's several performance metrics. Here's how to interpret a node:
+
+<div style={{textAlign: 'justify'}} className="table-center">
+
+|   |   Component	| Description  	|
+|---    |---	|---	|
+|1| Node name  	| Name of the value driver or KPI	|
+|2| Conditional Formatting  	| Color band indicating the variance 	|
+|3| Value Trend 	| A sparkline graph showing the trend |
+|4| Baseline Value  	| Node value of the baseline series |
+|5| Variance for all periods  	| Full year variance of the node |
+|6| Variance for current period  	| Current month (usually first period in the series) month variance of the node |
+|7| Absolute Variance  | Variance showed in absolute value |
+|8| Percentage Variance  	| Variance showed in percentage |
+
+</div> <br />
+
+> **Note** <br />
+Variance is calculated as the difference between the Baseline series and Comparison series
+
+Baseline series is the primary series and Comparison series is the benchmark against which the Baseline is compared.
+Here the Sales Budget is the Baseline series and Sales Forecast is the Comparison series. 
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node5.png')} />
+  </Zoom>    
+</div>
+
+## Related Pages
+
+<Link to={useBaseUrl('docs/model/node#node-editor')}> Configure nodes </Link> under Model <br />
+<Link to={useBaseUrl('docs/simulation/sim_features#node-features')}> Simulate features </Link> on node 
