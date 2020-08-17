@@ -2663,6 +2663,17 @@ docsearch.js@^2.6.3:
     to-factory "^1.0.0"
     zepto "^1.2.0"
 
+docusaurus-lunr-search@^1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/docusaurus-lunr-search/-/docusaurus-lunr-search-1.0.3.tgz#24f38133d07a482c6d74f2bd0f1a08f674692c61"
+  integrity sha512-jWcKxvbecJtLizcJ9qcbEyiQgDwi9aTgYg1nlPZ6quMiVr1mYPt6sp/4sirAh+gCxVH+FxF/B0Af8TLytci8HA==
+  dependencies:
+    autocomplete.js "^0.37.0"
+    cheerio "^1.0.0-rc.3"
+    classnames "^2.2.6"
+    hogan.js "^3.0.2"
+    lunr "^2.3.8"
+
 dom-converter@^0.2:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.2.0.tgz#6721a9daee2e293682955b6afe416771627bb768"

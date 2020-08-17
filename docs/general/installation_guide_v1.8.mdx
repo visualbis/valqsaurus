@@ -1,0 +1,556 @@
+---
+id: installation_guide_v1.8
+title: ValQ Private Tenant Installation Guide
+---
+import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
+
+## Introduction
+
+### What is ValQ
+
+ValQ is a serverless, lightweight, multi-purpose application running on Power BI supporting use cases such as planning, forecasting, budgeting, time series forecasting, and value driver planning. It helps enterprises run simulations, plans & analyses in a very visual and intuitive manner.
+
+### Supported platforms
+
+### System requirements
+
+Following are the recommended system requirements.
+
+1. Operating System - Windows Server 2012 or later
+2. Processor - 2.4 GHz Quadcore or with similar CPU Performance
+3. RAM- 16 GB
+
+### Browser compatibility
+
+1. Edge
+2. Google Chrome
+3. Mozilla Firefox
+4. IE 11
+
+### Databases
+
+1. Microsoft SQL Server - Version 2016 or latest
+2. MySQL Server - 5.6 or latest
+3. Maria DB - 5.5 or latest
+
+Database can be also installed in the Virtual Machine where we are installing ValQ Server.
+
+## Architecture
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/ValQ-collaborate-Private_tenant-workflow-.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/ValQ-collaborate-Private_tenant-workflow-.png)
+
+[Private Tenant Notes](https://www.notion.so/Private-Tenant-Notes-8ac88ed255fe41028fa5feda7bc0d006)
+
+### 1.  **Private Tenant - License Key**
+
+- Go to your [ValQ-Account](https://valqdev.wpengine.com/my-account) and login with the Account credentials you received in the email
+- Go to **Private Tenant** tab to view the **Product Subscription** details.
+- Copy the **Key Code**. This is your **License key** that you will need in the **ValQ Management Console** [License Key](https://www.notion.so/ValQ-Private-Tenant-Installation-Guide-9525981b1f0b407fa7cad823856e3f04#e7bf9ec65c9a43bea4c9caacd816b2a9) configuration section.
+- **Tenant Info** section displays information about your *Plan, Expiry Date, Users Limit, and [](###Workspace)[Workspace limit](https://www.notion.so/ValQ-Private-Tenant-Installation-Guide-9525981b1f0b407fa7cad823856e3f04#28ec36256e414757939376cc4940f084)*.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/ValQ_email_CustomBuild.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/ValQ_email_CustomBuild.png)
+
+ValQ_email_CustomBuild.png
+
+Click on the **Click here** link in the email and download the **ValQ Collaborate** installer.
+
+### 2. Database Creation
+
+The setup in this guide uses **MySQL** as the backend Database Server. Configure the backend database referring to the [databases](https://www.notion.so/ValQ-Private-Tenant-Inst-allation-Guide-9525981b1f0b407fa7cad823856e3f04#e4014996df9c42fb84e6e215964e407d) prerequisite section.
+
+### 3. Office 365 App
+
+Create an **Azure app** in your **Office 365 Tenant** for the **SSO configuration**
+
+1. Login into your [Azure Portal](https://portal.azure.com) account
+2. Click on **Manage Azure Active Directory** menu item
+3. Click **App registrations** in the left sub menu
+4. Click **New Registration** tab in the top left menu bar. 
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/MicrosoftTeams-image_(5).png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/MicrosoftTeams-image_(5).png)
+
+Register a new app
+
+- Enter an **Application name** to be displayed to the users
+- In the section **Who can use this application, s**elect **Accounts in this organizational directory only**
+- In the section **Redirect URI**
+    - Select **Web**
+    - Enter the **URL** of the **Virtual Machine** where we are going to install the **ValQ private tenant**.
+
+    Note: Use the **https** protocol.
+
+- Click **Register**
+
+Azure AD assigns a unique application, or client, ID to your app. 
+
+The portal opens your application's **Overview** page. 
+
+The **Microsoft Azure** portal provides application management configurations:
+
+- Authentication
+    - Go to **Authentication > Implicit grant** section
+    - Ensure that both the checkboxes **Access Tokens** and **ID tokens** are ticked.
+- API permissions
+    - Go to **API permissions**
+    - In the **Microsoft Graph** API/Permission name, add
+        1. openid
+        2. profile
+        3. User.Read
+
+5. Go to the **Overview** section and save the **Application (client) ID** and **Directory (tenant) ID**.
+
+You will need these 2 IDs to setup the **[General Service Configuration](https://www.notion.so/ValQ-Private-Tenant-Installation-Guide-9525981b1f0b407fa7cad823856e3f04#5db81f88a5ad4af1bcc1ceddcae74548)** in the **[ValQ Management Console](https://www.notion.so/ValQ-Private-Tenant-Installation-Guide-9525981b1f0b407fa7cad823856e3f04#8db2934d941343cfb963ab2ed4bf735e)** section.
+
+### 4. Generate SSL Certificate
+
+ValQ Private tenant requires an SSL Certificate for proper working and secure communication. 
+
+There are 2 ways to generate an SSL Certificate:
+
+4.1 Buy or generate an SSL certificate for the ValQ private tenant VM in the x.509 if you have a vendor. 
+
+4.2 Generate self signed certificate by using the *Open SSL tool:*
+
+- Open Windows File Explorer
+- Navigate to the OpenSSL bin directory, generally it is `c:\OpenSSL\bin\`
+- Right-click the **openssl.exe** file and select **Run as administrator**
+- Enter the following command to begin generating a certificate and private key:
+
+```bash
+**req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out certificate.crt**
+```
+
+- Enter a 7-digit **applicable Distinguished Name (DN)**
+- Once completed, you will find the **certificate.crt** and **privateKey.key** files in the same bin directory location
+
+## Installation
+
+1. Click on the **ValQ_Collaborate_1.8** Installer.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/valQ_installer.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/valQ_installer.png)
+
+valQ_installer
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/3.License_Agreement.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/3.License_Agreement.png)
+
+License Agreement
+
+2. Click **Next** to continue with the installation setup.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Installation_setup.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Installation_setup.png)
+
+Installation Setup
+
+3 .Choose the **Installation Directory** path to install **ValQ**. Click **Next**.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/5.Installation_directory.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/5.Installation_directory.png)
+
+Installation directory path
+
+4. **ValQ Port Assignment**
+
+- Enter the **ValQ HTTP Port**, default value is **80**
+- Enter the **ValQ SSL Port**, default value is **443**
+- Click **Next**
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/valQ_port.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/valQ_port.png)
+
+Nginx_Server_Details
+
+5. Set **ValQ Management Server Port** default value to **5000**. Click **Next**.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/val_management_server_port.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/val_management_server_port.png)
+
+License_Server_Port
+
+6. Set the **ValQ Management Console Password**
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/valq_management_console_passwd.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/valq_management_console_passwd.png)
+
+Admin_Console_Password
+
+7. Click **Next** to start the installation process.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/9.Ready_to_install.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/9.Ready_to_install.png)
+
+Ready_to_install
+
+8.The average time to complete the installation process is approximately 10 minutes.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/installation_progress_bar.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/installation_progress_bar.png)
+
+Installation progress bar
+
+9. Click **Finish** to complete the installation.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/10.finished_installing_valq.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/10.finished_installing_valq.png)
+
+finished_installing_valq
+
+Click **OK** to close the **README** file.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/close_Readme.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/close_Readme.png)
+
+close_Readme.png
+
+Installation Completed Checklist
+- ValQ port assignment for HTTP and SSL
+- ValQ Management Server Port
+- ValQ Management Console Password for the Admin Portal login
+- ValQ Collaborate installed in the chosen installation directory path
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/11.installed.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/11.installed.png)
+
+ValQ installed
+
+## Certificate Configuration
+
+1.Update **Nginx configuration files**
+
+- Go to the **ValQ installation directory** on your machine
+- Open  **nginx > confs** folder
+- Replace the **Nginx Server** existing *Security Certificate and KEY files with the [SSL Certificates](https://www.notion.so/ValQ-Private-Tenant-Installation-Guide-9525981b1f0b407fa7cad823856e3f04#05752a892828439e8f368ab40cf841de) keys*
+    - The new SSL certificate keys must be of the *same name and in the same format as the original server keys*
+    - *The file should not contain Pass Phrase.*
+    - You can also generate the certificate by using the server.key by using Open SSL.
+    - If you are using self signed certificate, then it should be made trusted in all the computers across the organization.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/update_Nginx_conf_files.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/update_Nginx_conf_files.png)
+
+Update_Nginx_conf_files
+
+2.Restart the **Nginx Service**
+
+Go to **Start > Services**
+
+- Search and click on the **Nginx** Service that has a **running** instance
+- Click **Restart**
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/restart_Nginx_service.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/restart_Nginx_service.png)
+
+Restart_Nginx_service
+
+## ValQ Management Console
+
+**Login Page**
+
+- Open up the browser and type the URL: `localhost/config`
+- In the **ValQ Management Console** login page, enter the Management **[Console Password](https://www.notion.so/ValQ-Private-Tenant-Installation-Guide-9525981b1f0b407fa7cad823856e3f04#75fb81e5092a4edab5201b6f858e4ad9)** to log in.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/API_installer_Login.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/API_installer_Login.png)
+
+API_installer_Login
+
+This scree allows you to specify configurations for the **ValQ API**
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/api_installer_welcome.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/api_installer_welcome.png)
+
+Api_installer_welcome
+
+Click **Setup Configuration**
+
+### Configurations Settings
+
+### 1.License Key
+
+Enter the **[License key](https://www.notion.so/ValQ-Private-Tenant-Installation-Guide-9525981b1f0b407fa7cad823856e3f04#c693e77c0d5f4d7fbc6747d728107ce6)** in the text box area and click **Next**.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/License_key.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/License_key.png)
+
+License_key
+
+### 2.General Configuration
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/General_configuration.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/General_configuration.png)
+
+- Enter the **Nginx Server URL**.
+
+    The default port is *80* for **http** and the port is **443** for **https**
+
+- Choose the **Log level** as *info*, *war*, or *error*
+- Enter your **Office 365 Tenant ID** generated in the **[Office 365 app](https://www.notion.so/ValQ-Private-Tenant-Installation-Guide-9525981b1f0b407fa7cad823856e3f04#0ca6e78c8f7d48de8f6ab1ef2336801f)** section
+- Enter your **Office 365 Client ID** generated in the **[Office 365 app](https://www.notion.so/ValQ-Private-Tenant-Installation-Guide-9525981b1f0b407fa7cad823856e3f04#0ca6e78c8f7d48de8f6ab1ef2336801f)** section
+
+Click **Save**.
+
+### 3.Database Configuration
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Database_configuration.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Database_configuration.png)
+
+Database_configuration
+
+- Select your **Database**
+- Type the **Database Server Host**, default value is **localhost**
+- Type the **Database Server Port**
+- Enter the **Database Server Username**
+- Enter the **Database Server Password**
+- Enter the **Database Name** that you created in your **Backend Server**
+
+Click **Save**.
+
+### 4.SMTP Configuration
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/SMTP_configuration.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/SMTP_configuration.png)
+
+- Turn on the **Enable SMTP**
+- Enter the SMTP details- *SMTP Host, SMTP Port, Username, Password, Service Provider, Encryption, and Sender Email*
+- Click **Submit** to save the SMTP settings.
+
+### 5.Instance Configuration
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Instances_config.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Instances_config.png)
+
+Instances_config
+
+Create an **Instance** of the **ValQ** service.
+
+- Enter an **Instance Port** number starting with the range: **3000**
+- Click **Save**.
+
+### 6. Redis Configuration
+
+### Dashboard
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Dashboard.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Dashboard.png)
+
+The **Dashboard** displays the details of the *Database, SMTP, Instance* Status and Port number.
+
+### Workspace
+
+Create a **Private Tenant Workspace** for the **ValQ Custom Visuals**
+
+Go to **ValQ Management Console > Workspace > Create Workspac**
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Create_Workspace.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Create_Workspace.png)
+
+Create Workspace
+
+- Enter the **Workspace Name**
+- Enter **Workspace Administrator Name**
+- Enter **Workspace Administrator Email**
+- Enter **Company Domain**
+- Click **Add**
+
+ You can create any number of **Workspaces** and assign these workspaces to different **Users**.
+
+ The number of users you can add to the workspace is determined by the plan that you selected during the purchase.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Workspace_created.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Workspace_created.png)
+
+The **Instances** can be **Created, Edited or Deleted** from this portal.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Instances.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Instances.png)
+
+You have configured the *Database, SMTP, Workspace and Instances* in **ValQ Management Console.**
+
+---
+
+## ValQ Admin Console
+
+### Admin Console- Login
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Admin_Portal_login.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Admin_Portal_login.png)
+
+Admin_Portal_login
+
+1. Open the browser and type the **[Private Tenant URL](https://www.notion.so/ValQ-Private-Tenant-Installation-Guide-9525981b1f0b407fa7cad823856e3f04#5db81f88a5ad4af1bcc1ceddcae74548)**
+- Click on **Sign in with Microsoft**, and enter your **username** and **password**
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Microsoft_Sign_in.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Microsoft_Sign_in.png)
+
+Microsoft_Sign_in_username
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Microsoft_Sign_in_password.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Microsoft_Sign_in_password.png)
+
+Microsoft_Sign_in_password
+
+- Click **Sign in**
+
+2. Choose and click on the **Private Tenant** Workspace
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/private-tenant-workspace.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/private-tenant-workspace.png)
+
+private-tenant-workspace selection
+
+### Admin Console- Dashboard
+
+The **Dashboard** gives details about the Workspace that your models will belong to.
+
+- License Details
+- Profile
+
+If you belong to multiple Workspaces, the list of workspaces will be listed in the top **dropdown menu bar.**
+
+You can switch between the Workspaces.
+
+### User Manager
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/user_manager.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/user_manager.png)
+
+user_manager
+
+**Admin** user is listed by default.
+
+To add more Members:
+
+- Click **Add Members.** Each member will be able to access the workspace based on the **Role** assigned, such as - **Admin** or **Member**
+- Enter the **Email** and click **Add**
+- Click on **Bulk Upload** to import many Members from a CSV file
+
+You have created your **Private Tenant Workspace** and added the members. You will now be able to share the **ValQ Custom Visuals** Models with the assigned Members.
+
+---
+
+## ValQ Collaborate custom visual in Power BI Desktop
+
+### Add ValQ Visuals to Organization Visuals list
+
+1. Go to the **[Power BI app](https://app.powerbi.com/)** login page
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/PowerBI-app-adminConsole.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/PowerBI-app-adminConsole.png)
+
+- Click on the three dots `...` > **Settings > Admin portal**
+
+2. Select **Organization Visuals** and Click on **Add Organizational Visual**
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/add_org-valq-visual.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/add_org-valq-visual.png)
+
+Add ValQ to Organization visuals in Power BI
+
+- **Browse** the visual file with the ***.pbiviz** extension
+- **Name** your visual
+- Upload an **icon image**
+- Write a **Description** about the visual
+- Toggle the **access** to this visual across the users in the organization to be **enabled** or **disabled**
+- Click **Add**
+
+You have added **ValQ visuals** to your **Organization Visuals** list
+
+### Create a Power BI report with ValQ
+
+1. Go to **Power BI Desktop** application
+
+2. Click on the **Visualizations** pane
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/get-more-visuals.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/get-more-visuals.png)
+
+Get ValQ visuals
+
+- Click on the **three dots `...`** and then click **Get more visuals**.
+
+3. Search for the **ValQ** visuals under **[My Organizations](https://www.notion.so/ValQ-Private-Tenant-Installation-Guide-9525981b1f0b407fa7cad823856e3f04#cc422de3430b4bdbac6ed03da7d50b35)** tab, and click **add**.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/my-org.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/my-org.png)
+
+### Assign data to ValQ Custom Visual
+
+1. Click on **Get Data** and import the data for your business model.
+- On a successful import, a **ValQ** icon is placed in the **Visualization** pane.
+- Click on the **ValQ** icon and resize the **ValQ image** to fit the window area.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/valQ_resize.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/valQ_resize.png)
+
+2. Select the data fields in the **Fields** pane on the right.
+
+- Add measures to the values and data category.
+
+login to private tenant workspace from Valq
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/selectFields_login.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/selectFields_login.png)
+
+Click **Login** on the **Getting started with ValQ** pop window.
+
+4. You will be navigated to your **Workspace**.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Navigate_privateTenant.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Navigate_privateTenant.png)
+
+Choose the Workspace
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/choose_workspace.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/choose_workspace.png)
+
+Workspace selected
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/workspace_selected.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/workspace_selected.png)
+
+Congratulations!!! You are logged into your **Private Tenant Workspace**.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/PowerBI_mapped_to_workspace.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/PowerBI_mapped_to_workspace.png)
+
+Your **ValQ Custom Visuals** is now mapped to the backend **Workspace.** The custom visuals data will be loaded into the configured **Database Server**.
+
+## What Next
+
+Simulate your business model in **Power BI** with the **ValQ-Collaborate** visuals and enjoy the features:
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/simulate_models.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/simulate_models.png)
+
+BI model simulation in ValQ Collaborate
+
+* Share your Reports in the Workspace with other members
+
+* Comments and Annotations
+
+* Audit Logs
+
+* Scenario Collaboration
+
+* Private Tenant
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/AdminPortal_Models_shared.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/AdminPortal_Models_shared.png)
+
+Shared Model scenarios in the Workspace
+
+## Troubleshooting steps
+
+## Un-installation
+
+### Uninstall ValQ
+
+1.Go to the **ValQ installation path** on your machine
+
+2.Double click on the **Uninstall ValQ Collaborate** application
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Uninstall_valQ_installer.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Uninstall_valQ_installer.png)
+
+Uninstall_valQ_installer
+
+3.Click **Yes** in the **User Account Control** popup window
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Uninstall_yes.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Uninstall_yes.png)
+
+Uninstall_yes
+
+4.Click **Yes** to confirm the deletion of **ValQ Collaborate**
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Uninstall_confirm.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Uninstall_confirm.png)
+
+Uninstall_confirm
+
+5.Uninstallation **Setup** begins and may take approximately 3.5 minutes to complete
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Uninstalling-Setup_progress.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Uninstalling-Setup_progress.png)
+
+Uninstalling-Setup_progress.png
+
+6.Click **OK** to finish uninstalling **ValQ Collaborate**
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Uninstallation_complete.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Uninstallation_complete.png)
+
+Uninstallation_complete
+
+7.Restart the System.
+
+### Post-uninstallation step
+
+Delete the residual files
+
+- Go to **ValQ installation path**
+- Delete all the remaining files present in the folder.
+
+![ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Delete_residual_files.png](ValQ%20Private%20Tenant%20Installation%20Guide%2010daae5753b34fe09e4be742ee79a33a/Delete_residual_files.png)
+
+Delete residual files
+
+An earlier version of ValQ has been successfully uninstalled.
+
+Go to the [Installation](https://www.notion.so/ValQ-Private-Tenant-Installation-Guide-9525981b1f0b407fa7cad823856e3f04#74dbb514c542437d89127db02fc1f362) section to begin the new installation of **ValQ Collaborate**

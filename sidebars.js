@@ -21,7 +21,8 @@ module.exports = {
             "general/more-info-value-driver",
             "general/saving-opening-scenarios",
             "general/workspace-in-valq",
-            "general/valq-in-powerbi"
+            "general/valq-in-powerbi",
+            "general/installation_guide_v1.8"
         ],
         "Model": [
             "model/model_tab",

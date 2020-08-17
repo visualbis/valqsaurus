@@ -66,9 +66,9 @@ Forecast vs Budget, Budget vs Last Year Actuals etc. The data series is
 at a certain time grain. This would typically be 1 year by 12 months or
 a multiyear view like 5 years plan by year.
 
-The selecting of the time series will often be based on Filters or
+The selection of time series will often be based on Filters or
 Variables. A typical scenario is where the designer has defined 4
-variables on the underlying data sources:
+variables in the underlying data sources:
 
 Primary:
 
@@ -83,9 +83,9 @@ Version ie. Defaulted to Budget
 Year ie. Defaulted to Current Year
 
 This allows the users to compare different versions and years in the
-value driver tree model.
+Value Driver Tree Model.
 
-The valQ Custom Visual can display individual periods but can also apply
+ValQ Custom Visuals can display individual periods but can also apply
 time aggregation such as Full Year, Year-to-Date. You can see the
 currently selected Value Display aggregation on the Navigation Panel. In
 the screenshot above, Full Year is selected. The primary value displayed
@@ -94,7 +94,7 @@ data.
 
 ## Tree Drill Down
 
-Nodes that has children will have an expand ‘>’ button to the right of
+Nodes that have children will have an expand '>' button to the right of
 the Widget as highlighted below:
 
 <img alt="Nodes with children" src={useBaseUrl("/doc-images/4.2.png")} />
@@ -102,14 +102,13 @@ the Widget as highlighted below:
 You can drill down the tree by clicking the expand button.
 
 The tree will focus on the branches that are being expanded. You can
-collapse any specific node by clicking the ‘<’ collapse button on the
+collapse any specific node by clicking the '<' collapse button on the
 right of a widget.
 
-Value Driver Trees are in reality networks. The same driver may impact
-multiple aspects of the Tree. The component therefore contains a concept
-of linked nodes. Such nodes have a link
-
-<img alt="..image::\/doc-images/image4" src={useBaseUrl('/doc-images/media/image4.png')} /> icon that you can click
+Value Driver Trees are in reality networks. 
+The same driver may impact multiple aspects of the Tree. 
+The component therefore contains a concept
+of linked nodes. Such nodes have a link <img alt="..image::\/doc-images/image4" src={useBaseUrl('/doc-images/media/image4.png')} /> icon that you can click
 which will jump to where the linked node is defined and highlight the
 node:
 <img alt="Link" src={useBaseUrl("/doc-images/4.3.png")} />
@@ -124,8 +123,8 @@ Value Driver Trees can be large. You can zoom and pan the canvas view.
 If you are using an iPad or iPhone, you can zoom by pinching and pan by
 dragging the same way you would navigate a map.
 
-If you are using a mouse with a scroll wheel, you can point your curser
-anywhere in the canvas and scroll the wheel to zoom in and out.
+If you are using a mouse with a scroll wheel, you can point your cursor
+anywhere on the canvas and scroll the wheel to zoom in and out.
 
 To pan, click and hold the left bottom of the mouse and drag the tree
 around.
@@ -148,13 +147,13 @@ level.
 
 <img alt="Value Display" src={useBaseUrl("/doc-images/4.5.png")} />
 
-With the ‘Value Display’ functionality you can choose the time
+With the ‘Value Display’ functionality, you can choose the time
 aggregation you want to display as the primary value. The designer can
-link certain nodes to a user selected scaling. You can select the scale
+link certain nodes to a user-selected scaling. You can select the scale
 you wish to display by selecting this under the Value Display section.
 Note that the options here can be configured so they may differ. It is
 important to note that not all notes are scaled using this as the value
-driver tree typically contains both amounts, prices, rates and physical
+driver tree typically contains both amounts, prices, rates, and physical
 volumes.
 
 In addition to the primary display value, the designer can also choose a
@@ -216,7 +215,7 @@ Display is shown in the below Figure.
   src={useBaseUrl("/doc-images/vd1.png")}
 />
 
-Similarly you can view the Tooltip for other Value Displays.
+Similarly, you can view the Tooltip for other Value Displays.
 
 ## Sub Models - Filters
 
@@ -257,10 +256,10 @@ There are 2 options to simulate:
   percentage showing if the adjust has made the scenario better or
   worse <img alt="..image::\/doc-images/image20" src={useBaseUrl('/doc-images/media/image18.png')} />.
 
-<img alt="Data Simulation" src={useBaseUrl("/doc-images/4.13.png")} />
 
-- Click on the arrow icon of the node
-  <img alt="..image::\/doc-images/image22" src={useBaseUrl('/doc-images/media/image20.png')} /> then click ‘Edit Key
+  <img alt="Data Simulation" src={useBaseUrl("/doc-images/4.13.png")} />
+
+- Click on the arrow icon of the node <img alt="..image::\/doc-images/image22" src={useBaseUrl('/doc-images/media/image20.png')} /> then click ‘Edit Key
   Input’ <img alt="..image::\/doc-images/image23" src={useBaseUrl('/doc-images/media/image21.png')} /> and manually
   edit the changes in simulation per period. Click X to close manual
   input table.
@@ -311,7 +310,7 @@ cost drivers without going into the node details.
 Click the ‘Edit Key Input’ icon
 <img alt="..image::\/doc-images/image28" src={useBaseUrl('/doc-images/media/image26.png')} /> 
 
-and manually edit the changes in simulation per periods.
+and manually edit the changes in simulation per period.
 
 <img alt="Key Inputs" src={useBaseUrl('/doc-images/4.17.png')} />
 
@@ -412,7 +411,7 @@ icon"
 />
 
 This will create a new Scenario and will highlight the created Scenario
-as the active scenario.
+as an active scenario.
 
 - Click ‘Compare Scenario’ icon to generate a report comparison format
   with the key Assumptions and KPI’s (see Figure below).
@@ -423,8 +422,8 @@ as the active scenario.
   the active collection. It also shows the Simulated Data Scenario
   (Baseline: Full Year), Comparison Version (Full Year) and Simulated
   Data Scenario Year to Date (Baseline: YTD).
-- From the below Figure, the GREEN fonts denotes the most favorable
-  results and the RED fonts denotes the least favorable result in the
+- From the below Figure, the GREEN fonts denote the most favorable
+  results and the RED fonts denote the least favorable result in the
   scenario comparison report.
 
 <img
@@ -475,8 +474,8 @@ Figure below).
 
 <img alt="Write back options" src={useBaseUrl("/doc-images/wb1.png")} />
 
-- The created Scenarios can be reordered based on our choice by a
-  simple drag and drop options. For our example, you have reordered
+- The created Scenarios can be reordered based on our choice with a
+  simple drag and drop option. For our example, you have reordered
   the Scenarios as shown in the below Figure.
 
 <img alt="Reordered Scenarios" src={useBaseUrl("/doc-images/sf9.png")} />
@@ -498,7 +497,7 @@ have opportunities for further improvements (WHITE fonts).
 
 Notes:
 
-- RED fonts means over capacity as compared to the maximum limit.
+- RED fonts mean over capacity as compared to the maximum limit.
   (e.g. Production Rate 1.680 tonnes per hour is over capacity as
   compared to the maximum limit of 1.600 tonnes per hour).
 - WHITE fonts means still have opportunities for improvement as
