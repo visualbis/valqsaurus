@@ -4,38 +4,46 @@ title: General
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 Using the General Tab, you will be able to configure the settings for
-the Export and Writeback Functions.
+the Export and License Registration.
+
 ## Export
+
+<div style={{textAlign: 'justify'}}>
 In the Export settings, you will be able to configure the export
 functionality. There is also an option to include the navigation
 settings panel in the Export File (see Figure below).
+</div> <br />
 
-<img alt="Export option" src={useBaseUrl('/doc-images/epf.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/gen1.png')} />
+  </Zoom>
+</div> <br />
 
+<div style={{textAlign: 'justify'}}>
 The saved file can be exported and this exported file can be used in the
-“Import from Excel” option in “Import an Advanced Model” tab (Refer <Link to={useBaseUrl('/docs/model/new#import-from-an-export-file')}> `Section: Import from an Export File <IEF>`  </Link>).
+“Import from Excel” option in the “Import an Advanced Model” tab (Refer <Link to={useBaseUrl('/docs/model/new#4b-import-from-an-export-file')}> Section: Import from an Export File  </Link>).
+</div>
 
-## Writeback
+## License Registration
 
-You will be able to export the Scenarios configured in the valQ through
-an URL by entering the Writeback URL in the Text Box (see Figure below).
+You will be able to enter the ValQ license in the Text Box to get the latest features (see Figure below).
 
-<img alt="Export Scenarios via Writeback URL" src={useBaseUrl('/doc-images/wrb.png')} />
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/gen2.png')} />
+  </Zoom>
+</div>
 
-The different simulations of planning results can be written back to the
-underlying systems using the URL exposed as part of the valQ. Using the
-URL, the user can do write-back scenario nodes to the underlying system.
-
-For more details on Writeback Functionality, you can refer the link:
-<https://valq.com/blogs/writeback-valq-data-using-microsoft-flow>
-
-## Additional Properties of the General Tab
+## Summary - General Tab
 
 | Area                 | Property                                             | Description                                                                                                                       |
 | -------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | Export               | Include navigation panel settings in the export file | This property when activated exports the file along with Navigation Panel settings.                                               |
-| Writeback            | Export Scenarios via Writeback URL                   | You will be able to export the Scenarios configured in the valQ through an URL by entering the Writeback URL in the Text Box.     |
+| License Registration            | Unlock additional features                | You will be able to enter the ValQ license in the Text Box to get the latest features.     |
 
-*Additional Properties of General Tab*
+

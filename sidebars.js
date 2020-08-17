@@ -9,44 +9,41 @@ module.exports = {
     sideBar: {
         Introduction: [
             "intro/introduction",
+            "intro/versions",
             "intro/import",
             "intro/model",
+            "intro/node",
             "intro/workflow"
         ],
-        Quickstart: [
-            "general/getting-started",
-            "general/understanding-variances",
-            "general/understanding-node-widget",
-            "general/conducting-what-if",
-            "general/more-info-value-driver",
-            "general/saving-opening-scenarios",
-            "general/workspace-in-valq",
-            "general/valq-in-powerbi"
-        ],
-        "Model": [
-            "model/model_tab",
+        Model: [
+            "model/model_overview",
             "model/new",
             "model/node",
             "model/data-series",
             "model/settings",
             "model/general"
         ],
-        "Plan": [
-            "planning/plan_tab",
+        Plan: [
+            "planning/plan_overview",
+            "planning/access",
             "planning/plan_features",
-            "planning/overview",
-            "planning/budget-allocation",
-            {
-                type: "category",
-                label: "Other features",
-                items: ["planning/others/adding-note", "planning/others/view-history"]
-            }
+            "planning/time_series",
+            "planning/business_cases",
+            "planning/update"
+
         ],
-        Simulate: ["simulation/simulation"],
-        "Analyze": [
-            "analysis/variance_analysis"
+        Simulate: [
+            "simulation/simulate_overview",
+            "simulation/sim_features",
+            "simulation/tableview"
+        ],
+        Analyze: [
+            "analysis/analyze_overview",
+            "analysis/variance_analysis",
+            "analysis/attribution-analysis"
         ],
         "Storage and Collaboration": ["storage/storage-collaboration"],
+
         Resources: [
             "faq/formula-list",
             "faq/definitions",
@@ -121,7 +118,8 @@ module.exports = {
             "references/formulas/switch",
             "references/formulas/or",
             "references/formulas/not",
-            "references/formulas/xor"
+            "references/formulas/xor",
+            "references/formulas/isnan"
         ],
         "Math Functions": [
             "references/formulas/sum",
@@ -153,19 +151,32 @@ module.exports = {
             "references/formulas/range",
             "references/formulas/lastnperiods",
             "references/formulas/get",
-            "references/formulas/foreach"
+            "references/formulas/foreach",
+            "references/formulas/getrowvalue",
+            "references/formulas/getcurrentrange",
+            "references/formulas/findbyid",
+            "references/formulas/findbytitle",
+            "references/formulas/thisid",
+            "references/formulas/thissourcekey",
+
         ],
         "Static Identifiers": [
             "references/formulas/this",
             "references/formulas/me",
             "references/formulas/current_series",
             "references/formulas/current_series_id",
+
             "references/formulas/current_period_index",
             "references/formulas/sim_from_to_index",
             "references/formulas/node-properties"
         ],
         "Additional Series": [
             "references/formulas/additional_series",
+
+            "references/formulas/current_node_value",
+            "references/formulas/node-properties"
+
+
         ]
     }
 };

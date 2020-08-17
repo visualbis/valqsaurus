@@ -84,6 +84,15 @@ experience with Microsoft Excel.
       <td>XOR( logical_test1, [logical_test2], ... )</td>
       <td>Returns a logical &#39;Exclusive Or&#39; of all arguments</td>
     </tr>
+    <tr>
+       <td>
+        <a href={useBaseUrl('/docs/references/formulas/isnan')}>ISNAN</a>
+       </td>
+       <td>ISNAN (value1,value2)
+       </td>
+       <td> Returns a default value if the value in the node is an error.
+        </td>
+    </tr>
   </tbody>
 </table>
 
@@ -365,6 +374,48 @@ experience with Microsoft Excel.
       <td>ForEach(Array,Iterator)</td>
       <td>Iterator function</td>
     </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/findbyid')}>findByID</a>
+      </td>
+      <td>findByID("ID match string")</td>
+      <td>Tagging/Grouping function</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/findbytitle')}>findByTitle</a>
+      </td>
+      <td>findByTitle("Title match string")</td>
+      <td>Tagging/Grouping function</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/getcurrentrange')}>GETCURRENTRANGE</a>
+      </td>
+      <td>DS.(SERIES).GETCURRENTRANGE()</td>
+      <td>Current range based on period selection</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/getrowvalue')}>GETROWVALUE</a>
+      </td>
+      <td>DS.(SERIES).GETROWVALUE(source_key)</td>
+      <td>Value of source key row</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/thisid')}>THIS_ID</a>
+      </td>
+      <td>DS.(SERIES).THIS_ID</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/thissourcekey')}>THIS_SOURCE_KEY</a>
+      </td>
+      <td>DS.(SERIES).THIS_SOURCE_KEY</td>
+      <td>Returns the value of the row with node id as source key</td>
+    </tr>
   </tbody>
 </table>
 
@@ -414,7 +465,15 @@ experience with Microsoft Excel.
       </td>
       <td>Current period index</td>
     </tr>
-        <tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/current_node_value')}>
+          CURRENT_NODE_VALUE{" "}
+        </a>
+      </td>
+      <td>Current node previous period values</td>
+    </tr>
+    <tr>
       <td>
         <a href={useBaseUrl('/docs/references/formulas/sim_from_to_index')}>SIM_FROM_INDEX</a>
       </td>
@@ -616,5 +675,54 @@ experience with Microsoft Excel.
       </td>
       <td>Returns selected range values of Comparison Series</td>
     </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].TOTAL{" "}
+        </a>
+      </td>
+      <td>Returns the all period aggregated value of node</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].PTD{" "}
+        </a>
+      </td>
+      <td>Returns the period to date aggregated value of node</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].SEL{" "}
+        </a>
+      </td>
+      <td>Returns the simulation periods aggregated value of node</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].ID{" "}
+        </a>
+      </td>
+      <td>Returns node id</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].VISIBLE_CHILDREN{" "}
+        </a>
+      </td>
+      <td>Returns all visible children of a node</td>
+    </tr>
+    <tr>
+      <td>
+        <a href={useBaseUrl('/docs/references/formulas/node-properties')}>
+          [NODE].HIDDEN_CHILDREN{" "}
+        </a>
+      </td>
+      <td>Returns all hidden children of a node</td>
+    </tr>
+    
   </tbody>
 </table>

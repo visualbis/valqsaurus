@@ -1,0 +1,20 @@
+---
+id: getrowvalue
+title: GETROWVALUE
+---
+The GETROWVALUE function returns the value of the source key row. 
+
+## Syntax
+
+DS.(SERIES).GETROWVALUE(<source_key>)
+
+## Argument
+
+source_key - string that corresponds to the source key
+
+## Example
+
+SUM(DS.Comparison.GETROWVALUE("East")) returns the sum of the values of the data source key East from the 
+comparison series.
+
+
