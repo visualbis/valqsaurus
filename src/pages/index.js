@@ -8,52 +8,62 @@ import styles from './styles.module.css';
 
 const features = [
     {
-        title: <>Modeling</>,
-        link: "/docs/model/new",
-        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-modeling.png',
-        description: (
-            <>
-                Model your business by capturing 1000+ business variables across various functions in ValQ.
-            </>
-        ),
-    },
-    {
-        title: <>Visualization</>,
-        link: "/docs/general/getting-started",
+        title: <>Introduction</>,
+        link: "/docs/intro/introduction",
         imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-visualization.png',
         description: (
             <>
-                Visualize your business model instantly by connecting your Key Drivers to Key Performance Indicators.
+                Visualize, Simulate, Plan, Analyze your business like never before
             </>
         ),
     },
     {
-        title: <>Simulation</>,
-        link: "/docs/simulation/simulation",
-        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-simulation.png',
+        title: <>Modeling</>,
+        link: "/docs/model/model_overview",
+        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-modeling.png',
         description: (
             <>
-                Perform what-if analysis, run on-the-fly simulations and compare multiple business scenarios with ValQ.
+                Model your business by capturing 1000+ business variables across various functions in ValQ
             </>
         ),
     },
     {
         title: <>Planning</>,
-        link: "/docs/planning/overview",
+        link: "/docs/planning/plan_overview",
         imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-planning.png',
         description: (
             <>
-                Plan, budget and forecast your business operations efficiently and optimize your goals.
+                Plan, budget and forecast your business operations efficiently and optimize your goals
+            </>
+        ),
+    },
+    {
+        title: <>Time Series Forecasting</>,
+        link: "/docs/planning/time_series",
+        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-advanced-analytics.png',
+        description: (
+            <>
+                Perform Time Series Forecasting to make forecast and predict future outcomes
+            </>
+        ),
+    },
+    {
+        title: <>Simulation</>,
+        link: "/docs/simulation/simulate_overview",
+        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-simulation.png',
+        description: (
+            <>
+                Perform what-if analysis, run on-the-fly simulations and compare multiple business scenarios with ValQ
             </>
         ),
     },
     {
         title: <>Advanced Analysis</>,
-        link: "/docs/analysis/variance-analysis",
-        imageUrl: 'https://cdn.valq.com/wp-content/uploads/valq-key-features-advanced-analytics.png',
+        link: "/docs/analysis/analyze_overview",
+        imageUrl: "https://cdn.valq.com/wp-content/uploads/variance-analysis.png",
         description: (
             <>
-                Run in-depth and nimble Variance Analysis with minimal clicks.
+                Run in-depth and nimble Variance Analysis with minimal clicks
             </>
         ),
     }
@@ -89,8 +99,8 @@ function Home() {
                     <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
                     Currently updating, Kindly bear with us
-                    <br />
-                    <br />
+
+
                     <div className={styles.buttons}>
                         <Link
                             className={classnames(
