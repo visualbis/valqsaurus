@@ -1,0 +1,493 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Writeback Schema",
+    "description": "The Schema for writeback series and scenarios from the ValQ application",
+    "default": {},
+    "required": [],
+    "properties": {
+        "version": {
+            "$id": "#/properties/version",
+            "type": "string",
+            "description": "The string will have the current version of the writeback",
+            "title": "The version of the Writeback",
+            "default": ""
+        },
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "description": "The integer will have the HTTP status code to denote success or failure of writeback",
+            "title": "The HTTP status code",
+            "default": 0
+        },
+        "result": {
+            "$id": "#/properties/result",
+            "type": "array",
+            "title": "The Writeback result",
+            "description": "The results containing the writeback data of the series and scenarios",
+            "default": [],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/result/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/result/items/anyOf/0",
+                        "type": "object",
+                        "title": "The scenario data",
+                        "description": "The schema for the scenario data",
+                        "default": {},
+                        "required": [],
+                        "properties": {
+                            "id": {
+                                "$id": "#/properties/result/items/anyOf/0/properties/id",
+                                "type": "string",
+                                "title": "The scenario id",
+                                "description": "The unique id of the scenario",
+                                "default": ""
+                            },
+                            "title": {
+                                "$id": "#/properties/result/items/anyOf/0/properties/title",
+                                "type": "string",
+                                "title": "The scenario title",
+                                "description": "The string title of the scenario",
+                                "default": ""
+                            },
+                            "resultNodes": {
+                                "$id": "#/properties/result/items/anyOf/0/properties/resultNodes",
+                                "type": "array",
+                                "title": "The result nodes of scenario",
+                                "description": "All the result nodes of the scenarios",
+                                "default": [],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1",
+                                            "type": "object",
+                                            "title": "The scenario data",
+                                            "description": "The data of the scenario",
+                                            "default": {},
+                                            "required": [],
+                                            "properties": {
+                                                "id": {
+                                                    "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/id",
+                                                    "type": "string",
+                                                    "title": "The node id",
+                                                    "description": "The unique id of the node",
+                                                    "default": ""
+                                                },
+                                                "title": {
+                                                    "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/title",
+                                                    "type": "string",
+                                                    "title": "The node title",
+                                                    "description": "The name of the node",
+                                                    "default": ""
+                                                },
+                                                "periodValues": {
+                                                    "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/periodValues",
+                                                    "type": "array",
+                                                    "title": "The values of period",
+                                                    "description": "The values for each periods",
+                                                    "default": [],
+                                                    "additionalItems": true,
+                                                    "items": {
+                                                        "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/periodValues/items",
+                                                        "anyOf": [
+                                                            {
+                                                                "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/periodValues/items/anyOf/0",
+                                                                "type": "object",
+                                                                "title": "The period value",
+                                                                "description": "The data of a period value",
+                                                                "default": {},
+                                                                "required": [],
+                                                                "properties": {
+                                                                    "id": {
+                                                                        "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/periodValues/items/anyOf/0/properties/id",
+                                                                        "type": "string",
+                                                                        "title": "The period id",
+                                                                        "description": "The id of the current period",
+                                                                        "default": ""
+                                                                    },
+                                                                    "label": {
+                                                                        "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/periodValues/items/anyOf/0/properties/label",
+                                                                        "type": "string",
+                                                                        "title": "The period label",
+                                                                        "description": "The label of the current period",
+                                                                        "default": ""
+                                                                    },
+                                                                    "value": {
+                                                                        "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/periodValues/items/anyOf/0/properties/value",
+                                                                        "type": "number",
+                                                                        "title": "The period value",
+                                                                        "description": "The period value of the current scenario",
+                                                                        "default": 0.0
+                                                                    },
+                                                                    "variance": {
+                                                                        "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/periodValues/items/anyOf/0/properties/variance",
+                                                                        "type": "number",
+                                                                        "title": "The variance value",
+                                                                        "description": "The variance value of the current scenario",
+                                                                        "default": 0.0
+                                                                    }
+                                                                },
+                                                                "additionalProperties": true
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "comments": {
+                                                    "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/comments",
+                                                    "type": "array",
+                                                    "title": "The comments of the scenario",
+                                                    "description": "This schema holds the comments of a specific scenario",
+                                                    "default": [],
+                                                    "additionalItems": true,
+                                                    "items": {
+                                                        "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/comments/items",
+                                                        "anyOf": [
+                                                            {
+                                                                "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/comments/items/anyOf/0",
+                                                                "type": "object",
+                                                                "title": "The scenario comment",
+                                                                "description": "The individual scenario comment",
+                                                                "default": {},
+                                                                "required": [],
+                                                                "properties": {
+                                                                    "comment": {
+                                                                        "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/comments/items/anyOf/0/properties/comment",
+                                                                        "type": "string",
+                                                                        "title": "The comment",
+                                                                        "description": "The comment string of the scenario",
+                                                                        "default": ""
+                                                                    },
+                                                                    "createdAt": {
+                                                                        "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/comments/items/anyOf/0/properties/createdAt",
+                                                                        "type": "integer",
+                                                                        "title": "The createdAt",
+                                                                        "description": "The time when the comment was created",
+                                                                        "default": 0
+                                                                    },
+                                                                    "createdBy": {
+                                                                        "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/comments/items/anyOf/0/properties/createdBy",
+                                                                        "type": "string",
+                                                                        "title": "The createdBy",
+                                                                        "description": "The user who created the comment",
+                                                                        "default": ""
+                                                                    }
+                                                                },
+                                                                "additionalProperties": true
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            },
+                            "type": {
+                                "$id": "#/properties/result/items/anyOf/0/properties/type",
+                                "type": "string",
+                                "title": "The type of Data",
+                                "description": "To Specify whether the current instance is a scenario or series",
+                                "default": ""
+                            },
+                            "description": {
+                                "$id": "#/properties/result/items/anyOf/0/properties/description",
+                                "type": "string",
+                                "title": "The scenario description",
+                                "description": "The string description of the scenario",
+                                "default": ""
+                            },
+                            "simulatedNodes": {
+                                "$id": "#/properties/result/items/anyOf/0/properties/simulatedNodes",
+                                "type": "array",
+                                "title": "The simulated Nodes",
+                                "description": "Contains the simulation details of the scenario",
+                                "default": [],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/result/items/anyOf/0/properties/simulatedNodes/items"
+                                }
+                            }
+                        },
+                        "additionalProperties": true
+                    },
+                    {
+                        "$id": "#/properties/result/items/anyOf/1",
+                        "type": "object",
+                        "title": "The primary series data",
+                        "description": "The schema for the primary series data",
+                        "default": {},
+                        "required": [],
+                        "properties": {
+                            "id": {
+                                "$id": "#/properties/result/items/anyOf/1/properties/id",
+                                "type": "string",
+                                "title": "The series id",
+                                "description": "The unique id of the series",
+                                "default": ""
+                            },
+                            "title": {
+                                "$id": "#/properties/result/items/anyOf/1/properties/title",
+                                "type": "string",
+                                "title": "The series title",
+                                "description": "The string title of the series",
+                                "default": ""
+                            },
+                            "resultNodes": {
+                                "$id": "#/properties/result/items/anyOf/1/properties/resultNodes",
+                                "type": "array",
+                                "title": "The result nodes of primary series",
+                                "description": "All the result nodes of the primary series",
+                                "default": [],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0",
+                                            "type": "object",
+                                            "title": "The primary series data",
+                                            "description": "The schema for the primary series data",
+                                            "default": {},
+                                            "required": [],
+                                            "properties": {
+                                                "id": {
+                                                    "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/id",
+                                                    "type": "string",
+                                                    "title": "The period id",
+                                                    "description": "The id of the current period",
+                                                    "default": ""
+                                                },
+                                                "title": {
+                                                    "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/title",
+                                                    "type": "string",
+                                                    "title": "The series title",
+                                                    "description": "The string title of the series",
+                                                    "default": ""
+                                                },
+                                                "periodValues": {
+                                                    "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/periodValues",
+                                                    "type": "array",
+                                                    "title": "The values of period",
+                                                    "description": "The values for each periods",
+                                                    "default": [],
+                                                    "additionalItems": true,
+                                                    "items": {
+                                                        "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/periodValues/items",
+                                                        "anyOf": [
+                                                            {
+                                                                "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0",
+                                                                "type": "object",
+                                                                "title": "The period value",
+                                                                "description": "The data of a period value",
+                                                                "default": {},
+                                                                "required": [],
+                                                                "properties": {
+                                                                    "id": {
+                                                                        "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0/properties/id",
+                                                                        "type": "string",
+                                                                        "title": "The period id",
+                                                                        "description": "The id of the current period",
+                                                                        "default": ""
+                                                                    },
+                                                                    "label": {
+                                                                        "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0/properties/label",
+                                                                        "type": "string",
+                                                                        "title": "The period label",
+                                                                        "description": "The label of the current period",
+                                                                        "default": ""
+                                                                    },
+                                                                    "value": {
+                                                                        "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0/properties/value",
+                                                                        "type": "number",
+                                                                        "title": "The period value",
+                                                                        "description": "The period value of the current series",
+                                                                        "default": 0.0
+                                                                    }
+                                                                },
+                                                                "additionalProperties": true
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            },
+                            "type": {
+                                "$id": "#/properties/result/items/anyOf/1/properties/type",
+                                "type": "string",
+                                "title": "The type of Data",
+                                "description": "To Specify whether the current instance is a scenario or series",
+                                "default": ""
+                            },
+                            "isPrimary": {
+                                "$id": "#/properties/result/items/anyOf/1/properties/isPrimary",
+                                "type": "boolean",
+                                "title": "The isPrimary series",
+                                "description": "Boolean to identify if the current series is a primary series",
+                                "default": false
+                            }
+                        },
+                        "additionalProperties": true
+                    },
+                    {
+                        "$id": "#/properties/result/items/anyOf/2",
+                        "type": "object",
+                        "title": "The comparison series data",
+                        "description": "The schema for the comparison series data",
+                        "default": {},
+                        "required": [],
+                        "properties": {
+                            "id": {
+                                "$id": "#/properties/result/items/anyOf/2/properties/id",
+                                "type": "string",
+                                "title": "The series id",
+                                "description": "The unique id of the series",
+                                "default": ""
+                            },
+                            "title": {
+                                "$id": "#/properties/result/items/anyOf/2/properties/title",
+                                "type": "string",
+                                "title": "The series title",
+                                "description": "The string title of the series",
+                                "default": ""
+                            },
+                            "resultNodes": {
+                                "$id": "#/properties/result/items/anyOf/2/properties/resultNodes",
+                                "type": "array",
+                                "title": "The result nodes of comparison series",
+                                "description": "All the result nodes of the comparison series",
+                                "default": [],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0",
+                                            "type": "object",
+                                            "title": "The comparison series data",
+                                            "description": "The schema for the comparison series data",
+                                            "default": {},
+                                            "required": [],
+                                            "properties": {
+                                                "id": {
+                                                    "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/id",
+                                                    "type": "string",
+                                                    "title": "The period id",
+                                                    "description": "The id of the current period",
+                                                    "default": ""
+                                                },
+                                                "title": {
+                                                    "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/title",
+                                                    "type": "string",
+                                                    "title": "The series title",
+                                                    "description": "The string title of the series",
+                                                    "default": ""
+                                                },
+                                                "periodValues": {
+                                                    "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/periodValues",
+                                                    "type": "array",
+                                                    "title": "The values of period",
+                                                    "description": "The values for each periods",
+                                                    "default": [],
+                                                    "additionalItems": true,
+                                                    "items": {
+                                                        "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/periodValues/items",
+                                                        "anyOf": [
+                                                            {
+                                                                "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0",
+                                                                "type": "object",
+                                                                "title": "The period value",
+                                                                "description": "The data of a period value",
+                                                                "default": {},
+                                                                "required": [],
+                                                                "properties": {
+                                                                    "id": {
+                                                                        "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0/properties/id",
+                                                                        "type": "string",
+                                                                        "title": "The period id",
+                                                                        "description": "The id of the current period",
+                                                                        "default": ""
+                                                                    },
+                                                                    "label": {
+                                                                        "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0/properties/label",
+                                                                        "type": "string",
+                                                                        "title": "The period label",
+                                                                        "description": "The label of the current period",
+                                                                        "default": ""
+                                                                    },
+                                                                    "value": {
+                                                                        "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0/properties/value",
+                                                                        "type": "number",
+                                                                        "title": "The period value",
+                                                                        "description": "The period value of the current series",
+                                                                        "default": 0.0
+                                                                    }
+                                                                },
+                                                                "additionalProperties": true
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            },
+                            "type": {
+                                "$id": "#/properties/result/items/anyOf/2/properties/type",
+                                "type": "string",
+                                "title": "The type of Data",
+                                "description": "To Specify whether the current instance is a scenario or series",
+                                "default": ""
+                            },
+                            "isComparison": {
+                                "$id": "#/properties/result/items/anyOf/2/properties/isComparison",
+                                "type": "boolean",
+                                "title": "The isComparison series",
+                                "description": "Boolean to identify if the current series is a comparison series",
+                                "default": false
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "userDetails": {
+            "$id": "#/properties/userDetails",
+            "type": "object",
+            "title": "The User Details",
+            "description": "User details will contain the details of the user who is performing the writeback",
+            "default": {},
+            "required": [],
+            "properties": {
+                "email": {
+                    "$id": "#/properties/userDetails/properties/email",
+                    "type": "string",
+                    "description": "The email associated with the user",
+                    "title": "The user email",
+                    "default": ""
+                },
+                "userName": {
+                    "$id": "#/properties/userDetails/properties/userName",
+                    "type": "string",
+                    "description": "The name of the user who is triggering the writeback",
+                    "title": "The user Name",
+                    "default": ""
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}
