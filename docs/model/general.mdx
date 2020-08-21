@@ -7,8 +7,11 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-Using the General Tab, you will be able to configure the settings for
-the Export and License Registration.
+**Model > General** tab allows you to configure the following settings:
+
+1. [Export](#export)
+
+2. [Writeback](#writeback)
 
 ## Export
 
@@ -29,6 +32,7 @@ The saved file can be exported and this exported file can be used in the
 “Import from Excel” option in the “Import an Advanced Model” tab (Refer <Link to={useBaseUrl('/docs/model/new#4b-import-from-an-export-file')}> Section: Import from an Export File  </Link>).
 </div>
 
+<!--
 ## License Registration
 
 You will be able to enter the ValQ license in the Text Box to get the latest features (see Figure below).
@@ -38,12 +42,123 @@ You will be able to enter the ValQ license in the Text Box to get the latest fea
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/gen2.png')} />
   </Zoom>
 </div>
+-->
+
+## Writeback
+
+ValQ custom visual provides the ability to write scenarios, planning series along with the simulation details to an URL which can collect the response and write it to a database, data warehouse, etc.
+
+This enables planners to integrate ValQ's planning and what-if simulations with their business workflows.
+
+- **Format**- ValQ sends the data in a JSON format to the URL which can be processed easily.
+
+- **Configurable** - User can choose to export the entire model, or just the KPIs and simulated affected Nodes.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="Writeback Architecture" src={useBaseUrl('/doc-images/model/writeback/writeback-architecture.png')} />
+  </Zoom>
+</div> <br />
+
+*Figure: Writeback architecture*
+
+### How to configure Writeback in ValQ
+
+1. The Writeback settings are available under the **Model > General > Writeback** section.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/model/writeback/writeback_settings.png')} />
+  </Zoom>
+</div> <br />
+
+*Figure: Writeback settings*
+
+The following table lists out the fields:
+
+| Field | Description | Options |
+| :--- | :--- | :--- |
+| URL | URL of the backend data source to which ValQ will post the data | |
+| Button Label | Label message displayed in the Writeback section | |
+| Button Text | Text message displayed on the Writeback button | |
+| Exporting Nodes | Select the nodes to be exported | |
+| | |  <ul><li>All Nodes</li><li>Only KPI and Key Inputs nodes</li><li>Only simulation affected nodes</li></ul>|
+
+*Table: Writeback Properties*
+
+2. This Writeback feature will now be available in the **Simulate > Navigation Panel** section on the runtime.
+
+> Note: The option is only enabled once the Writeback settings are configured in the Model section.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="Writeback feature accessible from the Nav Panel" src={useBaseUrl('/doc-images/model/writeback/navpanel_writeback_icon.png')} />
+  </Zoom>
+</div>
+
+*Figure: Writeback feature accessible from the Navigation Panel*
+
+  - Click the **Writeback** button
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="Writeback button" src={useBaseUrl('/doc-images/model/writeback/series_scenario_select.png')} />
+  </Zoom>
+</div>
+
+  - Select the *Series* and *Scenarios* that you want to export to the URL and submit.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="writeback-posted-success" src={useBaseUrl('/doc-images/model/writeback/writeback-posted-success.png')} />
+  </Zoom>
+</div>
+
+> Success: Your modeled scenarios and series have been successfully posted to the external URL.
+
+### ValQ Writeback Schema
+
+Writeback feature generates an export schema that is posted on the writeback URL.
+
+This export format includes a JSON object with the following details:
+
+- **Result** array includes the *Scenarios/Series* fields and the respective *Comments History*
+
+- **Simulated Nodes** array includes fields details related to the change in values of the *Simulated Nodes*
+
+- Logged in **ValQ User details**
+
+You can download the schema file here <a href="src/components/jsonSchema.json" download>ValQ Writeback Schema.json</a>
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="writeback-format" src={useBaseUrl('/doc-images/model/writeback/writeback-format.png')} />
+  </Zoom>
+</div>
+
+*Figure: Writeback Schema format*
+
+### Writeback History
+
+History of the Writeback logs is maintained and is accessed by clicking on the history icon right above the Writeback button in the Navigation panel.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="writeback-history" src={useBaseUrl('/doc-images/model/writeback/writeback_history_logs.png')} />
+  </Zoom>
+</div>
+
+*Figure: Writeback History Logs*
 
 ## Summary - General Tab
 
 | Area                 | Property                                             | Description                                                                                                                       |
 | -------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | Export               | Include navigation panel settings in the export file | This property when activated exports the file along with Navigation Panel settings.                                               |
+| Writeback | Write Scenarios, Planning series along with the Simulation details to an URL | This feature sends a post request to the endpoint URL in a JSON format and writes the data to an external data warehouse. |
+
+<!--
 | License Registration            | Unlock additional features                | You will be able to enter the ValQ license in the Text Box to get the latest features.     |
+-->
 
 
