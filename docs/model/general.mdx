@@ -11,14 +11,15 @@ import "react-medium-image-zoom/dist/styles.css";
 
 1. [Export](#export)
 
-2. [Writeback](#writeback)
+2. [License Registration](#license-registration)
 
-## Export
+3. [Writeback](#writeback)
+
+## 1. Export
 
 <div style={{textAlign: 'justify'}}>
-In the Export settings, you will be able to configure the export
-functionality. There is also an option to include the navigation
-settings panel in the Export File (see Figure below).
+Using the Export option, you will be able to export the ValQ model as an encoded text. There is also an option to include the navigation
+panel settings in the Export File.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -27,24 +28,28 @@ settings panel in the Export File (see Figure below).
   </Zoom>
 </div> <br />
 
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/gen4.png')} />
+  </Zoom>
+</div> <br />
+
 <div style={{textAlign: 'justify'}}>
-The saved file can be exported and this exported file can be used in the
-“Import from Excel” option in the “Import an Advanced Model” tab (Refer <Link to={useBaseUrl('/docs/model/new#4b-import-from-an-export-file')}> Section: Import from an Export File  </Link>).
+Download the ValQ model as text file to save it to your local system and this exported file can be shared with other users.
+The steps to import from an Export file is covered <Link to={useBaseUrl('/docs/model/new#4-import-an-advanced-model')}>here</Link>.
 </div>
 
-<!--
-## License Registration
+## 2. License Registration
 
-You will be able to enter the ValQ license in the Text Box to get the latest features (see Figure below).
+You can enter the ValQ license in the Text Box to get the latest features.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/gen2.png')} />
   </Zoom>
 </div>
--->
 
-## Writeback
+## 3. Writeback
 
 ValQ custom visual provides the ability to write scenarios, planning series along with the simulation details to an URL which can collect the response and write it to a database, data warehouse, etc.
 
@@ -155,10 +160,7 @@ History of the Writeback logs is maintained and is accessed by clicking on the h
 | Area                 | Property                                             | Description                                                                                                                       |
 | -------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | Export               | Include navigation panel settings in the export file | This property when activated exports the file along with Navigation Panel settings.                                               |
+| License Registration | Unlock additional features                | You will be able to enter the ValQ license in the Text Box to get the latest features.     |
 | Writeback | Write Scenarios, Planning series along with the Simulation details to an URL | This feature sends a post request to the endpoint URL in a JSON format and writes the data to an external data warehouse. |
-
-<!--
-| License Registration            | Unlock additional features                | You will be able to enter the ValQ license in the Text Box to get the latest features.     |
--->
 
 
