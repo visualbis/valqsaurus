@@ -8,8 +8,7 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 <div style={{textAlign: 'justify'}}>
-Using the Settings Tab, you will be able to configure the settings for
-the functions are mentioned below
+Using the Settings tab, you will be able to configure the settings for functions mentioned below
 </div> <br />
 
  1. [Navigation Panel](#1-navigation-panel)
@@ -22,24 +21,13 @@ the functions are mentioned below
 
 ## 1. Navigation Panel
 
-In the Settings Tab, you can enable/disable the Navigation Panel as
-shown in the below Figure.
-
+The Navigation Panel can be dispayed/ hidden on the Simulate tab by toggling Enable Navigation Panel.
+Here, the pencil icon is available to change the name of the property and eye icon to hide the property.
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/s1.png')} />
   </Zoom>
 </div> <br />
-
-<div style={{textAlign: 'justify'}}>
-Here, the pencil icon is available to change the name of the property and eye icon to hide the property on ValQ. 
-</div>
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="New Tab" src={useBaseUrl('/doc-images/model/s1.1.png')} />
-  </Zoom>
-</div>
 
 <div style={{textAlign: 'justify'}}>
 In the Navigation Panel settings, you will be able to configure the
@@ -50,7 +38,7 @@ be configured for the Navigation Panel.
 ### 1.1 Scenarios
 
 <div style={{textAlign: 'justify'}}>
-Here, you can change the name of the property using the pencil icon and hide the property if needed.
+Change the name of the property using the pencil icon and hide the property if needed.
 The change gets reflected in the Simulate tab.
 </div> <br />
 
@@ -63,13 +51,8 @@ The change gets reflected in the Simulate tab.
 ### 1.2 Sub Models
 
 <div style={{textAlign: 'justify'}}>
-You can enable/disable the Visibility option for the
-Sub Models using the Eye icon and set the Label for the Sub Models
-using the Edit icon and further select the nodes from the model/sub model
-list from the Navigation Panel. manage Selection is available to add/remove 
-sub models. You can also enable/disable the
-property for filtering the list based on the selected subtree (see
-Figure below).
+You can select the nodes from the Choose Tree/Sub-Tree list as sub models and manage Selection is available to add/remove 
+sub models. The property filtering the list based on the selected subtree is can be used to filter Key Inputs, KPIs, Constraints based on the selected sub model.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -81,13 +64,8 @@ Figure below).
 ### 1.3 Simulation Period
 
 <div style={{textAlign: 'justify'}}>
-You can enable/disable the Visibility option for
-the Simulation Period using the Eye icon and also set the Label for
-the Simulation Period using the Edit icon in the Navigation Panel
-(see Figure below). You can also set the Simulation Period Start and
-Simulation Period End. When you need to start the simulation from
-the current month, then you can select the Dynamically set 'Simulation period to Start' 
-to the current Month option (see Figure below).
+Set the Simulation Period Start and Simulation Period End using this property. To start the simulation from
+the current month, you can enable the Dynamically set Simulation period to Start to the current Month option.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -99,13 +77,10 @@ to the current Month option (see Figure below).
 ### 1.4 Value Display
 
 <div style={{textAlign: 'justify'}}>
-You can enable/disable the Visibility option for the
-Value Display using the Eye icon and set the Label for the Value
-Display using the Edit icon. You can select the Primary Period and
-Default Scaling options all from the respective 
-drop-down list for the Value Display in the Navigation Panel (see Figure below).
-Scales to be made available in the node configuration on the Model tab can be selected here and
-Manage Selection provides you with more options to choose from.
+The Primary Period and Default Scaling option can be selected from the respective 
+drop-down list for Value Display in the Navigation Panel.
+Scales to be made available in node configuration on the Model tab can be selected here and
+Manage Selection is used to add/remove options.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -117,11 +92,7 @@ Manage Selection provides you with more options to choose from.
 ### 1.5 Key Inputs
 
 <div style={{textAlign: 'justify'}}>
-You can enable/disable the Visibility option for the
-Key Inputs using the Eye icon and set the Label for the Key Inputs
-using the Edit icon. Further, you can also select the Key Assumptions
-to be displayed as Key Inputs by selecting the required nodes in the
-Navigation Panel (see Figure below).
+Select the Key Assumptions to be displayed as Key Inputs by selecting the required nodes with this property.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -133,11 +104,7 @@ Navigation Panel (see Figure below).
 ### 1.6 KPIs
 
 <div style={{textAlign: 'justify'}}>
-You can enable/disable the Visibility option for the KPIs
-using the Eye icon, set the Label for the KPIs using the Edit icon
-and further select the KPIs to be displayed by selecting the
-required nodes in the Navigation Panel (see Figure below). Use
-Manage Selection to add/ remove KPIs. 
+Select the KPIs to be displayed by selecting the required nodes and use Manage Selection to add/ remove KPIs. 
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -149,12 +116,9 @@ Manage Selection to add/ remove KPIs.
 ### 1.7 Constraints
 
 <div style={{textAlign: 'justify'}}>
-You can enable/disable the Visibility option for the
-Constraints using the Eye icon, set the Label for the Constraints
-using the Edit icon and further select the Constraints to be
-displayed as List by selecting the required nodes in the Navigation
-Panel. You can also enable/disable the property for sorting the
-constraints based on utilization (see Figure below).
+Select the Constraints to be
+displayed as a  list by selecting the required nodes in the Navigation
+Panel. You can also enable/disable the property for sorting the constraints based on utilization to organize the Constraints according to it's performance.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -164,9 +128,7 @@ constraints based on utilization (see Figure below).
 </div>
 
 <div style={{textAlign: 'justify'}}>
-Once all the changes have been saved you will be
-able to view the ValQ screen with Navigation Panel based on the above
-set of configurations (see Figure below).
+The below Figure displays the Navigation Panel on Simulate tab. 
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -177,13 +139,16 @@ set of configurations (see Figure below).
 
 ## 2. Nodes
 
+<div style={{textAlign: 'justify'}}>
+Configure data and display format on ValQ using properties such as Data mapping format, Default node style, Node elements and Data source exception.
+</div>
+
 ### 2.1 Data Mapping Format
 
 <div style={{textAlign: 'justify'}}>
 The node settings help you to map the nodes to queries in the ID,
 Text or ID + Text Formats. In the node Mapping settings in ValQ, the
-Data Mapping Format has 2 options as listed below: listed below (see
-Figure below).
+Data Mapping Format has 2 options as listed below:
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -193,11 +158,11 @@ Figure below).
 </div>
 
 <div style={{textAlign: 'justify'}}>
-1.  Map based on ID or Text - For example, you can use this option if
+1.  Map based on ID or Text - You can use this option if
     the field value exactly matches your node’s unique ID or Text (e.g.,
     Text - ‘Canada’) 
     <br />
-2.  Map based on ID-Text Pair - For example, you can use this option if
+2.  Map based on ID-Text Pair - You can use this option if
     your field has a key-text format (e.g., ‘CA:Canada’), and your
     node’s ID corresponds to a key (e.g.,‘CA’).
 </div> <br />
@@ -208,30 +173,27 @@ Pair. The data source which is assigned for the node mapping is shown
 below:
 </div> <br />
 
-<img alt="Excel Data Source with Node Mapping" src={useBaseUrl('/doc-images/14.11.png')} />
-
-<div style={{textAlign: 'justify'}}>
-From the above Figure, you will be able to view the node ID as 6 and tab
-as 6:SparklingWater\_GrossSales.
-</div>
-
-<div style={{textAlign: 'justify'}}>
-Based on the above configuration, you will be able to view the ValQ
-screen as shown below.
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="Excel Data Source with Node Mapping" src={useBaseUrl('/doc-images/14.11.png')} />
+  </Zoom>    
 </div> <br />
 
-<img alt="valQ screen with Node Mapping" src={useBaseUrl('/doc-images/14.12.png')} />
 
 <div style={{textAlign: 'justify'}}>
-From the above Figure, you will be able to observe that the key-text
-format here is 6:SparklingWater\_GrossSales.
+The key-text format here is 6:SparklingWater\_GrossSales. The Gross Sales for Sparkling water is highlighted below on ValQ screen.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="Excel Data Source with Node Mapping" src={useBaseUrl('/doc-images/14.12.png')} />
+  </Zoom>    
 </div>
 
 ### 2.2 Default Node Style
 
 <div style={{textAlign: 'justify'}}>
-You will be also able to configure the Default Node Style with three
-different options namely Standard, Full and Minimal as shown in the
+The Default Node Style can be selected from three different options namely Standard, Full and Minimal as shown in the
 below Figure.
 </div> <br />
 
@@ -242,33 +204,27 @@ below Figure.
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-When the node Style is selected as
-"Standard", you can view the Node Elements Variance, Trend Spark Line
-and Secondary Value/Variance being selected by default (see Figure
-below).
+With Standard node style, you can view the Node Elements Variance, Trend Spark Line
+and Secondary Value/Variance being selected by default.
 </div> <br />
 
 <img alt="Node Elements for Standard Node Style" src={useBaseUrl('/doc-images/va1.png')} />
 
 <div style={{textAlign: 'justify'}}>
-When the node Style is being selected as "Minimal", then you will be
-able to view only the node element Variance being selected by default
-(see Figure below).
+With Minimal node style, you can view only the node element Variance being selected by default.
 </div> <br />
 
 <img alt="Node Element for Minimal Node Style" src={useBaseUrl('/doc-images/va2.png')} />
 
 <div style={{textAlign: 'justify'}}>
-When the node Style is being selected as "Full", then you will be able
-to view all the node elements without any default selection.
+When the node Style is selected as "Full", you will be able to view all the node elements.
 </div>
 
 ### 2.3 Node Elements
 
 <div style={{textAlign: 'justify'}}>
-You will be able to enable/disable the Node Elements like Variance,
-Trend Spark Line, Secondary Value/Variance and Descendant Node Count
-(see Figure below).
+You can choose to enable/disable the Node Elements like Variance,
+Trend Spark Line, Secondary Value/Variance and Descendant Node Count.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -277,7 +233,7 @@ Trend Spark Line, Secondary Value/Variance and Descendant Node Count
   </Zoom>    
 </div> <br />
 
-Now, let's take a look at the Node Elements with examples 
+Now, let's take a look at the Node Elements one at a time with examples 
 
 <div style={{textAlign: 'justify'}}>
 
@@ -325,7 +281,7 @@ and variance for the first period of the node. You can click <Link to={useBaseUr
   </Zoom>    
 </div> <br />
 
-Below Figure shows the result of enabling all the Node Elements on ValQ 
+Below Figure shows the result after enabling all the Node Elements on ValQ 
 <div style={{textAlign: 'center'}}>
   <Zoom>
     <img alt="ValQ users" src={useBaseUrl('/doc-images/model/s30.5.png')} />
@@ -354,14 +310,11 @@ returns no value for the node.
 
 ## 3. Canvas
 
-In the Canvas settings, you will be able to customize the items on the canvas with the following
-properties:
+Customize the ValQ canvas using the following properties:
 
 ### 3.1 Default Visual
 <div style={{textAlign: 'justify'}}>
-You can set the property Default Visual to the option Tree or Table
-based on your choice. For our example, the property has been set to
-the option Table (see Figure below).
+Default Visual option can be selected as Tree or Table based on your choice. 
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -370,8 +323,7 @@ the option Table (see Figure below).
   </Zoom>    
 </div> <br />
 
-Based on the above settings, you will be able to view the ValQ screen
-with the Table appearance (see Figure below).
+Here the property is set as Table.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -381,8 +333,8 @@ with the Table appearance (see Figure below).
 
 ### 3.2 Start the model with the following KPI
 <div style={{textAlign: 'justify'}}> 
-You can choose the node that you want as the Top node here. For our example, set the property "Start the model with the
-following KPI" to the option "Midwest:Midwest" (see Figure below).
+Choose the node that you want the model to start with here. In the below screen, Start the model with the
+following KPI property is selected as Midwest:Midwest.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -392,9 +344,9 @@ following KPI" to the option "Midwest:Midwest" (see Figure below).
 </div>
 
 ### 3.3 Expand hierarchy up to the following number of levels by default 
+
 <div style={{textAlign: 'justify'}}>
-Set the property " Expand hierarchy up to the following number of
-levels by default" to the value 2 (see Figure above).
+Set the the number of levels on the model you would like to see by default using this property.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -405,8 +357,8 @@ levels by default" to the value 2 (see Figure above).
 
 ### 3.4 Footer Toolbar
 <div style={{textAlign: 'justify'}}>
-In the area Footer Toolbar, enable the property Enable Node Search to search for a node on the search bar
-and enable the property Enable Hiding Empty Nodes to hide nodes to no values.
+Using Footer Toolbar, enable the property Enable Node Search to search for a node on the search bar
+and enable the property Enable Hiding Empty Nodes to hide nodes having no values.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -426,9 +378,8 @@ Set the property Default Canvas Zoom (%) to the value 100.
 
 ### 3.6 Default Table Style
 <div style={{textAlign: 'justify'}}>
-You can choose the table style as full, standard or minimal as default table style. These
-settings for the Table can be visualized only when the property
-"Default Visual" is selected as "Table".
+You can choose the table style as full, standard or minimal as default table style. This
+property for table view can be visualized only when the property <Link to={useBaseUrl('docs/model/settings#31-default-visual')}>Default Visual</Link> is selected as Table.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -439,37 +390,24 @@ settings for the Table can be visualized only when the property
 
 ### 3.7  Hint Text
 <div style={{textAlign: 'justify'}}>
-Set the property Hint Text as "Hover a node and drag the slider left
+The Hint Text by default is set as "Hover a node and drag the slider left
 or right to simulate changes".
 </div> <br />
-
-The following is an example of the canvas configuration as seen below.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
     <img alt="ValQ users" src={useBaseUrl('/doc-images/model/s13.png')} />
   </Zoom>    
-</div> <br />
-
-<div style={{textAlign: 'justify'}}>
-From the above Figure, you can observe that the first node starts with the
-'Overall Result' node. By default, the hierarchy of the nodes is maintained up to 2
-levels. The node search is enabled and you will not be able to
-visualize the nodes with empty values based on the above configuration.
-You will be able to view the canvas zoomed at 100% and the hint is
-appearing with the text as given in the settings.
 </div>
 
 ## 4. Number Formatting
 
-In the Number Formatting settings, you will be able to configure the
-following properties:
+You can configure the following properties with Number Formatting settings:
 
-1.  In the area Scale Suffix, set the property Thousands to "k" (see
-    Figure below).
-2.  Set the property Millions to "m" (see Figure above).
-3.  Set the property Billions to "b".
-4.  Set the property Trillions to "t".
+1.  Under Scale Suffix, set the property Thousands to "k"
+2.  Set the property Millions to "m"
+3.  Set the property Billions to "b"
+4.  Set the property Trillions to "t"
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -477,11 +415,11 @@ following properties:
   </Zoom>    
 </div> <br />
 
-5.  In the area Display Formatting, set the property Display zeroes as
-    to the option "0".
-6.  Set the property Display Negative values as to the option "(0)".
-7.  Set the property Decimal Separator to ".".
-8.  Set the property Thousands Separator to ",".
+5.  Under Display Formatting, set the property Display zeroes as
+    to the option "0"
+6.  Set the property Display Negative values as to the option "(0)"
+7.  Set the property Decimal Separator to "."
+8.  Set the property Thousands Separator to ","
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -492,13 +430,12 @@ following properties:
 ## 5. Conditional Formatting
 
 <div style={{textAlign: 'justify'}}>
-In the Conditional Formatting settings, you will be able to set the Alert
-Threshold and Rules. You will be able to configure the following
-properties for the Conditional Formatting.
+The Conditional Formatting settings can be used to set Alert
+Threshold and Rules for the model. The properties of 
+Conditional Formatting are:
 </div> <br />
 
-1.  You can enable/disable the property Enable Conditional Formatting as
-    shown below.
+1.  Toggle to enable/disable the property Enable Conditional formatting
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -507,11 +444,11 @@ properties for the Conditional Formatting.
 </div>
 
 <div style={{textAlign: 'justify'}}>
-2.  In the area Format based on, select the option Variance as shown in
-    the above Figure. Now configure the Formatting Threshold values as
-    highlighted in the above Figure. Based on the above settings, you
-    will be able to view the Tree as shown below.
+2.  Format based on can be selected as Variance (Primary Vs Comparison) when there's a comparison series
+    or else you can select Simulation (Sim.Primary Vs Primary).
 </div> <br />
+
+Here's the ValQ canvas displayed with Conditional Formatting
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -520,36 +457,21 @@ properties for the Conditional Formatting.
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-3.  After the simulation, you can observe that the variance percentage value
-    for the node 'Midwest' is 12% which is
-    above 0% and based on that condition, the status bar for the node is
-    green (see Figure above). Similarly, the variance percentage
-    value for the node 'Consumer' and 'Industrials' are (6%)\* and (64%)\* respectively,
-    which is between -10% to 0% and the latter 
-    below -10%. Based on the condition set in 5.1, the
-    status bar for the node is yellow and red respectively. <br />
-Note: \* indicates the negative values.
-</div> <br />
-
-<div style={{textAlign: 'justify'}}>
-4.  The option highlighted below 'Simulation (Sim.Primary vs Primary)
-is available to calculate variances between primary values and simulated values in case there is
-only one data series.
-</div> <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-    <img alt="ValQ users" src={useBaseUrl('/doc-images/model/s22.png')} />
-  </Zoom>    
-</div> <br />
+3.  After performing simulation, you can observe that the variance percentage value
+    for Midwest node is 12% which is above 0% and based on that condition, the status
+    bar for the node is green (see above Figure). Similarly, the variance percentage
+    value for the node - Consumer and Industrials are (6%) and (64%) respectively,
+    which is between -10% to 0% and the latter below -10%. Based on the threshold, the
+    status bar for the node is yellow and red respectively.
+</div>
 
 ## 6. Color Theme
 
 In the Color Theme settings, you will be able to configure the following properties:
 
 <div style={{textAlign: 'justify'}}>
-1.  You will be able to select the Light Theme or Dark Theme based on
-    your choice (see Figure below). For our example, the Light Theme has
+1.  Set Light Theme or Dark Theme to the canvas based on
+    your preference. In the below Figure, Light Theme has
     been selected.
 </div> <br />
 
@@ -559,10 +481,9 @@ In the Color Theme settings, you will be able to configure the following propert
   </Zoom>    
 </div> <br />
 
-2.  You can choose the property "Choose Navigational Panel Theme" option
-    as Light or Dark.
+2.  Select the property "Choose Navigational Panel Theme" option as Light or Dark.
 
-3.  Instead, you can customize the model with the options given in the below image.
+3.  Instead, you can customize the model with the options as shown below.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -571,8 +492,8 @@ In the Color Theme settings, you will be able to configure the following propert
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-For example, the Highlighted color is set as black and when we click on a
-node in the Navigation panel, the node in the right pane will be
+For example, the Highlighted color is set as yellow and when we click on a
+node in the Navigation panel, the node in the canvas gets
 highlighted based on the color selection.
 </div> <br />
 
@@ -585,8 +506,8 @@ highlighted based on the color selection.
 ## 7. PopUp Screen
 
 <div style={{textAlign: 'justify'}}>
-PopUp Screen option is available to select the waterfall chart type as vertical or horizontal and it gets
-applied to PopUp screen and scenario comparison screens.
+PopUp Screen option is available to set the waterfall chart type as vertical or horizontal on
+PopUp screen and scenario comparison screens.
 </div> <br />
 
 **Vertical waterfall chart**
