@@ -83,7 +83,8 @@ module.exports = {
                         "how_to_videos/plan/planning-toolbar",
                         "how_to_videos/plan/allocate-by-weight",
                         "how_to_videos/plan/equal-allocation",
-                        "how_to_videos/plan/trend-allocation"
+                        "how_to_videos/plan/trend-allocation",
+                        "how_to_videos/plan/copy-allocation"
 ]
 
             },
