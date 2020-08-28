@@ -10,7 +10,7 @@ module.exports = {
         Introduction: [
             "intro/introduction",
             "intro/versions",
-            "intro/import",
+            "intro/install",
             "intro/model",
             "intro/node",
             "intro/workflow"
@@ -34,7 +34,8 @@ module.exports = {
         ],
         Simulate: [
             "simulation/simulate_overview",
-            "simulation/sim_features",
+            "simulation/simulation_canvas",
+            "simulation/navigation_panel",
             "simulation/tableview"
         ],
         Analyze: [
@@ -80,12 +81,12 @@ module.exports = {
                 type: "category",
                 label: "Plan",
                 items: ["how_to_videos/plan/data-series",
-                        "how_to_videos/plan/planning-toolbar",
-                        "how_to_videos/plan/allocate-by-weight",
-                        "how_to_videos/plan/equal-allocation",
-                        "how_to_videos/plan/trend-allocation",
-                        "how_to_videos/plan/copy-allocation"
-]
+                    "how_to_videos/plan/planning-toolbar",
+                    "how_to_videos/plan/allocate-by-weight",
+                    "how_to_videos/plan/equal-allocation",
+                    "how_to_videos/plan/trend-allocation",
+                    "how_to_videos/plan/copy-allocation"
+                ]
 
             },
             {
