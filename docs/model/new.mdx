@@ -10,7 +10,8 @@ import "react-medium-image-zoom/dist/styles.css";
 
 
 <div style={{textAlign: 'justify'}}>
-The ValQ model can be created in Power BI using any of the below-listed options by clicking on<img alt="New Tab" src={useBaseUrl('/doc-images/model/new icon.png')} width={58} height={35} /> the Model tab.
+Click on <img alt="New Tab" src={useBaseUrl('/doc-images/model/new icon.png')} width={58} height={35} /> to build a model.
+The ValQ model can be created in Power BI using the below options.
 </ div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -23,14 +24,16 @@ The ValQ model can be created in Power BI using any of the below-listed options 
 
 |   | Model                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |---|----------------------------------|---------------------------------------------------------------------------------------|
-| 1 | [Open a Sample Model](#1-open-a-sample-model)           | To view a sample ValQ model  |
-| 2 | [Create a Simple Model](#2-create-a-simple-model)       | ValQ builds a simple model for you from the data you import  |
-| 3 | [Create an Advanced Model](#3-create-an-advanced-model) | You get to build a ValQ model from scratch from the data you import  |
+| 1 | [Open a Sample Model](#1-open-a-sample-model)           | View a built-in sample ValQ model  |
+| 2 | [Create a Simple Model](#2-create-a-simple-model)       | ValQ builds a simple model from the data you import  |
+| 3 | [Create an Advanced Model](#3-create-an-advanced-model) | Build a ValQ model from scratch using the data you import  |
 | 4 | [Import an Advanced Model](#4-import-an-advanced-model) | Advanced users can import an already built existing model  |
 
 </div> <br />
 
-Before starting to build a ValQ model, the first time users can click on this icon to learn more about ValQ and watch tutorials.
+<div style={{textAlign: 'justify'}}>
+Before starting to build a ValQ model, the first time users can click on the below icon to learn more about ValQ and watch the tutorials.
+</div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -47,8 +50,8 @@ Before starting to build a ValQ model, the first time users can click on this ic
 ## 1. Open a Sample Model
 
 <div style={{textAlign: 'justify'}}>
-By clicking the Open a Sample Model option, you will be able to view the list of
-available samples.
+As a new ValQ user, you are offered 4 samples under the Open a Sample Model option. 
+Click on any of the sample to explore ValQ and it's business cycles. 
 </ div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -57,49 +60,43 @@ available samples.
   </Zoom>
 </ div> <br />
 
-For our example, the sample “Mining Industry” has been selected.
+Here's the Mining Industry ValQ model
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/new3.png')} />
   </Zoom>
-</ div> <br />
-
-The Sample Mining Industry Model has been successfully imported.
-
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="New Tab" src={useBaseUrl('/doc-images/model/new4.png')} />
-  </Zoom>
 </ div>
 
 ## 2. Create a Simple Model
 
-
-To build a Simple Model first, you need to import data into Power BI. This step is followed by creating a
+<div style={{textAlign: 'justify'}}>
+To build a Simple Model, first you need to import data into Power BI and activate ValQ. This is followed by creating a
 simple model on ValQ.
+</ div> <br />
 
-The steps have been already covered under <Link to={useBaseUrl('docs/intro/model')}>Using ValQ - An Example</Link> section. 
-Or you can refer <a href="https://valq.com/wp-content/uploads/valq-for-microsoft-power-bi-beginners-tutorial.pdf" target="_blank">this</a> pdf for step by step instructions on how to get started to build a Simple Model. <br />
-
+<div style={{textAlign: 'justify'}}>
+The steps have been covered under <Link to={useBaseUrl('docs/intro/model')}> Using ValQ - An Example </Link> 
+or you can refer <a href="https://valq.com/wp-content/uploads/valq-for-microsoft-power-bi-beginners-tutorial.pdf" target="_blank"> this pdf </a> 
+ for step by step instructions on how to build a Simple Model. <br />
+</ div> <br />
 
 A Simple model looks like this.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="New Tab" src={useBaseUrl('/doc-images/model/new10.png')} />
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new4.png')} />
   </Zoom>
-</ div>
+</ div> <br />
+
+> **Note** <br />
+The Calculation Method for a Simple Model is always set to Sum Children
 
 #### Edit a Simple Model
 
 <div style={{textAlign: 'justify'}}>
-When a node is selected, you will be able to only view the model with Parent
-and Children nodes and you cannot perform any
-configuration on it. But you can generate a copy of the Parent node
-and proceed with Configuration based on your choice (see Figure
-below).
+The nodes on a Simple Model are disabled and you cannot perform any configuration on it. 
+But you can generate a child node of the top node and proceed to configure it based on your needs.
 </ div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -108,47 +105,20 @@ below).
   </Zoom>
 </ div>
 
-#### Dynamic Scaling
+### Convert to Advanced Model 
 
 <div style={{textAlign: 'justify'}}>
-Based on your data source, the model will get created and
-the Value Display (scaling) for all the nodes will be updated appropriately based
-on the data source (see Figure below). For our example, the Number
-Scaling is “0m”.
-</ div> <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="New Tab" src={useBaseUrl('/doc-images/model/new12.png')} />
-  </Zoom>
-</ div>
-
-#### Sum of periods
-
-The time aggregation of the Parent node is always set to Sum of Periods of Child nodes on a Simple Model.
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="New Tab" src={useBaseUrl('/doc-images/model/new17.png')} />
-  </Zoom>
-</ div>
-
-#### Convert to Advanced Model
-
-<div style={{textAlign: 'justify'}}>
-On creating a Simple Model, you have an option to convert the Dynamic
-Model to an Advanced Model (see Figure below).
+To configure the nodes of a Simple Model, convert the Simple Model to Advanced using the magic wand icon highlighted below.
 </ div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/new13.png')} />
   </Zoom>
-</ div> <br />
+</ div> <br />  
 
 <div style={{textAlign: 'justify'}}>
-When you click the magic wand icon, you will be prompted for the Message
-window as shown below.
+Click on the icon and you will be prompted with the Message window as shown below.
 </ div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -158,8 +128,8 @@ window as shown below.
 </ div> <br />
 
 <div style={{textAlign: 'justify'}}>
-After clicking Yes, you will be able to edit the configuration for all
-the levels of Nodes similar to the Advance Model (see Figure below).
+After clicking Yes, you have successfully converted the Simple Model into an Advanced Model.
+You will now be able to configure all the node levels similar to an Advanced Model.
 </ div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -171,9 +141,7 @@ the levels of Nodes similar to the Advance Model (see Figure below).
 ## 3. Create an Advanced Model
 
 <div style={{textAlign: 'justify'}}>
-This option is used to create a model in ValQ from scratch manually.
-By clicking the Create  an Advanced Model option, you will
-be able to view the ValQ screen as shown in the below Figure.
+Use Create an Advanced Model option to build a model on ValQ from scratch manually. 
 </ div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -183,9 +151,8 @@ be able to view the ValQ screen as shown in the below Figure.
 </ div> <br />
 
 <div style={{textAlign: 'justify'}}>
-For our example, the Parent node and two Child nodes have been added by clicking the “+” button.
-The node levels are displayed in the Advanced Editor option as
-shown in the below Figure.
+In the below screen, a parent node and two child nodes have been added by clicking the “+” button.
+The node levels are displayed in the Advanced Editor pane as shown in the below Figure.
 </ div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -194,27 +161,35 @@ shown in the below Figure.
   </Zoom>
 </ div> <br />
 
-Now you can go ahead and configure the model as per your needs using the Model tab options.
+Now you can go ahead and build the model as per your needs using the Model tab options.
 
 ## 4. Import an Advanced Model
 
 #### Import from an Export File
 
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new20.png')} />
+  </Zoom>
+</ div> <br />
+
 <div style={{textAlign: 'justify'}}>
-Using this option “Import from an Export File”, you will be able to
-paste the Export file data format from an already exported tree data as
+With Import from an Export File option, you will be able to
+paste the Export file data format from an already exported tree as
 shown in the below Figure. This Export File will be generated by
-navigating to the Settings tab and by clicking the Export button like <Link to={useBaseUrl('docs/model/general')}> this</Link>.
+navigating to the Settings tab and clicking the Export button like <Link to={useBaseUrl('docs/model/general#1-export')}> this</Link>.
 </div> <br /> 
 
 <div style={{textAlign: 'center'}}>
-<Zoom>
-<img alt="Configuration Data from Export File Data Format" src={useBaseUrl('/doc-images/12.36.png')} />
-</Zoom>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new23.png')} />
+  </Zoom>
 </ div> <br />
 
-Now based on the above configuration, you will be able to view the model in the ValQ screen.
+On clicking Finish, you will be able to view the model in the ValQ screen as below.
 
-<Zoom>
-<img alt="valQ screen derived from Export File Data Format" src={useBaseUrl('/doc-images/12.37.png')} />
-</Zoom>
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/new24.png')} />
+  </Zoom>
+</ div> <br />

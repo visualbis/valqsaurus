@@ -88,12 +88,22 @@ Click on the pencil icon on the node to access the node details screen
   </Zoom>
 </ div>
 
-### Node details components
+### Node Details Pop-up
 
-#### 1. Simulation Impact and Variances
+#### 1. Node description
+
+The pop-up provides you with insights such as node name of the KPI, it's definition and calculation method on top left corner of the screen.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulate_tab/sim26.png')} />
+  </Zoom>
+</ div> <br />
+
+#### 2. Simulation Impact and Variances
 
 <div style={{textAlign: 'justify'}}>
-The node details pop-up provides a detailed analysis of simulation impact for the first period and full year. The results are calculated
+The node details pop-up provides a detailed analysis of simulation impact for the current month and full year. The results are calculated
 difference between simulated baseline series and comparison series in addition to the analysis between original baseline 
 series and comparison series.
 </ div> <br />
@@ -104,11 +114,11 @@ series and comparison series.
   </Zoom>
 </ div> <br />
 
-#### 2. Line and Column Chart
+#### 3. Line and Column Chart
 
 <div style={{textAlign: 'justify'}}>
 A line and column chart shows the period values of the node for the full year. The column chart represent the simulated baseline values 
-and the dotted lines indicate the original baseline value. The blue trend line shows the comparison values. 
+and the dotted lines indicate the original baseline value. The blue trend line shows the comparison values and the current month is highlighted in blue. 
 Click the icon highlighted in the below image to view the chart on fullscreen mode.
 </ div> <br />
 
@@ -146,7 +156,7 @@ Here's a look at the Trend of Children
   </Zoom>
 </ div> <br />
 
-#### 3. Waterfall Chart
+#### 4. Waterfall Chart
 
 <div style={{textAlign: 'justify'}}>
 A waterfall chart is also a part of the node details page. The chart has three horizontal lines icon option to show the
@@ -434,7 +444,7 @@ In the below example, the node 'Midwest' gets highlighted on selecting the KPI '
 
 <div style={{textAlign: 'justify'}}>
 Constraint is added to a node to evaluate its performance after simulation against a threshold.
-Any constraint added to the model is displayed under the Navigation Panel along with its Value Range. 
+Any constraint added to the model is displayed under the Navigation Panel along with its <Link to={useBaseUrl('docs/model/node#25-value-range')}>Value Range</Link>. 
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
