@@ -31,6 +31,7 @@ module.exports = {
             "planning/business_cases",
             "planning/update"
 
+<<<<<<< HEAD
         ],
         Simulate: [
             "simulation/simulate_overview",
@@ -38,6 +39,15 @@ module.exports = {
             "simulation/navigation_panel",
             "simulation/tableview"
         ],
+=======
+        ],
+        Simulate: [
+            "simulation/simulate_overview",
+            "simulation/simulation_canvas",
+            "simulation/navigation_panel",
+            "simulation/tableview"
+        ],
+>>>>>>> qa-v
         Analyze: [
             "analysis/analyze_overview",
             "analysis/variance_analysis",
@@ -62,7 +72,10 @@ module.exports = {
                 ]
             }
         ],
+<<<<<<< HEAD
 
+=======
+>>>>>>> qa-v
         "How To Videos": ["how_to_videos/get-started",
             {
                 type: "category",
@@ -103,12 +116,22 @@ module.exports = {
                     "how_to_videos/simulate/visualization"
                 ]
             },
+<<<<<<< HEAD
             {
                 type: "category",
                 label: "Analyze",
                 items: ["how_to_videos/analyze/intro"]
 
             },
+=======
+            /*            {
+                            type: "category",
+                            label: "Analyze",
+                            items: ["how_to_videos/analyze/intro"]
+            
+                        },
+            */
+>>>>>>> qa-v
 
         ],
 

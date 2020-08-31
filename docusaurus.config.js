@@ -8,6 +8,7 @@ module.exports = {
     projectName: "valqsaurus", // Usually your repo name.
     themeConfig: {
         navbar: {
+            hideOnScroll: true,
             title: "ValQ",
             logo: {
                 alt: "ValQ Logo",
