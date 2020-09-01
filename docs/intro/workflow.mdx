@@ -17,38 +17,43 @@ The ValQ workflow consists of four steps - Model, Plan, Simulate and Analyze –
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/workflow/workflow1.png')} />
   </Zoom>
 </div> <br />
+
 At a very high level, these are used for the following: <br /> <br />
 
 |   	| TAB  	| PURPOSE  	| ACCESSIBLE TO*  	|
 |---	|---	|---	|---	|
-|  1 	|  <Link to={useBaseUrl('docs/intro/workflow#model-tab')}> Model </Link> 	| Build advanced models and leverage models by using formulae and functions   	| Creator only  	|
-|  2 	|  <Link to={useBaseUrl('docs/intro/workflow#plan-tab')}> Plan </Link> 	| Leverage intelligent planning grid to perform budgeting, allocations and time-series forecasting  	| Creator & Consumer  	|
-|  3 	|  <Link to={useBaseUrl('docs/intro/workflow#simulate-tab')}> Simulate </Link> 	| Perform simulations & scenario comparisons; Build models directly from data  	| Creator & Consumer   	| 
-|  4 	|  <Link to={useBaseUrl('docs/intro/workflow#analyze-tab')}> Analyze </Link> 	| Perform in-depth variance analysis   	| Creator & Consumer   	|
+|  1 	|  <Link to={useBaseUrl('docs/intro/workflow#model')}> Model </Link> 	| Build advanced models and leverage models by using formulae and functions   	| Creator only  	|
+|  2 	|  <Link to={useBaseUrl('docs/intro/workflow#plan')}> Plan </Link> 	| Leverage intelligent planning grid to perform budgeting, allocations and time-series forecasting  	| Creator & Consumer  	|
+|  3 	|  <Link to={useBaseUrl('docs/intro/workflow#simulate')}> Simulate </Link> 	| Perform simulations & scenario comparisons; Build models directly from data  	| Creator & Consumer   	| 
+|  4 	|  <Link to={useBaseUrl('docs/intro/workflow#analyze')}> Analyze </Link> 	| Perform in-depth variance analysis   	| Creator & Consumer   	|
 
 <br />
 
 > ** Note** <br /> 
-    A Creator can also build models for self-consumption.
+    A Creator can also build models for self-consumption
+
+#### Creator 
 
 <div style={{textAlign: 'justify'}}>
-<br />
-
-**Creator**: One who builds or designs models – this can be an analyst or planner (or anyone in the organization who is comfortable with Excel)
-
-**Consumer**: One who consumes ValQ models built by Creator – this can be executives, decision makers, and even other analysts and planners in the organization. 
+Creator is one who builds or designs models – this can be an analyst or planner (or anyone in the organization who is comfortable with Excel).
 </div>
 
+#### Consumer
+
+<div style={{textAlign: 'justify'}}>
+Consumer is one who consumes ValQ models built by Creator – this can be executives, decision makers, and even other analysts and planners in the organization. 
+</div> <br />
+
 > ** Note** <br /> 
-    There is no specific sequence to be followed in the above workflow. <br /> For example, not everyone may need to utilize
+    There is no specific sequence to be followed in the above workflow. For example, not everyone may need to utilize
     Plan & Analyze tabs, ValQ models can also be built on-the-fly directly from the Simulate tab without having to utilize any Model tab capabilities.
   
 What follows is a preview of these workflow items, and we would explore them in-depth later.
 
-## Model Tab
+## Model
 
 <div style={{textAlign: 'justify'}}>
-The <Link to={useBaseUrl('docs/model/model_overview')}> Model </Link> tab helps the designer bring a data model to life and build complex visuals without writing a single line of code. This tab is available only during edit mode (in Power BI) and not in the reading view – and can be thus accessible only by Creators and not Consumers.
+The <Link to={useBaseUrl('docs/model/model_overview')}>Model</Link> tab helps the designer bring a data model to life and build complex visuals without writing a single line of code. This tab is available only during edit mode (in Power BI) and not in the reading view – and can be thus accessible only by Creators and not Consumers.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -70,10 +75,10 @@ While modeling, the user can leverage the Fields, Visualizations & Filters pane 
   </Zoom>
 </div>
 
-## Plan Tab
+## Plan
 
 <div style={{textAlign: 'justify'}}>
-The <Link to={useBaseUrl('docs/planning/plan_overview')}> Plan </Link> tab is used to create new plans and budgets for business cycles, perform top-down and bottom-up analyses, apply different allocation methods, perform time series forecasting, and more.
+The <Link to={useBaseUrl('docs/planning/plan_overview')}>Plan</Link> tab is used to create new plans and budgets for business cycles, perform top-down and bottom-up analyses, apply different allocation methods, perform time series forecasting, and more.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -85,10 +90,10 @@ The <Link to={useBaseUrl('docs/planning/plan_overview')}> Plan </Link> tab is us
   </Zoom>
 </div> 
 
-## Simulate Tab
+## Simulate
 
 <div style={{textAlign: 'justify'}}>
-In the <Link to={useBaseUrl('docs/simulation/simulate_overview')}> Simulate </Link> tab, you would be able to visualize the KPIs and their relationships arranged in a tree-like fashion. From this tab, you can run simulations, create scenarios and compare scenarios.
+In the <Link to={useBaseUrl('docs/simulation/simulate_overview')}>Simulate</Link> tab, you would be able to visualize the KPIs and their relationships arranged in a tree-like fashion. From this tab, you can run simulations, create scenarios and compare scenarios.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -101,12 +106,12 @@ In the <Link to={useBaseUrl('docs/simulation/simulate_overview')}> Simulate </Li
 </div> <br />
 
 > ** Note** <br />
-Consumers would typically see the Simulate tab first while opening ValQ.
+Consumers would typically see the Simulate tab first while opening ValQ
 
-## Analyze Tab 
+## Analyze
 
 <div style={{textAlign: 'justify'}}>
-The <Link to={useBaseUrl('docs/analysis/analyze_overview')}> Analyze </Link> tab allows the user to run advanced analyses such as variance analysis. While consuming from Power BI server or service, you would be able to also download the results of such analyses in a spreadsheet.
+The <Link to={useBaseUrl('docs/analysis/analyze_overview')}>Analyze</Link> tab allows the user to run advanced analyses such as variance analysis. While consuming from Power BI server or service, you would be able to also download the results of such analyses in a spreadsheet.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
