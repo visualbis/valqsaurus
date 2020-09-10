@@ -4,15 +4,14 @@ title: Export Data to Web
 sidebar_label: Export Data To Web
 ---
 
-import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-**Export As Datasource** feature allows the data Series(Baseline, Comparison, Historical, and Planning Series) and Scenarios of a ValQ model to be made available in a JSON format on the web. This Web URL will be a protected resource and an authorization key will be needed to access the JSON data. This feature can be used in some use cases like 
-
+**Export As Datasource** feature allows the *Data Series* (Baseline, Comparison, Historical, and Planning Series) and *Scenarios* of a ValQ model to be made available in a JSON format on the web. This Web URL will be a protected resource and an authorization key will be needed to access the JSON data. This feature can be used in some use cases like:
 - Writing back the data from ValQ to a source system by reading the JSON
-- Import the data back to the Power BI report (Using Power BI's Get Data from Web feature)
+- Import the data back to the Power BI report (Using Power BI's "*Get Data from Web*" feature)
 
 > Note: The authorization key will be generated and will be available only to the report admins.
 
@@ -27,7 +26,23 @@ In order to export the data as Datasource, please follow the below steps:
   </Zoom>
  </div>
 
- *Screenshot: Upload Model to Workspace*
+*Upload Model to Workspace*
+
+ <div style={{textAlign: 'center'}}>
+  <Zoom>
+   <img alt="Upload Popup Screen" src={useBaseUrl('/doc-images/web-datasource/upload-popup.png')} />
+  </Zoom>
+ </div>
+
+*Upload Popup Screen*
+
+ <div style={{textAlign: 'center'}}>
+  <Zoom>
+   <img alt="Model Uploaded" src={useBaseUrl('/doc-images/web-datasource/model-uploaded.png')} />
+  </Zoom>
+ </div>
+
+*Model uploded to the Workspace*
 
 1. Click on the 3 dots `...` and select **"Export as datasource"**
 
@@ -37,6 +52,8 @@ In order to export the data as Datasource, please follow the below steps:
   </Zoom>
  </div>
 
+*Export as datasource*
+
 1. Select the **Series** and **Scenarios** names that you want to export
 
  <div style={{textAlign: 'center'}}>
@@ -45,7 +62,7 @@ In order to export the data as Datasource, please follow the below steps:
   </Zoom>
  </div>
 
-*Screenshot: Create a Web datasource*
+*Create a Web datasource*
 
 Following are the options available in the *Export format* screen:
 
@@ -55,7 +72,7 @@ Following are the options available in the *Export format* screen:
   </Zoom>
  </div>
 
-*Screenshot: Export format*
+*Export format*
 
 - **Export format**: Select the export format as *Tree structure* or *Flat structure*
 - **Customization**: Select the *Export level of the Nodes* that decides the hierarchy of the Model Nodes
@@ -65,7 +82,7 @@ Following are the options available in the *Export format* screen:
 
  > Note: The above Web URL and HTTP request ids are auto-generated.
 
-## Example
+## Example (Import data from Web datasource URL in Power BI)
 
 In the below example, we'll show how the URL can be consumed in a Power BI report using [Get Data by Web Connector](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-to-web-by-example).
 
@@ -77,6 +94,8 @@ In the below example, we'll show how the URL can be consumed in a Power BI repor
   </Zoom>
  </div>
 
+*Get Data by Web Connector*
+
 2. Select the *Advanced* option
 
  <div style={{textAlign: 'center'}}>
@@ -84,6 +103,8 @@ In the below example, we'll show how the URL can be consumed in a Power BI repor
    <img alt="web-url-http-request" src={useBaseUrl('/doc-images/web-datasource/web-url-http-request.png')} />
   </Zoom>
  </div>
+
+*Web URL and HTTP request fields*
  
 - Enter the Web URL and HTTP request header parameters obtained in the above **export format** section.
   
@@ -98,10 +119,11 @@ In the below example, we'll show how the URL can be consumed in a Power BI repor
   </Zoom>
  </div>
 
- *Screenshot: Preview of the data to be imported*
+ *Preview of the data to be imported*
 
 You may click **Load** to continue loading the data or **Transform Data** to further configure the data that will be imported from the web datasource.
 
+<!--
  <div style={{textAlign: 'center'}}>
   <Zoom>
    <img alt="Transform Data" src={useBaseUrl('/doc-images/web-datasource/transform-data.png')} />
@@ -133,3 +155,4 @@ You may click **Load** to continue loading the data or **Transform Data** to fur
  </div>
 
  *Screenshot: Web Datasource imported*
+-->
