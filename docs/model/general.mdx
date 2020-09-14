@@ -2,124 +2,142 @@
 id: general
 title: General
 ---
-import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
-import Link from '@docusaurus/Link';
+
+import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
+import Link from "@docusaurus/Link";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 **Model > General** tab allows you to configure the following settings:
 
-<div style={{textAlign: 'justify'}} className="table-center">
-
-|   | Click on any option to know more  |                                                                                                                                                                                                                                                                   
-|---|---------------------|
-| 1 | [Export](#1-export)  |
-| 2 | [License Registration](#2-license-registration)   |
-| 3 | [Writeback](#3-writeback) |
-
-</div>
+1. [Export](#1-export)
+1. [License Registration](#2-license-registration)
+1. [Writeback](#3-writeback)
 
 ## 1. Export
 
-<div style={{textAlign: 'justify'}}>
-Using the Export option, you will be able to export the ValQ model as an encoded text. There is also an option to include the navigation
-panel settings in the Export File.
+<div style={{ textAlign: "justify" }}>
+  Using the Export option, you will be able to export the ValQ model as an
+  encoded text. There is also an option to include the navigation panel settings
+  in the Export File.
 </div> <br />
 
-<div style={{textAlign: 'center'}}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="New Tab" src={useBaseUrl('/doc-images/model/gen1.png')} />
+    <img alt="New Tab" src={useBaseUrl("/doc-images/model/gen1.png")} />
   </Zoom>
 </div> <br />
 
-<div style={{textAlign: 'center'}}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="New Tab" src={useBaseUrl('/doc-images/model/gen4.png')} />
+    <img alt="New Tab" src={useBaseUrl("/doc-images/model/gen4.png")} />
   </Zoom>
 </div> <br />
 
-<div style={{textAlign: 'justify'}}>
-Download the ValQ model as text file to save it to your local system and this exported file can be shared with other users.
-The steps to import from an Export file is covered <Link to={useBaseUrl('/docs/model/new#4-import-an-advanced-model')}>here</Link>.
+<div style={{ textAlign: "justify" }}>
+  Download the ValQ model as text file to save it to your local system and this
+  exported file can be shared with other users. The steps to import from an
+  Export file is covered{" "}
+  <Link to={useBaseUrl("/docs/model/new#4-import-an-advanced-model")}>
+    here
+  </Link>
+  .
 </div>
 
 ## 2. License Registration
 
 Enter the license key in the text box to get the latest ValQ features.
 
-<div style={{textAlign: 'center'}}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="New Tab" src={useBaseUrl('/doc-images/model/gen2.png')} />
+    <img alt="New Tab" src={useBaseUrl("/doc-images/model/gen2.png")} />
   </Zoom>
 </div>
 
 ## 3. Writeback
 
 ValQ custom visual provides the ability to write scenarios, planning series along with the simulation details to an URL which can collect the response and write it to a database, data warehouse, etc.
-
 This enables planners to integrate ValQ's planning and what-if simulations with their business workflows.
 
 - **Format**- ValQ sends the data in a JSON format to the URL which can be processed easily.
-
 - **Configurable** - User can choose to export the entire model, or just the KPIs and simulated affected Nodes.
 
-<div style={{textAlign: 'center'}}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="Writeback Architecture" src={useBaseUrl('/doc-images/model/writeback/writeback-architecture.png')} />
+    <img
+      alt="Writeback Architecture"
+      src={useBaseUrl("/doc-images/model/writeback/writeback-architecture.png")}
+    />
   </Zoom>
 </div> <br />
 
-*Figure: Writeback architecture*
+_Figure: Writeback architecture_
 
 ### 3.1 Configure Writeback in ValQ
 
 1. The Writeback settings are available under the **Model > General > Writeback** section.
 
-<div style={{textAlign: 'center'}}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/model/writeback/writeback_settings.png')} />
+    <img
+      alt="ValQ logo"
+      src={useBaseUrl("/doc-images/model/writeback/writeback_settings.png")}
+    />
   </Zoom>
 </div> <br />
 
-*Figure: Writeback settings*
+_Figure: Writeback settings_
 
 The following table lists out the fields:
 
-| Field | Description | Options |
-| :--- | :--- | :--- |
-| URL | URL of the backend data source to which ValQ will post the data | |
-| Button Label | Label message displayed in the Writeback section | |
-| Button Text | Text message displayed on the Writeback button | |
-| Exporting Nodes | Select the nodes to be exported | |
-| | |  <ul><li>All Nodes</li><li>Only KPI and Key Inputs nodes</li><li>Only simulation affected nodes</li></ul>|
+| Field           | Description                                                     | Options                                                                                                  |
+| :-------------- | :-------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------- |
+| URL             | URL of the backend data source to which ValQ will post the data |                                                                                                          |
+| Button Label    | Label message displayed in the Writeback section                |                                                                                                          |
+| Button Text     | Text message displayed on the Writeback button                  |                                                                                                          |
+| Exporting Nodes | Select the nodes to be exported                                 |                                                                                                          |
+|                 |                                                                 | <ul><li>All Nodes</li><li>Only KPI and Key Inputs nodes</li><li>Only simulation affected nodes</li></ul> |
 
-*Table: Writeback Properties*
+_Table: Writeback Properties_
 
 2. This Writeback feature will now be available in the **Simulate > Navigation Panel** section on the runtime.
 
 > Note: The option is only enabled once the Writeback settings are configured in the Model section.
 
-<div style={{textAlign: 'center'}}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="Writeback feature accessible from the Nav Panel" src={useBaseUrl('/doc-images/model/writeback/navpanel_writeback_icon.png')} />
+    <img
+      alt="Writeback feature accessible from the Nav Panel"
+      src={useBaseUrl(
+        "/doc-images/model/writeback/navpanel_writeback_icon.png"
+      )}
+    />
   </Zoom>
 </div>
 
-*Figure: Writeback feature accessible from the Navigation Panel*
+_Figure: Writeback feature accessible from the Navigation Panel_
 
-  - Click the **Writeback** button
+- Click the **Writeback** button
 
-<div style={{textAlign: 'center'}}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="Writeback button" src={useBaseUrl('/doc-images/model/writeback/series_scenario_select.png')} />
+    <img
+      alt="Writeback button"
+      src={useBaseUrl("/doc-images/model/writeback/series_scenario_select.png")}
+    />
   </Zoom>
 </div>
 
-  - Select the *Series* and *Scenarios* that you want to export to the URL and submit.
+- Select the _Series_ and _Scenarios_ that you want to export to the URL and submit.
 
-<div style={{textAlign: 'center'}}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="writeback-posted-success" src={useBaseUrl('/doc-images/model/writeback/writeback-posted-success.png')} />
+    <img
+      alt="writeback-posted-success"
+      src={useBaseUrl(
+        "/doc-images/model/writeback/writeback-posted-success.png"
+      )}
+    />
   </Zoom>
 </div>
 
@@ -131,40 +149,547 @@ Writeback posts JSON to the writeback URL in a specific export schema.
 
 This export format includes a JSON object with the following details:
 
-- **Result** array includes the *Scenarios/Series* fields and the respective *Comments History*
-
-- **Simulated Nodes** array includes fields details related to the change in values of the *Simulated Nodes*
-
+- **Result** array includes the _Scenarios/Series_ fields and the respective _Comments History_
+- **Simulated Nodes** array includes fields details related to the change in values of the _Simulated Nodes_
 - Logged in **ValQ User details**
+
+<details>
+<summary>
+Click to copy the "<i>jsonSchema</i>" code
+</summary>
+
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The Writeback Schema",
+  "description": "The Schema for writeback series and scenarios from the ValQ application",
+  "default": {},
+  "required": [],
+  "properties": {
+    "version": {
+      "$id": "#/properties/version",
+      "type": "string",
+      "description": "The string will have the current version of the writeback",
+      "title": "The version of the Writeback",
+      "default": ""
+    },
+    "code": {
+      "$id": "#/properties/code",
+      "type": "integer",
+      "description": "The integer will have the HTTP status code to denote success or failure of writeback",
+      "title": "The HTTP status code",
+      "default": 0
+    },
+    "result": {
+      "$id": "#/properties/result",
+      "type": "array",
+      "title": "The Writeback result",
+      "description": "The results containing the writeback data of the series and scenarios",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/result/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/result/items/anyOf/0",
+            "type": "object",
+            "title": "The scenario data",
+            "description": "The schema for the scenario data",
+            "default": {},
+            "required": [],
+            "properties": {
+              "id": {
+                "$id": "#/properties/result/items/anyOf/0/properties/id",
+                "type": "string",
+                "title": "The scenario id",
+                "description": "The unique id of the scenario",
+                "default": ""
+              },
+              "title": {
+                "$id": "#/properties/result/items/anyOf/0/properties/title",
+                "type": "string",
+                "title": "The scenario title",
+                "description": "The string title of the scenario",
+                "default": ""
+              },
+              "resultNodes": {
+                "$id": "#/properties/result/items/anyOf/0/properties/resultNodes",
+                "type": "array",
+                "title": "The result nodes of scenario",
+                "description": "All the result nodes of the scenarios",
+                "default": [],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1",
+                      "type": "object",
+                      "title": "The scenario data",
+                      "description": "The data of the scenario",
+                      "default": {},
+                      "required": [],
+                      "properties": {
+                        "id": {
+                          "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/id",
+                          "type": "string",
+                          "title": "The node id",
+                          "description": "The unique id of the node",
+                          "default": ""
+                        },
+                        "title": {
+                          "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/title",
+                          "type": "string",
+                          "title": "The node title",
+                          "description": "The name of the node",
+                          "default": ""
+                        },
+                        "periodValues": {
+                          "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/periodValues",
+                          "type": "array",
+                          "title": "The values of period",
+                          "description": "The values for each periods",
+                          "default": [],
+                          "additionalItems": true,
+                          "items": {
+                            "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/periodValues/items",
+                            "anyOf": [
+                              {
+                                "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/periodValues/items/anyOf/0",
+                                "type": "object",
+                                "title": "The period value",
+                                "description": "The data of a period value",
+                                "default": {},
+                                "required": [],
+                                "properties": {
+                                  "id": {
+                                    "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/periodValues/items/anyOf/0/properties/id",
+                                    "type": "string",
+                                    "title": "The period id",
+                                    "description": "The id of the current period",
+                                    "default": ""
+                                  },
+                                  "label": {
+                                    "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/periodValues/items/anyOf/0/properties/label",
+                                    "type": "string",
+                                    "title": "The period label",
+                                    "description": "The label of the current period",
+                                    "default": ""
+                                  },
+                                  "value": {
+                                    "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/periodValues/items/anyOf/0/properties/value",
+                                    "type": "number",
+                                    "title": "The period value",
+                                    "description": "The period value of the current scenario",
+                                    "default": 0.0
+                                  },
+                                  "variance": {
+                                    "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/periodValues/items/anyOf/0/properties/variance",
+                                    "type": "number",
+                                    "title": "The variance value",
+                                    "description": "The variance value of the current scenario",
+                                    "default": 0.0
+                                  }
+                                },
+                                "additionalProperties": true
+                              }
+                            ]
+                          }
+                        },
+                        "comments": {
+                          "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/comments",
+                          "type": "array",
+                          "title": "The comments of the scenario",
+                          "description": "This schema holds the comments of a specific scenario",
+                          "default": [],
+                          "additionalItems": true,
+                          "items": {
+                            "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/comments/items",
+                            "anyOf": [
+                              {
+                                "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/comments/items/anyOf/0",
+                                "type": "object",
+                                "title": "The scenario comment",
+                                "description": "The individual scenario comment",
+                                "default": {},
+                                "required": [],
+                                "properties": {
+                                  "comment": {
+                                    "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/comments/items/anyOf/0/properties/comment",
+                                    "type": "string",
+                                    "title": "The comment",
+                                    "description": "The comment string of the scenario",
+                                    "default": ""
+                                  },
+                                  "createdAt": {
+                                    "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/comments/items/anyOf/0/properties/createdAt",
+                                    "type": "integer",
+                                    "title": "The createdAt",
+                                    "description": "The time when the comment was created",
+                                    "default": 0
+                                  },
+                                  "createdBy": {
+                                    "$id": "#/properties/result/items/anyOf/0/properties/resultNodes/items/anyOf/1/properties/comments/items/anyOf/0/properties/createdBy",
+                                    "type": "string",
+                                    "title": "The createdBy",
+                                    "description": "The user who created the comment",
+                                    "default": ""
+                                  }
+                                },
+                                "additionalProperties": true
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "type": {
+                "$id": "#/properties/result/items/anyOf/0/properties/type",
+                "type": "string",
+                "title": "The type of Data",
+                "description": "To Specify whether the current instance is a scenario or series",
+                "default": ""
+              },
+              "description": {
+                "$id": "#/properties/result/items/anyOf/0/properties/description",
+                "type": "string",
+                "title": "The scenario description",
+                "description": "The string description of the scenario",
+                "default": ""
+              },
+              "simulatedNodes": {
+                "$id": "#/properties/result/items/anyOf/0/properties/simulatedNodes",
+                "type": "array",
+                "title": "The simulated Nodes",
+                "description": "Contains the simulation details of the scenario",
+                "default": [],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/result/items/anyOf/0/properties/simulatedNodes/items"
+                }
+              }
+            },
+            "additionalProperties": true
+          },
+          {
+            "$id": "#/properties/result/items/anyOf/1",
+            "type": "object",
+            "title": "The primary series data",
+            "description": "The schema for the primary series data",
+            "default": {},
+            "required": [],
+            "properties": {
+              "id": {
+                "$id": "#/properties/result/items/anyOf/1/properties/id",
+                "type": "string",
+                "title": "The series id",
+                "description": "The unique id of the series",
+                "default": ""
+              },
+              "title": {
+                "$id": "#/properties/result/items/anyOf/1/properties/title",
+                "type": "string",
+                "title": "The series title",
+                "description": "The string title of the series",
+                "default": ""
+              },
+              "resultNodes": {
+                "$id": "#/properties/result/items/anyOf/1/properties/resultNodes",
+                "type": "array",
+                "title": "The result nodes of primary series",
+                "description": "All the result nodes of the primary series",
+                "default": [],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0",
+                      "type": "object",
+                      "title": "The primary series data",
+                      "description": "The schema for the primary series data",
+                      "default": {},
+                      "required": [],
+                      "properties": {
+                        "id": {
+                          "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/id",
+                          "type": "string",
+                          "title": "The period id",
+                          "description": "The id of the current period",
+                          "default": ""
+                        },
+                        "title": {
+                          "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/title",
+                          "type": "string",
+                          "title": "The series title",
+                          "description": "The string title of the series",
+                          "default": ""
+                        },
+                        "periodValues": {
+                          "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/periodValues",
+                          "type": "array",
+                          "title": "The values of period",
+                          "description": "The values for each periods",
+                          "default": [],
+                          "additionalItems": true,
+                          "items": {
+                            "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/periodValues/items",
+                            "anyOf": [
+                              {
+                                "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0",
+                                "type": "object",
+                                "title": "The period value",
+                                "description": "The data of a period value",
+                                "default": {},
+                                "required": [],
+                                "properties": {
+                                  "id": {
+                                    "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0/properties/id",
+                                    "type": "string",
+                                    "title": "The period id",
+                                    "description": "The id of the current period",
+                                    "default": ""
+                                  },
+                                  "label": {
+                                    "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0/properties/label",
+                                    "type": "string",
+                                    "title": "The period label",
+                                    "description": "The label of the current period",
+                                    "default": ""
+                                  },
+                                  "value": {
+                                    "$id": "#/properties/result/items/anyOf/1/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0/properties/value",
+                                    "type": "number",
+                                    "title": "The period value",
+                                    "description": "The period value of the current series",
+                                    "default": 0.0
+                                  }
+                                },
+                                "additionalProperties": true
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "type": {
+                "$id": "#/properties/result/items/anyOf/1/properties/type",
+                "type": "string",
+                "title": "The type of Data",
+                "description": "To Specify whether the current instance is a scenario or series",
+                "default": ""
+              },
+              "isPrimary": {
+                "$id": "#/properties/result/items/anyOf/1/properties/isPrimary",
+                "type": "boolean",
+                "title": "The isPrimary series",
+                "description": "Boolean to identify if the current series is a primary series",
+                "default": false
+              }
+            },
+            "additionalProperties": true
+          },
+          {
+            "$id": "#/properties/result/items/anyOf/2",
+            "type": "object",
+            "title": "The comparison series data",
+            "description": "The schema for the comparison series data",
+            "default": {},
+            "required": [],
+            "properties": {
+              "id": {
+                "$id": "#/properties/result/items/anyOf/2/properties/id",
+                "type": "string",
+                "title": "The series id",
+                "description": "The unique id of the series",
+                "default": ""
+              },
+              "title": {
+                "$id": "#/properties/result/items/anyOf/2/properties/title",
+                "type": "string",
+                "title": "The series title",
+                "description": "The string title of the series",
+                "default": ""
+              },
+              "resultNodes": {
+                "$id": "#/properties/result/items/anyOf/2/properties/resultNodes",
+                "type": "array",
+                "title": "The result nodes of comparison series",
+                "description": "All the result nodes of the comparison series",
+                "default": [],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0",
+                      "type": "object",
+                      "title": "The comparison series data",
+                      "description": "The schema for the comparison series data",
+                      "default": {},
+                      "required": [],
+                      "properties": {
+                        "id": {
+                          "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/id",
+                          "type": "string",
+                          "title": "The period id",
+                          "description": "The id of the current period",
+                          "default": ""
+                        },
+                        "title": {
+                          "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/title",
+                          "type": "string",
+                          "title": "The series title",
+                          "description": "The string title of the series",
+                          "default": ""
+                        },
+                        "periodValues": {
+                          "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/periodValues",
+                          "type": "array",
+                          "title": "The values of period",
+                          "description": "The values for each periods",
+                          "default": [],
+                          "additionalItems": true,
+                          "items": {
+                            "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/periodValues/items",
+                            "anyOf": [
+                              {
+                                "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0",
+                                "type": "object",
+                                "title": "The period value",
+                                "description": "The data of a period value",
+                                "default": {},
+                                "required": [],
+                                "properties": {
+                                  "id": {
+                                    "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0/properties/id",
+                                    "type": "string",
+                                    "title": "The period id",
+                                    "description": "The id of the current period",
+                                    "default": ""
+                                  },
+                                  "label": {
+                                    "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0/properties/label",
+                                    "type": "string",
+                                    "title": "The period label",
+                                    "description": "The label of the current period",
+                                    "default": ""
+                                  },
+                                  "value": {
+                                    "$id": "#/properties/result/items/anyOf/2/properties/resultNodes/items/anyOf/0/properties/periodValues/items/anyOf/0/properties/value",
+                                    "type": "number",
+                                    "title": "The period value",
+                                    "description": "The period value of the current series",
+                                    "default": 0.0
+                                  }
+                                },
+                                "additionalProperties": true
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "type": {
+                "$id": "#/properties/result/items/anyOf/2/properties/type",
+                "type": "string",
+                "title": "The type of Data",
+                "description": "To Specify whether the current instance is a scenario or series",
+                "default": ""
+              },
+              "isComparison": {
+                "$id": "#/properties/result/items/anyOf/2/properties/isComparison",
+                "type": "boolean",
+                "title": "The isComparison series",
+                "description": "Boolean to identify if the current series is a comparison series",
+                "default": false
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "userDetails": {
+      "$id": "#/properties/userDetails",
+      "type": "object",
+      "title": "The User Details",
+      "description": "User details will contain the details of the user who is performing the writeback",
+      "default": {},
+      "required": [],
+      "properties": {
+        "email": {
+          "$id": "#/properties/userDetails/properties/email",
+          "type": "string",
+          "description": "The email associated with the user",
+          "title": "The user email",
+          "default": ""
+        },
+        "userName": {
+          "$id": "#/properties/userDetails/properties/userName",
+          "type": "string",
+          "description": "The name of the user who is triggering the writeback",
+          "title": "The user Name",
+          "default": ""
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
+```
+
+</details>
+
 
 You can download the schema file here <a href={useBaseUrl('/assets/jsonSchema.json')} download>ValQ Writeback Schema.json</a>
 
-<div style={{textAlign: 'center'}}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="writeback-format" src={useBaseUrl('/doc-images/model/writeback/writeback-format.png')} />
+    <img
+      alt="writeback-format"
+      src={useBaseUrl("/doc-images/model/writeback/writeback-format.png")}
+    />
   </Zoom>
 </div>
 
-*Figure: Writeback Schema format*
+_Figure: Writeback Schema format_
 
 ### 3.3 Writeback History
 
 History of the Writeback logs is maintained and is accessed by clicking on the history icon right above the Writeback button in the Navigation panel.
 
-<div style={{textAlign: 'center'}}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="writeback-history" src={useBaseUrl('/doc-images/model/writeback/writeback_history_logs.png')} />
+    <img
+      alt="writeback-history"
+      src={useBaseUrl("/doc-images/model/writeback/writeback_history_logs.png")}
+    />
   </Zoom>
 </div>
 
-*Figure: Writeback History Logs*
+_Figure: Writeback History Logs_
 
 ## Summary - General Tab
 
-| Area                 | Property                                             | Description                                                                                                                       |
-| -------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Export               | Include navigation panel settings in the export file | This property when activated exports the file along with Navigation Panel settings.                                               |
-| License Registration | Unlock additional features                | You will be able to enter the ValQ license in the Text Box to get the latest features.     |
-| Writeback | Write Scenarios, Planning series along with the Simulation details to an URL | This feature sends a post request to the endpoint URL in a JSON format and writes the data to an external data warehouse. |
-
-
+| Area                 | Property                                                                     | Description                                                                                                               |
+| -------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Export               | Include navigation panel settings in the export file                         | This property when activated exports the file along with Navigation Panel settings.                                       |
+| License Registration | Unlock additional features                                                   | You will be able to enter the ValQ license in the Text Box to get the latest features.                                    |
+| Writeback            | Write Scenarios, Planning series along with the Simulation details to an URL | This feature sends a post request to the endpoint URL in a JSON format and writes the data to an external data warehouse. |
