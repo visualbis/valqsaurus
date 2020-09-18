@@ -23,20 +23,51 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-blockquote{
-    background-color:rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border-color: rgb(29, 191, 231);
+blockquote {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-color: rgb(29, 191, 231);
 }
- 
-html[data-theme="dark"] blockquote{
-    background-color:rgb(19, 18, 18);
-    color: rgb(255, 255, 255);
-    border-color: rgb(29, 191, 231);
+
+html[data-theme="dark"] blockquote {
+  background-color: rgb(19, 18, 18);
+  color: rgb(255, 255, 255);
+  border-color: rgb(29, 191, 231);
 }
- 
-.table-center table{
-    margin: auto;
-    width: auto;
-    display: table;
+
+.table-center table {
+  margin: auto;
+  width: auto;
+  display: table;
+}
+
+.productTag {
+  /*  box-sizing: border-box; */
+  /* width: 100%; */
+  /*  justify-content: center; */
+  justify-content: inherit;
+  padding: 5px 0px;
+  margin-bottom: 36px;
+}
+
+.productTag h1 {
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: 1px;
+  letter-spacing: 1px;
+  padding: 0px;
+  padding-bottom: 2px;
+  margin: 5px 0px;
+}
+
+.productTag div {
+  padding: 0px;
+  margin: 0px;
+}
+
+.productTag img {
+  width: 20%;
+  height: 40%;
+  padding: 0px;
+  margin: 0px;
 }

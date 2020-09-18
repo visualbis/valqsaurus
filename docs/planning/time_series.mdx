@@ -44,7 +44,7 @@ designed to suit your needs.
 | 5 | Source Periods    | Choose the duration of past data considered for the forecast  |
 | 6 | Add Growth        | Growth component can be added here on absolute or percentage terms  |
 
-</div> <br />
+</div>
 
 ## Advanced options
 
@@ -58,7 +58,20 @@ Advanced options lets you choose the Forecasting Method, Distribution Method aft
   </Zoom>
 </div> <br />
 
-### 1. Auto Forecast
+Click on the Forecast Method you'd like to know about
+
+<div style={{textAlign: 'justify'}} className="table-center">
+
+|   | Click on any option to know more  |                                                                                                                                                                                                                                                                   
+|---|---------------------|
+| 1 | [Auto Forecast](#1-auto-forecast)  |
+| 2 | [Linear Trend](#2-linear-trend)     |
+| 3 | [Moving Average](#3-moving-average)  |
+| 4 | [Weighted Moving Average](#4-weighted-moving-average) |
+
+</div>
+
+## 1. Auto Forecast
 
 <div style={{textAlign: 'justify'}}>
 Auto Forecast option automatically predicts Target Node for the Target Period based on Past Data Series & Weights and
@@ -68,15 +81,16 @@ the Distribution Method as ValQ performs time series forecasting automatically.
 
 Let's understand how ValQ performs time series forecasting with examples to predict 2020 results.
 
-#### Example 1: Auto Forecast with No Growth 
+### Example 1: Auto Forecast with No Growth 
 <br />
 
-**Configuration for Forecasting**
-
 <div style={{textAlign: 'justify'}}>
+
+#### Configuration for Forecasting
+
 In the below example, forecasting is done for node 'Overall Result' for the year 2020 based on 2019 actuals data with weight as 1
 and growth not incorporated. 
-</div> <br />
+</div>
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -84,13 +98,14 @@ and growth not incorporated.
   </Zoom>
 </div> <br />
 
-**Preview of Forecast Results**
-
 <div style={{textAlign: 'justify'}}>
+
+#### Preview of Forecast Results
+
 The below Figure shows the results of Auto Forecasting as per the above configuration with three choices of forecast i.e.
 Optimized, Balanced and Conservative. Notice that the Net Growth of Conservative is 0.00% as we didn't add growth in the Forecast
 Basis option.
-</div> <br />
+</div>
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -98,15 +113,16 @@ Basis option.
   </Zoom>
 </div>
 
-#### Example 2: Auto Forecast with Growth Component 
+### Example 2: Auto Forecast with Growth Component 
 <br />
 
-**Configuration for Forecasting**
-
 <div style={{textAlign: 'justify'}}>
+
+#### Configuration for Forecasting
+
 Here's another example where forecasting is done for node 'Overall Result' for the year 2020 based on 2019 and 2018 actuals with
 weight as 2 and 1 respectively and 10% growth. Auto Forecast is the Forecast Method applied in this example. 
-</div> <br />
+</div>
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -114,21 +130,22 @@ weight as 2 and 1 respectively and 10% growth. Auto Forecast is the Forecast Met
   </Zoom>
 </div> <br />
 
-**Preview of Forecast Results**
-
 <div style={{textAlign: 'justify'}}>
+
+#### Preview of Forecast Results
+
 The below Figure shows the results of Auto Forecasting as per the above configuration with three choices of forecast i.e.
 Optimized, Balanced and Conservative. Notice that the Net Growth of Conservative is 10% as we have added a 10% growth in 
 the Forecast Basis option.
-</div> <br />
+</div> 
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/tsf4.2.png')} />
   </Zoom>
-</div> <br />
+</div>
 
-### 2. Linear Trend
+## 2. Linear Trend
 
 <div style={{textAlign: 'justify'}}>
 Linear Trend method applies Linear Regression to predicts Target Node for the Target Period based on Past Data Series
@@ -136,15 +153,16 @@ Linear Trend method applies Linear Regression to predicts Target Node for the Ta
 Distribution Method can be selected as Match or M2M(+1).
 </div>
 
-#### Example 3: Linear Trend Forecast with Growth Component and Distribution Method as Match
+### Example 3: Linear Trend Forecast with Growth Component and Distribution Method as Match
 <br />
 
-**Configuration for Forecasting**
-
 <div style={{textAlign: 'justify'}}>
+
+#### Configuration for Forecasting
+
 In this example forecasting is done for node 'Overall Result' for the year 2020 based on 2019 and 2018 full year actuals with
 weight as 2 and 1 respectively and 10% growth. The Forecast Method applied in this example is the Linear Trend with 'Match' as the Distribution Method. 
-</div> <br />
+</div>
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -152,13 +170,14 @@ weight as 2 and 1 respectively and 10% growth. The Forecast Method applied in th
   </Zoom>
 </div> <br />
 
-**Preview of Forecast Results**
-
 <div style={{textAlign: 'justify'}}>
+
+#### Preview of Forecast Results
+
 The below Figure shows the results of forecasting done based on the above configuration. The total for 2020 
 is predicted by applying the Linear Trend method and Match distributes the total to its periods based on the distribution of only
 recent Past Series Data selected with weight in Forecast Basis, here 2019 actuals with weight as 2.  
-</div> <br />
+</div> 
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -166,16 +185,17 @@ recent Past Series Data selected with weight in Forecast Basis, here 2019 actual
   </Zoom>
 </div>
 
-#### Example 4: Linear Trend Forecast with Growth Component and Distribution Method as M2M
+### Example 4: Linear Trend Forecast with Growth Component and Distribution Method as M2M
 <br />
 
-**Configuration for Forecasting**
-
 <div style={{textAlign: 'justify'}}>
+
+#### Configuration for Forecasting
+
 Here's another example where forecasting is done for node 'Overall Result' for the year 2020 based on 2019 and 2018 full year
 actuals with weight as 2 and 1 respectively and 10% growth. The Forecast Method applied in this example is the Linear Trend with 'M2M' as the
 Distribution Method. 
-</div> <br />
+</div>
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -183,13 +203,14 @@ Distribution Method.
   </Zoom>
 </div> <br />
 
-**Preview of Forecast Results**
-
 <div style={{textAlign: 'justify'}}>
+
+#### Preview of Forecast Results
+
 The below Figure shows the results of forecasting done based on the above configuration. The total for 2020 
 is predicted by applying the Linear Trend method and M2M distributes the total to its periods based on the distribution of 
 all Past Series Data selected with weights in Forecast Basis.  
-</div> <br />
+</div>
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -197,10 +218,12 @@ all Past Series Data selected with weights in Forecast Basis.
   </Zoom>
 </div> <br />
 
+<div style={{textAlign: 'justify'}}>
 Note that the distribution of 2020 period values is the only difference between the above two examples because of the change in the
-Distribution Method. 
+Distribution Method.
+</div>
 
-### 3. Moving Average
+## 3. Moving Average
 
 <div style={{textAlign: 'justify'}}>
 Moving Average method computes forecast results of Target Node for the Target Period based on Past Data Series
@@ -208,16 +231,17 @@ Moving Average method computes forecast results of Target Node for the Target Pe
 added as an absolute value or percentage growth when needed and the Distribution Method can be selected as Match or M2M(+1).
 </div>
 
-#### Example 5: Moving Average Forecast without Growth Component and Distribution Method as M2M
+### Example 5: Moving Average Forecast without Growth Component and Distribution Method as M2M
 <br />
 
-**Configuration for Forecasting**
-
 <div style={{textAlign: 'justify'}}>
+
+#### Configuration for Forecasting
+
 In this example forecasting is done for node 'Overall Result' for the year 2020 based on Jul - Dec period values of 2019 and
 2018 actuals with weight as 1 for both and no growth. The Forecast Method applied in this example is the Moving Average with M2M
 as the Distribution Method. 
-</div> <br />
+</div>
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -225,21 +249,22 @@ as the Distribution Method.
   </Zoom>
 </div> <br />
 
-**Preview of Forecast Results**
-
 <div style={{textAlign: 'justify'}}>
+
+#### Preview of Forecast Results
+
 The below Figure shows the results of forecasting done based on the above configuration. The total for 2020 
 is predicted by applying the Moving Average method and M2M distributes the total to its periods based on the distribution of 
 all Past Series Data selected with weights in Forecast Basis.  
-</div> <br />
+</div>
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="ValQ logo" src={useBaseUrl('/doc-images/plan/tsf5.2.png')} />
   </Zoom>
-</div> <br />
+</div>
 
-### 4. Weighted Moving Average
+## 4. Weighted Moving Average
 
 <div style={{textAlign: 'justify'}}>
 Weighted Moving Average method computes forecast results of Target Node for the Target Period based on Past Data Series
@@ -248,16 +273,17 @@ values with weights applied to it. Growth can be added as an absolute value or p
 Distribution Method can be selected as Match or M2M(+1).
 </div>
 
-#### Example 6: Weighted Moving Average Forecast without Growth Component and Distribution Method as M2M
+### Example 6: Weighted Moving Average Forecast without Growth Component and Distribution Method as M2M
 <br />
 
-**Configuration for Forecasting**
-
 <div style={{textAlign: 'justify'}}>
+
+#### Configuration for Forecasting
+
 In this example forecasting is done for node 'Overall Result' for the year 2020 based on Jul - Dec period values of 2019 and
 2018 actuals with weight as 2 for Oct-Dec and 1 for Jul-Sep and no growth. The Forecast Method applied in this example is the Weighted Moving Average
 with M2M as the Distribution Method. 
-</div> <br />
+</div>
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -265,13 +291,14 @@ with M2M as the Distribution Method.
   </Zoom>
 </div> <br />
 
-**Preview of Forecast Results**
-
 <div style={{textAlign: 'justify'}}>
+
+#### Preview of Forecast Results
+
 The below Figure shows the results of forecasting done based on the above configuration. The total for 2020 
 is predicted by applying the Weighted Moving Average method and M2M distributes the total to its periods based on the distribution of 
 all Past Series Data selected with weights in Forecast Basis.  
-</div> <br />
+</div>
 
 <div style={{textAlign: 'center'}}>
   <Zoom>

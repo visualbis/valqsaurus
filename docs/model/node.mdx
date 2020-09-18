@@ -9,8 +9,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 <div style={{textAlign: 'justify'}}>
 In this section, you will learn everything related to node on ValQ's Model tab. In case you
-are new to node, it is recommended you visit <Link to={useBaseUrl('docs/intro/node')}> Understanding Nodes in ValQ </Link> 
-and then come back here to learn more about nodes. 
+are new to node, it is recommended you visit <Link to={useBaseUrl('docs/intro/node')}>Understanding Nodes in ValQ</Link> and then come back here to learn more about nodes. 
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
@@ -18,10 +17,8 @@ Click on this icon <img alt="New Tab" src={useBaseUrl('/doc-images/model/node ic
 </div>
 
 ## Node Editor
-
-<div style={{textAlign: 'justify'}}>  
+ 
 To edit a node, click on the pencil icon highlighted below or double-click on the node.
-</ div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -37,15 +34,21 @@ By clicking the Edit option you will be able to view the Edit Node dialog box as
   </Zoom>
 </div> <br />
 
-The Edit Node setting is categorized as follows:
+The Edit Node setting is categorized as follows
 
-1.  [General](#1-general)
-2.  [Configuration](#2-configuration)
-3.  [Display](#3-display)
-4.  [Simulation](#4-simulation)
-5.  [Business Definition](#5-business-definition)
-6.  [Conditional Formatting](#6-conditional-formatting)
-7.  [Secondary KPIs](#7-secondary-kpis)
+<div style={{textAlign: 'justify'}} className="table-center">
+
+|   | Click on any option to know more  |                                                                                                                                                                                                                                                                   
+|---|---------------------|
+| 1 | [General](#1-general)  |
+| 2 | [Configuration](#2-configuration)   |
+| 3 | [Display](#3-display)  |
+| 4 | [Simulation](#4-simulation) |
+| 5 | [Business Definition](#5-business-definition) |
+| 6 | [Conditional Formatting](#6-conditional-formatting) |
+| 7 | [Secondary KPIs](#7-secondary-kpis) |
+
+</div>
 
 ## 1. General
 
@@ -80,9 +83,25 @@ Tree as East for one node and Midwest for the other node.
 
 <div style={{textAlign: 'justify'}}>
 In the Configuration settings, you will be able to configure the node
-details such as Node Type, Calculation Method, Time Aggregation, Desired Trend and
-Value Range with the values as shown in the below Figure.
+details using the following properties
 </div> <br />
+
+<div style={{textAlign: 'justify'}} className="table-center">
+
+|   | Click on any option to know more  |                                                                                                                                                                                                                                                                   
+|---|---------------------|
+| 1 | [Node Type](#21-node-type)  |
+| 2 | [Calculation Method](#22-calculation-method)    |
+| 3 | [Time Aggregation](#23-time-aggregation)  |
+| 4 | [Desired Trend](#24-desired-trend) |
+| 5 | [Value Range](#25-value-range) |
+| 6 | [Dynamic Children](#26-dynamic-children) |
+
+</div>
+
+### 2.1 Node Type
+
+Node can be of two types - Normal and Constant.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -91,19 +110,13 @@ Value Range with the values as shown in the below Figure.
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-
-### 2.1 Node Type
-
-Node can be of two types - Normal and Constant. Normal node is the default type
+Normal node is the default type
 with all the options available to configure while constant node sets the node value to a fixed figure. 
-</div> <br />
-
-<div style={{textAlign: 'justify'}}>
+</div>
 
 ### 2.2 Calculation Method
 
 ValQ supports various calculation methods such as
-</div> <br />
 
 <div style={{textAlign: 'justify'}} className="table-center">
 
@@ -124,10 +137,10 @@ ValQ supports various calculation methods such as
 <div style={{textAlign: 'justify'}}>
 On selecting Formula and clicking on the formula field, you will be
 able to see a dropdown of the formulas that are supported. For a list of
-formulas that are available in ValQ, you can refer to the link <Link to={useBaseUrl('/docs/faq/formula-list')}> Functions </Link>
-</div> <br />
+formulas that are available in ValQ, you can refer to the link <Link to={useBaseUrl('/docs/faq/formula-list')}>Functions</Link>.
+</div>
 
-The Normal node type presents you with all the calculation methods as shown below
+The Normal node type presents you with all the calculation methods as shown below.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -150,9 +163,10 @@ explaining Calculation Method with examples and another <a href="https://valq.co
 discussing 3 methods of mapping ValQ nodes to data. 
 </div>
 
-<div style={{textAlign: 'justify'}}>
+#### Source Key
 
-**Source Key**: The Source Key option gets displayed when the Calculation Method is selected as Data Source.
+<div style={{textAlign: 'justify'}}>
+The Source Key option gets displayed when the Calculation Method is selected as Data Source.
 Note that you shall select the Source Key that matches the node to get the correct value.
 The below image is an example that shows the Source Key with all the levels of category for quick identification and selection.
 </div> <br />  
@@ -161,7 +175,7 @@ The below image is an example that shows the Source Key with all the levels of c
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node14.png')} />
   </Zoom>
-</div> <br />
+</div>
 
 #### Template Nodes
 
@@ -209,12 +223,11 @@ The Normal node type presents the user with the Time Aggregation options as seen
   </Zoom>
 </div> <br />
 
-> ** Note** <br /> The constant node type doesn't have Time Aggregation as the value is fixed.
-
-<div style={{textAlign: 'justify'}}>
+> ** Note** <br /> The constant node type doesn't have Time Aggregation as the value is fixed
 
 ### 2.4 Desired Trend
 
+<div style={{textAlign: 'justify'}}>
 The Desired Trend can be set as Increase or Decrease depending on the context of the Node.
 For instance, income has an increasing trend and expense has decreasing trend. 
 </div> <br />
@@ -237,9 +250,9 @@ to evaluate it's performance against the benchmark i.e. Constraint.
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node17.png')} />
   </Zoom>
-</div> <br />
+</div>
 
-Click <Link to={useBaseUrl('docs/simulation/sim_features#7-constraints')}>here</Link> for steps to add Constraints using an example.
+Click <Link to={useBaseUrl('docs/simulation/navigation_panel#7-constraints')}>here</Link> for steps to add Constraints using an example.
 
 ### 2.6 Dynamic Children
 
@@ -247,7 +260,7 @@ Click <Link to={useBaseUrl('docs/simulation/sim_features#7-constraints')}>here</
 Dynamic Children is available to create a new node that is replicate of another existing node having
 Data Source as it's Calculation Method. The new node works like a Simple Model where you cannot configure the child nodes
 except for simulation.
-</div> <br />
+</div>
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -264,7 +277,7 @@ nodes on the last level and none doesn't allow simulation for any of the nodes i
 The below example shows how to create Dynamic Children from Data Source.
 
 <div style={{textAlign: 'justify'}}>
-First, we create a new node - Copy of Overall Result with the Calculation method as Data Source and East node as Source Key. Here, we
+First, we create a new node - Copy of Overall Result with the Calculation method as Data Source and 'East' node as Source Key. Here, we
 enable the option Dynamic Children from Data Source and choose None as Dynamic Children Simulation.
 </div> <br />
 
@@ -290,9 +303,18 @@ on the magic wand available next to the top node. The entire ValQ model is now a
 ## 3. Display
 
 <div style={{textAlign: 'justify'}}>
-In the Display Settings, you will be able to configure the Node Display
-settings such as Node Display, Values and add Composite Nodes as shown in
-the below Figure.
+In the Display Settings, you will be able to configure the display
+settings such as <Link to={useBaseUrl('docs/model/node#node-display')}>Node display</Link> and <Link to={useBaseUrl('docs/model/node#details-on-click')}>Details on Click</Link>. The other setting options
+available under Display are:
+</div> <br />
+
+<div style={{textAlign: 'justify'}} className="table-center">
+
+|   | Click on any option to know more  |                                                                                                                                                                                                                                                                   
+|---|---------------------|
+| 1 | [Value](#31-value)  |
+| 2 | [Composite Nodes](#32-composite-nodes)   |
+
 </div> <br />
 
 First, let's look at Display
@@ -301,14 +323,13 @@ First, let's look at Display
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node26.png')} />
   </Zoom>
-</ div> <br />
+</ div>
 
-<div style={{textAlign: 'justify'}}>
+#### Node display 
 
-**Node Display**: There are three display options to choose from and below is an example using East node 
-</div>
+There are three display options to choose from and below is an example using 'East' node.
 
-Show - Displays the node as a normal node (default) <br />
+**Show** - Displays the node as a normal node (default).
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -316,7 +337,7 @@ Show - Displays the node as a normal node (default) <br />
   </Zoom>
 </ div> <br />
 
-Derived - Displays the node as being derived from the parent node denoted by dotted line.
+**Derived** - Displays the node as being derived from the parent node denoted by dotted line.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -324,7 +345,7 @@ Derived - Displays the node as being derived from the parent node denoted by dot
   </Zoom>
 </ div> <br />
 
-Hidden - Hides the node from the canvas. In the below example, East node is hidden from the canvas.
+**Hidden** - Hides the node from the canvas. In the below example, 'East' node is hidden from the canvas.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -335,11 +356,12 @@ Hidden - Hides the node from the canvas. In the below example, East node is hidd
 > ** Note** <br /> In the above examples, the Node Display changes only the display on canvas.
 Regardless of the Node Display settings, the nodes are available for configuration on the Navigation Panel.
 
-<div style={{textAlign: 'justify'}}>
+#### Details on Click
 
-**Details on Click**: Enabling Details on Click option helps you to see the node details on the pop-up screen. Click on the pencil icon as
+<div style={{textAlign: 'justify'}}>
+Enabling Details on Click option helps you to see the node details on the pop-up screen. Click on the pencil icon as
 highlighted below to take a look at the node details. 
-</div> 
+</div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -347,7 +369,7 @@ highlighted below to take a look at the node details.
   </Zoom>
 </ div> <br />
 
-Node details of East node is seen below .
+Node details of 'East' node is seen below.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -355,32 +377,47 @@ Node details of East node is seen below .
   </Zoom>
 </ div>
 
-### 3.1 Value options
+### 3.1 Value
+
+Configure the following options under Values
+
+<div style={{textAlign: 'justify'}} className="table-center">
+
+|   | Click on any option to know more  |                                                                                                                                                                                                                                                                   
+|---|---------------------|
+| i | [Scale](#i-scale)       |
+| ii | [Value Decimal Places](#ii-value-decimal-places)     |
+| iii | [Value Prefix and Value Suffix](#iii-value-prefix-and-value-suffix)  |
+</div>
+
+#### i. Scale
 
 <div style={{textAlign: 'justify'}}>
-
-**Scale**: You can choose the scaling for the model from the drop down. 
-For User Selected the scaling changes with <Link to={useBaseUrl('docs/simulation/sim_features#4-value-display')}>Value Display</Link> selection.
-</div> <br />
+You can choose the scaling for the model from the drop down. 
+For User Selected the scaling changes with <Link to={useBaseUrl('docs/simulation/navigation_panel#4-value-display')}>Value Display</Link> selection.
+</div>
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node30.png')} />
   </Zoom>
-</ div> <br />
+</ div>
 
-**Value Decimal Places**: Choose the number of decimal places you want in the node value.
+#### ii. Value Decimal Places
+
+Choose the number of decimal places you want in the node value.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node31.png')} />
   </Zoom>
-</ div> <br />
+</ div>
+
+#### iii. Value Prefix and Value Suffix
 
 <div style={{textAlign: 'justify'}}>
-
-**Value Prefix** and **Value Suffix** options are used to add prefix and suffix like currency, units of your choice to the node value.
-In the below example, '$' is added as Value Prefix and 'n' is added as Value Suffix to East node.
+Value Prefix and Value Suffix options are used to add prefix and suffix like currency, units of your choice to the node value.
+In the below example, $ is added as Value Prefix and n is added as Value Suffix to 'East' node.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -409,7 +446,7 @@ other node that is an important metric.
   </Zoom>
 </ div> <br />
 
-In this example, we have added Chris Morris and Lois Mitchell nodes as Composite Node to East node. 
+In this example, we have added 'Chris Morris' and 'Lois Mitchell' nodes as Composite Node to 'East' node. 
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -417,7 +454,7 @@ In this example, we have added Chris Morris and Lois Mitchell nodes as Composite
   </Zoom>
 </ div> <br />
 
-When the original node Chris Morris is simulated, the same node added as the Composite Node to East node also gets simulated.
+When the original node 'Chris Morris' is simulated, the same node added as the Composite Node to 'East' node also gets simulated.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -425,7 +462,7 @@ When the original node Chris Morris is simulated, the same node added as the Com
   </Zoom>
 </ div> <br />
 
-> ** Note** <br />  The composite nodes do not affect the Table view structure of the Tree. 
+> ** Note** <br />  The composite nodes do not affect the Table view structure of the Tree
 
 ## 4. Simulation
 
@@ -439,17 +476,21 @@ node for the Linked Simulation.
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node38.png')} />
   </Zoom>
-</ div> <br />
+</ div>
 
-**Enable Simulation**: At first, you have the Enable Simulation option to enable/disable the simulation function for the node.
+#### Enable Simulation
+
+At first, you have the Enable Simulation option to enable/disable the simulation function for the node.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node39.png')} />
   </Zoom>
-</ div> <br />
+</ div>
 
-**Default Method**: Next, there are 4 different simulation methods from which you can choose the Default Method of
+#### Default Method
+
+Next, there are 4 different simulation methods from which you can choose the Default Method of
 simulation for the node. 
 
 <div style={{textAlign: 'center'}}>
@@ -482,7 +523,6 @@ values for the simulation periods.
 ## 5. Business Definition
 
 <div style={{textAlign: 'justify'}}>
-
 Using this option, you will be able to configure the Business Definition
 details such as Description, Header, Footer and Technical Notes to the node.
 </div> <br />
@@ -507,7 +547,7 @@ Definitions details in the pop-up screen as shown below.
 <div style={{textAlign: 'justify'}}>
 Using the Conditional Formatting option, you can apply the
 Alert Thresholds and Rules at the node level (see Figure
-below). For our example, the East node has been selected.
+below). For our example, the 'East' node has been selected.
 </ div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -517,20 +557,22 @@ below). For our example, the East node has been selected.
 </ div> <br />
 
 <div style={{textAlign: 'justify'}}>
-In the Conditional Formatting settings for the node East, you have
+In the Conditional Formatting settings for 'East' node, you have
 3 different options as highlighted in the above Figure.
-</ div> <br />
+</ div>
+
+#### Global or Inherited Rule
 
 <div style={{textAlign: 'justify'}}>
-
-**Global or Inherited Rule**: When the option Global or Inherited Rule is selected, the
+When the option Global or Inherited Rule is selected, the
 Conditional Formatting Rules configured as Global Rule in the Settings
 tab will be applied to the node.
-</div> <br />
+</div>
+
+#### Custom Rule
 
 <div style={{textAlign: 'justify'}}>
-
-**Custom Rule**: Custom Rule option overwrites default or any inherited
+Custom Rule option overwrites default or any inherited
 rule to the rule as per our preference. The Custom Rule option can be configured based on the 
 variance percentage or value and it gets applied at the period level. Checking Apply to Descendants
 option applies the Custom Rule to the child nodes as well. 
@@ -541,22 +583,22 @@ Custom Rule is indicated by the icon (see Figure below) on the node in the Navig
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/node50.png')} />
   </Zoom>
-</ div> <br />
+</ div>
+
+#### Hidden Rule
 
 <div style={{textAlign: 'justify'}}>
-
-**Hidden Rule**: With this option, you can observe that no range values can be provided for the Conditional
+With this option, you can observe that no range values can be provided for the Conditional
 Formatting and hence there will be no status color for the node upon being simulated.
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-
 In the below example, we choose the option for the Custom Rule as
 Percentage and also enable the property Apply to Descendants. We set
 the threshold values as shown in the below Figure. After the simulation, you
-can find that the variance percentage value for the node East falls
-in the threshold range (5%)\* which is between -10% to -1% and based on
-that condition, the status bar for the Node East is yellow color.
+can find that the variance percentage value of (5)% for 'East' node falls
+in the threshold range between (10)% to (1)% and based on
+that condition, the status bar for the 'East' node is yellow color.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -572,14 +614,13 @@ that condition, the status bar for the Node East is yellow color.
 </ div> <br />
 
 <div style={{textAlign: 'justify'}}>
-
-Also, you can observe that the Descendant node - Consumer has been
+Also, you can observe that the Descendant node - 'Consumer' has been
 updated with the same threshold settings based on our configuration. The
 variance percentage value for Consumer falls
-in the threshold range (3%)\* which is Above 1% and based on that
-condition, the status bar for Consumer node is
-green in color. While the East node has a variance of
-(4%)\* which is within the threshold range and hence the status bar is 
+in the threshold range (3%) which is Above 1% and based on that
+condition, the status bar for 'Consumer' node is
+green in color. While the 'East' node has a variance of
+(4%) which is within the threshold range and hence the status bar is 
 yellow.
 </div> <br />
 
@@ -600,7 +641,7 @@ of 12 being multiplied with the range value that we provide.
 Secondary KPIs helps the user to aggregate and visualize additional or
 alternate KPI values in the node widget. Specifically, in a model with
 two data series, these are the set of secondary metrics captured under
-the primary value of the node
+the primary value of the node.
 </div> <br />
 
 <img alt="" src={useBaseUrl('/doc-images/SecKPI.1.png')} />
@@ -612,27 +653,26 @@ series of data in the following order
 
 1. Full Period Variance between baseline and comparison metric (in % and absolute values) 
 2. Baseline metric value for the first period in the series 
-3. Variance for the first period between baseline and comparison metric (in % and absolute
-values)
+3. Variance for the first period between baseline and comparison metric (in % and absolute values)
 
 <img alt="" src={useBaseUrl('/doc-images/SecKPI.2.png')} />
 
 <div style={{textAlign: 'justify'}}>
 Secondary KPI option lets users customize these secondary values or
-metric according to their preference
+metric according to their preference.
 </div> <br />
 
 Users can achieve this using: <br />
 
-I. Secondary KPI option based on Formulas <br />
-II. Secondary KPI option based on Template
+i. <Link to={useBaseUrl('docs/model/node#i-secondary-kpi-option-based-on-formulas')}>Secondary KPI option based on Formulas</Link> <br />
+ii. <Link to={useBaseUrl('docs/model/node#ii-secondary-kpi-option-based-on-template')}>Secondary KPI option based on Template</Link>
 
-I.  Secondary KPI option based on Formulas
+#### i. Secondary KPI option based on Formulas
 
 <div style={{textAlign: 'justify'}}>
 In the below model screenshot, the user can display the data value from
 Operating Profit % and Operating Expense Ratio as Secondary KPI
-values to the TOP node - Operating profit.
+values to the TOP node - 'Operating Profit'.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -642,7 +682,7 @@ values to the TOP node - Operating profit.
 </ div> <br />
 
 <div style={{textAlign: 'justify'}}>
-Under the Operating Profit node setting's Secondary KPI option, you need
+Under the 'Operating Profit' node setting's Secondary KPI option, you need
 to select the Formula button and fill in the label name and the
 custom formula.
 </div> <br />
@@ -670,11 +710,11 @@ ratio values displayed as Secondary KPI values to Operating profit.
   </Zoom>
 </ div> <br />
 
-II.  Secondary KPI option based on Template
+#### ii. Secondary KPI option based on Template
 
 <div style={{textAlign: 'justify'}}>
 In the model, the user can display Contribution for each of the child nodes -
-Water, Beverages, and Others to their parent node Gross Profit. Users
+Water, Beverages, and Others to their parent node - 'Gross Profit'. Users
 should define Contribution as a Formula in one of the nodes and call
 them out for Contribution calculation using the Template option at the
 other nodes.
@@ -687,7 +727,7 @@ other nodes.
 </ div> <br />
 
 <div style={{textAlign: 'justify'}}>
-In this example, the user can define the formula in Water node under the
+In this example, the user can define the formula in 'Water' node under the
 node setting's Secondary KPI by selecting the Formula button and defining
 the Custom Formula Upon completion, Contribution % is displayed as a
 Secondary value on the node widget.
@@ -701,8 +741,8 @@ Secondary value on the node widget.
 
 <div style={{textAlign: 'justify'}}>
 To borrow this formula to other nodes, the user can select the Template option, and
-choose to display the same formula as the Water node. Users can
-instantly see the corresponding Contribution % on the Beverage node.
+choose to display the same formula as the 'Water' node. Users can
+instantly see the corresponding Contribution % on the 'Beverage' node.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -767,8 +807,8 @@ that the changes get reflected in the tree structure.
 </ div> <br />
 
 <div style={{textAlign: 'justify'}}>
-You can edit the properties like Formula, Calculation Method and Aggregation Method directly in the Grid view
-where it gets updated in the actual properties in the Advanced Editor.
+You can edit properties like Formula, Calculation Method and Aggregation Method directly in the Grid view
+where it gets updated in the actual properties of nodes.
 In our example, you can view that the Calculation Method has been double-clicked
 for editing.
 </ div> <br />
@@ -860,8 +900,8 @@ The below Figure shows the Locked Simulation in the Quick Editor.
 
 <div style={{textAlign: 'justify'}}>
 The rows can be reordered for the child nodes which exist under a
-Parent node or the child nodes can be moved to another parent node by way of drag and drop.
-The below Figure shows the Grid view before moving the Ryan Smith node from Consumer to Industrials.
+parent node or the child nodes can be moved to another parent node by way of drag and drop.
+The below Figure shows the Grid view before moving the 'Ryan Smith' node from 'Consumer' to 'Industrials'.
 </ div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -870,7 +910,7 @@ The below Figure shows the Grid view before moving the Ryan Smith node from Cons
   </Zoom>
 </ div> <br />
 
-The below Figure shows the Quick Editor after changing the order
+The below Figure shows the Quick Editor after changing the order.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>

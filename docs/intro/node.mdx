@@ -8,77 +8,20 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-<div style={{textAlign: 'justify'}}>
-With ValQ, you can build a model of your business process and view it in the form of a tree as well as a table. Toggle between the below icons 
-present on the top left corner of the canvas to change the view.  
-</div> <br />
+In this section, we introduce to you the components of a node and the two types of model structure available on ValQ
 
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node8.png')} />
-  </Zoom>    
+<div style={{textAlign: 'justify'}} className="table-center">
+
+|   | Click on any option to know more  |                                                                                                                                                                                                                                                                   
+|---|---------------------|
+| 1 | [Node Components](#1-node-components)  |
+| 2 | [Model structure](#2-model-structure)  |
+
 </div>
 
-## Tree View
+## 1. Node components
 
-<div style={{textAlign: 'justify'}}>
-The tree structure is presented in a  horizontal format as a visual.  Just like a tree,
-ValQ model has a stem on Top called Top node and the Top node then branches out to other nodes. 
-</div> <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node7.png')} />
-  </Zoom>    
-</div>
-<br />
-
-<div style={{textAlign: 'justify'}}>
-The model is segmented into levels starting from level 1 with Top node, here it's 'Overall Result'. The nodes share a parent-child relationship at each level.
-For example, the 'East' node is the Parent node while 'Consumer' node is a Child node, 'Consumer' node is the Parent node while 'Chris Morris' node is a Child node. 
-</div> <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node2.png')} />
-  </Zoom>    
-</div> <br />
-
-Click on '>' to expand and '<' collapse levels.
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node6.png')} />
-  </Zoom>    
-</div> <br />
-
-You can also use the 'Go to level ^' option present on the bottom of the canvas to navigate between levels of the tree.
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node9.png')} />
-  </Zoom>    
-</div>
-
-## Table View
-
-<div style={{textAlign: 'justify'}}>
-The same information can be viewed in tabular form as see in the image below. The Table view is generally used to plan and analyze the data.
-Click on the table icon as highlighted below to get the tabular view.
-</div> <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node10.png')} />
-  </Zoom>
-</div> <br />
-
-For more information on Table View, click <Link to={useBaseUrl('docs/simulation/tableview')}>here</Link>
-
-
-## Node Components
-
-Now let's take a look at what makes up a node.
+First, let's take a look at what makes up a node
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -107,8 +50,10 @@ Each node represents a value driver, KPI or category and it's several performanc
 > **Note** <br />
 Variance is calculated as the difference between the Baseline series and Comparison series
 
+<div style={{textAlign: 'justify'}}>
 Baseline series is the primary series and Comparison series is the benchmark against which the Baseline is compared.
 Here the Sales Budget is the Baseline series and Sales Forecast is the Comparison series. 
+</div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -116,7 +61,90 @@ Here the Sales Budget is the Baseline series and Sales Forecast is the Compariso
   </Zoom>    
 </div>
 
+## 2. Model structure
+
+<div style={{textAlign: 'justify'}}>
+With ValQ, you can build a model of your business process and view it in the form of a tree as well as a table. Toggle between the 
+below icons present on the top left corner of the canvas to change the view.  
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node8.png')} />
+  </Zoom>    
+</div> <br />
+
+<div style={{textAlign: 'justify'}} className="table-center">
+
+|   | Click on any option to know more  |                                                                                                                                                                                                                                                                   
+|---|---------------------|
+| 1 | [Tree view](#21-tree-view)  |
+| 2 | [Table view](#22-table-view)  |
+
+</div>
+
+### 2.1 Tree view
+
+<div style={{textAlign: 'justify'}}>
+The tree structure is presented in a  horizontal format as a visual.  Just like a tree,
+ValQ model has a stem on Top called Top node and the Top node then branches out to other nodes. 
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node7.png')} />
+  </Zoom>    
+</div>
+<br />
+
+<div style={{textAlign: 'justify'}}>
+The model is segmented into levels starting from level 1 with Top node, here it's Overall Result. 
+The nodes share a parent-child relationship at each level.
+For example, the East node is the Parent node while Consumer node is a Child node, Consumer node is the Parent node 
+while Chris Morris node is a Child node. 
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node2.png')} />
+  </Zoom>    
+</div> <br />
+
+Click on **>** to expand and **<** collapse levels.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node6.png')} />
+  </Zoom>    
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+You can use the search option to search and get to that particular node, zoom slider to zoom in/out of the canvas and
+Go to level ^ option to navigate between different levels.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node9.png')} />
+  </Zoom>    
+</div>
+
+### 2.2 Table view
+
+<div style={{textAlign: 'justify'}}>
+The same information can be viewed in tabular form as see in the image below. The Table view is generally used to plan and analyze
+the data. Click on the table icon as highlighted below to get the tabular view.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/node10.png')} />
+  </Zoom>
+</div> <br />
+
+For more information on Table view, click <Link to={useBaseUrl('docs/simulation/tableview')}>here</Link>.
+
 ## Related Pages
 
-<Link to={useBaseUrl('docs/model/node#node-editor')}> Configure nodes </Link> under Model <br />
-<Link to={useBaseUrl('docs/simulation/sim_features#node-features')}> Simulate features </Link> on node 
+<Link to={useBaseUrl('docs/model/node')}>Configure nodes</Link> under Model <br />
+<Link to={useBaseUrl('docs/simulation/simulation_canvas#1-node-features')}>Node features</Link> under Simulate tab 

@@ -10,7 +10,7 @@ module.exports = {
     Introduction: [
       "intro/introduction",
       "intro/versions",
-      "intro/import",
+      "intro/install",
       "intro/model",
       "intro/node",
       "intro/workflow",
@@ -25,7 +25,7 @@ module.exports = {
     ],
     Plan: [
       "planning/plan_overview",
-      "planning/access",
+      "planning/create_new_series",
       "planning/plan_features",
       "planning/time_series",
       "planning/business_cases",
@@ -33,7 +33,8 @@ module.exports = {
     ],
     Simulate: [
       "simulation/simulate_overview",
-      "simulation/sim_features",
+      "simulation/simulation_canvas",
+      "simulation/navigation_panel",
       "simulation/tableview",
     ],
     Analyze: [
