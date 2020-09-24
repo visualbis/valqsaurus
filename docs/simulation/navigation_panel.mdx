@@ -1,0 +1,249 @@
+---
+id: navigation_panel
+title: Navigation Panel
+sidebar_label: Navigation Panel
+---
+import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+In this section, we'll take a look at Navigation Panel and it's components
+
+<div style={{textAlign: 'justify'}} className="table-center">
+
+|   | Click on any option to know more  |                                                                                                                                                                                                                                                                   
+|---|---------------------|
+| 1 | [Scenarios](#1-scenarios)     |
+| 2 | [Sub Models](#2-sub-models)    |
+| 3 | [Simulation Period](#3-simulation-period)  |
+| 4 | [Value Display](#4-value-display) |
+| 5 | [Key Inputs](#5-key-inputs) |
+| 6 | [KPIs](#6-kpis) |
+| 7 | [Constraints](#7-constraints) |
+| 8 | [Visualization](#8-visualization) |
+
+</div>
+
+### 1. Scenarios
+
+<div style={{textAlign: 'justify'}}>
+Scenarios are particularly useful when you want to perform what-if analysis to the model and you can save each instance as an 
+individual scenario. This way you have multiple scenarios to analyze and conduct scenario analysis. 
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/simulate_tab/sim4.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+
+The scenario with the yellow tag is the active scenario. To collapse the scenario property click on the **^** option 
+and to add a new scenario, click on the '+' option. Clicking on three dots gives you options to Copy Scenario, Edit and 
+Delete. You can rename the property to a name of your choice in the <Link to={useBaseUrl('docs/model/settings#11-scenarios')}>settings</Link>. 
+</div>
+
+Copy Scenario - Creates a duplicate of the scenario that you have copied <br />
+Edit - Change the title of the scenario and add an optional description <br />
+Delete - Deletes a scenario <br />
+
+<div style={{textAlign: 'justify'}}>
+The URL icon is available to help you compare multiple scenarios, observe the
+summary of the Scenarios and take a look at the KPIs (see below Figure). With Manage Scenarios option 
+you can add or remove scenarios for comparison and you also have the option to download the 
+scenario comparison as an excel file while using ValQ on Power BI Service.  
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/simulate_tab/sim5.png')} />
+  </Zoom>
+</div> <br />   
+
+>**Note** <br /> Scenarios are not stored as Data Series on ValQ. Click <Link to={useBaseUrl('docs/planning/plan_overview#1base-data-series-vs-scenario-data')}>here</Link> to know more on this.
+
+### 2. Sub Models
+
+<div style={{textAlign: 'justify'}}>
+
+Sub Models are part of the model and a node is added as a sub model to access it quickly. This property is useful 
+when there are a large number of nodes and you want to get to the important nodes on click of a button. 
+You can go to <Link to={useBaseUrl('docs/model/settings#12-sub-models')}>settings</Link> to add or remove sub models on ValQ.
+Click on the **^** option to collapse this property.
+</div>
+
+In the below example, the sub model 'Overall Result' displays the entire model as its the top node.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/simulate_tab/sim6.png')} />
+  </Zoom>
+</div> <br />
+
+Here, the sub model - 'Midwest' displays only the particular node and its children.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/simulate_tab/sim7.png')} />
+  </Zoom>
+</div>
+
+### 3. Simulation Period
+
+<div style={{textAlign: 'justify'}}>
+
+ValQ model updates the simulated values based on the periods selected in the Simulation Period. You can select just one period or
+choose a range of period with '[to]' icon, ValQ applies simulation and fetches simulated values only to those selected periods.
+To change the period labels, go to <Link to={useBaseUrl('docs/model/settings#13-simulation-period')}>settings</Link>. 
+Click on the **^** option to collapse this property.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/simulate_tab/sim8.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+In the below example, simulation periods have been selected as Jan and Feb. You can observe that the simulation is applied
+only to these two periods.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/simulate_tab/sim9.png')} />
+  </Zoom>
+</div>
+
+### 4. Value Display
+
+<div style={{textAlign: 'justify'}}>
+Value Display makes available options of aggregation like a month, year to date, a full year and simulated periods and scaling options.
+You can go to settings to change <Link to={useBaseUrl('docs/model/data-series#2-time-aggregation-labels')}>Time Aggregation Labels</Link> and <Link to={useBaseUrl('docs/model/settings#14-value-display')}>Scaling Options</Link>  to your preference. 
+Value Display is set to a full year and scaling at 0.0m by default. Click on the '^' option to collapse this property.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/simulate_tab/sim10.png')} />
+  </Zoom>
+</div>
+
+### 5. Key Inputs
+
+<div style={{textAlign: 'justify'}}>
+Any important node that you consider as a Key Input can be added as a Key Input to view it quickly instead of searching for it
+in the model. The Key Input is displayed along with its value and variance percentage when simulated. 
+You can go to <Link to={useBaseUrl('docs/model/settings#15-key-inputs')}>settings</Link> to add/remove Key Inputs. Click on the '^' option to collapse this property.
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+In the below example, we have added two Key Inputs and the node 'Chris Morris' gets highlighted 
+on selecting the key Input 'Chris Morris'. 
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/simulate_tab/sim11.png')} />
+  </Zoom>
+</div>
+
+### 6. KPIs
+
+<div style={{textAlign: 'justify'}}>
+Any important node that you consider as a Key Performance Indicator can be added as a KPI to view it quickly instead of searching for it
+in the model. The KPI is displayed along with its value and variance percentage when simulated. 
+You can go to <Link to={useBaseUrl('docs/model/settings#16-kpis')}>settings</Link> to add/remove KPIs. Click on the '^' option to collapse this property.
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+In the below example, the node 'Midwest' gets highlighted on selecting the KPI 'Midwest'. 
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="ValQ logo" src={useBaseUrl('/doc-images/simulate_tab/sim12.png')} />
+  </Zoom>
+</div>
+
+### 7. Constraints
+
+<div style={{textAlign: 'justify'}}>
+Constraint is added to a node to evaluate its performance after simulation against a threshold.
+Any constraint added to the model is displayed under the Navigation Panel along with its <Link to={useBaseUrl('docs/model/node#25-value-range')}>Value Range</Link>. 
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+In the following example,  we shall go through the steps to add a Constraint to a node.
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+A. The Value Range for 'East' Node has been set as Min = 1 Million and Max = 10 Million. Notice that
+the Time Aggregation has been set as Sum of Periods and the number of periods for this node is 12. Therefore, the
+Value Range is taken as Min = 12 Million and Max = 120 Million.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/node19.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+B. After the Value Range has been set to the 'East' node, the same node is added to Constraint under the Navigation Panel.
+To add Constraint, Model -> <Link to={useBaseUrl('docs/model/settings#17-constraints')}>Settings</Link> -> Navigation Panel -> Constraints and choose constraints from the drop-down to be listed.
+ </div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/node20.png')} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+C. The Constraint for 'East' node has been added with the Minimum and Maximum values displayed as seen below. Notice that the node
+value is outside the Value Range and the node value is displayed in red color. The value is displayed in white if it lies within
+the range.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/node21.png')} />
+  </Zoom>
+</div> <br />
+
+In the below screen, we have added three constraints - East, West and Midwest. You can see the constraints are
+sorted based on its utilisation under the Navigation Panel.  
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/model/node21.1.png')} />
+  </Zoom>
+</div>
+
+### 8. Visualization
+
+<div style={{textAlign: 'justify'}}>
+You can change the view of the model with the visualization options. By default, Visualization is set to Tree display and
+Standard view mode. 
+</div> <br />
+
+**Tree View**
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulate_tab/sim13.png')} />
+  </Zoom>
+</div> <br />
+
+To view the model as a table, you can click on any of the highlighted options as seen below.
+
+**Table View**
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="New Tab" src={useBaseUrl('/doc-images/simulate_tab/sim14.png')} />
+  </Zoom>
+</div>

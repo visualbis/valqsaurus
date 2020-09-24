@@ -13,33 +13,35 @@ settings for the model created in ValQ. There are 3 different options as
 listed below under the data series settings.
 </div> <br />
 
-1.  [Data Series Manager](#1-data-series-manager)
-2.  [Time Aggregation Labels](#2-time-aggregation-labels)
-3.  [Data Sorting](#3-data-sorting)
+<div style={{textAlign: 'justify'}} className="table-center">
 
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="New Tab" src={useBaseUrl('/doc-images/model/ds1.png')} />
-  </Zoom>
+|   | Click on any option to know more  |                                                                                                                                                                                                                                                                   
+|---|---------------------|
+| 1 | [Data Series Manager](#1-data-series-manager)  |
+| 2 | [Time Aggregation Labels](#2-time-aggregation-labels)   |
+| 3 | [Data Sorting](#3-data-sorting) |
+
 </div>
 
 ## 1. Data Series Manager
 
-Data Series Manager helps you to configure the Periods and Data Series for the model.
+Data Series Manager helps you to configure the <Link to={useBaseUrl('docs/model/data-series#11-periods')}>Periods</Link> and <Link to={useBaseUrl('docs/model/data-series#12-data-series')}>Data Series</Link> for the model.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="New Tab" src={useBaseUrl('/doc-images/model/ds2.png')} />
   </Zoom>
-</div> <br />
+</div>
 
-**Periods** <br /> <br />
+### 1.1 Periods
+
 **Period(s) per data series**: Enter the number of periods in the data here. <br />
 **Period Label(s)**: Enter the period labels here with a comma separating each label.<br />
 The changes made here to the Period Labels will be reflected in all the 4 tabs on ValQ - Model,
 Plan, Simulate and Analyze including the PopUp screen.
 
-**Data Series**
+### 1.2 Data Series
+
 <div style={{textAlign: 'justify'}}>
 First, toggle Include comparison data series to add a comparison data series when needed. In case there are two data series to the model,
 you can keep one as Baseline data series and the other as Comparison data series. The data series can be actuals and budget,
@@ -92,7 +94,7 @@ the ValQ screen as shown below.
 
 <div style={{textAlign: 'justify'}}>
 You can observe from the above Figure that the data series names are displayed on top of the screen,
-the period labels are displayed in the tooltip and after simulating the node 'East', you will be able to 
+the period labels are displayed in the tooltip and after simulating the 'East node', you will be able to 
 view the Baseline data in comparison with simulated Baseline data.
 </div>
 
@@ -118,8 +120,10 @@ Based on the above configuration, you will be able to view the ValQ screen as sh
   </Zoom>
 </div> <br />
 
+<div style={{textAlign: 'justify'}}>
 In the below Figure, you can see the Period Labels and Time Aggregation
 Labels as highlighted in the ValQ screen under the Simulate tab.
+</div> <br />
 
 <div style={{textAlign: 'center'}}>
   <Zoom>

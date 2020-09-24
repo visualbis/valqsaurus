@@ -8,13 +8,10 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css"; 
 
 
-## Access Table View
-
 There are two ways to switch to the Table View in the Simulate screen:
 
-1. By clicking on the table icon at the top on the Simulate tab canvas. 
-
-2. By clicking on the Table option in the Visualization section under the Navigation Panel. 
+1. By clicking on the table icon at the top of the Simulate tab canvas. 
+2. By clicking on the Table option under the Visualization section of Navigation Panel.
 
 <div style={{textAlign: 'center'}}>
 <Zoom>
@@ -22,7 +19,7 @@ There are two ways to switch to the Table View in the Simulate screen:
   </Zoom>
 </div> <br />
 
-Here's the Table View on full screen mode after collapsing the Navigation Panel
+Here's the Table View on full screen mode after collapsing the Navigation Panel.
 
 <div style={{textAlign: 'center'}}>
 <Zoom>
@@ -32,7 +29,25 @@ Here's the Table View on full screen mode after collapsing the Navigation Panel
 
 ## Features of Table View
 
-### 1. Search Nodes
+The features of the table view discussed are as follows
+
+<div style={{textAlign: 'justify'}} className="table-center">
+
+|   | Click on any option to know more  |                                                                                                                                                                                                                                                                   
+|---|---------------------|
+| 1 | [Search for a node](#1-search-for-a-node)    |
+| 2 | [Perform simulation](#2-perform-simulation)   |
+| 3 | [Navigation Panel](#3-navigation-panel)  |
+| 4 | [Node details](#4-node-details-pop-up) |
+| 5 | [Go to Plan](#5-go-to-plan) |
+| 6 | [Add Comments](#6-add-comments) |
+| 7 | [Summarized view](#7-summarized-view) |
+| 8 | [Period view](#8-period-view) |
+| 9 | [Customize columns](#9-customize-columns) |
+
+</div>
+
+## 1. Search for a node
 
 Type the node you want to search and select the same from the dropdown.
 
@@ -50,7 +65,7 @@ The selected node and its descendants will be displayed.
   </Zoom>
 </div>
 
-### 2. Perform Simulation
+## 2. Perform simulation
 
 <div style={{textAlign: 'justify'}}>
 Hover over the trend line on a node to perform simulation. The simulation results for each node with percentage change are available
@@ -75,11 +90,10 @@ Click on Edit icon to manually change the values.
 Use the bin icon to remove a simulation and remove all the simulation at once, click on Reset all option.
 </div>
 
-### 3. Navigation Panel
+## 3. Navigation Panel
 
 <div style={{textAlign: 'justify'}}>
-Below is the Table View with the Navigation Panel. 
-The <Link to={useBaseUrl('docs/simulation/sim_features#navigation-panel')}> Navigation Panel </Link>features for the Tree View applies here.
+Below is the Table View with the Navigation Panel. The <Link to={useBaseUrl('docs/simulation/navigation_panel')}>Navigation Panel</Link> features for the Tree View applies here.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -88,12 +102,12 @@ The <Link to={useBaseUrl('docs/simulation/sim_features#navigation-panel')}> Navi
   </Zoom>
 </div>
 
-### 4. Node Details
+## 4. Node details Pop-up
 
 Click on any node title to view its node details.
 
 <div style={{textAlign: 'center'}}>
-<Zoom>
+  <Zoom>
 <img alt="Settings" src={useBaseUrl('/doc-images/simulate_tab/table_view/tvv-16.png')} />
   </Zoom>
 </div> <br />
@@ -104,11 +118,10 @@ Click on any node title to view its node details.
   </Zoom>
 </div>
 
-### 5. Go to Plan
+## 5. Go to Plan
 
 <div style={{textAlign: 'justify'}}>
-The plan icon takes you to the recent access plan and displays that particular node, its siblings and children. This feature is same 
- <Link to={useBaseUrl('docs/simulation/sim_features#5-go-to-plan')}> Go to Plan </Link>with Tree View.
+The plan icon takes you to the recent access plan and displays that particular node, its siblings and children. This feature is same  <Link to={useBaseUrl('docs/simulation/simulation_canvas#16-go-to-plan')}>Go to Plan</Link> with Tree View.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -123,11 +136,11 @@ The plan icon takes you to the recent access plan and displays that particular n
   </Zoom>
 </div> 
 
-### 6. Add Comments
+## 6. Add Comments
 
 <div style={{textAlign: 'justify'}}>
 Click on the comment icon to open the Comments section. Comments can be added/edited/deleted to the model at node granularity.
-This feature is same  <Link to={useBaseUrl('docs/simulation/sim_features#6-add-comments')}> Add Commets </Link>with Tree View.
+This feature is same <Link to={useBaseUrl('docs/simulation/simulation_canvas#17-add-comments')}>Add Commets</Link> with Tree View.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -136,7 +149,7 @@ This feature is same  <Link to={useBaseUrl('docs/simulation/sim_features#6-add-c
   </Zoom>
 </div>
 
-### 7. Summarized View
+## 7. Summarized view
 
 By default, the table is shown in the summarized mode.
 
@@ -162,7 +175,7 @@ By default, the table is shown in the summarized mode.
   </Zoom>
 </div>
 
-### 8. Period View
+## 8. Period view
 
 <div style={{textAlign: 'center'}}>
 <Zoom>
@@ -178,12 +191,12 @@ On selecting the period view from the settings, you'll be able to view the table
   </Zoom>
 </div>
 
-### 9. Customize Columns
+## 9. Customize columns
 
 <div style={{textAlign: 'justify'}}>
 By clicking on settings, you can see the following screen.
 On the left, you can search for columns, select or unselect them based on whether you want it to be displayed.
-On the right, you can reorder columns by drag and drop.
+On the right, you can reorder columns by drag and drop. Click on Reset to default to erase the changes and go back to default.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>

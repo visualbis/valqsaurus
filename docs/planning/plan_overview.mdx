@@ -10,7 +10,7 @@ import "react-medium-image-zoom/dist/styles.css";
 ## The Plan Tab
 
 <div style={{textAlign: 'justify'}}>
-ValQ’s plan tab enables you to intuitively perform planning, budgeting & allocations through an editable table interface.
+ValQ’s Plan tab enables you to intuitively perform planning, budgeting & allocations through an editable table interface.
 </ div> <br />
 
 The most common use cases of the Plan tab are as follows:
@@ -31,39 +31,38 @@ Take a look at the Plan tab below
  <br /> 
 There are two major differences:
 
-## 1.Base Data Series vs. Scenario Data
+### 1.Base Data Series vs. Scenario Data
 
 <div style={{textAlign: 'justify'}}>
-The Simulate tab’s purpose is to create & compare multiple scenarios on-the-fly on the underlying data. The underlying data (referred to by the term ‘base data series’
-usually comes from an external source such as a spreadsheet or a SQL database. This underlying data source cannot be directly modified in the Simulate tab 
-(to maintain integrity of data). Instead, the Simulate tab allows us to create several scenarios on top of this base data series (with each scenario operating 
-on a copy of the base data series). As a result, there is a logical separation between base data series (the original data supplied to the model) vs. scenario data 
+The Simulate tab’s purpose is to run simulations visually, create & compare multiple scenarios on-the-fly on the underlying data. The underlying data 
+used by Simulate tab (referred to by the term ‘base data series’) usually comes from an external source such as a spreadsheet or a SQL database.
+This base data series cannot be directly modified in the Simulate tab (to maintain the integrity of data). Instead of using the base data series, 
+the Simulate tab allows us to create several scenarios (with each scenario operating on a copy of the base data series). 
+As a result, there is a logical separation between base data series (the original data supplied to the model) vs. scenario data 
 (scenarios created by users).
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-But what if the baseline data itself needs to be updated? <br />
-Consider this use case where you need to utilize the actuals for 2020 to create a baseline budget for 2021. Here instead of simulating for 2021, it is better 
-to create a new baseline plan for 2021, on which multiple simulations can be run. That’s where the Plan tab can help.
-</div> <br />
+But what if the base data series itself needs to be updated? <br />
+In such operations, we leverage the Plan tab where we can create a copy of the base data series, update it and use it as a new reference based on which you can create additional
+scenarios.
+</div>
 
-In short, the Plan tab can be used whenever the base data itself needs a permanent change. 
-
-## 2.Top-down Spreading & Distribution
+### 2.Top-down Spreading & Distribution
 
 <div style={{textAlign: 'justify'}}>
-In the Simulate tab, any changes you simulate at a particular node rolls up all the way to the top. However, it does not ‘allocate’ the impact of such as 
+In the Simulate tab, any changes you simulate at a particular node rolls up to the top. However, it does not ‘allocate’ the impact of such as 
 simulation to its children.
 </ div> <br />
 
 <div style={{textAlign: 'justify'}}>
-The Plan tab however does both bottom-up as well as top-down allocations. For example, changes to sales projections for a product can be proportionally allocated to
+The Plan tab, however, does both bottom-up as well as top-down allocations. For example, changes to sales projections for a product can be proportionally allocated to
 geographies or SKUs. Several top-down allocation methods are supported.
 </ div> <br />
 
 <div style={{textAlign: 'justify'}}>
-Overall, the ‘Simulate’ view is meant for executives who are interested the overall outcomes and impact analysis due to any changes. 
-The ‘Plan’ tab is meant to ensure that plans/forecasts created by planners are consistent and accurate at all levels.
+Overall, the Simulate tab is meant for executives who are interested in the overall outcomes and impact analysis due to any changes. 
+The Plan tab is meant to ensure that plans/forecasts created by planners are consistent and accurate at all levels.
 </ div>
 
 ## Pre-requisite
