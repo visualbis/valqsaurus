@@ -1,6 +1,6 @@
 ---
 id: storage-collaboration
-sidebar_label: Storage and Collaboration
+sidebar_label: Upload model to ValQ workspace
 hide_title: true
 image: "assets/llogo.svg"
 ---
@@ -16,52 +16,128 @@ import { Tag } from "../../src/ProductTag.js";
   image={useBaseUrl("/doc-images/valq-collaborate.png")}
 />
 
+<div style={{textAlign: 'justify'}}>
 This houses a group of capabilities for you to upload, save & store, audit, comment,
 and collaborate on your model. You can also export and/or run further analysis on
 the baseline, comparison, and the simulated data series of the ValQ model.
+</div>
 
-## Uploading the ValQ Model
+## Upload the ValQ model to your Workspace
 
-After logging in to the relevant workspace, you can see the 'Upload'
-button and your profile icon at the bezel.
+<div style={{textAlign: 'justify'}}>
+Uploading the model facilities various collaboration functionalities such as saving the model to workspace, adding comments, 
+conducting audit trail, sharing scenarios, model merge and exporting the model as a datasource to be used for other visuals or further analysis.
+</div><br />
 
+Here are the steps to upload the ValQ model to your workspace
+
+### 1. Login to workspace
+
+<div style={{textAlign: 'justify'}}>
+Login to the your workspace to see the 'Upload' button and your profile icon at the bezel.
+</div> <br />
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="" src={useBaseUrl("/doc-images//SC5.1.png")} />
+  </Zoom>
+</div> <br />   
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="" src={useBaseUrl("/doc-images//SC5.2.png")} />
+  </Zoom>
+</div> <br />
+
+### 2. Upload the model to save
+
 In the screenshot model, lets assume you delete a node `Ryan Smith`
 
+<div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="" src={useBaseUrl("/doc-images//SC5.3.png")} />
+  </Zoom>
+</div> <br />   
+
 Lets also assume you simulate on the node `Chris Morris`
 
+<div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="" src={useBaseUrl("/doc-images//SC5.4.png")} />
+  </Zoom>
+</div> <br />   
+
 You can save these changes at the workspace by clicking 'Upload' near your profile
 icon, naming your model, and clicking 'upload' at the popup window.
-<img alt="" src={useBaseUrl("/doc-images//SC5.5.png")} />
-Once your model is uploaded, you can see additional icons at the bezel such as Save,
-Comments, and additional options having Exporting, History log, & Settings.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="" src={useBaseUrl("/doc-images//SC5.2.png")} />
+  </Zoom>
+</div> <br />   
+
+You're model has been uploaded!
+
+<div style={{textAlign: 'justify'}}>
+
+Now you can see additional icons at the bezel such as Save,
+Comments, and the 3 dots `...` having Export as Datasource, History log, and Settings options.
+</div>  
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="" src={useBaseUrl("/doc-images//SC5.6.png")} />
+  </Zoom>
+</div>
 
-## Commenting at a Node level
+## Add Comments
 
+<div style={{textAlign: 'justify'}}>
 You can comment on the changes you have made by clicking the 'Comment'
-icon on top of the node. After posting, your comment is saved alongside
+icon on top of the node. After posting, your comment is saved on the comment section under the node hierarchy alongside
 your username and time log.
+</div> <br /> 
 
+<div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="" src={useBaseUrl("/doc-images//SC5.7.png")} />
-<img alt="" src={useBaseUrl("/doc-images//SC5.8.png")} />
+  </Zoom>
+</div> <br />
 
+The users part of the workspace will be able to view and add comments.
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+<img alt="" src={useBaseUrl("/doc-images//SC5.8.png")} />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
 Alternatively, you can check the comment log for the entire model by
 clicking 'Comments' icon at the bezel. Comments are displayed at a
 Scenario-Node level.
+</div> <br />
 
+<div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="" src={useBaseUrl("/doc-images//SC5.10.png")} />
+  </Zoom>
+</div>
 
 ## History Log
 
+<div style={{textAlign: 'justify'}}>
 As you go to additional options and click 'History Log', you can see the
 model and scenario level changes made in a chronological order. This
 feature helps with auditing the ValQ model.
+</div> <br />
 
+<div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="" src={useBaseUrl("/doc-images//SC5.9.png")} />
+  </Zoom>
+</div>
+
 
 ## Collaboration
 
@@ -70,7 +146,12 @@ You have to Save your model before collaborating with other users.
 Assuming a wokspace 'Member' simulates on the existing scenario, creates a new scenario, deletes
 another node, comments on the changes made, and saves the model.
 
+<div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="" src={useBaseUrl("/doc-images//SC5.11.png")} />
+  </Zoom>
+</div>
+
 
 Collaboration in ValQ lets you view the member's changes, simulations, and comments.
 
@@ -78,157 +159,10 @@ The changes at a Model/Scenario level are captured at the History Log.
 The comments between the users are displayed at a Node-Scenario level
 under the 'Comments' icon.
 
+<div style={{textAlign: 'center'}}>
+  <Zoom>
 <img alt="" src={useBaseUrl("/doc-images//SC5.12.png")} />
-
-## Export Data To Web
-
-**Export As Datasource** feature allows the _Data Series_ (Baseline, Comparison, Historical, and Planning Series) and _Scenarios_ of a ValQ model to be made available in a JSON format on the web. This Web URL will be a protected resource and an authorization key will be needed to access the JSON data. This feature can be used in some use cases like:
-
-- Writing back the data from ValQ to a source system by reading the JSON
-- Import the data back to the Power BI report (Using Power BI's "_Get Data from Web_" feature)
-
-> Note: The authorization key will be generated and will be available only to the report admins.
-
-### Create a Web Data Source URL
-
-In order to export the data as Datasource, please follow the below steps:
-
-1. Save the ValQ Model to a workspace, by clicking on the **Upload** label.
-
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img
-      alt="Upload Valq Model"
-      src={useBaseUrl("/doc-images/web-datasource/upload-model.png")}
-    />
   </Zoom>
 </div>
 
-_Upload Model to Workspace_
 
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img
-      alt="Upload Popup Screen"
-      src={useBaseUrl("/doc-images/web-datasource/upload-popup.png")}
-    />
-  </Zoom>
-</div>
-
-_Upload Popup Screen_
-
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img
-      alt="Model Uploaded"
-      src={useBaseUrl("/doc-images/web-datasource/model-uploaded.png")}
-    />
-  </Zoom>
-</div>
-
-_Model uploded to the Workspace_
-
-2. Click on the 3 dots `...` and select **"Export as datasource"**
-
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img
-      alt="Export as Datasource"
-      src={useBaseUrl("/doc-images/web-datasource/export-as-datasource.png")}
-    />
-  </Zoom>
-</div>
-
-_Export as datasource_
-
-- Select the **Series** and **Scenarios** names that you want to export
-
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img
-      alt="Create Web Datasource"
-      src={useBaseUrl("/doc-images/web-datasource/create-web-datasource.png")}
-    />
-  </Zoom>
-</div>
-
-_Create a Web datasource_
-
-Following are the options available in the *Export format* screen:
-
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img
-      alt="Export Format"
-      src={useBaseUrl("/doc-images/web-datasource/export-format.png")}
-    />
-  </Zoom>
-</div>
-
-_Export format_
-
-- **Export format**: Select the export format as *Tree structure* or *Flat structure*
-- **Customization**: Select the *Export level of the Nodes* that decides the hierarchy of the Model Nodes
-- **Edit Column Names**: Edit and rename the *Column names* by clicking on the editor icon
-- [ ] **Export only leaf nodes**: Check the tick box to export just the last Node of the Model.
-- Copy and save the **Web URL** and **HTTP request header parameters**.
-
-> Note: The above Web URL and HTTP request ids are auto-generated.
-
-### Example (Import data from Web datasource URL in Power BI)
-
-In the below example, we'll show how the URL can be consumed in a Power BI report using [Get Data by Web Connector](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-to-web-by-example).
-
-1. Go to **Get Data > Web**
-
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img
-      alt="Get Data by Web Connector"
-      src={useBaseUrl("/doc-images/web-datasource/get-data-web.png")}
-    />
-  </Zoom>
-</div>
-
-_Get Data by Web Connector_
-
-2. Select the *Advanced* option
-
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img
-      alt="web-url-http-request"
-      src={useBaseUrl("/doc-images/web-datasource/web-url-http-request.png")}
-    />
-  </Zoom>
-</div>
-
-_Web URL and HTTP request fields_
-
-- Enter the Web URL and HTTP request header parameters obtained in the above **export format** section.
-
-> Note: Enter **Authorization** in the HTTP header field
-
-- Click *OK*.
-- This pops up an excelsheet preview of the web datasource to be imported.
-
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img
-      alt="preview-of-data"
-      src={useBaseUrl("/doc-images/web-datasource/preview-of-data.png")}
-    />
-  </Zoom>
-</div>
-
-_Preview of the data to be imported_
-
-You may click **Load** to continue loading the data or **Transform Data** to further configure the data that will be imported from the web datasource.
-
-## Live Syncing Simulations with the Export file
-
-You can run further simulations to the scenarios and instantly synchronize the new scenario data with
-the export file by refreshing the data query within 'Queries &
-Connections'.
-
-<img alt="" src={useBaseUrl("/doc-images//SC.11.png")} />

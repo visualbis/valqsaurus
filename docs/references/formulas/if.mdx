@@ -17,19 +17,29 @@ IF( logical_test, value_if_true, value_if_false )
 `value_if_false` – The value that is to be returned if the condition is not met
 
 ## Example
-Consider the Demand and Inventory nodes to follow the trend as shown below. The node [Demand - Inventory] is to be calculated as Demand - Inventory, if the value is positive, else it should be zero.
 
-| Parameter          | Week 1 | Week 2 |Week 3  |Week 4  |
-|--------------------|--------|--------|--------|--------|
-| Demand             | 110    | 95     | 75     | 78     |
-| Inventory          | 85     | 70     | 100    | 80     |
-| Demand - Inventory | 25     | 25     | 0      | 0      |
+Consider the Revenue and Cost of Goods Sold nodes to follow the trend as shown below. 
 
+| Parameter          | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | 
+|--------------------|-----------|-----------|-----|-----|-----|-----|
+| Revenue            | 100 | 124 | 137 | 0   | 23  | 45  | 52  | 36  | 
+| Cost of Goods Sold | 25  | 25  | 25  | 25  | 25  | 25  | 25  | 25  |
+
+<div style={{textAlign: 'justify'}}> 
+The node Gross Profit Margin (%) is to be calculated as (Revenue-Cost of Goods Sold)/Revenue.
+In case, Revenue has period value of zero, Gross Profit Margin (%) should return 0.
+</div> <br />
 
 To achieve this, the formula should be 
 ```javascript
-IF(Demand - Inventory > 0, Demand - Inventory, 0)
+IF(Revenue==0,0,(Revenue-Cost of Goods Sold)/Revenue)
 ```
+
+## Result
+| Parameter          | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug |
+|--------------------|-----------|-----------|-----|-----|-----|-----|
+| Gross Profit Margin (%)| 75 | 80 | 82 | 0   | (9)| 44 | 52 | 31 |
+
 ## Excel Equivalent
 [IF](https://support.office.com/en-gb/article/if-function-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2)
 
