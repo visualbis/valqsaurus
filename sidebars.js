@@ -28,8 +28,9 @@ module.exports = {
             "planning/create_new_series",
             "planning/plan_features",
             "planning/time_series",
-            "planning/business_cases",
             "planning/update",
+            "planning/business_cases",
+
         ],
         Simulate: [
             "simulation/simulate_overview",
@@ -44,7 +45,9 @@ module.exports = {
         ],
         "Storage and Collaboration": [
             "storage/storage-collaboration",
-            "storage/export"
+            "storage/comments_historylog",
+            "storage/export",
+            "storage/read_mode",
         ],
         Resources: [
             "faq/formula-list",

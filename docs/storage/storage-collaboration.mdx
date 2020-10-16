@@ -1,6 +1,6 @@
 ---
 id: storage-collaboration
-sidebar_label: Upload model to ValQ workspace
+sidebar_label: Upload Model to Workspace
 hide_title: true
 image: "assets/llogo.svg"
 ---
@@ -17,24 +17,24 @@ import { Tag } from "../../src/ProductTag.js";
 />
 
 <div style={{textAlign: 'justify'}}>
-This houses a group of capabilities for you to upload, save & store, audit, comment,
+ValQ Collaborate houses a group of capabilities for you to upload, save & store, audit, comment,
 and collaborate on your model. You can also export and/or run further analysis on
-the baseline, comparison, and the simulated data series of the ValQ model.
+the baseline, comparison and the simulated data series of the ValQ model.
 </div>
 
-## Upload the ValQ model to your Workspace
+## Upload ValQ model to your Workspace
 
 <div style={{textAlign: 'justify'}}>
-Uploading the model facilities various collaboration functionalities such as saving the model to workspace, adding comments, 
-conducting audit trail, sharing scenarios, model merge and exporting the model as a datasource to be used for other visuals or further analysis.
+Uploading the model facilities various collaboration functionalities such as saving the model to a workspace, sharing your model, adding comments, 
+conducting audit trail, sharing scenarios, model merge and exporting the model as a data source to be used for other visuals or further analysis.
 </div><br />
 
 Here are the steps to upload the ValQ model to your workspace
 
-### 1. Login to workspace
+### 1. Log in to workspace
 
 <div style={{textAlign: 'justify'}}>
-Login to the your workspace to see the 'Upload' button and your profile icon at the bezel.
+Log in to your workspace at the top right corner to see the Upload button and your profile icon at the bezel.
 </div> <br />
 
 <div style={{textAlign: 'center'}}>
@@ -47,11 +47,11 @@ Login to the your workspace to see the 'Upload' button and your profile icon at 
   <Zoom>
 <img alt="" src={useBaseUrl("/doc-images//SC5.2.png")} />
   </Zoom>
-</div> <br />
+</div>
 
 ### 2. Upload the model to save
 
-In the screenshot model, lets assume you delete a node `Ryan Smith`
+In the screenshot model, let us assume you delete a node `Ryan Smith`
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -59,7 +59,7 @@ In the screenshot model, lets assume you delete a node `Ryan Smith`
   </Zoom>
 </div> <br />   
 
-Lets also assume you simulate on the node `Chris Morris`
+Let us also assume you simulate on the node `Chris Morris`
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -67,101 +67,26 @@ Lets also assume you simulate on the node `Chris Morris`
   </Zoom>
 </div> <br />   
 
-You can save these changes at the workspace by clicking 'Upload' near your profile
-icon, naming your model, and clicking 'upload' at the popup window.
+<div style={{textAlign: 'justify'}}>
+You can save these changes at the workspace by clicking Upload at the bezel, naming your model and clicking Upload at the popup window.
+</div> <br /> 
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-<img alt="" src={useBaseUrl("/doc-images//SC5.2.png")} />
+<img alt="" src={useBaseUrl("/doc-images//SC5.5.png")} />
   </Zoom>
 </div> <br />   
 
-You're model has been uploaded!
+Your model has been uploaded!
 
 <div style={{textAlign: 'justify'}}>
 
-Now you can see additional icons at the bezel such as Save,
-Comments, and the 3 dots `...` having Export as Datasource, History log, and Settings options.
+Now you can see additional icons at the bezel such as Save, <Link to={useBaseUrl('docs/storage/comments_historylog#comments')}>Comments</Link> and the 3 dots having <Link to={useBaseUrl('docs/storage/export')}>Export as Datasource</Link>, <Link to={useBaseUrl('docs/storage/comments_historylog#history-log')}>History Log</Link> and Settings options.
 </div>  
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="" src={useBaseUrl("/doc-images//SC5.6.png")} />
-  </Zoom>
-</div>
-
-## Add Comments
-
-<div style={{textAlign: 'justify'}}>
-You can comment on the changes you have made by clicking the 'Comment'
-icon on top of the node. After posting, your comment is saved on the comment section under the node hierarchy alongside
-your username and time log.
-</div> <br /> 
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="" src={useBaseUrl("/doc-images//SC5.7.png")} />
-  </Zoom>
-</div> <br />
-
-The users part of the workspace will be able to view and add comments.
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="" src={useBaseUrl("/doc-images//SC5.8.png")} />
-  </Zoom>
-</div> <br />
-
-<div style={{textAlign: 'justify'}}>
-Alternatively, you can check the comment log for the entire model by
-clicking 'Comments' icon at the bezel. Comments are displayed at a
-Scenario-Node level.
-</div> <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="" src={useBaseUrl("/doc-images//SC5.10.png")} />
-  </Zoom>
-</div>
-
-## History Log
-
-<div style={{textAlign: 'justify'}}>
-As you go to additional options and click 'History Log', you can see the
-model and scenario level changes made in a chronological order. This
-feature helps with auditing the ValQ model.
-</div> <br />
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="" src={useBaseUrl("/doc-images//SC5.9.png")} />
-  </Zoom>
-</div>
-
-
-## Collaboration
-
-Collaboration helps to share your model changes, simulations, and comments to all the users under the same workspace.
-You have to Save your model before collaborating with other users.
-Assuming a wokspace 'Member' simulates on the existing scenario, creates a new scenario, deletes
-another node, comments on the changes made, and saves the model.
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="" src={useBaseUrl("/doc-images//SC5.11.png")} />
-  </Zoom>
-</div>
-
-
-Collaboration in ValQ lets you view the member's changes, simulations, and comments.
-
-The changes at a Model/Scenario level are captured at the History Log.
-The comments between the users are displayed at a Node-Scenario level
-under the 'Comments' icon.
-
-<div style={{textAlign: 'center'}}>
-  <Zoom>
-<img alt="" src={useBaseUrl("/doc-images//SC5.12.png")} />
   </Zoom>
 </div>
 

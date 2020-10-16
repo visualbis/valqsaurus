@@ -1,7 +1,7 @@
 ---
 id: export
-title: Export as Datasource
-sidebar_label: Export as Datasource
+title: Export Model as Data Source
+sidebar_label: Export Model as Data Source
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
@@ -10,31 +10,33 @@ import "react-medium-image-zoom/dist/styles.css";
 
 <div style={{textAlign: 'justify'}}>
 
-**Export As Datasource** feature allows the _Data Series_ (Baseline, Comparison, Historical, and Planning Series) and _Scenarios_ of a ValQ model to be made available in a JSON format on the web. This Web URL will be a protected resource and an authorization key will be needed to access the JSON data. This feature can be used in some use cases like:
+Export as datasource feature allows the data series and scenarios of a ValQ model to be made available in a JSON format on the web. 
+This web URL will be a protected resource and an authorization key will be needed to access the JSON data. 
+This feature can be used in some use cases like:
 </div>
 
-- Writing back the data from ValQ to a source system by reading the JSON
-- Import the data back to the Power BI report (Using Power BI's "_Get Data from Web_" feature)
-- Live Syncing Simulations with the Export file
+- <Link to={useBaseUrl('docs/storage/export#create-a-web-data-source-url')}>Export</Link> the data from ValQ by creating a web data source
+- <Link to={useBaseUrl('docs/storage/export#import-data-from-web-data-source-url-and-parameters-in-power-bi')}>Import</Link> the data back into Power BI (Using Power BI's "Get Data from Web" feature) or any other application for further analysis
+- <Link to={useBaseUrl('docs/storage/export#live-syncing-simulations-with-the-export-file-that-fetches-real-time-data')}>Live syncing</Link> simulations with the export file that fetches real-time data
 
-> Note: The authorization key will be generated and will be available only to the report admins.
+> **Note**: The authorization key will be generated and will be available only to the report admins.
 
-### Create a Web Data Source URL
+### Create a web data source URL
 
-In order to export the data as Datasource, please follow the below steps:
+To export the data as a data source, please follow the below steps:
 
-1. Save the ValQ Model to a workspace, by clicking on the **Upload** label.
+1. Save the ValQ model to a workspace by clicking the Upload button on the top right corner of the visual.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
       alt="Upload Valq Model"
-      src={useBaseUrl("/doc-images/web-datasource/upload-model.png")}
+      src={useBaseUrl("/doc-images//SC5.2.png")}
     />
   </Zoom>
-</div>
+</div><br />
 
-_Upload Model to Workspace_
+2. Name the model and click Upload on the pop-up window.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -43,9 +45,9 @@ _Upload Model to Workspace_
       src={useBaseUrl("/doc-images/web-datasource/upload-popup.png")}
     />
   </Zoom>
-</div>
+</div><br />
 
-_Upload Popup Screen_
+3. You'll see the following message once the model gets uploaded.  
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -54,11 +56,9 @@ _Upload Popup Screen_
       src={useBaseUrl("/doc-images/web-datasource/model-uploaded.png")}
     />
   </Zoom>
-</div>
+</div><br />
 
-_Model uploded to the Workspace_
-
-2. Click on the 3 dots `...` and select **"Export as datasource"**
+4. Click on the 3 dots `...` and select Export as datasource option.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -67,110 +67,105 @@ _Model uploded to the Workspace_
       src={useBaseUrl("/doc-images/web-datasource/export-as-datasource.png")}
     />
   </Zoom>
-</div>
+</div><br />
 
-_Export as datasource_
-
-3. Select the **Series** and **Scenarios** that you want to export
+5. Select the Series and Scenarios that you want to export.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
       alt="Create Web Datasource"
       src={useBaseUrl("/doc-images/web-datasource/create-web-datasource.png")}
-    />
+        width={320}
+        height={470}/>
   </Zoom>
-</div>
+</div><br />
 
-_Create a Web datasource_
-
-4. Following are the options available in the *Export format* screen:
+6. Following are the options available in the Export format screen:
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
       alt="Export Format"
       src={useBaseUrl("/doc-images/web-datasource/export-format.png")}
+      width={500}
+      height={485}
     />
   </Zoom>
-</div>
+</div><br />
 
-_Export format_
+- **Export format**: Select the export format as a Tree structure or Flat structure
+- **Customization**: Select the Export level of the nodes that decides the hierarchy of the model nodes
+- **Edit Column Names**: Edit and rename the column names by clicking on the editor icon
+- [ ] **Export only leaf nodes**: Check the tick box to export just the last level nodes of the model
+- Copy and save the **web URL** and **HTTP request header parameters**.
 
-- **Export format**: Select the export format as *Tree structure* or *Flat structure*
-- **Customization**: Select the *Export level of the Nodes* that decides the hierarchy of the Model Nodes
-- **Edit Column Names**: Edit and rename the *Column names* by clicking on the editor icon
-- [ ] **Export only leaf nodes**: Check the tick box to export just the last level nodes of the Model.
-- Copy and save the **Web URL** and **HTTP request header parameters**.
+> **Note**: The above Web URL and HTTP request ids are auto-generated.
 
-> Note: The above Web URL and HTTP request ids are auto-generated.
+7. Click Done.
 
-5. Click *Done*.
+### Import data from web data source URL and parameters in Power BI
 
-### Import data from Web datasource URL in Power BI
+In the below example, we'll show how the URL can be consumed in a Power BI report using [Get Data by Web Connector](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-to-web-by-example).
 
-In the below example, we'll show how the URL can be consumed in a Power BI report using [Get Data by Web Connector](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-to-web-by-example)
-
-1. Go to **Get Data > Web**
+1. Go to Get Data > Web under the Home tab.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
       alt="Get Data by Web Connector"
       src={useBaseUrl("/doc-images/web-datasource/get-data-web.png")}
+      width={400}
+      height={450}
     />
   </Zoom>
-</div>
+</div><br />
 
-_Get Data by Web Connector_
-
-2. Select the *Advanced* option
+2. Select the Advanced option and enter the web URL and HTTP request header parameters obtained from the above export format section.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
       alt="web-url-http-request"
       src={useBaseUrl("/doc-images/web-datasource/web-url-http-request.png")}
+      width={550}
+      height={400}
     />
   </Zoom>
-</div>
+</div><br />
 
-_Web URL and HTTP request fields_
+> **Note**: It is important to note that 'Authorization' needs to be typed out under HTTP request header parameters as it is not available in the dropdown.
 
-3. Enter the Web URL and HTTP request header parameters obtained in the above **export format** section.
-
-> Note: Enter **Authorization** in the HTTP header field
-
-4. Click *OK*.
-- This pops up an excelsheet preview of the web datasource to be imported.
+3. Click OK.
+- This pops up a preview of the web data source to be imported.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
       alt="preview-of-data"
       src={useBaseUrl("/doc-images/web-datasource/preview-of-data.png")}
+      width={750}
+      height={530}
     />
   </Zoom>
-</div>
-
-_Preview of the data to be imported_
+</div><br />
 
 <div style={{textAlign: 'justify'}}>
-
-You may click **Load** to continue loading the data or **Transform Data** to further configure the data that will be imported from the web datasource.
-
+You may click Load to continue loading the data or Transform Data to further configure the data that will be imported from the web data source.
 </div>
 
-### Live Syncing Simulations with the Export file
+### Live syncing simulations with the export file that fetches real-time data
 
 <div style={{textAlign: 'justify'}}>
+ValQ data can be used as input for other visuals and further analysis. 
 You can run further simulations to the scenarios and instantly synchronize the new scenario data with
-the export file by refreshing the data query within 'Queries &
-Connections'.
+the export file by refreshing the data query.
 </div> <br />
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images//SC.11.png")} />
+    <img alt="" src={useBaseUrl("/doc-images//SC.11.png")} 
+    width={550}
+    height={350}/>
   </Zoom>
 </div>
