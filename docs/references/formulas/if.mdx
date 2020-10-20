@@ -2,6 +2,8 @@
 id: if
 title: IF
 ---
+import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
+import Link from '@docusaurus/Link';
 
 An `IF` statement returns a value depending on whether the condition that is being evaluated is TRUE or FALSE. 
 
@@ -10,15 +12,24 @@ An `IF` statement returns a value depending on whether the condition that is bei
 IF( logical_test, value_if_true, value_if_false )
 ```
 ## Arguments
-`logical_test` – The condition to be evaluated
+`logical_test` – The condition to be evaluated.
 
-`value_if_true` – The value that is to be returned if the condition is met
+`value_if_true` – The value to be returned if the condition is met.
 
-`value_if_false` – The value that is to be returned if the condition is not met
+`value_if_false` – The value to be returned if the condition is not met.
+
+## Return Value
+Either value_if_true or value_if_false.
+
+## Remarks
+- Returns Blank when the formula is misspelled.
+- The `IF` function returns Error in any of the following cases :
+    - value_if_false argument is missing
+    - The argument value_if_true or value_if_false are not of numeric data type
+    - Not using appropriate <Link to={useBaseUrl('docs/faq/formula-list#other-operators')}>operator</Link> in logical_test
 
 ## Example
-
-Consider the Revenue and Cost of Goods Sold nodes to follow the trend as shown below. 
+Consider the Revenue and Cost of Goods Sold nodes to follow the trend as shown below
 
 | Parameter          | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | 
 |--------------------|-----------|-----------|-----|-----|-----|-----|
@@ -26,20 +37,24 @@ Consider the Revenue and Cost of Goods Sold nodes to follow the trend as shown b
 | Cost of Goods Sold | 25  | 25  | 25  | 25  | 25  | 25  | 25  | 25  |
 
 <div style={{textAlign: 'justify'}}> 
-The node Gross Profit Margin (%) is to be calculated as (Revenue-Cost of Goods Sold)/Revenue.
-In case, Revenue has period value of zero, Gross Profit Margin (%) should return 0.
-</div> <br />
+
+Now, a new node Gross Profit Margin can computed using the `IF` function.
+Gross Profit Margin is calculated as (Revenue-Cost of Goods Sold)/Revenue.
+In case, Revenue has period value of 0, Gross Profit Margin should return 0.
+</div> 
 
 To achieve this, the formula should be 
 ```javascript
 IF(Revenue==0,0,(Revenue-Cost of Goods Sold)/Revenue)
 ```
+The result of the above formula is shown below
 
-## Result
 | Parameter          | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug |
 |--------------------|-----------|-----------|-----|-----|-----|-----|
-| Gross Profit Margin (%)| 75 | 80 | 82 | 0   | (9)| 44 | 52 | 31 |
+| Gross Profit Margin| 75% | 80% | 82% | 0   | (9%)| 44% | 52% | 31% |
 
 ## Excel Equivalent
 [IF](https://support.office.com/en-gb/article/if-function-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2)
+
+> **Tip** <br /> Use <Link to={useBaseUrl('docs/references/formulas/switch')}>SWITCH</Link> function instead of nesting multiple IF functions
 
