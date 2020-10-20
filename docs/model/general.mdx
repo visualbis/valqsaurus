@@ -72,7 +72,7 @@ This enables planners to integrate ValQ's planning and what-if simulations with 
   </Zoom>
 </div> <br />
 
-_Figure: Writeback architecture_
+_Writeback architecture_
 
 ### 3.1 Configure Writeback in ValQ
 
@@ -82,12 +82,12 @@ _Figure: Writeback architecture_
   <Zoom>
     <img
       alt="ValQ logo"
-      src={useBaseUrl("/doc-images/model/writeback/writeback_settings.png")}
+      src={useBaseUrl("/doc-images/model/writeback/writeback-settings.png")}
     />
   </Zoom>
 </div> <br />
 
-_Figure: Writeback settings_
+_Writeback settings - exporting simulation affected nodes only_
 
 The following table lists out the fields:
 
@@ -99,7 +99,7 @@ The following table lists out the fields:
 | Exporting Nodes | Select the nodes to be exported                                 |                                                                                                          |
 |                 |                                                                 | <ul><li>All Nodes</li><li>Only KPI and Key Inputs nodes</li><li>Only simulation affected nodes</li></ul> |
 
-_Table: Writeback Properties_
+_Writeback Properties_
 
 2. This Writeback feature will now be available in the **Simulate > Navigation Panel** section on the runtime.
 
@@ -109,6 +109,7 @@ _Table: Writeback Properties_
   <Zoom>
     <img
       alt="Writeback feature accessible from the Nav Panel"
+      width="50%"
       src={useBaseUrl(
         "/doc-images/model/writeback/navpanel_writeback_icon.png"
       )}
@@ -116,7 +117,7 @@ _Table: Writeback Properties_
   </Zoom>
 </div>
 
-_Figure: Writeback feature accessible from the Navigation Panel_
+_Writeback feature accessible from the Navigation Panel_
 
 - Click the **Writeback** button
 
@@ -128,6 +129,8 @@ _Figure: Writeback feature accessible from the Navigation Panel_
     />
   </Zoom>
 </div>
+
+_Selected series/scenarios to post_
 
 - Select the _Series_ and _Scenarios_ that you want to export to the URL and submit.
 
@@ -141,6 +144,8 @@ _Figure: Writeback feature accessible from the Navigation Panel_
     />
   </Zoom>
 </div>
+
+_Writeback posted successfully_
 
 > Success: Your modeled scenarios and series have been successfully posted to the external URL.
 
@@ -670,7 +675,7 @@ You can download the schema file here <a href={useBaseUrl('/assets/jsonSchema.js
   </Zoom>
 </div>
 
-_Figure: Writeback Schema format_
+_Writeback Schema format_
 
 ### 3.3 Writeback History
 
@@ -685,7 +690,7 @@ History of the Writeback logs is maintained and is accessed by clicking on the h
   </Zoom>
 </div>
 
-_Figure: Writeback History Logs_
+_Writeback History Logs_
 
 ## Summary - General Tab
 
