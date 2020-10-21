@@ -486,9 +486,8 @@ You can configure the following properties with Number Formatting settings:
 ## 5. Conditional Formatting
 
 <div style={{textAlign: 'justify'}}>
-The Conditional Formatting settings can be used to set Alert
-Threshold and Rules for the model. The properties of 
-Conditional Formatting are:
+The Conditional Formatting setting is helpful in configuring the <Link to={useBaseUrl('docs/model/node#6-conditional-formatting')}>Conditional Formatting</Link> and setting the Global rule for the model.
+The properties of Conditional Formatting are:
 </div> <br />
 
 1.  Toggle to enable/disable the property Enable Conditional formatting.
@@ -500,8 +499,9 @@ Conditional Formatting are:
 </div>
 
 <div style={{textAlign: 'justify'}}>
-2.  Format based on can be selected as Variance (Primary Vs Comparison) when there's a comparison series
-    or else you can select Simulation (Sim.Primary Vs Primary).
+2.  Format based on can be selected as Variance (Primary Vs Comparison) when there's a comparison series and you want variance as the
+difference between baseline and comparison or you can select Simulation (Sim.Primary Vs Primary) when you want variance as the difference between
+baseline and simulated baseline.
 </div> <br />
 
 Here's the ValQ canvas displayed with Conditional Formatting
@@ -515,7 +515,7 @@ Here's the ValQ canvas displayed with Conditional Formatting
 <div style={{textAlign: 'justify'}}>
 3.  After performing simulation, you can observe that the variance percentage value
     for 'Midwest' node is 12% which is above 0% and based on that condition, the status
-    bar for the node is green (see above Figure). Similarly, the variance percentage
+    bar for the node is green. Similarly, the variance percentage
     value for the node - 'Consumer' and 'Industrials' are (6%) and (64%) respectively,
     which is between -10% to 0% and the latter below -10%. Based on the threshold, the
     status bar for the node is yellow and red respectively.
