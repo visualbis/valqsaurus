@@ -72,6 +72,7 @@ module.exports = {
     ogImage: "img/whats-new-in-valq.jpg",
     twitterImage: "img/whats-new-in-valq.jpg",
   },
+  onBrokenLinks: "ignore",
   plugins: ["docusaurus-lunr-search"],
   presets: [
     [
