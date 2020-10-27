@@ -1,6 +1,6 @@
 {
   "name": "valqsaurus",
-  "version": "0.0.1",
+  "version": "1.22.10",
   "private": true,
   "scripts": {
     "start": "docusaurus start",
