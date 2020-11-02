@@ -1,7 +1,7 @@
 ---
 id: getting-started
-title: General features of ValQ Custom Visual
-sidebar_label: General features of ValQ Custom Visual
+title: General features of ValQ visual
+sidebar_label: General features of ValQ visual
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
@@ -18,26 +18,24 @@ Explanation of the concept of a Value Driver Models with a business scenario.
   height={480}
 />
 
-## Instructions for valQ Custom Visual
+## Instructions for ValQ visual
 
-The valQ Custom Visual provides various components that the Designer can
-use in conjunction with Microsoft Power BI. The valQ custom visual also
+The ValQ visual provides various components that the Designer can
+use in conjunction with Microsoft Power BI. The ValQ visual also
 offers many configuration options.
 
 In this guide, we will describe the common end user functionality using
 a demo as an example. It is however important to understand that your
 specific implementation may differ.
 
-Once your designer has implemented and configured the valQ Custom
-Visual, it will be accessed the same way you access your current Power
+Once your designer has implemented and configured the ValQ Visual, it will be accessed the same way you access your current Power
 BI Apps.
 
-When you open a valQ Custom Visual, it will open in a similar manner at
+When you open a ValQ Visual, it will open in a similar manner at
 the screenshot below:
 
-<img alt="valQ Screen" src={useBaseUrl('/doc-images/4.1.png')} />
-<div style={{fontStyle: "italic", textAlign: "center"}}> ValQ Screen </div>
-
+<img alt="ValQ Screen" src={useBaseUrl("/doc-images/4.1.png")} />
+<div style={{ fontStyle: "italic", textAlign: "center" }}> ValQ Screen </div>
 
 The left panel is the navigation panel and on the canvas you will find
 the value driver tree. By default, the tree is open on collapsed mode at
@@ -60,7 +58,7 @@ below Figure.
 
 ## Input Data
 
-The valQ Custom Visual works with two input data series – the primary
+The ValQ visual works with two input data series – the primary
 and the comparison data series. A common way of using this is to compare
 Forecast vs Budget, Budget vs Last Year Actuals etc. The data series is
 at a certain time grain. This would typically be 1 year by 12 months or
@@ -85,7 +83,7 @@ Year ie. Defaulted to Current Year
 This allows the users to compare different versions and years in the
 value driver tree model.
 
-The valQ Custom Visual can display individual periods but can also apply
+The ValQ visual can display individual periods but can also apply
 time aggregation such as Full Year, Year-to-Date. You can see the
 currently selected Value Display aggregation on the Navigation Panel. In
 the screenshot above, Full Year is selected. The primary value displayed
@@ -109,9 +107,11 @@ Value Driver Trees are in reality networks. The same driver may impact
 multiple aspects of the Tree. The component therefore contains a concept
 of linked nodes. Such nodes have a link
 
-<img alt="..image::\/doc-images/image4" src={useBaseUrl('/doc-images/media/image4.png')} /> icon that you can click
-which will jump to where the linked node is defined and highlight the
-node:
+<img
+  alt="..image::\/doc-images/image4"
+  src={useBaseUrl("/doc-images/media/image4.png")}
+/> icon that you can click which will jump to where the linked node is defined and
+highlight the node:
 <img alt="Link" src={useBaseUrl("/doc-images/4.3.png")} />
 <img alt="Linked Nodes" src={useBaseUrl("/doc-images/4.4.png")} />
 
@@ -253,16 +253,27 @@ There are 2 options to simulate:
   simulation will be showed on the right hand side. A window will open
   displaying the changes. The pencil icon will display the change in
   percentage that has been made:
-  <img alt="..image::\/doc-images/image19" src={useBaseUrl('/doc-images/media/image17.png')} />, and a legend with
-  percentage showing if the adjust has made the scenario better or
-  worse <img alt="..image::\/doc-images/image20" src={useBaseUrl('/doc-images/media/image18.png')} />.
+  <img
+    alt="..image::\/doc-images/image19"
+    src={useBaseUrl("/doc-images/media/image17.png")}
+  />
+  , and a legend with percentage showing if the adjust has made the scenario better
+  or worse <img
+    alt="..image::\/doc-images/image20"
+    src={useBaseUrl("/doc-images/media/image18.png")}
+  />
+  .
 
 <img alt="Data Simulation" src={useBaseUrl("/doc-images/4.13.png")} />
 
 - Click on the arrow icon of the node
-  <img alt="..image::\/doc-images/image22" src={useBaseUrl('/doc-images/media/image20.png')} /> then click ‘Edit Key
-  Input’ <img alt="..image::\/doc-images/image23" src={useBaseUrl('/doc-images/media/image21.png')} /> and manually
-  edit the changes in simulation per period. Click X to close manual
+  <img
+    alt="..image::\/doc-images/image22"
+    src={useBaseUrl("/doc-images/media/image20.png")}
+  /> then click ‘Edit Key Input’ <img
+    alt="..image::\/doc-images/image23"
+    src={useBaseUrl("/doc-images/media/image21.png")}
+  /> and manually edit the changes in simulation per period. Click X to close manual
   input table.
 
 Notes
@@ -287,7 +298,11 @@ The edit icon will indicate the months that have been edited.
 
 Click reset icon to return to the original data
 
-<img alt="..image::\/doc-images/image27" src={useBaseUrl('/doc-images/media/image25.png')} />.
+<img
+  alt="..image::\/doc-images/image27"
+  src={useBaseUrl("/doc-images/media/image25.png")}
+/>
+.
 
 As part of the New Release, you can simulate the Node having "0" as the
 value. When the slider is moved to the right end, it will show positive
@@ -309,11 +324,15 @@ Key Inputs is available on the left side panel to directly simulate key
 cost drivers without going into the node details.
 
 Click the ‘Edit Key Input’ icon
-<img alt="..image::\/doc-images/image28" src={useBaseUrl('/doc-images/media/image26.png')} /> 
+
+<img
+  alt="..image::\/doc-images/image28"
+  src={useBaseUrl("/doc-images/media/image26.png")}
+/>{" "}
 
 and manually edit the changes in simulation per periods.
 
-<img alt="Key Inputs" src={useBaseUrl('/doc-images/4.17.png')} />
+<img alt="Key Inputs" src={useBaseUrl("/doc-images/4.17.png")} />
 
 Notes:
 
@@ -463,7 +482,7 @@ below Figure.
 <img alt="Download icon" src={useBaseUrl("/doc-images/sfi4.png")} />
 
 - Click the icon for write back functionality (see Figure below). By
-  clicking this option you will be able to write back/post valQ data
+  clicking this option you will be able to write back/post ValQ data
   to a configured URL in the server.
 
 <img alt="Write back icon" src={useBaseUrl("/doc-images/sfi5.png")} />

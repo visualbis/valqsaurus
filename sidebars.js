@@ -30,7 +30,6 @@ module.exports = {
             "planning/time_series",
             "planning/update",
             "planning/business_cases",
-
         ],
         Simulate: [
             "simulation/simulate_overview",
@@ -44,10 +43,19 @@ module.exports = {
             "analysis/attribution-analysis",
         ],
         "Storage and Collaboration": [
-            "storage/storage-collaboration",
-            "storage/comments_historylog",
-            "storage/export",
-            "storage/read_mode",
+            "storage/valq-collaborate",
+
+            {
+                type: "category",
+                label: "Features",
+                items: [
+                    "storage/features/save-model",
+                    "storage/features/export",
+                    "storage/features/commenting",
+                    "storage/features/history-logs",
+                    "storage/features/user-security",
+                ],
+            },
         ],
         Resources: [
             "faq/formula-list",
@@ -108,12 +116,12 @@ module.exports = {
                 ],
             },
             /*            {
-                                  type: "category",
-                                  label: "Analyze",
-                                  items: ["how_to_videos/analyze/intro"]
-                  
-                              },
-                  */
+                                                                                                          type: "category",
+                                                                                                          label: "Analyze",
+                                                                                                          items: ["how_to_videos/analyze/intro"]
+                                                                                          
+                                                                                                      },
+                                                                                          */
         ],
     },
     functionSideBar: {

@@ -1,23 +1,22 @@
 ---
-id: export
-title: Export Model as Data Source
-sidebar_label: Export Model as Data Source
+id: export-old
+title: Export Model as Data source
+sidebar_label: Export Data source
 ---
-import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
-import Link from '@docusaurus/Link';
+
+import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
+import Link from "@docusaurus/Link";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 <div style={{textAlign: 'justify'}}>
 
-Export as datasource feature allows the data series and scenarios of a ValQ model to be made available in a JSON format on the web. 
-This web URL will be a protected resource and an authorization key will be needed to access the JSON data. 
-This feature can be used in some use cases like:
-</div>
 
-- <Link to={useBaseUrl('docs/storage/export#create-a-web-data-source-url')}>Export</Link> the data from ValQ by creating a web data source
-- <Link to={useBaseUrl('docs/storage/export#import-data-from-web-data-source-url-and-parameters-in-power-bi')}>Import</Link> the data back into Power BI (Using Power BI's "Get Data from Web" feature) or any other application for further analysis
-- <Link to={useBaseUrl('docs/storage/export#live-syncing-simulations-with-the-export-file-that-fetches-real-time-data')}>Live syncing</Link> simulations with the export file that fetches real-time data
+Export as datasource feature allows the data series and scenarios of a ValQ model to be made available in a JSON format on the web.
+This web URL will be a protected resource and an authorization key will be needed to access the JSON data.
+This feature can be used in some use cases like:
+
+</div>
 
 > **Note**: The authorization key will be generated and will be available only to the report admins.
 
@@ -30,11 +29,13 @@ To export the data as a data source, please follow the below steps:
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
-      alt="Upload Valq Model"
-      src={useBaseUrl("/doc-images//sc5.2.png")}
+      alt="Upload Valq Model to your logged in Workspace"
+      src={useBaseUrl("/doc-images/upload-model.png")}
     />
   </Zoom>
-</div><br />
+</div>
+
+_Upload ValQ model to Workspace_
 
 2. Name the model and click Upload on the pop-up window.
 
@@ -45,9 +46,10 @@ To export the data as a data source, please follow the below steps:
       src={useBaseUrl("/doc-images/web-datasource/upload-popup.png")}
     />
   </Zoom>
-</div><br />
+</div>
+<br />
 
-3. You'll see the following message once the model gets uploaded.  
+3. You'll see the following message once the model gets uploaded.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -56,7 +58,8 @@ To export the data as a data source, please follow the below steps:
       src={useBaseUrl("/doc-images/web-datasource/model-uploaded.png")}
     />
   </Zoom>
-</div><br />
+</div>
+<br />
 
 4. Click on the 3 dots `...` and select Export as datasource option.
 
@@ -67,7 +70,8 @@ To export the data as a data source, please follow the below steps:
       src={useBaseUrl("/doc-images/web-datasource/export-as-datasource.png")}
     />
   </Zoom>
-</div><br />
+</div>
+<br />
 
 5. Select the Series and Scenarios that you want to export.
 
@@ -76,10 +80,12 @@ To export the data as a data source, please follow the below steps:
     <img
       alt="Create Web Datasource"
       src={useBaseUrl("/doc-images/web-datasource/create-web-datasource.png")}
-        width={320}
-        height={470}/>
+      width={320}
+      height={470}
+    />
   </Zoom>
-</div><br />
+</div>
+<br />
 
 6. Following are the options available in the Export format screen:
 
@@ -92,7 +98,8 @@ To export the data as a data source, please follow the below steps:
       height={485}
     />
   </Zoom>
-</div><br />
+</div>
+<br />
 
 - **Export format**: Select the export format as a Tree structure or Flat structure
 - **Customization**: Select the Export level of the nodes that decides the hierarchy of the model nodes
@@ -119,7 +126,11 @@ In the below example, we'll show how the URL can be consumed in a Power BI repor
       height={450}
     />
   </Zoom>
-</div><br />
+
+
+  
+</div>
+<br />
 
 2. Select the Advanced option and enter the web URL and HTTP request header parameters obtained from the above export format section.
 
@@ -132,11 +143,13 @@ In the below example, we'll show how the URL can be consumed in a Power BI repor
       height={400}
     />
   </Zoom>
-</div><br />
+</div>
+<br />
 
 > **Note**: It is important to note that 'Authorization' needs to be typed out under HTTP request header parameters as it is not available in the dropdown.
 
 3. Click OK.
+
 - This pops up a preview of the web data source to be imported.
 
 <div style={{ textAlign: "center" }}>
@@ -148,24 +161,29 @@ In the below example, we'll show how the URL can be consumed in a Power BI repor
       height={530}
     />
   </Zoom>
-</div><br />
+</div>
+<br />
 
-<div style={{textAlign: 'justify'}}>
-You may click Load to continue loading the data or Transform Data to further configure the data that will be imported from the web data source.
+<div style={{ textAlign: "justify" }}>
+  You may click Load to continue loading the data or Transform Data to further
+  configure the data that will be imported from the web data source.
 </div>
 
 ### Live syncing simulations with the export file that fetches real-time data
 
-<div style={{textAlign: 'justify'}}>
-ValQ data can be used as input for other visuals and further analysis. 
-You can run further simulations to the scenarios and instantly synchronize the new scenario data with
-the export file by refreshing the data query.
+<div style={{ textAlign: "justify" }}>
+  ValQ data can be used as input for other visuals and further analysis. You can
+  run further simulations to the scenarios and instantly synchronize the new
+  scenario data with the export file by refreshing the data query.
 </div> <br />
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images//sc.11.png")} 
-    width={550}
-    height={350}/>
+    <img
+      alt=""
+      src={useBaseUrl("/doc-images/live-synch.png")}
+      width={550}
+      height={350}
+    />
   </Zoom>
 </div>

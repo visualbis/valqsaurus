@@ -1,5 +1,26 @@
 {
   "editor.formatOnSave": true,
   "editor.tabSize": 4,
-  "editor.detectIndentation": false
+"editor.detectIndentation": false,
+"grammarly.overrides": [
+    {
+        "files": [
+            "**/docs/storage/valq-collaborate.md"
+        ],
+        "config": {
+            "audience": "knowledgeable",
+            "dialect": "american",
+            "domain": "technical",
+            "emotions": [
+                "confident",
+                "optimistic"
+            ],
+            "goals": [],
+            "emotion": "mild"
+        }
+    }
+],
+"cSpell.words": [
+    "valq"
+]
 }
