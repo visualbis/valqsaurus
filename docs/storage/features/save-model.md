@@ -12,13 +12,9 @@ import "react-medium-image-zoom/dist/styles.css";
 import { Tag } from "../../../src/ProductTag.js";
 
 <Tag
-  header="Saving Model To Workspace"
+  header="Upload ValQ model to your Workspace"
   image={useBaseUrl("/doc-images/valq-collaborate.png")}
 />
-
-ValQ Collaborate houses a group of capabilities for you to upload, save & store, audit, comment, and collaborate on your model. You can also export and/or run further analysis on the baseline, comparison, and the simulated data series of the ValQ model.
-
-## Upload ValQ model to your Workspace
 
 Uploading the model facilities various collaboration functionalities such as saving the model to a workspace, sharing your model, assigning model level user security, adding comments, conducting audit trail, sharing scenarios, model merge and exporting the model as a data source to be used for other visuals or further analysis.
 
