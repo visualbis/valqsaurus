@@ -1,6 +1,6 @@
 ---
 id: admin-console
-title: Admin Console
+title: Admin Console Portal
 sidebar_label: Administration
 ---
 
@@ -9,114 +9,232 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-You can add users and groups to your *Workspace* from the **Admin Console** Portal page.
+The *Admin Console* portal is used for managing your ValQ Workspace(Account). The ValQ Workspace is your account on the public ValQ cloud.
 
-## What is a Workspace
-
-A workspace is a virtual space to save and share your data. (and all its entities.)
-
-When you upload ValQ models to a *Workspace*, your models are automatically saved on the cloud and accessible to you via **Admin Console** Portal page.
-
-- With the *Enterprise* edition you can move and manage your workspaces on a private cloud.
-- You can upload and collaborate your models with other users and groups within the workspaces.
-
-*Admin Console* is a platform to manage users and groups added to the models and acts as an interface between the ValQ visual and backend server.
-
-## Architecture
-
-## Admin Console Member Roles
+You can manage groups and users in your workspace, view/edit your models and shared models, and view Licensing status and upgrade.
 
 ## Admin Console Features
 
-### Admin Console Dashboard
+- [Dashboard](#admin-dashboard)<sup>1</sup>: View the Licensing status and Upgrade plan.
+- [User Manager](#manage-users-in-the-workspace)<sup>1</sup>: Manage users in your workspace (add/remove/edit roles).
+- [Groups](#manage-groups-and-members-of-the-group)<sup>2</sup>: Manage groups and members added to the groups in your workspace.
+- [Models](#models)<sup>2</sup>: View/edit personal Model details.
+- [Shared Models](#shared-models)<sup>2</sup>: View shared model details.
 
-### Manage Users
+:::note
+- <sup>1</sup>Feature available for Workspace Admins and regular Admin user roles.
+- <sup>2</sup>Feature available for *Workspace Admin, admin*, and *member (limited access)* user roles. 
+:::
 
-### Groups
+### Admin Console Member Roles
+
+The current user management allows 3 different user roles and privileges:
+
+| Role              | Description                                                                                                                 |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| **Admin**         | Administer users/groups added to the model, manage user roles, and shared models.                                           |
+| **Billing Admin** | Special user created only for viewing billing data, licenses available/assigned.                                            |
+| **Member**        | This is the regular user or standard end-user of the product. This user can only access the shared models/series/scenarios. |
+
+:::note
+There is also a *Workspace Admin* role that is automatically created on workspace sign-up. This is the most privileged role and is authorized complete administration access in the *Admin Console*.
+:::
+
+### Admin Dashboard
+
+The **Dashboard** page provides a summary of the Collaborate plan details that the user has purchased.
+
+ <div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/admin-dashboard.png")} />
+  </Zoom>
+ </div>
+
+*Dashboard page as visible for an admin user role*
+
+- **License Details**: This section lists out your *Workspace Name, Domain, Plan, Expiry Date, Trial*, and *User Limit (*count of users specified at the time of checkout).
+    - A *Billing Admin* can upgrade the *Collaborate* plan by clicking on the **Upgrade** button.
+- **Profile**: This section lists the User *Name*, and *Email* of the logged-in user.
+
+### Manage Users in the Workspace
+
+Anyone who has an administrator role in a workspace can give others access to that workspace by adding them to the various roles. Workspace creators are automatically administrators.
+
+**User Manager** page provides functionalities to add/remove members and assign *roles* and *groups* to members.
+In the **Admin Console** left navigation panel, click **User Manager**.
+
+1. Click **Add Member** button at the top right corner to add a new member and enter the **Email** address.
+ <div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/add-member.png")} />
+  </Zoom>
+ </div>
+
+ *An Admin can add new members to the workspace*
+
+1. Click a *Member* to **edit** a member's **Role**, add/remove the member from a **Group**, and to **Remove**(delete) a member.
+
+ <div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-edit-member.png")} />
+  </Zoom>
+ </div>
+
+ *An Admin can edit other member's role and groups*
+
+1. Members who request to access your model will be shown under *Request Pending* list and you can choose to accept/deny the request.
+1. Click on **Bulk upload** button at the top right corner to import a complete list of members from a CSV file.
+
+ <div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Bulk upload members from csv" src={useBaseUrl("/doc-images/storage/admin-console/bulk-upload-csv.png")} />
+  </Zoom>
+ </div>
+
+*Bulk upload members*
+
+*User Manager* screen provides further functionalities like:
+1. **Search** for members by typing the name/email address in the *Search* box.
+2. **Filter** the members based on their roles.
+3. **Sort** the member's list by "By Name" or "By Date" in "ascending/descending" order.
+
+
+ <div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Filter and sort the member's list" src={useBaseUrl("/doc-images/storage/admin-console/user-manager-filter-sort.png")} />
+  </Zoom>
+ </div>
+
+ *Filter and sort the member's list*
+
+### Manage Groups and Members of the group
+
+Create a *Group* of selected users in a *Workspace*. The group creation enable you to share the model with a set of users with the same access level permissions.
+
+Select **Groups** in the left navigation panel.
+
+In the *Group* page you can **create a new group**, **edit<sup>4</sup>/remove groups**, **add/remove members** to the *groups*, and **assign member roles**.
+
+ <div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/create-group.png")} />
+  </Zoom>
+ </div>
+
+*Groups page as accessible by a Member*
+
+:::note
+<sup>4</sup>Changing a *Group name* is not recommended for the group that is already a part of the shared security feature in a model.
+The member is only removed from the group and still added to the Workspace.
+The removed member may still be a part of other groups, but will not be able to access the model that is shared with the group.
+:::
+
+**Group Management**
+
+- To create a new group click on **Create Group** and enter the *Group name* and *Group description*
+- Click **Edit** to modify the *Group name* and *Group description.*
+- Click **Remove** next to the **group** to delete the *group*.
+
+**User Management**
+
+- Select and click the *Group* to add new members, edit member roles, and delete members.
+ <div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/edit-member-role.png")} />
+  </Zoom>
+ </div>
 
 ### Models
 
+The **Models** page lists the models that are created by and private to a *Model creator.*
+ <div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/models-page.png")} />
+  </Zoom>
+ </div>
+
+*Models details as accessed by a member user role*
+
+This page displays a list of *Models* with the following fields*:*
+
+- **Name**: The model name you entered while uploading the model
+- **Last updated on**: The latest timestamp when the model was saved
+- **Published date**: Date timestamp when the model was published
+- **Action**: Delete a model from workspace
+
+**Model Details**
+
+Click on a *Model*  for the following details:
+
+- **Scenario**: List of private and shared *Scenarios* with the details such as - *Scenario Name, Created at (timestamp), Type (Private/Shared)*, and *Owner*.
+
+ <div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-scenario-details.png")} />
+  </Zoom>
+ </div>
+
+- **Series**: All the model series listed with: *Series Name, Created at (timestamp), Type (Native/Allocation)*, and *Owner*.
+
+ <div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-series-details.png")} />
+  </Zoom>
+ </div>
+
+- **Access Control<sup>5</sup>:** Lists the *members* and their *Role* with whom the *Model* has been shared.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-access-control.png")} />
+  </Zoom>
+ </div>
+
+*Workspace Admin can view the access control permissions*
+
+:::note
+<sup>5</sup>Access control is visible only to a *Workspace Admin* and not to *admins/members*.
+:::
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/model-access-control.png")} />
+  </Zoom>
+ </div>
+
+*Member user role denied permission to view Access control*
+
+- **Details**: Summarized model details like *Model name, Published at, Created by, Updated at, Udated by*, and *Number of series*.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-details.png")} />
+  </Zoom>
+ </div>
+
 ### Shared Models
 
-Admin console provides 3 levels of access permissions to user roles as described in the table below.
+**Shared Models** page lists all the models uploaded in the common *Workspace* and shared with the logged in user.
 
-| Role            | Privilege                                                                                                                                             | Description                                                                                                                              |
-|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Workspace Admin | View Billing/License information, Manage Users (add/remove/edit role), Manage groups (add/edit/delete), Models (view/delete), and view shared models. | Top-level user-created automatically on workspace sign up. This user is assumed as the Admin user.                                       |
-| Billing Admin   | View Billing/License information. No users/groups information available                                                                               | Special user created only for viewing billing data, licenses available/assigned                                                          |
-| Member          | View the groups and members, and shared model details such as scenarios, and series.                                                                  | This is the regular user or standard end-user of the product. This user can only access models shared with groups the user is a part of. |
+> A *Model creator* has more accessibility on the owned model as compared to other *admins/members*.
 
-## Admin Console Login
-
-1. Open the ValQ visual and click on your **User profile > management console**.
-
- <div style={{textAlign: 'center'}}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Open the Admin portal console page for the logged in user" src={useBaseUrl('/doc-images/storage/valq-console-login.png')} />
-  </Zoom>
- </div> 
-
- *ValQ Console login link for the logged-in user*
-
-1. Click **OK** to browse to the ValQ application page
-
- <div style={{textAlign: 'center'}}>
-  <Zoom>
-    <img alt="Click OK to navigate to the ValQ app page" src={useBaseUrl('/doc-images/storage/ok-open-console-page.png')} />
+    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-shared-model.png")} />
   </Zoom>
  </div>
 
- *allow the navigation to ValQ app management console page*
+*Models shared with a member*
 
- <!-- 2. Click on **Sign in with Microsoft**, and enter your username and password and click **Sign in** -->
+- A member can view the model *Name, Last updated on (timestamp), Published date, Permission (Model-level user access in ValQ visual),* and *Owner (Model Creator).*
+- An *admin/member* is not authorized to view **Access control** details of the users added to the model and the user role.
 
-1. Select the **Private Tenant Workspace**
-
- <div style={{textAlign: 'center'}}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Select the workspace to upload your models to" src={useBaseUrl('/doc-images/storage/select-workspace.png')} />
-  </Zoom>
- </div>
-   
- 
- *Select Workspace*
-
-  <div style={{textAlign: 'center'}}>
-  <Zoom>
-    <img alt="Admin console page" src={useBaseUrl('/doc-images/storage/admin-console-welcome.png')} />
-  </Zoom>
- </div>
- 
- *Admin Console page as accessible by the Workspace Admin*
-
- :::success
- You are logged into your Admin Console page.
- :::
-
-## Admin Console Dashboard
-
-The **Dashboard** gives a quick summary of the Collaborate plan that you have selected as shown in the above screenshot.
-
-- *License Details*: This section lists out your *Workspace Name, Domain, Plan, Expiry Date, Trial*, and *Users Limit* (Number of users that can be added to the Workspace depends on the Collaborate plan that you purchased).
-
-- *Profile*: This section provides the User *Name*, and *Email*
-
-The following are the general features available on the *Admin Console* page.
-
-- [Dashboard](#admin-console-dashboard): A summary of the plan selected
-- <Link to={useBaseUrl('storage/manage-users')}>User Manager</Link>: Adding/removing users to the workspace
-- Groups: Adding/removing users to a group with desired roles
-- Models: Model details created by the owner
-- Shared Models: Model details shared by others with the logged-in user
-
-All the other members who are not authorized as *Workspace Admins* can only access the **Groups, Models*, and *Shared Models* page.
-
-  <div style={{textAlign: 'center'}}>
-  <Zoom>
-    <img alt="Admin console page" src={useBaseUrl('/doc-images/storage/members-admin-page.png')} />
+    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/shared-models-scenarios-series.png")} />
   </Zoom>
  </div>
 
- *Admin page features available to a regular member*
+*Access control permission tab missing for admin/member user role*
 
-To change the current workspace, click on your **Username > Switch Workspace**.
+- *Scenarios* and *Series* shared with the *User Security* feature are listed. A *member* will not be able to view the *scenario/series* that are not shared with the user role.

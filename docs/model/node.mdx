@@ -63,24 +63,6 @@ _Edit Node_
 </div>
 
 
-The Edit Node setting is categorized as follows
-
-<div style={{textAlign: 'justify'}} className="table-center">
-
-
-|     | Click on any option to know more                    |
-| --- | --------------------------------------------------- |
-| 1   | [General](#1-general)                               |
-| 2   | [Configuration](#2-configuration)                   |
-| 3   | [Display](#3-display)                               |
-| 4   | [Simulation](#4-simulation)                         |
-| 5   | [Business Definition](#5-business-definition)       |
-| 6   | [Conditional Formatting](#6-conditional-formatting) |
-| 7   | [Secondary KPIs](#7-secondary-kpis)                 |
-
-</div>
-
-
 ## 1. General
 
 <div style={{ textAlign: "justify" }}>
@@ -129,29 +111,18 @@ _Title Prefix when outside Tree_
 
 ## 2. Configuration
 
-<div style={{ textAlign: "justify" }}>
-  In the Configuration settings, you will be able to configure the node details
-  using the following properties
-</div> <br />
+In the Configuration settings, you can configure the node details with the following properties:
 
-<div style={{textAlign: 'justify'}} className="table-center">
-
-
-|     | Click on any option to know more             |
-| --- | -------------------------------------------- |
-| 1   | [Node Type](#21-node-type)                   |
-| 2   | [Calculation Method](#22-calculation-method) |
-| 3   | [Time Aggregation](#23-time-aggregation)     |
-| 4   | [Desired Trend](#24-desired-trend)           |
-| 5   | [Value Range](#25-value-range)               |
-| 6   | [Dynamic Children](#26-dynamic-children)     |
-
-</div>
-
+1. [Node Type](#21-node-type)
+1. [Calculation Method](#22-calculation-method)
+1. [Time Aggregation](#23-time-aggregation)
+1. [Desired Trend](#24-desired-trend)
+1. [Value Range](#25-value-range)
+1. [Dynamic Children](#26-dynamic-children)
 
 ### 2.1 Node Type
 
-Node can be of two types - Normal and Constant.
+A node can be of two types - Normal and Constant.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -179,17 +150,17 @@ ValQ supports various calculation methods such as
 <div style={{textAlign: 'justify'}} className="table-center">
 
 
-|     | Method                       | Description                                                          |
-| --- | ---------------------------- | -------------------------------------------------------------------- |
-| 1   | Data Source                  | Gets the values directly from source data                            |
-| 2   | Sum Children                 | Sums all the immediate child node values                             |
-| 3   | Subtract Children            | Subtracts all the immediate child node values                        |
-| 4   | Multiply Children            | Multiplies all the immediate child node values                       |
-| 5   | Divide Children              | Divides all the immediate child node values                          |
-| 6   | Formula                      | Calculates and applies the custom formula entered by the user        |
-| 7   | Linked to Node               | The node value, properties and simulation are linked to another node |
-| 8   | Template based on other node | Captures and applies the configuration from another node             |
-| 9   | Manual                       | Enter the values manually                                            |
+|     | Method                        | Description                                                          |
+| --- | ----------------------------- | -------------------------------------------------------------------- |
+| 1   | Data Source                   | Gets the values directly from source data                            |
+| 2   | Sum Children                  | Sums all the immediate child node values                             |
+| 3   | Subtract Children             | Subtracts all the immediate child node values                        |
+| 4   | Multiply Children             | Multiplies all the immediate child node values                       |
+| 5   | Divide Children               | Divides all the immediate child node values                          |
+| 6   | Formula                       | Calculates and applies the custom formula entered by the user        |
+| 7   | Linked to Node                | The node value, properties and simulation are linked to another node |
+| 8   | Template based on other nodes | Captures and applies the configuration from another node             |
+| 9   | Manual                        | Enter the values manually                                            |
 
 </div> <br />
 
@@ -281,7 +252,7 @@ _Source Key_
   A Template Node can be created with the help of an existing node. Add a new
   node and select its Calculation Method as Template based on other nodes. Now
   select the node you want to copy under node to use as a template. In the below
-  example, North branch has been created using East as template.
+  example,the North branch has been created using East as template.
 </div> <br />
 
 <div style={{ textAlign: "center" }}>
@@ -296,7 +267,7 @@ _Source Key_
 <div style={{textAlign: 'center'}}>
 
 
-_Template based on other node_
+_Template based on other nodes_
 
 </div>
 
@@ -329,8 +300,8 @@ _Template Node_
 |     | Time Aggregation        | Description                                                   |
 | --- | ----------------------- | ------------------------------------------------------------- |
 | 1   | Sum of Periods          | Adds all the period values                                    |
-| 2   | Average                 | Calculates average of the period values                       |
-| 3   | Average Excluding Zeros | Calculates average of the period values not having zero       |
+| 2   | Average                 | Calculates the average of the period values                   |
+| 3   | Average Excluding Zeros | Calculates the average of the period values not having zero   |
 | 4   | Formula                 | Calculates and applies the custom formula entered by the user |
 | 4   | Last                    | Only displays the last period value of the node               |
 | 5   | Cumulative              | Cumulates the period values of the node                       |
@@ -363,7 +334,7 @@ _Time Aggregation_
 
 <div style={{ textAlign: "justify" }}>
   The Desired Trend can be set as Increase or Decrease depending on the context
-  of the Node. For instance, income has an increasing trend and expense has
+  of the Node. For instance, income has an increasing trend and expense has a
   decreasing trend.
 </div> <br />
 
@@ -408,7 +379,7 @@ Click <Link to={useBaseUrl('docs/simulation/navigation_panel#7-constraints')}>he
 ### 2.6 Dynamic Children
 
 <div style={{ textAlign: "justify" }}>
-  Dynamic Children is available to create a new node that is replicate of
+  Dynamic Children is available to create a new node that is a replicate of
   another existing node having Data Source as it's Calculation Method. The new
   node works like a Simple Model where you cannot configure the child nodes
   except for simulation.
@@ -492,21 +463,11 @@ _Dynamic Children converted to advanced_
   such as{" "}
   <Link to={useBaseUrl("docs/model/node#node-display")}>Node display</Link> and{" "}
   <Link to={useBaseUrl("docs/model/node#details-on-click")}>
-    Details on Click
+    Details on Click.
   </Link>
-  . The other setting options available under Display are:
-</div> <br />
+</div>
 
-<div style={{textAlign: 'justify'}} className="table-center">
-
-
-|     | Click on any option to know more       |
-| --- | -------------------------------------- |
-| 1   | [Value](#31-value)                     |
-| 2   | [Composite Nodes](#32-composite-nodes) |
-
-</div> <br />
-
+The other setting options available under _Display_ options are [Value](#31-value), and [Composite Nodes](#32-composite-nodes).
 
 First, let's look at Display
 
@@ -526,7 +487,7 @@ _Display_
 
 #### Node display
 
-There are three display options to choose from and below is an example using 'East' node.
+There are three display options to choose from and below is an example using the 'East' node.
 
 **Show** - Displays the node as a normal node (default).
 
@@ -547,7 +508,7 @@ _Node Display set as Show_
 </div>
 
 
-**Derived** - Displays the node as being derived from the parent node denoted by dotted line.
+**Derived** - Displays the node as being derived from the parent node denoted by the dotted line.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -566,7 +527,7 @@ _Node Display set as Derived_
 </div>
 
 
-**Hidden** - Hides the node from the canvas. In the below example, 'East' node is hidden from the canvas.
+**Hidden** - Hides the node from the canvas. In the below example, the 'East' node is hidden from the canvas.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -978,8 +939,7 @@ _Business Definition on node details page_
   <Link to={useBaseUrl("docs/model/settings#5-conditional-formatting")}>
     settings
   </Link>
-  . This is done by applying alert thresholds and rules for the model at node
-  level.
+  . This is done by applying alert thresholds and rules for the model at node level.
 </div> <br />
 
 <div style={{ textAlign: "justify" }}>
@@ -1394,7 +1354,7 @@ _Node Details Page_
 
 
 <div style={{ textAlign: "justify" }}>
-  In the Grid View, you will be able to edit the nodes and save it so that the
+  In Grid View, you will be able to edit the nodes and save it so that the
   changes get reflected in the tree structure.
 </div> <br />
 
@@ -1422,8 +1382,8 @@ _Node Details Page_
 <div style={{ textAlign: "justify" }}>
   The node search for the columns Linked Node, Linked Simulation Node and
   Weighted Average Node in the Data Grid will be in the drop-down list and the
-  user can select the appropriate node from the same. In the below Figure, node
-  search for Linked Simulation Node has been made.
+  user can select the appropriate node from the same. In the below Figure, a
+  node search for Linked Simulation Node has been made.
 </div> <br />
 
 <div style={{ textAlign: "center" }}>
@@ -1481,9 +1441,9 @@ _Node Details Page_
 
 
 <div style={{ textAlign: "justify" }}>
-  The columns can be filtered based on the selection from Selected Columns drop
-  down (see Figure below). All Columns option can be selected to get all the
-  features displayed in the grid or you can select only the columns that you
+  The columns can be filtered based on the selection from the Selected Columns
+  drop-down (see Figure below). All Columns option can be selected to get all
+  the features displayed in the grid or you can select only the columns that you
   want.
 </div> <br />
 
@@ -1587,26 +1547,26 @@ _Node Details Page_
 
 ## Summary - Node Tab
 
-| Area                   | Property                          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| ---------------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| General                | Unique ID                         | This property shows the Unique ID for the Node and it can be edited.                                                                                                                                                                                                                                                                                                                                                                                 |
-|                        | Title                             | This property sets the Title for Node.                                                                                                                                                                                                                                                                                                                                                                                                               |
-|                        | Title Prefix when outside Tree    | This property sets the Title Prefix for the Node when outside the Tree.                                                                                                                                                                                                                                                                                                                                                                              |
-| Configuration          | Calculation Method                | This property sets the Calculation Method for the Node. The options are <br/> Data Source <br/> Sum Children (a+b+c….) <br/> Subtract Children (a-b-c….) <br/> Multiply Children (a*b*c….)<br/> Divide Children (a/b/c….) <br/> Formula<br/> Linked to Node<br/> Manual <br/> Templated based on other node. <br/> Note: When the Calculation Method is selected as Linked to Node option, then you can select the desired node from the Nodes List. |  |
-|                        | Source Key                        | This property sets the Source Key for the Node. You can map the Node value with the data source using the source key.                                                                                                                                                                                                                                                                                                                                |
-|                        | Time Aggregation                  | This property sets the Time Aggregation for the Node. The options are Sum of Periods, Average, Formula, Last and Cumulative.                                                                                                                                                                                                                                                                                                                         |
-|                        | Desired Trend                     | This property sets the Desired Trend for the Node. The options are Decrease and Increase. For example, the desired Trend for the Revenue usually increases and the desired Trend for the Cost decreases.                                                                                                                                                                                                                                             |  |
-|                        | Value Range                       | This property sets the Value Range for the Node.                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                        | Dynamic Children from Data Source | If the referenced data source row is a hierarchy node with children or has a dimension below in the data source, the children can be automatically generated based on the data source. If Node Mapping selected is “Automatic based on text” then any special character and space in the member text will be replaced by “**”(double underscore) in the Unique Id for the Node. Eg. “Total Cost” will become “Total**Cost”.                          |  |
-|                        | Dynamic Children Simulation       | Children settings will generally be cascaded from the configuration of this node except visualization, calculation method and simulation. The children will always be with visual style normal. Aggregation formulas can dynamically be generated and simulation feature set based on the below options like All, Nodes w/o children and None.                                                                                                       |
-| Display                | Node display                      | This property decides on how the Node will be displayed in the Tree Widget. The options are Show, Derived and Hidden.                                                                                                                                                                                                                                                                                                                                |
-|                        | Scale                             | This property sets the Scale for the Node. The options are None, User Selected, 0m, 0k and Pct.                                                                                                                                                                                                                                                                                                                                                      |
-|                        | Value Decimal Places              | This property sets the Value Decimal Places for the Node. The range is from 0 to 7.                                                                                                                                                                                                                                                                                                                                                                  |
-|                        | Value Prefix                      | This property sets the Prefix Value for the Node.                                                                                                                                                                                                                                                                                                                                                                                                    |
-|                        | Value Suffix                      | This property sets the Suffix Value for the Node.                                                                                                                                                                                                                                                                                                                                                                                                    |
-|                        | Details On Click                  | This property shows the PopUp screen upon clicking.                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Simulation             | Enable Simulation                 | This property enables or disables the Simulation.                                                                                                                                                                                                                                                                                                                                                                                                    |
-|                        | Default Method                    | This property sets the Default Method for the Simulation. The options are <br/> 1. Change Percentage: % Change applied to baseline in future periods. <br/> 2. Manual: Values set manually for each period. <br/> 3. Growth Percentage: % Growth applied to baseline in future periods. <br/> 4. Constant: Constant Value for future periods.                                                                                                        |  |
-|                        | Linked Simulation                 | Using this property, you can select the desired node from the Nodes List for Linked Simulation. It updates the simulation concurrently with the Linked Node.                                                                                                                                                                                                                                                                                         |
-| Business Definition    |                                   | This information will be included in each node’s details page (open by clicking on the node in the tree widget). They are listed as follows: <br/> 1. Description: This property sets the Description for the Node. <br/> 2. Header: This property sets the Header for the Node. <br/> 3. Footer: This property sets the Footer for the Node. <br/> 4. Technical Notes: This property sets the Technical Notes for the Node.                         |  |
-| Conditional Formatting |                                   | The Conditional Formatting Rules can be set for the Tree. The options are <br/> 1. Global or Inherited Rule <br/> 2. Custom Rule: Overwrites default or any inherited rule. <br/> 3. Hidden: No Rule will be applied to the Node You can set the values for the Color Range. <br/> When the option is selected as “Custom Rule”, then you can configure the Range values at Simulation/Variance Percentage and Node values applied at Period Level.  |  |
+| Area                   | Property                          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ---------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| General                | Unique ID                         | This property shows the Unique ID for the Node and it can be edited.                                                                                                                                                                                                                                                                                                                                                                                   |
+|                        | Title                             | This property sets the Title for Node.                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|                        | Title Prefix when outside Tree    | This property sets the Title Prefix for the Node when outside the Tree.                                                                                                                                                                                                                                                                                                                                                                                |
+| Configuration          | Calculation Method                | This property sets the Calculation Method for the Node. The options are <br/> Data Source <br/> Sum Children (a+b+c….) <br/> Subtract Children (a-b-c….) <br/> Multiply Children (a*b*c….)<br/> Divide Children (a/b/c….) <br/> Formula<br/> Linked to Node<br/> Manual <br/> Templated based on other node. <br/> Note: When the Calculation Method is selected as _Linked to Node_ option, then you can select the desired node from the Nodes List. |  |
+|                        | Source Key                        | This property sets the Source Key for the Node. You can map the Node value with the data source using the source key.                                                                                                                                                                                                                                                                                                                                  |
+|                        | Time Aggregation                  | This property sets the Time Aggregation for the Node. The options are Sum of Periods, Average, Formula, Last and Cumulative.                                                                                                                                                                                                                                                                                                                           |
+|                        | Desired Trend                     | This property sets the Desired Trend for the Node. The options are Decrease and Increase. For example, the desired Trend for the Revenue usually increases and the desired Trend for the Cost decreases.                                                                                                                                                                                                                                               |  |
+|                        | Value Range                       | This property sets the Value Range for the Node.                                                                                                                                                                                                                                                                                                                                                                                                       |
+|                        | Dynamic Children from Data Source | If the referenced data source row is a hierarchy node with children or has a dimension below in the data source, the children can be automatically generated based on the data source. If Node Mapping selected is “Automatic based on text” then any special character and space in the member text will be replaced by “**”(double underscore) in the Unique Id for the Node. Eg. “Total Cost” will become “Total**Cost”.                            |  |
+|                        | Dynamic Children Simulation       | Children settings will generally be cascaded from the configuration of this node except visualization, calculation method and simulation. The children will always be with visual style normal. Aggregation formulas can dynamically be generated and simulation feature set based on the below options like All, Nodes w/o children and None.                                                                                                         |
+| Display                | Node display                      | This property decides on how the Node will be displayed in the Tree Widget. The options are Show, Derived and Hidden.                                                                                                                                                                                                                                                                                                                                  |
+|                        | Scale                             | This property sets the Scale for the Node. The options are None, User Selected, 0m, 0k and Pct.                                                                                                                                                                                                                                                                                                                                                        |
+|                        | Value Decimal Places              | This property sets the Value Decimal Places for the Node. The range is from 0 to 7.                                                                                                                                                                                                                                                                                                                                                                    |
+|                        | Value Prefix                      | This property sets the Prefix Value for the Node.                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                        | Value Suffix                      | This property sets the Suffix Value for the Node.                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                        | Details On Click                  | This property shows the PopUp screen upon clicking.                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Simulation             | Enable Simulation                 | This property enables or disables the Simulation.                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                        | Default Method                    | This property sets the Default Method for the Simulation. The options are <br/> 1. Change Percentage: % Change applied to baseline in future periods. <br/> 2. Manual: Values set manually for each period. <br/> 3. Growth Percentage: % Growth applied to baseline in future periods. <br/> 4. Constant: Constant Value for future periods.                                                                                                          |  |
+|                        | Linked Simulation                 | Using this property, you can select the desired node from the Nodes List for Linked Simulation. It updates the simulation concurrently with the Linked Node.                                                                                                                                                                                                                                                                                           |
+| Business Definition    |                                   | This information will be included in each node’s details page (open by clicking on the node in the tree widget). They are listed as follows: <br/> 1. Description: This property sets the Description for the Node. <br/> 2. Header: This property sets the Header for the Node. <br/> 3. Footer: This property sets the Footer for the Node. <br/> 4. Technical Notes: This property sets the Technical Notes for the Node.                           |  |
+| Conditional Formatting |                                   | The Conditional Formatting Rules can be set for the Tree. The options are <br/> 1. Global or Inherited Rule <br/> 2. Custom Rule: Overwrites default or any inherited rule. <br/> 3. Hidden: No Rule will be applied to the Node You can set the values for the Color Range. <br/> When the option is selected as “Custom Rule”, then you can configure the Range values at Simulation/Variance Percentage and Node values applied at Period Level.    |  |

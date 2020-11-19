@@ -23,12 +23,15 @@ For any requirements not met by the public cloud, consider moving to a private c
 
 ## Features of ValQ Collaborate
 
+Some features exclusive to ValQ Visual:
 * <Link to={useBaseUrl('docs/model/general#3-writeback')}>Writeback</Link> - Post your scenarios, series, comments, etc. to a URL which can be configured to accept an HTTP request and write the data back to your Databases, Sharepoint, Files, etc.
 * <Link to={useBaseUrl('docs/storage/features/export')}>Export data source</Link> - Export scenarios, planning series, etc., from ValQ as a web data source that can be consumed readily from other BI tools for analysis.
 * <Link to={useBaseUrl('#')}>Model Merge</Link> - Compose complex (and large) models by merging independent sub-models. Example: When you have models at multiple regions and you'd like to combine them for reporting or planning.
 * <Link to={useBaseUrl('docs/storage/user-security')}>User Security</Link> - Configure security for the models. Provide node/scenarios/series level  access permission roles to different users/groups.
 * <Link to={useBaseUrl('docs/storage/features/commenting')}>Comments</Link> - Share and collaborate your models and comments on Planning and Scenarios
 * <Link to={useBaseUrl('docs/storage/features/history-logs')}>History Logs</Link> - The history of changes in model/scenarios/series/writeback is maintained in chronological order. The history logs are shared among users and can also be restored.
+  
+Check out the [ValQ Pricing](https://valq.com/pricing/) page to see the features and the user limits with each plan.
 
 ## How to purchase ValQ Collaborate
 
@@ -53,15 +56,23 @@ For any requirements not met by the public cloud, consider moving to a private c
 A mail is sent to you with a download link for ValQ Collaborate **Visual (Web Store build)**.
 
 Click on the **Click here** link in the email and download the ValQ Collaborate visual with the extension `.pbiviz`.
-
-<Link to={useBaseUrl('docs/intro/model')}>Install the visual</Link> in Power BI Desktop by importing this `.pbiviz` file.
+Import this `.pbiviz` file in Power BI Desktop to <Link to={useBaseUrl('docs/intro/model')}>install the visual</Link>.
 
 ## ValQ Workspace or Account
 
 Login to ValQ visual using your login credentials used at the time of purchasing the license.
+ <div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="ValQ application workflow" src={useBaseUrl("/doc-images/storage/valq-workflow.png")} />
+  </Zoom>
+ </div>
+
+ *ValQ application workflow*
 
 - **Admin console**
-You'll get access to your ValQ Workspace (Account) from which you can manage the users in your workspace, create groups, etc.,
 
-- **Custom Visual**
-You'll be able to Login to your workspace with the registered users in the workspace.
+You'll get access to your ValQ Workspace (Account) from which you can manage the users in your workspace, and create groups, etc.
+
+- **ValQ Collaborate Visual**
+
+You'll be able to log in to your workspace with the registered users in the workspace.

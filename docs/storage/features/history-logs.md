@@ -43,9 +43,9 @@ You can click on the dropdown list to select the series to display the logs for.
 
 *Log changes on the Planning(brazil) series from all users*
 
-The *Model creator* can:
+A user member with edit access on the selected *Series* can:
 - Restore the default series values by clicking *Reset All* at the top right corner.
-- Restore to a single step by clicking *Restore to this step*
+- Restore to a single step by clicking *Restore to this step*.
 
 ## Simulation Logs
 

@@ -70,7 +70,7 @@ Following are the steps to assign user roles:
 * Click on the 3 dots `...` next to your user profile and select **Settings**.
 * In the **Model Settings > Security** section add other users/groups to the model.
 
-#### Assign roles at the Model level 
+#### Assign roles at the Model level - Model Settings
 
 A *Model Creator/Admin* can search and add other users/groups to the model and assign the roles – Admin, Analyzer, and Viewer.
 

@@ -44,7 +44,7 @@ module.exports = {
         ],
         "Storage and Collaboration": [
             "storage/valq-collaborate",
-
+            "storage/admin-console",
             {
                 type: "category",
                 label: "Features",
@@ -53,6 +53,7 @@ module.exports = {
                     "storage/features/export",
                     "storage/features/commenting",
                     "storage/features/history-logs",
+                    "storage/features/model-merge",
                     "storage/features/user-security",
                 ],
             },
