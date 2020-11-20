@@ -19,7 +19,7 @@ image={useBaseUrl("/doc-images/valq-collaborate.png")}
 **Export As Datasource** feature allows the *Data Series* (Baseline, Comparison, Historical, and Planning Series) and *Scenarios* of a ValQ model to be made available in a JSON format on the web. 
 
 This Web URL will be a protected resource and an authorization key will be needed to access the JSON data. This feature can be used in some use cases like:
-- <Link to={useBaseUrl("docs/storage/export#create-a-web-data-source-url")}>Export</Link> the data from ValQ by creating a web data source
+- [Export](#create-a-web-data-source-url) the data from ValQ by creating a web data source
 - [Import](#import-data-from-web-datasource-url-and-parameters-in-power-bi) the data back into Power BI (Using Power BI's "Get Data from Web" feature) or any other application for further analysis
 - [Live Sync](#live-syncing-simulations-with-the-export-file-that-fetches-real-time-data) simulations with the export file that fetches real-time data
 

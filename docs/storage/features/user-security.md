@@ -18,7 +18,7 @@ image={useBaseUrl("/doc-images/valq-collaborate.png")}
 ValQ Collaborate (Enterprise Edition) introduces security features to restrict access to your models/nodes, scenarios, planning series to a given set of users and groups.
 
 The security feature helps you to manage the view/edit access on your model for users or groups.
-User and group management is administered through <Link to={useBaseUrl('docs/storage/invite-users-workspace')}>Admin console</Link> page.
+User and group management is administered through <Link to={useBaseUrl('docs/storage/admin-console')}>Admin console</Link> page.
 
 ## Security roles and level of permissions
 
