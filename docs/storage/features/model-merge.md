@@ -2,11 +2,18 @@
 id: model-merge
 title: Model Merge
 sidebar_label: 5. Model Merge
+hide_title: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
+import { Tag } from "../../../src/ProductTag.js";
+
+<Tag
+header="Model Merge"
+image={useBaseUrl("/doc-images/valq-collaborate.png")}
+/>
 
 You can now merge your models with models created by other users across workspaces. This facilitates ease of maintenance as large models can be broken down and managed independently. A large model with several entities is easily categorized and maintained as sub-models and consolidated in the main model.
 

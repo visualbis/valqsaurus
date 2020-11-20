@@ -2,12 +2,19 @@
 id: admin-console
 title: Admin Console Portal
 sidebar_label: Administration
+hide_title: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
+import { Tag } from "../../src/ProductTag.js";
+
+<Tag
+header="Admin Console Portal"
+image={useBaseUrl("/doc-images/valq-collaborate.png")}
+/>
 
 The *Admin Console* portal is used for managing your ValQ Workspace(Account). The ValQ Workspace is your account on the public ValQ cloud.
 
