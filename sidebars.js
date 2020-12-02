@@ -42,7 +42,6 @@ module.exports = {
             "analysis/variance_analysis",
             "analysis/attribution-analysis",
         ],
-        /*
         "Storage and Collaboration": [
             "storage/valq-collaborate",
             "storage/admin-console",
@@ -59,7 +58,6 @@ module.exports = {
                 ],
             },
         ],
-        */
         Resources: [
             "faq/formula-list",
             "faq/definitions",
