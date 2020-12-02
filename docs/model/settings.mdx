@@ -8,10 +8,7 @@ import Link from "@docusaurus/Link";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-<div style={{ textAlign: "justify" }}>
-  Using the Settings tab, you will be able to configure the settings for
-  functions mentioned below:
-</div> <br />
+The **Settings** tab allows you to configure the settings for the functions mentioned below:
 
 1. [Navigation Panel](#1-navigation-panel)
 1. [Nodes](#2-nodes)
@@ -23,35 +20,27 @@ import "react-medium-image-zoom/dist/styles.css";
 
 ## 1. Navigation Panel
 
-<div style={{ textAlign: "justify" }}>
-  The{" "}
-  <Link to={useBaseUrl("docs/simulation/navigation_panel")}>
-    Navigation Panel
-  </Link>{" "}
-  is dispayed/ hidden on the Simulate tab by toggling Enable Navigation Panel.
-  Here, the pencil icon is available to change the name of the property and eye
-  icon to hide the property.
-</div> <br />
+Turn on/off the toggle under **Enable Navigation Panel** to display/hide the <Link to={useBaseUrl("docs/simulation/navigation_panel")}>Navigation Panel</Link> on the *Simulate* tab.
+Click on the editor(Pencil) icon to edit the name of the property.
+To hide a property click the eye icon against the property you wish to hide.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="New Tab" src={useBaseUrl("/doc-images/model/s1.png")} />
+    <img alt="Navigational Panel - Settings tab" src={useBaseUrl("/doc-images/model/s1.png")} />
   </Zoom>
-</div> <br />
+</div>
 
-<div style={{ textAlign: "justify" }}>
-  In the Navigation Panel settings, you will be able to configure the entire
-  settings for the Navigation Panel. The following properties can be configured
-  under Navigation Panel:
-</div> <br />
+*Configure Navigational Panel properties*
 
-1. [Scenarios](#11-scenarios)
-1. [Sub Models](#12-sub-models)
-1. [Simulation Period](#13-simulation-period)
-1. [Value Display](#14-value-display)
-1. [Key Inputs](#15-key-inputs)
-1. [KPIs](#16-kpis)
-1. [Constraints](#17-constraints)
+In the **Navigation Panel > Settings** menu, you can configure the following properties:
+
+- 1.1 [Scenarios](#11-scenarios)
+- 1.2 [Sub Models](#12-sub-models)
+- 1.3 [Simulation Period](#13-simulation-period)
+- 1.4 [Value Display](#14-value-display)
+- 1.5 [Key Inputs](#15-key-inputs)
+- 1.6 [KPIs](#16-kpis)
+- 1.7 [Constraints](#17-constraints)
 
 ### 1.1 Scenarios
 
@@ -157,22 +146,16 @@ import "react-medium-image-zoom/dist/styles.css";
 
 ### 1.7 Constraints
 
-<div style={{ textAlign: "justify" }}>
-  Select the{" "}
-  <Link to={useBaseUrl("docs/simulation/navigation_panel#7-constraints")}>
-    Constraints
-  </Link>{" "}
-  to be displayed as a list by selecting the required nodes in the Navigation
-  Panel. You can also enable/disable the property for sorting the constraints
-  based on utilization to organize the Constraints according to it's
-  performance.
-</div> <br />
+Select the <Link to={useBaseUrl("docs/simulation/navigation_panel#7-constraints")}> Constraints </Link> to be displayed as a list by selecting the required nodes in the Navigation Panel.
+To sort the *Constraints* based on each constraint's performance, enable/disable the **Sort Constraints based on utilisation** toggle.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img alt="New Tab" src={useBaseUrl("/doc-images/model/s8.png")} />
   </Zoom>
 </div>
+
+*List and sort the Constraints*
 
 The below Figure displays the Navigation Panel on Simulate tab.
 
@@ -194,7 +177,7 @@ Configure data and display format on ValQ with the following properties:
 ### 2.1 Data mapping format
 
 <div style={{ textAlign: "justify" }}>
-  The node settings help you to map the nodes to queries in the ID, Text or ID +
+  The node settings help you to map the nodes to queries in the ID, Text, or ID +
   Text Formats. In the node Mapping settings in ValQ, the Data Mapping Format
   has 2 options as listed below:
 </div> <br />
@@ -328,7 +311,7 @@ Configure data and display format on ValQ with the following properties:
   Value/Variance option enabled under Node Elements. Note that as highlighted in
   the below image, the Variance option and the Secondary Value/Variance option
   have to be enabled to see the results. The Secondary KPIs, by default, are
-  full year variance of the node, the value of the first period of the node's
+  full-year variance of the node, the value of the first period of the node's
   Baseline series and variance for the first period of the node. You can click{" "}
   <Link to={useBaseUrl("docs/model/node#7-secondary-kpis")}> here</Link> to
   change the Secondary KPIs.
@@ -426,7 +409,7 @@ Here the property is set as Table
 ### 3.3 Expand hierarchy up to the following number of levels by default
 
 <div style={{ textAlign: "justify" }}>
-  Set the the number of levels on the model you would like to see by default
+  Set the number of levels on the model you would like to see by default
   using this property.
 </div> <br />
 
@@ -438,17 +421,17 @@ Here the property is set as Table
 
 ### 3.4 Footer Toolbar
 
-<div style={{ textAlign: "justify" }}>
-  Using Footer Toolbar, enable the property Enable Node Search to search for a
-  node on the search bar and enable the property Enable Hiding Empty Nodes to
-  hide nodes having no values.
-</div> <br />
+In the **Footer** toolbar:
+* To enable a node to be searchable in the *search* bar, select **Enable node search**.
+* To hide the nodes with no values, select **Enable hiding empty nodes**.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img alt="ValQ users" src={useBaseUrl("/doc-images/model/s15.png")} />
   </Zoom>
 </div>
+
+*Footer toolbar - node search property*
 
 ### 3.5 Default canvas zoom
 
