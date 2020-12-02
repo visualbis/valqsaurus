@@ -42,6 +42,7 @@ module.exports = {
             "analysis/variance_analysis",
             "analysis/attribution-analysis",
         ],
+        "Storage and Collaboration": ["storage/storage-collaboration"],
         /*
         "Storage and Collaboration": [
             "storage/valq-collaborate",
