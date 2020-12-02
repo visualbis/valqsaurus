@@ -30,7 +30,8 @@ You can manage groups and users in your workspace, view/edit your models and sha
 
 :::note
 - <sup>1</sup>Feature available for Workspace Admins and regular Admin user roles.
-- <sup>2</sup>Feature available for *Workspace Admin, admin*, and *member (limited access)* user roles. 
+- <sup>2</sup>Feature available for *Workspace Admin, admin*, and *member (limited access)* user roles.
+
 :::
 
 ### Admin Console Member Roles
