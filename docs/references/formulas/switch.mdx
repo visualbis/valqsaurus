@@ -3,33 +3,42 @@ id: switch
 title: SWITCH
 ---
 
-A `SWITCH` statement evaluates an expression against a list of values and returns the result corresponding to the first matching value. If there is no match, an optional default value is returned.
+A `SWITCH` statement evaluates an expression against a list of values and returns the result corresponding to the first matching value. 
+If there is no match, an optional default value is returned.
 
 ## Syntax
 ```javascript
 SWITCH ( expression, value1, result1, value2, result2, ... value_n, result_n, [default] )
 ```
 ## Arguments
-`expression` – The statement to be evaluated
+`expression` – The statement to be evaluated.
 
-`value1, value2, … value_n` – The value that is to be compared against the expression
+`value1, value2, … value_n` – The list of values to be compared against the expression.
 
-`result1, result2, … result_n` – The value that is to be returned if the expression matches with any of the values in the argument list
+`result1, result2, … result_n` – The result to be returned if the expression matches with the corresponding value in the argument list.
 
-`default` – The default value that is to be returned if the expression does not match with any of the values in the argument list
+`default` – The default value to be returned if the expression does not match with any of the values in the argument list. This is an optional argument.
+
+## Return value
+result when the expression matches with value, default in case there was no match.
+
+## Remark
+All result expressions and the else expression must be of the same data type.
 
 ## Example
-Consider a scenario in which the node Discount Rate is to be calculated based on the current month. Months Jan, Aug, Nov and Dec should have 15% as the discount rate whereas the remaining months should have 10%.
+Consider a scenario in which the node Discount Rate is to be calculated based on the current month. 
+Months Jan, Aug, Nov and Dec should have 15% as discount rate whereas the remaining months should have 20%.
+
+This can be achieved by using the `SWITCH` function in the following manner.
+
+```javascript
+SWITCH(CURRENT_PERIOD_INDEX,1,0.15,8,0.15,11,0.15,12,0.15,0.20)
+```
+The result of the above formula is shown below
 
 | Month         | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
 |---------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Discount Rate | 15% | 10% | 10% | 10% | 10% | 10% | 10% | 15% | 10% | 10% | 15% | 15% |
-
-This can be achieved by using the SWITCH function in the following manner.
-
-```javascript
-SWITCH(CURRENT_PERIOD_INDEX,1,15,2,10,3,10,4,10,5,10,6,10,7,10,8,15,9,10,10,10,11,15,12,15)
-```
+| Discount Rate | 15% | 20% | 20% | 20% | 20% | 20% | 20% | 15% | 20% | 20% | 15% | 15% |
 
 ## Excel Equivalent
 [SWITCH](https://support.office.com/en-us/article/SWITCH-function-47ab33c0-28ce-4530-8a45-d532ec4aa25e)

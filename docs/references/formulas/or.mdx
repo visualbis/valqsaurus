@@ -2,7 +2,7 @@
 id: or
 title: OR
 ---
-An `OR` statement returns a TRUE value if ATLEAST one of the arguments is TRUE. 
+An `OR` statement returns TRUE if **atleast** one of the arguments is TRUE and returns FALSE when all the arguments evaluates to FALSE. 
 
 ## Syntax
 ```javascript
@@ -13,8 +13,15 @@ OR ( logical_test1, [logical_test2], ... )
 
 `logical_test2, …`  – The additional conditions to be evaluated. These are optional arguments.
 
+## Return value
+Either True or False.
+
+## Remarks
+The `OR` function accepts multiple conditions.
+
 ## Example
-Consider a scenario in which if the number of licenses is greater than 500 or the usage period is greater than 24 months, then the price should be $20 else $25.
+Consider a scenario in which if the number of licenses is greater than 500 or the usage period is greater than 24 months, 
+then the price should be $20 else $25.
 
 To achieve this, the formula should be 
 ```javascript

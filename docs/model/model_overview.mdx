@@ -3,86 +3,119 @@ id: model_overview
 title: Model Overview
 sidebar_label: Model Overview
 ---
+
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
-import Link from '@docusaurus/Link';
+import Link from "@docusaurus/Link";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-The Model tab allows the user to build up models using the data. You will see the below screen on clicking the Model tab.
+In the _Model_ tab you can visualize your data and build models.
 
-<div style={{textAlign: 'center'}}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/model/model1.png')} />
+    <img
+      alt="Model screen"
+      src={useBaseUrl("/doc-images/model/model-screen.png")}
+    />
   </Zoom>
-</div> <br />
+</div>
 
-The Model tab has two panels in which the right panel denotes the Canvas which represents the visual.
+_Model screen_
 
-<div style={{textAlign: 'center'}}>
+The _Model_ screen has 2 sections; namely:
+
+- **Nodes Panel**: This is the sidebar-panel on the left, to edit the model nodes and build model.
+- **Canvas(visual)**: This is the canvas on the right, to visualize the model in tree/table structure.
+
+The _Model_ tab has five other tabs as shown in the screenshot below:
+
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/model/model12.png')} />
+    <img
+      alt="Model tab options"
+      src={useBaseUrl("/doc-images/model/model2.png")}
+    />
   </Zoom>
-</div> <br />
+</div>
 
+_Model tab options_
 
- The left panel has the options to edit nodes and build ValQ model. 
+## New
 
-<div style={{textAlign: 'center'}}>
+To start <Link to={useBaseUrl("docs/model/new")}>creating new models</Link> select one of the four options as shown in the screenshot below:
+
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/model/model11.png')} />
+    <img
+      alt="Create new models"
+      src={useBaseUrl("/doc-images/model/model4.png")}
+    />
   </Zoom>
-</div> <br />
+</div>
 
-The Model tab has five different options
+_Start building your models_
 
-<div style={{textAlign: 'center'}}>
+## Node
+
+In the <Link to={useBaseUrl("docs/model/node")}>Node</Link> tab you can configure the design and
+functionality of the _Nodes_ of a model.
+
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="ValQ logo" src={useBaseUrl('/doc-images/model/model2.png')} />
+    <img alt="Node option" src={useBaseUrl("/doc-images/model/model3.png")} />
   </Zoom>
-</div> <br />
+</div>
 
-<div style={{textAlign: 'justify'}}>
-1. <Link to={useBaseUrl('docs/model/new')}>New</Link> – To decide on the category of the model with options such as Open a Sample Model,
-   Create a Simple Model, Create an Advanced Model and Import an Advanced Model. 
-</div> <br />
-    <div style={{textAlign: 'center'}}>
-      <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl('/doc-images/model/model4.png')} />
-      </Zoom>
-    </div> <br />
+_Nodes configuration panel_
 
-<div style={{textAlign: 'justify'}}>
-2. <Link to={useBaseUrl('docs/model/node')}>Node</Link> – To configure the design and functionality of Nodes for the model.
-</div> <br />
-    <div style={{textAlign: 'center'}}>
-      <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl('/doc-images/model/model3.png')} />
-      </Zoom>
-    </div> <br />
+## Data series
 
-<div style={{textAlign: 'justify'}}>
-3. <Link to={useBaseUrl('docs/model/data-series')}>Data Series</Link> – To configure the Data Settings such as Data Series Manager, Time Aggregation Labels and Data Sorting. 
-</div> <br />
-        <div style={{textAlign: 'center'}}>
-      <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl('/doc-images/model/model5.png')} />
-      </Zoom>
-    </div> <br />
+<Link to={useBaseUrl("docs/model/data-series")}>Data Series</Link> tab allow you
+to configure the data settings such as Data Series Manager, Time Aggregation Labels
+and Data Sorting.
 
-<div style={{textAlign: 'justify'}}>
-4. <Link to={useBaseUrl('docs/model/settings')}>Settings</Link> – To configure the Settings parameters such as Navigational Panel, Nodes, Canvas, Number Formatting, Conditional Formatting, Color Theme and PopUp screen. </div> <br />
-    <div style={{textAlign: 'center'}}>
-      <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl('/doc-images/model/model6.png')} />
-      </Zoom>
-    </div> <br />
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Data Series option"
+      src={useBaseUrl("/doc-images/model/model5.png")}
+    />
+  </Zoom>
+</div>
 
-<div style={{textAlign: 'justify'}}>
-5. <Link to={useBaseUrl('docs/model/general')}>General</Link> – To configure the General settings such as License Registration and Export. </div> <br />
-    <div style={{textAlign: 'center'}}>
-      <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl('/doc-images/model/model7.png')} />
-      </Zoom>
-    </div> <br />
+_Data Series configurations_
+
+## Settings
+
+In the <Link to={useBaseUrl("docs/model/settings")}>Settings</Link> tab you can configure the
+parameters such as **Navigational Panel, Nodes, Canvas, Number Formatting,
+Conditional Formatting, Color Theme** and **PopUp screen**.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Settings option"
+      src={useBaseUrl("/doc-images/model/model6.png")}
+    />
+  </Zoom>
+</div>
+
+_Settings nav-panel_
+
+## General
+
+In the <Link to={useBaseUrl("docs/model/general")}>General</Link> tab you can configure
+the general settings such as **License Registration** and **Export your model**.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="General option"
+      src={useBaseUrl("/doc-images/model/model7.png")}
+    />
+  </Zoom>
+</div>
+
+_General options_
 
 In the upcoming sections, you will learn to build a ValQ model using these options in detail.

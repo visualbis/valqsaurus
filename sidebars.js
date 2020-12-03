@@ -43,7 +43,24 @@ module.exports = {
             "analysis/attribution-analysis",
         ],
         "Storage and Collaboration": ["storage/storage-collaboration"],
-
+        /*
+        "Storage and Collaboration": [
+            "storage/valq-collaborate",
+            "storage/admin-console",
+            {
+                type: "category",
+                label: "Features",
+                items: [
+                    "storage/features/save-model",
+                    "storage/features/export",
+                    "storage/features/commenting",
+                    "storage/features/history-logs",
+                    "storage/features/model-merge",
+                    "storage/features/user-security",
+                ],
+            },
+        ],
+        */
         Resources: [
             "faq/formula-list",
             "faq/definitions",
@@ -103,12 +120,12 @@ module.exports = {
                 ],
             },
             /*            {
-                                  type: "category",
-                                  label: "Analyze",
-                                  items: ["how_to_videos/analyze/intro"]
-                  
-                              },
-                  */
+                                                                                                          type: "category",
+                                                                                                          label: "Analyze",
+                                                                                                          items: ["how_to_videos/analyze/intro"]
+                                                                                          
+                                                                                                      },
+                                                                                          */
         ],
     },
     functionSideBar: {

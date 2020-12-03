@@ -2,26 +2,27 @@
 id: conducting-what-if
 title: Conducting what-if analysis
 ---
-import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
 
-One of the main aspects of the valQ Custom Visual is to be able to
+import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
+
+One of the main aspects of the ValQ visual is to be able to
 simulate the impacts changes to key drivers such as prices have on the
 full year forecast. As we can’t change the past, such a simulated change
-should only be applied to future period. The valQ Custom Visual have
+should only be applied to future period. The ValQ visual have
 this capability. When performing what-if analysis, the period that a
 simulation should be applied from is selected in the Side Panel (current
 period is default):
 
-<img alt="What-if-Analysis" src={useBaseUrl('/doc-images/7.1.png')} />
+<img alt="What-if-Analysis" src={useBaseUrl("/doc-images/7.1.png")} />
 
 Assuming that we calculate fuel cost based on litre per month and price
-as $/l and we are at the end of period 9, the simulated cost should be
+as \$/l and we are at the end of period 9, the simulated cost should be
 calculated first at the monthly level with the % change applied to
 period 9 and onwards. Once the individual months are calculated, they
 can then be aggregated based on the rule of the node (sum for diesel
 cost, weighted average for diesel price):
 
-<img alt="" src={useBaseUrl('/doc-images/formula.png')} />
+<img alt="" src={useBaseUrl("/doc-images/formula.png")} />
 
 When hovering over a node, the bottom half of the node becomes a slider.
 Drag the slider left to vary the node by a negatively, drag right for
@@ -29,7 +30,7 @@ positive. As you drag, the values for the selected node is dynamically
 recalculated and displayed. When releasing, the tree will immediately
 recalculate all dependent nodes and show the result.
 
-<img alt="Simulation" src={useBaseUrl('/doc-images/7.2.png')} />
+<img alt="Simulation" src={useBaseUrl("/doc-images/7.2.png")} />
 
 A simulation change is either a pct. Change, a fixed future price or a
 pct. Growth depending on the simulation model defined for the value
@@ -39,7 +40,7 @@ The default method for the driver can be seen on the simulation tooltip.
 You can also change the selected model by selecting at the bottom of the
 tooltip.
 
-<img alt="Simulation Tooltip" src={useBaseUrl('/doc-images/7.3.png')} />
+<img alt="Simulation Tooltip" src={useBaseUrl("/doc-images/7.3.png")} />
 
 Understanding that a change is applied to the selected periods only is
 particularly important to understand when displaying the Full Year value
@@ -48,7 +49,7 @@ weighted average value for the full year, not the value for future
 periods.
 
 A simplified example will help understanding this critical concept.
-Let’s assume that the diesel price is $1.014 for all periods and the
+Let’s assume that the diesel price is \$1.014 for all periods and the
 monthly fuel consumption is constant as well at 1m litres and we have
 selected period 9 as we want to apply the simulation to the remaining
 periods of the year.
@@ -65,7 +66,7 @@ price is not necessarily the same every month and the fuel consumed is
 unlikely to be constant as well. Below is an example of such a
 simulation based on a real data set:
 
-<img alt="Simulation" src={useBaseUrl('/doc-images/7.4.png')} />
+<img alt="Simulation" src={useBaseUrl("/doc-images/7.4.png")} />
 
 The weighted average price was 1.014. We now simulated a 2% increase in
 the prices selected and future periods which equates to a new weighted
@@ -84,8 +85,12 @@ specific, you can apply a simulation on any level.
 Certain nodes may have been locked from changes in the model. This is
 generally when there is a specific reason not to vary this node directly
 for consistency purposes. A locked node will not have the grey pen icon
-<img alt="..image::\/doc-images/image48" src={useBaseUrl('/doc-images/media/image46.png')} />or a slider when
-hovering.
+
+<img
+  alt="..image::\/doc-images/image48"
+  src={useBaseUrl("/doc-images/media/image46.png")}
+/>
+or a slider when hovering.
 
 Certain nodes may be displayed multiple times in the tree. An example is
 Material Moved as it affects Mining and Mill Throughput. In these
@@ -95,4 +100,4 @@ applies both to the selected node and anywhere else where the driver is
 used. If a node is a linked node, it has the Linked node text in the
 bottom right corner:
 
-<img alt="Simulation" src={useBaseUrl('/doc-images/7.5.png')} />
+<img alt="Simulation" src={useBaseUrl("/doc-images/7.5.png")} />

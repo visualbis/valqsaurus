@@ -1,6 +1,6 @@
 {
     "name": "valqsaurus",
-    "version": "0.0.1",
+    "version": "1.22.10",
     "private": true,
     "scripts": {
         "start": "docusaurus start",
@@ -9,12 +9,14 @@
         "deploy": "docusaurus deploy"
     },
     "dependencies": {
-        "@docusaurus/core": "^2.0.0-alpha.40",
-        "@docusaurus/preset-classic": "^2.0.0-alpha.40",
+        "@docusaurus/core": "2.0.0-alpha.69",
+        "@docusaurus/preset-classic": "2.0.0-alpha.69",
+        "@mdx-js/react": "^1.6.21",
         "@u-wave/react-vimeo": "^0.8.1",
         "autocomplete.js": "^0.37.0",
         "classnames": "^2.2.6",
-        "docusaurus-lunr-search": "^1.0.2",
+        "clsx": "^1.1.1",
+        "docusaurus-lunr-search": "^2.1.0",
         "hogan": "^1.0.2",
         "lunr": "^2.3.8",
         "react": "^16.8.4",
@@ -23,7 +25,7 @@
     },
     "browserslist": {
         "production": [
-            ">0.2%",
+            ">0.5%",
             "not dead",
             "not op_mini all"
         ],

@@ -2,25 +2,47 @@
 id: isnan
 title: ISNAN
 ---
-The ISNAN function returns a default value if the value in the node is an error.
+The `ISNAN` function checks for error and returns a default value if a value in the node is an error.
 
 ## Syntax
+```javascript
 ISNAN (value1,value2)
+```
 
 ## Arguments
-value1 – The node that is to be checked for error values
+`value1` – The node that is to be checked for error values.
 
-value2 – The value which is to replace the error values
+`value2` – The value which is to replace the error values.
 
+## Return value
+value2 in the place of Error.
 
 ## Example
-Consider the following nodes: Cost per unit has divide by zero error values and it has to be updated to 0.
+
+Consider the nodes Total Cost and No. of units to have the periods values as shown below
 
 | Period        | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
 |---------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | Total Cost    | 100 | 150 | 200 | 100 | 300 | 250 | 300 | 0   | 225 | 300 | 0   | 300 |
-| No of units   | 10  | 15  | 10  | 10  | 15  | 25  | 15  | 0   | 15  | 15  | 0   | 15  |
+| No. of units  | 10  | 15  | 10  | 10  | 15  | 25  | 15  | 0   | 15  | 15  | 0   | 15  |
+
+In the below example, Cost per unit is calculated by dividing Total Cost and No. of units. 
+
+Before applying `ISNAN`:
+
+| Period        | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | Cost per unit | 10  | 10  | 20  | 10  | 20  | 10  | 20  | #   | 15  | 20  | #   | 20  |
 
-This can be achieved by using the formula
-ISNAN(Cost per unit,0)
+Cost per unit returns Error(#) for Aug and Nov, the error is to be replaced with 0.
+
+To achieve this, the formula should be 
+```javascript
+ISNAN(Total Cost/No. of units,0)
+```
+
+Applying applying `ISNAN`:
+
+| Period        | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Cost per unit | 10  | 10  | 20  | 10  | 20  | 10  | 20  | 0   | 15  | 20  | 0   | 20  |

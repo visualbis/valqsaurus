@@ -2,8 +2,8 @@
 id: and
 title: AND
 ---
+An `AND` statement returns TRUE only if **all** the arguments are TRUE and returns FALSE if any of the arguments is FALSE. 
 
-An `AND` statement returns a TRUE value if ALL the arguments are TRUE. 
 ## Syntax
 ```javascript
 AND ( logical_test1, [logical_test2], ... )
@@ -12,8 +12,16 @@ AND ( logical_test1, [logical_test2], ... )
 `logical_test1` – The first condition to be evaluated. This is a required argument.
 
 `logical_test2, …`  – The additional conditions to be evaluated. These are optional arguments.
+
+## Return value
+Either True or False.
+
+## Remarks
+The `AND` function accepts multiple conditions.
+
 ## Example
-Consider a scenario in which if the number of licenses is greater than 500 and usage period is greater than 24 months, then the price should be $20 else $25.
+Consider a scenario in which if the number of licenses is greater than 500 and usage period is greater than 24 months, 
+then the price should be $20 else $25.
 
 To achieve this, the formula should be
 ```javascript
