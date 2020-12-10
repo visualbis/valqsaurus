@@ -37,7 +37,7 @@ The authorization key will be generated and will only be available to report Adm
   </Zoom>
  </div>
 
-1. Select the **Series** and **Scenarios** that you want to export.
+1. You can either **Select** the *Series/Scenarios* that you want to export, or **Export all** and click **Next**.
 
  <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -47,7 +47,9 @@ The authorization key will be generated and will only be available to report Adm
  
  *Select Series/Scenarios to create a Web datasource*
 
-1. Following are the options available in the *Export format* screen:
+1. The data can be exported in either a *Tree structure* or a *Flat structure* as shown in the **Export format** screen:
+
+ a. The data is exported in a tree format just like the ValQ model.
 
  <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -55,19 +57,35 @@ The authorization key will be generated and will only be available to report Adm
   </Zoom>
  </div>
 
- *Export format*
+ *Export format with Tree structure*
 
-   - **Export format**: Select the export format as *Tree structure* or *Flat structure*
-   - **Customization**: Select the *Export level of the Nodes* that decides the hierarchy of the Model Nodes
-   - **Edit Column Names**: Edit and rename the *Column names* by clicking on the editor icon
+   - **Customization**: The tab allows you to select the indicated fields.
+   - **Export up to level**: Select the node-level hierarchy to export.
    - [ ] **Export only leaf nodes**: Select the check box to export just the last *Node* of the Model.
-   - Copy and save the **Web URL** and **HTTP request header parameters**.
+   - To edit a column name click the pencil editor icon next to the column field.
+
+ b. The data is exported in the form of a flat table and includes all nodes listed in a column.
+
+ <div style={{textAlign: 'center'}}>
+  <Zoom>
+   <img alt="Export Format with Flat structure" src={useBaseUrl('/doc-images/web-datasource/export-format-flat-structure.png')} />
+  </Zoom>
+ </div>
+
+ *Export format with Flat structure*
+
+   - **Customization**: The tab in the *Flat* structure has an additional field - *Show parent title*.
+   :::note
+   The Flat structure does not have the options to export the *node-level hierarchy* or export just the *leaf nodes*.
+   :::
+
+2. Copy and save the **Web URL** and **HTTP request header parameters**.
 
  :::note
  The above Web URL and HTTP request ids are auto-generated. Copy the ids and save them in a file to be used to import the data later.
  :::
 
-1. Click **Done**.
+2. Click **Done**.
 
 ## Import data from web datasource URL and parameters in Power BI
 
