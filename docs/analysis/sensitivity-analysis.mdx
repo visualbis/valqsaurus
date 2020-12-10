@@ -1,9 +1,146 @@
 ---
 id: sensitivity-analysis
 title: Sensitivity Analysis
+sidebar_label: Sensitivity Analysis
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
 import Link from "@docusaurus/Link";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
+
+In a business model, you can now analyze how different input variables affect the selected target node in the form of a tornado chart.
+
+The sensitivity analysis feature allows you to select the input nodes to be simulated and the percentage of variance to determine the result on the output node. A summary of all the resulted sensitivity analysis reports helps in a deeper analysis of the key performance nodes.
+
+## Key Features
+
+- The analysis is done by selecting one output driver(node) from the model and selecting up to 20 input drivers.
+- The percentage variation is provided as input. For example, If 10% is provided as an input, all the input nodes will be simulated +10%, -10% and the recorded value for the output will be plotted in the tornado chart.
+- A summary report of multiple tornado charts help in a deeper analysis.
+- Usually, the tornado analysis is performed on the historical series as a precursor to the planning operation but we will allow the user to select a series and run the analysis for flexibility.
+
+## Create a Sensitivity analysis chart
+
+Let's consider a Mining model where the  **Net Profit** has a base value of $56.8m.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Mining Model"
+      src={useBaseUrl("/doc-images/analyze/mining-model.png")}
+    />
+  </Zoom>
+</div>
+
+*Mining Model with Key input nodes highlighted*
+
+Say, you want to analyze how multiple *key Inputs* - *Copper Price, Diesel Price*, and *Mill Throughput* value change will affect the overall *Net Profit*. 
+
+1. Go to **Analyze > Sensitivity Analysis**
+
+ <div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Sensitivity Analysis"
+      src={useBaseUrl("/doc-images/analyze/sensitivity-analysis-option.png")}
+    />
+  </Zoom>
+ </div>
+
+ *Select Sensitivity Analysis option*
+
+1. Fill in the **New Sensitivity Chart** with the following fields: 
+   - Analysis Name: A relevant name of the chart
+   - Series: Select the Planning series
+   - Output Node: The resultant node that is affected by the simulation
+   - Deviation: Percentage of variance applied on the input nodes
+   - Period: Time period
+
+   <div style={{ textAlign: "center" }}>
+    <Zoom>
+     <img
+      alt="New Sensitivity Chart"
+      src={useBaseUrl("/doc-images/analyze/create-analysis.png")}
+     />
+    </Zoom>
+   </div>
+   
+   *Fill in the new sensitivity chart fields*
+
+1. Click **Select Input Nodes**
+ - In the **Node Selection** window, click the plus (+) sign next to the 3 *Key Input* nodes to select them.
+
+ <div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Select input nodes"
+      src={useBaseUrl("/doc-images/analyze/select-input-node.png")}
+    />
+  </Zoom>
+ </div>
+
+ *Select the input nodes*
+
+ :::note
+ You can select up to 20 nodes.
+ :::
+
+ - Click **Apply**.
+
+Your *Sensitivity Analysis* chart will be created as shown in the screenshot below:
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Sensitivity Analysis chart for Net Profit"
+      src={useBaseUrl("/doc-images/analyze/sensitivity-analysis-chart.png")}
+    />
+  </Zoom>
+</div>
+
+*Sensitivity Analysis chart for Net Profit*
+
+Every input node indicates the same **Base** value ($56.8m) as *Net Profit*, **Variance** change in the value, and the resulted **Low** and **High** output node values when the input node is simulated by +/- Deviation percentage.
+
+### Edit the Analysis report
+
+Once your report is created, you can use the top menu label to edit the report by editing the report's *Name*, *Series*, *Output Node*, *Deviation* percentage, time *Period*, and *Input Nodes*.
+
+Click **Update** each time you edit any variable for the changes to be reflected on the Analysis chart.
+
+### Sensitivity analysis based simulation
+
+Go to **Simulate** tab and simulate the *Mill Throughput* node by +10%.
+This affects the *Net Profit* output node and changes the value to $93.1m as depicted by our *Sensitivity Analysis* report.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt=""
+      src={useBaseUrl("/doc-images/analyze/simulate-input-node.png")}
+    />
+  </Zoom>
+</div>
+
+*Input node deviation effect on the output node*
+
+## Sensitivity Analysis summary
+
+To get a consolidated view of all the analysis reports click **View Summary** at the top right corner on the *Sensitivity Analysis* screen.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt=""
+      src={useBaseUrl("/doc-images/analyze/sensitivity-analysis-summary.png")}
+    />
+  </Zoom>
+</div>
+
+*Sensitivity Analysis summary*
+
+:::note
+When an input node has no direct effect on the output node the tornado chart displays no bar for the input driver. 
+As is the case in the *Mining* report, the input nodes *Recovery* and *Copper Sold* do not affect the *Mining* node.
+:::
