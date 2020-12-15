@@ -59,8 +59,12 @@ Click on the **Click here** link in the email and download the ValQ Collaborate 
 Import this `.pbiviz` file in Power BI Desktop to <Link to={useBaseUrl('docs/intro/model')}>install the visual</Link>.
 
 ## ValQ Workspace or Account
+	
+1. A ValQ workspace or account is provisioned when a customer purchases a ValQ collaborate product. The customer can select the number of users to be added to the workspace/account and the plan during the time of purchase.
+1. Only registered users in the workspace will be able to login to the ValQ visual (via Office365 login).
+1. The collaboration features - storage, commenting, exporting data source, model merge, and user security etc. will be enabled for the users of the workspace.
+1. A ValQ workspace needs to be renewed at the time of license expiry so that the users in the ValQ workspace can continue to use the workspace without any issues.
 
-Login to ValQ visual using your login credentials used at the time of purchasing the license.
  <div style={{ textAlign: "center" }}>
   <Zoom>
     <img alt="ValQ application workflow" src={useBaseUrl("/doc-images/storage/valq-workflow.png")} />
