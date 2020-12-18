@@ -36,6 +36,7 @@ module.exports = {
             "simulation/simulation_canvas",
             "simulation/navigation_panel",
             "simulation/tableview",
+            "simulation/touch-support",
         ],
         Analyze: [
             "analysis/analyze_overview",
