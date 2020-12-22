@@ -20,6 +20,17 @@ The sensitivity analysis feature allows you to select the input nodes to be simu
 - A summary report of multiple tornado charts help in a deeper analysis.
 - Usually, the tornado analysis is performed on the historical series as a precursor to the planning operation but we will allow the user to select a series and run the analysis for flexibility.
 
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Attribution Analysis"
+      src={useBaseUrl("/doc-images/analyze/sensitivity-tab.png")}
+    />
+  </Zoom>
+</div>
+
+*Sensitivity Analysis tab*
+
 ## Create a Sensitivity analysis chart
 
 Let's consider a Mining model where the  **Net Profit** has a base value of $56.8m.
@@ -141,6 +152,6 @@ To get a consolidated view of all the analysis reports click **View Summary** at
 *Sensitivity Analysis summary*
 
 :::note
-When an input node has no direct effect on the output node the tornado chart displays no bar for the input driver. 
+When an input node has no direct effect on the output node, the tornado chart displays no bar for the input driver. 
 As is the case in the *Mining* report, the input nodes *Recovery* and *Copper Sold* do not affect the *Mining* node.
 :::
