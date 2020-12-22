@@ -57,7 +57,7 @@ The scope of the access is defined by the user’s roles and permissions granted
 | Audit logs                                             | Yes                                   | Yes                                   | Yes                                   |
 | Export as datasource                                   | Yes                                   | No                                    | No                                    |
 
-<sup>2</sup>ValQ features when shared with the "Limited to certain users" option, only selected users or groups can be given view-only or edit access.
+<sup>2</sup>ValQ features when shared with the "Limited to certain users" option, only selected users/groups are given view-only or edit access.
 
 ### To assign user roles
 
@@ -301,4 +301,4 @@ A *Private Series* created by the *Model creator* is not be accessible by any ot
 
 *Viewer with edit access on shared series*  
 
-Note that, the *mar-frcst* series is only accessible by the *Model creator* and hidden for *Analyzers* and *Viewers*.
+> *mar-frcst* series is only accessible by the *Model creator* and hidden for *Analyzers* and *Viewers* as in the above screenshot.

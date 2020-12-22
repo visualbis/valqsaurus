@@ -24,7 +24,7 @@ Users of the model can view the comments on *Planning series* and *shared Scenar
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/storage/features/all-comments-planning.png")} />
+    <img alt="Series comments" src={useBaseUrl("/doc-images/storage/features/all-comments-planning.png")} />
   </Zoom>
 </div>
 
@@ -32,7 +32,7 @@ Users of the model can view the comments on *Planning series* and *shared Scenar
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/storage/features/all-comments-scenario.png")} />
+    <img alt="Simulation comments" src={useBaseUrl("/doc-images/storage/features/all-comments-scenario.png")} />
   </Zoom>
 </div>
 
@@ -48,9 +48,11 @@ Your comment is saved to the comment section for Planning under the planning ser
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/storage/features/planning-series-add-comments.png")} />
+    <img alt="Node commenting" src={useBaseUrl("/doc-images/storage/features/planning-series-add-comments.png")} />
   </Zoom>
 </div>
+
+*Comment on the selected node*
 
 ### Add comments for Simulation
 
@@ -61,7 +63,7 @@ Your comment is saved to the comment section for Simulation under the scenario n
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/storage/features/node-level-commenting-on-scenario.png")} />
+    <img alt="Comment on a simulated node" src={useBaseUrl("/doc-images/storage/features/node-level-commenting-on-scenario.png")} />
   </Zoom>
 </div>
 
@@ -71,11 +73,11 @@ Your comment is saved to the comment section for Simulation under the scenario n
 
 As a security feature, only the user who writes the comments has permission to edit and delete the comments.
 
-In the below screenshot, the logged-in user("ValQ test user") can only edit/delete its own comment.
+In the below screenshot, the logged-in user("ValQ test user") alone can  edit/delete the comment written by self.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/storage/features/edit-delete-comments.png")} />
+    <img alt="Comments edit/delete access" src={useBaseUrl("/doc-images/storage/features/edit-delete-comments.png")} />
   </Zoom>
 </div>
 

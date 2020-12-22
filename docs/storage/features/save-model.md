@@ -35,9 +35,11 @@ A user must log in to the workspace to upload a model.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/storage/upload-button.png")} />
+    <img alt="Upload button highlighted" src={useBaseUrl("/doc-images/storage/upload-button.png")} />
   </Zoom>
 </div>
+
+*Model ready to be uploaded*
 
 ### Upload the Model
 
@@ -45,9 +47,11 @@ A user must log in to the workspace to upload a model.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/storage/delete-node.png")} />
+    <img alt="Delete a node" src={useBaseUrl("/doc-images/storage/delete-node.png")} />
   </Zoom>
 </div>
+
+*Delete a node*
 
 * Simulate on the node `Chris Morris`
 
@@ -59,9 +63,9 @@ A user must log in to the workspace to upload a model.
 
 *Simulating the node for 25% higher performance*
 
-* Click the **Upload** button at the bezel to upload your changes. 
+* Click **Upload**.
 * In the pop window enter a **Model Name** and select
-- [x] *Enable Autosave* option if you wish to enable saving the changes automatically.
+- [x] *Enable Autosave* (To enable saving the changes automatically).
 
 <div style={{ textAlign: "center" }}>
   <Zoom>

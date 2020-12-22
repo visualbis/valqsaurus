@@ -37,6 +37,8 @@ The authorization key will be generated and will only be available to report Adm
   </Zoom>
  </div>
 
+ *Select Export as datasource*
+
 1. You can either **Select** the *Series/Scenarios* that you want to export, or **Export all** and click **Next**.
 
  <div style={{textAlign: 'center'}}>
@@ -108,6 +110,8 @@ In the below example, we'll show how the URL can be consumed in a Power BI repor
    <img alt="web-url-http-request" src={useBaseUrl('/doc-images/web-datasource/web-url-http-request.png')} />
   </Zoom>
  </div>
+
+ *Import web data with Advanced option*
 
  :::important
  Type **Authorization** in the HTTP header field.

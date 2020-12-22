@@ -27,7 +27,7 @@ It would be easier for the Region/Branch managers to create and update the profi
 Below is the Model merge workflow that helps us achieve such a consolidated report.
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/features/model-merge-workflow.png")} />
+    <img alt="Model Merge workflow" src={useBaseUrl("/doc-images/storage/features/model-merge-workflow.png")} />
   </Zoom>
  </div>
 
@@ -48,25 +48,31 @@ Following are the screenshots of the individual models:
 a. Model *Argentina* with 28 nodes.
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/features/argentina.png")} />
+    <img alt="Argentina model" src={useBaseUrl("/doc-images/storage/features/argentina.png")} />
   </Zoom>
  </div>
+
+ *Model Argentina*
 
 b. Model *Brazil* with 28 nodes.
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/features/brazil.png")} />
+    <img alt="Model Brazil" src={useBaseUrl("/doc-images/storage/features/brazil.png")} />
   </Zoom>
  </div>
+
+*Model Brazil*
 
 c. Model *Chile* with 28 nodes.
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/features/chile.png")} />
+    <img alt="Model Chile" src={useBaseUrl("/doc-images/storage/features/chile.png")} />
   </Zoom>
  </div>
+
+ *Model Chile*
 
 ### Create the main model
 
@@ -76,7 +82,7 @@ c. Model *Chile* with 28 nodes.
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/features/edit-configure-node.png")} />
+    <img alt="Edit and configure node" src={useBaseUrl("/doc-images/storage/features/edit-configure-node.png")} />
   </Zoom>
  </div>
 
@@ -86,7 +92,7 @@ c. Model *Chile* with 28 nodes.
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/features/rename-node-argentina.png")} />
+    <img alt="Rename the node" src={useBaseUrl("/doc-images/storage/features/rename-node-argentina.png")} />
   </Zoom>
  </div>
 
@@ -94,7 +100,7 @@ c. Model *Chile* with 28 nodes.
 
 - Click the *Configuration* option:
   - Select the **Node Type** as *Link to workspace model.*
-  - *Select a workspace model* as *Model Merge(Argentina)*.
+  - **Select a workspace model** as *Model Merge(Argentina)*.
 
 ### Case 1: Linking nodes to an entire model
 
@@ -102,7 +108,7 @@ c. Model *Chile* with 28 nodes.
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/features/link-node-to-argentina-model.png")} />
+    <img alt="Link to workspace model" src={useBaseUrl("/doc-images/storage/features/link-node-to-argentina-model.png")} />
   </Zoom>
  </div>
 
@@ -114,9 +120,11 @@ The below screenshot shows the 3 *Child Nodes* linked to the respective models w
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/features/consolidated-child-nodes-linked.png")} />
+    <img alt="Main model's nodes connected to other models" src={useBaseUrl("/doc-images/storage/features/consolidated-child-nodes-linked.png")} />
   </Zoom>
  </div>
+
+ *Main model's nodes connected to other models*
 
 :::note
 Linked nodes are indicated by a special linked icon both in the **Model > Node** navigation panel on the left and in the ValQ visual pane on the right.
@@ -128,14 +136,16 @@ Lets create a 4th child node and link the node to a single node *Receita Liquida
 Add another *Child node* as highlighted in the *Navigation Panel* on the left.
 
 - In the **Edit Node** pop-up window, select **Node Type** as *Link to workspace model*
-- *Select a workspace model* as *Model Merge(Argentina)*
+- **Select a workspace model** as *Model Merge(Argentina)*
 - Select **Linking To** option as **Node in the model**
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/features/link-to-a-node.png")} />
+    <img alt="Node linked to another node from a model" src={useBaseUrl("/doc-images/storage/features/link-to-a-node.png")} />
   </Zoom>
  </div>
+
+ *Node linked to another node from a model*
 
 - *Select a node to link* as *Receita Liquida* (This is the node from the *Argentina* model).
 
@@ -173,22 +183,24 @@ Click the *Map Scenarios* tab in the *main/consolidated* model to map the shared
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/features/model-merge-mapping_scenarios.png")} />
+    <img alt="Map scenarios" src={useBaseUrl("/doc-images/storage/features/model-merge-mapping_scenarios.png")} />
   </Zoom>
  </div>
+
+ *Map the scenarios*
 
 ## Using the Model merge report
 
 - **Tree view/Table view**
 
-Here is the *Consolidated* model with the first 3 child nodes linked to entire sub-models and the 4th node that is linked to a single node from the *Argentina* model.
+Here is the *Consolidated* model with the first 3 child nodes linked to entire models from other reports, and the 4th node that is linked to a single node from the *Argentina* model.
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/features/consolidated-nodes.png")} />
+    <img alt="Consolidated model with nodes connected to other models*" src={useBaseUrl("/doc-images/storage/features/consolidated-nodes.png")} />
   </Zoom>
  </div>
 
-*Consolidated model with nodes connected to sub-models*
+*Consolidated model with nodes connected to other models*
 
 ### Final result in the consolidated model
 
@@ -202,9 +214,11 @@ When you simulate on a shared scenario from a sub-model, you can view the change
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/features/scenario-mapping-refreshed.png")} />
+    <img alt="Linked scenarios changes reflected" src={useBaseUrl("/doc-images/storage/features/scenario-mapping-refreshed.png")} />
   </Zoom>
  </div>
+
+ *Linked scenarios changes reflected*
 
 Note the change in each model and the resulted value in the main model.
 
@@ -214,7 +228,7 @@ You can only link a leaf node and not the parent node.
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/features/link-only-leaf-node.png")} />
+    <img alt="Only a leaf node can be linked with another model" src={useBaseUrl("/doc-images/storage/features/link-only-leaf-node.png")} />
   </Zoom>
  </div>
 

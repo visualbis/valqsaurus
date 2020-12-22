@@ -30,8 +30,7 @@ You can manage groups and users in your workspace, view/edit your models and sha
 
 :::note
 - <sup>1</sup>Feature available for Workspace Admins and regular Admin user roles.
-- <sup>2</sup>Feature available for *Workspace Admin, admin*, and *member (limited access)* user roles.
-
+- <sup>2</sup>Feature available for Workspace Admin, admin, and member (limited access) user roles.
 :::
 
 ### Admin Console Member Roles
@@ -54,7 +53,7 @@ The **Dashboard** page provides a summary of the Collaborate plan details that t
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/admin-dashboard.png")} />
+    <img alt="Admin welcome dashboard page" src={useBaseUrl("/doc-images/storage/admin-console/admin-dashboard.png")} />
   </Zoom>
  </div>
 
@@ -66,7 +65,7 @@ The **Dashboard** page provides a summary of the Collaborate plan details that t
 
 ### Manage Users in the Workspace
 
-Anyone who has an administrator role in a workspace can give others access to that workspace by adding them to the various roles. Workspace creators are automatically administrators.
+Anyone who has an administrator role in a workspace can give others access to that workspace by adding them to the various roles. Workspace creators automatically become administrators.
 
 **User Manager** page provides functionalities to add/remove members and assign *roles* and *groups* to members.
 In the **Admin Console** left navigation panel, click **User Manager**.
@@ -74,7 +73,7 @@ In the **Admin Console** left navigation panel, click **User Manager**.
 1. Click **Add Member** button at the top right corner to add a new member and enter the **Email** address.
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/add-member.png")} />
+    <img alt="Add members to a workspace" src={useBaseUrl("/doc-images/storage/admin-console/add-member.png")} />
   </Zoom>
  </div>
 
@@ -84,13 +83,13 @@ In the **Admin Console** left navigation panel, click **User Manager**.
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-edit-member.png")} />
+    <img alt="Edit member" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-edit-member.png")} />
   </Zoom>
  </div>
 
  *An Admin can edit other member's role and groups*
 
-1. Members who request to access your model will be shown under *Request Pending* list and you can choose to accept/deny the request.
+1. Members who request access to your model are listed under *Request Pending* tab and you can choose to accept/deny the request.
 1. Click on **Bulk upload** button at the top right corner to import a complete list of members from a CSV file.
 
  <div style={{ textAlign: "center" }}>
@@ -125,14 +124,14 @@ In the *Group* page you can **create a new group**, **edit<sup>4</sup>/remove gr
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/create-group.png")} />
+    <img alt="Groups management" src={useBaseUrl("/doc-images/storage/admin-console/create-group.png")} />
   </Zoom>
  </div>
 
 *Groups page as accessible by a Member*
 
 :::note
-<sup>4</sup>Changing a *Group name* is not recommended for the group that is already a part of the shared security feature in a model.
+<sup>4</sup> Changing a Group name is not recommended for the group that is already a part of the shared security feature in a model.
 The member is only removed from the group and still added to the Workspace.
 The removed member may still be a part of other groups, but will not be able to access the model that is shared with the group.
 :::
@@ -145,19 +144,21 @@ The removed member may still be a part of other groups, but will not be able to 
 
 **User Management**
 
-- Select and click the *Group* to add new members, edit member roles, and delete members.
+- Select and click the *Group* to **Add members**, edit member **Role**, and **Remove** members.
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/edit-member-role.png")} />
+    <img alt="user management" src={useBaseUrl("/doc-images/storage/admin-console/edit-member-role.png")} />
   </Zoom>
  </div>
+
+ *User management - role selection*
 
 ### Models
 
 The **Models** page lists the models that are created by and private to a *Model creator.*
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/models-page.png")} />
+    <img alt="Models page" src={useBaseUrl("/doc-images/storage/admin-console/models-page.png")} />
   </Zoom>
  </div>
 
@@ -165,10 +166,10 @@ The **Models** page lists the models that are created by and private to a *Model
 
 This page displays a list of *Models* with the following fields*:*
 
-- **Name**: The model name you entered while uploading the model
-- **Last updated on**: The latest timestamp when the model was saved
-- **Published date**: Date timestamp when the model was published
-- **Action**: Delete a model from workspace
+- **Name**: The model name you entered while uploading the model.
+- **Last updated on**: The latest timestamp when the model was saved.
+- **Published date**: Date timestamp when the model was published.
+- **Action**: Removes/deletes a model from workspace.
 
 **Model Details**
 
@@ -178,35 +179,39 @@ Click on a *Model*  for the following details:
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-scenario-details.png")} />
+    <img alt="Model shared/private scenarios" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-scenario-details.png")} />
   </Zoom>
  </div>
+
+ *Model shared/private scenarios*
 
 - **Series**: All the model series listed with: *Series Name, Created at (timestamp), Type (Native/Allocation)*, and *Owner*.
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-series-details.png")} />
+    <img alt="Model series" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-series-details.png")} />
   </Zoom>
  </div>
+
+ *Model series*
 
 - **Access Control<sup>5</sup>:** Lists the *members* and their *Role* with whom the *Model* has been shared.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-access-control.png")} />
+    <img alt="Model access control permissions" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-access-control.png")} />
   </Zoom>
  </div>
 
 *Workspace Admin can view the access control permissions*
 
 :::note
-<sup>5</sup>Access control is visible only to a *Workspace Admin* and not to *admins/members*.
+<sup>5</sup>Access control is visible only to a Workspace Admin and not to admins/members.
 :::
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/model-access-control.png")} />
+    <img alt="Access control details denied to a member" src={useBaseUrl("/doc-images/storage/admin-console/model-access-control.png")} />
   </Zoom>
  </div>
 
@@ -216,30 +221,32 @@ Click on a *Model*  for the following details:
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-details.png")} />
+    <img alt="" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-details.png")} />
   </Zoom>
  </div>
 
+ *Model summary*
+
 ### Shared Models
 
-**Shared Models** page lists all the models uploaded in the common *Workspace* and shared with the logged in user.
+**Shared Models** page lists all the models uploaded in the common *Workspace* and shared with the logged-in user.
 
 > A *Model creator* has more accessibility on the owned model as compared to other *admins/members*.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-shared-model.png")} />
+    <img alt="Model summary" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-shared-model.png")} />
   </Zoom>
  </div>
 
 *Models shared with a member*
 
 - A member can view the model *Name, Last updated on (timestamp), Published date, Permission (Model-level user access in ValQ visual),* and *Owner (Model Creator).*
-- An *admin/member* is not authorized to view **Access control** details of the users added to the model and the user role.
+- An *admin/member* is not authorized to view **Access control** details of the users added to the model and the user role (that privilege is only reserved for the Model creator).
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Linking a parent node to another model not allowed" src={useBaseUrl("/doc-images/storage/admin-console/shared-models-scenarios-series.png")} />
+    <img alt="No access control tab" src={useBaseUrl("/doc-images/storage/admin-console/shared-models-scenarios-series.png")} />
   </Zoom>
  </div>
 

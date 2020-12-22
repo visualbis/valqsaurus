@@ -44,8 +44,8 @@ You can click on the dropdown list to select the series to display the logs for.
 *Log changes on the Planning(brazil) series from all users*
 
 A user member with edit access on the selected *Series* can:
-- Restore the default series values by clicking *Reset All* at the top right corner.
-- Restore to a single step by clicking *Restore to this step*.
+- Restore the default series values by clicking **Reset All** at the top right corner.
+- Restore to a single step by clicking **Restore to this step**.
 
 ## Simulation Logs
 
@@ -53,7 +53,7 @@ The logged-in user is allowed to view the simulation logs of shared *model/scena
   
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/storage/features/simulation-scenario-history-logs.png")} />
+    <img alt="Simulation history logs" src={useBaseUrl("/doc-images/storage/features/simulation-scenario-history-logs.png")} />
   </Zoom>
 </div>
 
