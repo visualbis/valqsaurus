@@ -1,7 +1,7 @@
 ---
 id: touch-support
-title: Support for touch devices
-sidebar_label: Support for touch devices
+title: Support for Touch Devices
+sidebar_label: Support for Touch Devices
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';

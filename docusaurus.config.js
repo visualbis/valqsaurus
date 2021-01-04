@@ -14,11 +14,13 @@ module.exports = {
                 alt: "ValQ Logo",
                 src: "img/valq-icon.png",
             },
-            items: [{
-                to: "docs/intro/introduction",
-                label: "Docs",
-                position: "right",
-            },],
+            items: [
+                {
+                    to: "docs/intro/introduction",
+                    label: "Docs",
+                    position: "right",
+                },
+            ],
         },
         footer: {
             style: "light",
