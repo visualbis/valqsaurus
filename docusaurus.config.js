@@ -3,10 +3,17 @@ module.exports = {
     tagline: "Modern Digital Planning",
     url: "https://valq.com",
     baseUrl: "/",
+    noIndex: true, // Defaults to `false`
     favicon: "img/cropped-valq-icon-1-192x192.png",
     organizationName: process.env.CIRCLE_PROJECT_USERNAME || "visualbis", // Usually your GitHub org/user name.
     projectName: "valqsaurus", // Usually your repo name.
+    plugins: ['@docusaurus/plugin-google-analytics'],
     themeConfig: {
+        googleAnalytics: {
+            trackingID: 'UA-136298126-1',
+            // Optional fields.
+            anonymizeIP: true, // Should IPs be anonymized?
+        },
         navbar: {
             hideOnScroll: true,
             title: "ValQ",
