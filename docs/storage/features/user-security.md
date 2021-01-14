@@ -93,7 +93,7 @@ Following are the roles assigned in the above model:
 
 ### Manage Model Access 
 
-* *Admin* has complete access on the Model tab, and can create, edit, delete and share the model.
+* *Admin* has complete access to the **Model** Tab and sub-menus. An *Admin* can edit/add/delete the *Nodes*. Also is allowed to edit shared access on the model to other users.
 * *Analyzer* and *Viewer* do not have access to the Model tab as shown in the below screenshot.
 
 <div style={{textAlign: 'center'}}>
@@ -138,7 +138,7 @@ The selected Nodes and the child nodes can be shared with the following 2 option
    </Zoom>
   </div>
 
-  *Consumer* Node shared with groups/users added to the model* 
+  *Consumer Node shared with groups/users added to the model* 
 
 1. **Limit to selected groups and users**
 
@@ -148,7 +148,7 @@ The selected Nodes and the child nodes can be shared with the following 2 option
    </Zoom>
   </div>
 
-  *Industrials Node shared with limited groups and users* 
+  *Industrials Node shared with limited groups and users(Admins alone)* 
 
   * Case 1: Admin alone has access to the *Industrials* node
   
@@ -193,7 +193,7 @@ On the **Simulate** tab select the *scenario* to be shared and click the *share*
 
   *Scenario1 shared with groups and users added to the model*
 
-    * *Admin* and *Analyzer* can create a new scenario, view, compare, download, copy, share, and edit the shared scenario. 
+    * *Admin* and *Analyzer* can view, compare, download, copy, and edit the shared scenario. 
     * *Viewer* can only view, compare and download the shared scenario.
   
 1. **Limit to selected groups and users**
@@ -207,7 +207,7 @@ On the **Simulate** tab select the *scenario* to be shared and click the *share*
 
   *Scenario shared with edit-access to the group*
 
-- Case 1: *Admin* and *Analyzer* can only view, compare, download and copy the shared scenario.
+- Case 1: *Admin* and *Analyzer* can only view, compare, download and copy the shared scenario. Also can create new private scenarios.
 
   <div style={{textAlign: 'center'}}>
    <Zoom>
@@ -217,7 +217,7 @@ On the **Simulate** tab select the *scenario* to be shared and click the *share*
 
   *Analyzer with view access on shared scenario2* 
 
-- *Viewer* can create new scenarios. View, compare, download, copy, share, and edit the shared scenario. 
+- *Viewer* can only view, compare, download, and edit(As given edit access) the shared scenarios. 
 
   <div style={{textAlign: 'center'}}>
    <Zoom>
@@ -234,22 +234,28 @@ A *Model creator/Admin* can choose to:
 2. [*Share with all groups and users added to the model*](#group-and-users-added-to-the-model) or 
 3. [*Limit to selected groups and users*](#limit-to-selected-groups-and-users) with view-only or edit access 
 
+:::note
+A shared series cannot be renamed or deleted by any other user other than the series owner.
+:::
+
 To share any series:
-* On the **Plan** tab, select the *'mar-frcst'* series and click the *Share* icon in the top right ribbon bar.
-* In the **Share Settings** pop window select one of the following options.
+* On the **Plan** tab, select any series name and click the **Share** icon in the top right ribbon bar.
+* In the **Share Settings** pop window select one of the following options:
 
 #### Private
 
-A *Private Series* created by the *Model creator* is not be accessible by any other user or group member.
+A *Private Series* created by the *Model creator* is not accessible by any other user or group member.
 <div style={{textAlign: 'center'}}>
   <Zoom>
 <img alt="Mar forecast series kept private to the creator/admin" src={useBaseUrl('/doc-images/storage/mar-frcst-private.png')} />
   </Zoom>
 </div>
 
-*Mar forecast series kept private and only accessible by the series owner*
+*March forecast series kept private and only accessible by the series owner*
 
 #### Group and users added to the model
+
+All the users/group members have complete edit access on all the features except that they cannot share, rename, or delete the series.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -257,9 +263,10 @@ A *Private Series* created by the *Model creator* is not be accessible by any ot
   </Zoom>
 </div>
 
-*Sharing jan-frcst series with groups and members added to the model* 
+*jan-frcst series shared with all users/groups added to the model* 
 
-- case 1: *Admins* and *Analyzers* have complete access over the shared series, whereas *Viewers* have view-only access. 
+  - Analyzers and Admins have complete access to the *Series*, except that they *cannot share* it with other users.
+  - Viewers just have 'view-only' access.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
@@ -270,6 +277,8 @@ A *Private Series* created by the *Model creator* is not be accessible by any ot
 *Viewer can only view the series, cannot edit/share/view allocation history*
 
 #### Limit to selected groups and users
+
+Members will have limited access on the series.
   
 *Admin* (user1) and *Analyzer* are given view-only access and *Viewer* ("Finance Group" members) is given edit access on '*feb-frcst*' series.
 
@@ -281,24 +290,22 @@ A *Private Series* created by the *Model creator* is not be accessible by any ot
 
 *feb-frcst sharing with selected groups and users*
 
-- Case 2: An *Analyzer* and *Admin* with view-only access cannot edit, share or view allocation history. 
+- *Analyzers* and *Admins* with 'view-only' access can not edit the series. The users only have the permissions to **Comment** on a node, **re-size the columns to fit**, **Show hidden nodes**, and **View Allocation History**.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-    <img alt="Viewer alone has edit access on feb-frcst series" src={useBaseUrl('/doc-images/storage/analyzer-feb-frcst-view-only-access.png')} />
+    <img alt="View only access on the series" src={useBaseUrl('/doc-images/storage/analyzer-view-access-on-series.png')} />
   </Zoom>
 </div> 
 
-*Analyzer with view-only access on feb-frcst series* 
+*View-only access on a series*
 
-- Case 3: A *Viewer* has edit access on the '*feb-frcst*' series and can edit/share/view allocation history.
+  - *Viewers* with *edit-access* on the series and can edit and can access all the features except for editing Weight, Equals, and cannot rename/delete/share the series.
 
 <div style={{textAlign: 'center'}}>
   <Zoom>
-    <img alt="Viewer has edit access permission, Admin/Analyzer do not" src={useBaseUrl('/doc-images/storage/viewer-feb-frcst-edit-access.png')} />
+    <img alt="Edit access on a series" src={useBaseUrl('/doc-images/storage/viewer-feb-frcst-edit-access.png')} />
   </Zoom>
 </div> 
 
-*Viewer with edit access on shared series*  
-
-> *mar-frcst* series is only accessible by the *Model creator* and hidden for *Analyzers* and *Viewers* as in the above screenshot.
+*Viewer with edit access on shared series*
