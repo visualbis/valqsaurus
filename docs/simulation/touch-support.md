@@ -8,8 +8,18 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 
 ValQ now provides optimized touch support and makes interacting with models easier for end-users on mobile and touch-screen devices.
+
 * ValQ will automatically detect the touch device and enable the touch features.
-* You can also enable/disable the touch support functionality and switch back to general ValQ features.
+* You can also enable/disable the touch support functionality and switch back to general Desktop ValQ features.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="ValQ touch support default view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-valq-view.png")} />
+  </Zoom>
+</div>
+
+*ValQ touch support default view*
+
 
 ## ValQ features optimized for touch support
 
@@ -17,19 +27,11 @@ The default touch-enabled ValQ visual screen has unique touch features both in t
 
 ## **Navigation Panel**
 
-The *Scenarios* section is expanded by default, while all other components are collapsed. The *Compare Scenarios* features is now a button.
+The *Scenarios* section is expanded by default, while all other components are collapsed. The **Compare Scenarios** feature is now a button.
 
-### Toggle Touch-friendly mode
+### Switch between Desktop and Touch-friendly version
 
-The **Touch-friendly toggle mode** is available in the **Simulate > Navigation Panel > Visualization** section.
-
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/toggle-touch-support.png")} />
-  </Zoom>
-</div>
-
-*Touch-friendly mode toggle on/off*
+You can switch between *Desktop* and *Touch-enabled devices* mode with a tap on the **Switch to desktop version** button. The button is available at the top in the Navigation panel.
 
 <!--
 ### Compare Scenarios
@@ -56,23 +58,44 @@ A *Summary* of the comparison, the *KPIs*, and the *Key inputs* affecting the sc
 ## Table/Tree view
 
 The visual has a *Pinch and Zoom* feature for easier accessibility. The ValQ model is visualized both in the table view and tree view.
-ValQ visual touch bar options **Tree** Vs **Table** view:
 
-<div style={{ float: "center" }}>
+ **Default Canvas Touch Bar options**
+
+1. [Search](#search) a node in the model.
+1. [Go-to-level](#go-to-level) selection that displays the node hierarchy.
+
+ <div style={{ float: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/initial-visual-screen.png")}/>
+    <img alt="Default Canvas Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-tree-view.png")}/>
   </Zoom>
-</div>
+ </div>
 
-*Default touch-enabled visual screen Tree Vs Table view*
+ *Default Canvas Tree view*
 
-1. **Search** a node in the model.
-2. **Go-to-level** selection that displays the node hierarchy.
-3. **Comment** on the node from the users who share the model.
-4. **Plan series** creation.
-5. **Node details** such as *Node description, Simulation impact and variances, Line and column chart*, and *Waterfall chart*.
+ <div style={{ float: "center" }}>
+  <Zoom>
+    <img alt="Default Canvas Table view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-table-view.png")}/>
+  </Zoom>
+ </div>
 
-> The 3 node related icons in the *Tree/Table* view are enabled only when you select a node.
+ *Default Canvas Table view*
+   
+ **Node selection Touch Bar options**
+
+1. **Delete** - Deletes the simulated value and restores the original value of the node.
+1. [Node Slider](#node-slider) - Simulates a node.
+1. **Month wise simulations**
+1. [Comments](#comment) on the node from the users who share the model.
+1. **Plan series** - Shortcut icon to create Planning series.
+1. [Node details](#node-details) such as *Node description, Simulation impact and variances, Line and column chart*, and *Waterfall chart*.
+
+ <div style={{ float: "center" }}>
+  <Zoom>
+    <img alt="Node Touch Bar menu Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-tree-view.png")}/>
+  </Zoom>
+ </div>
+
+ *Node Touch Bar menu Tree view*
 
 ### Search
 
@@ -86,43 +109,52 @@ The Mac-style spotlight search allows you to search a node in the model. Tap on 
 
 *Type the name of the node in the search box*
 
-* In the *Tree* view, *Copper Price* node is selected and the model is expanded up to the selected node level.
+* In the *Tree* view, *Copper Sold* node is selected and the model is expanded up to the selected node level.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-selected.png")} />
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-selected-tree-view.png")} />
   </Zoom>
 </div>
 
 *The searched node is selected in tree view*
 
-* In the *Table* view, just the searched node is displayed and expanded up-to its child nodes.
+* In the *Table* view, just the searched node is displayed.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-search-table-view.png")} />
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-selected-table-view.png")} />
   </Zoom>
 </div>
 
-*Node search in table view*
+*Node searched in table view*
+
+:::note
+The selected node is not expanded to show the child nodes by default, in both the tree/table views.
+:::
 
 ### Go-to-level
 
-The *Go-to-level* option is available only in a *Tree* view and allows you to select the node-level hierarchy to expand the ValQ model to.
+The *Go-to-level* option helps in expanding the node-level hierarchy in a model.
+Tree/table view are inter-linked and get auto-updated on each selection.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-go-to-level.png")} />
+    <img alt="Node-level hierarchy Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-go-to-level.png")} />
   </Zoom>
 </div>
 
-*Node-level hierarchy*
-
-:::note
-The other icons are node related and gets enabled when you select a node.
-:::
+*Node-level hierarchy Tree view*
 
 In a *Table* view, you can tap on the plus(+)/minus(-) symbol next to each node to expand/collapse the node hierarchy.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Table view of node-level hierarchy" src={useBaseUrl("/doc-images/simulate_tab/touch-support/go-to-level-table-view.png")} />
+  </Zoom>
+</div>
+
+*Node-level hierarchy expansion in Table view*
 
 ### Node slider
 
@@ -149,15 +181,47 @@ The same node simulation(6% better) in the *Table* view:
 
 ### Comment
 
-The *Comment* icon allows you to comment on the selected node.
+Commenting is allowed by the users on the Planning series and shared scenarios.
+- To *view, edit, and delete* the comments, click on the global **Comments** icon at the bezel.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-comment-box.png")} />
+    <img alt="View Simulation comments" src={useBaseUrl("/doc-images/simulate_tab/touch-support/view-simulation-comments.png")} />
   </Zoom>
 </div>
 
-*Comment on a node*
+*View Simulation comments*
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="View Planning series comments" src={useBaseUrl("/doc-images/simulate_tab/touch-support/view-planning-comments.png")} />
+  </Zoom>
+</div>
+
+*View Planning series Comments*
+
+- To enter new comments, click on the comments icon from the Plan and Simulate tabs respectively.
+You can also edit/delete the comments owned by you.
+
+In the **Simulate** tab, tap on a node and then tap the **Comments** icon in the Touch Bar menu.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Enter node comment" src={useBaseUrl("/doc-images/simulate_tab/touch-support/enter-node-comment.png")} />
+  </Zoom>
+</div>
+
+*Type a new comment on the node*
+
+In the **Plan** tab, tap on a series value and then tap the **Comment** icon in the top menu.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Enter Planning series comment" src={useBaseUrl("/doc-images/simulate_tab/touch-support/enter-planning-comment.png")} />
+  </Zoom>
+</div>
+
+*Enter Planning comment*
 
 ### Node details
 
