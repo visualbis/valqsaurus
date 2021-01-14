@@ -79,25 +79,26 @@ Say, you want to analyze how multiple *key Inputs* - *Copper Price, Diesel Price
    
    *Fill in the new sensitivity chart fields*
 
-1. Click **Select Input Nodes**
+1. Click **Next**
  - In the **Node Selection** window, click the plus (+) sign next to the 3 *Key Input* nodes to select them.
+   - Start typing a node's name in the **Search** box to search for the related node.
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
       alt="Select input nodes"
-      src={useBaseUrl("/doc-images/analyze/select-input-node.png")}
+      src={useBaseUrl("/doc-images/analyze/select-input-nodes.png")}
     />
   </Zoom>
  </div>
 
- *Select the input nodes*
+ *Key input nodes selected in the right pane*
 
  :::note
  You can select up to 20 nodes.
  :::
 
- - Click **Apply**.
+ - Click **Save**.
 
 Your *Sensitivity Analysis* chart will be created as shown in the screenshot below:
 
@@ -112,29 +113,39 @@ Your *Sensitivity Analysis* chart will be created as shown in the screenshot bel
 
 *Sensitivity Analysis chart for Net Profit*
 
-Every input node indicates the same **Base** value ($56.8m) as *Net Profit*, **Variance** change in the value, and the resulted **Low** and **High** output node values when the input node is simulated by +/- Deviation percentage.
+As you hover over each input node's bar, each node indicates the same **Base** value ($56.81m) as *Net Profit*, **Variance** change in the value, and the resulted **Low** and **High** output node values when the input node is simulated by +/- Deviation percentage.
 
 ### Edit the Analysis report
 
 Once your report is created, you can use the top menu label to edit the report by editing the report's *Name*, *Series*, *Output Node*, *Deviation* percentage, time *Period*, and *Input Nodes*.
-
-Click **Update** each time you edit any variable for the changes to be reflected on the Analysis chart.
+The report is auto-updated and saved to your workspace.
 
 ### Sensitivity analysis based simulation
 
-Go to **Simulate** tab and simulate the *Mill Throughput* node by +10%.
+Go to **Simulate** tab and simulate the *Mill Throughput* node by +/- 10%.
 This affects the *Net Profit* output node and changes the value to $93.1m as depicted by our *Sensitivity Analysis* report.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
-      alt=""
-      src={useBaseUrl("/doc-images/analyze/simulate-input-node.png")}
+      alt="Simulate Mill Throughput by +10%"
+      src={useBaseUrl("/doc-images/analyze/simulate-node-better.png")}
     />
   </Zoom>
 </div>
 
-*Input node deviation effect on the output node*
+*Input node deviation (+10%) effect on the output node*
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Simulate Mill Throughput by -10%"
+      src={useBaseUrl("/doc-images/analyze/simulate-node-worst.png")}
+    />
+  </Zoom>
+</div>
+
+*Input node deviation (-10%) effect on the output node*
 
 ## Sensitivity Analysis summary
 
