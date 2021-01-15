@@ -39,17 +39,31 @@ The authorization key will be generated and will only be available to report Adm
 
  *Select Export as datasource*
 
-1. You can either **Select** the *Series/Scenarios* that you want to export, or **Export all** and click **Next**.
+2. You can either **Select** certain *Series/Scenarios* to export, or **Export all** of them.
 
+ - Choose the *Series/Scenarios* to export:
+  
  <div style={{textAlign: 'center'}}>
   <Zoom>
-   <img alt="Select the Series/Scenarios to upload" src={useBaseUrl('/doc-images/web-datasource/create-web-datasource.png')} />
+   <img alt="Select the Series/Scenarios to export" src={useBaseUrl('/doc-images/web-datasource/create-web-datasource.png')} />
   </Zoom>
  </div>
  
  *Select Series/Scenarios to create a Web datasource*
 
-1. The data can be exported in either a *Tree structure* or a *Flat structure* as shown in the **Export format** screen:
+ - Export all the *Series/Scenarios*:
+
+ <div style={{textAlign: 'center'}}>
+  <Zoom>
+   <img alt="Export all the Series/Scenarios" src={useBaseUrl('/doc-images/web-datasource/export-all.png')} height="530" />
+  </Zoom>
+ </div>
+
+ *Export all Series/Scenarios*
+ 
+3. Click **Next**.
+
+4. The data can be exported in either a *Tree structure* or a *Flat structure* as shown in the **Export format** screen:
 
  a. The data is exported in a tree format just like the ValQ model.
 
@@ -70,13 +84,13 @@ The authorization key will be generated and will only be available to report Adm
 
  <div style={{textAlign: 'center'}}>
   <Zoom>
-   <img alt="Export Format with Flat structure" src={useBaseUrl('/doc-images/web-datasource/export-format-flat-structure.png')} />
+   <img alt="Export Format with Flat structure" src={useBaseUrl('/doc-images/web-datasource/export-format-flat-structure.png')} height="470"/>
   </Zoom>
  </div>
 
  *Export format with Flat structure*
 
-   - **Customization**: The tab in the *Flat* structure has an additional field - *Show parent title*.
+   - **Customization**: The tab in the *Flat* structure has an additional field - *Show Parent title*.
    :::note
    The Flat structure does not have the options to export the *node-level hierarchy* or export just the *leaf nodes*.
    :::
