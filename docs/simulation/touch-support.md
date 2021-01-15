@@ -14,7 +14,7 @@ ValQ now provides optimized touch support and makes interacting with models easi
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="ValQ touch support default view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-valq-view.png")} />
+    <img alt="ValQ touch support default view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-valq-view.png")} height="450"/>
   </Zoom>
 </div>
 
@@ -64,17 +64,17 @@ The visual has a *Pinch and Zoom* feature for easier accessibility. The ValQ mod
 1. [Search](#search) a node in the model.
 1. [Go-to-level](#go-to-level) selection that displays the node hierarchy.
 
- <div style={{ float: "center" }}>
+ <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Default Canvas Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-tree-view.png")}/>
+    <img alt="Default Canvas Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-tree-view.png")} height="450"/>
   </Zoom>
  </div>
 
  *Default Canvas Tree view*
 
- <div style={{ float: "center" }}>
+ <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Default Canvas Table view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-table-view.png")}/>
+    <img alt="Default Canvas Table view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-table-view.png")} height="450"/>
   </Zoom>
  </div>
 
@@ -89,9 +89,9 @@ The visual has a *Pinch and Zoom* feature for easier accessibility. The ValQ mod
 1. **Plan series** - Shortcut icon to create Planning series.
 1. [Node details](#node-details) such as *Node description, Simulation impact and variances, Line and column chart*, and *Waterfall chart*.
 
- <div style={{ float: "center" }}>
+ <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Node Touch Bar menu Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-tree-view.png")}/>
+    <img alt="Node Touch Bar menu Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-tree-view.png")} height="450"/>
   </Zoom>
  </div>
 
@@ -103,17 +103,17 @@ The Mac-style spotlight search allows you to search a node in the model. Tap on 
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/search-mac-spotlight.png")} />
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/search-mac-spotlight.png")} height="450"/>
   </Zoom>
 </div>
 
 *Type the name of the node in the search box*
 
-* In the *Tree* view, *Copper Sold* node is selected and the model is expanded up to the selected node level.
+* In *Tree* view, the *Copper Sold* node is selected and the model is expanded up to the selected node level.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-selected-tree-view.png")} />
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-selected-tree-view.png")} height="450"/>
   </Zoom>
 </div>
 
@@ -123,7 +123,7 @@ The Mac-style spotlight search allows you to search a node in the model. Tap on 
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-selected-table-view.png")} />
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-selected-table-view.png")} height="450"/>
   </Zoom>
 </div>
 
@@ -140,7 +140,7 @@ Tree/table view are inter-linked and get auto-updated on each selection.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Node-level hierarchy Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-go-to-level.png")} />
+    <img alt="Node-level hierarchy Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-go-to-level.png")} height="450"/>
   </Zoom>
 </div>
 
@@ -150,7 +150,7 @@ In a *Table* view, you can tap on the plus(+)/minus(-) symbol next to each node 
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Table view of node-level hierarchy" src={useBaseUrl("/doc-images/simulate_tab/touch-support/go-to-level-table-view.png")} />
+    <img alt="Table view of node-level hierarchy" src={useBaseUrl("/doc-images/simulate_tab/touch-support/go-to-level-table-view.png")} height="450"/>
   </Zoom>
 </div>
 
@@ -163,7 +163,7 @@ Tap and select a node (*Copper Price*) to enable the slider. In the below screen
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-slidebar.png")} />
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-slidebar.png")} height="450"/>
   </Zoom>
 </div>
 
@@ -173,7 +173,7 @@ The same node simulation(6% better) in the *Table* view:
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-simulation-table-view.png")} />
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-simulation-table-view.png")} height="450"/>
   </Zoom>
 </div>
 
@@ -182,23 +182,6 @@ The same node simulation(6% better) in the *Table* view:
 ### Comment
 
 Commenting is allowed by the users on the Planning series and shared scenarios.
-- To *view, edit, and delete* the comments, click on the global **Comments** icon at the bezel.
-
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img alt="View Simulation comments" src={useBaseUrl("/doc-images/simulate_tab/touch-support/view-simulation-comments.png")} />
-  </Zoom>
-</div>
-
-*View Simulation comments*
-
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img alt="View Planning series comments" src={useBaseUrl("/doc-images/simulate_tab/touch-support/view-planning-comments.png")} />
-  </Zoom>
-</div>
-
-*View Planning series Comments*
 
 - To enter new comments, click on the comments icon from the Plan and Simulate tabs respectively.
 You can also edit/delete the comments owned by you.
@@ -207,21 +190,11 @@ In the **Simulate** tab, tap on a node and then tap the **Comments** icon in the
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Enter node comment" src={useBaseUrl("/doc-images/simulate_tab/touch-support/enter-node-comment.png")} />
+    <img alt="Enter node comment" src={useBaseUrl("/doc-images/simulate_tab/touch-support/enter-node-comment.png")} height="450"/>
   </Zoom>
 </div>
 
 *Type a new comment on the node*
-
-In the **Plan** tab, tap on a series value and then tap the **Comment** icon in the top menu.
-
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img alt="Enter Planning series comment" src={useBaseUrl("/doc-images/simulate_tab/touch-support/enter-planning-comment.png")} />
-  </Zoom>
-</div>
-
-*Enter Planning comment*
 
 ### Node details
 
@@ -229,32 +202,23 @@ Select a node either in *Tree/Table* view and tap *details* to view the node det
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-details-icon-tree.png")} />
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-details-icon.png")} height="450"/>
   </Zoom>
 </div>
 
 *Node details icon in tree view*
 
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-details-icon-table.png")} />
-  </Zoom>
-</div>
-
-*Node details icon in table view*
-
 A detailed node's information screen is displayed:
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-details.png")} />
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-details.png")} height="450"/>
   </Zoom>
+  <p>Node Details</p>
 </div>
-
-*Node details*
 
 Tap close(x) at the top right corner to exit out of the *node details* screen.
 
 :::note
-To switch between the node menu and the default touch-enabled ValQ screen, click anywhere on canvas.
+To switch between the node menu and the default touch-enabled ValQ screen, click anywhere on the Canvas.
 :::
