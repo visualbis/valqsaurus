@@ -71,3 +71,14 @@ html[data-theme="dark"] blockquote {
   padding: 0px;
   margin: 0px;
 }
+
+.release {
+    background-color: rgb(33, 175, 144);    
+    border-radius: 10px;
+    padding: 0.2em;
+    color: white;
+}
+
+.release a:hover {
+    color: white;
+}

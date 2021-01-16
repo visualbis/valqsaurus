@@ -1,0 +1,153 @@
+---
+id: read_mode
+title: Read-only Mode
+sidebar_label: Read-only Mode
+---
+import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+<div style={{textAlign: 'justify'}}>
+Those users who are not part of the ValQ workspace are presented with Read-only mode 
+capabilities which allows them to view the model and perform run-time operations without enforcing login.
+This feature is beneficial for embedding Power BI reports.
+</div> <br />
+
+> **Note** <br />
+Read-only mode is _not_ available in Power BI Desktop
+
+## Reading View
+
+Read-only mode is available only in Power BI Service as Reading View which is it's default mode.
+
+<div style={{ textAlign: "left" }}>
+  <Zoom>
+    <img
+      alt="Export Format"
+      src={useBaseUrl("/doc-images/readonly/rom9.png")}
+    />
+  </Zoom>
+</div><br />
+
+Let's take a look at the ValQ tabs on Reading View of Power BI Service.
+
+### 1. Model
+
+Users need to be part of the ValQ workspace to access Model tab.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Export Format"
+      src={useBaseUrl("/doc-images/readonly/rom1.png")}
+      width={370}
+      height={325}
+    />
+  </Zoom>
+</div>
+
+### 2. Plan
+
+Planning Editor cannot be used on Read-only view.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Export Format"
+      src={useBaseUrl("/doc-images/readonly/rom2.png")}
+    />
+  </Zoom>
+</div><br />
+
+However, in case of existing planning series, the users can view the plan. Notice that the Plan features are disabled.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Export Format"
+      src={useBaseUrl("/doc-images/readonly/rom3.png")}
+    />
+  </Zoom>
+</div>
+
+### 3. Simulate
+
+<div style={{textAlign: 'justify'}}>
+On the Simulate tab, the users can view the model, perform simulations, switch to tabular view, create, compare, and export scenarios.
+</div> <br />
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Export Format"
+      src={useBaseUrl("/doc-images/readonly/rom4.png")}
+    />
+  </Zoom>
+</div> <br />
+
+<div style={{textAlign: 'justify'}}>
+However, the Scenarios comes with a warning message to the Reading View users as shown below. 
+The scenarios created under read mode gets deleted on clicking Reset to Default icon on Power BI Service.
+</div> <br />
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Export Format"
+      src={useBaseUrl("/doc-images/readonly/rom5.png")}
+    />
+  </Zoom>
+</div> <br />
+
+> **Note** <br />
+The user is required to log in to ValQ workspace to save the scenarios created under read mode.
+
+### 4. Analyze
+
+Variance Analysis is fully functional on Reading View.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Export Format"
+      src={useBaseUrl("/doc-images/readonly/rom6.png")}
+    />
+  </Zoom>
+</div> <br />
+
+Reading Viewe users can make use of ValQ's Attribution Analysis.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Export Format"
+      src={useBaseUrl("/doc-images/readonly/rom7.png")}
+    />
+  </Zoom>
+</div>
+
+## Edit Report
+
+Users who are part of the workspace can click the Edit Report option on Power BI Service and then login to workspace to get the complete access and use ValQ.
+
+<div style={{ textAlign: "left" }}>
+  <Zoom>
+    <img
+      alt="Export Format"
+      src={useBaseUrl("/doc-images/readonly/rom8.1.png")}
+    />
+  </Zoom>
+</div> <br />
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Export Format"
+      src={useBaseUrl("/doc-images/readonly/rom8.2.png")}
+    />
+  </Zoom>
+</div>
+
+
+

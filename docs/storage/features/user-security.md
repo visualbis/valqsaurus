@@ -1,0 +1,277 @@
+---
+id: user-security
+title: User Security in ValQ
+sidebar_label: 6. User Security
+hide_title: true
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import { Tag } from "../../../src/ProductTag.js";
+
+<Tag
+header="User Security in ValQ"
+image={useBaseUrl("/doc-images/valq-collaborate.png")}
+/>
+
+ValQ Collaborate (Enterprise Edition) introduces security features to restrict access to your models/nodes, scenarios, planning series to a given set of users and groups.
+
+The security feature helps you to manage the view/edit access on your model for users or groups.
+User and group management is administered through <Link to={useBaseUrl('docs/storage/admin-console')}>Admin console</Link> page.
+
+## Security Roles and Level of Permissions
+
+You can manage the model level data security by using roles and then adding users to these different roles. A role has certain access controls and permissions.
+
+### Understand the User Roles
+
+User security roles define a set of access privileges in ValQ model functionalities such as Model, Nodes, Scenarios, Planning series, Comments, etc. 
+
+The following table describes the privileges of a user role in ValQ: 
+
+| Security Role | Privileges                                                                                                                                                          | Description                                                                                                                                                            |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Admin**     | Create and edit model/scenarios/series                                                                                                                              | Admin role can be assigned to a user or group by the *Model creator<sup>1</sup>* or other admins.  Note: The model/scenario can be deleted only by the *Model creator* |
+| **Analyzer**  | <ul><li>Cannot access the Model tab</li><li>Can copy, edit, share, download and compare shared scenarios</li><li>Cannot delete the shared scenario/series</li></ul> | This role has read/write access on the shared scenarios/series and read access on the nodes.                                                                           |
+| **Viewer**    | View shared model, nodes and scenarios                                                                                                                              | This role has view-only access on the shared model and scenarios by default. **Note**: A viewer can be granted edit<sup>2</sup> permissions on certain features.       |
+
+- <sup>1</sup>Model creator/owner is the default Admin who can add other users as admins or members.
+- <sup>2</sup>ValQ features when shared with the "Limited to certain users" option, only selected users or groups can be given view-only or edit access.
+
+### Scope of User Roles in ValQ features 
+
+The scope of the access is defined by the user’s roles and permissions granted in the ValQ visuals by the *Model creator* or an *Admin*. 
+Following are the privileges assigned on the shared model:
+
+| Feature                                                 | Admin                                 | Analyzer                              | Viewer                                |
+|---------------------------------------------------------|---------------------------------------|---------------------------------------|---------------------------------------|
+| Editing the model/security settings                     | Yes                                   | No                                    | No                                    |
+| Creating private scenarios/series                       | Yes                                   | Yes                                   | No                                    |
+| View/compare/copy/download/edit shared scenarios/series | Yes, if given edit access<sup>2</sup> | Yes, if given edit access<sup>2</sup> | Yes, if given edit access<sup>2</sup> |
+| Share/Delete shared scenario/series                     | No                                    | No                                    | No                                    |
+| Configure Node Security access                          | Yes                                   | No                                    | No                                    |
+| Comments                                                | Yes                                   | Yes                                   | Yes                                   |
+| Variance Analysis                                       | Yes                                   | Yes                                   | Yes                                   |
+| Attribution Analysis                                    | Yes                                   | Yes                                   | Yes                                   |
+| Sensitivity Analysis                                    | Yes                                   | Yes                                   | Yes                                   |
+| Audit logs                                              | Yes                                   | Yes                                   | Yes                                   |
+| Export as datasource                                    | Yes                                   | No                                    | No                                    |
+
+<sup>2</sup>ValQ features when shared with the "Limited to certain users" option, only selected users/groups are given view-only or edit access.
+
+## Manage Model Access 
+
+The *Model owner(default Admin)* can add other members to the model with the above-defined roles as *Admin, Analyzer*, or a *Viewer*.
+* Before you begin, you must **Upload** your model to the workspace.
+* Click on the 3 dots `...` next to your User profile and select **Settings**.
+* In the **Model Settings > Security** section add other users/groups to the model.
+
+  <div style={{textAlign: 'center'}}>
+    <Zoom>
+      <img alt="Add users/groups to a model" src={useBaseUrl('/doc-images/storage/user-security-roles.png')} />
+    </Zoom>
+  </div>  
+
+  *Add users/groups and assign model-level user roles* 
+
+* Following are the users/roles:
+  - testQA user1 is added as an *Admin*.
+  - ValQ Test User as an *Analyzer*.
+  - finance-group as a *Viewer*. All the members (user3, user4) of the group are assigned *Viewer* level access.
+
+> A user can view the assigned model-level roles and permissions in the *Model Settings* side panel as shown in the above screenshot.
+
+- Case 1: *Admin* has complete access to the **Model** Tab and sub-menus. An *Admin* can edit/add/delete the *Nodes*. Also is allowed to edit the user security access on the model to other users.
+- Case 2: *Analyzer* and *Viewer* do not have access to the Model tab as shown in the below screenshot.
+
+  <div style={{textAlign: 'center'}}>
+    <Zoom>
+      <img alt="An Analyzer cannot access the model/data series/export/writeback" src={useBaseUrl('/doc-images/storage/analyzer-no-model-access.png')} />
+    </Zoom>
+  </div> 
+
+  *Model tab and functionalities(data series, export, writeback, etc.) disabled* 
+
+:::note 
+Any member that is either not added as a user or part of a group added to the model, will not be able to access the ValQ report. 
+:::
+
+<div style={{textAlign: 'center'}}>
+  <Zoom>
+    <img alt="Non-member of the model denied access to ValQ report" src={useBaseUrl('/doc-images/storage/access-denied.png')} />
+  </Zoom>
+</div> 
+
+*Access denied to a non-member of the model*
+
+## Manage Node Access
+
+Model owner/admins can provide node level access control to groups and users added to the model.
+- Select the Node and click the <Link to={useBaseUrl('docs/model/node#node-editor')}>editor icon</Link> next to the node.  
+- In the **Edit Node** pop up window select **Access Control**.
+
+> The same parent level access control will be applied for the child nodes as well. 
+
+The selected Nodes and the child nodes can be shared with the following 2 options:
+
+1. **Groups and users added to the model (default)**
+
+  <div style={{textAlign: 'center'}}>
+   <Zoom>
+    <img alt="Access control permission given to all users/groups" src={useBaseUrl('/doc-images/storage/node-access-control-all.png')} />
+   </Zoom>
+  </div>
+
+  *Consumer Node accessible to all users/groups* 
+
+1. **Limit to selected groups and users**
+
+  <div style={{textAlign: 'center'}}>
+   <Zoom>
+    <img alt="Node accessible by Admins alone" src={useBaseUrl('/doc-images/storage/node-accessible-limited-users.png')} />
+   </Zoom>
+  </div>
+
+  *Industrials Node shared with limited groups and users(Admins alone)* 
+
+  * Case 1: Admin alone has access to the *Industrials* node
+  
+  <div style={{textAlign: 'center'}}>
+   <Zoom>
+    <img alt="Node accessible by Admins" src={useBaseUrl('/doc-images/storage/node-accessible-to-admin.png')} />
+   </Zoom>
+  </div>
+
+  *An Admin has access to Industrials node*
+
+  * Case 2: *Analyzer* and *Viewer* cannot access the *Industrials* node
+
+  <div style={{textAlign: 'center'}}>
+   <Zoom>
+    <img alt="Node hidden for Analyzer and Viewer" src={useBaseUrl('/doc-images/storage/node-hidden-analyzer-viewer.png')} />
+   </Zoom>
+  </div>
+
+  *A viewer login with no Industrials node in the model*
+
+> Industrials sub-model is no longer listed in the *Navigation panel* for the users with *Analyzer* and *Viewer* roles.
+
+## Manage Scenario Access
+
+On the **Simulate** tab select the *scenario* to be shared and click the *share* icon next to the *scenario*.
+*Scenarios* can be kept private by the *Model creator* or shared with the following 2 options:
+1. **Groups and users added to the model (default)**
+
+  All the members of the group will be able to access *scenario 1* based on their role privileges.
+  <div style={{textAlign: 'center'}}>
+   <Zoom>
+    <img alt="Node accessible by Admins alone" src={useBaseUrl('/doc-images/storage/scenario-sharing-all.png')} />
+   </Zoom>
+  </div>
+
+  *Scenario1 shared with groups and users added to the model*
+
+    * *Admin* and *Analyzer* can view, compare, download, copy, and edit the shared scenario. 
+    * *Viewer* can only view, compare and download the shared scenario.
+  
+1. **Limit to selected groups and users**
+
+  Admin/Analyzer given 'view-only' access on *scenario2*, and 'edit-access' given to the *Finance group(Viewer)* group.
+  <div style={{textAlign: 'center'}}>
+   <Zoom>
+    <img alt="Admin/Analyzer with view access, Viewer with edit access" src={useBaseUrl('/doc-images/storage/sharing-scenario-limited-user.png')} />
+   </Zoom>
+  </div>
+
+  *Scenario shared with edit-access to the group*
+
+- Case 1: *Admin* and *Analyzer* can only view, compare, download and copy the shared scenario.
+
+  <div style={{textAlign: 'center'}}>
+   <Zoom>
+    <img alt="Analyzer can only copy/compare scenario2" src={useBaseUrl('/doc-images/storage/analyzer-view-access-scenario2.png')} />
+   </Zoom>
+  </div>
+
+  *Analyzer with view access on shared scenario2* 
+
+- *Viewer* can view, compare, download, and edit(As given edit access) the shared scenarios. 
+
+  <div style={{textAlign: 'center'}}>
+   <Zoom>
+    <img alt="Viewers with copy/edit/share/download access on scenario2" src={useBaseUrl('/doc-images/storage/user3-edit-share-access-scenario2.png')} />
+   </Zoom>
+  </div>
+
+  *Viewer has edit access on shared scenario2* 
+
+## Manage Series Access
+
+A *Model creator/Admin* can keep the series private, share with users/groups, or limit to certain users.
+
+> No other user other than the Model owner is allowed to rename/delete/share the series.
+
+* On the **Plan** tab, select any series name and click the **Share** icon in the top right ribbon bar.
+* In the **Share Settings** pop window select one of the following options:
+
+1. **Private**
+
+ <div style={{textAlign: 'center'}}>
+  <Zoom>
+ <img alt="Mar forecast series kept private to the creator/admin" src={useBaseUrl('/doc-images/storage/mar-frcst-private.png')} />
+  </Zoom>
+ </div>
+
+ *March forecast series kept private and only accessible by the series owner*
+
+1. **Group and users added to the model**
+
+  <div style={{textAlign: 'center'}}>
+   <Zoom>
+     <img alt="Give access control on jan-frcst series to groups and users added to the model" src={useBaseUrl('/doc-images/storage/jan-frcst-shared-all-groups.png')} />
+   </Zoom>
+  </div>
+
+  *jan-frcst series shared with all users/groups* 
+
+   - Case 1: Admins/Analyzers have complete access to the series, except for the *share/rename/delete* access.
+   - Case 2: Viewers just have 'view-only' access and cannot edit the series.
+
+   <div style={{textAlign: 'center'}}>
+    <Zoom>
+      <img alt="Viewer given limited view access, Admin/Analyzer complete access" src={useBaseUrl('/doc-images/storage/viewer-jan-frcst-view-only.png')} />
+    </Zoom>
+   </div>
+
+   *Viewer with the view-only access*
+
+1. **Limit to selected groups and users**
+  
+  <div style={{textAlign: 'center'}}>
+    <Zoom>
+      <img alt="Viewer alone has edit access on feb-frcst series" src={useBaseUrl('/doc-images/storage/feb-frcst-series-limited-users.png')} />
+    </Zoom>
+  </div> 
+
+  *view-only access to Admin/Analyzer*
+
+   - Case 1: *Admins/Analyzers* cannot edit the series. The users can only *Comment, re-size the columns to fit, Show hidden nodes*, and *View Allocation History*.
+
+  <div style={{textAlign: 'center'}}>
+    <Zoom>
+      <img alt="View only access on the series" src={useBaseUrl('/doc-images/storage/analyzer-view-access-on-series.png')} />
+    </Zoom>
+  </div> 
+
+  *View-only access on a series*
+
+   - Case 2: *Viewers* with *edit-access* can edit the series, but cannot rename/delete/share the series.
+
+  <div style={{textAlign: 'center'}}>
+    <Zoom>
+      <img alt="Edit access on a series" src={useBaseUrl('/doc-images/storage/viewer-feb-frcst-edit-access.png')} />
+    </Zoom>
+  </div> 
+
+  *Viewer with edit access on shared series*
