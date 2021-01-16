@@ -18,7 +18,7 @@ image={useBaseUrl("/doc-images/valq-collaborate.png")}
 
 The model collaboration feature allows the members added to a model to view, share, and comment on each other's changes.
 The *Model creator* must <Link to={useBaseUrl("docs/storage/features/save-model")}>Save and upload</Link> the model before collaborating with other users.
-In addition, the model must also be shared with users/groups with a dedicated <Link to={useBaseUrl('#')}>user role</Link>.
+In addition, the model must also be shared with the selected users/groups.
 
 Users of the model can view the comments on *Planning series* and *shared Scenarios* by clicking on the *comments* icon from the **Plan** and **Simulate** tabs respectively.
 
@@ -54,7 +54,7 @@ Your comment is saved to the comment section for Planning under the planning ser
 
 *Comment on the selected node*
 
-### Add comments for Simulation
+### Add comments for Scenarios
 
 On the Simulate canvas, hover over the node that you want to comment on and click on the *comment* icon above the node.
 Write your comment in the *Comments* box and click *Post*.
