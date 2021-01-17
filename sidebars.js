@@ -36,14 +36,14 @@ module.exports = {
             "simulation/simulation_canvas",
             "simulation/navigation_panel",
             "simulation/tableview",
+            "simulation/touch-support",
         ],
         Analyze: [
             "analysis/analyze_overview",
             "analysis/variance_analysis",
             "analysis/attribution-analysis",
+            "analysis/sensitivity-analysis"
         ],
-        "Storage and Collaboration": ["storage/storage-collaboration"],
-        /*
         "Storage and Collaboration": [
             "storage/valq-collaborate",
             "storage/admin-console",
@@ -60,7 +60,6 @@ module.exports = {
                 ],
             },
         ],
-        */
         Resources: [
             "faq/formula-list",
             "faq/definitions",

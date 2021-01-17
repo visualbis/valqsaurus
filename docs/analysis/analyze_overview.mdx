@@ -9,20 +9,25 @@ import Link from "@docusaurus/Link";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-<div style={{ textAlign: "justify" }}>
-  The Analyze tab allows you to run advanced analysis on the data. Currently,
-  you can perform the following:
-</div> <br />
+Run advanced analysis on your data model and evaluate your business performance to take actions using ValQ’s Analyze tab.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="ValQ logo"
+      src={useBaseUrl("/doc-images/analyze/analyze-tab.png")}
+    />
+  </Zoom>
+</div>
+
+*Analyze tab and the 3 types of analysis*
+
+Below are the 3 types of analysis that you can perform:
 
 1. <Link to={useBaseUrl("docs/analysis/variance_analysis")}>
      Variance Analysis
-   </Link>
-   : Compare the data series and calculate the absolute and percentage variances
-   for all the nodes.
+   </Link>: Compare multiple series/scenario to calculate the absolute and percentage variance for each node in the model.
 1. <Link to={useBaseUrl("docs/analysis/attribution-analysis")}>
-     {" "}
      Attribution Analysis
-   </Link>
-   : Evaluate how different KPIs and key input values affect the overall result.
-
-<br />
+   </Link>: Evaluate the simulation impact of various input nodes and it's cumulative effect on the Key Performance Indicator.
+1. <Link to={useBaseUrl('docs/analysis/sensitivity-analysis')}>Sensitivity Analysis</Link>: Identify and analyze how the output node gets affected in response to deviation in a value driver represented by way of a tornado chart.
