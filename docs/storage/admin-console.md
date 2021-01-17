@@ -89,8 +89,8 @@ In the **Admin Console** left navigation panel, click **User Manager**.
 
  *An Admin can edit other member's role and groups*
 
-1. Members who request access to your model are listed under *Request Pending* tab and you can choose to accept/deny the request.
-1. Click on **Bulk upload** button at the top right corner to import a complete list of members from a CSV file.
+1. Members who request access to your model are listed under the *Request Pending* tab and you can choose to accept/deny the request.
+1. Click on the **Bulk upload** button at the top right corner to import a complete list of members from a CSV file.
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -217,7 +217,7 @@ Click on a *Model*  for the following details:
 
 *Member user role denied permission to view Access control*
 
-- **Details**: Summarized model details like *Model name, Published at, Created by, Updated at, Udated by*, and *Number of series*.
+- **Details**: Summarized model details like *Model name, Published at, Created by, Updated at, Updated by*, and *Number of series*.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>

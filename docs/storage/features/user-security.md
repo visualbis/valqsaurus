@@ -109,7 +109,7 @@ Any member that is either not added as a user or part of a group added to the mo
 
 Model owner/admins can provide node level access control to groups and users added to the model.
 - Select the Node and click the <Link to={useBaseUrl('docs/model/node#node-editor')}>editor icon</Link> next to the node.  
-- In the **Edit Node** pop up window select **Access Control**.
+- In the **Edit Node** pop-up window select **Access Control**.
 
 > The same parent level access control will be applied for the child nodes as well. 
 
