@@ -20,12 +20,14 @@ module.exports = {
             logo: {
                 alt: "ValQ Logo",
                 src: "img/valq-icon.png",
+                href: "https://valq.com",
             },
             items: [
                 {
-                    to: "docs/intro/introduction",
+                    to: "/",
                     label: "Docs",
-                    position: "right",
+                    position: "left",
+                    title: "Docs Home",
                 },
             ],
         },
