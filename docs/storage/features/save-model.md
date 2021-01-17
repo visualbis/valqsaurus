@@ -73,7 +73,7 @@ A user must log in to the workspace to upload a model.
   </Zoom>
 </div>
 
-*Upload and save model to your workspace*
+*Upload and save the model to your workspace*
 
 * Click **Upload**.
 
