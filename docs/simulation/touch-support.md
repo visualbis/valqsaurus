@@ -109,7 +109,7 @@ The Mac-style spotlight search allows you to search a node in the model. Tap on 
 
 *Type the name of the node in the search box*
 
-* In *Tree* view, the *Copper Sold* node is selected and the model is expanded up to the selected node level.
+* In the *Tree* view, the *Copper Sold* node is selected and the model is expanded up to the selected node level.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>

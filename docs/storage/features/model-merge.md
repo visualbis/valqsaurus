@@ -167,7 +167,7 @@ Mapping the series is helpful in tracking linked series changes from the present
 
 2. Go to **Model > Data Series > Linked Model Mapping**
 
-Click on *Map Series* tab. Map the series of the *Consolidated* model with the respective linked model series.
+Click on the *Map Series* tab. Map the series of the *Consolidated* model with the respective linked model series.
 
  <div style={{ textAlign: "center" }}>
   <Zoom>
