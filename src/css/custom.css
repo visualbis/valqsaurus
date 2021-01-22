@@ -4,19 +4,39 @@
  * work well for content-centric websites.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 /* You can override the default Infima variables here. */
 :root {    
+
   --ifm-color-primary: #1babe2;
   --ifm-color-primary-dark: #189acb;
   --ifm-color-primary-darker: #1791c0;
   --ifm-color-primary-darkest: #13789e;
   --ifm-color-primary-light: #30b4e6;
   --ifm-color-primary-lighter: #3bb8e8;
-  --ifm-color-primary-lightest: #5dc4ec;
+  --ifm-color-primary-lightest: #5dc4ec; 
+
+/*  --ifm-color-primary: #0c2344;
+  --ifm-color-primary-dark: #0b1f3d;
+  --ifm-color-primary-darker: #0a1e3a;
+  --ifm-color-primary-darkest: #081830;
+  --ifm-color-primary-light: #0d264b;
+  --ifm-color-primary-lighter: #0e284e;
+  --ifm-color-primary-lightest: #102d58;  */
   --ifm-code-font-size: 95%;
-  font-family: Inter;
-  color: #121212;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.7em;
+  font-weight: 400;
 }
+
+html[data-theme="dark"] h1.hero__title,
+html[data-theme="dark"] p.hero__subtitle {
+    color: #FFFFFF !important;
+},
+html[data-theme="dark"] div.styles.buttons
+
 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
@@ -32,7 +52,7 @@ blockquote {
 }
 
 html[data-theme="dark"] blockquote {
-  background-color: rgb(19, 18, 18);
+  background-color: rgb(19, 18, 18); 
   color: rgb(255, 255, 255);
   border-color: rgb(29, 191, 231);
 }
