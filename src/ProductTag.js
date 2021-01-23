@@ -3,14 +3,11 @@ import ReactDOM from "react-dom";
 import "./css/custom.css";
 
 export const Tag = (props) => {
-  return (
-    <div className="productTag">
-      <header>
-        <h1>{props.header}</h1>
+    return (
         <div>
-          <img src={props.image} />
+            <header>
+                <h1 class="docTitle_1Lrw">{props.header} <div><img src={props.image} /></div></h1>
+            </header>
         </div>
-      </header>
-    </div>
-  );
+    );
 };

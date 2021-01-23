@@ -1,6 +1,6 @@
 module.exports = {
     title: "ValQ",
-    tagline: "Modern Digital Planning",
+    tagline: "Modern Visual Planning",
     url: "https://valq.com",
     baseUrl: "/",
     noIndex: true, // Defaults to `false`

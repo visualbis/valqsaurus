@@ -4,17 +4,31 @@
  * work well for content-centric websites.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 /* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+:root {    
+
+  --ifm-color-primary: #1babe2;
+  --ifm-color-primary-dark: #189acb;
+  --ifm-color-primary-darker: #1791c0;
+  --ifm-color-primary-darkest: #13789e;
+  --ifm-color-primary-light: #30b4e6;
+  --ifm-color-primary-lighter: #3bb8e8;
+  --ifm-color-primary-lightest: #5dc4ec; 
   --ifm-code-font-size: 95%;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.7em;
+  font-weight: 400;
 }
+
+html[data-theme="dark"] h1.hero__title,
+html[data-theme="dark"] p.hero__subtitle {
+    color: #FFFFFF !important;
+},
+html[data-theme="dark"] div.styles.buttons
+
 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
@@ -30,7 +44,7 @@ blockquote {
 }
 
 html[data-theme="dark"] blockquote {
-  background-color: rgb(19, 18, 18);
+  background-color: rgb(19, 18, 18); 
   color: rgb(255, 255, 255);
   border-color: rgb(29, 191, 231);
 }
@@ -41,31 +55,33 @@ html[data-theme="dark"] blockquote {
   display: table;
 }
 
-.productTag {
+.docTitle_1Lrw {
   /*  box-sizing: border-box; */
   /* width: 100%; */
   /*  justify-content: center; */
-  justify-content: inherit;
-  padding: 5px 0px;
-  margin-bottom: 36px;
+/*  padding: 5px 0px; */
+  font-size: 3rem;
+/*  margin-bottom: 36px; */
+  margin-bottom: calc(var(--ifm-leading-desktop)*var(--ifm-leading));
+
 }
 
-.productTag h1 {
-  font-family: sans-serif;
-  font-size: 40px;
-  font-weight: 1px;
-  letter-spacing: 1px;
-  padding: 0px;
-  padding-bottom: 2px;
-  margin: 5px 0px;
+@media (max-width: 1200px)
+.docTitle_1Lrw h1{
+    --ifm-h1-font-size: calc(1.375rem + 1.5vw);
 }
 
-.productTag div {
-  padding: 0px;
-  margin: 0px;
+.docTitle_1Lrw h1{
+color: var(--ifm-heading-color);
+font-weight: var(--ifm-heading-font-weight);
+line-height: var(--ifm-heading-line-height);
+margin: var(--ifm-heading-margin-top) 0 var(--ifm-heading-margin-bottom) 0;
+display: block;
+margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
-.productTag img {
+.docTitle_1Lrw img {
   width: 20%;
   height: 40%;
   padding: 0px;
