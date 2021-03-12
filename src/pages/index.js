@@ -23,8 +23,7 @@ const features = [
             "https://cdn.valq.com/wp-content/uploads/valq-key-features-modeling.png",
         description: (
             <>
-                Model your business by capturing 1000+ business variables across various
-                functions in ValQ
+                Model your business by capturing 1000+ variables across various functions
             </>
         ),
     },
@@ -35,8 +34,8 @@ const features = [
             "https://cdn.valq.com/wp-content/uploads/valq-key-features-planning.png",
         description: (
             <>
-                Plan, budget and forecast your business operations efficiently and
-                optimize your goals
+                Plan, budget and forecast your business operations efficiently &
+                optimize goals
             </>
         ),
     },
@@ -59,8 +58,8 @@ const features = [
             "https://cdn.valq.com/wp-content/uploads/valq-key-features-simulation.png",
         description: (
             <>
-                Perform what-if analysis, run on-the-fly simulations and compare
-                multiple business scenarios with ValQ
+                Perform what-if analysis, run on-the-fly simulations & compare
+                multiple scenarios
             </>
         ),
     },
@@ -79,16 +78,15 @@ function Feature({ imageUrl, title, description, link }) {
     const linkUrl = useBaseUrl(link);
 
     return (
-        <Link className={classnames("col col--4", styles.feature)} to={linkUrl}>
-            {imgUrl && (
-                <div className="text--center">
-                    <img className={styles.featureImage} src={imgUrl} alt={title} />
-                </div>
-            )}
-            <h3>{title}</h3>
-            <p>{description}</p>
+        <Link className={classnames("col col--4")} to={linkUrl}>
+          <div className={styles.features}>
+            <div className="text--center">
+              <img className={styles.featureImage} src={imgUrl} alt={title} />
+            </div>
+            <h3> {title} </h3> <p> {description} </p>
+          </div>
         </Link>
-    );
+      );
 }
 
 function Home() {
@@ -112,7 +110,7 @@ function Home() {
                             )}
                             to={useBaseUrl("docs/intro/introduction")}
                         >
-                            Get Started
+                            Read the Docs
             </Link>
                     </div>
                 </div>

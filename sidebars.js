@@ -9,7 +9,6 @@ module.exports = {
     sideBar: {
         Introduction: [
             "intro/introduction",
-            "intro/versions",
             "intro/install",
             "intro/model",
             "intro/node",
