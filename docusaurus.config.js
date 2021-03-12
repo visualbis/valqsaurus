@@ -1,6 +1,6 @@
 module.exports = {
-    title: "ValQ",
-    tagline: "Modern Visual Planning",
+    title: "ValQ Documentation",
+    tagline: "Learn how to install, Model, Plan, Simulate, and Analyze with ValQ",
     url: "https://valq.com",
     baseUrl: "/",
     noIndex: true, // Defaults to `false`

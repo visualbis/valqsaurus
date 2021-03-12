@@ -10,7 +10,7 @@ module.exports = {
         Introduction: [
             "intro/introduction",
 	    "releases",
-            "intro/versions",
+/*            "intro/versions", */
             "intro/install",
             "intro/model",
             "intro/node",
