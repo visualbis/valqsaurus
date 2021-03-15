@@ -11,8 +11,8 @@ import Link from '@docusaurus/Link';
 
 ## Features
 
-* <Link to={useBaseUrl('docs/storage/features/user-security')}>User Security</Link>
-* <Link to={useBaseUrl('docs/model/node#7-secondary-kpis')}>Secondary KPIs in table</Link>
+* <Link to={useBaseUrl('storage/features/user-security')}>User Security</Link>
+* <Link to={useBaseUrl('model/node#7-secondary-kpis')}>Secondary KPIs in table</Link>
 * Node Editor - Full-screen experience
 * MemSQL DB Schema + Application Layer Integration
 * Sensitivity Analysis
@@ -25,7 +25,7 @@ import Link from '@docusaurus/Link';
 * Migration - Disallow migration from Collaboration to Certified
 * Personalization - Store user settings in the backend
 * Feature Map should be part of license hash and not part of the VDT Licensor
-* <Link to={useBaseUrl('docs/simulation/touch-support')}>Touch support</Link> for Tree/Table
+* <Link to={useBaseUrl('simulation/touch-support')}>Touch support</Link> for Tree/Table
 * Planning – Multi User support
 * Group columns for Quick editor
 
@@ -43,7 +43,7 @@ import Link from '@docusaurus/Link';
 - Secondary KPI for table
 - Grid resize functionality (Size to Fit feature) on Table View, Planning Grid and Variance Analysis
 - Planning Toolbar changes – UI changes
-- <Link to={useBaseUrl('docs/analysis/variance_analysis')}>Variance analysis</Link> fixes – Custom Period and also toolbar changes
+- <Link to={useBaseUrl('analysis/variance_analysis')}>Variance analysis</Link> fixes – Custom Period and also toolbar changes
 
 ## Bug Fixes & Improvements
 
@@ -77,16 +77,16 @@ import Link from '@docusaurus/Link';
 - Fixed Zero display issue in Compare Scenario screen
 - IE 11 Copy Scenario issue has been fixed
 - Planning - Archive issues are fixed
-- Formula issue with <Link to={useBaseUrl('docs/references/formulas/getcurrentrange')}>Get Current Range</Link> is fixed
+- Formula issue with <Link to={useBaseUrl('references/formulas/getcurrentrange')}>Get Current Range</Link> is fixed
 
 ## V1.8.3 - ValQ Collaborate (Jul 30,2020)
 
 ### Features
 * Added feature **Rolling Planning** to automatically roll out 12 months forecast over a set time frame.
-* Added feature to export your model as a web data source with the option <Link to={useBaseUrl('docs/storage/features/export')}>Export as datasource</Link>.
+* Added feature to export your model as a web data source with the option <Link to={useBaseUrl('storage/features/export')}>Export as datasource</Link>.
 * **New Table view** - Table view can now be customized to edit the columns and get summarized views.
-* Added the <Link to={useBaseUrl('docs/analysis/attribution-analysis')}>Attribution Analysis</Link> which analysis the key attributes that contribute to the overall result simulation.
-* <Link to={useBaseUrl('docs/storage/features/model-merge')}>Model Merge</Link> enabled for a selected node from the sub-model to another node in the workspace.
+* Added the <Link to={useBaseUrl('analysis/attribution-analysis')}>Attribution Analysis</Link> which analysis the key attributes that contribute to the overall result simulation.
+* <Link to={useBaseUrl('storage/features/model-merge')}>Model Merge</Link> enabled for a selected node from the sub-model to another node in the workspace.
   
 ### Enhancements
 * Made performance based **Member Console changes**

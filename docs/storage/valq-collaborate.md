@@ -24,12 +24,12 @@ For any requirements not met by the public cloud, consider moving to a private c
 ## Features of ValQ Collaborate
 
 Some features exclusive to ValQ Visual:
-* <Link to={useBaseUrl('docs/model/general#3-writeback')}>Writeback</Link> - Post your scenarios, series, comments, etc. to a URL which can be configured to accept an HTTP request and write the data back to your Databases, Sharepoint, Files, etc.
-* <Link to={useBaseUrl('docs/storage/features/export')}>Export data source</Link> - Export scenarios, planning series, etc., from ValQ as a web data source that can be consumed readily from other BI tools for analysis.
-* <Link to={useBaseUrl('docs/storage/features/model-merge')}>Model Merge</Link> - Compose complex (and large) models by merging independent sub-models. Example: When you have models at multiple regions and you'd like to combine them for reporting or planning.
-* <Link to={useBaseUrl('docs/storage/features/user-security')}>User Security</Link> - Configure security for the models. Provide node/scenarios/series level  access permission roles to different users/groups.
-* <Link to={useBaseUrl('docs/storage/features/commenting')}>Comments</Link> - Share and collaborate your models and comments on Planning and Scenarios
-* <Link to={useBaseUrl('docs/storage/features/history-logs')}>History Logs</Link> - The history of changes in model/scenarios/series/writeback is maintained in chronological order. The history logs are shared among users and can also be restored.
+* <Link to={useBaseUrl('model/general#3-writeback')}>Writeback</Link> - Post your scenarios, series, comments, etc. to a URL which can be configured to accept an HTTP request and write the data back to your Databases, Sharepoint, Files, etc.
+* <Link to={useBaseUrl('storage/features/export')}>Export data source</Link> - Export scenarios, planning series, etc., from ValQ as a web data source that can be consumed readily from other BI tools for analysis.
+* <Link to={useBaseUrl('storage/features/model-merge')}>Model Merge</Link> - Compose complex (and large) models by merging independent sub-models. Example: When you have models at multiple regions and you'd like to combine them for reporting or planning.
+* <Link to={useBaseUrl('storage/features/user-security')}>User Security</Link> - Configure security for the models. Provide node/scenarios/series level  access permission roles to different users/groups.
+* <Link to={useBaseUrl('storage/features/commenting')}>Comments</Link> - Share and collaborate your models and comments on Planning and Scenarios
+* <Link to={useBaseUrl('storage/features/history-logs')}>History Logs</Link> - The history of changes in model/scenarios/series/writeback is maintained in chronological order. The history logs are shared among users and can also be restored.
   
 Check out the [ValQ Pricing](https://valq.com/pricing/) page to see the features and the user limits with each plan.
 
@@ -56,7 +56,7 @@ Check out the [ValQ Pricing](https://valq.com/pricing/) page to see the features
 A mail is sent to you with a download link for ValQ Collaborate **Visual (Web Store build)**.
 
 Click on the **Click here** link in the email and download the ValQ Collaborate visual with the extension `.pbiviz`.
-Import this `.pbiviz` file in Power BI Desktop to <Link to={useBaseUrl('docs/intro/model')}>install the visual</Link>.
+Import this `.pbiviz` file in Power BI Desktop to <Link to={useBaseUrl('intro/model')}>install the visual</Link>.
 
 ## ValQ Workspace or Account
 	

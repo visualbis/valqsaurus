@@ -37,11 +37,11 @@ module.exports = {
                 title: "Docs",
                 items: [{
                     label: "Documentation",
-                    to: "docs/intro/introduction",
+                    to: "/",
                 },
                 {
                     label: "Functions",
-                    to: "docs/references/formulas/if",
+                    to: "references/formulas/if",
                 },
                 ],
             },
@@ -77,6 +77,7 @@ module.exports = {
             {
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
+                    routeBasePath: '/',
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),
