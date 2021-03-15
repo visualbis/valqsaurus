@@ -18,7 +18,7 @@ image={useBaseUrl("/doc-images/valq-collaborate.png")}
 ValQ Collaborate (Enterprise Edition) introduces security features to restrict access to your models/nodes, scenarios, planning series to a given set of users and groups.
 
 The security feature helps you to manage the view/edit access on your model for users or groups.
-User and group management is administered through <Link to={useBaseUrl('docs/storage/admin-console')}>Admin console</Link> page.
+User and group management is administered through <Link to={useBaseUrl('storage/admin-console')}>Admin console</Link> page.
 
 ## Security Roles and Level of Permissions
 
@@ -108,7 +108,7 @@ Any member that is either not added as a user or part of a group added to the mo
 ## Manage Node Access
 
 Model owner/admins can provide node level access control to groups and users added to the model.
-- Select the Node and click the <Link to={useBaseUrl('docs/model/node#node-editor')}>editor icon</Link> next to the node.  
+- Select the Node and click the <Link to={useBaseUrl('model/node#node-editor')}>editor icon</Link> next to the node.  
 - In the **Edit Node** pop-up window select **Access Control**.
 
 > The same parent level access control will be applied for the child nodes as well. 

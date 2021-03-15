@@ -167,7 +167,7 @@ In the below example, we'll show how the URL can be consumed in a Power BI repor
  *Screenshot: Datasource Settings*
 
   - Apply and save the changes.
-  - Select the *Fields* and <Link to={useBaseUrl('docs/model/new')}>create a Model</Link>.
+  - Select the *Fields* and <Link to={useBaseUrl('model/new')}>create a Model</Link>.
 
 > Success: Your web source data has been loaded into the ValQ Custom visuals.
 

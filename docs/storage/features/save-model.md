@@ -78,10 +78,10 @@ A user must log in to the workspace to upload a model.
 * Click **Upload**.
 
 :::success
-Your model has been uploaded to <Link to ={useBaseUrl('docs/storage/admin-console#models')}>Admin console</Link>
+Your model has been uploaded to <Link to ={useBaseUrl('storage/admin-console#models')}>Admin console</Link>
 :::
 
-Once the model is uploaded, 3 additional icons appear at the bezel - *Save*, *<Link to={useBaseUrl('docs/storage/features/commenting')}>Comments</Link>*, and 3 dots `...`.
+Once the model is uploaded, 3 additional icons appear at the bezel - *Save*, *<Link to={useBaseUrl('storage/features/commenting')}>Comments</Link>*, and 3 dots `...`.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -91,4 +91,4 @@ Once the model is uploaded, 3 additional icons appear at the bezel - *Save*, *<L
 
 *Bezel icons*
 
-> The `...` icon has 3 more features - *<Link to={useBaseUrl('docs/storage/features/export')}>Export as Datasource</Link>*, *<Link to={useBaseUrl('docs/storage/features/history-logs')}>History Log</Link>*, and *<Link to={useBaseUrl('docs/storage/features/user-security#assign-roles-at-the-model-level---model-settings')}>Settings (Model Settings)</Link>*.
+> The `...` icon has 3 more features - *<Link to={useBaseUrl('storage/features/export')}>Export as Datasource</Link>*, *<Link to={useBaseUrl('storage/features/history-logs')}>History Log</Link>*, and *<Link to={useBaseUrl('storage/features/user-security#assign-roles-at-the-model-level---model-settings')}>Settings (Model Settings)</Link>*.
