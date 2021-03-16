@@ -12,6 +12,7 @@ module.exports = {
 	    "releases",
 /*            "intro/versions", */
             "intro/install",
+            "intro/workspace-in-valq",
             "intro/model",
             "intro/node",
             "intro/workflow",
