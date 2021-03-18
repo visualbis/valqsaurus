@@ -6,6 +6,7 @@ hide_title: true
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
+import { Vimeo } from '@site/src/components/Vimeo';
 
 ## V2.0 - ValQ Collaborate (Jan 20, 2021)
 
@@ -21,13 +22,25 @@ import Link from '@docusaurus/Link';
 * Planning
   - Reference columns
   - Trigger action to send data
+  - Multi User support
 * Toolbar - Redesign
 * Migration - Disallow migration from Collaboration to Certified
 * Personalization - Store user settings in the backend
 * Feature Map should be part of license hash and not part of the VDT Licensor
 * <Link to={useBaseUrl('simulation/touch-support')}>Touch support</Link> for Tree/Table
-* Planning – Multi User support
 * Group columns for Quick editor
+
+<details>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RsJDf792Smo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <ul>
+    <li>
+    <a href="https://valq.com/blogs/valq-2-0-released-with-connected-and-collaborative-planning-features/">ValQ 2.0 Released with Connected and Collaborative Planning Features</a>
+    </li>
+    </ul>
+    <summary>
+    <b>Resources</b>
+    </summary>  
+</details>
 
 ## Enhancements
 
