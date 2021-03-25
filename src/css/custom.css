@@ -69,13 +69,13 @@ html[data-theme="dark"] blockquote {
     text-align: center;
     position: center;
     padding: 0px 70px; 
-    width: 80%;
+    width: 95%;
 }
 
 .center img {
-    width: 500px;
+    width: 550px;
 }
 .center p{
     text-align: center;
-    color: slategray;
+    color: rgb(60, 79, 97);
 }
