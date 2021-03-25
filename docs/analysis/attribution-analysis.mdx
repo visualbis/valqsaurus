@@ -11,29 +11,27 @@ import "react-medium-image-zoom/dist/styles.css";
 Attribution Analysis evaluates the performance of different KPIs and key inputs to the simulated results of an outcome.
 Go to **Analyze > Attribution Analysis** to access this feature.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Analyze Tab"
       src={useBaseUrl("/doc-images/analyze/attr-analysis-tab.png")}
     />
   </Zoom>
+  <p>Attribution Analysis option</p>
 </div>
-
-*Attribution Analysis option*
 
 Here's the Attribution Analysis screen on ValQ:
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Attribution Analysis"
       src={useBaseUrl("/doc-images/analyze/aaa-2-attr.png")}
     />
   </Zoom>
+  <p>Attribution Analysis screen</p>
 </div>
-
-*Attribution Analysis screen*
 
 ## Pre-requisite
 
@@ -47,22 +45,21 @@ The Attribution Analysis screen has three sections:
 1. [Waterfall chart](#2-waterfall-chart)
 1. [Table](#3-table)
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Attribution Analysis"
       src={useBaseUrl("/doc-images/analyze/aaa-14-attr.png")}
     />
   </Zoom>
+  <p>Attribution Analysis screenshot</p>
 </div>
-
-_Attribution Analysis screenshot_
 
 ## 1. Toolbar
 
 The *Toolbar* helps you to build the Attribution Analysis report. Following are the options available:
 
-<div style={{ textAlign: "center" }}>
+<div>
   <Zoom>
     <img alt="Toolbar" src={useBaseUrl("/doc-images/analyze/toolbar.png")} />
   </Zoom>
@@ -70,54 +67,48 @@ The *Toolbar* helps you to build the Attribution Analysis report. Following are 
 
 1. **Outcome KPI**: Select the KPI from the drop-down list for which you would like to view the attribution impact. The drop-down shows only the simulated nodes.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img
       alt="Outcome KPI"
       src={useBaseUrl("/doc-images/analyze/outcome-kpi.png")}
-      height="200"
     />
   </Zoom>
+  <p>Outcome KPI selection</p>
  </div>
-
- *Outcome KPI selection*
 
 1. **Scenario**: Select the *Scenario* from the drop-down list on which you want to display the *Attribution analysis* report.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img
       alt="Scenario"
       src={useBaseUrl("/doc-images/analyze/scenario-select.png")}
-      height="150"
     />
   </Zoom>
+  <p>Scenario selection</p>
  </div>
-
- *Scenario selection*
 
 1. **Period**: Select the simulation period here. This selection is the same as <Link to={useBaseUrl('simulation/navigation_panel#3-simulation-period')}>Simulation Period</Link> under Simulate tab.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Period" src={useBaseUrl("/doc-images/analyze/aaa-12-attr.png")} />
   </Zoom>
+  <p>Simulation period</p>
  </div>
-
- *Simulation period*
 
 1. **Period Measure**: Choose the Time range for Attribution Analysis from *Full Year, Sim-mths* and *Month*.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img
       alt="Period Measure"
-      src={useBaseUrl("/doc-images/analyze/aaa-13-attr.png")}
+      src={useBaseUrl("/doc-images/analyze/time-range.png")}
     />
   </Zoom>
+  <p>Time range selection</p>
  </div>
-
- *Time range selection*
 
 ## 2. Waterfall chart
 
@@ -127,45 +118,42 @@ As you hover over the bars, you can see the simulation impact, actual and
   simulated values. Click on the full-screen option at the bottom to enter the
   full-screen mode.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Waterfall Chart Full Screen Mode"
       src={useBaseUrl("/doc-images/analyze/aaa-4-attr.png")}
     />
   </Zoom>
+  <p>Waterfall chart full-screen mode</p>
 </div>
-
-*Waterfall chart full-screen mode*
 
 You can toggle between horizontal and vertical waterfall charts using the options on the top right.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="View Modes"
       src={useBaseUrl("/doc-images/analyze/aaa-5-attr.png")}
     />
   </Zoom>
+  <p>Waterfall chart flipped vertically</p>
 </div>
-
-*Waterfall chart flipped vertically*
 
 ## 3. Table
 
 *Attribution Analysis* details are also listed in a tabular format on the right. 
 We have the baseline and simulated values of the outcome KPI, and the variance in both *absolute* and *percentage* terms.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Attribution Analysis Table View"
       src={useBaseUrl("/doc-images/analyze/aaa-6-attr.png")}
     />
   </Zoom>
+  <p>Attribution analysis tabular format</p>
 </div>
-
-*Attribution analysis tabular format*
 
 The table beneath has a list of the KPIs - its Baseline and Simulated values, Impact, Attribution% and Contribution%
 
@@ -173,26 +161,24 @@ The table beneath has a list of the KPIs - its Baseline and Simulated values, Im
 - Attribution% = KPI Impact/Outcome KPI Baseline
 - Contribution% = KPI Impact/Outcome KPI Variance
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Attribution Analysis Table View"
       src={useBaseUrl("/doc-images/analyze/aaa-7-attr.png")}
     />
   </Zoom>
+  <p>Attribution analysis table with detailed KPIs</p>
 </div>
-
-*Attribution analysis table with detailed KPIs*
 
 Check/un-check the **Show Unit** and **Show Contribution* to hide/un-hide the respective options in the table.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Attribution Analysis Table View"
       src={useBaseUrl("/doc-images/analyze/aaa-8-attr.png")}
     />
   </Zoom>
+  <p>Units and Contribution percentage</p>
 </div>
-
-*Units and Contribution percentage*
