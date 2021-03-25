@@ -55,13 +55,6 @@ html[data-theme="dark"] blockquote {
   display: table;
 }
 
-#tag {
-  width: 20%;
-  height: 40%;
-  padding: 0px;
-  margin: 0px;
-}
-
 .center {
     display: block;
     margin-left: auto;
