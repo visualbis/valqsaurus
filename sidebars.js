@@ -9,10 +9,10 @@ module.exports = {
     sideBar: {
         Introduction: [
             "intro/introduction",
-	    "releases",
+	    "intro/releases",
 /*            "intro/versions", */
+    	    "intro/valq-workspace",            
             "intro/install",
-            "intro/workspace-in-valq",
             "intro/model",
             "intro/node",
             "intro/workflow",
@@ -47,37 +47,20 @@ module.exports = {
             "analysis/sensitivity-analysis"
         ],
         "Storage and Collaboration": [
-            "storage/valq-collaborate",
-            "storage/admin-console",
-            {
-                type: "category",
-                label: "Features",
-                items: [
-                    "storage/features/save-model",
-                    "storage/features/export",
-                    "storage/features/commenting",
-                    "storage/features/history-logs",
-                    "storage/features/model-merge",
-                    "storage/features/user-security",
-                ],
-            },
+            "storage/valq-collaborate",            
+            "storage/save-model",
+            "storage/export",
+            "storage/commenting",
+            "storage/history-logs",
+            "storage/model-merge",
+            "storage/user-security",
+                            
         ],
+        Administration: ["storage/admin-console"],
         Resources: [
             "faq/formula-list",
             "faq/definitions",
             "faq/known-issues",
-            {
-                type: "category",
-                label: "Videos",
-                items: [
-                    "faq/videos-overview",
-                    "faq/videos-how-to",
-                    "faq/videos-demo",
-                    "faq/videos-income-statement",
-                    "faq/videos-demand-planning",
-                    "faq/videos-others",
-                ],
-            },
         ],
         "How To Videos": [
             "how_to_videos/get-started",
