@@ -9,7 +9,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file b
 import Link from "@docusaurus/Link";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-import { Tag } from "../../../src/ProductTag.js";
+import { Tag } from "../../src/ProductTag.js";
 
 <Tag
 header="History Logs"
@@ -24,24 +24,22 @@ To view, the history logs click on the 3 dots `... > History Log` next to your p
 
 Go to the **Plan** tab and click `... > History log`.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="Select Planning series history logs" src={useBaseUrl("/doc-images/storage/features/open-series-history-logs.png")} />
   </Zoom>
+  <p>Open the history logs for the Planning series</p>
 </div>
-
-*Open the history logs for the Planning series*
 
 The logged-in user can view a log of changes made by other users on the selected series.
 You can click on the dropdown list to select the series to display the logs for.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="A log of changes in Planning series by all the users" src={useBaseUrl("/doc-images/storage/features/planning-history-logs.png")} />
   </Zoom>
+  <p>Log changes on the Planning(brazil) series from all users</p>
 </div>
-
-*Log changes on the Planning(brazil) series from all users*
 
 A user member with edit access on the selected *Series* can:
 - Restore the default series values by clicking **Reset All** at the top right corner.
@@ -51,13 +49,12 @@ A user member with edit access on the selected *Series* can:
 
 The logged-in user is allowed to view the simulation logs of shared *model/scenario/writeback* by other users.
   
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="Simulation history logs" src={useBaseUrl("/doc-images/storage/features/simulation-scenario-history-logs.png")} />
   </Zoom>
+  <p>Changes made by users on model/scenarios/writeback</p>
 </div>
-
-*Changes made by users on model/scenarios/writeback*
 
 You can *Filter* the resulted logs by:
 * Users: Search the logs by user names

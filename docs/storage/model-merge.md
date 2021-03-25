@@ -8,7 +8,7 @@ hide_title: true
 import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
-import { Tag } from "../../../src/ProductTag.js";
+import { Tag } from "../../src/ProductTag.js";
 
 <Tag
 header="Model Merge"
@@ -25,13 +25,12 @@ Repeating the profile and loss statement of each region leads to a model with se
 It would be easier for the Region/Branch managers to create and update the profit and loss statement for their respective regions and then have it consolidated for the Board of Directors meeting.
 
 Below is the Model merge workflow that helps us achieve such a consolidated report.
- <div style={{ textAlign: "center" }}>
+ <div >
   <Zoom>
     <img alt="Model Merge workflow" src={useBaseUrl("/doc-images/storage/features/model-merge-workflow.png")} />
   </Zoom>
+  <div class="center"><p>Model Merge workflow</p></div>
  </div>
-
-*Model Merge workflow*
 
 In our ValQ visual, we create a consolidated model that links to regional sub-models - *Argentina, Brazil*, and *Chile*.
 
@@ -46,33 +45,30 @@ Now there are 2 ways you can link to different models:
 Following are the screenshots of the individual models:
 
 a. Model *Argentina* with 28 nodes.
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Argentina model" src={useBaseUrl("/doc-images/storage/features/argentina.png")} />
   </Zoom>
+  <p>Model Argentina</p>
  </div>
-
- *Model Argentina*
 
 b. Model *Brazil* with 28 nodes.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Model Brazil" src={useBaseUrl("/doc-images/storage/features/brazil.png")} />
   </Zoom>
+  <p>Model Brazil</p>
  </div>
-
-*Model Brazil*
 
 c. Model *Chile* with 28 nodes.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Model Chile" src={useBaseUrl("/doc-images/storage/features/chile.png")} />
   </Zoom>
+  <p>Model Chile</p>
  </div>
-
- *Model Chile*
 
 ### Create the main model
 
@@ -80,23 +76,21 @@ c. Model *Chile* with 28 nodes.
 - In the **Model > Node** navigation panel, click on the plus `+` icon next to the parent node *Total*. This adds a *Child Node*. Similarly, add 3 *Child Nodes*.
 - Click on the edit icon next to each node.
 
- <div style={{ textAlign: "center" }}>
+ <div style={{ textAlign:"center" }}>
   <Zoom>
     <img alt="Edit and configure node" src={useBaseUrl("/doc-images/storage/features/edit-configure-node.png")} />
   </Zoom>
+  <div class="center"><p>Configure child node to track separate sub-models</p></div>
  </div>
-
-*Configure child node to track separate sub-models*
 
  - In the **Node Configuration** pop up window, rename the Node **Title**.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Rename the node" src={useBaseUrl("/doc-images/storage/features/rename-node-argentina.png")} />
   </Zoom>
+  <p>Renaming the Node Title to Argentina</p>
  </div>
-
-*Renaming the Node Title to Argentina*
 
 - Click the *Configuration* option:
   - Select the **Node Type** as *Link to workspace model.*
@@ -106,25 +100,23 @@ c. Model *Chile* with 28 nodes.
 
 - Select **Linking To** option as **Entire workspace model**
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Link to workspace model" src={useBaseUrl("/doc-images/storage/features/link-node-to-argentina-model.png")} />
   </Zoom>
+  <p>Configure the node to link to another workspace model</p>
  </div>
-
-*Configure the node to link to another workspace model*
 
 Similarly, edit and connect the other 2 *Child Nodes* to *Brazil* and *Chile* models respectively.
 
 The below screenshot shows the 3 *Child Nodes* linked to the respective models with the total count of nodes in each model.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Main model's nodes connected to other models" src={useBaseUrl("/doc-images/storage/features/consolidated-child-nodes-linked.png")} />
   </Zoom>
+  <p>Main model's nodes connected to other models</p>
  </div>
-
- *Main model's nodes connected to other models*
 
 :::note
 Linked nodes are indicated by a special linked icon both in the **Model > Node** navigation panel on the left and in the ValQ visual pane on the right.
@@ -139,13 +131,12 @@ Add another *Child node* as highlighted in the *Navigation Panel* on the left.
 - **Select a workspace model** as *Model Merge(Argentina)*
 - Select **Linking To** option as **Node in the model**
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Node linked to another node from a model" src={useBaseUrl("/doc-images/storage/features/link-to-a-node.png")} />
   </Zoom>
+  <p>Node linked to another node from a model</p>
  </div>
-
- *Node linked to another node from a model*
 
 - *Select a node to link* as *Receita Liquida* (This is the node from the *Argentina* model).
 
@@ -157,50 +148,46 @@ Mapping the series is helpful in tracking linked series changes from the present
 
 1. In the **Edit Node** pop window under the **Map data series** section
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Map series" src={useBaseUrl("/doc-images/storage/features/map-series-edit-node.png")} />
   </Zoom>
+  <p>Map model series with the linking models</p>
  </div>
-
- *Map model series with the linking models*
 
 2. Go to **Model > Data Series > Linked Model Mapping**
 
 Click on the *Map Series* tab. Map the series of the *Consolidated* model with the respective linked model series.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Map seres" src={useBaseUrl("/doc-images/storage/features/map-series.png")} />
   </Zoom>
+  <p>Map series with the respective model series</p>
  </div>
-
- *Map series with the respective model series*
 
 ## Scenarios Mapping
 
 Click the *Map Scenarios* tab in the *main/consolidated* model to map the shared Scenarios from the sub-models.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Map scenarios" src={useBaseUrl("/doc-images/storage/features/model-merge-mapping_scenarios.png")} />
   </Zoom>
+  <p>Map the Scenarios</p>
  </div>
-
- *Map the scenarios*
 
 ## Using the Model merge report
 
 - **Tree view/Table view**
 
 Here is the *Consolidated* model with the first 3 child nodes linked to entire models from other reports, and the 4th node that is linked to a single node from the *Argentina* model.
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Consolidated model with nodes connected to other models*" src={useBaseUrl("/doc-images/storage/features/consolidated-nodes.png")} />
   </Zoom>
+  <p>Consolidated model with nodes connected to other models</p>
  </div>
-
-*Consolidated model with nodes connected to other models*
 
 ### Final result in the consolidated model
 
@@ -212,13 +199,12 @@ Click the **Refresh** button on the ribbon bar to view the linked series changes
 
 When you simulate on a shared scenario from a sub-model, you can view the changes in the main model by clicking the *Refresh linked scenarios* icon next to the scenario.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Linked scenarios changes reflected" src={useBaseUrl("/doc-images/storage/features/scenario-mapping-refreshed.png")} />
   </Zoom>
+  <p>Linked scenarios changes reflected</p>
  </div>
-
- *Linked scenarios changes reflected*
 
 Note the change in each model and the resulted value in the main model.
 
@@ -226,10 +212,9 @@ Note the change in each model and the resulted value in the main model.
 
 You can only link a leaf node and not the parent node.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Only a leaf node can be linked with another model" src={useBaseUrl("/doc-images/storage/features/link-only-leaf-node.png")} />
   </Zoom>
+  <p>Link only a leaf node</p>
  </div>
-
-*Link only a leaf node*
