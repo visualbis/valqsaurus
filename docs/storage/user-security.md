@@ -8,7 +8,7 @@ hide_title: true
 import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
 import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
-import { Tag } from "../../../src/ProductTag.js";
+import { Tag } from "../../src/ProductTag.js";
 
 <Tag
 header="User Security in ValQ"
@@ -67,13 +67,12 @@ The *Model owner(default Admin)* can add other members to the model with the abo
 * Click on the 3 dots `...` next to your User profile and select **Settings**.
 * In the **Model Settings > Security** section add other users/groups to the model.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Add users/groups to a model" src={useBaseUrl('/doc-images/storage/user-security-roles.png')} />
     </Zoom>
+    <p>Add users/groups and assign model-level user roles</p>
   </div>  
-
-  *Add users/groups and assign model-level user roles* 
 
 * Following are the users/roles:
   - testQA user1 is added as an *Admin*.
@@ -85,25 +84,23 @@ The *Model owner(default Admin)* can add other members to the model with the abo
 - Case 1: *Admin* has complete access to the **Model** Tab and sub-menus. An *Admin* can edit/add/delete the *Nodes*. Also is allowed to edit the user security access on the model to other users.
 - Case 2: *Analyzer* and *Viewer* do not have access to the Model tab as shown in the below screenshot.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="An Analyzer cannot access the model/data series/export/writeback" src={useBaseUrl('/doc-images/storage/analyzer-no-model-access.png')} />
     </Zoom>
+    <p>Model tab and functionalities(data series, export, writeback, etc.) disabled</p>
   </div> 
-
-  *Model tab and functionalities(data series, export, writeback, etc.) disabled* 
 
 :::note 
 Any member that is either not added as a user or part of a group added to the model, will not be able to access the ValQ report. 
 :::
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
     <img alt="Non-member of the model denied access to ValQ report" src={useBaseUrl('/doc-images/storage/access-denied.png')} />
   </Zoom>
-</div> 
-
-*Access denied to a non-member of the model*
+  <p>Access denied to a non-member of the model</p>
+</div>
 
 ## Manage Node Access
 
@@ -117,43 +114,39 @@ The selected Nodes and the child nodes can be shared with the following 2 option
 
 1. **Groups and users added to the model (default)**
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
    <Zoom>
     <img alt="Access control permission given to all users/groups" src={useBaseUrl('/doc-images/storage/node-access-control-all.png')} />
    </Zoom>
+   <p>Consumer Node accessible to all users/groups</p>
   </div>
-
-  *Consumer Node accessible to all users/groups* 
 
 1. **Limit to selected groups and users**
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
    <Zoom>
     <img alt="Node accessible by Admins alone" src={useBaseUrl('/doc-images/storage/node-accessible-limited-users.png')} />
    </Zoom>
+   <p>Industrials Node shared with limited groups and users(Admins alone)</p>
   </div>
-
-  *Industrials Node shared with limited groups and users(Admins alone)* 
 
   * Case 1: Admin alone has access to the *Industrials* node
   
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
    <Zoom>
     <img alt="Node accessible by Admins" src={useBaseUrl('/doc-images/storage/node-accessible-to-admin.png')} />
    </Zoom>
+   <p>An Admin has access to Industrials node</p>
   </div>
-
-  *An Admin has access to Industrials node*
 
   * Case 2: *Analyzer* and *Viewer* cannot access the *Industrials* node
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
    <Zoom>
     <img alt="Node hidden for Analyzer and Viewer" src={useBaseUrl('/doc-images/storage/node-hidden-analyzer-viewer.png')} />
    </Zoom>
+   <p>A viewer login with no Industrials node in the model</p>
   </div>
-
-  *A viewer login with no Industrials node in the model*
 
 > Industrials sub-model is no longer listed in the *Navigation panel* for the users with *Analyzer* and *Viewer* roles.
 
@@ -164,13 +157,12 @@ On the **Simulate** tab select the *scenario* to be shared and click the *share*
 1. **Groups and users added to the model (default)**
 
   All the members of the group will be able to access *scenario 1* based on their role privileges.
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
    <Zoom>
     <img alt="Node accessible by Admins alone" src={useBaseUrl('/doc-images/storage/scenario-sharing-all.png')} />
    </Zoom>
+   <p>Scenario1 shared with groups and users added to the model</p>
   </div>
-
-  *Scenario1 shared with groups and users added to the model*
 
     * *Admin* and *Analyzer* can view, compare, download, copy, and edit the shared scenario. 
     * *Viewer* can only view, compare and download the shared scenario.
@@ -178,33 +170,30 @@ On the **Simulate** tab select the *scenario* to be shared and click the *share*
 1. **Limit to selected groups and users**
 
   Admin/Analyzer given 'view-only' access on *scenario2*, and 'edit-access' given to the *Finance group(Viewer)* group.
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
    <Zoom>
     <img alt="Admin/Analyzer with view access, Viewer with edit access" src={useBaseUrl('/doc-images/storage/sharing-scenario-limited-user.png')} />
    </Zoom>
+   <p>Scenario shared with edit-access to the group</p>
   </div>
-
-  *Scenario shared with edit-access to the group*
 
 - Case 1: *Admin* and *Analyzer* can only view, compare, download and copy the shared scenario.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
    <Zoom>
     <img alt="Analyzer can only copy/compare scenario2" src={useBaseUrl('/doc-images/storage/analyzer-view-access-scenario2.png')} />
    </Zoom>
+   <p>Analyzer with view access on shared scenario2</p>
   </div>
-
-  *Analyzer with view access on shared scenario2* 
 
 - *Viewer* can view, compare, download, and edit(As given edit access) the shared scenarios. 
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
    <Zoom>
     <img alt="Viewers with copy/edit/share/download access on scenario2" src={useBaseUrl('/doc-images/storage/user3-edit-share-access-scenario2.png')} />
    </Zoom>
+   <p>Viewer has edit access on shared scenario2</p>
   </div>
-
-  *Viewer has edit access on shared scenario2* 
 
 ## Manage Series Access
 
@@ -217,61 +206,55 @@ A *Model creator/Admin* can keep the series private, share with users/groups, or
 
 1. **Private**
 
- <div style={{textAlign: 'center'}}>
+ <div class="center">
   <Zoom>
  <img alt="Mar forecast series kept private to the creator/admin" src={useBaseUrl('/doc-images/storage/mar-frcst-private.png')} />
   </Zoom>
+  <p>March forecast series kept private and only accessible by the series owner</p>
  </div>
-
- *March forecast series kept private and only accessible by the series owner*
 
 1. **Group and users added to the model**
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
    <Zoom>
      <img alt="Give access control on jan-frcst series to groups and users added to the model" src={useBaseUrl('/doc-images/storage/jan-frcst-shared-all-groups.png')} />
    </Zoom>
+   <p>jan-frcst series shared with all users/groups</p>
   </div>
-
-  *jan-frcst series shared with all users/groups* 
 
    - Case 1: Admins/Analyzers have complete access to the series, except for the *share/rename/delete* access.
    - Case 2: Viewers just have 'view-only' access and cannot edit the series.
 
-   <div style={{textAlign: 'center'}}>
+   <div class="center">
     <Zoom>
       <img alt="Viewer given limited view access, Admin/Analyzer complete access" src={useBaseUrl('/doc-images/storage/viewer-jan-frcst-view-only.png')} />
     </Zoom>
+    <p>Viewer with the view-only access</p>
    </div>
-
-   *Viewer with the view-only access*
 
 1. **Limit to selected groups and users**
   
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Viewer alone has edit access on feb-frcst series" src={useBaseUrl('/doc-images/storage/feb-frcst-series-limited-users.png')} />
     </Zoom>
+    <p>View-only access to Admin/Analyzer</p>
   </div> 
-
-  *view-only access to Admin/Analyzer*
 
    - Case 1: *Admins/Analyzers* cannot edit the series. The users can only *Comment, re-size the columns to fit, Show hidden nodes*, and *View Allocation History*.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="View only access on the series" src={useBaseUrl('/doc-images/storage/analyzer-view-access-on-series.png')} />
     </Zoom>
-  </div> 
-
-  *View-only access on a series*
+    <p>View-only access on a series</p>
+  </div>
 
    - Case 2: *Viewers* with *edit-access* can edit the series, but cannot rename/delete/share the series.
 
-  <div style={{textAlign: 'center'}}>
+  <div class="center">
     <Zoom>
       <img alt="Edit access on a series" src={useBaseUrl('/doc-images/storage/viewer-feb-frcst-edit-access.png')} />
     </Zoom>
+    <p>Viewer with edit access on shared series</p>
   </div> 
-
-  *Viewer with edit access on shared series*

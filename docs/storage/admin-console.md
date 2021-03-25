@@ -1,7 +1,7 @@
 ---
 id: admin-console
 title: Admin Console Portal
-sidebar_label: Administration
+sidebar_label: Admin Console Portal
 hide_title: true
 ---
 
@@ -18,9 +18,24 @@ image={useBaseUrl("/doc-images/valq-collaborate.png")}
 
 The *Admin Console* portal is used for managing your ValQ Workspace(Account). The ValQ Workspace is your account on the public ValQ cloud.
 
+<div>
+  <Zoom>
+    <img alt="ValQ application workflow" src={useBaseUrl("/doc-images/storage/valq-workflow.png")} />
+  </Zoom>
+  <div class="center"><p>ValQ application workflow</p></div>
+ </div>
+
+- **Admin console**
+
+You'll get access to your ValQ Workspace (Account) from which you can manage the users in your workspace, and create groups, etc.
+
+- **ValQ Collaborate Visual**
+
+You'll be able to log in to your workspace with the registered users in the workspace.
+
 You can manage groups and users in your workspace, view/edit your models and shared models, and view Licensing status and upgrade.
 
-## Admin Console Features
+Following are the Admin Console Features: 
 
 - [Dashboard](#admin-dashboard)<sup>1</sup>: View the Licensing status and Upgrade plan.
 - [User Manager](#manage-users-in-the-workspace)<sup>1</sup>: Manage users in your workspace (add/remove/edit roles).
@@ -33,7 +48,7 @@ You can manage groups and users in your workspace, view/edit your models and sha
 - <sup>2</sup>Feature available for Workspace Admin, admin, and member (limited access) user roles.
 :::
 
-### Admin Console Member Roles
+## Admin Console Member Roles
 
 The current user management allows 3 different user roles and privileges:
 
@@ -47,74 +62,82 @@ The current user management allows 3 different user roles and privileges:
 There is also a *Workspace Admin* role that is automatically created on workspace sign-up. This is the most privileged role and is authorized complete administration access in the *Admin Console*.
 :::
 
-### Admin Dashboard
+## Admin Dashboard
 
 The **Dashboard** page provides a summary of the Collaborate plan details that the user has purchased.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Admin welcome dashboard page" src={useBaseUrl("/doc-images/storage/admin-console/admin-dashboard.png")} />
   </Zoom>
+  <p>Dashboard page as visible for an admin user role</p>
  </div>
-
-*Dashboard page as visible for an admin user role*
 
 - **License Details**: This section lists out your *Workspace Name, Domain, Plan, Expiry Date, Trial*, and *User Limit (*count of users specified at the time of checkout).
     - A *Billing Admin* can upgrade the *Collaborate* plan by clicking on the **Upgrade** button.
 - **Profile**: This section lists the User *Name*, and *Email* of the logged-in user.
 
-### Manage Users in the Workspace
+## Manage Users in the Workspace
 
 Anyone who has an administrator role in a workspace can give others access to that workspace by adding them to the various roles. Workspace creators automatically become administrators.
 
 **User Manager** page provides functionalities to add/remove members and assign *roles* and *groups* to members.
-In the **Admin Console** left navigation panel, click **User Manager**.
 
-1. Click **Add Member** button at the top right corner to add a new member and enter the **Email** address.
- <div style={{ textAlign: "center" }}>
+### Invite other users to the Workspace
+
+* Click **Add Member** button at the top right corner to add a new member and enter the **Email** address.
+   
+ <div class="center">
   <Zoom>
     <img alt="Add members to a workspace" src={useBaseUrl("/doc-images/storage/admin-console/add-member.png")} />
   </Zoom>
+  <p>An Admin can add new members to the workspace</p>
  </div>
 
- *An Admin can add new members to the workspace*
+* Click **Add**.
 
-1. Click a *Member* to **edit** a member's **Role**, add/remove the member from a **Group**, and to **Remove**(delete) a member.
+The invited members would receive an email notification and link to sign into ValQ.
 
- <div style={{ textAlign: "center" }}>
+### Assign roles to Workspace users
+
+1. Click a *Member* to **edit** a member's **Role** (Admin/member), add/remove the member from a **Group**, and to **Remove**(delete) a member.
+
+ <div class="center">
   <Zoom>
     <img alt="Edit member" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-edit-member.png")} />
   </Zoom>
+  <p>An Admin can edit other member's role and groups</p>
  </div>
 
- *An Admin can edit other member's role and groups*
-
-1. Members who request access to your model are listed under the *Request Pending* tab and you can choose to accept/deny the request.
+1. Click **Request Pending** to view a list of members waiting for the request access. As an admin, you must accept/deny the access request.
 1. Click on the **Bulk upload** button at the top right corner to import a complete list of members from a CSV file.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Bulk upload members from csv" src={useBaseUrl("/doc-images/storage/admin-console/bulk-upload-csv.png")} />
   </Zoom>
+  <p>Bulk upload members</p>
  </div>
-
-*Bulk upload members*
 
 *User Manager* screen provides further functionalities like:
 1. **Search** for members by typing the name/email address in the *Search* box.
 2. **Filter** the members based on their roles.
 3. **Sort** the member's list by "By Name" or "By Date" in "ascending/descending" order.
 
-
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Filter and sort the member's list" src={useBaseUrl("/doc-images/storage/admin-console/user-manager-filter-sort.png")} />
   </Zoom>
+  <p>Filter and sort the member's list</p>
  </div>
 
- *Filter and sort the member's list*
+### Switch Workspace
 
-### Manage Groups and Members of the group
+If you have access to multiple workspaces, you can choose between these workspaces while logging in at the ValQ visual.
+
+If you are an admin managing different workspaces, you can also choose between workspaces during the login. Additionally, you can select or switch between these workspaces by clicking on your profile in the bottom left navigation panel.
+
+## Manage Groups and Members of the group
 
 Create a *Group* of selected users in a *Workspace*. The group creation enable you to share the model with a set of users with the same access level permissions.
 
@@ -122,13 +145,12 @@ Select **Groups** in the left navigation panel.
 
 In the *Group* page you can **create a new group**, **edit<sup>4</sup>/remove groups**, **add/remove members** to the *groups*, and **assign member roles**.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Groups management" src={useBaseUrl("/doc-images/storage/admin-console/create-group.png")} />
   </Zoom>
+  <p>Groups page as accessible by a Member</p>
  </div>
-
-*Groups page as accessible by a Member*
 
 :::note
 <sup>4</sup> Changing a Group name is not recommended for the group that is already a part of the shared security feature in a model.
@@ -145,24 +167,22 @@ The removed member may still be a part of other groups, but will not be able to 
 **User Management**
 
 - Select and click the *Group* to **Add members**, edit member **Role**, and **Remove** members.
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="user management" src={useBaseUrl("/doc-images/storage/admin-console/edit-member-role.png")} />
   </Zoom>
+  <p>User Management - role selection</p>
  </div>
 
- *User management - role selection*
-
-### Models
+## Models
 
 The **Models** page lists the models that are created by and private to a *Model creator.*
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Models page" src={useBaseUrl("/doc-images/storage/admin-console/models-page.png")} />
   </Zoom>
+  <p>Models details as accessed by a member user role</p>
  </div>
-
-*Models details as accessed by a member user role*
 
 This page displays a list of *Models* with the following fields*:*
 
@@ -177,79 +197,72 @@ Click on a *Model*  for the following details:
 
 - **Scenario**: List of private and shared *Scenarios* with the details such as - *Scenario Name, Created at (timestamp), Type (Private/Shared)*, and *Owner*.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Model shared/private scenarios" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-scenario-details.png")} />
   </Zoom>
+  <p>Model shared/private scenarios</p>
  </div>
-
- *Model shared/private scenarios*
 
 - **Series**: All the model series listed with: *Series Name, Created at (timestamp), Type (Native/Allocation)*, and *Owner*.
 
- <div style={{ textAlign: "center" }}>
+ <div class="center">
   <Zoom>
     <img alt="Model series" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-series-details.png")} />
   </Zoom>
+  <p>Model Series</p>
  </div>
-
- *Model series*
 
 - **Access Control<sup>5</sup>:** Lists the *members* and their *Role* with whom the *Model* has been shared.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="Model access control permissions" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-access-control.png")} />
   </Zoom>
+  <p>Workspace Admin can view the access control permissions</p>
  </div>
-
-*Workspace Admin can view the access control permissions*
 
 :::note
 <sup>5</sup>Access control is visible only to a Workspace Admin and not to admins/members.
 :::
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="Access control details denied to a member" src={useBaseUrl("/doc-images/storage/admin-console/model-access-control.png")} />
   </Zoom>
+  <p>Member user role denied permission to view Access control</p>
  </div>
-
-*Member user role denied permission to view Access control*
 
 - **Details**: Summarized model details like *Model name, Published at, Created by, Updated at, Updated by*, and *Number of series*.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-model-details.png")} />
   </Zoom>
+  <p>Model Summary</p>
  </div>
 
- *Model summary*
-
-### Shared Models
+## Shared Models
 
 **Shared Models** page lists all the models uploaded in the common *Workspace* and shared with the logged-in user.
 
 > A *Model creator* has more accessibility on the owned model as compared to other *admins/members*.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="Model summary" src={useBaseUrl("/doc-images/storage/admin-console/admin-console-shared-model.png")} />
   </Zoom>
+  <p>Models shared with a member</p>
  </div>
-
-*Models shared with a member*
 
 - A member can view the model *Name, Last updated on (timestamp), Published date, Permission (Model-level user access in ValQ visual),* and *Owner (Model Creator).*
 - An *admin/member* is not authorized to view **Access control** details of the users added to the model and the user role (that privilege is only reserved for the Model creator).
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="No access control tab" src={useBaseUrl("/doc-images/storage/admin-console/shared-models-scenarios-series.png")} />
   </Zoom>
+  <p>Access control permission tab missing for admin/member user role</p>
  </div>
 
-*Access control permission tab missing for admin/member user role*
-
-- *Scenarios* and *Series* shared with the *User Security* feature are listed. A *member* will not be able to view the *scenario/series* that are not shared with the user role.
+- *Scenarios* and *Series* shared with the *User Security* feature are listed. A *member* cannot view the *scenario/series* that not shared with the user role.

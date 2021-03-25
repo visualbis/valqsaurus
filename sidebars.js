@@ -9,9 +9,6 @@ module.exports = {
     sideBar: {
         Introduction: [
             "intro/introduction",
-	    "intro/releases",
-/*            "intro/versions", */
-    	    "intro/valq-workspace",            
             "intro/install",
             "intro/model",
             "intro/node",
