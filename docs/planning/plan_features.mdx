@@ -9,11 +9,7 @@ import Link from "@docusaurus/Link";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-<div style={{ textAlign: "justify" }}>
-  The Plan tab consists of an Action Menu bar with various options to help
-  create a plan and a table with the ValQ model in a hierarchical format along
-  with the period values for each node.
-</div> <br />
+The Plan tab consists of an Action Menu bar with various options to help create a plan and a table with the ValQ model in a hierarchical format along with the period values for each node.
 
 Now let's take a look at the contents of the Plan tab in detail.
 
@@ -23,11 +19,11 @@ Now let's take a look at the contents of the Plan tab in detail.
   You can see the name of the series you are currently working with on the top.
 </div> <br />{" "}
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/plan5.png")} />
+    <img alt="The Plan Tab Toolbar" src={useBaseUrl("/doc-images/plan/plan-tab-toolbar.png")} />
   </Zoom>
-</div> <br />
+</div>
 
 <div style={{ textAlign: "justify" }}>
   On clicking the settings icon next to the series name, the current series can
@@ -43,49 +39,102 @@ Now let's take a look at the contents of the Plan tab in detail.
 
 ## 2. Add New Series
 
-Click the + New Series to add another series to the Plan tab.
-
-<div class="center">
-  <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/plan18.png")} />
-  </Zoom>
-</div>
+Click the <a style={{ color: "blue"}}>+ New Series</a> tab to add a new (or another) series to the Plan tab. Refer the section <Link to={useBaseUrl('planning/create_new_series')}>Create New Series</Link>.
 
 ## 3. Action Menu
 
-In the Action Menu, you will find various options to configure your planning data
+The Plan action menu has the following features:
 
-<div style={{ textAlign: "center" }}>
+<div>
   <Zoom>
-    <img alt="Action Menu" src={useBaseUrl("/doc-images/plan/plan19.png")} />
+    <img alt="Action Menu" src={useBaseUrl("/doc-images/plan/plan-action-toolbar.png")} />
   </Zoom>
-</div> <br />
+</div>
 
-<div style={{ textAlign: "justify" }}>
-  These operations are explained in detail with illustrations.
-</div> <br />
-
+1. [Allocate Children](#36-allocate-children) - Allocate values to a node's children
+1. [Auto Forecast](#35-auto-forecast) - Perform time series forecasting
+1. [Hold and Release](#37-hold-and-release) - Hold and Release cells on Plan tab
+1. [Comments](#38-comments) - Add comments to a cell
 1. [Weight](#31-weight) - Allocate node values with weights from another node
 1. [Equals](#32-equals) - Allocate node values equally
 1. [Trend](#33-trend) - Apply trend to node period values
 1. [Copy-to](#34-copy-to) - Copy a period value to all other periods of the node
-1. [Auto Forecast](#35-auto-forecast) - Perform time series forecasting
-1. [Allocate Children](#36-allocate-children) - Allocate values to a node's children
-1. [Hold and Release](#37-hold-and-release) - Hold and Release cells on Plan tab
-1. [Note](#38-note) - Add comments to a cell
 1. [Refresh Datasource](#39-refresh-datasource) - Refresh the source data on the _Plan_ tab
 1. [View Allocation History](#310-view-allocation-history) - View all the changes made in the _Plan_ tab
 1. [Show Hidden Nodes](#311-show-hidden-nodes) - Display the nodes kept as hidden
 
-Before we explain the options, there are a few key points you must know to understand the Plan tab operations better.
+:::note
+Before you begin, here a few key points to understand the Plan tab operations better:
 
 1. Weight and Equals are available only for total values
 2. Trend and Copy-to are available only for period values
 3. ValQ provides two methods of distribution - Overwrite Values and Append to Values
 4. Overwrite Values replaces the existing values with the new values
-5. Append to Values retains the existing values and adds/subtracts the change to the same
+5. Append to Values retains the existing values and adds/subtracts the change to the same.
+:::
 
-### 3.1 Weight
+### 3.1 Allocate Children
+
+<div style={{ textAlign: "justify" }}>
+  So far we have covered the options that perform allocation horizontally.
+  Weight and Equal options under Allocate Children are used to allocate values
+  to the children and Copy-to is used to copy a node's value to its sibling
+  nodes.
+</div> <br />
+
+<div class="center">
+  <Zoom>
+    <img alt="Allocate Children" src={useBaseUrl("/doc-images/plan/allocate-children.png")} />
+  </Zoom>
+</div>
+
+### 3.2 Auto Forecast
+
+Auto Forecast enables the user to apply Time Series Forecasting methods to the plan. This option is covered in a separate section,
+click <Link to={useBaseUrl('planning/time_series')}>here</Link> to know more about it.
+
+<div class="center">
+  <Zoom>
+    <img alt="Auto Forecast" src={useBaseUrl("/doc-images/plan/auto-forecast.png")} />
+  </Zoom>
+</div>
+
+### 3.3 Hold and Release
+
+Hold and Release can be used to lock or unlock cells as needed. The feature can be applied on cell, period, row or column level. The cells kept on hold does not get affected by any of the allocation methods.
+
+Select the cell(s) and click **Hold**.
+
+<div class="center">
+  <Zoom>
+    <img alt="Hold and Release cells" src={useBaseUrl("/doc-images/plan/hold-cell.png")} />
+  </Zoom>
+  <p>Selected cells locked with a lock symbol</p>
+</div>
+
+Select the cell(s) and click **Release**.
+
+<div class="center">
+  <Zoom>
+    <img alt="Hold and Release cells" src={useBaseUrl("/doc-images/plan/release-cell.png")} />
+  </Zoom>
+</div>
+
+:::note
+The single lock icon serves as a toggle to hold and release the cell value.
+:::
+
+### 3.4 Comments
+
+The Coments icon helps the user to add, modify, or delete and collaborate the comments on the model at the cell level.
+
+<div class="center">
+  <Zoom>
+    <img alt="Planning Comments" src={useBaseUrl("/doc-images/plan/plan-comments.png")} />
+  </Zoom>
+</div>
+
+### 3.5 Weight
 
 <div style={{ textAlign: "justify" }}>
   Weight distributes a node's total value among the periods based on the series
@@ -167,19 +216,19 @@ Let's understand Spread by Weights with Overwrite Values and Append to Values us
   Result' also gets changed as a result of this action.
 </div>
 
-### 3.2 Equals
+### 3.6 Equals
 
 <div style={{ textAlign: "justify" }}>
   Equals distribute a node's new total value equally over the periods. With the
   Change action option, the user can choose to Overwrite Values or Append to
   Values.
-</div> <br />
+</div>
 
 <div class="center">
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/plan8.png")} />
+    <img alt="Plan Equals" src={useBaseUrl("/doc-images/plan/plan-equals.png")} />
   </Zoom>
-</div> <br />
+</div>
 
 Let's understand Equal with Overwrite Values and Append to Values using illustrations:
 
@@ -217,23 +266,15 @@ Here, the total value of the 'East' node is changed from 60 to 90 and Change act
   </Zoom>
 </div> <br />
 
-<div style={{ textAlign: "justify" }}>
-  As you can observe, the new total value is 90 and the difference between the
-  original total and the new total is 30 (90-60). The difference of 30 is now
-  distributed by way of addition to the existing period values.
-</div>
+As you can observe, the new total value is 90 and the difference between the original total and the new total is 30 (90-60). The difference of 30 is now distributed by way of addition to the existing period values.
 
-### 3.3 Trend
+### 3.7 Trend
 
-<div style={{ textAlign: "justify" }}>
-  Trend enables the user to increase/decrease the existing period values of a
-  node - By Percentage or By Value. With the Change action option, the user can
-  choose to Overwrite Values or Append to Values.
-</div> <br />
+Trend enables the user to increase/decrease the existing period values of a node - By Percentage or By Value. With the Change action option, the user can choose to Overwrite Values or Append to Values.
 
 <div class="center">
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/plan9.png")} />
+    <img alt="trend allocation" src={useBaseUrl("/doc-images/plan/trend.png")} />
   </Zoom>
 </div>
 
@@ -286,17 +327,13 @@ Here, the total value of the 'East' node is changed from 60 to 90 and Change act
 > **Note** <br />
 > The Increase Trend option accepts both positive and negative values
 
-### 3.4 Copy-to
+### 3.8 Copy-to
 
-<div style={{ textAlign: "justify" }}>
-  Copy-to option takes a node's period value and applies the same value to the
-  remaining periods of that node. The change gets updated to the parent node as
-  well and is highlighted in yellow as seen below.
-</div> <br />
+Copy-to option takes a node's period value and applies the same value to the remaining periods of that node. The change gets updated to the parent node as well and is highlighted in yellow as seen below.
 
 <div class="center">
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/plan10.png")} />
+    <img alt="Copy-to icon" src={useBaseUrl("/doc-images/plan/copy-to.png")} />
   </Zoom>
 </div>
 
@@ -318,55 +355,7 @@ Here, the total value of the 'East' node is changed from 60 to 90 and Change act
   </Zoom>
 </div>
 
-### 3.5 Auto Forecast
 
-Auto Forecast enables the user to apply Time Series Forecasting methods to the plan. This option is covered in a separate section,
-click <Link to={useBaseUrl('planning/time_series')}>here</Link> to know more about it.
-
-<div class="center">
-  <Zoom>
-    <img alt="Auto Forecast" src={useBaseUrl("/doc-images/plan/plan11.png")} />
-  </Zoom>
-</div>
-
-### 3.6 Allocate Children
-
-<div style={{ textAlign: "justify" }}>
-  So far we have covered the options that perform allocation horizontally.
-  Weight and Equal options under Allocate Children are used to allocate values
-  to the children and Copy-to is used to copy a node's value to its sibling
-  nodes.
-</div> <br />
-
-<div class="center">
-  <Zoom>
-    <img alt="Allocate Children" src={useBaseUrl("/doc-images/plan/plan12.png")} />
-  </Zoom>
-</div>
-
-### 3.7 Hold and Release
-
-<div style={{ textAlign: "justify" }}>
-  Hold and Release can be used to lock or unlock cells as needed. The feature
-  can be applied on cell, period, row or column level. The cells kept on hold
-  does not get affected by any of the allocation methods.
-</div> <br />
-
-<div class="center">
-  <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/plan13.png")} />
-  </Zoom>
-</div>
-
-### 3.8 Note
-
-The Note helps the user to add, modify, or delete comments to the model on cell level.
-
-<div class="center">
-  <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/plan14.png")} />
-  </Zoom>
-</div>
 
 ### 3.9 Refresh Datasource
 
@@ -378,7 +367,7 @@ The Note helps the user to add, modify, or delete comments to the model on cell 
 
 <div class="center">
   <Zoom>
-    <img alt="Refresh Datasource" src={useBaseUrl("/doc-images/plan/plan15.png")} />
+    <img alt="Refresh Datasource" src={useBaseUrl("/doc-images/plan/refresh-datasource.png")} />
   </Zoom>
 </div>
 
@@ -391,12 +380,6 @@ The Note helps the user to add, modify, or delete comments to the model on cell 
   the Allocation History.
 </div> <br />
 
-<div class="center">
-  <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/plan16.png")} />
-  </Zoom>
-</div>
-
 ### 3.11 Show hidden nodes
 
 <div style={{ textAlign: "justify" }}>
@@ -408,9 +391,9 @@ The Note helps the user to add, modify, or delete comments to the model on cell 
 
 <div class="center">
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/plan27.png")} />
+    <img alt="Show hidden node" src={useBaseUrl("/doc-images/plan/hidden-node.png")} />
   </Zoom>
-</div> <br />
+</div>
 
 > ** Note** <br /> Upon enabling show hidden node, the node stays hidden on the other tabs
 
@@ -426,7 +409,7 @@ The Note helps the user to add, modify, or delete comments to the model on cell 
 
 <div class="center">
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/plan6.png")} />
+    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/search-node.png")} />
   </Zoom>
 </div>
 
@@ -448,3 +431,32 @@ The Note helps the user to add, modify, or delete comments to the model on cell 
 > ** Note**
 >
 > Just like a formula bar in spreadsheets, you can perform basic operations on a value in the value bar
+
+## 6. Size columns to fit
+
+You can auto-size the tabular columns to fit to the visual window size for a better view. To do so, click the **Size columns to fit** on the toolbar.
+
+<div class="center">
+  <Zoom>
+    <img alt="Column default width" src={useBaseUrl("/doc-images/plan/column-default-width.png")} />
+  </Zoom>
+  <p>Column's default width</p>
+</div>
+
+Below is the screenshot after you select the columns re-size option:
+
+<div class="center">
+  <Zoom>
+    <img alt="Columns fit to auto-size" src={useBaseUrl("/doc-images/plan/col-fit-size.png")} />
+  </Zoom>
+  <p>Columns fit to auto-size</p>
+</div>
+
+## 7. Writeback
+
+The <Link to={useBaseUrl('model/general#3-writeback')}>Writeback</Link> feature to is also included in the Plan tab. 
+The Writeback option from the Plan tab only allows you to trigger sending the series data onto a Writeback API.
+
+To send both series and scenarios (shared scenarios) select the option under the Simulation tab.
+
+> You can access the Writeback feature from both the Simulation as well as Plan tab.
