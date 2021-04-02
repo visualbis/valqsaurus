@@ -45,7 +45,8 @@ The features of the table view discussed are as follows:
 1. [Add Comments](#6-add-comments)               
 1. [Summarized view](#7-summarized-view)         
 1. [Period view](#8-period-view)                 
-1. [Customize columns](#9-customize-columns)     
+1. [Customize columns](#9-customize-columns) 
+1. [Size columns to fit](#10-size-columns-to-fit)    
 
 ## 1. Search for a node
 
@@ -147,32 +148,27 @@ Click on any node title to view its node details.
 
 ## 5. Go to Plan
 
-<div style={{ textAlign: "justify" }}>
-  The plan icon takes you to the recent access plan and displays that particular
-  node, its siblings and children. This feature is same{" "}
-  <Link to={useBaseUrl("simulation/simulation_canvas#16-go-to-plan")}>
-    Go to Plan
-  </Link>{" "}
-  with Tree View.
-</div> <br />
+The plan icon takes you to the recent access plan and displays that particular node, its siblings and children. This feature is same as the <Link to={useBaseUrl("simulation/simulation_canvas#16-go-to-plan")}>Go to Plan</Link> with Tree View.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Go To Plan"
-      src={useBaseUrl("/doc-images/simulate_tab/table_view/tvv-14.png")}
+      src={useBaseUrl("/doc-images/simulate_tab/table_view/plan-icon.png")}
     />
   </Zoom>
-</div> <br />
+  <p>Plan icon next to Production Cost node</p>
+</div>
 
 <div class="center">
   <Zoom>
     <img
       alt="Plan Series"
-      src={useBaseUrl("/doc-images/simulate_tab/table_view/tvv-15.png")}
+      src={useBaseUrl("/doc-images/simulate_tab/table_view/plan-series.png")}
     />
   </Zoom>
-</div>{" "}
+  <p>Plan series</p>
+</div>
 
 ## 6. Add Comments
 
@@ -198,11 +194,11 @@ Click on any node title to view its node details.
 
 By default, the table is shown in the summarized mode.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Summarized View"
-      src={useBaseUrl("/doc-images/simulate_tab/table_view/tvv-5.png")}
+      src={useBaseUrl("/doc-images/simulate_tab/table_view/summary.png")}
     />
   </Zoom>
 </div>
@@ -231,11 +227,11 @@ By default, the table is shown in the summarized mode.
 
 ## 8. Period view
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Period View"
-      src={useBaseUrl("/doc-images/simulate_tab/table_view/tvv-12.png")}
+      src={useBaseUrl("/doc-images/simulate_tab/table_view/table-period.png")}
     />
   </Zoom>
 </div> <br />
@@ -253,20 +249,29 @@ On selecting the period view from the settings, you'll be able to view the table
 
 ## 9. Customize columns
 
-<div style={{ textAlign: "justify" }}>
-  By clicking on settings, you can see the following screen. On the left, you
-  can search for columns, select or unselect them based on whether you want it
-  to be displayed. On the right, you can reorder columns by drag and drop. Click
-  on Reset to default to erase the changes and go back to default.
-</div> <br />
+Click the Settings icon at the top right corner, then click **Settings** option.
+On the left, search/select or unselect the columns that you watn to display.
+On the right, you can reorder columns by drag and drop. 
+
+Click **Reset to default** to erase the changes and go back to the default settings.
 
 <div class="center">
   <Zoom>
     <img
       alt="Settings"
       src={useBaseUrl("/doc-images/simulate_tab/table_view/tvv-11.png")}
-      width={450}
-      height={300}
+    />
+  </Zoom>
+</div>
+
+## 10. Size Columns to fit
+
+Use the **Size columns to fit** option to auto-size the columns to fit the screen width for a better view.
+<div class="center">
+  <Zoom>
+    <img
+      alt="Settings"
+      src={useBaseUrl("/doc-images/simulate_tab/table_view/size-col-fit.png")}
     />
   </Zoom>
 </div>
