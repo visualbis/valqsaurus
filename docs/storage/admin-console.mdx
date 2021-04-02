@@ -72,7 +72,7 @@ The **Dashboard** page provides a summary of the Collaborate plan details that t
 
 ## Manage Users in the Workspace
 
-Anyone who has an administrator role in a workspace can give others access to that workspace by adding them to the various roles. Workspace creators automatically become administrators.
+Anyone who has an administrator role in a workspace can give access to other users in that workspace by adding them to various roles. Workspace creators automatically become administrators.
 
 **User Manager** page provides functionalities to add/remove members and assign *roles* and *groups* to members.
 
@@ -90,6 +90,26 @@ Anyone who has an administrator role in a workspace can give others access to th
 * Click **Add**.
 
 The invited members would receive an email notification and link to sign into ValQ.
+
+### ValQ Sign-in Methods
+
+ValQ allows 2-way sign-in methods. The users can sign-in to ValQ visual using both:
+
+1. **Microsoft Sign-in**: The user can login using Microsoft Office 365 account.
+1. **Native User Sign-in**: The user can login using the username/password managed by ValQ service.
+
+A typical native user sign-in workflow:
+1. Workspace Admin adds a member/user to a workspace by email.
+1. ValQ will send the new member an email with the workspace name and a password reset link (The link will be valid for 7 days).
+1. The user clicks on the link and resets the account password.
+1. The user is now logged in to the assigned workspace via Admin console portal.
+1. When a user tries to Log-in from the ValQ visual, the link will be redirected to the same sign-in page. However, the user can now use its username/password to sign-in.
+
+User actions:
+* The users can also choose to link their Microsoft Sign-in account. To do so, click on the user profile in the bottom left panel, click **Profile Settings**. Click **Sign in with Microsoft**.
+* To update the password, a user must go to Profile Settings and click **Change Password**.
+* To recover a lost password, go to the Admin console sign-in page and click **Forgot password**.
+Enter your Email and click **Reset Password**. A password reset link will be sent on your registered email id.
 
 ### Assign roles to Workspace users
 
@@ -128,7 +148,14 @@ The invited members would receive an email notification and link to sign into Va
 
 If you have access to multiple workspaces, you can choose between these workspaces while logging in at the ValQ visual.
 
-If you are an admin managing different workspaces, you can also choose between workspaces during the login. Additionally, you can select or switch between these workspaces by clicking on your profile in the bottom left navigation panel.
+Additionally, you can select or switch between these workspaces by clicking on your profile in the bottom left navigation panel.
+
+ <div>
+  <Zoom>
+    <img alt="Select and switch workspace" src={useBaseUrl("/doc-images/storage/admin-console/select-workspace.png")} />
+  </Zoom>
+  <div class="center"><p>Select and switch workspace</p></div>
+ </div>
 
 ## Manage Groups and Members of the group
 
