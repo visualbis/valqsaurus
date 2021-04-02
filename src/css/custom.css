@@ -61,12 +61,12 @@ html[data-theme="dark"] blockquote {
     margin-right: auto;
     text-align: center;
     position: center;
-    padding: 0px 70px; 
-    width: 95%;
+    padding: 0px 40px; 
+    width: 100%;
 }
 
 .center img {
-    width: 550px;
+    width: 750px;
 }
 .center p{
     text-align: center;
