@@ -24,12 +24,42 @@
 }
 
 .features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #2566ab77;
+    border-radius: 10px;
+    padding: 1.0rem;
+    margin: 0px;
+    height: 95%;
 }
 
+html[data-theme="dark"] .features {
+    background: #1F1F1F 0% 0% no-repeat padding-box;
+  }
+
+.features:hover {
+    box-shadow: 0px 0px 10px #1791c0;
+  }
+
+.features img {
+    padding-top: 0.5rem;
+    padding-bottom: 0.7rem;
+    height: 160px;
+}
+/*
+.features p, .features h3{
+    color: #303030;
+  }
+*/
+
+html[data-theme="dark"] .features p, 
+html[data-theme="dark"] .features h3 {
+    color: #f5f6f7;
+}
+/*
+.features p {
+    opacity: 0.75;
+  }
+*/
 .featureImage {
   height: 200px;
   width: 200px;

@@ -1,6 +1,6 @@
 module.exports = {
-    title: "ValQ",
-    tagline: "Modern Visual Planning",
+    title: "ValQ Documentation",
+    tagline: "Learn how to install, Model, Plan, Simulate, and Analyze with ValQ",
     url: "https://valq.com",
     baseUrl: "/",
     noIndex: true, // Defaults to `false`
@@ -37,11 +37,11 @@ module.exports = {
                 title: "Docs",
                 items: [{
                     label: "Documentation",
-                    to: "docs/intro/introduction",
+                    to: "/",
                 },
                 {
                     label: "Functions",
-                    to: "docs/references/formulas/if",
+                    to: "references/formulas/if",
                 },
                 ],
             },
@@ -77,6 +77,7 @@ module.exports = {
             {
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
+                    routeBasePath: '/',
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),

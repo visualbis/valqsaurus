@@ -11,20 +11,16 @@ import "react-medium-image-zoom/dist/styles.css";
 <div style={{ textAlign: "justify" }}>
   In this section, you will learn everything related to node on ValQ's Model
   tab. In case you are new to node, it is recommended you visit{" "}
-  <Link to={useBaseUrl("docs/intro/node")}>Understanding Nodes in ValQ</Link>{" "}
+  <Link to={useBaseUrl("intro/node")}>Understanding Nodes in ValQ</Link>
   and then come back here to learn more about nodes.
-</div> <br />
-
-<div style={{ textAlign: "justify" }}>
-  Click on this icon{" "}
+</div>
+Click on the 
   <img
     alt="New Tab"
     src={useBaseUrl("/doc-images/model/node icon.png")}
     width={64}
     height={32}
-  />{" "}
-  on ValQ to access the Node options.
-</div>
+  /> icon on ValQ to access the Node options.
 
 ## Node Editor
 
@@ -37,31 +33,17 @@ To edit a node, click on the pencil icon highlighted below or double-click on th
       src={useBaseUrl("/doc-images/model/node46.png")}
     />
   </Zoom>
-</div>{" "}
-
-<div style={{textAlign: 'center'}}>
-
-
-_Pencil icon for Edit Node_
-
+  <p>Pencil icon for Edit Node</p>
 </div>
-
 
 By clicking the Edit option you will be able to view the Edit Node dialog box as shown below.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="Edit Node" src={useBaseUrl("/doc-images/model/node5.png")} />
   </Zoom>
+  <p>Edit Node</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Edit Node_
-
-</div>
-
 
 ## 1. General
 
@@ -72,19 +54,12 @@ _Edit Node_
   identify at which node level the parameter value changes.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="General" src={useBaseUrl("/doc-images/model/node6.png")} />
   </Zoom>
+  <p>Node's General Settings</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_General_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   In the below Figure, you can observe that Consumer is the common title for two
@@ -92,22 +67,15 @@ _General_
   when outside Tree as East for one node and Midwest for the other node.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Title Prefix when outside Tree_"
       src={useBaseUrl("/doc-images/model/node10.png")}
     />
   </Zoom>
+  <p>Title Prefix when outside Tree</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Title Prefix when outside Tree_
-
-</div>
-
 
 ## 2. Configuration
 
@@ -130,14 +98,6 @@ A node can be of two types - Normal and Constant.
   </Zoom>
 </div>
 
-<div style={{textAlign: 'center'}}>
-
-
-_Select the Node Type_
-
-</div>
-
-
 <div style={{ textAlign: "justify" }}>
   Normal node is the default type with all the options available to configure
   while constant node sets the node value to a fixed figure.
@@ -148,7 +108,6 @@ _Select the Node Type_
 ValQ supports various calculation methods such as
 
 <div style={{textAlign: 'justify'}} className="table-center">
-
 
 |     | Method                        | Description                                                          |
 | --- | ----------------------------- | -------------------------------------------------------------------- |
@@ -164,15 +123,8 @@ ValQ supports various calculation methods such as
 
 </div> <br />
 
-
 > **Note** <br />
-
-<div style={{ textAlign: "justify" }}>
-  On selecting Formula as Calculation Method and clicking on the formula field,
-  you will be able to see a dropdown of the formulas that are supported. For a
-  list of formulas that are available in ValQ, you can refer to the link{" "}
-  <Link to={useBaseUrl("/docs/faq/formula-list")}>Functions</Link>.
-</div>
+> On selecting Formula as Calculation Method and clicking on the formula field, you will be able to see a dropdown of the formulas that are supported. For a list of formulas that are available in ValQ, you can refer to the link <Link to={useBaseUrl("/faq/formula-list")}>Functions</Link>.
 
 The Normal node type presents you with all the calculation methods as shown below.
 
@@ -183,15 +135,8 @@ The Normal node type presents you with all the calculation methods as shown belo
       src={useBaseUrl("/doc-images/model/node12.png")}
     />
   </Zoom>
+  <div class="center"><p>Calculation Methods for Normal Node Type</p></div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Calculation Methods for Normal Node Type_
-
-</div>
-
 
 The Constant node type provides the following calculation methods
 
@@ -202,25 +147,16 @@ The Constant node type provides the following calculation methods
       src={useBaseUrl("/doc-images/model/node13.png")}
     />
   </Zoom>
+  <div class="center"><p>Calculation Methods for Normal Node Type</p></div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Calculation Methods for Constant Node Type_
-
-</div>
-
 
 <div style={{textAlign: 'justify'}}>
-
 
 Here's a <a href="https://valq.com/blogs/assigning-values-to-nodes-in-valq/" target="_blank">blog</a>
 explaining Calculation Method with examples and another <a href="https://valq.com/blogs/3-methods-of-mapping-valq-nodes-to-data" target="_blank">blog</a>
 discussing 3 methods of mapping ValQ nodes to data.
 
 </div>
-
 
 #### Source Key
 
@@ -236,51 +172,30 @@ discussing 3 methods of mapping ValQ nodes to data.
   <Zoom>
     <img alt="Source Key" src={useBaseUrl("/doc-images/model/node14.png")} />
   </Zoom>
+  <div class="center"><p>Source Key</p></div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Source Key_
-
-</div>
-
 
 #### Template Nodes
 
 A Template Node can be created with the help of an existing node. Add a new node and select it's **Calculation Method** as **Templated based on other node**. Now select the node you want to copy under **Node to use as a template**.
 In the below example, the **North** branch has been created using **East** as a template.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Template based on other node"
       src={useBaseUrl("/doc-images/model/node24.png")}
     />
   </Zoom>
+  <p>Template based on other nodes</p>
 </div>
 
-<div style={{textAlign: 'center'}}>
-
-
-_Template based on other nodes_
-
-</div>
-
-
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="Template Node" src={useBaseUrl("/doc-images/model/node25.png")} />
   </Zoom>
+  <p>Template Node</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Template Node_
-
-</div>
-
 
 ### 2.3 Time Aggregation
 
@@ -307,22 +222,15 @@ _Template Node_
 
 The Normal node type presents the user with the Time Aggregation options as seen below.
 
-<div style={{ textAlign: "center" }}>
+<div style={{ textAlign:"center" }}>
   <Zoom>
     <img
       alt="Time Aggregation"
       src={useBaseUrl("/doc-images/model/node15.png")}
     />
   </Zoom>
+  <div class="center"><p>Time Aggregation options</p></div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Time Aggregation options_
-
-</div>
-
 
 > ** Note** <br /> The constant node type doesn't have Time Aggregation as the value is fixed
 
@@ -338,15 +246,8 @@ _Time Aggregation options_
   <Zoom>
     <img alt="Desired Trend" src={useBaseUrl("/doc-images/model/node16.png")} />
   </Zoom>
+  <div class="center"><p>Select the increase/decrease Desired Trend</p></div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Select the increase/decrease Desired Trend_
-
-</div>
-
 
 ### 2.5 Value Range
 
@@ -360,17 +261,10 @@ _Select the increase/decrease Desired Trend_
   <Zoom>
     <img alt="Value Range" src={useBaseUrl("/doc-images/model/node17.png")} />
   </Zoom>
+  <div class="center"><p>Value Range</p></div>
 </div>
 
-<div style={{textAlign: 'center'}}>
-
-
-_Value Range_
-
-</div>
-
-
-Click <Link to={useBaseUrl('docs/simulation/navigation_panel#7-constraints')}>here</Link> for steps to add Constraints using an example.
+Click <Link to={useBaseUrl('simulation/navigation_panel#7-constraints')}>here</Link> for steps to add Constraints using an example.
 
 ### 2.6 Dynamic Children
 
@@ -388,15 +282,8 @@ Click <Link to={useBaseUrl('docs/simulation/navigation_panel#7-constraints')}>he
       src={useBaseUrl("/doc-images/model/node65.png")}
     />
   </Zoom>
+  <div class="center"><p>Dynamic Children from Data Source</p></div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Dynamic Children from Data Source_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   Dynamic Children Simulation has options to decide whether to allow simulation
@@ -417,19 +304,12 @@ The below example shows how to create Dynamic Children from Data Source.
 
 As a result of the above configuration, you will see the screen as below image.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="New Tab" src={useBaseUrl("/doc-images/model/node64.png")} />
   </Zoom>
+  <p>Dynamic Children added to model</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Dynamic Children added to model_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   Now to be able to configure the child nodes of the node created using the
@@ -438,27 +318,20 @@ _Dynamic Children added to model_
   as seen below.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="New Tab" src={useBaseUrl("/doc-images/model/node66.png")} />
   </Zoom>
+  <p>Dynamic Children converted to advanced</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Dynamic Children converted to advanced_
-
-</div>
-
 
 ## 3. Display
 
 <div style={{ textAlign: "justify" }}>
   In the Display Settings, you will be able to configure the display settings
   such as{" "}
-  <Link to={useBaseUrl("docs/model/node#node-display")}>Node display</Link> and{" "}
-  <Link to={useBaseUrl("docs/model/node#details-on-click")}>
+  <Link to={useBaseUrl("model/node#node-display")}>Node display</Link> and{" "}
+  <Link to={useBaseUrl("model/node#details-on-click")}>
     Details on Click.
   </Link>
 </div>
@@ -467,19 +340,12 @@ The other setting options available under _Display_ options are [Value](#31-valu
 
 First, let's look at Display
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="Display" src={useBaseUrl("/doc-images/model/node26.png")} />
   </Zoom>
+  <p>Display</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Display_
-
-</div>
-
 
 #### Node display
 
@@ -487,60 +353,39 @@ There are three display options to choose from and below is an example using the
 
 **Show** - Displays the node as a normal node (default).
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Node Display set as Show"
       src={useBaseUrl("/doc-images/model/node-show.png")}
     />
   </Zoom>
+  <p>Node Display set as Show</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Node Display set as Show_
-
-</div>
-
 
 **Derived** - Displays the node as being derived from the parent node denoted by the dotted line.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Node Display set as Derived"
       src={useBaseUrl("/doc-images/model/node-derived.png")}
     />
   </Zoom>
+  <p>Node Display set as Derived</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Node Display set as Derived_
-
-</div>
-
 
 **Hidden** - Hides the node from the canvas. In the below example, the 'East' node is hidden from the canvas.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Node Display set as Hidden"
       src={useBaseUrl("/doc-images/model/node-hide.png")}
     />
   </Zoom>
+  <p>Node Display set as Hidden</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Node Display set as Hidden_
-
-</div>
-
 
 > ** Note** <br /> In the above examples, the Node Display changes only the display on canvas.
 > Regardless of the Node Display settings, the nodes are available for configuration on the Navigation Panel.
@@ -553,41 +398,27 @@ _Node Display set as Hidden_
   the node details.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Details on Click"
       src={useBaseUrl("/doc-images/model/node29.1.png")}
     />
   </Zoom>
+  <p>Details on Click</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Details on Click_
-
-</div>
-
 
 Node details of the 'East' node is seen below.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Node details page"
       src={useBaseUrl("/doc-images/model/node29.2.png")}
     />
   </Zoom>
+  <p>Node Details Page</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Node details page_
-
-</div>
-
 
 ### 3.1 Value
 
@@ -602,31 +433,23 @@ Configure the following options under _Values_ with the following options:
 <div style={{ textAlign: "justify" }}>
   You can choose the scaling for the model from the drop down. For User Selected
   the scaling changes with{" "}
-  <Link to={useBaseUrl("docs/simulation/navigation_panel#4-value-display")}>
+  <Link to={useBaseUrl("simulation/navigation_panel#4-value-display")}>
     Value Display
   </Link>{" "}
   selection.
 </div>
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="Scale" src={useBaseUrl("/doc-images/model/node30.png")} />
   </Zoom>
 </div>
 
-<div style={{textAlign: 'center'}}>
-
-
-_Scale_
-
-</div>
-
-
 #### ii. Value Decimal Places
 
 Choose the number of decimal places you want in the node value.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Value Decimal Places"
@@ -634,14 +457,6 @@ Choose the number of decimal places you want in the node value.
     />
   </Zoom>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Value Decimal Places_
-
-</div>
-
 
 #### iii. Value Prefix and Value Suffix
 
@@ -651,39 +466,25 @@ _Value Decimal Places_
   added as Value Prefix and n is added as Value Suffix to 'East' node.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Value Prefix and Value Suffix"
       src={useBaseUrl("/doc-images/model/node32.png")}
     />
   </Zoom>
+  <p>Value Prefix and Value Suffix</p>
 </div>
 
-<div style={{textAlign: 'center'}}>
-
-
-_Value Prefix and Value Suffix_
-
-</div>
-
-
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Value Prefix and Value Suffix on East node"
       src={useBaseUrl("/doc-images/model/node35.png")}
     />
   </Zoom>
+  <p>Value Prefix and Value Suffix on East node</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Value Prefix and Value Suffix on East node_
-
-</div>
-
 
 ### 3.2 Composite Nodes
 
@@ -695,22 +496,15 @@ _Value Prefix and Value Suffix on East node_
 </div>
 <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Composite Nodes"
       src={useBaseUrl("/doc-images/model/node33.png")}
     />
   </Zoom>
+  <p>Composite Nodes</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Composite Nodes_
-
-</div>
-
 
 In this example, we have added 'Chris Morris' and 'Lois Mitchell' nodes as Composite Node to the 'East' node.
 
@@ -721,34 +515,20 @@ In this example, we have added 'Chris Morris' and 'Lois Mitchell' nodes as Compo
       src={useBaseUrl("/doc-images/model/node34.png")}
     />
   </Zoom>
+  <div class="center"><p>Composite Nodes added to East node</p></div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Composite Nodes added to East node_
-
-</div>
-
 
 When the original node 'Chris Morris' is simulated, the same node added as the Composite Node to the 'East' node also gets simulated.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Simulation effect on Composite Node"
       src={useBaseUrl("/doc-images/model/node36.png")}
     />
   </Zoom>
+  <p>Simulation effect on Composite Node</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Simulation effect on Composite Node_
-
-</div>
-
 
 > ** Note** <br /> The composite nodes do not affect the Table view structure of the Tree
 
@@ -760,38 +540,25 @@ _Simulation effect on Composite Node_
   for the Linked Simulation.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="Simulation" src={useBaseUrl("/doc-images/model/node38.png")} />
   </Zoom>
+  <p>Simulation</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Simulation_
-
-</div>
-
 
 #### Enable Simulation
 
 At first, you have the Enable Simulation option to enable/disable the simulation function for the node.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Enable Simulation"
       src={useBaseUrl("/doc-images/model/node39.png")}
     />
   </Zoom>
-</div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Enable Simulation_
-
+  <p>Enable Simulation</p>
 </div>
 
 #### Default Method
@@ -799,22 +566,15 @@ _Enable Simulation_
 Next, there are 4 simulation methods from which you can choose the Default Method of
 simulation for the node.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Default Method"
       src={useBaseUrl("/doc-images/model/node40.png")}
     />
   </Zoom>
+  <p>Default Method</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Default Method_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   After selecting the simulation method, hover over the node to see the
@@ -822,19 +582,14 @@ _Default Method_
   get the tooltip showing the period values and the simulation method.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Change Default Method on node"
       src={useBaseUrl("/doc-images/model/node41.png")}
     />
   </Zoom>
-</div>
-
-<div style={{textAlign: 'center'}}>
-
-_Change Default Method on node_
-
+  <p>Change Default Method on node</p>
 </div>
 
 You can change the simulation method in the drop-down list as highlighted in the above image and perform simulation for quick analysis. 
@@ -846,15 +601,10 @@ values for the simulation periods.
   <Zoom>
     <img alt="Edit icon" src={useBaseUrl("/doc-images/model/node42.1.png")} />
   </Zoom>
+  <div class="center"><p>Edit icon</p></div>
 </div>
 
-<div style={{textAlign: 'center'}}>
-
-_Edit icon_
-
-</div>
-
-<div style={{ textAlign: "center" }}>
+<div>
   <Zoom>
     <img
       alt="Manually edit simulation period values"
@@ -863,24 +613,17 @@ _Edit icon_
   </Zoom>
 </div>
 
-<div style={{textAlign: 'center'}}>
-
-_Manually edit simulation period values_
-
+<div class="center">
+<p>Manually edit simulation period values</p>
 </div>
 
 Here's an example showing values of a node before and after simulation under each method:
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="Simulation values" src={useBaseUrl("/doc-images/model/node-simulation-methods.png")}
     />
   </Zoom>
-</div>
-
-<div style={{textAlign: 'center'}}>
-
-_Simulation values following the simulation methods_
-
+  <p>Simulation values following the simulation methods</p>
 </div>
 
 > Delete the simulation performed with another method from the drop-down to go back to the default method of simulation. 
@@ -892,49 +635,35 @@ _Simulation values following the simulation methods_
   details such as Description, Header, Footer and Technical Notes to the node.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Business Definition"
       src={useBaseUrl("/doc-images/model/node43.png")}
     />
   </Zoom>
+  <p>Business Definition</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Business Definition_
-
-</div>
-
 
 After configuration, you will be able to view the Business
 Definitions details in the node details page as shown below.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Business Definition on node details page"
       src={useBaseUrl("/doc-images/model/node44.png")}
     />
   </Zoom>
+  <p>Business Definition on node details page</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Business Definition on node details page_
-
-</div>
-
 
 ## 6. Conditional Formatting
 
 <div style={{ textAlign: "justify" }}>
   Conditional Formatting helps you to add a status bar to the nodes based on
   it's variance. The variance calculation can be formatted in the{" "}
-  <Link to={useBaseUrl("docs/model/settings#5-conditional-formatting")}>
+  <Link to={useBaseUrl("model/settings#5-conditional-formatting")}>
     settings
   </Link>
   . This is done by applying alert thresholds and rules for the model at node level.
@@ -944,22 +673,15 @@ _Business Definition on node details page_
   Conditional Formatting has 3 different rules as seen below.
 </div>
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Conditional Formatting"
       src={useBaseUrl("/doc-images/model/node45.png")}
     />
   </Zoom>
+  <p>Conditional Formatting</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Conditional Formatting_
-
-</div>
-
 
 #### Global or Inherited Rule
 
@@ -985,15 +707,8 @@ Custom Rule is indicated by the icon (see Figure below) on the node in the Navig
       src={useBaseUrl("/doc-images/model/node50.png")}
     />
   </Zoom>
+  <div class="center"><p>Custom Rule indicator</p></div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Custom Rule indicator_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   In the below example, we choose to apply the Custom Rule as Percentage and
@@ -1001,26 +716,19 @@ _Custom Rule indicator_
   shown in the below Figure.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Custom Rule setting"
       src={useBaseUrl("/doc-images/model/node47.png")}
     />
   </Zoom>
+  <p>Custom Rule setting</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Custom Rule setting_
-
-</div>
-
 
 After performing simulation, you can observe the following:
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Conditional Formatting on canvas"
@@ -1029,15 +737,8 @@ After performing simulation, you can observe the following:
       height={360}
     />
   </Zoom>
+  <p>Conditional Formatting on canvas</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Conditional Formatting on canvas_
-
-</div>
-
 
 <div style={{textAlign: 'justify'}} className="table-center">
 
@@ -1074,24 +775,15 @@ _Conditional Formatting on canvas_
   value of the node.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Primary and Secondary KPIs"
       src={useBaseUrl("/doc-images/SecKPI.1.png")}
-      width={445}
-      height={90}
     />
   </Zoom>
+  <p>Primary and Secondary KPIs</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Primary and Secondary KPIs_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   As a default, there are three secondary values displayed for a dual series of
@@ -1102,24 +794,15 @@ _Primary and Secondary KPIs_
 2. Baseline metric value for the first period in the series
 3. Variance for the first period between baseline and comparison metric (in % and absolute values)
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Secondary KPIs"
       src={useBaseUrl("/doc-images/SecKPI.2.png")}
-      width={355}
-      height={90}
     />
   </Zoom>
+  <p>Default Secondary KPIs</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Default Secondary KPIs_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   Secondary KPI option lets users customize these secondary values or metric
@@ -1128,8 +811,8 @@ _Default Secondary KPIs_
 
 Users can achieve this using: <br />
 
-i. <Link to={useBaseUrl('docs/model/node#i-secondary-kpi-option-based-on-formulas')}>Secondary KPI option based on Formulas</Link> <br />
-ii. <Link to={useBaseUrl('docs/model/node#ii-secondary-kpi-option-based-on-template')}>Secondary KPI option based on Template</Link>
+i. <Link to={useBaseUrl('model/node#i-secondary-kpi-option-based-on-formulas')}>Secondary KPI option based on Formulas</Link> <br />
+ii. <Link to={useBaseUrl('model/node#ii-secondary-kpi-option-based-on-template')}>Secondary KPI option based on Template</Link>
 
 #### i. Secondary KPI option based on Formulas
 
@@ -1139,71 +822,43 @@ ii. <Link to={useBaseUrl('docs/model/node#ii-secondary-kpi-option-based-on-templ
   TOP node - 'Operating Profit'.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/SecKPIF.1.png")} />
   </Zoom>
+  <p>Before applying formula based Secondary KPIs</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Before applying formula based Secondary KPIs_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   Under the 'Operating Profit' node setting's Secondary KPI option, you need to
   select the Formula button and fill in the label name and the custom formula.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/SecKPIF.2.png")} />
   </Zoom>
+  <p>Configuration for KPI 2</p>
 </div>
 
-<div style={{textAlign: 'center'}}>
-
-
-_Configuration for KPI 2_
-
-</div>
-
-
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/SecKPIF.3.png")} />
   </Zoom>
+  <p>Configuration for KPI 3</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Configuration for KPI 3_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   Upon completing, the user can see Operating Profit % and Ops expense ratio
   values displayed as Secondary KPI values to Operating profit.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/SecKPIF.4.png")} />
   </Zoom>
+  <p>Formula based Secondary KPI</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Formula based Secondary KPI_
-
-</div>
-
 
 #### ii. Secondary KPI option based on Template
 
@@ -1214,19 +869,12 @@ _Formula based Secondary KPI_
   for Contribution calculation using the Template option at the other nodes.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/SecKPIT.1.png")} />
   </Zoom>
+  <p>Before applying template-based Secondary KPI</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Before applying template-based Secondary KPI_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   In this example, the user can define the formula in the 'Water' node under the
@@ -1235,13 +883,12 @@ _Before applying template-based Secondary KPI_
   value on the node widget.
 </div>
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/SecKPIT.2.png")} />
   </Zoom>
-</div> <br />
-
-_Configuration for formula based Secondary KPI_
+  <p>Configuration for formula based Secondary KPI</p>
+</div>
 
 <div style={{ textAlign: "justify" }}>
   To borrow this formula to other nodes, the user can select the Template
@@ -1249,19 +896,23 @@ _Configuration for formula based Secondary KPI_
   instantly see the corresponding Contribution % on the 'Beverage' node.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/SecKPIT.3.png")} />
   </Zoom>
+  <p>Formula based Secondary KPI to be used as template</p>
 </div>
 
-<div style={{textAlign: 'center'}}>
+### Show Secondary KPIs in Table view
 
+Turn on/off the **Show KPIs** toggle next to the Settings.
 
-_Formula based Secondary KPI to be used as template_
-
+<div class="center">
+  <Zoom>
+    <img alt="" src={useBaseUrl("/doc-images/model/turn-on-kpi-tableview.png")} />
+  </Zoom>
+  <p>Secondary KPI in the table view</p>
 </div>
-
 
 ## Expand/Collapse
 
@@ -1274,17 +925,10 @@ The below image shows the expanded view on the panel
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="New Tab" src={useBaseUrl("/doc-images/model/node67.png")} />
+    <img height="550" alt="Expand/collapse the nodes" src={useBaseUrl("/doc-images/model/node67.png")} />
   </Zoom>
-</div>{" "}
-
-<div style={{textAlign: 'center'}}>
-
-
-_Expand/collapse the nodes_
-
+  <p>Expand/collapse the nodes</p>
 </div>
-
 
 ## Quick Editor in Node Tab
 
@@ -1298,15 +942,8 @@ _Expand/collapse the nodes_
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/model/node51.png")} />
   </Zoom>
+  <div class="center"><p>Quick Editor options</p></div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Quick Editor options_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   In Quick Editor, you can also display or hide the node structure using the
@@ -1315,35 +952,21 @@ _Quick Editor options_
 
 The below Figure shows the expanded form of the Quick Editor.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/model/quick-editor-expanded.png")} />
   </Zoom>
-</div>{" "}
-
-<div style={{textAlign: 'center'}}>
-
-
-_Quick Editor - Expanded view_
-
+  <p>Quick Editor - Expanded view</p>
 </div>
-
 
 The below Figure shows the collapsed form of the Quick Editor.
 
-<div style={{ textAlign: "center" }}>
+<div >
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/model/quick-editor-collapse.png")} />
   </Zoom>
+  <div class="center"><p>Quick Editor - Collapsed view</p></div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Quick Editor - Collapsed view_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   In Grid View, you will be able to edit the nodes and save it so that the
@@ -1357,19 +980,12 @@ _Quick Editor - Collapsed view_
   has been double-clicked for editing.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/model/node58.png")} />
   </Zoom>
+  <p>Calculation Method on Quick Editor</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Calculation Method on Quick Editor_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   The node search for the columns Linked Node, Linked Simulation Node and
@@ -1378,19 +994,12 @@ _Calculation Method on Quick Editor_
   node search for Linked Simulation Node has been made.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/model/node59.png")} />
   </Zoom>
-</div>{" "}
-
-<div style={{textAlign: 'center'}}>
-
-
-_Linked Sim Node on Quick Editor_
-
+  <p>Linked Sim Node on Quick Editor</p>
 </div>
-
 
 <div style={{ textAlign: "justify" }}>
   Similarly, the node search for the Source Key Column will be in a drop-down
@@ -1402,15 +1011,8 @@ _Linked Sim Node on Quick Editor_
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/model/node60.png")} />
   </Zoom>
+  <div class="center"><p>Source Key on Quick Editor</p></div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Source Key on Quick Editor_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   You can observe that there's Business View information as a column and it
@@ -1418,54 +1020,32 @@ _Source Key on Quick Editor_
   Business View option.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/model/node52.png")} />
   </Zoom>
+  <p>Business View on Quick Editor</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Business View on Quick Editor_
-
-</div>
-
 
 The columns can be filtered based on the selection in the **Manage Columns** drop-down box.
 You can either "Select all" columns or expand each category and select the respective columns.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/model/manage-columns.png")} 
-    height="400"
+    <img height="450" alt="" src={useBaseUrl("/doc-images/model/manage-columns.png")} 
     />
   </Zoom>
+   <div class="center"><p>List of columns dropdown</p></div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_List of columns dropdown_
-
-</div>
-
 
 You can import and export the data in the form of an XML file using the **Import from Excel** and **Export to Excel** buttons.
 
-<div style={{ textAlign: "center" }}>
+<div style={{ textAlign : "center" }}>
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/model/node55.png")} />
   </Zoom>
+  <div class="center"><p>Import and Export buttons</p></div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Import and Export buttons_
-
-</div>
-
 
 > **Note** <br /> The Export to Excel button is functional on the web
 > version of Power BI, the file can be edited and then be imported using
@@ -1484,15 +1064,8 @@ The below Figure shows the Locked Simulation in the Quick Editor.
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/model/node61.png")} />
   </Zoom>
+  <div class="center"><p>Simulation lock on Quick Editor</p></div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Simulation lock on Quick Editor_
-
-</div>
-
 
 <div style={{ textAlign: "justify" }}>
   The rows can be reordered for the child nodes which exist under a parent node
@@ -1501,35 +1074,21 @@ _Simulation lock on Quick Editor_
   from 'Consumer' to 'Industrials'.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/model/node62.png")} />
   </Zoom>
+  <p>Existing hierarchy</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Existing hierarchy_
-
-</div>
-
 
 The below Figure shows the Quick Editor after changing the order.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/model/node63.png")} />
   </Zoom>
+  <p>Parent change for node ‘Ryan Smith’</p>
 </div>
-
-<div style={{textAlign: 'center'}}>
-
-
-_Parent change for node ‘Ryan Smith’_
-
-</div>
-
 
 ## Summary - Node Tab
 

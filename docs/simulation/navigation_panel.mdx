@@ -35,14 +35,14 @@ In this section, we'll take a look at Navigation Panel and it's components:
       src={useBaseUrl("/doc-images/simulate_tab/sim4.png")}
     />
   </Zoom>
-</div> <br />
+</div>
 
 <div style={{textAlign: 'justify'}}>
 
 
 The scenario with the yellow tag is the active scenario. To collapse the scenario property click on the **^** option
 and to add a new scenario, click on the '+' option. Clicking on three dots gives you options to Copy Scenario, Edit and
-Delete. You can rename the property to a name of your choice in the <Link to={useBaseUrl('docs/model/settings#11-scenarios')}>settings</Link>.
+Delete. You can rename the property to a name of your choice in the <Link to={useBaseUrl('model/settings#11-scenarios')}>settings</Link>.
 
 </div>
 
@@ -59,7 +59,7 @@ Delete - Deletes a scenario <br />
   while using ValQ on Power BI Service.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="ValQ logo"
@@ -68,7 +68,7 @@ Delete - Deletes a scenario <br />
   </Zoom>
 </div> <br />{" "}
 
-> **Note** <br /> Scenarios are not stored as Data Series on ValQ. Click <Link to={useBaseUrl('docs/planning/plan_overview#1base-data-series-vs-scenario-data')}>here</Link> to know more on this.
+> **Note** <br /> Scenarios are not stored as Data Series on ValQ. Click <Link to={useBaseUrl('planning/plan_overview#1base-data-series-vs-scenario-data')}>here</Link> to know more on this.
 
 ### 2. Sub Models
 
@@ -77,7 +77,7 @@ Delete - Deletes a scenario <br />
 
 Sub Models are part of the model and a node is added as a sub-model to access it quickly. This property is useful
 when there are a large number of nodes and you want to get to the important nodes at the click of a button.
-You can go to <Link to={useBaseUrl('docs/model/settings#12-sub-models')}>settings</Link> to add or remove sub-models on ValQ.
+You can go to <Link to={useBaseUrl('model/settings#12-sub-models')}>settings</Link> to add or remove sub-models on ValQ.
 Click on the **^** option to collapse this property.
 
 </div>
@@ -85,7 +85,7 @@ Click on the **^** option to collapse this property.
 
 In the below example, the sub-model 'Overall Result' displays the entire model as its the top node.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="ValQ logo"
@@ -96,7 +96,7 @@ In the below example, the sub-model 'Overall Result' displays the entire model a
 
 Here, the sub-model - 'Midwest' displays only the particular node and its children.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="ValQ logo"
@@ -109,19 +109,17 @@ Here, the sub-model - 'Midwest' displays only the particular node and its childr
 
 <div style={{textAlign: 'justify'}}>
 
-
 ValQ model updates the simulated values based on the periods selected in the Simulation Period. You can select just one period or
 choose a range of period with '[to]' icon, ValQ applies simulation and fetches simulated values only to those selected periods.
-To change the period labels, go to <Link to={useBaseUrl('docs/model/settings#13-simulation-period')}>settings</Link>.
+To change the period labels, go to <Link to={useBaseUrl('model/settings#13-simulation-period')}>settings</Link>.
 Click on the **^** option to collapse this property.
 
-</div> <br />
-
+</div>
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
-      alt="ValQ logo"
+      alt="Simulation Peiod"
       src={useBaseUrl("/doc-images/simulate_tab/sim8.png")}
     />
   </Zoom>
@@ -132,7 +130,7 @@ Click on the **^** option to collapse this property.
   You can observe that the simulation is applied only to these two periods.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="ValQ logo"
@@ -147,11 +145,11 @@ Click on the **^** option to collapse this property.
   Value Display makes available options of aggregation like a month, year to
   date, a full year and simulated periods and scaling options. You can go to
   settings to change{" "}
-  <Link to={useBaseUrl("docs/model/data-series#2-time-aggregation-labels")}>
+  <Link to={useBaseUrl("model/data-series#2-time-aggregation-labels")}>
     Time Aggregation Labels
   </Link>{" "}
   and{" "}
-  <Link to={useBaseUrl("docs/model/settings#14-value-display")}>
+  <Link to={useBaseUrl("model/settings#14-value-display")}>
     Scaling Options
   </Link>{" "}
   to your preference. Value Display is set to a full year and scaling at 0.0m by
@@ -161,7 +159,7 @@ Click on the **^** option to collapse this property.
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
-      alt="ValQ logo"
+      alt="Value Display"
       src={useBaseUrl("/doc-images/simulate_tab/sim10.png")}
     />
   </Zoom>
@@ -174,7 +172,7 @@ Click on the **^** option to collapse this property.
   Input to view it quickly instead of searching for it in the model. The Key
   Input is displayed along with its value and variance percentage when
   simulated. You can go to{" "}
-  <Link to={useBaseUrl("docs/model/settings#15-key-inputs")}>settings</Link> to
+  <Link to={useBaseUrl("model/settings#15-key-inputs")}>settings</Link> to
   add/remove Key Inputs. Click on the '^' option to collapse this property.
 </div> <br />
 
@@ -183,10 +181,10 @@ Click on the **^** option to collapse this property.
   gets highlighted on selecting the key Input 'Chris Morris'.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
-      alt="ValQ logo"
+      alt="Key Inputs"
       src={useBaseUrl("/doc-images/simulate_tab/sim11.png")}
     />
   </Zoom>
@@ -199,7 +197,7 @@ Click on the **^** option to collapse this property.
   added as a KPI to view it quickly instead of searching for it in the model.
   The KPI is displayed along with its value and variance percentage when
   simulated. You can go to{" "}
-  <Link to={useBaseUrl("docs/model/settings#16-kpis")}>settings</Link> to
+  <Link to={useBaseUrl("model/settings#16-kpis")}>settings</Link> to
   add/remove KPIs. Click on the '^' option to collapse this property.
 </div> <br />
 
@@ -208,7 +206,7 @@ Click on the **^** option to collapse this property.
   'Midwest'.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="ValQ logo"
@@ -223,7 +221,7 @@ Click on the **^** option to collapse this property.
   Constraint is added to a node to evaluate its performance after simulation
   against a threshold. Any constraint added to the model is displayed under the
   Navigation Panel along with its{" "}
-  <Link to={useBaseUrl("docs/model/node#25-value-range")}>Value Range</Link>.
+  <Link to={useBaseUrl("model/node#25-value-range")}>Value Range</Link>.
 </div> <br />
 
 <div style={{ textAlign: "justify" }}>
@@ -238,7 +236,7 @@ Click on the **^** option to collapse this property.
   taken as Min = 12 Million and Max = 120 Million.
 </div> <br />
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="New Tab" src={useBaseUrl("/doc-images/model/node19.png")} />
   </Zoom>
@@ -247,14 +245,14 @@ Click on the **^** option to collapse this property.
 <div style={{ textAlign: "justify" }}>
   B. After the Value Range has been set to the 'East' node, the same node is
   added to Constraint under the Navigation Panel. To add Constraint, Model ->{" "}
-  <Link to={useBaseUrl("docs/model/settings#17-constraints")}>Settings</Link> ->
+  <Link to={useBaseUrl("model/settings#17-constraints")}>Settings</Link> ->
   Navigation Panel -> Constraints and choose constraints from the drop-down to
   be listed.
 </div> <br />
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="New Tab" src={useBaseUrl("/doc-images/model/node20.png")} />
+    <img alt="Add Constraints" src={useBaseUrl("/doc-images/model/node20.png")} />
   </Zoom>
 </div> <br />
 
@@ -269,12 +267,12 @@ Click on the **^** option to collapse this property.
   <Zoom>
     <img alt="New Tab" src={useBaseUrl("/doc-images/model/node21.png")} />
   </Zoom>
-</div> <br />
+</div>
 
 In the below screen, we have added three constraints - East, West and Midwest. You can see the constraints are
 sorted based on its utilization under the Navigation Panel.
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="New Tab" src={useBaseUrl("/doc-images/model/node21.1.png")} />
   </Zoom>
@@ -289,7 +287,7 @@ sorted based on its utilization under the Navigation Panel.
 
 **Tree View**
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="New Tab" src={useBaseUrl("/doc-images/simulate_tab/sim13.png")} />
   </Zoom>
@@ -299,7 +297,7 @@ To view the model as a table, you can click on any of the highlighted options as
 
 **Table View**
 
-<div style={{ textAlign: "center" }}>
+<div class="center">
   <Zoom>
     <img alt="New Tab" src={useBaseUrl("/doc-images/simulate_tab/sim14.png")} />
   </Zoom>

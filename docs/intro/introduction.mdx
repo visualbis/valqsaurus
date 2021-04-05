@@ -1,6 +1,7 @@
 ---
 id: introduction
 title: Introduction to ValQ
+slug: /
 sidebar_label: Introduction to ValQ
 ---
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
@@ -8,110 +9,93 @@ import Link from '@docusaurus/Link';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-## What's ValQ?
+ValQ helps businesses run simulations, plans & analysis in a very visual and intuitive manner. 
 
-<div style={{textAlign: 'justify'}}>
-
-ValQ helps businesses run simulations, plans & analyses in a very visual and intuitive manner. 
-<br /> <br />
-</div>
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
-  <img alt="ValQ logo" src={useBaseUrl('/doc-images/intro/1.png')}  
-    width={510}
-    height={200}/>
+  <img alt="ValQ logo" src={useBaseUrl('/doc-images/intro/1.png')}/>  
   </Zoom>
  </div>
 
 ## What can I use ValQ for?
 
-<div style={{textAlign: 'justify'}}>
-ValQ is a powerful, multi-purpose tool that can be used across all functions in an organization. It is designed to 
-help decision-makers and executives simulate various scenarios on-the-fly and analyze outcomes to
-arrive at actionable decisions. ValQ supports use cases such as what-if simulations, scenario comparisons, planning, forecasting, variance analysis, value driver analysis and more.
-</div> <br />
+ValQ is a powerful, multi-purpose tool and can be used across all functions in an organization. ValQ helps decision-makers and executives simulate various scenarios on-the-fly and analyze outcomes to arrive at actionable decisions. 
+ValQ supports use cases such as what-if simulations, scenario comparisons, planning, forecasting, variance analysis, value driver analysis, and more.
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
     <img alt="ValQ use cases" src={useBaseUrl('/doc-images/intro/2.png')} 
-    width={500}
-    height={410}/>
+/>
   </Zoom>
+  <p>ValQ use-cases</p>
 </div>
 
-*ValQ use-cases*
+ValQ Collaborate features include:
+
+- Scenario collaborations
+- Comments and Annotations
+- Planning Series Collaboration
+- Audit Log
+- MemSQL DB Storage
+- Web Data Source
+- Private Tenant
+- Writeback API
+- Security
+
+For more info, check out ValQ <a href="https://valq.com/pricing//" target="_blank">Pricing</a> page.
 
 ## Who can use ValQ?
 
-ValQ is for everyone ranging from C-suite executives to analysts across departments and functions. 
+ValQ is for everyone ranging from C-suite executives to analysts across departments and functions.
+> ValQ extends its functionality beyond financial & operations planning.
 
-> ** Note** <br /> ValQ is not limited to financial & operations planning functions. 
-
-<div style={{textAlign: 'justify'}}>
-For example, <br />
-1.  A customer service rep can leverage ValQ to simulate headcount needs based on estimated growth in call volume,
+For example,
+1. A customer service rep can leverage ValQ to simulate headcount needs based on estimated growth in call volume,
 upcoming product launches, marketing campaigns, and more. <br />
-2.  A marketing manager can leverage ValQ to analyze web traffic, online assets, conversion rates, etc. to calculate
-marketing ROI.
-</div> <br />
+1. A marketing manager can leverage ValQ to analyze web traffic, online assets, conversion rates, etc. to calculate marketing ROI.
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
-    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/3.png')} 
-    width={595}
-    height={220}/>
+    <img alt="ValQ users" src={useBaseUrl('/doc-images/intro/3.png')} />
   </Zoom>    
+  <p>ValQ domain expertise</p>
 </div>
-
-*ValQ domain expertise*
 
 ## What do I need to run ValQ?
 
 ValQ is an independent solution that does not require any infrastructure, database, service, or IT support.
 
-> ** Note** <br /> All you need is Microsoft Power BI to run ValQ
+> All you need is Microsoft Power BI to run ValQ.
 
-<div style={{textAlign: 'justify'}}>
-Note that the Microsoft Power BI desktop software is free, and you can download it from <a href="https://powerbi.microsoft.com/en-us/downloads/" target="_blank">here</a>.
-With ValQ available as a standalone visual for Microsoft Power BI in the app store, you can get running in a matter of minutes.
-Learn how to download & install ValQ <Link to={useBaseUrl('docs/intro/install')}>here</Link>.
-</div> <br />
+Microsoft Power BI desktop is a free software that you can download <a href="https://powerbi.microsoft.com/en-us/downloads/" target="_blank">here</a>.
 
-<div style={{textAlign: 'center'}}>
+<div class="center">
   <Zoom>
-<img alt="Logo of Microsoft PowerBI and ValQ" src={useBaseUrl('/doc-images/intro/4.png')}
-    width={425}
-    height={170}/>
+    <img alt="Logo of Microsoft PowerBI and ValQ" src={useBaseUrl('/doc-images/intro/4.png')}/>
   </Zoom>
 </div>
 
-## What sources can ValQ connect to?
+With ValQ available as a standalone visual for Microsoft Power BI in the AppSource, you can get running in a matter of minutes.
+Learn how to download & install ValQ <Link to={useBaseUrl('intro/install')}>here</Link>.
 
-<div style={{textAlign: 'justify'}}>
-ValQ can connect to all the databases, platforms and other data sources that are supported by Power BI – including but not limited to:
-</div> <br />
+## Sources ValQ can connect to
 
-  - Databases such as SQL Server, SSAS, Oracle, Snowflake
-  - Platforms and apps such as Salesforce, Dynamics 365, SAP HANA, and SAP BW
-  - and other sources such as Excel, Web, JSON, OData
+ValQ connects to all databases, platforms, and other data sources supported by Power BI:
 
-<div style={{textAlign: 'center'}}>
+<div>
   <Zoom>
 <img alt="ValQ sources" src={useBaseUrl('/doc-images/intro/5.png')}
-    width={565}
-    height={300}/>
+/>
   </Zoom>
 </div>
-
-*ValQ Serverless architecture and data sources*
 
 ## Where can I learn more about ValQ?
 
 The following learning resources are available for ValQ:
   -   <a href="https://valq.com/get-started/" target="_blank">Getting started</a> 
   -   <a href="https://valq.com/demos/" target="_blank">Demos</a>
-  -   <Link to={useBaseUrl('docs/how_to_videos/get-started')}>Videos</Link>
+  -   <Link to={useBaseUrl('how_to_videos/get-started')}>Videos</Link>
   -   <a href="https://valq.com/blogs/" target="_blank">Blogs</a>
   -   <a href="https://valq.com/webinars/" target="_blank">Webinars</a>
   -   <a href="https://community.valq.com/" target="_blank">Community</a>
-  -   and this online reference guide
+  -   <Link to={useBaseUrl('#')}>ValQ Documentation</Link>

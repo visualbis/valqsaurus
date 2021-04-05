@@ -1,0 +1,52 @@
+---
+id: valq-workspace
+title: ValQ Workspace or Account
+sidebar_label: Workspaces
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
+import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+1. A ValQ workspace or account is provisioned when a customer purchases a ValQ collaborate product. The customer can select the number of users to be added to the workspace/account and the plan at the time of purchase.
+1. Only registered users in the workspace will be able to login to the ValQ visual (via Office365 login).
+1. The collaboration features - storage, commenting, exporting data source, model merge, and user security etc. will be enabled for the users of the workspace.
+1. A ValQ workspace needs to be renewed at the time of license expiry so that the users in the ValQ workspace can continue to use the workspace without any issues.
+
+## Create a Workspace
+
+1. Go to [ValQ Pricing Page](https://valq.com/pricing/#collaborate) and click on the plan you wish to buy.
+ <div class="center">
+  <Zoom>
+    <img alt="Collaborate subscriptions page comparison" src={useBaseUrl("/doc-images/storage/pricing-page.png")} />
+  </Zoom>
+  <p>ValQ Collaborate plan pricing page</p>
+ </div>
+
+2. On the **Sign Up** page fill out the required information such as *Product details, Billing details*, and *Credit Card details*. Enter a *Workspace Name* to create a workspace (this is like your unique account on ValQ Public cloud).
+> The **Workspace Name** given here cannot be modified later.
+
+ <div>
+  <Zoom>
+    <img alt="Sign Up for ValQ Collaborate" src={useBaseUrl("/doc-images/storage/signup-page.png")} />
+  </Zoom>
+  <div class="center"><p>ValQ Collaborate sign up page</p></div>
+ </div>
+
+A mail is sent to you with a download link for ValQ Collaborate **Visual (Web Store build)**.
+
+## Next Steps
+
+Click on the **Click here** link in the email and download the ValQ Collaborate visual with the extension `.pbiviz`.
+Import this `.pbiviz` file in Power BI Desktop to <Link to={useBaseUrl('intro/install')}>install the visual</Link>.
+
+## Related Information
+
+Once you create your workspace you become the default Admin. You will receive a link to the Workspace Admin Console in your email.
+
+As an Admin, you can <Link to={useBaseUrl('storage/admin-console#invite-other-users-to-the-workspace')}>Invite other users to the Workspace</Link> for collaboration and <Link to={useBaseUrl('storage/admin-console#assign-roles-to-workspace-users')}>Assign roles to Workspace users</Link> [Refer the <Link to={useBaseUrl('storage/admin-console')}>Administration</Link>] section.
+
+Workspace members can utilize ValQ features as per the pricing plan selected.
+
+
