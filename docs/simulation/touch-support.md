@@ -16,10 +16,8 @@ ValQ now provides optimized touch support and makes interacting with models easi
   <Zoom>
     <img alt="ValQ touch support default view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-valq-view.png")} height="450"/>
   </Zoom>
+  <p>ValQ touch support default view</p>
 </div>
-
-*ValQ touch support default view*
-
 
 ## ValQ features optimized for touch support
 
@@ -68,19 +66,17 @@ The visual has a *Pinch and Zoom* feature for easier accessibility. The ValQ mod
   <Zoom>
     <img alt="Default Canvas Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-tree-view.png")} height="450"/>
   </Zoom>
+  <p>Default Canvas Tree view</p>
  </div>
-
- *Default Canvas Tree view*
 
  <div class="center">
   <Zoom>
     <img alt="Default Canvas Table view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-table-view.png")} height="450"/>
   </Zoom>
+  <p>Default Canvas Table view</p>
  </div>
 
- *Default Canvas Table view*
-   
- **Node selection Touch Bar options**
+**Node selection Touch Bar options**
 
 1. **Delete** - Deletes the simulated value and restores the original value of the node.
 1. [Node Slider](#node-slider) - Simulates a node.
@@ -93,9 +89,8 @@ The visual has a *Pinch and Zoom* feature for easier accessibility. The ValQ mod
   <Zoom>
     <img alt="Node Touch Bar menu Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-tree-view.png")} height="450"/>
   </Zoom>
+  <p>Node Touch Bar menu Tree view</p>
  </div>
-
- *Node Touch Bar menu Tree view*
 
 ### Search
 
@@ -105,9 +100,8 @@ The Mac-style spotlight search allows you to search a node in the model. Tap on 
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/search-mac-spotlight.png")} height="450"/>
   </Zoom>
+  <p>Type the name of the node in the search box</p>
 </div>
-
-*Type the name of the node in the search box*
 
 * In the *Tree* view, the *Copper Sold* node is selected and the model is expanded up to the selected node level.
 
@@ -115,9 +109,8 @@ The Mac-style spotlight search allows you to search a node in the model. Tap on 
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-selected-tree-view.png")} height="450"/>
   </Zoom>
+  <p>The searched node is selected in tree view</p>
 </div>
-
-*The searched node is selected in tree view*
 
 * In the *Table* view, just the searched node is displayed.
 
@@ -125,9 +118,8 @@ The Mac-style spotlight search allows you to search a node in the model. Tap on 
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-selected-table-view.png")} height="450"/>
   </Zoom>
+  <p>Node searched in table view</p>
 </div>
-
-*Node searched in table view*
 
 :::note
 The selected node is not expanded to show the child nodes by default, in both the tree/table views.
@@ -142,9 +134,8 @@ Tree/table view are inter-linked and get auto-updated on each selection.
   <Zoom>
     <img alt="Node-level hierarchy Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-go-to-level.png")} height="450"/>
   </Zoom>
+  <p>Node-level hierarchy Tree view</p>
 </div>
-
-*Node-level hierarchy Tree view*
 
 In a *Table* view, you can tap on the plus(+)/minus(-) symbol next to each node to expand/collapse the node hierarchy.
 
@@ -152,9 +143,8 @@ In a *Table* view, you can tap on the plus(+)/minus(-) symbol next to each node 
   <Zoom>
     <img alt="Table view of node-level hierarchy" src={useBaseUrl("/doc-images/simulate_tab/touch-support/go-to-level-table-view.png")} height="450"/>
   </Zoom>
+  <p>Node-level hierarchy expansion in Table view</p>
 </div>
-
-*Node-level hierarchy expansion in Table view*
 
 ### Node slider
 
@@ -165,9 +155,8 @@ Tap and select a node (*Copper Price*) to enable the slider. In the below screen
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-slidebar.png")} height="450"/>
   </Zoom>
+  <p>Copper Price node simulated by 6% in tree view</p>
 </div>
-
-*Copper Price node simulated by 6% in tree view*
 
 The same node simulation(6% better) in the *Table* view:
 
@@ -175,9 +164,8 @@ The same node simulation(6% better) in the *Table* view:
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-simulation-table-view.png")} height="450"/>
   </Zoom>
+  <p>Node search and simulation in table view</p>
 </div>
-
-*Node search and simulation in table view*
 
 ### Comment
 
@@ -192,9 +180,8 @@ In the **Simulate** tab, tap on a node and then tap the **Comments** icon in the
   <Zoom>
     <img alt="Enter node comment" src={useBaseUrl("/doc-images/simulate_tab/touch-support/enter-node-comment.png")} height="450"/>
   </Zoom>
+  <p>Type a new comment on the node</p>
 </div>
-
-*Type a new comment on the node*
 
 ### Node details
 
@@ -204,9 +191,8 @@ Select a node either in *Tree/Table* view and tap *details* to view the node det
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-details-icon.png")} height="450"/>
   </Zoom>
+  <p>Node details icon in tree view</p>
 </div>
-
-*Node details icon in tree view*
 
 A detailed node's information screen is displayed:
 
