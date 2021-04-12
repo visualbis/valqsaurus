@@ -72,3 +72,13 @@ html[data-theme="dark"] blockquote {
     text-align: center;
     color: rgb(60, 79, 97);
 }
+
+#caption-left {
+    text-align: left;
+    color: rgb(60, 79, 97);
+}
+
+#credit {
+    float: right;
+    font-size: 12px;
+}
