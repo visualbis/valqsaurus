@@ -278,27 +278,44 @@ sorted based on its utilization under the Navigation Panel.
   </Zoom>
 </div>
 
-### 8. Visualization
+## 8. Visualization
 
-<div style={{ textAlign: "justify" }}>
-  You can change the view of the model with the visualization options. By
-  default, Visualization is set to Tree display and Standard view mode.
-</div> <br />
+You can change the view of the model with the visualization options. By default, Visualization is set to Tree display and Standard view mode.
 
-**Tree View**
+### Tree View
 
 <div class="center">
   <Zoom>
-    <img alt="New Tab" src={useBaseUrl("/doc-images/simulate_tab/sim13.png")} />
+    <img alt="New Tab" src={useBaseUrl("/doc-images/simulate_tab/visualization-tree-composite.png")} />
   </Zoom>
-</div> <br />
+</div>
 
 To view the model as a table, you can click on any of the highlighted options as seen below.
 
-**Table View**
+### Table View
 
 <div class="center">
   <Zoom>
-    <img alt="New Tab" src={useBaseUrl("/doc-images/simulate_tab/sim14.png")} />
+    <img alt="New Tab" src={useBaseUrl("/doc-images/simulate_tab/visualization-table-view.png")} />
   </Zoom>
 </div>
+
+### Show Composite Nodes
+
+The **Show Composite Values** toggle is only available for the models that have <Link to={useBaseUrl('model/node#32-composite-nodes')}>Composite nodes</Link> configured.
+You can chose to enable/disable the Composite values from the Navigation Panel:
+
+<div class="center">
+  <Zoom>
+    <img alt="New Tab" src={useBaseUrl("/doc-images/simulate_tab/toggle-off.png")} />
+  </Zoom>
+  <p>Composite Values disabled</p>
+</div>
+
+<div class="center">
+  <Zoom>
+    <img alt="New Tab" src={useBaseUrl("/doc-images/simulate_tab/toggle-on.png")} />
+  </Zoom>
+  <p>Composite values enabled and displayed in the Canvas</p>
+</div>
+
