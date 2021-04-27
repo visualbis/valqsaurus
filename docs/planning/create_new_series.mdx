@@ -67,6 +67,31 @@ The following shows the result on the Plan screen.
   </Zoom>
 </div>
 
+### Rolling Planning
+
+The Rolling Planning also referred to as Rolling Forecast enables organizations to continuously forecast over a set time frame. The prediction is based on rolling out each recent period actual values and re-forecasting for the remaining time frame.
+
+* You can create **New Series** by selecting Node values for a certain time period from an earlier series.
+
+ <div class="center">
+  <Zoom>
+    <img alt="Plan Series created" src={useBaseUrl('/doc-images/plan/rolling-plan-new-series.png')} />
+  </Zoom>
+ </div>
+
+  - Select the **Actuals** from a base series
+  - Select the **Forecast** values from the most recent series
+
+> A new series is created that has Actual values from the base series and forecast values from the most recent series.
+
+This feature allows user to:
+- Determine over-achieved and under-achieved values by comparing the present and any previous series.
+- Lock the **Actuals** and increase the delta value for the remaining months. You do this as follows:
+    - Select the node to which you want to allocate the increased value
+    - Click on **Weight** and add the delta percentage
+    - All the unlocked cells are impacted with the increased value
+- This achieves month-on-month rolling forecast.
+
 ### Create a plan from scratch (such as zero-based budget)
 
 <div style={{textAlign: 'justify'}}>

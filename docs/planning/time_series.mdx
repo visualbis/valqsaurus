@@ -8,13 +8,7 @@ import Link from "@docusaurus/Link";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-<div style={{ textAlign: "justify" }}>
-  ValQ has in-built Time Series Forecasting capabilities that allow you to make
-  a forecast based on past data collected over a while. To access this powerful
-  feature, all you have to do is click on the "Auto Forecast" button as shown
-  below.
-</div> <br />
-
+ValQ has in-built Time Series Forecasting capabilities that allow you to make a forecast based on past data collected over a while. To access this powerful feature, all you have to do is click on the "Auto Forecast" button as shown below:
 <div class="center">
   <Zoom>
     <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/auto-forecast.png")} />
@@ -23,19 +17,14 @@ import "react-medium-image-zoom/dist/styles.css";
 
 ## Forecast options
 
-<div style={{ textAlign: "justify" }}>
-  Clicking on Auto Forecast will give you the options to configure time series
-  forecasting that make predictions designed to suit your needs.
-</div> <br />
-
+Clicking on Auto Forecast will give you the options to configure time series forecasting that make predictions designed to suit your needs.
 <div class="center">
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/tsf1.png")} />
+    <img alt="Auto Forecast" src={useBaseUrl("/doc-images/plan/auto-forecast-option.png")} />
   </Zoom>
-</div> <br />
+</div>
 
 <div style={{textAlign: 'justify'}} className="table-center">
-
 
 |     | Options                    | Description                                                                    |
 | --- | -------------------------- | ------------------------------------------------------------------------------ |
@@ -47,7 +36,6 @@ import "react-medium-image-zoom/dist/styles.css";
 | 6   | Add Growth                 | Growth component can be added here on absolute or percentage terms             |
 
 </div>
-
 
 ## Advanced options
 
@@ -71,48 +59,28 @@ Following are the 4 _Forecasting Methods_ available:
 
 ## 1. Auto Forecast
 
-<div style={{ textAlign: "justify" }}>
-  Auto Forecast option automatically predicts Target Node for the Target Period
-  based on Past Data Series & Weights and Source Periods. Growth can be added as
-  an absolute value or percentage growth when needed. This option does not need
-  the Distribution Method as ValQ performs time series forecasting
-  automatically.
-</div> <br />
+Auto Forecast option automatically predicts Target Node for the Target Period based on Past Data Series & Weights and Source Periods. Growth can be added as an absolute value or percentage growth when needed. This option does not need the Distribution Method as ValQ performs time series forecasting automatically.
 
 Let's understand how ValQ performs time series forecasting with examples to predict 2020 results.
 
 ### Example 1: Auto Forecast with No Growth
-
-<br />
-
-<div style={{textAlign: 'justify'}}>
-
 
 #### Configuration for Forecasting
 
 In the below example, forecasting is done for node 'Overall Result' for the year 2020 based on 2019 actuals data with weight as 1
 and growth not incorporated.
 
-</div>
-
-
 <div class="center">
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/tsf3.1.png")} />
+    <img alt="Auto Forecast with No Growth" src={useBaseUrl("/doc-images/plan/auto-forecast-no-growth.png")} />
   </Zoom>
-</div> <br />
-
-<div style={{textAlign: 'justify'}}>
-
+</div>
 
 #### Preview of Forecast Results
 
 The below Figure shows the results of Auto Forecasting as per the above configuration with three choices of forecast i.e.
 Optimized, Balanced and Conservative. Notice that the Net Growth of Conservative is 0.00% as we didn't add growth in the Forecast
 Basis option.
-
-</div>
-
 
 <div class="center">
   <Zoom>
@@ -122,36 +90,22 @@ Basis option.
 
 ### Example 2: Auto Forecast with Growth Component
 
-<br />
-
-<div style={{textAlign: 'justify'}}>
-
-
 #### Configuration for Forecasting
 
 Here's another example where forecasting is done for node 'Overall Result' for the year 2020 based on 2019 and 2018 actuals with
 weight as 2 and 1 respectively and 10% growth. Auto Forecast is the Forecast Method applied in this example.
 
-</div>
-
-
 <div class="center">
   <Zoom>
     <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/tsf4.1.png")} />
   </Zoom>
-</div> <br />
-
-<div style={{textAlign: 'justify'}}>
-
+</div>
 
 #### Preview of Forecast Results
 
 The below Figure shows the results of Auto Forecasting as per the above configuration with three choices of forecast i.e.
 Optimized, Balanced and Conservative. Notice that the Net Growth of Conservative is 10% as we have added a 10% growth in
 the Forecast Basis option.
-
-</div>
-
 
 <div class="center">
   <Zoom>
