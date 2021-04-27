@@ -22,53 +22,43 @@ In this section, we'll take a look at Navigation Panel and it's components:
 
 ### 1. Scenarios
 
-<div style={{ textAlign: "justify" }}>
-  Scenarios are particularly useful when you want to perform a what-if analysis to
-  the model and you can save each instance as an individual scenario. This way
-  you have multiple scenarios to analyze and conduct scenario analysis.
-</div> <br />
+Scenarios are particularly useful when you want to perform a what-if analysis to the model and you can save each instance as an individual scenario. This way you have multiple scenarios to analyze and conduct scenario analysis.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
-      alt="ValQ logo"
-      src={useBaseUrl("/doc-images/simulate_tab/sim4.png")}
+      alt="Scenarios"
+      src={useBaseUrl("/doc-images/simulate_tab/scenarios-options.png")}
     />
   </Zoom>
 </div>
 
-<div style={{textAlign: 'justify'}}>
-
-
-The scenario with the yellow tag is the active scenario. To collapse the scenario property click on the **^** option
-and to add a new scenario, click on the '+' option. Clicking on three dots gives you options to Copy Scenario, Edit and
-Delete. You can rename the property to a name of your choice in the <Link to={useBaseUrl('model/settings#11-scenarios')}>settings</Link>.
-
-</div>
-
-
-Copy Scenario - Creates a duplicate of the scenario that you have copied <br />
-Edit - Change the title of the scenario and add an optional description <br />
-Delete - Deletes a scenario <br />
-
-<div style={{ textAlign: "justify" }}>
-  The URL icon is available to help you compare multiple scenarios, observe the
-  summary of the Scenarios and take a look at the KPIs (see below Figure). With
-  Manage Scenarios option you can add or remove scenarios for comparison and you
-  also have the option to download the scenario comparison as an excel file
-  while using ValQ on Power BI Service.
-</div> <br />
+The scenario with the yellow tag is the active scenario. 
+- To collapse the scenario property click on the ( **^** ) option. 
+- To create a new scenario, click on the ( **+** ) option.
+- To download the selected scenario data as a Microsoft Excel-compatible XML file, click the ( <img width="15" src={useBaseUrl('img/download.svg')}/> ) icon.
+- Click on the 3 dots `...` to access further options:
+  - **Copy Scenario**: Duplicates the existing scenario into a new one.
+  - **Edit**: Change the title of the scenario and add an optional description.
+  - **Share**: Enable to share the scenario across users/groups if the model is shared.
+  - **Delete**: Deletes a scenario.
+- **Compare Scenarios** option helps you compare multiple scenarios:
+   - Click **Manage Scenario** to add or remove scenarios for comparison.
+   - To  download the scenario comparison as an excel file, click **Download to Excel**.
 
 <div class="center">
   <Zoom>
     <img
-      alt="ValQ logo"
-      src={useBaseUrl("/doc-images/simulate_tab/sim5.png")}
+      alt="Scenarios comparison"
+      src={useBaseUrl("/doc-images/simulate_tab/compare-scenarios.png")}
     />
   </Zoom>
-</div> <br />{" "}
+  <p>Scenarios comparison screen</p>
+</div>
 
 > **Note** <br /> Scenarios are not stored as Data Series on ValQ. Click <Link to={useBaseUrl('planning/plan_overview#1base-data-series-vs-scenario-data')}>here</Link> to know more on this.
+
+> To rename the property's name to another value, go to the <Link to={useBaseUrl('model/settings#11-scenarios')}>General > Settings > Navigation Panel</Link> section.
 
 ### 2. Sub Models
 

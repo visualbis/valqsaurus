@@ -472,14 +472,14 @@ Value Prefix and Value Suffix options are used to add prefix and suffix like cur
   <div class="center"><p>Value Prefix and Value Suffix</p></div>
 </div>
 
-<div style={{ textAlign:"center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Value Prefix and Value Suffix on East node"
-      src={useBaseUrl("/doc-images/model/node35.png")}
+      src={useBaseUrl("/doc-images/model/node-prefix-sufix.png")}
     />
   </Zoom>
-  <div class="center"><p>Value Prefix and Value Suffix on East node</p></div>
+  <p>Value Prefix and Value Suffix on East node</p>
 </div>
 
 ### 3.2 Composite Nodes
@@ -534,6 +534,10 @@ Use the <Link to={useBaseUrl('simulation/navigation_panel#show-composite-nodes')
 
 ## 4. Simulation
 
+:::note
+Simulation is enabled only for the leaf nodes by default in a Simple Dynamic model.
+:::
+
 <div style={{ textAlign: "justify" }}>
   In the <b>Simulation</b> settings, you can configure simulation details
   such as selection of the Default Simulation Method and assigning the node
@@ -581,14 +585,14 @@ simulation for the node.
   get the tooltip showing the period values and the simulation method.
 </div> <br />
 
-<div style={{ textAlign:"center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Change Default Method on node"
-      src={useBaseUrl("/doc-images/model/node41.png")}
+      src={useBaseUrl("/doc-images/model/leaf-node-simulation.png")}
     />
   </Zoom>
-  <div class="center"><p>Change Default Method on node</p></div>
+  <p>Simulation on the leaf node</p>
 </div>
 
 You can change the simulation method in the drop-down list as highlighted in the above image and perform simulation for quick analysis. 
@@ -768,7 +772,7 @@ After performing simulation, you can observe the following:
 ## 7. Secondary KPIs
 
 <div style={{ textAlign: "justify" }}>
-  Secondary KPIs helps the user to aggregate and visualize additional or
+  Secondary KPIs help the user to aggregate and visualize additional or
   alternate KPI values in the node widget. Specifically, in a model with two
   data series, these are the set of secondary metrics captured under the primary
   value of the node.
