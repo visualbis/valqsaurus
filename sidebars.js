@@ -110,6 +110,10 @@ module.exports = {
                                                                                           */
         ],
     },
+    Releases: {
+        Releases: ["intro/releases"
+    ],
+    },
     functionSideBar: {
         "Logical Functions": [
             "references/formulas/if",

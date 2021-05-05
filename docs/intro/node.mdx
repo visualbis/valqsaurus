@@ -34,7 +34,7 @@ Each node represents a value driver, KPI or category and it's several performanc
 
 |     | Component                   | Description                                                                   |
 | --- | --------------------------- | ----------------------------------------------------------------------------- |
-| 1   | Node name                   | Name of the value driver or KPI                                               |
+| 1   | Node name                   | Name of the value driver or KPI                                        |
 | 2   | Conditional Formatting      | Color band indicating the variance                                            |
 | 3   | Value Trend                 | A sparkline graph showing the trend                                           |
 | 4   | Baseline Value              | Node value of the baseline series                                             |
@@ -45,6 +45,19 @@ Each node represents a value driver, KPI or category and it's several performanc
 
 </div>
 <br></br>
+
+:::note
+Lengthy Node name is truncated in the Tree view to avoid overlapping on other values.
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img
+      alt="Identifying Nodes components"
+      src={useBaseUrl("/doc-images/intro/node-name-truncated.png")}
+    />
+  </Zoom>
+  <div class="center"><p>Node components and their significance</p></div>
+</div>
+:::
 
 > Variance is calculated as the difference between the Baseline series and Comparison series
 

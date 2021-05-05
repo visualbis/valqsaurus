@@ -143,6 +143,10 @@ The selected Nodes and the child nodes can be shared with the following 2 option
 
 > Industrials sub-model is no longer listed in the *Navigation panel* for the users with *Analyzer* and *Viewer* roles.
 
+:::note
+Access Control is disabled for the top node.
+:::
+
 ## Manage Scenario Access
 
 On the **Simulate** tab select the *scenario* to be shared and click the *share* icon next to the *scenario*.
@@ -169,6 +173,17 @@ On the **Simulate** tab select the *scenario* to be shared and click the *share*
    </Zoom>
    <p>Scenario shared with edit-access to the group</p>
   </div>
+
+:::note
+**View Access** checkbox in Share (Scenario/Series) settings is now enabled by default with a tooltip message "Cannot remove View Access when Edit Access is enabled" when **Edit Access** checkbox is enabled.
+<div class="center">
+    <Zoom>
+        <img alt="Submodel Calculation method in the Plan tab" 
+        src={useBaseUrl('doc-images/storage/view-access-default.png')}
+        />
+    </Zoom>
+</div>
+:::
 
 - Case 1: *Admin* and *Analyzer* can only view, compare, download and copy the shared scenario.
 

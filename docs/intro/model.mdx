@@ -22,16 +22,12 @@ Learn how to create your first visualization using ValQ in less than 5 minutes. 
 ## Step-by-Step Guide
 
 Learn how to visualize your sales data with the following steps:
-
 1. [Import data from Excel](#1-import-data-from-excel)
 1. [Assign your data fields to ValQ](#2-assign-your-data-fields-to-valq)
 
 ### 1. Import data from Excel
 
-  1. a) We have a simple dataset as shown below that measures sales performance
-  for a combination or region, product category & sales rep. Download the
-  dataset [here](./assets/Sales_Performance_Data.xlsx).
-  and try for yourself.
+1. a) We have a simple dataset as shown below that measures sales performance for a combination or region, product category & sales rep. Download the dataset [here](./assets/Sales_Performance_Data.xlsx) and try for yourself.
 
 <div class="center">
   <Zoom>
@@ -40,6 +36,12 @@ Learn how to visualize your sales data with the following steps:
 </div> 
 
 1. b) To import this data into Power BI, go to File and select Get Data. Now choose Excel to import the sales data.
+
+:::note
+ValQ consumes data that is structured in columnar format. If the data is of any other structure such as a Crosstab, convert the data into columns at the source. 
+
+If it is not feasible to change into columnar structure at the source, you can use Power BI’s Query Editor to transform the data and then load it to ValQ.
+:::
 
 <div class="center">
   <Zoom>
@@ -71,12 +73,7 @@ Learn how to visualize your sales data with the following steps:
   </Zoom>
 </div> 
 
-<div style={{ textAlign: "justify" }}>
-  1. f) Click on the ValQ icon under the Visualizations pane. If you don’t see
-  this option, you will have to first download and install{" "}
-  <Link to={useBaseUrl("intro/install")}> ValQ </Link>. Now resize the ValQ
-  visual in the canvas to full screen.
-</div> 
+1. f) Click on the ValQ icon under the Visualizations pane. If you don’t see this option, you will have to first download and install{" "} <Link to={useBaseUrl("intro/install")}> ValQ </Link>. Now resize the ValQ visual in the canvas to full screen.
 
 <div class="center">
   <Zoom>
@@ -84,10 +81,7 @@ Learn how to visualize your sales data with the following steps:
   </Zoom>
 </div> 
 
-<div style={{ textAlign: "justify" }}>
-  1. g) Assign Sales Forecast from the Fields pane to the visual to activate
-  ValQ. You will now see the following. Close the popup window.
-</div> 
+1. g) Assign Sales Forecast from the Fields pane to the visual to activate ValQ. You will now see the following. Close the popup window.
 
 <div class="center">
   <Zoom>
@@ -100,7 +94,7 @@ Learn how to visualize your sales data with the following steps:
 
 ### 2. Assign your data fields to ValQ
 
-2. a) Click on the Create a simple model option.
+2. a) Click on the **Create a Simple Model** option.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -142,12 +136,6 @@ Learn how to visualize your sales data with the following steps:
 
 You have built your first visualization using ValQ. Take some time to explore this model further.
 
-<div style={{ textAlign: "justify" }}>
-  ValQ also packages few inbuilt examples as samples, click{" "}
-  <Link to={useBaseUrl("model/new#1-open-a-sample-model")}>here</Link> for
-  ValQ samples. To explore more such models, visit{" "}
-  <a href="https://valq.com/demos" target="_blank">
-    Demos
-  </a>
-  .
-</div>
+ValQ also packages few inbuilt examples as samples, click <Link to={useBaseUrl("model/new#1-open-a-sample-model")}>here</Link> for ValQ samples. To explore more such models, visit <a href="https://valq.com/demos" target="_blank"> Demos </a>.
+
+> Based on the data fields assigned above, you can also build <Link to={useBaseUrl('model/new#2-create-a-simple-model')}>Simple Model</Link> and <Link to={useBaseUrl('model/new#3-create-an-advanced-model')}>Advanced Models</Link>.

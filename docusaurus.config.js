@@ -29,6 +29,11 @@ module.exports = {
                     position: "left",
                     title: "Docs Home",
                 },
+                {
+                    to: "/intro/releases",
+                    label: "Release Notes",
+                    position: "left",                    
+                },
             ],
         },
         footer: {

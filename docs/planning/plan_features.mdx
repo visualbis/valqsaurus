@@ -3,7 +3,6 @@ id: plan_features
 title: Plan Features
 sidebar_label: Plan Features
 ---
-
 import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
 import Link from "@docusaurus/Link";
 import Zoom from "react-medium-image-zoom";
@@ -53,7 +52,7 @@ The Plan action menu has the following features:
 
 1. [Allocate Children](#36-allocate-children) - Allocate values to a node's children
 1. [Auto Forecast](#35-auto-forecast) - Perform time series forecasting
-1. [Hold and Release](#37-hold-and-release) - Hold and Release cells on Plan tab
+1. [Hold and Release](#33-hold-and-release) - Hold and Release cells on Plan tab
 1. [Comments](#38-comments) - Add comments to a cell
 1. [Weight](#31-weight) - Allocate node values with weights from another node
 1. [Equals](#32-equals) - Allocate node values equally
@@ -107,17 +106,18 @@ Select the cell(s) and click **Hold**.
 
 <div class="center">
   <Zoom>
-    <img alt="Hold and Release cells" src={useBaseUrl("/doc-images/plan/hold-cell.png")} />
+    <img alt="Lock the cells" src={useBaseUrl("/doc-images/plan/hold-cell.png")} />
   </Zoom>
-  <p>Selected cells locked with a lock symbol</p>
+  <p>Selected cells locked and grayed out</p>
 </div>
 
 Select the cell(s) and click **Release**.
 
 <div class="center">
   <Zoom>
-    <img alt="Hold and Release cells" src={useBaseUrl("/doc-images/plan/release-cell.png")} />
+    <img alt="Release the cells" src={useBaseUrl("/doc-images/plan/release-cell.png")} />
   </Zoom>
+  <p>Select the cells and click the Release icon</p>
 </div>
 
 :::note

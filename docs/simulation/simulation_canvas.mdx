@@ -30,14 +30,17 @@ import "react-medium-image-zoom/dist/styles.css";
   model structure and the components of a node has been explained in the
   introduction section -{" "}
   <Link to={useBaseUrl("intro/node")}> Understanding Nodes in ValQ</Link>.
-</div>{" "}
+</div>
+
+:::note
+The effect of simulation performed on a node can be seen on the levels above the simulated node and it does not impact the descendant nodes.
+:::
 
 ## 1. Node Features
 
 The following node features are discussed in this section
 
 <div style={{textAlign: 'justify'}} className="table-center">
-
 
 |     | Click on any option to know more               |
 | --- | ---------------------------------------------- |
@@ -50,7 +53,6 @@ The following node features are discussed in this section
 | 7   | [Add Comments](#17-add-comments)               |
 
 </div>
-
 
 ### 1.1 Simulation slider
 
@@ -198,11 +200,11 @@ Hover over the chart to get the period details on the tooltip. Below is an examp
 <div class="center">
   <Zoom>
     <img
-      alt="New Tab"
+      alt="Chart's Tooltip"
       src={useBaseUrl("/doc-images/simulate_tab/snode8.png")}
     />
   </Zoom>
-</div> <br />
+</div>
 
 <div style={{ textAlign: "justify" }}>
   The three horizontal lines icon as highlighted below has options to view the
