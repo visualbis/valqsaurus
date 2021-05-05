@@ -6,11 +6,37 @@ title: Release Notes
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
+import Zoom from "react-medium-image-zoom";
 import { Vimeo } from '@site/src/components/Vimeo';
 
 :::note
 ValQ latest version will be available on Power BI AppSource in about 2 to 3 weeks from the release date. All your existing models built on AppSource visual gets updated to the latest version automatically.
 :::
+
+## V2.0.5 (Apr 20 , 2021)
+
+#### Enhancements
+
+* Analysis Name of Sensitivity Analysis tabs is now displayed for each analysis in <Link to={useBaseUrl('analysis/sensitivity-analysis#sensitivity-analysis-summary')}>View Summary</Link> screen.
+* In Sensitivity analysis, **Period** label is renamed as **Period Measure** on the create <Link to={useBaseUrl('analysis/sensitivity-analysis#create-a-sensitivity-analysis-chart')}>New Sensitivity Chart</Link> pop-up.
+* Tooltip on hovering over a bar in the tornado chart for Sensitivity Analysis now shows lineage in the right order.
+* **Model > Data Series > Time Aggregation Label** changes now gets reflected in **Period Measure** dropdown of Attribution Analysis.
+* The cells kept on <Link to={useBaseUrl('planning/plan_features#33-hold-and-release')}>hold</Link> in Plan screen are now displayed in gray without the lock icon.
+* **Source Periods** in <Link to={useBaseUrl('planning/time_series')}>Plan > AutoForecast</Link> feature of Plan tab gets displayed as inactive and the periods get auto-populated from **Target Period** selection.
+* Calculation Method for nodes which are linked to a node or an entire <Link to={useBaseUrl('http://localhost:3000/storage/model-merge#case-1-linking-nodes-to-an-entire-model')}>Submodel</Link> from a workspace is displayed as "Linked to Workspace Model" in the **Plan** screen footer.
+* <Link to={useBaseUrl('storage/user-security#manage-node-access')}>Access Control</Link> setting is now removed from node configuration of top node for enhanced security.
+* **View Access** checkbox in <Link to={useBaseUrl('storage/user-security#manage-scenario-access')}>Share (Scenario/Series)</Link> settings is now  enabled by default with a tooltip message "Cannot remove View Access when Edit Access is enabled" when **Edit Access** checkbox is enabled.
+
+#### Bug Fixes
+
+* In Free plan, deleting a node in an <Link to={useBaseUrl('model/new#3-create-an-advanced-model')}>Advanced Model</Link> does not show reference error.
+* Free Plan - adding custom time period on Variance Analysis now shows the values instead of blank.
+* You can now navigate through the cells in Plan grid with arrow keys to move back from the 'Total' column to the first column, when the first time period is not in display.
+* Fixed the issue of Node value overlapping with Secondary KPI values.
+* Node Title does not overlaps with month variance value when Trend sparkline chart is disabled.
+* Variance label and the values in the node are now right aligned.
+* Three letter abbreviation of Time Aggregation Labels is displayed on disabling the Trend sparkline.
+* In a Simple model, re-ordering the fields in Category section of Visualizations Pane on PowerBI alters the tree structure accordingly.
 
 ## V2.0.4 (Mar 30 , 2021)
 
@@ -163,5 +189,5 @@ The use of the "Tab" button to move to the next period is disabled for the last 
 
 * Added Scenario Collaboration( ValQ - Professional, Enterprise plans ):
     - Private Scenarios: Scenarios that only you have access to, and not other members in the workspace.
-    - Shared Scenarios: Scenarios shared by you and made available to selected users/groups added to the workspace.
+    - Shared Scenarios: Scenarios shared by you and made available to users/groups added to the workspace.
 *  Enabled **Read-Only** Mode in Power BI Service with read-only access for Plan (only viewing allowed) , Simulate and Analyze tabs.
