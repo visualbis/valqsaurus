@@ -472,14 +472,14 @@ Value Prefix and Value Suffix options are used to add prefix and suffix like cur
   <div class="center"><p>Value Prefix and Value Suffix</p></div>
 </div>
 
-<div style={{ textAlign:"center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Value Prefix and Value Suffix on East node"
-      src={useBaseUrl("/doc-images/model/node35.png")}
+      src={useBaseUrl("/doc-images/model/node-prefix-sufix.png")}
     />
   </Zoom>
-  <div class="center"><p>Value Prefix and Value Suffix on East node</p></div>
+  <p>Value Prefix and Value Suffix on East node</p>
 </div>
 
 ### 3.2 Composite Nodes
@@ -526,9 +526,17 @@ When the original node 'Chris Morris' is simulated, the same node added as the C
   <p>Simulation effect on Composite Node</p>
 </div>
 
-> ** Note** <br /> The composite nodes do not affect the Table view structure of the Tree
+> The composite nodes do not affect the Table view structure of the Tree
+
+:::important
+Use the <Link to={useBaseUrl('simulation/navigation_panel#show-composite-nodes')}>Show Composite Values</Link> toggle in the Navigation Panel to show/hide these Composite Nodes.
+:::
 
 ## 4. Simulation
+
+:::note
+Simulation is enabled only for the leaf nodes by default in a Simple Dynamic model.
+:::
 
 <div style={{ textAlign: "justify" }}>
   In the <b>Simulation</b> settings, you can configure simulation details
@@ -577,14 +585,14 @@ simulation for the node.
   get the tooltip showing the period values and the simulation method.
 </div> <br />
 
-<div style={{ textAlign:"center" }}>
+<div class="center">
   <Zoom>
     <img
       alt="Change Default Method on node"
-      src={useBaseUrl("/doc-images/model/node41.png")}
+      src={useBaseUrl("/doc-images/model/leaf-node-simulation.png")}
     />
   </Zoom>
-  <div class="center"><p>Change Default Method on node</p></div>
+  <p>Simulation on the leaf node</p>
 </div>
 
 You can change the simulation method in the drop-down list as highlighted in the above image and perform simulation for quick analysis. 
@@ -764,7 +772,7 @@ After performing simulation, you can observe the following:
 ## 7. Secondary KPIs
 
 <div style={{ textAlign: "justify" }}>
-  Secondary KPIs helps the user to aggregate and visualize additional or
+  Secondary KPIs help the user to aggregate and visualize additional or
   alternate KPI values in the node widget. Specifically, in a model with two
   data series, these are the set of secondary metrics captured under the primary
   value of the node.
@@ -1022,7 +1030,11 @@ The below Figure shows the collapsed form of the Quick Editor.
   <p>Business View on Quick Editor</p>
 </div>
 
-The columns can be filtered based on the selection in the **Manage Columns** drop-down box.
+### Manage Columns Settings
+
+You can use the **Manage Columns** settings at the top right corner of the Quick Editor window to filter the columns.
+The Manage Columns window classifies the node configuration settings similar to the settings available under **Model > Node > Edit Node** configuration window.
+
 You can either "Select all" columns or expand each category and select the respective columns.
 
 <div style={{ textAlign: "center" }}>
