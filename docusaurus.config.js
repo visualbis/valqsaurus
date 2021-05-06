@@ -31,7 +31,7 @@ module.exports = {
                     title: "Docs Home",
                 },
                 {
-                    to: "/intro/releases",
+                    to: "/releases",
                     label: "Release Notes",
                     position: "left",                    
                 },
