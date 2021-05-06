@@ -27,6 +27,7 @@ module.exports = {
                     to: "/",
                     label: "Docs",
                     position: "left",
+                    activeBaseRegex: '^((?!releases).)*$',
                     title: "Docs Home",
                 },
                 {
