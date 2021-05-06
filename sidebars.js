@@ -47,11 +47,12 @@ module.exports = {
         "Storage and Collaboration": [
             "storage/valq-collaborate",            
             "storage/save-model",
+	    "storage/user-security",
+            "storage/scenario-collab",
             "storage/export",
             "storage/commenting",
             "storage/history-logs",
             "storage/model-merge",
-            "storage/user-security",
                             
         ],
         Administration: ["storage/admin-console"],
