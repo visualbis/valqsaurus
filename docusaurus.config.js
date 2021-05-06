@@ -27,8 +27,20 @@ module.exports = {
                     to: "/",
                     label: "Docs",
                     position: "left",
-                    activeBaseRegex: '^((?!releases).)*$',
+                    activeBaseRegex: '^((?!releases|references|how_to_videos).)*$',
                     title: "Docs Home",
+                },
+                {
+                    to: "/references/formula-list",
+                    label: "Functions",
+                    activeBasePath: '/references',
+                    position: "left",
+                },
+                {
+                    to: "how_to_videos/get-started",
+                    label: "Videos",
+                    activeBasePath: '/how_to_videos',
+                    position: "left",
                 },
                 {
                     to: "/releases",

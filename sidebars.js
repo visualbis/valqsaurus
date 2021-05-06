@@ -57,62 +57,13 @@ module.exports = {
         ],
         Administration: ["storage/admin-console"],
         Resources: [
-            "faq/formula-list",
             "faq/definitions",
             "faq/known-issues",
-        ],
-        "How To Videos": [
-            "how_to_videos/get-started",
-            {
-                type: "category",
-                label: "Model",
-                items: [
-                    "how_to_videos/model/modelling-basics",
-                    "how_to_videos/model/nodes",
-                    "how_to_videos/model/nodes-config",
-                    "how_to_videos/model/settings",
-                    "how_to_videos/model/general",
-                    "how_to_videos/model/data-series",
-                ],
-            },
-
-            {
-                type: "category",
-                label: "Plan",
-                items: [
-                    "how_to_videos/plan/data-series",
-                    "how_to_videos/plan/planning-toolbar",
-                    "how_to_videos/plan/allocate-by-weight",
-                    "how_to_videos/plan/equal-allocation",
-                    "how_to_videos/plan/trend-allocation",
-                    "how_to_videos/plan/copy-allocation",
-                ],
-            },
-            {
-                type: "category",
-                label: "Simulate",
-                items: [
-                    "how_to_videos/simulate/intro",
-                    "how_to_videos/simulate/scenario-planning",
-                    "how_to_videos/simulate/sub-models",
-                    "how_to_videos/simulate/simulation_period",
-                    "how_to_videos/simulate/display-scaling",
-                    "how_to_videos/simulate/kpi",
-                    "how_to_videos/simulate/constraints",
-                    "how_to_videos/simulate/visualization",
-                ],
-            },
-            /*            {
-                                                                                                          type: "category",
-                                                                                                          label: "Analyze",
-                                                                                                          items: ["how_to_videos/analyze/intro"]
-                                                                                          
-                                                                                                      },
-                                                                                          */
         ],
     },
     functionSideBar: {
         "Logical Functions": [
+            "references/formula-list",
             "references/formulas/if",
             "references/formulas/and",
             "references/formulas/switch",
@@ -175,5 +126,58 @@ module.exports = {
             "references/formulas/current_node_value",
             "references/formulas/node-properties",
         ],
+    },
+    Videos: {
+        "How To Videos": [
+            "how_to_videos/get-started",
+            {
+                type: "category",
+                label: "Model",
+                items: [
+                    "how_to_videos/model/modelling-basics",
+                    "how_to_videos/model/nodes",
+                    "how_to_videos/model/nodes-config",
+                    "how_to_videos/model/settings",
+                    "how_to_videos/model/general",
+                    "how_to_videos/model/data-series",
+                ],
+            },
+        
+            {
+                type: "category",
+                label: "Plan",
+                items: [
+                    "how_to_videos/plan/data-series",
+                    "how_to_videos/plan/planning-toolbar",
+                    "how_to_videos/plan/allocate-by-weight",
+                    "how_to_videos/plan/equal-allocation",
+                    "how_to_videos/plan/trend-allocation",
+                    "how_to_videos/plan/copy-allocation",
+                ],
+            },
+            {
+                type: "category",
+                label: "Simulate",
+                items: [
+                    "how_to_videos/simulate/intro",
+                    "how_to_videos/simulate/scenario-planning",
+                    "how_to_videos/simulate/sub-models",
+                    "how_to_videos/simulate/simulation_period",
+                    "how_to_videos/simulate/display-scaling",
+                    "how_to_videos/simulate/kpi",
+                    "how_to_videos/simulate/constraints",
+                    "how_to_videos/simulate/visualization",
+                ],
+            },
+            /*            {
+                                                                                                          type: "category",
+                                                                                                          label: "Analyze",
+                                                                                                          items: ["how_to_videos/analyze/intro"]
+                                                                                          
+                                                                                                      },
+                                                                                          */
+        ],
+        
+        
     },
 };
