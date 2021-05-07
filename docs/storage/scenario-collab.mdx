@@ -1,0 +1,94 @@
+---
+id: scenario-collab
+sidebar_label: 3. Scenario Collaboration
+title: Scenario Collaboration
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl"; // Add to the top of the file below the front matter.
+import Link from "@docusaurus/Link";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+ValQ allows scenario collaborations among users and groups who are  part of the workspace. 
+This feature enables the users to perform what-if analysis 
+on the model and share their simulations in real time.
+
+To start sharing a scenario, you must upload your model to the workspace and provide access control to the model (Enterprise Users). [ Refer the section <Link to={useBaseUrl('storage/user-security')}>User Security</Link> ].
+
+:::important
+This feature is available for Starter, Professional, and Enterprise plans.
+:::
+
+Scenarios on ValQ are available under **My Scenarios** section on the Navigation panel by default.
+<div style={{ textAlign: "center" }}>
+    <Zoom>
+        <img 
+        width="400"
+        src={useBaseUrl('/doc-images/storage/private-scenario2.png')}
+        />
+    </Zoom>
+</div>
+
+To enable scenario collaboration, click on the Share <img width="18" src={useBaseUrl('img/share-scenario.png')} /> icon next to the scenario name.
+<div class="center">
+    <Zoom>
+        <img 
+        src={useBaseUrl('/doc-images/storage/ent-share-scenario.png')}
+        />
+    </Zoom>
+    <p>Share Scenario in Enterprise Plan</p>
+</div>
+
+You can share the scenario in two ways, with:
+1. All the users, or
+1. Selected users
+
+Following are the features available for different ValQ plans.
+
+The **Enterprise** users can select any of the below options:
+* **Private**: Keep the scenario private and do not share with the uses/groups.
+* **Groups and users added to the model**: Share with all the users/groups.
+* **Limit to selected groups and users**: Grant selected read/write access to the users/groups.
+
+<div class="center">
+    <Zoom>
+        <img 
+        src={useBaseUrl('/doc-images/storage/ent-share-limited.png')}
+        />
+    </Zoom>
+    <p>Scenario sharing with limited users/groups in Enterprise plan</p>
+</div>
+
+:::note
+When **Edit Access** is enabled for a user/group, the **View Access** becomes a default permission and you cannot uncheck the box.
+:::
+
+ValQ **Professional** users are allowed to keep the scenarios **Private** or **Share to all users in workspace**.
+
+<div class="center">
+    <Zoom>
+        <img 
+        src={useBaseUrl('/doc-images/storage/prof-scenario2-share.png')}
+        />
+    </Zoom>
+    <p>Scenario sharing in Professional Plan</p>
+</div>
+
+> Professional and Starter users must upgrade to Enterprise plan to unlock the option **Limit to selected groups and users**.
+
+ValQ **Starter** users can make use of scenario Collaboration feature when there are other users who are part of the workspace.
+
+Once you click **Save**, the scenario that you shared now moves to the **Shared Scenarios** section.
+
+<div style={{ textAlign: "center" }}>
+    <Zoom>
+        <img 
+        width="400"
+        src={useBaseUrl('/doc-images/storage/scenario2-shared.png')}
+        />
+    </Zoom>
+    <div class="center"><p>Scenario2 shared</p></div>
+</div>
+
+An audit of simulations performed on the scenarios are available under <Link to={useBaseUrl('storage/history-logs')}>History Log</Link>.
+
