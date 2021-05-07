@@ -62,8 +62,8 @@ module.exports = {
         ],
     },
     functionSideBar: {
-        "Logical Functions": [
-            "references/formula-list",
+        "All Functions": ["references/formula-list"],
+        "Logical Functions": [            
             "references/formulas/if",
             "references/formulas/and",
             "references/formulas/switch",
