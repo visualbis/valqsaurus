@@ -14,7 +14,7 @@ ValQ now provides optimized touch support and makes interacting with models easi
 
 <div class="center">
   <Zoom>
-    <img alt="ValQ touch support default view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-valq-view.png")} height="450"/>
+    <img alt="ValQ touch support default view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-valq-view.png")} />
   </Zoom>
   <p>ValQ touch support default view</p>
 </div>
@@ -29,7 +29,7 @@ The *Scenarios* section is expanded by default, while all other components are c
 
 ### Switch between Desktop and Touch-friendly version
 
-You can switch between *Desktop* and *Touch-enabled devices* mode with a tap on the **Switch to desktop version** button. The button is available at the top in the Navigation panel.
+You can switch between *Desktop* and *Touch-enabled devices* mode with a tap on the **Turn off Touch Controls** button. The button is available at the top in the Navigation panel.
 
 <!--
 ### Compare Scenarios
@@ -57,37 +57,37 @@ A *Summary* of the comparison, the *KPIs*, and the *Key inputs* affecting the sc
 
 The visual has a *Pinch and Zoom* feature for easier accessibility. The ValQ model is visualized both in the table view and tree view.
 
- **Default Canvas Touch Bar options**
+**Default Canvas Touch Bar options**
 
 1. [Search](#search) a node in the model.
 1. [Go-to-level](#go-to-level) selection that displays the node hierarchy.
 
  <div class="center">
   <Zoom>
-    <img alt="Default Canvas Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-tree-view.png")} height="450"/>
+    <img alt="Default Canvas Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-tree-view.png")} />
   </Zoom>
   <p>Default Canvas Tree view</p>
  </div>
 
  <div class="center">
   <Zoom>
-    <img alt="Default Canvas Table view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-table-view.png")} height="450"/>
+    <img alt="Default Canvas Table view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/default-table-view.png")} />
   </Zoom>
   <p>Default Canvas Table view</p>
  </div>
 
 **Node selection Touch Bar options**
 
-1. **Delete** - Deletes the simulated value and restores the original value of the node.
-1. [Node Slider](#node-slider) - Simulates a node.
-1. **Month wise simulations**
-1. [Comments](#comment) on the node from the users who share the model.
-1. **Plan series** - Shortcut icon to create Planning series.
-1. [Node details](#node-details) such as *Node description, Simulation impact and variances, Line and column chart*, and *Waterfall chart*.
+3. **Delete** - Deletes the simulated value and restores the original value of the node.
+4. [Node Slider](#node-slider) - Simulates a node.
+5. **Month wise simulations**
+6. [Comments](#comment) on the node from the users who share the model.
+7. **Plan series** - Shortcut icon to create Planning series.
+8. [Node details](#node-details) such as *Node description, Simulation impact and variances, Line and column chart*, and *Waterfall chart*.
 
  <div class="center">
   <Zoom>
-    <img alt="Node Touch Bar menu Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-tree-view.png")} height="450"/>
+    <img alt="Node Touch Bar menu Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-tree-view.png")}/>
   </Zoom>
   <p>Node Touch Bar menu Tree view</p>
  </div>
@@ -98,7 +98,7 @@ The Mac-style spotlight search allows you to search a node in the model. Tap on 
 
 <div class="center">
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/search-mac-spotlight.png")} height="450"/>
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/search-mac-spotlight.png")}/>
   </Zoom>
   <p>Type the name of the node in the search box</p>
 </div>
@@ -107,7 +107,7 @@ The Mac-style spotlight search allows you to search a node in the model. Tap on 
 
 <div class="center">
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-selected-tree-view.png")} height="450"/>
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-selected-tree-view.png")}/>
   </Zoom>
   <p>The searched node is selected in tree view</p>
 </div>
@@ -116,7 +116,7 @@ The Mac-style spotlight search allows you to search a node in the model. Tap on 
 
 <div class="center">
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-selected-table-view.png")} height="450"/>
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-selected-table-view.png")} />
   </Zoom>
   <p>Node searched in table view</p>
 </div>
@@ -132,7 +132,7 @@ Tree/table view are inter-linked and get auto-updated on each selection.
 
 <div class="center">
   <Zoom>
-    <img alt="Node-level hierarchy Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-go-to-level.png")} height="450"/>
+    <img alt="Node-level hierarchy Tree view" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-go-to-level.png")} />
   </Zoom>
   <p>Node-level hierarchy Tree view</p>
 </div>
@@ -153,7 +153,7 @@ Tap and select a node (*Copper Price*) to enable the slider. In the below screen
 
 <div class="center">
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-slidebar.png")} height="450"/>
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-slider.png")} />
   </Zoom>
   <p>Copper Price node simulated by 6% in tree view</p>
 </div>
@@ -162,7 +162,7 @@ The same node simulation(6% better) in the *Table* view:
 
 <div class="center">
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-simulation-table-view.png")} height="450"/>
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-simulation-table-view.png")} />
   </Zoom>
   <p>Node search and simulation in table view</p>
 </div>
@@ -178,7 +178,7 @@ In the **Simulate** tab, tap on a node and then tap the **Comments** icon in the
 
 <div class="center">
   <Zoom>
-    <img alt="Enter node comment" src={useBaseUrl("/doc-images/simulate_tab/touch-support/enter-node-comment.png")} height="450"/>
+    <img alt="Enter node comment" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-comment.png")} />
   </Zoom>
   <p>Type a new comment on the node</p>
 </div>
@@ -187,18 +187,11 @@ In the **Simulate** tab, tap on a node and then tap the **Comments** icon in the
 
 Select a node either in *Tree/Table* view and tap *details* to view the node details.
 
-<div class="center">
-  <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-details-icon.png")} height="450"/>
-  </Zoom>
-  <p>Node details icon in tree view</p>
-</div>
-
 A detailed node's information screen is displayed:
 
 <div class="center">
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-details.png")} height="450"/>
+    <img alt="" src={useBaseUrl("/doc-images/simulate_tab/touch-support/node-details.png")} />
   </Zoom>
   <p>Node Details</p>
 </div>
