@@ -13,7 +13,7 @@ The model collaboration feature allows the members added to a model to view, sha
 The *Model creator* must <Link to={useBaseUrl("storage/save-model")}>Save and upload</Link> the model before collaborating with other users.
 In addition, the model must also be shared with the selected users/groups.
 
-Users of the model can view the comments on *Planning series* and *shared Scenarios* by clicking on the *comments* icon from the **Plan** and **Simulate** tabs respectively.
+Users of the model can view the comments on *Planning series* and *shared Scenarios* by selecting the <img width="40" src={useBaseUrl('static/doc-images/storage/comments-icon.png')}/> comments icon from the **Plan** and **Simulate** tabs respectively.
 
 <div class="center">
   <Zoom>
@@ -32,10 +32,8 @@ Users of the model can view the comments on *Planning series* and *shared Scenar
 ### Add comments for Planning
 
 Go to the **Plan** tab and select the *series*.
-Click on the cell you want to comment, and click the *Comment* icon on the menubar/bezel.
-In the *Comments* menu, type your comments and click *Post*.
-
-Your comment is saved to the comment section for Planning under the planning series and node hierarchy alongside your username and time stamp.
+Select the cell you want to comment, and then select the **Comment** icon on the menubar/bezel.
+In the *Comments* menu, enter your comments and select **Post**.
 
 <div class="center">
   <Zoom>
@@ -44,12 +42,12 @@ Your comment is saved to the comment section for Planning under the planning ser
   <p>Comment on the selected node</p>
 </div>
 
+Your comment is saved to the comment section for Planning under the planning series and node hierarchy alongside your username and time stamp.
+
 ### Add comments for Scenarios
 
 On the Simulate canvas, hover over the node that you want to comment on and click on the *comment* icon above the node.
-Write your comment in the *Comments* box and click *Post*.
-
-Your comment is saved to the comment section for Simulation under the scenario name and node hierarchy alongside your username and time stamp.
+Enter your comment in the *Comments* box and select **Post**.
 
 <div class="center">
   <Zoom>
@@ -58,11 +56,13 @@ Your comment is saved to the comment section for Simulation under the scenario n
   <p>Comment on a simulated node</p>
 </div>
 
+Your comment is saved to the comment section for Simulation under the scenario name and node hierarchy alongside your username and time stamp.
+
 ### View, Edit, Delete Comments
 
 As a security feature, only the user who writes the comments has permission to edit and delete the comments.
 
-In the below screenshot, the logged-in user("ValQ test user") alone can  edit/delete the comment written by self.
+In the below screenshot, the logged-in user alone can edit ( <img width="15" src={useBaseUrl('static/img/edit.png')}/> )/delete ( <img width="15" src={useBaseUrl('static/img/delete.png')}/> ) the comment written by self.
 
 <div class="center">
   <Zoom>
@@ -70,3 +70,4 @@ In the below screenshot, the logged-in user("ValQ test user") alone can  edit/de
   </Zoom>
   <p>Comments edit/delete access</p>
 </div>
+

@@ -16,14 +16,13 @@ Variance Analysis calculates variances against a benchmark for the KPIs to
 
 Select the first option *Variance Analysis* from the **Analyze** drop-down menu.
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
     <img
-      alt=""
+      alt="Variance Analysis tab"
       src={useBaseUrl("/doc-images/analyze/variance-analysis-tab.png")}
     />
   </Zoom>
-  <p>Variance Analysis option</p>
 </div>
 
 Here's the Variance Analysis screen on ValQ
@@ -74,17 +73,23 @@ The other panel shows the Variance Analysis report that you have built based on 
 
 Following are the features and steps to create a _Variance Analysis_ report:
 
-1. [Set Base Series](#1-set-base-series)
-1. [Choose Compared Series](#2-choose-compared-series)
-1. [Select Period for Data Series](#3-select-period-for-data-series)
-1. [Choose Time Range for report](#4-choose-time-range-for-report)
-1. [Show/hide Absolute variance and % variance](#5-showhide-absolute-variance-and--variance)
-1. [Show/hide Unit column](#6-showhide-unit-column)
-1. [Download the report as excel](#7-download-the-report-as-excel)
-1. [Include hidden nodes to report](#8-include-hidden-nodes-to-report)
-1. [Search for a node on report](#9-search-for-a-node-on-report)
-1. [Apply Filter to report](#10-apply-filter-to-report)
-1. [Hide the features panel](#11-hide-the-features-panel)
+1. [Pre-requisite](#pre-requisite)
+1. [Features of Variance Analysis](#features-of-variance-analysis)
+1. [1. Set Base Series](#1-set-base-series)
+1. [2. Choose Compared Series](#2-choose-compared-series)
+1. [3. Select Period for Data Series](#3-select-period-for-data-series)
+    1. [3.1 Same Period for Base Series and Compared Series](#31-same-period-for-base-series-and-compared-series)
+    1. [3.2 Custom Period for Base Series and Compared Series](#32-custom-period-for-base-series-and-compared-series)
+1. [4. Choose Time Range for report](#4-choose-time-range-for-report)
+    1. [4.1 Built-in Time Range](#41-built-in-time-range)
+    1. [4.2 Add Custom Time Range](#42-add-custom-time-range)
+1. [5. Show/hide Absolute variance and % variance](#5-showhide-absolute-variance-and--variance)
+1. [6. Show/hide Unit column](#6-showhide-unit-column)
+1. [7. Download the report as excel](#7-download-the-report-as-excel)
+1. [8. Include hidden nodes to report](#8-include-hidden-nodes-to-report)
+1. [9. Search for a node in the report](#9-search-for-a-node-in-the-report)
+1. [10. Apply Filter to report](#10-apply-filter-to-report)
+1. [11. Hide the features panel](#11-hide-the-features-panel)
 
 ## 1. Set Base Series
 
@@ -160,7 +165,7 @@ Choose the duration from the drop-down to specify the time range for which you
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/analyze/analyze7.png")} />
+    <img width="350" alt="" src={useBaseUrl("/doc-images/analyze/analyze7.png")} />
   </Zoom>
   <div class="center"><p>Built-in time range selection</p></div>
 </div>
@@ -187,13 +192,15 @@ You can also add a Custom time range by selecting the custom option from the
   which is displayed at the end of the report.
 
 Hover over the selection period(s) box to select the start month and the end month.
+<div class="table-center">
 
 | Option    | Description                                 |
-| --------- | ------------------------------------------- |
+|-----------|---------------------------------------------|
 | **+Add**  | Add a new Custom time range                 |
 | **Clear** | Clear the selection to make a new selection |
 | **Apply** | Saves the selection as a Custom time range  |
 
+</div>
 Check the box to add the Custom selection to the report.
 
 <div class="center">
@@ -308,7 +315,7 @@ Use the Filter option to analyze critical influencers.
 
 <div style={{ textAlign:"center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/analyze/filter.png")} />
+    <img width="100" alt="" src={useBaseUrl("/doc-images/analyze/filter.png")} />
   </Zoom>
 </div>
 

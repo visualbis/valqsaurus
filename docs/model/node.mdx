@@ -38,7 +38,7 @@ To edit a node, click on the pencil icon highlighted below or double-click on th
 
 By clicking the Edit option you will be able to view the Edit Node dialog box as shown below.
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
     <img alt="Edit Node" src={useBaseUrl("/doc-images/model/node5.png")} />
   </Zoom>
@@ -54,7 +54,7 @@ By clicking the Edit option you will be able to view the Edit Node dialog box as
   identify at which node level the parameter value changes.
 </div> <br />
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
     <img alt="General" src={useBaseUrl("/doc-images/model/node6.png")} />
   </Zoom>
@@ -94,7 +94,9 @@ A node can be of two types - Normal and Constant.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Node Type" src={useBaseUrl("/doc-images/model/node11.png")} />
+    <img 
+    width="550"
+    alt="Node Type" src={useBaseUrl("/doc-images/model/node11.png")} />
   </Zoom>
 </div>
 
@@ -109,17 +111,17 @@ ValQ supports various calculation methods such as
 
 <div style={{textAlign: 'justify'}} className="table-center">
 
-|     | Method                        | Description                                                          |
-| --- | ----------------------------- | -------------------------------------------------------------------- |
-| 1   | Data Source                   | Gets the values directly from source data                            |
-| 2   | Sum Children                  | Sums all the immediate child node values                             |
-| 3   | Subtract Children             | Subtracts all the immediate child node values                        |
-| 4   | Multiply Children             | Multiplies all the immediate child node values                       |
-| 5   | Divide Children               | Divides all the immediate child node values                          |
-| 6   | Formula                       | Calculates and applies the custom formula entered by the user        |
-| 7   | Linked to Node                | The node value, properties and simulation are linked to another node |
-| 8   | Template based on other nodes | Captures and applies the configuration from another node             |
-| 9   | Manual                        | Enter the values manually                                            |
+|   | Method                        | Description                                                          |
+|---|-------------------------------|----------------------------------------------------------------------|
+| 1 | Data Source                   | Gets the values directly from source data                            |
+| 2 | Sum Children                  | Sums all the immediate child node values                             |
+| 3 | Subtract Children             | Subtracts all the immediate child node values                        |
+| 4 | Multiply Children             | Multiplies all the immediate child node values                       |
+| 5 | Divide Children               | Divides all the immediate child node values                          |
+| 6 | Formula                       | Calculates and applies the custom formula entered by the user        |
+| 7 | Linked to Node                | The node value, properties and simulation are linked to another node |
+| 8 | Template based on other nodes | Captures and applies the configuration from another node             |
+| 9 | Manual                        | Enter the values manually                                            |
 
 </div> <br />
 
@@ -143,6 +145,7 @@ The Constant node type provides the following calculation methods
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
+      width="400"
       alt="Calculation Methods for Constant Node Type"
       src={useBaseUrl("/doc-images/model/node13.png")}
     />
@@ -170,9 +173,11 @@ discussing 3 methods of mapping ValQ nodes to data.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Source Key" src={useBaseUrl("/doc-images/model/node14.png")} />
+    <img 
+    width="400"
+    alt="Source Key" src={useBaseUrl("/doc-images/model/node14.png")} />
   </Zoom>
-  <div class="center"><p>Source Key</p></div>
+  <p>Source Key</p>
 </div>
 
 #### Template Nodes
@@ -180,14 +185,15 @@ discussing 3 methods of mapping ValQ nodes to data.
 A Template Node can be created with the help of an existing node. Add a new node and select it's **Calculation Method** as **Templated based on other node**. Now select the node you want to copy under **Node to use as a template**.
 In the below example, the **North** branch has been created using **East** as a template.
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
     <img
+      width="600"
       alt="Template based on other node"
       src={useBaseUrl("/doc-images/model/node24.png")}
     />
   </Zoom>
-  <p>Template based on other nodes</p>
+  <div class="center"><p>Template based on other nodes</p></div>
 </div>
 
 <div class="center">
@@ -208,28 +214,29 @@ In the below example, the **North** branch has been created using **East** as a 
 <div style={{textAlign: 'justify'}} className="table-center">
 
 
-|     | Time Aggregation        | Description                                                   |
-| --- | ----------------------- | ------------------------------------------------------------- |
-| 1   | Sum of Periods          | Adds all the period values                                    |
-| 2   | Average                 | Calculates the average of the period values                   |
-| 3   | Average Excluding Zeros | Calculates the average of the period values not having zero   |
-| 4   | Formula                 | Calculates and applies the custom formula entered by the user |
-| 4   | Last                    | Only displays the last period value of the node               |
-| 5   | Cumulative              | Cumulates the period values of the node                       |
+|   | Time Aggregation        | Description                                                   |
+|---|-------------------------|---------------------------------------------------------------|
+| 1 | Sum of Periods          | Adds all the period values                                    |
+| 2 | Average                 | Calculates the average of the period values                   |
+| 3 | Average Excluding Zeros | Calculates the average of the period values not having zero   |
+| 4 | Formula                 | Calculates and applies the custom formula entered by the user |
+| 4 | Last                    | Only displays the last period value of the node               |
+| 5 | Cumulative              | Cumulates the period values of the node                       |
 
 </div> <br />
 
 
 The Normal node type presents the user with the Time Aggregation options as seen below.
 
-<div style={{ textAlign:"center" }}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
     <img
+      width="450"
       alt="Time Aggregation"
       src={useBaseUrl("/doc-images/model/node15.png")}
     />
   </Zoom>
-  <div class="center"><p>Time Aggregation options</p></div>
+  <p>Time Aggregation options</p>
 </div>
 
 > ** Note** <br /> The constant node type doesn't have Time Aggregation as the value is fixed
@@ -244,9 +251,11 @@ The Normal node type presents the user with the Time Aggregation options as seen
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Desired Trend" src={useBaseUrl("/doc-images/model/node16.png")} />
+    <img 
+    width="450"
+    alt="Desired Trend" src={useBaseUrl("/doc-images/model/node16.png")} />
   </Zoom>
-  <div class="center"><p>Select the increase/decrease Desired Trend</p></div>
+  <p>Select the increase/decrease Desired Trend</p>
 </div>
 
 ### 2.5 Value Range
@@ -259,9 +268,11 @@ The Normal node type presents the user with the Time Aggregation options as seen
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Value Range" src={useBaseUrl("/doc-images/model/node17.png")} />
+    <img
+    width="450"
+    alt="Value Range" src={useBaseUrl("/doc-images/model/node17.png")} />
   </Zoom>
-  <div class="center"><p>Value Range</p></div>
+  <p>Value Range</p>
 </div>
 
 Click <Link to={useBaseUrl('simulation/navigation_panel#7-constraints')}>here</Link> for steps to add Constraints using an example.
@@ -340,11 +351,11 @@ The other setting options available under _Display_ options are [Value](#31-valu
 
 First, let's look at Display
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
     <img alt="Display" src={useBaseUrl("/doc-images/model/node26.png")} />
   </Zoom>
-  <p>Display</p>
+  <div class="center"><p>Display</p></div>
 </div>
 
 #### Node display
@@ -398,14 +409,14 @@ There are three display options to choose from and below is an example using the
   the node details.
 </div> <br />
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
     <img
       alt="Details on Click"
       src={useBaseUrl("/doc-images/model/node29.1.png")}
     />
   </Zoom>
-  <p>Details on Click</p>
+  <div class="center"><p>Details on Click</p></div>
 </div>
 
 Node details of the 'East' node is seen below.
@@ -439,9 +450,11 @@ Configure the following options under _Values_ with the following options:
   selection.
 </div>
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Scale" src={useBaseUrl("/doc-images/model/node30.png")} />
+    <img 
+    width="450"
+    alt="Scale" src={useBaseUrl("/doc-images/model/node30.png")} />
   </Zoom>
 </div>
 
@@ -452,6 +465,7 @@ Choose the number of decimal places you want in the node value.
 <div style={{ textAlign:"center" }}>
   <Zoom>
     <img
+      width="450"
       alt="Value Decimal Places"
       src={useBaseUrl("/doc-images/model/node31.png")}
     />
@@ -465,6 +479,7 @@ Value Prefix and Value Suffix options are used to add prefix and suffix like cur
 <div style={{ textAlign:"center" }}>
   <Zoom>
     <img
+      width="450"
       alt="Value Prefix and Value Suffix"
       src={useBaseUrl("/doc-images/model/node32.png")}
     />
@@ -472,9 +487,10 @@ Value Prefix and Value Suffix options are used to add prefix and suffix like cur
   <div class="center"><p>Value Prefix and Value Suffix</p></div>
 </div>
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
     <img
+      width="450"
       alt="Value Prefix and Value Suffix on East node"
       src={useBaseUrl("/doc-images/model/node-prefix-sufix.png")}
     />
@@ -492,7 +508,7 @@ Value Prefix and Value Suffix options are used to add prefix and suffix like cur
 </div>
 <br />
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
     <img
       alt="Composite Nodes"
@@ -555,9 +571,10 @@ Simulation is enabled only for the leaf nodes by default in a Simple Dynamic mod
 
 At first, you have the Enable Simulation option to enable/disable the simulation function for the node.
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
     <img
+      width="450"
       alt="Enable Simulation"
       src={useBaseUrl("/doc-images/model/node39.png")}
     />
@@ -602,7 +619,9 @@ values for the simulation periods.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Edit icon" src={useBaseUrl("/doc-images/model/node42.1.png")} />
+    <img 
+    width="50"
+    alt="Edit icon" src={useBaseUrl("/doc-images/model/node42.1.png")} />
   </Zoom>
   <div class="center"><p>Edit icon</p></div>
 </div>
@@ -638,7 +657,7 @@ Here's an example showing values of a node before and after simulation under eac
   details such as Description, Header, Footer and Technical Notes to the node.
 </div> <br />
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
     <img
       alt="Business Definition"
@@ -706,6 +725,7 @@ Custom Rule is indicated by the icon (see Figure below) on the node in the Navig
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
+      width="300"
       alt="Custom Rule indicator"
       src={useBaseUrl("/doc-images/model/node50.png")}
     />
@@ -747,7 +767,7 @@ After performing simulation, you can observe the following:
 
 
 | Node        | FY variance | Threshold            | Status Bar |
-| ----------- | ----------- | -------------------- | ---------- |
+|-------------|-------------|----------------------|------------|
 | Consumer    | (31%)       | Below: -15%          | Red        |
 | Industrials | (14%)       | Between: -15% to -5% | Yellow     |
 | East        | (2%)        | Between: -5% to 0%   | White      |
@@ -778,9 +798,10 @@ After performing simulation, you can observe the following:
   value of the node.
 </div> <br />
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
     <img
+      width="500"
       alt="Primary and Secondary KPIs"
       src={useBaseUrl("/doc-images/SecKPI.1.png")}
     />
@@ -797,9 +818,10 @@ After performing simulation, you can observe the following:
 2. Baseline metric value for the first period in the series
 3. Variance for the first period between baseline and comparison metric (in % and absolute values)
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
     <img
+      width="450"
       alt="Secondary KPIs"
       src={useBaseUrl("/doc-images/SecKPI.2.png")}
     />
@@ -825,9 +847,11 @@ ii. <Link to={useBaseUrl('model/node#ii-secondary-kpi-option-based-on-template')
   TOP node - 'Operating Profit'.
 </div> <br />
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/SecKPIF.1.png")} />
+    <img 
+    width="550"
+    alt="" src={useBaseUrl("/doc-images/SecKPIF.1.png")} />
   </Zoom>
   <p>Before applying formula based Secondary KPIs</p>
 </div>
@@ -837,16 +861,20 @@ ii. <Link to={useBaseUrl('model/node#ii-secondary-kpi-option-based-on-template')
   select the Formula button and fill in the label name and the custom formula.
 </div> <br />
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/SecKPIF.2.png")} />
+    <img 
+    width="550"
+    alt="" src={useBaseUrl("/doc-images/SecKPIF.2.png")} />
   </Zoom>
   <p>Configuration for KPI 2</p>
 </div>
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/SecKPIF.3.png")} />
+    <img 
+    width="550"
+    alt="" src={useBaseUrl("/doc-images/SecKPIF.3.png")} />
   </Zoom>
   <p>Configuration for KPI 3</p>
 </div>
@@ -858,7 +886,9 @@ ii. <Link to={useBaseUrl('model/node#ii-secondary-kpi-option-based-on-template')
 
 <div style={{ textAlign:"center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/SecKPIF.4.png")} />
+    <img 
+    width="400"
+    alt="" src={useBaseUrl("/doc-images/SecKPIF.4.png")} />
   </Zoom>
   <div class="center"><p>Formula based Secondary KPI</p></div>
 </div>
@@ -886,9 +916,11 @@ ii. <Link to={useBaseUrl('model/node#ii-secondary-kpi-option-based-on-template')
   value on the node widget.
 </div>
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/SecKPIT.2.png")} />
+    <img 
+    width="400"
+    alt="" src={useBaseUrl("/doc-images/SecKPIT.2.png")} />
   </Zoom>
   <p>Configuration for formula based Secondary KPI</p>
 </div>
@@ -899,9 +931,11 @@ ii. <Link to={useBaseUrl('model/node#ii-secondary-kpi-option-based-on-template')
   instantly see the corresponding Contribution % on the 'Beverage' node.
 </div> <br />
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/SecKPIT.3.png")} />
+    <img 
+    width="400" 
+    alt="" src={useBaseUrl("/doc-images/SecKPIT.3.png")} />
   </Zoom>
   <p>Formula based Secondary KPI to be used as template</p>
 </div>
@@ -1081,18 +1115,22 @@ The below Figure shows the Locked Simulation in the Quick Editor.
   from 'Consumer' to 'Industrials'.
 </div> <br />
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/model/node62.png")} />
+    <img 
+    width="550"
+    alt="" src={useBaseUrl("/doc-images/model/node62.png")} />
   </Zoom>
   <p>Existing hierarchy</p>
 </div>
 
 The below Figure shows the Quick Editor after changing the order.
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/model/node63.png")} />
+    <img
+     width="550"
+     alt="" src={useBaseUrl("/doc-images/model/node63.png")} />
   </Zoom>
   <p>Parent change for node ‘Ryan Smith’</p>
 </div>

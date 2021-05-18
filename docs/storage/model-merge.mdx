@@ -37,7 +37,7 @@ Now there are 2 ways you can link to different models:
 
 Following are the screenshots of the individual models:
 
-a. Model *Argentina* with 28 nodes.
+a. Model *Argentina* with 6 nodes.
  <div class="center">
   <Zoom>
     <img alt="Argentina model" src={useBaseUrl("/doc-images/storage/features/argentina.png")} />
@@ -45,7 +45,7 @@ a. Model *Argentina* with 28 nodes.
   <p id="caption-left">Model Argentina <i id="credit">Credits to our partner, BlueShift Brazil</i></p>
  </div>
 
-b. Model *Brazil* with 28 nodes.
+b. Model *Brazil* with 6 nodes.
 
  <div class="center">
   <Zoom>
@@ -54,7 +54,7 @@ b. Model *Brazil* with 28 nodes.
   <p id="caption-left">Model Brazil <i id="credit">Credits to our partner, BlueShift Brazil</i></p>
  </div>
 
-c. Model *Chile* with 28 nodes.
+c. Model *Chile* with 6 nodes.
 
  <div class="center">
   <Zoom>
@@ -67,7 +67,7 @@ c. Model *Chile* with 28 nodes.
 
 - Go to **Model > New > Create an Advanced Model** in the ValQ visual.
 - In the **Model > Node** navigation panel, click on the plus `+` icon next to the parent node *Total*. This adds a *Child Node*. Similarly, add 3 *Child Nodes*.
-- Click on the edit icon next to each node.
+- Click on the Edit (<img width="15" src={useBaseUrl('static/img/edit.png')} />) icon next to each node.
 
  <div class="center">
   <Zoom>
@@ -76,7 +76,7 @@ c. Model *Chile* with 28 nodes.
   <p id="caption-left">Configure child node to track separate sub-models <i id="credit">Credits to our partner, BlueShift Brazil</i></p>
  </div>
 
- - In the **Node Configuration** pop up window, rename the Node **Title**.
+ - In the **Node Configuration** pop up window, rename the Node's **Title**.
 
  <div class="center">
   <Zoom>
@@ -85,13 +85,13 @@ c. Model *Chile* with 28 nodes.
   <p id="caption-left">Renaming the Node Title to Argentina <i id="credit">Credits to our partner, BlueShift Brazil</i></p>   
  </div>
 
-- Click the *Configuration* option:
+- Next, select the *Configuration* option:
   - Select the **Node Type** as *Link to workspace model.*
   - **Select a workspace model** as *Model Merge(Argentina)*.
 
 ### Case 1: Linking nodes to an entire model
 
-- Select **Linking To** option as **Entire workspace model**
+- Under the label **Linking To**, select **Entire workspace model**.
 
  <div class="center">
   <Zoom>
@@ -117,12 +117,12 @@ Linked nodes are indicated by a special linked icon both in the **Model > Node**
 
 ### Case 2: Linking node to a single node from a model
 
-Let's create a 4th child node and link the node to a single node *Receita Liquida* from the *Argentina* model.
-Add another *Child node* as highlighted in the *Navigation Panel* on the left.
+Let's create a 4th child node and link the node to a single node from the *Argentina* model.
+Next add a 4th *Child node* under the *Total* node in the *Navigation Panel* on the left.
 
-- In the **Edit Node** pop-up window, select **Node Type** as *Link to workspace model*
-- **Select a workspace model** as *Model Merge(Argentina)*
-- Select **Linking To** option as **Node in the model**
+- In the **Edit Node** pop-up window, select **Node Type** as **Link to workspace model**.
+- In the **Select a workspace model** label, choose **Sub Model - Argentina**.
+- In the **Linking To** label, select the option **Node in the model**.
 
  <div class="center">
   <Zoom>
@@ -131,7 +131,7 @@ Add another *Child node* as highlighted in the *Navigation Panel* on the left.
   <p id="caption-left">Node linked to another node from a model <i id="credit">Credits to our partner, BlueShift Brazil</i></p>
  </div>
 
-- *Select a node to link* as *Receita Liquida* (This is the node from the *Argentina* model).
+- In the **Select a node to link** label, choose **Porco** from the drop-down list of nodes (This is the node from the *Argentina* model).
 
 ## Series Mapping
 

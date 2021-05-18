@@ -11,7 +11,7 @@ import "react-medium-image-zoom/dist/styles.css";
 Perform allocation changes to all the connected nodes (parent and children) of East.
 
 Plan before allocation:
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
 <img alt="Before Allocation" src={useBaseUrl('/doc-images/plan/ba1.png')} />
   </Zoom>
@@ -46,7 +46,7 @@ Plan before allocation:
 The cells which were impacted as a result of the allocation operation turns yellow.
 </div> <br />
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
 <img alt="After Allocation" src={useBaseUrl('/doc-images/plan/ba5.png')} />
   </Zoom>
@@ -80,7 +80,7 @@ Labour node before allocation:
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="Weight Icon" src={useBaseUrl('/doc-images//pl27.png')} />
+<img width="60" alt="Weight Icon" src={useBaseUrl('/doc-images/plan/weight-icon.png')} />
   </Zoom>
 </div> <br />
 
@@ -89,7 +89,7 @@ Labour node before allocation:
 Then choose Change action as Overwrite Values option and click Apply.
 </div> <br />
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
 <img alt="Spread by Weight" src={useBaseUrl('/doc-images/plan/ba16.png')} />
   </Zoom>
@@ -127,15 +127,15 @@ In the John Smith's node, click and (SHIFT+) select the cell values from the per
 
 2. Select the total value for John Smith and click on Weight option.
 
-<div style= {{ textAlign: "center" }}>
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="Weight method" src={useBaseUrl('/doc-images/plan/ba20.png')} />
+<img width="500" alt="Weight method" src={useBaseUrl('/doc-images/plan/ba20.png')} />
   </Zoom>
 </div>
 
 3. Enter the new value for John Smith and choose Overwrite Values option.
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
 <img alt="Overwrite values" src={useBaseUrl('/doc-images/plan/ba21.png')} />
   </Zoom>
@@ -189,7 +189,7 @@ Plan before changes:
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="Copy-to Icon" src={useBaseUrl('/doc-images//pl18.png')} />
+<img width="60" alt="Copy-to Icon" src={useBaseUrl('/doc-images/plan/copy-to-icon.png')} />
   </Zoom>
 </div> <br />
 
@@ -205,21 +205,21 @@ Plan before changes:
 
 ## Scenario 5: Update the node's period values based on a monthly trend
 
-Overwrite Goods by 2% increase using Trend.
+Overwrite Midwest by 2% increase using Trend.
 
-Goods node before applying Trend:
+Midwest node before applying Trend:
 
 <div>
   <Zoom>
-<img alt="Original cell values" src={useBaseUrl('/doc-images/plan/ba13.png')} />
+<img alt="Original cell values" src={useBaseUrl('/doc-images/plan/midwest-before-trend.png')} />
   </Zoom>
 </div> <br />
 
-1.  Select the Goods node for Jan month.
+1. Select the Midwest node for Jan month.
 
 <div style= {{ textAlign: "center" }}>
   <Zoom>
-<img alt="Select Node" src={useBaseUrl('/doc-images/plan/ba10.png')} />
+<img alt="Select Node" src={useBaseUrl('/doc-images/plan/jan-trend.png')} />
   </Zoom>
 </div>
 
@@ -227,7 +227,7 @@ Goods node before applying Trend:
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="Trend Icon" src={useBaseUrl('/doc-images//pl23.png')} />
+<img width="60" alt="Trend Icon" src={useBaseUrl('/doc-images/plan/trend-icon.png')} />
   </Zoom>
 </div> <br />
 
@@ -238,19 +238,21 @@ Now choose Change action as Overwrite Values option and click Apply.
 
 <div class="center">
   <Zoom>
-<img alt="Overwrite values" src={useBaseUrl('/doc-images/plan/ba11.png')} />
+<img alt="Overwrite values" src={useBaseUrl('/doc-images/plan/increase-trend.png')} />
   </Zoom>
 </div> <br />
 
 <div style={{textAlign: 'justify'}}>
-4.  Goods node after applying Trend is seen as below. The cells which were impacted turns yellow.
+4. Midwest node after applying Trend is seen as below. The cells which were impacted turns yellow.
 </div> <br />
 
 <div>
   <Zoom>
-<img alt="Trend applied" src={useBaseUrl('/doc-images/plan/ba12.png')} />
+<img alt="Trend applied" src={useBaseUrl('/doc-images/plan/trend-applied.png')} />
   </Zoom>
 </div>
+
+Note the Trend effect on the "Overall Result".
 
 ## Scenario 6: Update the node's period values based on a combination of trends <br />
 
@@ -268,9 +270,9 @@ Update Rent by 5% increase for Jan, 10% increase for April and return the same f
 3.  Now select the cell 'Jan'. Increase the value by 5%.
 </div> <br />
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-<img alt="Increase by 5%" src={useBaseUrl('/doc-images//pl30.png')} />
+<img width="500" alt="Increase by 5%" src={useBaseUrl('/doc-images//pl30.png')} />
   </Zoom>
 </div> <br />
 
