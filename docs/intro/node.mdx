@@ -11,8 +11,11 @@ import "react-medium-image-zoom/dist/styles.css";
 
 In this section, we introduce you the components of a node and two types of model structure available in ValQ
 
-1. [Node Components](#1-node-components)
-1. [Model structure](#2-model-structure)
+1. [1. Node components](#1-node-components)
+1. [2. Model structure](#2-model-structure)
+    1. [2.1 Tree view](#21-tree-view)
+    1. [2.2 Table view](#22-table-view)
+1. [Related Pages](#related-pages)
 
 ## 1. Node components
 
@@ -32,16 +35,16 @@ Each node represents a value driver, KPI or category and it's several performanc
 
 <div style={{textAlign: 'justify'}} className="table-center">
 
-|     | Component                   | Description                                                                   |
-| --- | --------------------------- | ----------------------------------------------------------------------------- |
-| 1   | Node name                   | Name of the value driver or KPI                                        |
-| 2   | Conditional Formatting      | Color band indicating the variance                                            |
-| 3   | Value Trend                 | A sparkline graph showing the trend                                           |
-| 4   | Baseline Value              | Node value of the baseline series                                             |
-| 5   | Variance for all periods    | Full-year variance of the node                                                |
-| 6   | Variance for current period | Current month (usually first period in the series) month variance of the node |
-| 7   | Absolute Variance           | Variance showed in absolute value                                             |
-| 8   | Percentage Variance         | Variance showed in percentage                                                 |
+|   | Component                   | Description                                                                   |
+|---|-----------------------------|-------------------------------------------------------------------------------|
+| 1 | Node name                   | Name of the value driver or KPI                                               |
+| 2 | Conditional Formatting      | Color band indicating the variance                                            |
+| 3 | Value Trend                 | A sparkline graph showing the trend                                           |
+| 4 | Baseline Value              | Node value of the baseline series                                             |
+| 5 | Variance for all periods    | Full-year variance of the node                                                |
+| 6 | Variance for current period | Current month (usually first period in the series) month variance of the node |
+| 7 | Absolute Variance           | Variance showed in absolute value                                             |
+| 8 | Percentage Variance         | Variance showed in percentage                                                 |
 
 </div>
 <br></br>
@@ -51,6 +54,7 @@ Lengthy Node name is truncated in the Tree view to avoid overlapping on other va
 <div style={{ textAlign: "center" }}>
   <Zoom>
     <img
+      width="350"
       alt="Identifying Nodes components"
       src={useBaseUrl("/doc-images/intro/node-name-truncated.png")}
     />
@@ -65,9 +69,10 @@ Lengthy Node name is truncated in the Tree view to avoid overlapping on other va
 Baseline series is the primary series and Comparison series is the benchmark
 against which the Baseline is compared. <br /> In the below image Sales Budget is the Baseline series and Sales Forecast is the Comparison series.
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
     <img
+      width="350"
       alt="Series comparison for Sales model"
       src={useBaseUrl("/doc-images/intro/node5.png")}
     />
@@ -77,15 +82,14 @@ against which the Baseline is compared. <br /> In the below image Sales Budget i
 
 ## 2. Model structure
 
-<div style={{ textAlign: "justify" }}>
-  With ValQ, you can build a model of your business process and view it in the
-  form of a tree as well as a table. Toggle between the below icons present on
-  the top left corner of the canvas to change the view.
-</div> <br />
+With ValQ, you can build a model of your business process and view it in the form of a tree as well as a table. Toggle between the below icons present on the top left corner of the canvas to change the view.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="ValQ users" src={useBaseUrl("/doc-images/intro/node8.png")} />
+    <img 
+    width="150"
+    alt="Tree/Table view icons" 
+    src={useBaseUrl("/doc-images/intro/node8.png")} />
   </Zoom>
 </div>
 
@@ -119,7 +123,10 @@ Click on **>** to expand and **<** collapse levels.
 
 <div class="center">
   <Zoom>
-    <img alt="ValQ users" src={useBaseUrl("/doc-images/intro/node6.png")} />
+    <img 
+    width="100"
+    alt="Expand/collapse the node" 
+    src={useBaseUrl("/doc-images/intro/node6.png")} />
   </Zoom>
 </div> <br />
 
@@ -129,9 +136,12 @@ Click on **>** to expand and **<** collapse levels.
   between different levels.
 </div> <br />
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="ValQ users" src={useBaseUrl("/doc-images/intro/node9.png")} />
+    <img
+    width="450"
+    alt="Search box/Zoom/Go to level"
+    src={useBaseUrl("/doc-images/intro/node9.png")} />
   </Zoom>
 </div>
 

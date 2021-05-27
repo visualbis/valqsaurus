@@ -11,29 +11,32 @@ import "react-medium-image-zoom/dist/styles.css";
 ValQ has in-built Time Series Forecasting capabilities that allow you to make a forecast based on past data collected over a while. To access this powerful feature, all you have to do is click on the "Auto Forecast" button as shown below:
 <div class="center">
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/auto-forecast.png")} />
+    <img alt="Auto Forecast" src={useBaseUrl("/doc-images/plan/auto-forecast.png")} />
   </Zoom>
 </div>
 
 ## Forecast options
 
 Clicking on Auto Forecast will give you the options to configure time series forecasting that make predictions designed to suit your needs.
-<div class="center">
+
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Auto Forecast" src={useBaseUrl("/doc-images/plan/auto-forecast-option.png")} />
+    <img 
+    width="500"
+    alt="Auto Forecast" src={useBaseUrl("/doc-images/plan/auto-forecast-option.png")} />
   </Zoom>
 </div>
 
 <div style={{textAlign: 'justify'}} className="table-center">
 
-|     | Options                    | Description                                                                    |
-| --- | -------------------------- | ------------------------------------------------------------------------------ |
-| 1   | Target Node                | Node for which forecast is done                                                |
-| 2   | Target Period              | Period for which forecast is done                                              |
-| 3   | Forecast Basis             | Criteria based on which forecast is performed                                  |
-| 4   | Past Data Series & Weights | Choose the past data series here and its weights are given in descending order |
-| 5   | Source Periods             | Choose the duration of past data considered for the forecast                   |
-| 6   | Add Growth                 | Growth component can be added here on absolute or percentage terms             |
+|   | Options                    | Description                                                                    |
+|---|----------------------------|--------------------------------------------------------------------------------|
+| 1 | Target Node                | Node for which forecast is done                                                |
+| 2 | Target Period              | Period for which forecast is done                                              |
+| 3 | Forecast Basis             | Criteria based on which forecast is performed                                  |
+| 4 | Past Data Series & Weights | Choose the past data series here and its weights are given in descending order |
+| 5 | Source Periods             | Choose the duration of past data considered for the forecast                   |
+| 6 | Add Growth                 | Growth component can be added here on absolute or percentage terms             |
 
 </div>
 
@@ -44,9 +47,11 @@ Clicking on Auto Forecast will give you the options to configure time series for
   after configuring the Target and Forecast Basis options.
 </div> <br />
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/tsf2.png")} />
+    <img 
+    width="500"
+    alt="Forecast" src={useBaseUrl("/doc-images/plan/tsf2.png")} />
   </Zoom>
 </div> <br />
 
@@ -70,9 +75,11 @@ Let's understand how ValQ performs time series forecasting with examples to pred
 In the below example, forecasting is done for node 'Overall Result' for the year 2020 based on 2019 actuals data with weight as 1
 and growth not incorporated.
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="Auto Forecast with No Growth" src={useBaseUrl("/doc-images/plan/auto-forecast-no-growth.png")} />
+    <img 
+    width="500"
+    alt="Auto Forecast with No Growth" src={useBaseUrl("/doc-images/plan/auto-forecast-no-growth.png")} />
   </Zoom>
 </div>
 
@@ -95,9 +102,11 @@ Basis option.
 Here's another example where forecasting is done for node 'Overall Result' for the year 2020 based on 2019 and 2018 actuals with
 weight as 2 and 1 respectively and 10% growth. Auto Forecast is the Forecast Method applied in this example.
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/tsf4.1.png")} />
+    <img 
+    width="500"
+    alt="Forecast Configuration" src={useBaseUrl("/doc-images/plan/tsf4.1.png")} />
   </Zoom>
 </div>
 
@@ -128,7 +137,6 @@ the Forecast Basis option.
 
 <div style={{textAlign: 'justify'}}>
 
-
 #### Configuration for Forecasting
 
 In this example forecasting is done for node 'Overall Result' for the year 2020 based on 2019 and 2018 full year actuals with
@@ -136,10 +144,9 @@ weight as 2 and 1 respectively and 10% growth. The Forecast Method applied in th
 
 </div>
 
-
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/tsf8.1.png")} />
+    <img width="500" alt="Linear Trend" src={useBaseUrl("/doc-images/plan/tsf8.1.png")} />
   </Zoom>
 </div> <br />
 
@@ -177,9 +184,9 @@ Distribution Method.
 </div>
 
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/tsf7.1.png")} />
+    <img width="500" alt="Linear Trend Forecast" src={useBaseUrl("/doc-images/plan/tsf7.1.png")} />
   </Zoom>
 </div> <br />
 
@@ -232,10 +239,9 @@ as the Distribution Method.
 
 </div>
 
-
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/tsf5.1.png")} />
+    <img width="500" alt="Moving Average" src={useBaseUrl("/doc-images/plan/tsf5.1.png")} />
   </Zoom>
 </div> <br />
 
@@ -284,9 +290,9 @@ with M2M as the Distribution Method.
 </div>
 
 
-<div class="center">
+<div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="ValQ logo" src={useBaseUrl("/doc-images/plan/tsf6.1.png")} />
+    <img width="500" alt="ValQ logo" src={useBaseUrl("/doc-images/plan/tsf6.1.png")} />
   </Zoom>
 </div> <br />
 
