@@ -56,10 +56,6 @@ module.exports = {
                             
         ],
         Administration: ["storage/admin-console"],
-        Resources: [
-            "faq/definitions",
-            "faq/known-issues",
-        ],
     },
     functionSideBar: {
         "All Functions": ["references/formula-list"],
