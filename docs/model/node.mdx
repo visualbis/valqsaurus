@@ -969,11 +969,8 @@ The below image shows the expanded view on the panel
 
 ## Quick Editor in Node Tab
 
-<div style={{ textAlign: "justify" }}>
-  Using the Quick Editor option in the Node tab, you will be able to view the
-  entire tree hierarchy in a Grid View. This option can be used to make changes
-  to multiple nodes at a time.
-</div> <br />
+Use the Quick Editor option in the Node tab to view the entire tree hierarchy in a Grid View.
+This option can be used to make changes to multiple nodes at a time.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -982,40 +979,33 @@ The below image shows the expanded view on the panel
   <div class="center"><p>Quick Editor options</p></div>
 </div>
 
-<div style={{ textAlign: "justify" }}>
-  In Quick Editor, you can also display or hide the node structure using the
-  Expand and Collapse icons.
-</div> <br />
+### Expand/Collapse Node Hierarchy
 
-The below Figure shows the expanded form of the Quick Editor.
+To display or hide the node structure use the **Expand** and **Collapse** features located at the bottom-left of the screen.
 
 <div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/model/quick-editor-expanded.png")} />
   </Zoom>
-  <p>Quick Editor - Expanded view</p>
+  <p>Quick Editor - Expanded View</p>
 </div>
 
-The below Figure shows the collapsed form of the Quick Editor.
+The screenshot below shows the collapsed view of the nodes:
 
-<div >
+<div class="center">
   <Zoom>
     <img alt="" src={useBaseUrl("/doc-images/model/quick-editor-collapse.png")} />
   </Zoom>
-  <div class="center"><p>Quick Editor - Collapsed view</p></div>
+  <p>Quick Editor - Collapsed view</p>
 </div>
 
-<div style={{ textAlign: "justify" }}>
-  In Grid View, you will be able to edit the nodes and save it so that the
-  changes get reflected in the tree structure.
-</div> <br />
+### Edit Node Properties
 
-<div style={{ textAlign: "justify" }}>
-  You can edit properties like Formula, Calculation Method and Aggregation
-  Method directly in the Grid view where it gets updated in the actual
-  properties of nodes. In our example, you can view that the Calculation Method
-  has been double-clicked for editing.
-</div> <br />
+In Grid View, you can edit the nodes and save the changes. The changes made in the grid view will get reflected in the Tree structure.
+
+You can edit properties like **Formula, Calculation Method, Aggregation Method, Simulation Method** etc. directly in the Grid view where it gets updated in the actual properties of nodes.
+
+In our example, **Calculation Method** has been double-clicked for editing:
 
 <div class="center">
   <Zoom>
@@ -1024,12 +1014,12 @@ The below Figure shows the collapsed form of the Quick Editor.
   <p>Calculation Method on Quick Editor</p>
 </div>
 
-<div style={{ textAlign: "justify" }}>
-  The node search for the columns Linked Node, Linked Simulation Node and
+<!--
+The node search for the columns Linked Node, Linked Simulation Node and
   Weighted Average Node in the Data Grid will be in the drop-down list and the
   user can select the appropriate node from the same. In the below Figure, a
   node search for Linked Simulation Node has been made.
-</div> <br />
+
 
 <div style={{ textAlign:"center" }}>
   <Zoom>
@@ -1050,12 +1040,9 @@ The below Figure shows the collapsed form of the Quick Editor.
   </Zoom>
   <div class="center"><p>Source Key on Quick Editor</p></div>
 </div>
+-->
 
-<div style={{ textAlign: "justify" }}>
-  You can observe that there's Business View information as a column and it
-  displays the formula using node title instead of node ID when you select the
-  Business View option.
-</div> <br />
+To display the node title instead of the node ID in the **Formula** column, enable the check-mark next to the **Business View** option.
 
 <div class="center">
   <Zoom>
@@ -1079,52 +1066,94 @@ You can either "Select all" columns or expand each category and select the respe
    <div class="center"><p>List of columns dropdown</p></div>
 </div>
 
-You can import and export the data in the form of an XML file using the **Import from Excel** and **Export to Excel** buttons.
+### Export to Excel
 
-<div style={{ textAlign : "center" }}>
+Using the **Export to Excel** feature you can export your model data and formatting rules as an `xml` file out of ValQ visual.
+
+The downloaded `xml` file can be opened in Excel and is useful for bulk editing the model properties.
+You can then share this exported Excel file and import it into other ValQ visuals.
+The new model will be populated with data from the `xml` file that you imported.
+
+<div class="center">
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/model/node55.png")} />
+    <img alt="Import/export xml" src={useBaseUrl("/doc-images/model/import-export.png")} />
   </Zoom>
-  <div class="center"><p>Import and Export buttons</p></div>
+  <p>Import and Export buttons</p>
 </div>
 
-> **Note** <br /> The Export to Excel button is functional on the web
-> version of Power BI, the file can be edited and then be imported using
-> Import from Excel.
+:::note
 
-<div style={{ textAlign: "justify" }}>
-  There is an option to lock the simulation for the nodes in the Quick Editor.
-  The same function can be also done in the exported Excel File and the Excel
-  file can be imported back in the Quick Editor to see the updates done for the
-  locked simulation.
-</div> <br />
+* The **Export to Excel** button is functional on the web version of Power BI.
+* The imported file can also be edited and then can be imported into another model using **Import from Excel** feature.
+* **Export to Excel** is disabled for a merged model.
+:::
 
-The below Figure shows the Locked Simulation in the Quick Editor.
+* In the Quick Editor screen, select **Export to Excel**.
+
+<div class="center">
+  <Zoom>
+    <img alt="XML file download" src={useBaseUrl("/doc-images/model/xml-download.png")} />
+  </Zoom>
+  <p>XML file downloaded</p>
+</div>
+
+* Exported file will be downloaded with the filename in the format: `<ValQExcelExport-Year-month-date>.xml`.
+* Navigate to the downloaded location, select and open the downloaded `xml` file with Excel.
+
+<div class="center">
+  <Zoom>
+    <img alt="Exported xml data view in Excel" src={useBaseUrl("/doc-images/model/exported-excel.png")} />
+  </Zoom>
+  <p>Exported `xml` data view in Excel</p>
+</div>
+
+* Edit and save the Excel file in the `xml` file format.
+
+Click [here](./assets/ValQExcelExport-2021-6-1.xls) to download a sample Excel file that is generated from the exported `xml` file.
+
+### Import from Excel
+
+To implement your editions done in the exported `xml` file into another model:
+
+* Select **Model > Node**, then select **Quick Editor**.
+* Now select **Import from Excel**.
+* Navigate to the location of your edited/downloaded `xml` file, select the file and select **Open**.
+
+The data fields and values will be imported/populated in your present model from the `xml` file that you selected.
+
+> The updates made in the exported file will be reflected in the present model.
+
+* Select **Save** from the bottom-right corner of the Quick Editor screen.
+
+### Lock/Un-lock Node Simulation
+
+You can control the simulation on a node(s) with the **Locked** column value in the **Quick Editor**.
+
+<div style = {{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Enable simulation on the node" width="950px" src={useBaseUrl("/doc-images/model/simulator-lock.png")} />
+  </Zoom>
+  <div class="center"><p>Simulator slider enabled on the node</p></div>
+</div>
+
+In the **Locked** column, enable the checkbox for the selected node.
+
+### Re-order Child Nodes
+
+The rows can be reordered for the child nodes which exist under a parent node or the child nodes can be moved to another parent node by way of drag and drop.
+
+The screenshot below shows the Grid view before moving 'Ryan Smith' node from 'Consumer' to 'Industrials'.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img alt="" src={useBaseUrl("/doc-images/model/node61.png")} />
-  </Zoom>
-  <div class="center"><p>Simulation lock on Quick Editor</p></div>
-</div>
-
-<div style={{ textAlign: "justify" }}>
-  The rows can be reordered for the child nodes which exist under a parent node
-  or the child nodes can be moved to another parent node by way of drag and
-  drop. The below Figure shows the Grid view before moving the 'Ryan Smith' node
-  from 'Consumer' to 'Industrials'.
-</div> <br />
-
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img 
+    <img
     width="550"
     alt="" src={useBaseUrl("/doc-images/model/node62.png")} />
   </Zoom>
   <p>Existing hierarchy</p>
 </div>
 
-The below Figure shows the Quick Editor after changing the order.
+The next screenshot shows the Quick Editor after changing the order.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -1134,4 +1163,3 @@ The below Figure shows the Quick Editor after changing the order.
   </Zoom>
   <p>Parent change for node ‘Ryan Smith’</p>
 </div>
-
