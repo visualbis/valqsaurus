@@ -8,13 +8,16 @@ import Link from "@docusaurus/Link";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-The Data Series tab helps you to configure the data series settings for the model created in ValQ. The options available are:
+The **Model > Data Series** tab helps you to configure the data series settings for the model created in ValQ. The options available are:
 
-1. [Data Series Manager](#1-data-series-manager)
-1. [Time Aggregation Labels](#2-time-aggregation-labels)
-1. [Data Sorting](#3-data-sorting)
+1. [Data Series Manager](#data-series-manager)
+    1. [Periods](#periods)
+    1. [Data Series](#data-series)
+1. [Time Aggregation Labels](#time-aggregation-labels)
+1. [Data Sorting](#data-sorting)
+1. [Linked Model Mapping](#linked-model-mapping)
 
-## 1. Data Series Manager
+## Data Series Manager
 
 Data Series Manager helps you to configure the <Link to={useBaseUrl('model/data-series#11-periods')}>Periods</Link> and <Link to={useBaseUrl('model/data-series#12-data-series')}>Data Series</Link> for the model.
 
@@ -25,14 +28,14 @@ Data Series Manager helps you to configure the <Link to={useBaseUrl('model/data-
   <div class="center"><p>Data Series Manager setting</p></div>
 </div>
 
-### 1.1 Periods
+### Periods
 
 **Period(s) per data series**: Enter the number of periods in the data here. <br />
 **Period Label(s)**: Enter the period labels here with a comma separating each label.<br />
 The changes made here to the Period Labels will be reflected in all 4 tabs on ValQ - Model,
 Plan, Simulate and Analyze including the PopUp screen.
 
-### 1.2 Data Series
+### Data Series
 
 <div style={{ textAlign: "justify" }}>
   First, toggle Include comparison data series to add a comparison data series
@@ -96,7 +99,7 @@ the ValQ screen as shown below.
   comparison with simulated Baseline data.
 </div>
 
-## 2. Time Aggregation Labels
+## Time Aggregation Labels
 
 <div style={{ textAlign: "justify" }}>
   Using the Time Aggregation Labels option, you can configure the aggregation
@@ -132,7 +135,7 @@ Based on the above configuration, you will be able to view the ValQ screen as sh
   <div class="center"><p>Time Aggregation Labels on Navigation Panel</p></div>
 </div>
 
-## 3. Data Sorting
+## Data Sorting
 
 <div style={{ textAlign: "justify" }}>
   With the Data Sorting setting you can sort the data by sort field in ascending
@@ -157,3 +160,48 @@ Based on the above configuration, you will be able to view the ValQ screen as sh
   </Zoom>
   <p>Sorted Data Series</p>
 </div>
+
+## Linked Model Mapping
+
+Use this **Linked Model Mapping** when you want to map the series/scenarios of your model with a sub-model(or node) that you have linked.
+Mapping the series/scenarios of the sub model helps in keeping your model in sync with the changes in the sub-models.
+
+:::important
+This feature is only enabled when you have linked a node with another sub-model. If not there is a warning pop-up message as shown below:
+
+<div class="center">
+  <Zoom>
+    <img alt="Linked Series Mapping" src={useBaseUrl("/doc-images/model/linked-model-warning.png")} />
+  </Zoom>
+  <p>Link a node with a sub-model message</p>
+</div>
+:::
+
+* Link a node to an entire sub-model or a node from the sub-model. [ Refer the <Link to={useBaseUrl('storage/model-merge')}>Model Merge</Link> section ]
+* Select **Model > Data Series > Linked Model Mapping**.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Linked Model Mapping" src={useBaseUrl("/doc-images/model/linked-model-map.png")} width="300" />
+  </Zoom>
+</div>
+
+* Select the **Map Series** tab and map the respective series as indicated below:
+
+<div class="center">
+  <Zoom>
+    <img alt="Map Series" src={useBaseUrl("/doc-images/model/map-series.png")} />
+  </Zoom>
+  <p>Series mapping between the linked node and the sub-models</p>
+</div>
+
+* Select the **Map Scenarios** tab and map the respective scenarios(only shared):
+
+<div class="center">
+  <Zoom>
+    <img alt="Map Scenarios" src={useBaseUrl("/doc-images/model/map-scenarios.png")} />
+  </Zoom>
+  <p>Scenarios mapping between the linked node and the sub-models</p>
+</div>
+
+Now to sync up the series/scenarios in the consolidated model refer the <Link to={useBaseUrl('storage/model-merge#final-result-in-the-consolidated-model')}>Final result in the consolidated model</Link> section for further details.
