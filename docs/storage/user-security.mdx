@@ -13,6 +13,16 @@ ValQ Collaborate (Enterprise Edition) introduces security features to restrict a
 The security feature helps you to manage the view/edit access on your model for users or groups.
 User and group management is administered through <Link to={useBaseUrl('storage/admin-console')}>Admin console</Link> page.
 
+:::note
+This feature is only available in Enterprise plans.
+  <div class="center">
+    <Zoom>
+      <img alt="User security feature not available" src={useBaseUrl('/doc-images/storage/security-denied.png')} />
+    </Zoom>
+    <p>Upgrade plan to Enterprise to enable the User security feature</p>
+  </div>  
+:::
+
 ## Security Roles and Level of Permissions
 
 You can manage the model level data security by using roles and then adding users to these different roles. A role has certain access controls and permissions.
@@ -53,9 +63,10 @@ Following are the privileges assigned on the shared model:
 
 <sup>2</sup>ValQ features when shared with the "Limited to certain users" option, only selected users/groups are given view-only or edit access.
 
-## Manage Model Access 
+## Manage Model Access
 
 The *Model owner(default Admin)* can add other members to the model with the above-defined roles as *Admin, Analyzer*, or a *Viewer*.
+
 * Before you begin, you must **Upload** your model to the workspace.
 * Click on the 3 dots `...` next to your User profile and select **Settings**.
 * In the **Model Settings > Security** section add other users/groups to the model.
@@ -68,9 +79,10 @@ The *Model owner(default Admin)* can add other members to the model with the abo
   </div>  
 
 * Following are the users/roles:
-  - testQA user1 is added as an *Admin*.
-  - ValQ Test User as an *Analyzer*.
-  - finance-group as a *Viewer*. All the members (user3, user4) of the group are assigned *Viewer* level access.
+
+  * testQA user1 is added as an *Admin*.
+  * ValQ Test User as an *Analyzer*.
+  * finance-group as a *Viewer*. All the members (user3, user4) of the group are assigned *Viewer* level access.
 
 > A user can view the assigned model-level roles and permissions in the *Model Settings* side panel as shown in the above screenshot.
 
@@ -82,9 +94,9 @@ The *Model owner(default Admin)* can add other members to the model with the abo
       <img alt="An Analyzer cannot access the model/data series/export/writeback" src={useBaseUrl('/doc-images/storage/analyzer-no-model-access.png')} />
     </Zoom>
     <p>Model tab and functionalities(data series, export, writeback, etc.) disabled</p>
-  </div> 
+  </div>
 
-:::note 
+:::note
 Any member that is either not added as a user or part of a group added to the model, will not be able to access the ValQ report. 
 :::
 
@@ -98,8 +110,9 @@ Any member that is either not added as a user or part of a group added to the mo
 ## Manage Node Access
 
 Model owner/admins can provide node level access control to groups and users added to the model.
-- Select the Node and click the <Link to={useBaseUrl('model/node#node-editor')}>editor icon</Link> next to the node.  
-- In the **Edit Node** pop-up window select **Access Control**.
+
+* Select the Node and click the <Link to={useBaseUrl('model/node#node-editor')}>editor icon</Link> next to the node.  
+* In the **Edit Node** pop-up window select **Access Control**.
 
 > The same parent level access control will be applied for the child nodes as well. 
 
@@ -151,6 +164,7 @@ Access Control is disabled for the top node.
 
 On the **Simulate** tab select the *scenario* to be shared and click the *share* icon next to the *scenario*.
 *Scenarios* can be kept private by the *Model creator* or shared with the following 2 options:
+
 1. **Groups and users added to the model (default)**
 
   All the members of the group will be able to access *scenario 1* based on their role privileges.
@@ -265,4 +279,4 @@ A *Model creator/Admin* can keep the series private, share with users/groups, or
       <img alt="Edit access on a series" src={useBaseUrl('/doc-images/storage/viewer-feb-frcst-edit-access.png')} />
     </Zoom>
     <p>Viewer with edit access on shared series</p>
-  </div> 
+  </div>
