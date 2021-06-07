@@ -97,14 +97,13 @@ Here, the sub-model - 'Midwest' displays only the particular node and its childr
 
 ### 3. Simulation Period
 
-<div style={{textAlign: 'justify'}}>
-
-ValQ model updates the simulated values based on the periods selected in the Simulation Period. You can select just one period or
-choose a range of period with '[to]' icon, ValQ applies simulation and fetches simulated values only to those selected periods.
-To change the period labels, go to <Link to={useBaseUrl('model/settings#13-simulation-period')}>settings</Link>.
+ValQ model updates the simulated values based on the periods selected in the **Simulation Period** section. 
+You can select the drop-down list and choose a range of periods.
+ValQ applies simulation and fetches simulated values only to those selected periods.
+To change the period labels, go to <Link to={useBaseUrl('model/settings#13-simulation-period#13-simulation-period')}>settings</Link>.
 Click on the **^** option to collapse this property.
 
-</div>
+To restore the default period values of 'Jan' through 'Dec', select **Reset**.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -114,20 +113,18 @@ Click on the **^** option to collapse this property.
       src={useBaseUrl("/doc-images/simulate_tab/sim8.png")}
     />
   </Zoom>
-</div> <br />
+</div>
 
-<div style={{ textAlign: "justify" }}>
-  In the below example, simulation periods have been selected as Jan and Feb.
-  You can observe that the simulation is applied only to these two periods.
-</div> <br />
+In the below example, simulation periods have been selected as 'Jan' through 'Apr', hence the simulation is applied only to these 4 periods:
 
 <div class="center">
   <Zoom>
     <img
-      alt="ValQ logo"
+      alt="Simulation Period"
       src={useBaseUrl("/doc-images/simulate_tab/sim9.png")}
     />
   </Zoom>
+  <p>Node simulation result displayed only for the selected periods</p>
 </div>
 
 ### 4. Value Display

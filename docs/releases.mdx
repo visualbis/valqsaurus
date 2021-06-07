@@ -13,6 +13,44 @@ import { Vimeo } from '@site/src/components/Vimeo';
 ValQ latest version will be available on Power BI AppSource in about 2 to 3 weeks from the release date. All your existing models built on AppSource visual gets updated to the latest version automatically.
 :::
 
+## V2.0.6 (Jun 4, 2021)
+
+#### Enhancements
+
+* New UI has been implemented for time period display and selection across all tabs on ValQ.
+
+ <div style= {{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="Select Period" width="300" src={useBaseUrl("/doc-images/simulate_tab/sim8.png")} />
+  </Zoom>
+ </div>
+
+* **Fetching data** message is added on the canvas till the Model gets completely loaded:
+
+ <div class="center" >
+  <Zoom>
+    <img alt="Tree Loading" src={useBaseUrl("/doc-images/fetching-data.png")} />
+  </Zoom>
+ </div>
+
+* Simulations from sub-model at the time of mapping a scenario gets reflected on the main model without having to <Link to={useBaseUrl('storage/model-merge#final-result-in-the-consolidated-model')}>refresh</Link>.
+* A new identifier <Link to={useBaseUrl('references/formulas/node-properties#nodetitle')}>[NODE].Title</Link> has been added to ValQ.
+
+#### Important Fixes
+
+* Fixed an issue when switching from Enterprise Trial to Starter Plan didn't work correctly.
+* Secured series, scenarios and nodes are now not visible to unauthorized users.
+* When Display zero as property is set as '-' , it does not overlap with secondary KPI in the Tree view.
+* Sparkline chart on Table view is now consistent with the sparkline chart in Tree view.
+* Edit Node > Configuration now works on opening it for a node that is linked to another node from a workspace model.
+* Descendants of a hidden node does not show up on search anywhere in the visual.
+* In the **Model > Settings > Navigation Panel** section, the **Manage Selection** window pop-up display issue fixed.
+* <Link to={useBaseUrl('planning/time_series')}>AutoForecast</Link> can be used even when no node selection is made on the plan grid.
+* <Link to={useBaseUrl('model/node#3-display')}>Display</Link> of Top node on a model cannot be set as Derived or Hidden.
+* Importing an Advanced model from any earlier version works without any issue and the **Upload** button is also enabled.
+* **Upgrade** button now works in Groups and Shared Models screen from the Admin Console.
+* All the nodes are displayed in the drop-down list of <Link to={useBaseUrl('storage/model-merge#case-2-linking-node-to-a-single-node-from-a-model')}>Select a node to link</Link> option.
+
 ## V2.0.5 (Apr 20 , 2021)
 
 #### Enhancements
@@ -27,7 +65,7 @@ ValQ latest version will be available on Power BI AppSource in about 2 to 3 week
 * <Link to={useBaseUrl('storage/user-security#manage-node-access')}>Access Control</Link> setting is now removed from node configuration of top node for enhanced security.
 * **View Access** checkbox in <Link to={useBaseUrl('storage/user-security#manage-scenario-access')}>Share (Scenario/Series)</Link> settings is now  enabled by default with a tooltip message "Cannot remove View Access when Edit Access is enabled" when **Edit Access** checkbox is enabled.
 
-#### Bug Fixes
+#### Important Fixes
 
 * In Free plan, deleting a node in the Model tab does not show reference error.
 * Free Plan - adding custom time period on Variance Analysis now shows the values instead of blank.
@@ -48,7 +86,7 @@ ValQ latest version will be available on Power BI AppSource in about 2 to 3 week
 
 * Lengthy <Link to={useBaseUrl('intro/node#1-node-components')}>Node name</Link> is truncated in the Tree view to avoid overlapping on other values.
 
-#### Bug Fixes
+#### Important Fixes
 
 * **Link to Model** option has been removed from the **Node Type** column's drop-down list in <Link to={useBaseUrl('model/node#quick-editor-in-node-tab')}>Quick Editor</Link>.
 * <Link to={useBaseUrl('simulation/tableview#1-search-for-a-node')}>Node search</Link> is fixed in the Table view.
@@ -61,7 +99,7 @@ ValQ latest version will be available on Power BI AppSource in about 2 to 3 week
 * The <Link to={useBaseUrl('storage/history-logs#planning-series-logs')}>View Allocation History</Link> button is grayed out when we get the confirmation popup for **Reset All** option.
 * <Link to={useBaseUrl('model/node#iii-value-prefix-and-value-suffix')}>Prefix and suffix</Link> gets displayed now even when the value of the node is 0.
 * In the <Link to={useBaseUrl('model/node#25-value-range')}>Node Configuration > Value Range</Link> min and max fields and <Link to={useBaseUrl('model/settings#5-conditional-formatting')}>Model > Settings > Conditional Formatting</Link> threshold sections, you can now enter 1/100th value and lesser.
-*  **Export only leaf nodes** option now exports all the leaf nodes available at different levels in the tree.
+* **Export only leaf nodes** option now exports all the leaf nodes available at different levels in the tree.
 * When a <Link to={useBaseUrl('storage/user-security')}>model is shared</Link>, secured nodes and sub models will not be visible for the user(s) on search option across all the screens on ValQ.
 * The three letter abbreviation that you set in the <Link to={useBaseUrl('model/data-series#2-time-aggregation-labels')}>Time Aggregation Labels</Link> section now gets displayed for YtD tooltip in **Simulate > Navigation Panel > Value Display**.
 
@@ -69,7 +107,7 @@ ValQ latest version will be available on Power BI AppSource in about 2 to 3 week
 
 #### New Features
 
-* Writeback Scenario button is now available in the <Link to={useBaseUrl('simulation/navigation_panel#1-scenarios')}>Simulate > Compare Scenarios</Link> screen.
+* The Writeback Scenario button is now available in the <Link to={useBaseUrl('simulation/navigation_panel#1-scenarios')}>Simulate > Compare Scenarios</Link> screen.
 
 #### Enhancements
 
@@ -78,7 +116,7 @@ ValQ latest version will be available on Power BI AppSource in about 2 to 3 week
 * <Link to={useBaseUrl('model/node#iii-value-prefix-and-value-suffix')}>Prefix and Suffix</Link> on a node now have a space character added to the text for clarity and better display.
 * Fetch more pop-up issue has been updated.
 
-#### Bug Fixes
+#### Important Fixes
 
 * Changes made to <Link to={useBaseUrl('storage/model-merge')}>Secondary KPIs in linked model</Link> now reflect in the main model on refresh.
 * You can use **Edit** option to <Link to={useBaseUrl('simulation/navigation_panel#1-scenarios')}>rename</Link> and add description to a Scenario even for models not uploaded to workspace.
@@ -112,7 +150,7 @@ ValQ latest version will be available on Power BI AppSource in about 2 to 3 week
 * The <Link to={useBaseUrl('model/node#manage-columns-settings')}>Manage Columns</Link> settings in the **Model > Node > Quick Editor** is grouped similar to the labels in the **Edit Node** configurations.
 * The <Link to={useBaseUrl('storage/export')}>Export as datasource</Link> feature includes **Export all** option. This option allows you to export all the saved series/scenarios in the model including future updates.
 
-#### Bug Fixes
+#### Important Fixes
 
 * The selections made in <Link to={useBaseUrl('analysis/variance_analysis')}>Variance Analysis</Link> gets retained even when you move to another ValQ screen.
 * <Link to={useBaseUrl('planning/plan_overview')}>Plan Grid (Decimal points)</Link> on node gets displayed in the Plan input editor based on the node's configuration.
@@ -132,7 +170,7 @@ The use of the "Tab" button to move to the next period is disabled for the last 
 
 ## V1.8.5 (Sep 1, 2020)
 
-#### Bug Fixes
+#### Important Fixes
 
 * Fix for the editor issue - Canvas section now opens fine.
 * Fixed the Model Merge reports to be migrated across workspaces.
@@ -141,19 +179,20 @@ The use of the "Tab" button to move to the next period is disabled for the last 
 
 #### Enhancements
 
-- Download functionality is now enabled on Power BI desktop.
+* Download functionality is now enabled on Power BI desktop.
 
-#### Bug Fixes
+#### Important Fixes
 
-- Fixed Variance analysis & Table view issues in Model Merge reports.
-- Fixed Zero display issue in Compare Scenario screen.
-- IE 11 Copy Scenario issue has been fixed.
-- Planning - Archive issues are fixed.
-- Formula issue with <Link to={useBaseUrl('references/formulas/getcurrentrange')}>Get Current Range</Link> is fixed.
+* Fixed Variance analysis & Table view issues in Model Merge reports.
+* Fixed Zero display issue in Compare Scenario screen.
+* IE 11 Copy Scenario issue has been fixed.
+* Planning - Archive issues are fixed.
+* Formula issue with <Link to={useBaseUrl('references/formulas/getcurrentrange')}>Get Current Range</Link> is fixed.
 
 ## V1.8.3 (Jul 30,2020)
 
 #### Features
+
 * Added <Link to={useBaseUrl('planning/create_new_series#rolling-planning')}>Rolling Forecast ( Planning )</Link> feature that combines YTD actual data and budget/forecast for the rest of the time frame
 * Introduced <Link to={useBaseUrl('storage/export')}>Export as datasource</Link> feature that enables you to export your model as a web data source.
 * <Link to={useBaseUrl('simulation/tableview#7-summarized-view')}>Table view</Link> can now be customized to include/exclude columns and get summarized and periodic views.
@@ -161,11 +200,13 @@ The use of the "Tab" button to move to the next period is disabled for the last 
 * Model Merge enabled for a <Link to={useBaseUrl('storage/model-merge#case-2-linking-node-to-a-single-node-from-a-model')}>selected node from the sub-model to another node</Link> in the workspace.
   
 #### Enhancements
+
 * Made performance based Member Console changes.
 * **Notes** feature is now replaced as <Link to={useBaseUrl('storage/commenting')}>Comments</Link>.
 * Planning and Allocation history comments now available as consolidated comments.
 * Improved the <Link to={useBaseUrl('model/general#valq-writeback-schema')}>Writeback data JSON format</Link>.
 * Enhanced the <Link to={useBaseUrl('references/formulas/node-properties')}>Node configuration Properties</Link> formulae.
+
 <!--
 <details>
     <ul>
@@ -188,6 +229,6 @@ The use of the "Tab" button to move to the next period is disabled for the last 
 #### Enhancements
 
 * Added Scenario Collaboration( ValQ - Professional, Enterprise plans ):
-    - My Scenarios: Scenarios that only you have access to, and not other members in the workspace.
-    - Shared Scenarios: Scenarios shared by you and made available to users/groups added to the workspace.
-*  Enabled **Read-Only** Mode in Power BI Service with read-only access for Plan (only viewing allowed) , Simulate and Analyze tabs.
+  * My Scenarios: Scenarios that only you have access to, and not other members in the workspace.
+  * Shared Scenarios: Scenarios shared by you and made available to users/groups added to the workspace.
+* Enabled **Read-Only** Mode in Power BI Service with read-only access for Plan (only viewing allowed) , Simulate and Analyze tabs.
