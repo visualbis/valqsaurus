@@ -90,7 +90,7 @@ In the Configuration settings, you can configure the node details with the follo
 
 ### 2.1 Node Type
 
-A node can be of two types - Normal and Constant.
+A node can be of three types - Normal, Constant, or a Linked node.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -104,6 +104,8 @@ A node can be of two types - Normal and Constant.
   Normal node is the default type with all the options available to configure
   while constant node sets the node value to a fixed figure.
 </div>
+
+Refer the section <Link to={useBaseUrl('storage/model-merge')}>Model Merge</Link> to understand the Linked node type.
 
 ### 2.2 Calculation Method
 
@@ -557,22 +559,18 @@ Use the <Link to={useBaseUrl('simulation/navigation_panel#show-composite-nodes')
 Simulation is enabled only for the leaf nodes by default in a Simple Dynamic model.
 :::
 
-<div style={{ textAlign: "justify" }}>
-  In the <b>Simulation</b> settings, you can configure simulation details
-  such as selection of the Default Simulation Method and assigning the node
-  for the Linked Simulation.
-</div> <br />
+In the <b>Simulation</b> settings, you can configure simulation details  such as selection of the Default Simulation Method, set the right slide trend for node simulation, and assigning the node for the Linked Simulation.
 
 <div class="center">
   <Zoom>
-    <img alt="Simulation" src={useBaseUrl("/doc-images/model/node38.png")} />
+    <img alt="Simulation configuration" src={useBaseUrl("/doc-images/model/node38.png")} />
   </Zoom>
-  <p>Simulation</p>
+  <p>Simulation configuration on a node</p>
 </div>
 
 #### Enable Simulation
 
-At first, you have the Enable Simulation option to enable/disable the simulation function for the node.
+Use the **Enable Simulation** toggle to allow or restrict simulation on a node.
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
@@ -582,8 +580,15 @@ At first, you have the Enable Simulation option to enable/disable the simulation
       src={useBaseUrl("/doc-images/model/node39.png")}
     />
   </Zoom>
-  <p>Enable Simulation</p>
+  <p>Enable Simulation toggle</p>
 </div>
+
+#### Slide Right to
+
+You can choose to set the simulation sliding on the right as either an increase or decrease trend on a node.
+Under the **Slide Right to** option, select the **Increase** or **Decrease** option.
+
+When you simulate on the node and drag the slider on the right, the node simulates for better or worse results depending on the option that you have selected here.
 
 #### Default Method
 

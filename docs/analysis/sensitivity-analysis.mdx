@@ -77,7 +77,7 @@ Say, you want to analyze how multiple *key Inputs* - *Copper Price, Diesel Price
       src={useBaseUrl("/doc-images/analyze/create-analysis.png")}
      />
     </Zoom>
-    <p>New Sensitivity Analysis chart fields</p>
+    <p>New Sensitivity Analysis Chart</p>
    </div>
 
 1. Click **Next**
@@ -106,13 +106,37 @@ Your *Sensitivity Analysis* chart will be created as shown in the screenshot bel
   <Zoom>
     <img
       alt="Sensitivity Analysis chart for Net Profit"
-      src={useBaseUrl("/doc-images/analyze/sensitivity-analysis-chart.png")}
+      src={useBaseUrl("/doc-images/analyze/sa-chart.png")}
     />
   </Zoom>
   <p>Sensitivity Analysis chart for Net Profit</p>
 </div>
 
 As you hover over each input node's bar, each node indicates the same **Base** value ($56.81m) as *Net Profit*, **Variance** change in the value, and the resulted **Low** and **High** output node values when the input node is simulated by +/- Deviation percentage.
+
+### Download Report as Excel
+
+You can download the individual Sensitivity Analysis report in an `xml` format and view the report in Excel.
+Select the Sensitivity Analysis report, and then select **Download** from the top ribbon bar.
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Sensitivity Analysis report in an Excel format"
+      src={useBaseUrl("/doc-images/analyze/sa-excel-report.png")}
+    />
+  </Zoom>
+  <p>Sample Sensitivity analysis report in Excel format</p>
+</div>
+
+The Excel report displays the following information:
+
+* Series: Name of the series selected
+* Output Node: Node affected with the simulations on the input node
+* Period Measure: Period selected from 'Full Year/Month/Sim.Mths'
+* Base Value: Base value of the model
+* Deviation +/-: The variance percentage
+* Input Nodes details and their variance.
 
 ### Edit the Analysis report
 
@@ -153,7 +177,7 @@ To get a consolidated view of all the analysis reports, click **View Summary** a
   <Zoom>
     <img
       alt=""
-      src={useBaseUrl("/doc-images/analyze/sensitivity-analysis-summary.png")}
+      src={useBaseUrl("/doc-images/analyze/sa-summary.png")}
     />
   </Zoom>
   <p>Sensitivity Analysis summary</p>
