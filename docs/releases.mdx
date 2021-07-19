@@ -19,7 +19,8 @@ import { Vimeo } from '@site/src/components/Vimeo';
 
 #### New Features
 
-* Sensitivity Analysis chart includes the <Link to={useBaseUrl('analysis/sensitivity-analysis#download-report-as-excel')}>Download</Link> button to export the SA report in an Excel.
+* Added a <Link to={useBaseUrl('analysis/sensitivity-analysis#download-report-as-excel')}>Download</Link> button in Sensitivity Analysis chart to export the analysis report to Excel.
+
 <div class="center">
   <Zoom>
     <img
@@ -29,6 +30,10 @@ import { Vimeo } from '@site/src/components/Vimeo';
   </Zoom>
   <p>Download report as Excel</p>
 </div>
+
+:::important
+Update UI with new one
+:::
 
 * Introduced <Link to={useBaseUrl('model/node#slide-right-to')}>Slide Right to</Link> option in node configuration for customization of simulation slider.
 
@@ -48,12 +53,13 @@ import { Vimeo } from '@site/src/components/Vimeo';
   <Zoom>
     <img
       alt="Node level edit configuration"
-      src={useBaseUrl("/doc-images/simulate_tab/edit-icon-node-level.png")}
+      src={useBaseUrl("/doc-images/simulate_tab/edit-node-treetable.png")}
     />
   </Zoom>
+  <p>Edit node icon accessible in both tree and table view</p>
 </div>
 
-* Added Back to main model for an easy navigation to switch to the main model in both tree and table view.
+* Added Back to main model for an easy navigation to switch to the main model in tree view.
 
 <div class="center">
   <Zoom>
@@ -65,19 +71,14 @@ import { Vimeo } from '@site/src/components/Vimeo';
   <p>Switch back to the main model</p>
 </div>
 
-<!--
 #### Enhancements
 
-* Updated tooltip on Sensitivity Analysis chart with details such as Variance % and Input node's values
-:::important
-Mention in SA module
-:::
-* Redesigned table view for better user experience
+* Updated tooltip on Sensitivity Analysis chart with details such as Variance % and Input node's values.
+* To do: Redesigned table view for better user experience
 :::important
 We need to have a few more points on this
 :::
-* New UI for time period display has been applied to period selection dropdown in Variance Analysis.
-
+* To do: New UI for time period display has been applied to period selection dropdown in Variance Analysis.
 * Top node is set as default selection while selecting <Link to={useBaseUrl('storage/model-merge#case-2-linking-node-to-a-single-node-from-a-model')}>a node to link from another workspace model</Link>.
 * Table view periods now gets updated based on Simulation period and Value Display selection made in Navigation Panel.
 
@@ -115,7 +116,8 @@ Include Image
 * Customization options for Export as datasource are now unchecked by default.
 * Added Unique ID field under Customization section of the <Link to={useBaseUrl('storage/export')}>Export as datasource</Link> feature.
 * Templated nodes gets automatically hidden in the Model tab on using it as Template based on other node
-* Selecting a node in the plan series shows lineage upto last 3 levels in the footer
+* Selecting a node in the plan series shows lineage upto last 3 levels in the footer.
+
 <div class="center">
   <Zoom>
     <img
@@ -128,6 +130,7 @@ Include Image
 
 * **Model > New** and **Model > General > Writeback** configuration is now restricted only to the Model Owner for enhanced security.
 
+<!--
 #### Important Fixes
 
 * Paste option from right click has been removed for nodes that are linked to another model from workspace
