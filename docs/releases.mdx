@@ -28,7 +28,7 @@ import { Vimeo } from '@site/src/components/Vimeo';
       src={useBaseUrl("/doc-images/analyze/sa-chart.png")}
     />
   </Zoom>
-  <p>Download report as Excel</p>
+  <p>Download button on Sensitivity Analysis chart</p>
 </div>
 
 :::important
@@ -44,22 +44,22 @@ Update UI with new one
       src={useBaseUrl("/doc-images/analyze/simulate-slide-right-to.png")}
     />
   </Zoom>
-  <p>Set the node simulation right slider trend</p>
+  <p>Choose to increase/decrease the node value when you slide right</p>
 </div>
 
 * Added <Link to={useBaseUrl('simulation/simulation_canvas#18-edit-configuration')}>Edit Node icon at node level</Link> in both tree and table view. This feature is a shortcut for the Edit Node configuration window.
 
-<div class="center">
+<div>
   <Zoom>
     <img
       alt="Node level edit configuration"
       src={useBaseUrl("/doc-images/simulate_tab/edit-node-treetable.png")}
     />
   </Zoom>
-  <p>Edit node icon accessible in both tree and table view</p>
+  <div class="center"><p>Edit node icon accessible in both tree and table view</p></div>
 </div>
 
-* Added Back to main model for an easy navigation to switch to the main model in tree view.
+* Added Back to main model for easy navigation and to switch back to the main model anytime in Tree view.
 
 <div class="center">
   <Zoom>
@@ -78,9 +78,7 @@ Update UI with new one
 :::important
 We need to have a few more points on this
 :::
-* To do: New UI for time period display has been applied to period selection dropdown in Variance Analysis.
-* Top node is set as default selection while selecting <Link to={useBaseUrl('storage/model-merge#case-2-linking-node-to-a-single-node-from-a-model')}>a node to link from another workspace model</Link>.
-* Table view periods now gets updated based on Simulation period and Value Display selection made in Navigation Panel.
+* Table view periods now get updated based on Simulation period and Value Display selection made in Navigation Panel.
 
 <div class="center">
   <Zoom>
@@ -89,10 +87,12 @@ We need to have a few more points on this
       src={useBaseUrl("/doc-images/simulate_tab/sim-period-impact-tableview.png")}
     />
   </Zoom>
-  <p>Selected Simulation Period and Value Display reflected in table view</p>
+  <p>Table view showing Sim. Impact % starting from Apr</p>
 </div>
+* To do: New UI for time period display has been applied to period selection dropdown in Variance Analysis.
+* Top node is set as default selection while selecting <Link to={useBaseUrl('storage/model-merge#case-2-linking-node-to-a-single-node-from-a-model')}>a node to link from another workspace model</Link>.
 
-* Added help ( <img width="25" src={useBaseUrl('img/help.png')}/> ) icon link against **Edit Node > Configuration > Calculation Method > Formula > Custom Formula** and **Edit Node > Secondary KPI > Custom Formula**. This link provides a quick access to Functions section of ValQ documentation.
+* Added info ( <img width="25" src={useBaseUrl('img/help.png')}/> ) icon link against **Edit Node > Configuration > Calculation Method > Formula > Custom Formula** and **Edit Node > Secondary KPI > Custom Formula**. This link provides a quick access to <a href="https://staging.docs.valq.com/references/formula-list">Functions</a> section of ValQ documentation.
 * Added message on Plan tab and updated the tooltip message for Model tab while on Power BI Service's reading view asking users to switch to Edit mode.
 
 <div class="center">
@@ -114,9 +114,20 @@ We need to have a few more points on this
 Include Image
 :::
 * Customization options for Export as datasource are now unchecked by default.
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Node lineage up to 3 levels"
+      src={useBaseUrl("/doc-images/storage/export-as-ds-customization.png")}
+    />
+  </Zoom>
+  <p>Node lineage up to 3 levels</p>
+</div>
+
 * Added Unique ID field under Customization section of the <Link to={useBaseUrl('storage/export')}>Export as datasource</Link> feature.
 * Templated nodes gets automatically hidden in the Model tab on using it as Template based on other node
-* Selecting a node in the plan series shows lineage upto last 3 levels in the footer.
+* Selecting a node in the plan series shows lineage up to last 3 levels in the footer.
 
 <div class="center">
   <Zoom>
