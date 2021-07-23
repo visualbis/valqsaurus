@@ -41,7 +41,7 @@ Update UI with new one
   <Zoom>
     <img
       alt="Node simulation right slider trend"
-      src={useBaseUrl("/doc-images/analyze/simulate-slide-right-to.png")}
+      src={useBaseUrl("/doc-images/analyze/slide-right-to-demo.gif")}
     />
   </Zoom>
   <p>Choose to increase/decrease the node value when you slide right</p>
@@ -65,7 +65,7 @@ Update UI with new one
   <Zoom>
     <img
       alt="Switch back to the main model"
-      src={useBaseUrl("/doc-images/simulate_tab/sim7.png")}
+      src={useBaseUrl("/doc-images/simulate_tab/back-to-main-model.gif")}
     />
   </Zoom>
   <p>Switch back to the main model</p>
@@ -89,9 +89,9 @@ We need to have a few more points on this
   </Zoom>
   <p>Table view showing Sim. Impact % starting from Apr</p>
 </div>
-* To do: New UI for time period display has been applied to period selection dropdown in Variance Analysis.
-* Top node is set as default selection while selecting <Link to={useBaseUrl('storage/model-merge#case-2-linking-node-to-a-single-node-from-a-model')}>a node to link from another workspace model</Link>.
 
+* New UI for time period display has been applied to period selection dropdown in Variance Analysis.
+* Top node is set as default selection while selecting <Link to={useBaseUrl('storage/model-merge#case-2-linking-node-to-a-single-node-from-a-model')}>a node to link from another workspace model</Link>.
 * Added info ( <img width="25" src={useBaseUrl('img/help.png')}/> ) icon link against **Edit Node > Configuration > Calculation Method > Formula > Custom Formula** and **Edit Node > Secondary KPI > Custom Formula**. This link provides a quick access to <a href="https://staging.docs.valq.com/references/formula-list">Functions</a> section of ValQ documentation.
 * Added message on Plan tab and updated the tooltip message for Model tab while on Power BI Service's reading view asking users to switch to Edit mode.
 
@@ -105,14 +105,28 @@ We need to have a few more points on this
   <p>Message and tooltip to switch to edit mode</p>
 </div>
 
+<div class="center">
+  <Zoom>
+    <img
+      alt="Reading view message"
+      src={useBaseUrl("/doc-images/plan-tab-editing-view.gif")}
+    />
+  </Zoom>
+</div>
+
 * Added loading message while importing a file from excel to Quick Editor.
 * A node that is referred as a Composite node can now be deleted without having to remove its reference.
 * Outcome KPI in Attribution Analysis now lists only nodes that have simulation impact for each scenario.
 * Units field has been removed from Scenario download and Compare Scenario download.
 * New improved UI for node search and selection drop-down across all tabs on ValQ
-:::important
-Include Image
-:::
+<div class="center">
+  <Zoom>
+    <img
+      alt="Search dropdown update"
+      src={useBaseUrl("/doc-images/search-dropdown-update.gif")}
+    />
+  </Zoom>
+</div>
 * Customization options for Export as datasource are now unchecked by default.
 
 <div class="center">
