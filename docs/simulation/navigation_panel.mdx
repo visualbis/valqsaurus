@@ -11,8 +11,9 @@ import "react-medium-image-zoom/dist/styles.css";
 
 In this section, we'll take a look at Navigation Panel and it's components:
 
-1. [Scenarios](#1-scenarios)                
-1. [Sub Models](#2-sub-models)               
+1. [Scenarios](#1-scenarios)
+1. [Writeback](#writeback)
+1. [Sub Models](#2-sub-models)
 1. [Simulation Period](#3-simulation-period) 
 1. [Value Display](#4-value-display)         
 1. [Key Inputs](#5-key-inputs)               
@@ -20,7 +21,7 @@ In this section, we'll take a look at Navigation Panel and it's components:
 1. [Constraints](#7-constraints)             
 1. [Visualization](#8-visualization)         
 
-### 1. Scenarios
+### Scenarios
 
 Scenarios are particularly useful when you want to perform a what-if analysis to the model and you can save each instance as an individual scenario. This way you have multiple scenarios to analyze and conduct scenario analysis.
 
@@ -60,7 +61,11 @@ The scenario with the yellow tag is the active scenario.
 
 > To rename the property's name to another value, go to the <Link to={useBaseUrl('model/settings#11-scenarios')}>General > Settings > Navigation Panel</Link> section.
 
-### 2. Sub Models
+### Writeback
+
+Writeback feature allows you to post your visual data (series and scenarios) to a writeback URL. Refer the <Link to={useBaseUrl('model/general')}>Writeback</Link> section for complete information.
+
+### Sub Models
 
 Sub Models are part of the model and a node is added as a sub-model to access it quickly. This property is useful
 when there are a large number of nodes and you want to get to the important nodes at the click of a button.
@@ -91,7 +96,7 @@ Here, the sub-model - 'Midwest' displays only the particular node and its childr
 
 Use the **Back to main model** navigation to switch back to the main model in both tree and table view.
 
-### 3. Simulation Period
+### Simulation Period
 
 ValQ model updates the simulated values based on the periods selected in the **Simulation Period** section. 
 You can select the drop-down list and choose a range of periods.
@@ -123,7 +128,7 @@ In the below example, simulation periods have been selected as 'Jan' through 'Ap
   <p>Node simulation result displayed only for the selected periods</p>
 </div>
 
-### 4. Value Display
+### Value Display
 
 <div style={{ textAlign: "justify" }}>
   Value Display makes available options of aggregation like a month, year to
@@ -150,7 +155,7 @@ In the below example, simulation periods have been selected as 'Jan' through 'Ap
   </Zoom>
 </div>
 
-### 5. Key Inputs
+### Key Inputs
 
 <div style={{ textAlign: "justify" }}>
   Any important node that you consider as a Key Input can be added as a Key
@@ -175,7 +180,7 @@ In the below example, simulation periods have been selected as 'Jan' through 'Ap
   </Zoom>
 </div>
 
-### 6. KPIs
+### KPIs
 
 <div style={{ textAlign: "justify" }}>
   Any important node that you consider as a Key Performance Indicator can be
@@ -200,7 +205,7 @@ In the below example, simulation periods have been selected as 'Jan' through 'Ap
   </Zoom>
 </div>
 
-### 7. Constraints
+### Constraints
 
 <div style={{ textAlign: "justify" }}>
   Constraint is added to a node to evaluate its performance after simulation
@@ -263,11 +268,11 @@ sorted based on its utilization under the Navigation Panel.
   </Zoom>
 </div>
 
-## 8. Visualization
+## Visualization
 
 You can change the view of the model with the visualization options. By default, Visualization is set to Tree display and Standard view mode.
 
-### Tree View
+#### Tree View
 
 <div class="center">
   <Zoom>
@@ -277,7 +282,7 @@ You can change the view of the model with the visualization options. By default,
 
 To view the model as a table, you can click on any of the highlighted options as seen below.
 
-### Table View
+#### Table View
 
 <div class="center">
   <Zoom>
@@ -303,4 +308,3 @@ You can chose to enable/disable the Composite values from the Navigation Panel:
   </Zoom>
   <p>Composite values enabled and displayed in the Canvas</p>
 </div>
-

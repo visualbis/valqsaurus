@@ -25,15 +25,11 @@ import { Vimeo } from '@site/src/components/Vimeo';
   <Zoom>
     <img
       alt="Sensitivity Analysis chart for Net Profit"
-      src={useBaseUrl("/doc-images/analyze/sa-chart.png")}
+      src={useBaseUrl("/doc-images/analyze/sa-download.png")}
     />
   </Zoom>
   <p>Download button on Sensitivity Analysis chart</p>
 </div>
-
-:::important
-Update UI with new one
-:::
 
 * Introduced <Link to={useBaseUrl('model/node#slide-right-to')}>Slide Right to</Link> option in node configuration for customization of simulation slider.
 
@@ -59,7 +55,7 @@ Update UI with new one
   <p>Edit node icon accessible in both tree and table view</p>
 </div>
 
-* Added Back to main model for easy navigation and to switch back to the main model anytime in Tree view.
+* Added Back to main model option for easy navigation and to switch back to the main model anytime in Tree view.
 
 <div class="center">
   <Zoom>
@@ -74,17 +70,25 @@ Update UI with new one
 #### Enhancements
 
 * Updated tooltip on Sensitivity Analysis chart with details such as Variance % and Input node's values.
-* To do: Redesigned table view for better user experience
-:::important
-We need to have a few more points on this
-:::
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Sensitivity Analysis tooltip"
+      src={useBaseUrl("/doc-images/analyze/sa-tooltip.png")}
+    />
+  </Zoom>
+  <p>Sensitivity Analysis tooltip</p>
+</div>
+
+* Redesigned <Link to={useBaseUrl('simulation/tableview#9-customize-columns')}>table view</Link> settings for better user experience.
 * Table view periods now get updated based on Simulation period and Value Display selection made in Navigation Panel.
 
 <div class="center">
   <Zoom>
     <img
       alt="Simulation period in table"
-      src={useBaseUrl("/doc-images/simulate_tab/sim-period-impact-tableview.png")}
+      src={useBaseUrl("/doc-images/simulate_tab/nav-panel.gif")}
     />
   </Zoom>
   <p>Table view showing Sim. Impact % starting from Apr</p>
@@ -118,6 +122,7 @@ We need to have a few more points on this
     />
   </Zoom>
 </div>
+
 * Customization options for Export as datasource are now unchecked by default.
 
 <div class="center">
@@ -130,7 +135,7 @@ We need to have a few more points on this
   <p>Node lineage up to 3 levels</p>
 </div>
 
-* Added Unique ID field under Customization section of the <Link to={useBaseUrl('storage/export')}>Export as datasource</Link> feature.
+* Added Unique ID field to Tree structure under Customization section of the <Link to={useBaseUrl('storage/export')}>Export as datasource</Link> feature.
 * Templated nodes gets automatically hidden on using it as Template based on other node.
 * Selecting a node in the plan series shows lineage in the footer.
 
@@ -156,7 +161,7 @@ We need to have a few more points on this
 * A node linked to another model in the workspace gets updated while changing the baseline series after refreshing the scenario.
 * When a node referred as Composite node is empty, enabling hide empty nodes hides the node as well as the composite node.
 * Reading view on Power BI Service retains the login state on reopening a report.
-* Color for Variance values on Input node tooltip of Sensitivity Analysis now takes into consideration the desired trend of the Output node.
+* Conditional formatting for Variance values on Input node tooltip of Sensitivity Analysis now takes into consideration the desired trend of the Output node.
 * Fixed **Reset All** option while performing allocations for Rolling Forecast.
 
 ## V2.0.6 (Jun 4, 2021)
