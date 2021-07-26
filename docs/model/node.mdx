@@ -251,7 +251,7 @@ The Normal node type presents the user with the Time Aggregation options as seen
 
 <div style={{ textAlign: "center" }}>
   <Zoom>
-    <img 
+    <img
     width="450"
     alt="Desired Trend" src={useBaseUrl("/doc-images/model/node16.png")} />
   </Zoom>
@@ -277,64 +277,60 @@ The Normal node type presents the user with the Time Aggregation options as seen
 
 Click <Link to={useBaseUrl('simulation/navigation_panel#7-constraints')}>here</Link> for steps to add Constraints using an example.
 
-### 2.6 Dynamic Children
+### 2.6 Dynamic Children from Data Source
 
-<div style={{ textAlign: "justify" }}>
-  Dynamic Children is available to create a new node that is a replicate of
-  another existing node having Data Source as it's Calculation Method. The new
-  node works like a Simple Model where you cannot configure the child nodes
-  except for simulation.
-</div>
+The feature **Dynamic Children from Data Source** generates child nodes dynamically based on the dimensions available in the Category section on Power BI’s Visualizations pane.
 
-<div style={{ textAlign: "center" }}>
-  <Zoom>
-    <img
-      alt="Dynamic Children from Data Source"
-      src={useBaseUrl("/doc-images/model/node65.png")}
-    />
-  </Zoom>
-  <div class="center"><p>Dynamic Children from Data Source</p></div>
-</div>
-
-<div style={{ textAlign: "justify" }}>
-  Dynamic Children Simulation has options to decide whether to allow simulation
-  of child nodes. All allow simulation for all the child nodes, nodes w/o
-  children allow simulation only for nodes without children i.e. nodes on the
-  last level and none doesn't allow simulation for any of the nodes including
-  the parent.
-</div> <br />
-
-The below example shows how to create Dynamic Children from Data Source.
-
-<div style={{ textAlign: "justify" }}>
-  First, we create a new node - Copy of Overall Result with the Calculation
-  method as Data Source and 'East' node as Source Key. Here, we enable the
-  option Dynamic Children from Data Source and choose None as Dynamic Children
-  Simulation.
-</div> <br />
-
-As a result of the above configuration, you will see the screen as below image.
+> The option to set Dynamic Children is available only for nodes which have Data Source as its Calculation Method.
 
 <div class="center">
-  <Zoom>
-    <img alt="New Tab" src={useBaseUrl("/doc-images/model/node64.png")} />
-  </Zoom>
-  <p>Dynamic Children added to model</p>
+    <Zoom>
+        <img 
+        alt="Dynamic Children Node Configuration"
+        src={useBaseUrl('doc-images/model/node-config-dynamic-children.png')}/>
+    </Zoom>
+    <p>Node configuration for Dynamic Children from Data Source</p>
 </div>
 
-<div style={{ textAlign: "justify" }}>
-  Now to be able to configure the child nodes of the node created using the
-  option Dynamic Children from Data Source, you click on the magic wand
-  available next to the top node. The entire ValQ model is now an Advanced Model
-  as seen below.
-</div> <br />
+In the **Dynamic Children Simulation** section, you have 3 options to allow/restrict simulation on the nodes.
+
+1. **All**: Allows simulation for all nodes – children and parent.
+1. **Nodes w/o children**: Allows simulation only for nodes which do not have any children i.e. leaf nodes.
+1. **None**: Does not allow simulation for any of the nodes including the parent node.
+
+To create Dynamic Children from Data Source:
+
+* Create a new node and select the Edit( <img width="15" src={useBaseUrl('img/edit.png')}/> ) icon next to it.
+* In **Edit Node > Configuration** section, under the **Calculation Method** select **Data Source**.
+* Select a node from the drop-down list as **Source Key**.
+* Turn on the toggle - **Dynamic Children from Data Source**.
+* Under **Dynamic Children Simulation** label, select the option **Nodes w/o children**.
+* Select **Finish**.
 
 <div class="center">
-  <Zoom>
-    <img alt="New Tab" src={useBaseUrl("/doc-images/model/node66.png")} />
-  </Zoom>
-  <p>Dynamic Children converted to advanced</p>
+    <Zoom>
+        <img 
+        alt="Dynamic Children"
+        src={useBaseUrl('doc-images/model/dynamic-children.png')}/>
+    </Zoom>
+    <p>Example using Dynamic Children from Data Source</p>
 </div>
+
+The node works like a Simple Model where the structure is dynamic and you cannot configure the descendants except for simulation.
+
+To configure the nodes generated dynamically, <Link to={useBaseUrl('model/new#22-convert-to-advanced-model')}>convert the model into an advanced model</Link> by selecting the magic wand.
+
+The entire ValQ model is now an Advanced Model as seen below.
+
+<div class="center">
+    <Zoom>
+        <img 
+        alt="Dynamic Children"
+        src={useBaseUrl('doc-images/model/dynamic-children-edit-access.png')}/>
+    </Zoom>
+    <p>Advanced Model</p>
+</div>
+
 
 ## 3. Display
 
