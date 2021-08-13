@@ -22,5 +22,6 @@
 ],
 "cSpell.words": [
     "valq"
-]
+],
+"markdown.extension.toc.updateOnSave": false
 }
