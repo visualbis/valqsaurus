@@ -46,23 +46,11 @@ A ValQ model with simulations performed on it is needed to access Attribution An
 
 The Attribution Analysis screen has three sections:
 
-1. [Pre-requisite](#pre-requisite)
-1. [Features of Attribution Analysis](#features-of-attribution-analysis)
-1. [1. Toolbar](#1-toolbar)
-1. [2. Waterfall chart](#2-waterfall-chart)
-1. [3. Table](#3-table)
+1. [Toolbar](#toolbar)
+1. [Waterfall chart](#waterfall-chart)
+1. [Table](#table)
 
-<div class="center">
-  <Zoom>
-    <img
-      alt="Attribution Analysis"
-      src={useBaseUrl("/doc-images/analyze/aaa-14-attr.png")}
-    />
-  </Zoom>
-  <p>Attribution Analysis screenshot</p>
-</div>
-
-## 1. Toolbar
+## Toolbar
 
 The *Toolbar* helps you to build the Attribution Analysis report. Following are the options available:
 
@@ -120,7 +108,7 @@ The *Toolbar* helps you to build the Attribution Analysis report. Following are 
   <p>Time range selection</p>
  </div>
 
-## 2. Waterfall chart
+## Waterfall chart
 
 The Waterfall chart on the left shows how the simulated nodes contribute to the change in the outcome KPI.
 
@@ -150,45 +138,24 @@ You can toggle between horizontal and vertical waterfall charts using the option
   <p>Waterfall chart flipped vertically</p>
 </div>
 
-## 3. Table
+## Table
 
-*Attribution Analysis* details are also listed in a tabular format on the right. 
-We have the baseline and simulated values of the outcome KPI, and the variance in both *absolute* and *percentage* terms.
+The tabular format on the right-hand side lists the **Outcome KPI** and **KPI** details.
 
 <div class="center">
   <Zoom>
     <img
       alt="Attribution Analysis Table View"
-      src={useBaseUrl("/doc-images/analyze/aaa-6-attr.png")}
+      src={useBaseUrl("/doc-images/analyze/attribution-analysis-table.png")}
     />
   </Zoom>
   <p>Attribution analysis tabular format</p>
 </div>
 
-The table beneath has a list of the KPIs - its Baseline and Simulated values, Impact, Attribution% and Contribution%
+* The values displayed for **Outcome KPI** include - **Baseline, Simulated, Variance** and **Variance %**.
+* The key **Attributes** values include: **Baseline, Simulated, Impact, Attribution%** and **Contribution% (optional)**.
+  * Impact = Positive/Negative variance on Outcome KPI
+  * Attribution% = KPI Impact/Outcome KPI Baseline
+  * Contribution% = KPI Impact/Outcome KPI Variance
 
-- Impact = Positive/Negative variance on Outcome KPI
-- Attribution% = KPI Impact/Outcome KPI Baseline
-- Contribution% = KPI Impact/Outcome KPI Variance
-
-<div class="center">
-  <Zoom>
-    <img
-      alt="Attribution Analysis Table View"
-      src={useBaseUrl("/doc-images/analyze/aaa-7-attr.png")}
-    />
-  </Zoom>
-  <p>Attribution analysis table with detailed KPIs</p>
-</div>
-
-Check/un-check the **Show Unit** and **Show Contribution* to hide/un-hide the respective options in the table.
-
-<div class="center">
-  <Zoom>
-    <img
-      alt="Attribution Analysis Table View"
-      src={useBaseUrl("/doc-images/analyze/aaa-8-attr.png")}
-    />
-  </Zoom>
-  <p>Units and Contribution percentage</p>
-</div>
+You can select to hide/show the units and contribution% columns by selecting the **Show Unit** and **Show Contribution %** options respectively at the top right corner.

@@ -15,6 +15,155 @@ import { Vimeo } from '@site/src/components/Vimeo';
 1. If your models still do not migrate to the latest version, please check if you are on a recent version of Power BI Desktop.
 :::
 
+## V2.0.8 (Sep 7, 2021)
+
+#### New Features
+
+* Added a <Link to={useBaseUrl('analysis/sensitivity-analysis#download-report-as-excel')}>Download</Link> button in Sensitivity Analysis chart to export the analysis report to Excel.
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Sensitivity Analysis chart for Net Profit"
+      src={useBaseUrl("/doc-images/analyze/sa-download.png")}
+    />
+  </Zoom>
+  <p>Download button on Sensitivity Analysis chart</p>
+</div>
+
+* Introduced <Link to={useBaseUrl('model/node#slide-right-to')}>Slide Right to</Link> option in node configuration for customization of simulation slider.
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Node simulation right slider trend"
+      src={useBaseUrl("/doc-images/analyze/slide-right-to-demo.gif")}
+    />
+  </Zoom>
+  <p>Choose to increase/decrease the node value when you slide right</p>
+</div>
+
+* Added <Link to={useBaseUrl('simulation/simulation_canvas#18-edit-configuration')}>Edit Node icon at node level</Link> in both tree and table view. This feature is a shortcut for the Edit Node configuration window.
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Node level edit configuration"
+      src={useBaseUrl("/doc-images/simulate_tab/edit-node-treetable.gif")}
+    />
+  </Zoom>
+  <p>Edit node icon accessible in both tree and table view</p>
+</div>
+
+* Added Back to main model option for easy navigation and to switch back to the main model anytime in Tree view.
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Switch back to the main model"
+      src={useBaseUrl("/doc-images/simulate_tab/back-to-main-model.gif")}
+    />
+  </Zoom>
+  <p>Switch back to the main model</p>
+</div>
+
+#### Enhancements
+
+* Updated tooltip on Sensitivity Analysis chart with details such as Variance % and Input node's values.
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Sensitivity Analysis tooltip"
+      src={useBaseUrl("/doc-images/analyze/sa-tooltip.png")}
+    />
+  </Zoom>
+  <p>Sensitivity Analysis tooltip</p>
+</div>
+
+* Redesigned <Link to={useBaseUrl('simulation/tableview#9-customize-columns')}>table view</Link> settings for better user experience.
+* Table view periods now get updated based on Simulation period and Value Display selection made in Navigation Panel.
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Simulation period in table"
+      src={useBaseUrl("/doc-images/simulate_tab/nav-panel.gif")}
+    />
+  </Zoom>
+  <p>Table view showing Sim. Impact % starting from Apr</p>
+</div>
+
+* New UI for time period display has been applied to period selection dropdown in Variance Analysis.
+* Top node is set as default selection while selecting <Link to={useBaseUrl('storage/model-merge#case-2-linking-node-to-a-single-node-from-a-model')}>a node to link from another workspace model</Link>.
+* Added info ( <img width="25" src={useBaseUrl('img/help.png')}/> ) icon link against **Edit Node > Configuration > Calculation Method > Formula > Custom Formula** and **Edit Node > Secondary KPI > Custom Formula**. This link provides a quick access to <a href="https://staging.docs.valq.com/references/formula-list">Functions</a> section of ValQ documentation.
+* Added message on Plan tab while on Power BI Service's reading view asking users to switch to Edit mode.
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Reading view message"
+      src={useBaseUrl("/doc-images/plan-tab-editing-view.gif")}
+    />
+  </Zoom>
+</div>
+
+* Added loading message while importing a file from excel to Quick Editor.
+* A node that is referred as a Composite node can now be deleted without having to remove its reference.
+* Outcome KPI in Attribution Analysis now lists only nodes that have simulation impact for each scenario.
+* Units field has been removed from Scenario download and Compare Scenario download.
+* New improved UI for node search and selection drop-down across all tabs on ValQ.
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Search dropdown update"
+      src={useBaseUrl("/doc-images/search-dropdown-update.gif")}
+    />
+  </Zoom>
+</div>
+
+* Customization options for Export as datasource are now unchecked by default.
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Node lineage up to 3 levels"
+      src={useBaseUrl("/doc-images/storage/export-as-ds-customization.png")}
+    />
+  </Zoom>
+  <p>Node lineage up to 3 levels</p>
+</div>
+
+* Added Unique ID field to Tree structure under Customization section of the <Link to={useBaseUrl('storage/export')}>Export as datasource</Link> feature.
+* Templated nodes gets automatically hidden on using it as Template based on other node.
+* Selecting a node in the plan series shows lineage in the footer.
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Node lineage up to 3 levels"
+      src={useBaseUrl("/doc-images/plan/plan-tab-lineage.png")}
+    />
+  </Zoom>
+  <p>Node lineage up to 3 levels</p>
+</div>
+
+* **Model > New** and **Model > General > Writeback** configuration are now restricted only to the Model Owner for enhanced security.
+
+#### Important Fixes
+
+* You can no longer paste on a linked node when you right click on the node unlike other nodes from the model.
+* Export as datasource for Tree structure now exports the merged model with nodes at proper level.
+* Sub model section in Navigation Panel does not duplicate Top node, while selecting **Linking To > Node in the model** under **Link to workspace model** option.
+* Model merge can now be used to merge models with different number of time periods.
+* **Period Measure** in Sensitivity Analysis is now in sync with Navigation Panel while creating a New Sensitivity Chart.
+* A node linked to another model in the workspace gets updated while changing the baseline series after refreshing the scenario.
+* When a node referred as Composite node is empty, enabling hide empty nodes hides the node as well as the composite node.
+* Reading view on Power BI Service retains the login state on reopening a report.
+* Conditional formatting for Variance values on Input node tooltip of Sensitivity Analysis now takes into consideration the desired trend of the Output node.
+* Fixed **Reset All** option while performing allocations for Rolling Forecast.
+
 ## V2.0.6 (Jun 4, 2021)
 
 #### Enhancements

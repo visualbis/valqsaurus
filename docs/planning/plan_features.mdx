@@ -126,7 +126,7 @@ The single lock icon serves as a toggle to hold and release the cell value.
 
 ### 3.4 Comments
 
-The Coments icon helps the user to add, modify, or delete and collaborate the comments on the model at the cell level.
+The Comments icon helps the user to add, modify, or delete and collaborate the comments on the model at the cell level.
 
 <div class="center">
   <Zoom>
@@ -373,12 +373,17 @@ Copy-to option takes a node's period value and applies the same value to the rem
 
 ### 3.10 View Allocation History
 
-<div style={{ textAlign: "justify" }}>
-  View Allocation History is used to view the changes performed and also to roll
-  back changes when needed. Reset all deletes all the allocation adjustments
-  made to the series and Restore to this step can be used to get to any point in
-  the Allocation History.
-</div> <br />
+View Allocation History is used to view the changes performed and also to roll back changes when needed.
+
+<div style={{ textAlign: "center" }}>
+  <Zoom>
+    <img alt="View allocation history" src={useBaseUrl("doc-images/storage/features/planning-history-logs.png")} />
+  </Zoom>
+</div>
+
+**Reset All** option deletes all the allocation adjustments made to the series.
+
+**Restore to this step** can be used to get to any point in the Allocation History.
 
 ### 3.11 Show hidden nodes
 
@@ -457,6 +462,4 @@ Below is the screenshot after you select the columns re-size option:
 ## 7. Writeback
 
 The <Link to={useBaseUrl('model/general#3-writeback')}>Writeback</Link> feature can also be accessed from the Plan ribbon bar.
-The Writeback option from the Plan tab only allows you to trigger sending the series data onto a Writeback API.
-
-> To send both series and scenarios (shared scenarios) select the writeback button from the Navigation panel.
+The Writeback option from the Plan tab allows you to trigger sending the planning series data onto a Writeback API.
