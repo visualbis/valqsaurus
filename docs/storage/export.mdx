@@ -120,7 +120,7 @@ In the below example, we'll show how the URL can be consumed in a Power BI repor
  :::important
  Type **Authorization** in the HTTP header field.
  :::
- 
+
  Enter the Web URL and HTTP request header parameters obtained in the above **export format** section.  
 
 1. Click **OK**.
@@ -180,5 +180,46 @@ ValQ data can be used as input for other visuals and further analysis. You can r
       src={useBaseUrl("/doc-images/live-synch.png")}
     />
   </Zoom>
-  <p>Live synch simulations</p>
+  <p>Live synch simulations in Power BI Desktop</p>
 </div>
+
+For the dataset refresh in Power BI Service, validate your credentials as explained below:
+
+* Select the 3 vertical dots next to your dataset and then select **Settings**.
+
+<div style={{textAlign: "center"}}>
+  <Zoom>
+    <img
+      alt="Dataset settings"
+      width="550"
+      src={useBaseUrl("/doc-images/settings.png")}
+    />
+  </Zoom>
+  <p>Dataset settings</p>
+</div>
+
+* From the **Datasets** tab, select **Data source credentials > Edit credentials**.
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Edit credentials"
+      src={useBaseUrl("/doc-images/edit-credentials.png")}
+    />
+  </Zoom>
+  <p>Edit credentials for dataset refresh</p>
+</div>
+
+* Enable **Skip test connection**, and then select **Sign in**.
+
+<div class="center">
+  <Zoom>
+    <img
+      alt="Configure credentials"
+      src={useBaseUrl("/doc-images/configure.png")}
+    />
+  </Zoom>
+  <p>Configure and validate credentials</p>
+</div>
+
+Now, click on the **Refresh** ( <img width="20" src={useBaseUrl("/img/refresh.png")}/> ) icon next to the dataset to sync up your visual with the latest data.
