@@ -19,6 +19,131 @@ import { Vimeo } from '@site/src/components/Vimeo';
 
 #### Enhancements
 
+- Migration of models from ValQ Collaborate to ValQ Certified is no longer supported
+- Selections made in <Link to={useBaseUrl("/analysis/attribution-analysis/")}>Attribution analysis</Link> will now be retained while switching tabs
+  <div class="center">
+    <Zoom>
+      <img
+        alt="Selection Retention"
+        src={useBaseUrl("/doc-images/analyze/AA - retain selection.png")}
+      />
+    </Zoom>
+  </div>
+- Trend <Link to={useBaseUrl("/simulation/simulation_canvas/#iii-line-and-column-chart")}>chart</Link> is removed from Node details for models with single period
+  <div class="center">
+    <Zoom>
+      <img
+        alt="Trend Chart"
+        src={useBaseUrl("/doc-images/model/NodeDetail - singlePeriod.png")}
+      />
+    </Zoom>
+  </div>
+- <Link
+    to={useBaseUrl("/analysis/sensitivity-analysis/#download-report-as-excel")}>
+    Sensitivity Analysis
+  </Link> download file formatting has been updated by adding headers, border and
+  better alignment for improved reabability
+- <Link to={useBaseUrl("/node/#1-general")}>Title prefix</Link> outside tree is now
+  available across all tabs where tree hierarchy is not present
+- Added <Link to={useBaseUrl("/model/node/#slide-right-to")}>Slide Right</Link> to option in Quick Editor where you can choose to increase or decrease the node value when the slider is moved in the right direction
+- Added model merge icon for nodes linked from another model in Plan tab
+  <div class="center">
+    <Zoom>
+      <img
+        alt="Model Merge"
+        src={useBaseUrl("/doc-images/model/mm-icon.png")}
+      />
+    </Zoom>
+  </div>
+- Node search gets closed when user clicks outside the search drop down
+- Add Simulation configuration in Edit node for model merge nodes
+  <div class="center">
+    <Zoom>
+      <img
+        alt="Model Merge"
+        src={useBaseUrl("/doc-images/model/mm-simulation.gif")}
+      />
+    </Zoom>
+  </div>
+-<Link to={useBaseUrl("/simulation/navigation_panel/#scenarios")}>
+    Compared scenarios
+  </Link> selection will now be pre-selected for download
+- Fixed an issue with the formula pop up in Quick Editor which didn't allow users to enter formula
+- Added Title prefix as a customization option in Export as datasource
+  <div class="center">
+    <Zoom>
+      <img
+        alt="Title prefix as a customization"
+        src={useBaseUrl("/doc-images/export-customization.png")}
+      />
+    </Zoom>
+  </div>
+- Removed nodes having Calculation Method as<Link to={useBaseUrl("/model/node/#22-calculation-method ")}>Linked to node </Link> for node level model merge
+
+#### Important Fixes
+
+- Using <Link to={useBaseUrl('/planning/plan_features/#39-refresh-datasource')} >Refresh datasource</Link> option in main model now brings the updated values from sub model
+
+  <div class="center">
+    <Zoom>
+      <img
+        alt="Refresh   Datasource"
+        src={useBaseUrl("/doc-images/plan/refreshdatasource.gif")}
+      />
+    </Zoom>
+  </div>
+
+- Fixed an issue where users can now use Model > General > <Link to={useBaseUrl("/model/general/#1-export")}>Export</Link> to get the export configuration without the model getting crashed
+- Sub model nodes will be available in the level at which model merge has been performed while using <Link to={useBaseUrl("/storage/export/")}>export as datasource </Link>
+- Empty plan series now exports empty file without any values
+- Fixed an issue where users couldn't delete node from Plan tab
+- <Link to={useBaseUrl("/node/#quick-editor-in-node-tab")}>Quick Editor</Link> allows
+  selection of up to 2 nodes under Composite nodes column
+  <div class="center">
+    <Zoom>
+      <img
+        alt="Quick Editor"
+        src={useBaseUrl("/doc-images/quickEditor/CompositeNode.gif")}
+      />
+    </Zoom>
+  </div>
+- Model merge nodes are now available in Sensitivity Analysis, Attribution Analysis, Node Details and Settings
+- Upload button and series selection are disabled till the model is created
+- Hidden nodes having simulation impact are now available in Attribution Analysis
+- Template nodes, Hidden nodes and Adjustment nodes are excluded while configuring model merge
+- Adjustment nodes are not included in the export file when plan series is not selected for download
+- Fixed an issue where duplicate series were present in Admin Console on changing user's role of access control
+- Adjustment nodes present in sub model are now available in export files when main model is downloaded
+
+## V2.0.9.3 (Dec 15, 2021)
+
+#### Important Fixes
+
+- Fixed an issue with downloading the exported files from visual
+
+## V2.0.9.2
+
+#### Important Fixes
+
+- Values entered in Plan tab are now properly saved while switching to other tabs
+- Fixed an issue with using Enter key to input values
+- Changes made in <Link to={useBaseUrl('/model/node/#export-to-excel')}>export</Link> csv will now reflect in Quick Editor on importing the excel file
+
+## V2.0.9.1
+
+#### Enhancements
+
+- Up to 50 nodes are available in <Link to={useBaseUrl('/storage/model-merge/#case-2-linking-node-to-a-single-node-from-a-model')}>search</Link> while linking a node from another model
+
+#### Important Fixes
+
+- Model rendering issue has been fixed where the model kept perpetually loading
+- Users can now edit the <Link to={useBaseUrl('/model/node/#2-configuration')}>configuration</Link> of nodes linked to another model
+
+## V2.1.0.0 (Jan 20, 2022)
+
+#### Enhancements
+
 * Migration of models from ValQ Collaborate to ValQ Certified is no longer supported
 * Selections made in Attribution analysis will now be retained while switching tabs
 * Trend chart is removed from Node details for models with single period
