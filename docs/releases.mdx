@@ -14,6 +14,12 @@ import { Vimeo } from '@site/src/components/Vimeo';
 1. ValQ latest version will be available on Power BI AppSource in about 2 to 3 weeks from the release date. All your existing models built on AppSource visual gets updated to the latest version automatically.
 1. If your models still do not migrate to the latest version, please check if you are on a recent version of Power BI Desktop.
 :::
+## V2.1.4.0 (Mar 01, 2022)
+
+#### Important Fixes
+
+* Fixed an issue with enetring values in manual simulation.
+
 ## V2.1.3.0 (Feb 22, 2022)
 
 #### Important Fixes
@@ -26,9 +32,18 @@ import { Vimeo } from '@site/src/components/Vimeo';
 #### Important Fixes
 
 * Users can now refer to any node from another model having multiple models merged to it.
+
+  <div class="center">
+    <Zoom>
+      <img
+        alt="Model Merge"
+        src={useBaseUrl("/doc-images/model/multilevelmm.gif")}
+      />
+    </Zoom>
+  </div>
 * Fixed an issue with entering values in Plan tab for single time period.
 
-## V2.1.0.1 (Feb 8, 2022)
+## V2.1.1.0 (Feb 8, 2022)
 
 #### Important Fixes
 
@@ -67,8 +82,19 @@ import { Vimeo } from '@site/src/components/Vimeo';
     Sensitivity Analysis
   </Link> download file formatting has been updated by adding headers, border and
   better alignment for improved reabability
+
 * <Link to={useBaseUrl("/model/node/#1-general")}>Title prefix</Link> outside tree is now
-  available across all tabs where tree hierarchy is not present
+available across all tabs where tree hierarchy is not present
+
+  <div class="center">
+    <Zoom>
+      <img
+        alt="Model Merge"
+        src={useBaseUrl("/doc-images/model/titleprefixoutsidetree.gif")}
+      />
+    </Zoom>
+  </div>
+
 * Added <Link to={useBaseUrl("/model/node/#slide-right-to")}>Slide Right</Link> to option in Quick Editor where you can choose to increase or decrease the node value when the slider is moved in the right direction
 * Added model merge icon for nodes linked from another model in Plan tab
  
@@ -125,6 +151,16 @@ import { Vimeo } from '@site/src/components/Vimeo';
 
 * Fixed an issue where users can now use Model > General > <Link to={useBaseUrl("/model/general/#1-export")}>Export</Link> to get the export configuration without the model getting crashed
 * Sub model nodes will be available in the level at which model merge has been performed while using <Link to={useBaseUrl("/storage/export/")}>export as datasource </Link>
+
+  <div class="center">
+    <Zoom>
+      <img
+        alt="Refresh   Datasource"
+        src={useBaseUrl("/doc-images/model/mmlevel.gif")}
+      />
+    </Zoom>
+  </div>
+
 * Empty plan series now exports empty file without any values
 * Fixed an issue where users couldn't delete node from Plan tab
 * <Link to={useBaseUrl("/model/node/#quick-editor-in-node-tab")}>Quick Editor</Link> allows
