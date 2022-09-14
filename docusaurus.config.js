@@ -83,7 +83,7 @@ module.exports = {
                 },],
             },
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} Visual BI`,
+            copyright: `Copyright © ${new Date().getFullYear()} Lumel`,
         },
         ogImage: "img/whats-new-in-valq.jpg",
         twitterImage: "img/whats-new-in-valq.jpg",
